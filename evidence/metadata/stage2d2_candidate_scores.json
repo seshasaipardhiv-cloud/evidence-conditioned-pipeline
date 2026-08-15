@@ -1,0 +1,79 @@
+[
+  {
+    "pmid": "41335879",
+    "doi": "10.1109/EMBC58623.2025.11254767",
+    "title": "Attention-enabled Explainable AI for Bladder Cancer Recurrence Prediction.",
+    "score": 0,
+    "status": "REJECTED",
+    "rejection_reason": "Target leakage detected in feature representation.",
+    "representation_method": null,
+    "source_sentence": null,
+    "full_text_status": "ABSTRACT_ONLY"
+  },
+  {
+    "pmid": "29427526",
+    "doi": "10.1002/gcc.22532",
+    "title": "NUP98-BPTF gene fusion identified in primary refractory acute megakaryoblastic leukemia of infancy.",
+    "score": 0,
+    "status": "REJECTED",
+    "rejection_reason": "No explicit clinical tabular feature representation methodology found in text.",
+    "representation_method": null,
+    "source_sentence": null,
+    "full_text_status": "ABSTRACT_ONLY"
+  },
+  {
+    "pmid": "40273819",
+    "doi": "10.1016/j.compbiomed.2025.110198",
+    "title": "A framework to create, evaluate and select synthetic datasets for survival prediction in oncology.",
+    "score": 0,
+    "status": "REJECTED",
+    "rejection_reason": "Incompatible task (not classification / recurrence prediction).",
+    "representation_method": null,
+    "source_sentence": null,
+    "full_text_status": "ABSTRACT_ONLY"
+  },
+  {
+    "pmid": "41935148",
+    "doi": "10.1038/s41598-026-47382-0",
+    "title": "A distributed fusion framework for breast cancer recurrence prediction using MapReduce.",
+    "score": 0,
+    "status": "REJECTED",
+    "rejection_reason": "Target leakage detected in feature representation.",
+    "representation_method": null,
+    "source_sentence": null,
+    "full_text_status": "FULL_TEXT"
+  },
+  {
+    "pmid": "40165728",
+    "doi": "10.1002/mp.17781",
+    "title": "A CNN-transformer fusion network for predicting high-grade patterns in stage IA invasive lung adenocarcinoma.",
+    "score": 0,
+    "status": "REJECTED",
+    "rejection_reason": "No explicit clinical tabular feature representation methodology found in text.",
+    "representation_method": null,
+    "source_sentence": null,
+    "full_text_status": "ABSTRACT_ONLY"
+  },
+  {
+    "pmid": "32123303",
+    "doi": "10.1038/s41379-020-0510-7",
+    "title": "Melanomas with activating RAF1 fusions: clinical, histopathologic, and molecular profiles.",
+    "score": 0,
+    "status": "REJECTED",
+    "rejection_reason": "No explicit clinical tabular feature representation methodology found in text.",
+    "representation_method": null,
+    "source_sentence": null,
+    "full_text_status": "FULL_TEXT"
+  },
+  {
+    "pmid": "15743751",
+    "doi": "10.1309/APKQ-4Q9D-52GN-LR8W",
+    "title": "Primary lung adenocarcinoma with massive lymphocyte infiltration.",
+    "score": 0,
+    "status": "REJECTED",
+    "rejection_reason": "Incompatible task (not classification / recurrence prediction).",
+    "representation_method": null,
+    "source_sentence": null,
+    "full_text_status": "ABSTRACT_ONLY"
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-08-14T18:55:13.415379+00:00",
+  "raw_records_verified": true,
+  "recalculated_candidate_metrics": {
+    "roc_auc": {
+      "mean": 0.9751,
+      "std": 0.0114,
+      "min": 0.9609,
+      "max": 0.9888
+    },
+    "f1": {
+      "mean": 0.9611,
+      "std": 0.0184,
+      "min": 0.9412,
+      "max": 0.9855
+    },
+    "accuracy": {
+      "mean": 0.9825,
+      "std": 0.0082,
+      "min": 0.9737,
+      "max": 0.9934
+    },
+    "precision": {
+      "mean": 0.9801,
+      "std": 0.0141,
+      "min": 0.9697,
+      "max": 1.0
+    },
+    "recall": {
+      "mean": 0.9429,
+      "std": 0.0233,
+      "min": 0.9143,
+      "max": 0.9714
+    },
+    "brier_score": {
+      "mean": 0.0175,
+      "std": 0.0076,
+      "min": 0.0074,
+      "max": 0.0256
+    },
+    "pr_auc": {
+      "mean": 0.9679,
+      "std": 0.0123,
+      "min": 0.9538,
+      "max": 0.9838
+    }
+  },
+  "consistency_with_stage5b_verified": true,
+  "consistency_status": "VERIFIED_CONSISTENT"
+}

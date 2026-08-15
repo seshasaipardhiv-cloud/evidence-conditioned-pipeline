@@ -1,0 +1,80 @@
+{
+  "timestamp": "2026-08-14T06:40:26.674484+00:00",
+  "ledger": {
+    "missing_value_handling": {
+      "primitive": "missing_value_handling",
+      "evidence_status": "EVIDENCE_BACKED",
+      "evidence_source": "Stage 2F-1 Literature Retrieval (PMID 41826845)",
+      "selected_value": "MissForest / MICE",
+      "configuration_source": "literature_evidence",
+      "provenance": {
+        "pmid": "41826845",
+        "doi": "10.1186/s12874-026-02805-4",
+        "source_sentence": "MissForest \u2013 Normalize \u2013 Balance: Missing values were imputed using MissForest, a non-parametric random forest\u2013based algorithm that iteratively predicts missing entries from observed feature relationships [\nMissForest \u2013 Normalize: Identical imputation and normalization steps as above, without class balancing, to isolate the effect of resampling.",
+        "full_text_status": "accessible"
+      },
+      "compatibility_status": "COMPATIBLE",
+      "execution_status": "READY_WITH_EVIDENCE",
+      "classification": "EVIDENCE_BACKED",
+      "reason": "Authenticated scientific literature evidence established in Stage 2F-1 (PMID 41826845)."
+    },
+    "categorical_encoding": {
+      "primitive": "categorical_encoding",
+      "evidence_status": "UNSUPPORTED",
+      "evidence_source": null,
+      "selected_value": null,
+      "configuration_source": null,
+      "provenance": null,
+      "compatibility_status": "UNTESTED",
+      "execution_status": "BLOCKED",
+      "classification": "UNSUPPORTED",
+      "reason": "Neither authenticated literature evidence nor explicit project configuration exists."
+    },
+    "base_learner": {
+      "primitive": "base_learner",
+      "evidence_status": "EVIDENCE_BACKED",
+      "evidence_source": "Stage 2F-1 Literature Retrieval (PMID 41775771)",
+      "selected_value": "XGBoost",
+      "configuration_source": "literature_evidence",
+      "provenance": {
+        "pmid": "41775771",
+        "doi": "10.1038/s41598-026-39104-3",
+        "source_sentence": "In this study, the XGBoost classifier was trained on the augmented feature set comprising both the original normalized clinical attributes and the GMM-derived latent features.",
+        "full_text_status": "accessible"
+      },
+      "compatibility_status": "COMPATIBLE",
+      "execution_status": "READY_WITH_EVIDENCE",
+      "classification": "EVIDENCE_BACKED",
+      "reason": "Authenticated scientific literature evidence established in Stage 2F-1 (PMID 41775771)."
+    },
+    "loss_function": {
+      "primitive": "loss_function",
+      "evidence_status": "UNSUPPORTED",
+      "evidence_source": null,
+      "selected_value": null,
+      "configuration_source": null,
+      "provenance": null,
+      "compatibility_status": "UNTESTED",
+      "execution_status": "BLOCKED",
+      "classification": "UNSUPPORTED",
+      "reason": "Neither authenticated literature evidence nor explicit project configuration exists."
+    },
+    "imbalance_handling": {
+      "primitive": "imbalance_handling",
+      "evidence_status": "EVIDENCE_BACKED",
+      "evidence_source": "Stage 2F-1 Literature Retrieval (PMID 41006422)",
+      "selected_value": "SMOTE",
+      "configuration_source": "literature_evidence",
+      "provenance": {
+        "pmid": "41006422",
+        "doi": "10.1038/s41598-025-16790-z",
+        "source_sentence": "The OTUs with a relative abundance of less than 1% across all samples were excluded from further analysis\nData augmentation\nSMOTE was applied to augment the RMBC group to address the class imbalance in the dataset.",
+        "full_text_status": "accessible"
+      },
+      "compatibility_status": "COMPATIBLE",
+      "execution_status": "READY_WITH_EVIDENCE",
+      "classification": "EVIDENCE_BACKED",
+      "reason": "Authenticated scientific literature evidence established in Stage 2F-1 (PMID 41006422)."
+    }
+  }
+}

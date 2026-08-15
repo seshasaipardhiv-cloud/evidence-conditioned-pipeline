@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-14T17:38:59.329237+00:00",
+  "contract_validation_status": "VALIDATED",
+  "checks": {
+    "pipeline_hash_matched": true,
+    "all_components_registered": true,
+    "target_firewall_locked": true,
+    "patient_split_contract_locked": true,
+    "preprocessing_contract_locked": true,
+    "compute_budget_compliant": true,
+    "baselines_specified": true,
+    "abort_conditions_defined": true,
+    "zero_model_training_calls": true
+  }
+}

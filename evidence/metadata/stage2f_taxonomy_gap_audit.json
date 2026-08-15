@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-08-14T06:18:35.988255+00:00",
+  "total_mechanisms_in_corpus": 7,
+  "categories_present": [
+    "unmapped",
+    "attention",
+    "representation",
+    "fusion"
+  ],
+  "primitive_taxonomy_status": {
+    "missing_value_handling": "TAXONOMY_GAP",
+    "categorical_encoding": "TAXONOMY_GAP",
+    "base_learner": "TAXONOMY_GAP",
+    "loss_function": "TAXONOMY_GAP",
+    "imbalance_handling": "TAXONOMY_GAP"
+  },
+  "overall_taxonomy_status": "TAXONOMY_GAPS_IDENTIFIED",
+  "analysis": "The Stage 2/3 mechanism taxonomy only maps mechanisms for Representation, Fusion, and Attention. The implementation primitives (missing_value_handling, categorical_encoding, base_learner, loss_function, imbalance_handling) are not defined as mapped canonical categories in the taxonomy."
+}

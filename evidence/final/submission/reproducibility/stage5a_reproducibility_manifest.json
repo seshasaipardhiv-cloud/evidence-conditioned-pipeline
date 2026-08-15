@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-08-14T17:38:59.329237+00:00",
+  "pipeline_hash": "6b6bcb1b217793230dba3467ea09fd94339c7497ccc85b0f8ed86c59f16686da",
+  "seeds": [
+    42,
+    100,
+    2026
+  ],
+  "target_variable": "recurrence",
+  "excluded_columns": [
+    "recurrence",
+    "survival_status",
+    "survival_status_with_cause",
+    "days_to_recurrence",
+    "days_to_last_information",
+    "days_to_progress_1",
+    "days_to_progress_2",
+    "days_to_metastasis_1"
+  ],
+  "train_only_fitting_contract": true,
+  "test_set_isolation_guarantee": "Test split evaluated strictly once after final model lock.",
+  "zero_silent_fallback_enforced": true,
+  "immutable_corpus_verified": true
+}

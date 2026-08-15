@@ -1,0 +1,74 @@
+{
+  "status": "DISCOVERED",
+  "detected_modalities": [
+    "tabular",
+    "image",
+    "text"
+  ],
+  "sample_count": 150,
+  "identifier_field": "patient_id",
+  "target_field": "recurrence",
+  "tabular_features": {
+    "numerical": [],
+    "categorical": [],
+    "total_tabular_count": 0
+  },
+  "image_modality": {
+    "available": true,
+    "count": 150,
+    "sample_ids_with_images": [
+      "HANCOCK_PT_0000",
+      "HANCOCK_PT_0001",
+      "HANCOCK_PT_0002",
+      "HANCOCK_PT_0003",
+      "HANCOCK_PT_0004",
+      "HANCOCK_PT_0005",
+      "HANCOCK_PT_0006",
+      "HANCOCK_PT_0007",
+      "HANCOCK_PT_0008",
+      "HANCOCK_PT_0009"
+    ],
+    "total_valid_images": 150
+  },
+  "text_modality": {
+    "available": true,
+    "count": 150,
+    "text_fields": [
+      "raw_text"
+    ],
+    "sample_ids_with_text": [
+      "HANCOCK_PT_0000",
+      "HANCOCK_PT_0001",
+      "HANCOCK_PT_0002",
+      "HANCOCK_PT_0003",
+      "HANCOCK_PT_0004",
+      "HANCOCK_PT_0005",
+      "HANCOCK_PT_0006",
+      "HANCOCK_PT_0007",
+      "HANCOCK_PT_0008",
+      "HANCOCK_PT_0009"
+    ]
+  },
+  "missingness": {
+    "tabular": {},
+    "image": {
+      "unresolved_images": 0
+    },
+    "text": {
+      "missing_texts": 0
+    }
+  },
+  "modality_mappings": {
+    "total_unique_samples": 150,
+    "samples_with_tabular": 150,
+    "samples_with_image": 150,
+    "samples_with_text": 150,
+    "complete_multimodal_samples": 150
+  },
+  "unresolved_fields": [],
+  "reason": "Successfully discovered modalities: tabular, image, text for 150 samples.",
+  "metadata": {
+    "discovery_timestamp": "2026-08-15T10:12:19.541464+00:00",
+    "multimodal_ready": true
+  }
+}

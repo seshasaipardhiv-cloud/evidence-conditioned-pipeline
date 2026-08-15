@@ -1,0 +1,510 @@
+[
+  {
+    "paper_id": "paper_10.1038_s42256-023-00633-5",
+    "field": "dataset",
+    "extracted_value": "cancer",
+    "verified_value": "TCGA",
+    "verification_status": "INCORRECT"
+  },
+  {
+    "paper_id": "paper_10.1038_s42256-023-00633-5",
+    "field": "task",
+    "extracted_value": null,
+    "verified_value": "survival_prediction",
+    "verification_status": "NOT_AVAILABLE"
+  },
+  {
+    "paper_id": "paper_10.1038_s42256-023-00633-5",
+    "field": "modalities",
+    "extracted_value": [],
+    "verified_value": [
+      "clinical",
+      "imaging",
+      "omics"
+    ],
+    "verification_status": "INCORRECT"
+  },
+  {
+    "paper_id": "paper_10.1038_s42256-023-00633-5",
+    "field": "proposed_method",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_10.1038_s42256-023-00633-5",
+    "field": "baselines",
+    "extracted_value": [],
+    "verified_value": null,
+    "verification_status": "NOT_AVAILABLE"
+  },
+  {
+    "paper_id": "paper_10.1038_s42256-023-00633-5",
+    "field": "fusion_strategy",
+    "extracted_value": "late_fusion",
+    "verified_value": "early_fusion",
+    "verification_status": "INCORRECT"
+  },
+  {
+    "paper_id": "paper_10.1038_s42256-023-00633-5",
+    "field": "metric",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_10.1038_s42256-023-00633-5",
+    "field": "result",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_10.3390_bioengineering11010013",
+    "field": "dataset",
+    "extracted_value": "raw",
+    "verified_value": "TCIA",
+    "verification_status": "INCORRECT"
+  },
+  {
+    "paper_id": "paper_10.3390_bioengineering11010013",
+    "field": "task",
+    "extracted_value": "classification",
+    "verified_value": "diagnosis",
+    "verification_status": "INCORRECT"
+  },
+  {
+    "paper_id": "paper_10.3390_bioengineering11010013",
+    "field": "modalities",
+    "extracted_value": [
+      "clinical",
+      "imaging"
+    ],
+    "verified_value": [
+      "imaging"
+    ],
+    "verification_status": "PARTIALLY_VERIFIED"
+  },
+  {
+    "paper_id": "paper_10.3390_bioengineering11010013",
+    "field": "proposed_method",
+    "extracted_value": "offers",
+    "verified_value": null,
+    "verification_status": "NOT_AVAILABLE"
+  },
+  {
+    "paper_id": "paper_10.3390_bioengineering11010013",
+    "field": "baselines",
+    "extracted_value": [
+      "single-modality PET",
+      "traditional 2D models"
+    ],
+    "verified_value": null,
+    "verification_status": "NOT_AVAILABLE"
+  },
+  {
+    "paper_id": "paper_10.3390_bioengineering11010013",
+    "field": "fusion_strategy",
+    "extracted_value": "ensemble_fusion",
+    "verified_value": "gated_fusion",
+    "verification_status": "INCORRECT"
+  },
+  {
+    "paper_id": "paper_10.3390_bioengineering11010013",
+    "field": "metric",
+    "extracted_value": "AUC",
+    "verified_value": "AUC",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_10.3390_bioengineering11010013",
+    "field": "result",
+    "extracted_value": 0.76,
+    "verified_value": 0.76,
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_38396486",
+    "field": "dataset",
+    "extracted_value": "the",
+    "verified_value": null,
+    "verification_status": "NOT_AVAILABLE"
+  },
+  {
+    "paper_id": "paper_38396486",
+    "field": "task",
+    "extracted_value": "survival_prediction",
+    "verified_value": "survival_prediction",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_38396486",
+    "field": "modalities",
+    "extracted_value": [],
+    "verified_value": [
+      "clinical",
+      "imaging",
+      "text"
+    ],
+    "verification_status": "INCORRECT"
+  },
+  {
+    "paper_id": "paper_38396486",
+    "field": "proposed_method",
+    "extracted_value": "laying",
+    "verified_value": null,
+    "verification_status": "NOT_AVAILABLE"
+  },
+  {
+    "paper_id": "paper_38396486",
+    "field": "baselines",
+    "extracted_value": [
+      "single-modal approaches",
+      "them",
+      "the Cox loss"
+    ],
+    "verified_value": null,
+    "verification_status": "NOT_AVAILABLE"
+  },
+  {
+    "paper_id": "paper_38396486",
+    "field": "fusion_strategy",
+    "extracted_value": "cross_attention",
+    "verified_value": "cross_attention",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_38396486",
+    "field": "metric",
+    "extracted_value": "C-INDEX",
+    "verified_value": "C-INDEX",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_38396486",
+    "field": "result",
+    "extracted_value": 0.796,
+    "verified_value": 0.796,
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_39074400",
+    "field": "dataset",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_39074400",
+    "field": "task",
+    "extracted_value": "diagnosis",
+    "verified_value": "diagnosis",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_39074400",
+    "field": "modalities",
+    "extracted_value": [],
+    "verified_value": [
+      "clinical",
+      "imaging"
+    ],
+    "verification_status": "INCORRECT"
+  },
+  {
+    "paper_id": "paper_39074400",
+    "field": "proposed_method",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_39074400",
+    "field": "baselines",
+    "extracted_value": [
+      "unimodal analysis",
+      "late fusion in",
+      "clinical and MRI-only"
+    ],
+    "verified_value": null,
+    "verification_status": "NOT_AVAILABLE"
+  },
+  {
+    "paper_id": "paper_39074400",
+    "field": "fusion_strategy",
+    "extracted_value": null,
+    "verified_value": "early_fusion",
+    "verification_status": "NOT_AVAILABLE"
+  },
+  {
+    "paper_id": "paper_39074400",
+    "field": "metric",
+    "extracted_value": "AUC",
+    "verified_value": "AUC",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_39074400",
+    "field": "result",
+    "extracted_value": 0.77,
+    "verified_value": 0.77,
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_40325104",
+    "field": "dataset",
+    "extracted_value": "option",
+    "verified_value": "TCGA",
+    "verification_status": "INCORRECT"
+  },
+  {
+    "paper_id": "paper_40325104",
+    "field": "task",
+    "extracted_value": "survival_prediction",
+    "verified_value": "survival_prediction",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_40325104",
+    "field": "modalities",
+    "extracted_value": [],
+    "verified_value": [
+      "clinical",
+      "omics"
+    ],
+    "verification_status": "INCORRECT"
+  },
+  {
+    "paper_id": "paper_40325104",
+    "field": "proposed_method",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_40325104",
+    "field": "baselines",
+    "extracted_value": [
+      "unimodal models across",
+      "unimodal models of"
+    ],
+    "verified_value": null,
+    "verification_status": "NOT_AVAILABLE"
+  },
+  {
+    "paper_id": "paper_40325104",
+    "field": "fusion_strategy",
+    "extracted_value": "late_fusion",
+    "verified_value": "late_fusion",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_40325104",
+    "field": "metric",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_40325104",
+    "field": "result",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_40449048",
+    "field": "dataset",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_40449048",
+    "field": "task",
+    "extracted_value": null,
+    "verified_value": "diagnosis",
+    "verification_status": "NOT_AVAILABLE"
+  },
+  {
+    "paper_id": "paper_40449048",
+    "field": "modalities",
+    "extracted_value": [],
+    "verified_value": [
+      "clinical",
+      "imaging"
+    ],
+    "verification_status": "INCORRECT"
+  },
+  {
+    "paper_id": "paper_40449048",
+    "field": "proposed_method",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_40449048",
+    "field": "baselines",
+    "extracted_value": [],
+    "verified_value": null,
+    "verification_status": "NOT_AVAILABLE"
+  },
+  {
+    "paper_id": "paper_40449048",
+    "field": "fusion_strategy",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_40449048",
+    "field": "metric",
+    "extracted_value": "Accuracy",
+    "verified_value": "Accuracy",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_40449048",
+    "field": "result",
+    "extracted_value": 0.99,
+    "verified_value": 0.99,
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_41131352",
+    "field": "dataset",
+    "extracted_value": "and",
+    "verified_value": "TCGA",
+    "verification_status": "INCORRECT"
+  },
+  {
+    "paper_id": "paper_41131352",
+    "field": "task",
+    "extracted_value": "survival_prediction",
+    "verified_value": "survival_prediction",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_41131352",
+    "field": "modalities",
+    "extracted_value": [],
+    "verified_value": [
+      "clinical",
+      "imaging",
+      "omics"
+    ],
+    "verification_status": "INCORRECT"
+  },
+  {
+    "paper_id": "paper_41131352",
+    "field": "proposed_method",
+    "extracted_value": "that",
+    "verified_value": "HONeYBEE",
+    "verification_status": "INCORRECT"
+  },
+  {
+    "paper_id": "paper_41131352",
+    "field": "baselines",
+    "extracted_value": [
+      "single-modality embeddings for",
+      "clinical embeddings alone"
+    ],
+    "verified_value": [
+      "PORPOISE"
+    ],
+    "verification_status": "INCORRECT"
+  },
+  {
+    "paper_id": "paper_41131352",
+    "field": "fusion_strategy",
+    "extracted_value": null,
+    "verified_value": "intermediate_fusion",
+    "verification_status": "NOT_AVAILABLE"
+  },
+  {
+    "paper_id": "paper_41131352",
+    "field": "metric",
+    "extracted_value": "Accuracy",
+    "verified_value": "Accuracy",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_41131352",
+    "field": "result",
+    "extracted_value": 0.9021,
+    "verified_value": 0.9021,
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_41353186",
+    "field": "dataset",
+    "extracted_value": "Although",
+    "verified_value": "TCGA",
+    "verification_status": "INCORRECT"
+  },
+  {
+    "paper_id": "paper_41353186",
+    "field": "task",
+    "extracted_value": "survival_prediction",
+    "verified_value": "survival_prediction",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_41353186",
+    "field": "modalities",
+    "extracted_value": [
+      "imaging",
+      "text"
+    ],
+    "verified_value": [
+      "clinical",
+      "imaging",
+      "text"
+    ],
+    "verification_status": "PARTIALLY_VERIFIED"
+  },
+  {
+    "paper_id": "paper_41353186",
+    "field": "proposed_method",
+    "extracted_value": "Supplementary",
+    "verified_value": "CALM",
+    "verification_status": "INCORRECT"
+  },
+  {
+    "paper_id": "paper_41353186",
+    "field": "baselines",
+    "extracted_value": [
+      "calm",
+      "calm image and",
+      "multi-modal integration",
+      "the uni-modality models",
+      "PORPOISE in LIHC"
+    ],
+    "verified_value": [
+      "PORPOISE"
+    ],
+    "verification_status": "INCORRECT"
+  },
+  {
+    "paper_id": "paper_41353186",
+    "field": "fusion_strategy",
+    "extracted_value": "cross_attention",
+    "verified_value": "cross_attention",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_41353186",
+    "field": "metric",
+    "extracted_value": "C-INDEX",
+    "verified_value": "C-INDEX",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "paper_id": "paper_41353186",
+    "field": "result",
+    "extracted_value": 0.606,
+    "verified_value": 0.606,
+    "verification_status": "VERIFIED"
+  }
+]

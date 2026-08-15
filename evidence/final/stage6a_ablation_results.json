@@ -1,0 +1,241 @@
+{
+  "timestamp": "2026-08-14T18:55:13.446074+00:00",
+  "target_task": "recurrence_classification",
+  "reference_candidate_roc_auc": 0.9751,
+  "ablations": {
+    "ablation_full_candidate": {
+      "description": "Full Candidate Pipeline (MICE + OneHot + SMOTE + Tuned XGBoost)",
+      "changed_component": "none",
+      "mean_roc_auc": 0.9751,
+      "std_roc_auc": 0.0114,
+      "mean_f1": 0.9611,
+      "mean_brier_score": 0.0175,
+      "per_seed": [
+        {
+          "seed": 42,
+          "test_metrics": {
+            "roc_auc": 0.9888,
+            "f1": 0.9855,
+            "accuracy": 0.9934,
+            "precision": 1.0,
+            "recall": 0.9714,
+            "brier_score": 0.0074,
+            "pr_auc": 0.9838
+          }
+        },
+        {
+          "seed": 100,
+          "test_metrics": {
+            "roc_auc": 0.9609,
+            "f1": 0.9412,
+            "accuracy": 0.9737,
+            "precision": 0.9697,
+            "recall": 0.9143,
+            "brier_score": 0.0256,
+            "pr_auc": 0.9538
+          }
+        },
+        {
+          "seed": 2026,
+          "test_metrics": {
+            "roc_auc": 0.9756,
+            "f1": 0.9565,
+            "accuracy": 0.9803,
+            "precision": 0.9706,
+            "recall": 0.9429,
+            "brier_score": 0.0194,
+            "pr_auc": 0.9662
+          }
+        }
+      ]
+    },
+    "ablation_no_smote": {
+      "description": "Ablation B: Candidate without SMOTE class balancing",
+      "changed_component": "imbalance_handling",
+      "mean_roc_auc": 0.9773,
+      "std_roc_auc": 0.0095,
+      "mean_f1": 0.9611,
+      "mean_brier_score": 0.0177,
+      "per_seed": [
+        {
+          "seed": 42,
+          "test_metrics": {
+            "roc_auc": 0.9897,
+            "f1": 0.9855,
+            "accuracy": 0.9934,
+            "precision": 1.0,
+            "recall": 0.9714,
+            "brier_score": 0.0083,
+            "pr_auc": 0.9844
+          }
+        },
+        {
+          "seed": 100,
+          "test_metrics": {
+            "roc_auc": 0.9665,
+            "f1": 0.9412,
+            "accuracy": 0.9737,
+            "precision": 0.9697,
+            "recall": 0.9143,
+            "brier_score": 0.0256,
+            "pr_auc": 0.9578
+          }
+        },
+        {
+          "seed": 2026,
+          "test_metrics": {
+            "roc_auc": 0.9756,
+            "f1": 0.9565,
+            "accuracy": 0.9803,
+            "precision": 0.9706,
+            "recall": 0.9429,
+            "brier_score": 0.0191,
+            "pr_auc": 0.9637
+          }
+        }
+      ]
+    },
+    "ablation_no_advanced_imputation": {
+      "description": "Ablation C: Candidate without MICE/Median (Simple Mean Imputer)",
+      "changed_component": "missing_value_handling",
+      "mean_roc_auc": 0.9767,
+      "std_roc_auc": 0.0098,
+      "mean_f1": 0.9611,
+      "mean_brier_score": 0.0174,
+      "per_seed": [
+        {
+          "seed": 42,
+          "test_metrics": {
+            "roc_auc": 0.9893,
+            "f1": 0.9855,
+            "accuracy": 0.9934,
+            "precision": 1.0,
+            "recall": 0.9714,
+            "brier_score": 0.0074,
+            "pr_auc": 0.9841
+          }
+        },
+        {
+          "seed": 100,
+          "test_metrics": {
+            "roc_auc": 0.9653,
+            "f1": 0.9412,
+            "accuracy": 0.9737,
+            "precision": 0.9697,
+            "recall": 0.9143,
+            "brier_score": 0.0255,
+            "pr_auc": 0.9558
+          }
+        },
+        {
+          "seed": 2026,
+          "test_metrics": {
+            "roc_auc": 0.9756,
+            "f1": 0.9565,
+            "accuracy": 0.9803,
+            "precision": 0.9706,
+            "recall": 0.9429,
+            "brier_score": 0.0194,
+            "pr_auc": 0.9662
+          }
+        }
+      ]
+    },
+    "ablation_ordinal_encoding": {
+      "description": "Ablation D: Candidate with Ordinal Encoding instead of OneHot",
+      "changed_component": "categorical_encoding",
+      "mean_roc_auc": 0.9784,
+      "std_roc_auc": 0.0111,
+      "mean_f1": 0.9611,
+      "mean_brier_score": 0.0177,
+      "per_seed": [
+        {
+          "seed": 42,
+          "test_metrics": {
+            "roc_auc": 0.9919,
+            "f1": 0.9855,
+            "accuracy": 0.9934,
+            "precision": 1.0,
+            "recall": 0.9714,
+            "brier_score": 0.0077,
+            "pr_auc": 0.9861
+          }
+        },
+        {
+          "seed": 100,
+          "test_metrics": {
+            "roc_auc": 0.9646,
+            "f1": 0.9412,
+            "accuracy": 0.9737,
+            "precision": 0.9697,
+            "recall": 0.9143,
+            "brier_score": 0.0257,
+            "pr_auc": 0.9572
+          }
+        },
+        {
+          "seed": 2026,
+          "test_metrics": {
+            "roc_auc": 0.9788,
+            "f1": 0.9565,
+            "accuracy": 0.9803,
+            "precision": 0.9706,
+            "recall": 0.9429,
+            "brier_score": 0.0197,
+            "pr_auc": 0.9681
+          }
+        }
+      ]
+    },
+    "ablation_default_xgboost": {
+      "description": "Ablation E: Default XGBoost without tuned hyperparameters",
+      "changed_component": "base_learner_configuration",
+      "mean_roc_auc": 0.9686,
+      "std_roc_auc": 0.0063,
+      "mean_f1": 0.9611,
+      "mean_brier_score": 0.0181,
+      "per_seed": [
+        {
+          "seed": 42,
+          "test_metrics": {
+            "roc_auc": 0.9773,
+            "f1": 0.9855,
+            "accuracy": 0.9934,
+            "precision": 1.0,
+            "recall": 0.9714,
+            "brier_score": 0.0081,
+            "pr_auc": 0.9792
+          }
+        },
+        {
+          "seed": 100,
+          "test_metrics": {
+            "roc_auc": 0.9658,
+            "f1": 0.9412,
+            "accuracy": 0.9737,
+            "precision": 0.9697,
+            "recall": 0.9143,
+            "brier_score": 0.0265,
+            "pr_auc": 0.9572
+          }
+        },
+        {
+          "seed": 2026,
+          "test_metrics": {
+            "roc_auc": 0.9626,
+            "f1": 0.9565,
+            "accuracy": 0.9803,
+            "precision": 0.9706,
+            "recall": 0.9429,
+            "brier_score": 0.0196,
+            "pr_auc": 0.9606
+          }
+        }
+      ]
+    }
+  },
+  "critical_scientific_insight": {
+    "finding": "Ablation without SMOTE (0.9773) and with Ordinal Encoding (0.9784) yielded slightly higher test ROC-AUC than the full candidate (0.9751) on this retrospective tabular cohort.",
+    "distinction": "Evidence-backed validity does NOT guarantee empirical performance optimality on a specific retrospective dataset."
+  }
+}

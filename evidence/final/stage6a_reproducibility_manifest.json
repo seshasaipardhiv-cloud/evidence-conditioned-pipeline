@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-08-14T18:55:13.447032+00:00",
+  "pipeline_hash": "6b6bcb1b217793230dba3467ea09fd94339c7497ccc85b0f8ed86c59f16686da",
+  "contract_hash": "6eb6b035c8f87bcf52d7d6107a5a4eafa6c6330ca9bf6c1ca837cdbd63910024",
+  "random_seeds": [
+    42,
+    100,
+    2026
+  ],
+  "dataset_cohort": {
+    "name": "HANCOCK Clinical Cohort",
+    "modality": "clinical_tabular",
+    "target_variable": "recurrence",
+    "task_type": "binary_classification",
+    "split_manifest_path": "data/metadata/hancock/data_split_manifest.json",
+    "split_ratios": {
+      "train": 0.65,
+      "validation": 0.15,
+      "test": 0.2
+    },
+    "random_seeds": [
+      42,
+      100,
+      2026
+    ],
+    "patient_overlap_policy": "STRICT_ZERO_OVERLAP"
+  },
+  "target_isolation_firewall": {
+    "excluded_outcome_fields": [
+      "recurrence",
+      "survival_status",
+      "survival_status_with_cause",
+      "days_to_recurrence",
+      "days_to_last_information",
+      "days_to_progress_1",
+      "days_to_progress_2",
+      "days_to_metastasis_1"
+    ],
+    "enforcement_rule": "Outcome and post-baseline censoring fields must never enter predictor matrix X."
+  },
+  "compute_budget_constraints": {},
+  "reproducibility_checklist": {
+    "seeds_equal_42_100_2026": "PASS",
+    "identical_patient_split_policy": "PASS",
+    "zero_patient_overlap_verified": "PASS",
+    "target_isolation_firewall_locked": "PASS",
+    "train_only_preprocessing_enforced": "PASS",
+    "smote_train_only_enforced": "PASS",
+    "test_isolation_verified": "PASS",
+    "contract_hash_verified": "PASS",
+    "pipeline_hash_verified": "PASS",
+    "compute_budget_satisfied": "PASS",
+    "execution_manifest_complete": "PASS"
+  },
+  "overall_status": "PASS"
+}

@@ -1,0 +1,89 @@
+{
+  "target_audit": {
+    "recurrence_explicit": true,
+    "classification_explicit": true,
+    "target_excluded": true,
+    "leakage_excluded": true,
+    "valid": true
+  },
+  "data_split_audit": {
+    "patient_level": true,
+    "overlap_zero": true,
+    "split_deterministic": true,
+    "no_preprocessing_fitted": true,
+    "valid": true
+  },
+  "implementation_audit": {
+    "components": [
+      {
+        "component": "missing_value_handling",
+        "category": "EXPLICITLY_CONFIGURED",
+        "execution_status": "EXECUTABLE"
+      },
+      {
+        "component": "categorical_encoding",
+        "category": "EXPLICITLY_CONFIGURED",
+        "execution_status": "EXECUTABLE"
+      },
+      {
+        "component": "base_learner",
+        "category": "EXPLICITLY_CONFIGURED",
+        "execution_status": "EXECUTABLE"
+      },
+      {
+        "component": "loss_function",
+        "category": "EXPLICITLY_CONFIGURED",
+        "execution_status": "EXECUTABLE"
+      },
+      {
+        "component": "imbalance_handling",
+        "category": "EXPLICITLY_CONFIGURED",
+        "execution_status": "EXECUTABLE"
+      },
+      {
+        "component": "modality_fusion",
+        "category": "EVIDENCE_BACKED",
+        "execution_status": "EXECUTABLE"
+      },
+      {
+        "component": "feature_representation",
+        "category": "UNSUPPORTED",
+        "execution_status": "BLOCKED"
+      },
+      {
+        "component": "ensembling",
+        "category": "EVIDENCE_BACKED",
+        "execution_status": "EXECUTABLE"
+      }
+    ]
+  },
+  "stage_3_1_audit": {
+    "valid": true
+  },
+  "preprocessing_audit": {
+    "fit_train_only": true,
+    "valid": true
+  },
+  "reproducibility_audit": {
+    "configured_seeds": [
+      42,
+      100,
+      2026
+    ],
+    "hashes": {
+      "experiment_config": "aa7e56f34de2fa242d16300fc1fab9b1020ecded766d98c13ccc99c17b117a8e",
+      "compute_budget": "027deab8f26e3052fcd7d861d25f526d5ede6b555320de137631e3fedaff4007",
+      "implementation_config": "9df6db57d5c57e26f691cff63b50b189328d0d0c93a088b3d5c02b4074e57c08",
+      "execution_gate": "5ccdec63124cce06f705b5c056a45ea76e75638095c2e63e5e78c69ba56f923b",
+      "mechanism_gate": "0a42480ee6e9d496c373e2064ef06b3e6e1a2984ed6d7831d8bc113cd0b22322",
+      "materialization_audit": "df64d08a1152e84867fa7340d6cece587a79c56f3f6604c90e9b87bdca0d3577",
+      "pretraining_readiness": "81e0a41a078648adfee00c58876744585e4c249abddf18050dfda1b0eb7d86ba",
+      "data_split_manifest": "93f256e293f5e4a14f952c584870b852cdca6023afc8c030ef76a3125dd436d3",
+      "feature_target_audit": "b3d01b4f092b1d8309041713abec295d45f29f01c23fccb1102a1eeed4de37ed",
+      "target_leakage_report": "4c71bc0b174ecd94c2ba89501ea18cdc8d013dde5ac3b7ddd3b6906d2cdb47c2",
+      "stage3_spec": "d509c45bab2a22482a70247167a969ea5e5ff57ed5b0a6874f49e9a9d240778f"
+    }
+  },
+  "final_gate_decision": "BLOCKED",
+  "training_allowed": false
+}

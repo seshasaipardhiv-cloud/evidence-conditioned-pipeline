@@ -1,0 +1,42 @@
+{
+  "stage": "2A",
+  "search_metadata": {
+    "search_query": "seed_papers_manual_curation",
+    "source": "PubMed / manual",
+    "retrieval_date": "2026-08-09T23:15:25.671203",
+    "filters": "multimodal_cancer",
+    "year_range": "2023-2025",
+    "domain": "multimodal_oncology",
+    "task": "survival_prediction, classification",
+    "modality": "clinical, imaging, text, omics",
+    "candidates_returned": 8,
+    "papers_selected": 8
+  },
+  "number_of_papers_in_seed_corpus": 8,
+  "number_of_papers_successfully_resolved": 8,
+  "papers_with_full_text": 0,
+  "papers_with_abstract_only": 6,
+  "papers_with_no_abstract": 2,
+  "duplicate_count": 0,
+  "failed_paper_retrievals": 0,
+  "papers_without_evidence": 2,
+  "candidate_claims_generated": 6,
+  "claims_rejected_by_validator": 0,
+  "evidence_claims_extracted": 6,
+  "claims_by_evidence_status": {
+    "direct_empirical": 4,
+    "qualitative": 2
+  },
+  "direct_empirical_claims": 4,
+  "qualitative_claims": 2,
+  "methodological_claims": 0,
+  "claims_by_source_scope": {
+    "abstract": 6
+  },
+  "negative_findings": 0,
+  "negative_evidence_coverage": "not_established",
+  "contradiction_candidates": 0,
+  "contradiction_coverage": "not_established",
+  "total_mechanisms_mapped": 4,
+  "unmapped_mechanisms": 2
+}

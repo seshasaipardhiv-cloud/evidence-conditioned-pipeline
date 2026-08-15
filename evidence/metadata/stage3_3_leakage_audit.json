@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-08-14T06:44:58.934714+00:00",
+  "target_variables_monitored": [
+    "recurrence",
+    "survival_status",
+    "survival_status_with_cause",
+    "days_to_recurrence",
+    "days_to_last_information",
+    "days_to_progress_1",
+    "days_to_progress_2",
+    "days_to_metastasis_1"
+  ],
+  "feature_set_isolated": true,
+  "leakage_firewall_status": "SECURE",
+  "target_in_predictors": false,
+  "rationale": "None of the outcome or censoring variables enter the feature matrix X."
+}

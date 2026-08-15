@@ -1,0 +1,67 @@
+[
+  {
+    "primitive": "base_learner",
+    "paper_id": "paper_40449048",
+    "experiment_id": null,
+    "term_matched": "\\bann\\b",
+    "classification": "INDIRECT_INSUFFICIENT",
+    "classification_rationale": "Keyword mention (\\bann\\b) without explicit experimental methodology for base_learner.",
+    "source_sentence": "Multimodal AI framework for lung cancer diagnosis: Integrating CNN and ANN models for imaging and clinical data analysis.\nLung cancer remains a leading cause of cancer-related mortality worldwide, emp",
+    "source_location": "abstract",
+    "provenance_complete": true,
+    "hancock_compatible": true,
+    "leakage_safe": true
+  },
+  {
+    "primitive": "base_learner",
+    "paper_id": "paper_41131352",
+    "experiment_id": "exp_c3aba3b5",
+    "term_matched": "\\brandom\\s+forest\\b",
+    "classification": "INDIRECT_INSUFFICIENT",
+    "classification_rationale": "Keyword mention (\\brandom\\s+forest\\b) without explicit experimental methodology for base_learner.",
+    "source_sentence": "HONeYBEE embeddings were evaluated for cancer type classification using Random Forest models trained on the full TCGA dataset with all five data modalities.",
+    "source_location": "unstructured",
+    "provenance_complete": true,
+    "hancock_compatible": true,
+    "leakage_safe": true
+  },
+  {
+    "primitive": "base_learner",
+    "paper_id": "paper_41968976",
+    "experiment_id": "exp_822a80ca",
+    "term_matched": "\\blogistic\\s+regression\\b",
+    "classification": "INDIRECT_INSUFFICIENT",
+    "classification_rationale": "Keyword mention (\\blogistic\\s+regression\\b) without explicit experimental methodology for base_learner.",
+    "source_sentence": "XGBoost outperformed all other models on the TCGA dataset, achieving an AUC of 0.694 (95% CI: 0.647\u20130.741) and ACC of 0.619 (95% CI: 0.561\u20130.678) (\nComparison of machine-learning algorithms for the cl",
+    "source_location": "results",
+    "provenance_complete": true,
+    "hancock_compatible": true,
+    "leakage_safe": true
+  },
+  {
+    "primitive": "base_learner",
+    "paper_id": "paper_41968976",
+    "experiment_id": "exp_822a80ca",
+    "term_matched": "\\blogistic\\s+regression\\b",
+    "classification": "INDIRECT_INSUFFICIENT",
+    "classification_rationale": "Keyword mention (\\blogistic\\s+regression\\b) without explicit experimental methodology for base_learner.",
+    "source_sentence": "XGBoost outperformed all other models on the TCGA dataset, achieving an AUC of 0.694 (95% CI: 0.647\u20130.741) and ACC of 0.619 (95% CI: 0.561\u20130.678) (\nComparison of machine-learning algorithms for the cl",
+    "source_location": "results",
+    "provenance_complete": true,
+    "hancock_compatible": true,
+    "leakage_safe": true
+  },
+  {
+    "primitive": "base_learner",
+    "paper_id": "paper_42389632",
+    "experiment_id": "exp_d1cd804b",
+    "term_matched": "\\blogistic\\s+regression\\b",
+    "classification": "INDIRECT_INSUFFICIENT",
+    "classification_rationale": "Keyword mention (\\blogistic\\s+regression\\b) without explicit experimental methodology for base_learner.",
+    "source_sentence": "The CNN\u2013LSTM model was trained using the Adam optimizer with a learning rate of 1\u2009\u00d7\u200910\u207b\nModel comparison\nWe compared the proposed CNN-LSTM model with seven typical machine learning models, including l",
+    "source_location": "unstructured",
+    "provenance_complete": true,
+    "hancock_compatible": true,
+    "leakage_safe": true
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-08-14T18:55:13.415908+00:00",
+  "documented_limitations": [
+    "Single retrospective cohort: Evaluated solely on the HANCOCK clinical tabular dataset.",
+    "Small random seed sample size: Evaluated across n=3 seeds [42, 100, 2026], which precludes formal statistical hypothesis testing.",
+    "Modest performance margin: Improvement over Default XGBoost is +0.0047 ROC-AUC (+0.48% relative).",
+    "Inconsistent win rate: Candidate won on 2 of 3 seeds but exhibited a lower score on seed 100 (-0.0034).",
+    "Ablation findings: Ablation without SMOTE (0.9773) and with Ordinal Encoding (0.9784) achieved slightly higher empirical ROC-AUC than the full evidence-conditioned candidate (0.9751), demonstrating that literature-backed validity does not guarantee empirical optimality on a specific retrospective dataset.",
+    "Absence of external validation: No multi-center or prospective external clinical validation was conducted."
+  ]
+}

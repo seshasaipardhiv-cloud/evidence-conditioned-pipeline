@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-08-14T18:55:35.721199+00:00",
+  "manuscript_title": "Evidence-Conditioned Machine Learning Pipeline Synthesis for Biomedical Risk Prediction",
+  "source_master_results": "evidence\\final\\stage6a_master_results.json",
+  "source_figure_manifest": "evidence\\final\\figures\\figure_manifest.json",
+  "manuscript_documents": {
+    "methodology": "methodology.md",
+    "experimental_setup": "experimental_setup.md",
+    "reproducibility": "reproducibility.md",
+    "limitations": "limitations.md",
+    "claim_boundary": "claim_boundary.md",
+    "figure_captions": "figure_captions.md",
+    "references": "references.md"
+  },
+  "document_hashes": {
+    "methodology.md": "b7a42208c9c24e1099efda441e7cf6613767e79c804eed88aed5c4b180c48f27",
+    "experimental_setup.md": "b166abc3dda377fa18f5303b9a2e8fc72f013a7fcc3bb7ae2a696fb2704cbab4",
+    "reproducibility.md": "6e39a26106bfab9e364887840b7cf957a2093e87f94e0d08f1335772bc6fa68e",
+    "limitations.md": "a7ee07cfd66c3fd52abe4991098c2c7472732e51d8a7a004f0c7ac0cf02315d5",
+    "claim_boundary.md": "5ce6cd727fc18a8ebc3c940b3e61a2c16066b86ffbd2658c245df5c7a4b19748",
+    "figure_captions.md": "4c9ebd2e724726f2edcc443c7135d85aa52da6f0307f2f1d0aaa347c6ccb5db2",
+    "references.md": "9e8364dc648de4305230ca2263a1454d7f2b4c64b8760d636c456aa0457b7429"
+  },
+  "authoritative_metrics": {
+    "candidate_roc_auc": 0.9751,
+    "candidate_roc_auc_std": 0.0114,
+    "candidate_pr_auc": 0.9679,
+    "candidate_f1": 0.9611,
+    "candidate_accuracy": 0.9825,
+    "candidate_brier_score": 0.0175,
+    "default_xgboost_roc_auc": 0.9704,
+    "margin_delta": 0.0047
+  },
+  "claim_status_summary": {
+    "supported_count": 5,
+    "partially_supported_count": 1,
+    "not_supported_count": 4
+  },
+  "immutability_verified": true
+}

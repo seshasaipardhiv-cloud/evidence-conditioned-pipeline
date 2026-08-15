@@ -1,0 +1,33 @@
+{
+  "seed_papers": 8,
+  "new_candidates": 22,
+  "new_selected": 22,
+  "final_corpus": 30,
+  "full_text_available": 25,
+  "abstract_only": 2,
+  "unavailable": 3,
+  "tasks": {
+    "classification": 1,
+    "survival_prediction": 9,
+    "diagnosis": 4
+  },
+  "modalities": {
+    "imaging": 5,
+    "text": 1,
+    "clinical": 3
+  },
+  "fusion": {
+    "late_fusion": 3,
+    "ensemble_fusion": 1,
+    "cross_attention": 3,
+    "early_fusion": 1
+  },
+  "evidence": {
+    "positive": 0,
+    "negative": 0,
+    "neutral": 0,
+    "ablation": 10
+  },
+  "duplicates": 0,
+  "rejected": 0
+}

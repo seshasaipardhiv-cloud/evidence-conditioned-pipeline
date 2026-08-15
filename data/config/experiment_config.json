@@ -1,0 +1,21 @@
+{
+  "target_variable": "recurrence",
+  "task_type": "classification",
+  "primary_metric": "roc_auc",
+  "secondary_metrics": [
+    "f1",
+    "accuracy",
+    "precision",
+    "recall"
+  ],
+  "test_size": 0.20,
+  "validation_size": 0.15,
+  "random_seeds": [
+    42,
+    100,
+    2026
+  ],
+  "patient_level_split": true,
+  "stratification_policy": "stratified",
+  "missing_target_policy": "exclude_from_supervised_analysis"
+}

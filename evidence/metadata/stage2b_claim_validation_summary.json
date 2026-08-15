@@ -1,0 +1,15 @@
+{
+  "total_fields_checked": 66,
+  "verified": 38,
+  "incorrect": 11,
+  "partially_verified": 1,
+  "not_supported": 0,
+  "not_available": 16,
+  "incorrect_modalities": 5,
+  "incorrect_datasets": 1,
+  "incorrect_tasks": 1,
+  "incorrect_methods": 0,
+  "incorrect_mechanisms": 1,
+  "incorrect_metrics": 0,
+  "incorrect_results": 0
+}

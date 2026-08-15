@@ -1,0 +1,84 @@
+{
+  "stage": "2B_v2",
+  "old_audit": {
+    "total_fields": 64,
+    "verified": 38,
+    "incorrect": 12,
+    "partially_verified": 1,
+    "not_available": 13
+  },
+  "new_audit": {
+    "total_fields": 64,
+    "new_verified": 31,
+    "new_incorrect": 18,
+    "new_partially_verified": 2,
+    "new_not_available": 13
+  },
+  "field_breakdown": {
+    "dataset": {
+      "VERIFIED": 2,
+      "INCORRECT": 5,
+      "NOT_AVAILABLE": 1,
+      "PARTIALLY_VERIFIED": 0
+    },
+    "task": {
+      "VERIFIED": 5,
+      "INCORRECT": 1,
+      "NOT_AVAILABLE": 2,
+      "PARTIALLY_VERIFIED": 0
+    },
+    "modalities": {
+      "VERIFIED": 0,
+      "INCORRECT": 6,
+      "NOT_AVAILABLE": 0,
+      "PARTIALLY_VERIFIED": 2
+    },
+    "proposed_method": {
+      "VERIFIED": 4,
+      "INCORRECT": 2,
+      "NOT_AVAILABLE": 2,
+      "PARTIALLY_VERIFIED": 0
+    },
+    "baselines": {
+      "VERIFIED": 0,
+      "INCORRECT": 2,
+      "NOT_AVAILABLE": 6,
+      "PARTIALLY_VERIFIED": 0
+    },
+    "fusion_strategy": {
+      "VERIFIED": 4,
+      "INCORRECT": 2,
+      "NOT_AVAILABLE": 2,
+      "PARTIALLY_VERIFIED": 0
+    },
+    "metric": {
+      "VERIFIED": 8,
+      "INCORRECT": 0,
+      "NOT_AVAILABLE": 0,
+      "PARTIALLY_VERIFIED": 0
+    },
+    "result": {
+      "VERIFIED": 8,
+      "INCORRECT": 0,
+      "NOT_AVAILABLE": 0,
+      "PARTIALLY_VERIFIED": 0
+    }
+  },
+  "incorrect_by_field": {
+    "dataset": 5,
+    "task": 1,
+    "modalities": 6,
+    "proposed_method": 2,
+    "baselines": 2,
+    "fusion_strategy": 2
+  },
+  "acceptance_criteria": {
+    "csPCa_not_PCA": true,
+    "HONeYBEE_is_method_not_dataset": true,
+    "CALM_is_method_not_baseline": true,
+    "HPV_is_classification_not_survival": true,
+    "all_existing_tests_pass": true,
+    "all_regression_tests_pass": true,
+    "field_provenance_on_all_accepted_fields": true
+  }
+}

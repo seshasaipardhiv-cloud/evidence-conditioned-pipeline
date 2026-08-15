@@ -1,0 +1,86 @@
+{
+  "timestamp": "2026-08-14T18:55:13.447032+00:00",
+  "claim_ledger": [
+    {
+      "claim_id": "CLAIM_1",
+      "claim": "The pipeline architecture is synthesized strictly from evidence-conditioned literature mechanisms and verified explicit configurations.",
+      "evidence": "Stage 2E-1, 2F-1, 3.6, and 4 verified literature provenance and explicit configuration gate without silent defaults.",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim_id": "CLAIM_2",
+      "claim": "All pipeline components maintain traceable, cryptographically verified provenance from PubMed/PMC literature citations or explicit project configuration.",
+      "evidence": "Complete hash ledger in stage3_6_provenance_ledger.json and stage4_rematerialized_pipeline.json.",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim_id": "CLAIM_3",
+      "claim": "The pipeline strictly avoids arbitrary ML library defaults and requires human-controlled explicit configuration when evidence is absent.",
+      "evidence": "Stage 2F-3, 2F-4, 3.4, and 3.5 gates blocked unresolved components until explicit project configuration was provided.",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim_id": "CLAIM_4",
+      "claim": "The experimental execution protocol is deterministic and strictly reproducible under the tested protocol.",
+      "evidence": "All 3 random seeds produced deterministic patient splits with zero overlap and verified contract hashes.",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim_id": "CLAIM_5",
+      "claim": "The candidate pipeline achieves high internal discriminative performance on the retrospective HANCOCK clinical cohort.",
+      "evidence": "Mean test ROC-AUC of 0.9751 +/- 0.0114 across seeds 42, 100, and 2026.",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim_id": "CLAIM_6",
+      "claim": "The candidate pipeline unconditionally outperforms all baseline models across all seeds.",
+      "evidence": "Candidate achieves higher mean ROC-AUC (0.9751 vs 0.9704 default XGB), but lost to Default XGBoost on seed 100 (0.9609 vs 0.9643).",
+      "status": "PARTIALLY_SUPPORTED"
+    },
+    {
+      "claim_id": "CLAIM_7",
+      "claim": "The candidate pipeline consistently dominates default XGBoost across every test fold.",
+      "evidence": "Per-seed deltas: Seed 42 (+0.0105), Seed 100 (-0.0034), Seed 2026 (+0.0071). Candidate lost on Seed 100.",
+      "status": "NOT_SUPPORTED"
+    },
+    {
+      "claim_id": "CLAIM_8",
+      "claim": "The observed predictive performance improvement over default XGBoost is statistically significant.",
+      "evidence": "Sample size n=3 seeds is insufficient for inferential claims; hypothesis testing was not performed; delta is modest (+0.0047).",
+      "status": "NOT_SUPPORTED"
+    },
+    {
+      "claim_id": "CLAIM_9",
+      "claim": "The synthesized pipeline demonstrates generalizable clinical efficacy.",
+      "evidence": "Evaluation is purely single-center retrospective internal testing. External validation has not been performed.",
+      "status": "NOT_SUPPORTED"
+    },
+    {
+      "claim_id": "CLAIM_10",
+      "claim": "The pipeline is clinically deployable for recurrence risk assessment.",
+      "evidence": "Clinical safety, prospective trials, multi-center calibration, and decision-curve analysis remain unestablished.",
+      "status": "NOT_SUPPORTED"
+    }
+  ],
+  "claim_counts": {
+    "supported": 5,
+    "partially_supported": 1,
+    "not_supported": 4
+  },
+  "generalization_boundaries": {
+    "internal_validation": "SUPPORTED",
+    "external_validation": "NOT_ESTABLISHED",
+    "prospective_validation": "NOT_ESTABLISHED",
+    "clinical_utility": "NOT_ESTABLISHED",
+    "multi_institutional_generalization": "NOT_ESTABLISHED"
+  },
+  "documented_limitations": [
+    "Single retrospective cohort: Evaluated solely on the HANCOCK clinical tabular dataset.",
+    "Small random seed sample size: Evaluated across n=3 seeds [42, 100, 2026], which precludes formal statistical hypothesis testing.",
+    "Modest performance margin: Improvement over Default XGBoost is +0.0047 ROC-AUC (+0.48% relative).",
+    "Inconsistent win rate: Candidate won on 2 of 3 seeds but exhibited a lower score on seed 100 (-0.0034).",
+    "Ablation findings: Ablation without SMOTE (0.9773) and with Ordinal Encoding (0.9784) achieved slightly higher empirical ROC-AUC than the full evidence-conditioned candidate (0.9751), demonstrating that literature-backed validity does not guarantee empirical optimality on a specific retrospective dataset.",
+    "Absence of external validation: No multi-center or prospective external clinical validation was conducted."
+  ],
+  "strongest_defensible_research_claim": "Evidence-conditioned pipeline synthesis provides a rigorous, traceable, and reproducible methodology for constructing valid machine learning pipelines from biomedical literature without unauthorized defaults or target leakage, yielding strong internal discrimination and calibration."
+}

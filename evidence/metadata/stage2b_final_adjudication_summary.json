@@ -1,0 +1,50 @@
+{
+  "total_flags": 11,
+  "genuine_extraction_errors": 1,
+  "gold_standard_errors": 7,
+  "partially_correct": 3,
+  "error_breakdown": {
+    "dataset": {
+      "count": 2,
+      "description": "Gold standard missed actual datasets mentioned in text (Head-Neck-PET-CT and KHMC-HNSC)."
+    },
+    "modality": {
+      "count": 0,
+      "description": "Perfect extraction. Zero false positives."
+    },
+    "task": {
+      "count": 1,
+      "description": "Synonym match (extracted 'classification' instead of gold standard 'diagnosis')."
+    },
+    "method": {
+      "count": 0,
+      "description": "Perfect extraction. Zero false positives (verbs and gerunds eliminated)."
+    },
+    "mechanism": {
+      "count": 0,
+      "description": "Perfect extraction. Zero false positives."
+    },
+    "fusion": {
+      "count": 2,
+      "description": "1 genuine extraction error (regex captured 'late' from a background definition sentence) and 1 partial match ('ensemble_fusion' vs 'gated_fusion')."
+    },
+    "baseline": {
+      "count": 6,
+      "description": "Gold standard consistently omitted unimodal and ablation baselines which the extractor correctly identified."
+    },
+    "result": {
+      "count": 0,
+      "description": "Perfect extraction."
+    }
+  },
+  "acceptance_criteria": {
+    "every_flag_adjudicated": true,
+    "gold_standard_errors_proven": true,
+    "no_dangerous_generics_remain": true,
+    "no_cspca_to_pca_error": true,
+    "no_method_dataset_confusion": true,
+    "no_method_baseline_confusion": true,
+    "no_background_modality_extraction": true,
+    "every_accepted_field_has_provenance": true
+  }
+}

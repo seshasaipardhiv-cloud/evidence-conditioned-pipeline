@@ -1,0 +1,497 @@
+[
+  {
+    "paper_id": "paper_10.1038_s42256-023-00633-5",
+    "pmid": null,
+    "doi": "10.1038/s42256-023-00633-5",
+    "title": "Multimodal data fusion for cancer biomarker discovery with deep learning",
+    "publication_year": 2024,
+    "classification": "NOT_REPRESENTATION_EVIDENCE",
+    "classification_rationale": "Clinical variables are either absent, descriptive only, or focused exclusively on imaging/molecular modalities.",
+    "modalities_present": [
+      "text"
+    ],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_10.3390_bioengineering11010013",
+    "pmid": null,
+    "doi": "10.3390/bioengineering11010013",
+    "title": "",
+    "publication_year": 2024,
+    "classification": "NOT_REPRESENTATION_EVIDENCE",
+    "classification_rationale": "Clinical variables are either absent, descriptive only, or focused exclusively on imaging/molecular modalities.",
+    "modalities_present": [
+      "imaging",
+      "text"
+    ],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_38396486",
+    "pmid": "38396486",
+    "doi": "10.3390/diagnostics14040448",
+    "title": "An Innovative and Efficient Diagnostic Prediction Flow for Head and Neck Cancer: A Deep Learning Approach for Multi-Modal Survival Analysis Prediction Based on Text and Multi-Center PET/CT Images.",
+    "publication_year": 2024,
+    "classification": "INDIRECT_BUT_INSUFFICIENT",
+    "classification_rationale": "Paper mentions clinical data or model context, but does not provide explicit standalone tabular representation evidence.",
+    "modalities_present": [
+      "clinical",
+      "text"
+    ],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_39074400",
+    "pmid": "39074400",
+    "doi": "10.1097/RLI.0000000000001102",
+    "title": "Multimodal AI Combining Clinical and Imaging Inputs Improves Prostate Cancer Detection.",
+    "publication_year": 2024,
+    "classification": "INDIRECT_BUT_INSUFFICIENT",
+    "classification_rationale": "Paper mentions clinical data or model context, but does not provide explicit standalone tabular representation evidence.",
+    "modalities_present": [
+      "clinical",
+      "imaging"
+    ],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_40325104",
+    "pmid": "40325104",
+    "doi": "10.1038/s41698-025-00917-6",
+    "title": "A machine learning approach for multimodal data fusion for survival prediction in cancer patients.",
+    "publication_year": 2024,
+    "classification": "INDIRECT_BUT_INSUFFICIENT",
+    "classification_rationale": "Paper mentions clinical data or model context, but does not provide explicit standalone tabular representation evidence.",
+    "modalities_present": [
+      "clinical",
+      "genomic"
+    ],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_40449048",
+    "pmid": "40449048",
+    "doi": "10.1016/j.compbiomed.2025.110488",
+    "title": "Multimodal AI framework for lung cancer diagnosis: Integrating CNN and ANN models for imaging and clinical data analysis.",
+    "publication_year": 2024,
+    "classification": "EXPLICIT_SUPPORTED",
+    "classification_rationale": "Paper explicitly describes structured/tabular clinical variables being used as model input/features.",
+    "modalities_present": [
+      "clinical",
+      "imaging"
+    ],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": false,
+    "source_sentences": [
+      "In parallel, an ANN trained on clinical data from 999 patients-spanning 24 key features such as demographic, symptomatic, and genetic factors-achieves 99\u00a0% accuracy in predicting cancer severity (low, medium, high)."
+    ]
+  },
+  {
+    "paper_id": "paper_41131352",
+    "pmid": "41131352",
+    "doi": "10.1038/s41746-025-02003-4",
+    "title": "HONeYBEE: enabling scalable multimodal AI in oncology through foundation model-driven embeddings.",
+    "publication_year": 2024,
+    "classification": "INDIRECT_BUT_INSUFFICIENT",
+    "classification_rationale": "Paper mentions clinical data or model context, but does not provide explicit standalone tabular representation evidence.",
+    "modalities_present": [
+      "clinical",
+      "imaging",
+      "text",
+      "pathology"
+    ],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_41353186",
+    "pmid": "41353186",
+    "doi": "10.1186/s13040-025-00495-0",
+    "title": "Clinically aligned multi-modal image-text model for pan-cancer prognosis prediction.",
+    "publication_year": 2024,
+    "classification": "INDIRECT_BUT_INSUFFICIENT",
+    "classification_rationale": "Paper mentions clinical data or model context, but does not provide explicit standalone tabular representation evidence.",
+    "modalities_present": [
+      "clinical",
+      "text",
+      "pathology"
+    ],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_41968976",
+    "pmid": "41968976",
+    "doi": "10.20892/j.issn.2095-3941.2025.0771",
+    "title": "Multimodal artificial intelligence predicts PIK3CA mutation in breast cancer from digital pathology and clinical data: a multicenter study.",
+    "publication_year": 2026,
+    "classification": "INDIRECT_BUT_INSUFFICIENT",
+    "classification_rationale": "Paper mentions clinical data or model context, but does not provide explicit standalone tabular representation evidence.",
+    "modalities_present": [
+      "clinical",
+      "pathology"
+    ],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_41942785",
+    "pmid": "41942785",
+    "doi": "10.1007/s00109-026-02669-7",
+    "title": "Integrative multimodal transcriptomics identifies a cancer-associated fibroblast membrane signature for predicting prognosis and therapeutic response in pancreatic ductal adenocarcinoma.",
+    "publication_year": 2026,
+    "classification": "INDIRECT_BUT_INSUFFICIENT",
+    "classification_rationale": "Paper mentions clinical data or model context, but does not provide explicit standalone tabular representation evidence.",
+    "modalities_present": [
+      "clinical",
+      "text"
+    ],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_42487970",
+    "pmid": "42487970",
+    "doi": "10.3389/fmed.2026.1842344",
+    "title": "A prediction model for platinum-resistant recurrence of ovarian cancer was established using multimodal artificial intelligence machine learning methods.",
+    "publication_year": 2026,
+    "classification": "EXPLICIT_SUPPORTED",
+    "classification_rationale": "Paper explicitly describes structured/tabular clinical variables being used as model input/features.",
+    "modalities_present": [
+      "clinical"
+    ],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": [
+      "Structured data, such as the patient\u2019s age and stage, can be directly used as input for the model to ensure that all information is in a unified unit and standard.",
+      "Structured data, such as the patient\u2019s age and stage, can be directly used as input for the model to ensure that all information is in a unified unit and standard."
+    ]
+  },
+  {
+    "paper_id": "paper_42510039",
+    "pmid": "42510039",
+    "doi": "10.3390/diagnostics16142175",
+    "title": "Recent Advances in Multimodal Assessment Scoring Systems for Prostate Cancer: An Integrated Pathological and Imaging Perspective.",
+    "publication_year": 2026,
+    "classification": "INDIRECT_BUT_INSUFFICIENT",
+    "classification_rationale": "Paper mentions clinical data or model context, but does not provide explicit standalone tabular representation evidence.",
+    "modalities_present": [
+      "clinical",
+      "imaging"
+    ],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_42467849",
+    "pmid": "42467849",
+    "doi": "10.1158/2767-9764.CRC-26-0362",
+    "title": "Development and Validation of a Multimodal-Multitask Deep Learning Approach for Estimating Late Distant Recurrence Risk in HR-Positive Early Breast Cancer.",
+    "publication_year": 2026,
+    "classification": "INDIRECT_BUT_INSUFFICIENT",
+    "classification_rationale": "Paper mentions clinical data or model context, but does not provide explicit standalone tabular representation evidence.",
+    "modalities_present": [
+      "clinical"
+    ],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_42523677",
+    "pmid": "42523677",
+    "doi": "10.3389/fendo.2026.1800918",
+    "title": "The role of artificial intelligence in thyroid cytology of indeterminate nodules: from digital cytology to multimodal precision triage.",
+    "publication_year": 2026,
+    "classification": "INDIRECT_BUT_INSUFFICIENT",
+    "classification_rationale": "Paper mentions clinical data or model context, but does not provide explicit standalone tabular representation evidence.",
+    "modalities_present": [
+      "clinical",
+      "imaging"
+    ],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_42141332",
+    "pmid": "42141332",
+    "doi": "10.1186/s13244-026-02311-7",
+    "title": "MRI- and report-based multimodal model with SHAP-based explanation for preoperative prediction of deep stromal invasion in early-stage cervical cancer.",
+    "publication_year": 2026,
+    "classification": "INDIRECT_BUT_INSUFFICIENT",
+    "classification_rationale": "Paper mentions clinical data or model context, but does not provide explicit standalone tabular representation evidence.",
+    "modalities_present": [
+      "clinical",
+      "text"
+    ],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_41647696",
+    "pmid": "41647696",
+    "doi": "10.1016/j.esmorw.2025.100151",
+    "title": "Multimodal identification of a rare head and neck cancer patient cohort in the clinical data warehouse of Greater Paris Teaching Hospital.",
+    "publication_year": 2025,
+    "classification": "INDIRECT_BUT_INSUFFICIENT",
+    "classification_rationale": "Paper mentions clinical data or model context, but does not provide explicit standalone tabular representation evidence.",
+    "modalities_present": [
+      "clinical"
+    ],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_42400003",
+    "pmid": "42400003",
+    "doi": "10.1186/s13073-026-01706-x",
+    "title": "Multi-modal data integration reveals functionally credible predictive biomarkers in ovarian cancer.",
+    "publication_year": 2026,
+    "classification": "NOT_REPRESENTATION_EVIDENCE",
+    "classification_rationale": "Clinical variables are either absent, descriptive only, or focused exclusively on imaging/molecular modalities.",
+    "modalities_present": [],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": false,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_42564290",
+    "pmid": "42564290",
+    "doi": "10.3389/fimmu.2026.1866011",
+    "title": "Artificial intelligence driven exposome and multi omics integration for biomarker discovery in liver cancer: a literature review.",
+    "publication_year": 2026,
+    "classification": "INDIRECT_BUT_INSUFFICIENT",
+    "classification_rationale": "Paper mentions clinical data or model context, but does not provide explicit standalone tabular representation evidence.",
+    "modalities_present": [
+      "clinical"
+    ],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_42125301",
+    "pmid": "42125301",
+    "doi": "10.1108/atsip-06-2025-0051",
+    "title": "Individualized Treatment Effect Inference of Head and Neck Cancer with Multimodal Data.",
+    "publication_year": 2026,
+    "classification": "INDIRECT_BUT_INSUFFICIENT",
+    "classification_rationale": "Paper mentions clinical data or model context, but does not provide explicit standalone tabular representation evidence.",
+    "modalities_present": [
+      "clinical"
+    ],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_40770286",
+    "pmid": "40770286",
+    "doi": "10.1186/s12876-025-04119-z",
+    "title": "The development of a multimodal prediction model based on CT and MRI for the prognosis of pancreatic cancer.",
+    "publication_year": 2025,
+    "classification": "INDIRECT_BUT_INSUFFICIENT",
+    "classification_rationale": "Paper mentions clinical data or model context, but does not provide explicit standalone tabular representation evidence.",
+    "modalities_present": [
+      "clinical",
+      "imaging"
+    ],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": [
+      "Pre-treatment contrast-enhanced computed tomography (CT), magnetic resonance imaging (MRI) images, and clinical features were collected.",
+      "Pre-treatment contrast-enhanced computed tomography (CT), magnetic resonance imaging (MRI) images, and clinical features were collected."
+    ]
+  },
+  {
+    "paper_id": "paper_42558280",
+    "pmid": "42558280",
+    "doi": "10.3389/fonc.2026.1906810",
+    "title": "Artificial intelligence in the early diagnosis of prostate cancer: from multimodal imaging to liquid biopsy.",
+    "publication_year": 2026,
+    "classification": "INDIRECT_BUT_INSUFFICIENT",
+    "classification_rationale": "Paper mentions clinical data or model context, but does not provide explicit standalone tabular representation evidence.",
+    "modalities_present": [
+      "clinical",
+      "imaging"
+    ],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_42389632",
+    "pmid": "42389632",
+    "doi": "10.3389/fcvm.2026.1834641",
+    "title": "Multimodal fusion of EHR and ECG based on deep learning for predicting new-onset coronary heart disease in cancer patients.",
+    "publication_year": 2026,
+    "classification": "INDIRECT_BUT_INSUFFICIENT",
+    "classification_rationale": "Paper mentions clinical data or model context, but does not provide explicit standalone tabular representation evidence.",
+    "modalities_present": [
+      "clinical"
+    ],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_42332139",
+    "pmid": "42332139",
+    "doi": "10.1038/s41746-026-02783-3",
+    "title": "Handling missing modalities in multimodal survival prediction for non-small cell lung cancer.",
+    "publication_year": 2026,
+    "classification": "NOT_REPRESENTATION_EVIDENCE",
+    "classification_rationale": "Clinical variables are either absent, descriptive only, or focused exclusively on imaging/molecular modalities.",
+    "modalities_present": [],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": false,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_41815162",
+    "pmid": "41815162",
+    "doi": "10.21037/tcr-2025-1832",
+    "title": "A multimodal fusion model for bone tumor benign and malignant diagnosis: development and validation with clinical text and radiographs.",
+    "publication_year": 2026,
+    "classification": "INDIRECT_BUT_INSUFFICIENT",
+    "classification_rationale": "Paper mentions clinical data or model context, but does not provide explicit standalone tabular representation evidence.",
+    "modalities_present": [
+      "clinical",
+      "text"
+    ],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_42374268",
+    "pmid": "42374268",
+    "doi": "10.1186/s12880-026-02526-6",
+    "title": "Multimodal deep learning for papillary thyroid carcinoma diagnosis using ultrasound and cytology.",
+    "publication_year": 2026,
+    "classification": "NOT_REPRESENTATION_EVIDENCE",
+    "classification_rationale": "Clinical variables are either absent, descriptive only, or focused exclusively on imaging/molecular modalities.",
+    "modalities_present": [],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": false,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_41645153",
+    "pmid": "41645153",
+    "doi": "10.1186/s12880-026-02179-5",
+    "title": "Fusion of deep learning and radiomics with dynamic spatiotemporal modeling for non-small cell lung cancer recurrence risk assessment after microwave ablation.",
+    "publication_year": 2026,
+    "classification": "NOT_REPRESENTATION_EVIDENCE",
+    "classification_rationale": "Clinical variables are either absent, descriptive only, or focused exclusively on imaging/molecular modalities.",
+    "modalities_present": [
+      "imaging"
+    ],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_41102633",
+    "pmid": "41102633",
+    "doi": "10.1186/s12859-025-06227-9",
+    "title": "Generalized probabilistic canonical correlation analysis for multi-modal data integration with full or partial observations.",
+    "publication_year": 2025,
+    "classification": "NOT_REPRESENTATION_EVIDENCE",
+    "classification_rationale": "Clinical variables are either absent, descriptive only, or focused exclusively on imaging/molecular modalities.",
+    "modalities_present": [],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_40657529",
+    "pmid": "40657529",
+    "doi": "10.1109/JTEHM.2025.3562724",
+    "title": "Survival Prediction of Esophageal Cancer Using 3D CT Imaging: A Context-Aware Approach With Non-Local Feature Aggregation and Graph-Based Spatial Interaction.",
+    "publication_year": 2025,
+    "classification": "NOT_REPRESENTATION_EVIDENCE",
+    "classification_rationale": "Clinical variables are either absent, descriptive only, or focused exclusively on imaging/molecular modalities.",
+    "modalities_present": [
+      "imaging",
+      "text"
+    ],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_42569686",
+    "pmid": "42569686",
+    "doi": "10.1016/j.bas.2026.106168",
+    "title": "Does the surgical route matter in cerebellar mutism syndrome? Comparing transvermian and telovelar approaches for pediatric posterior fossa tumors.",
+    "publication_year": 2026,
+    "classification": "NOT_REPRESENTATION_EVIDENCE",
+    "classification_rationale": "Clinical variables are either absent, descriptive only, or focused exclusively on imaging/molecular modalities.",
+    "modalities_present": [],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": []
+  },
+  {
+    "paper_id": "paper_42571026",
+    "pmid": "42571026",
+    "doi": "10.1186/s13018-026-07100-y",
+    "title": "Severe medial tibial plateau fractures: feasibility and functional and radiographic results of an extended approach with medial femoral epicondyle osteotomy.",
+    "publication_year": 2026,
+    "classification": "NOT_REPRESENTATION_EVIDENCE",
+    "classification_rationale": "Clinical variables are either absent, descriptive only, or focused exclusively on imaging/molecular modalities.",
+    "modalities_present": [],
+    "hancock_compatible": true,
+    "leakage_safe": true,
+    "provenance_complete": true,
+    "source_sentences": []
+  }
+]

@@ -1,0 +1,1956 @@
+{
+  "nodes": [
+    {
+      "node_id": "paper_10.1038_s42256-023-00633-5",
+      "node_type": "Paper",
+      "properties": {
+        "title": "Multimodal data fusion for cancer biomarker discovery with deep learning",
+        "doi": "10.1038/s42256-023-00633-5",
+        "pmid": null,
+        "year": 2024,
+        "abstract_available": false,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "paper_10.3390_bioengineering11010013",
+      "node_type": "Paper",
+      "properties": {
+        "title": "",
+        "doi": "10.3390/bioengineering11010013",
+        "pmid": null,
+        "year": 2024,
+        "abstract_available": false,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "paper_38396486",
+      "node_type": "Paper",
+      "properties": {
+        "title": "An Innovative and Efficient Diagnostic Prediction Flow for Head and Neck Cancer: A Deep Learning Approach for Multi-Modal Survival Analysis Prediction Based on Text and Multi-Center PET/CT Images.",
+        "doi": "10.3390/diagnostics14040448",
+        "pmid": "38396486",
+        "year": 2024,
+        "abstract_available": true,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "paper_39074400",
+      "node_type": "Paper",
+      "properties": {
+        "title": "Multimodal AI Combining Clinical and Imaging Inputs Improves Prostate Cancer Detection.",
+        "doi": "10.1097/RLI.0000000000001102",
+        "pmid": "39074400",
+        "year": 2024,
+        "abstract_available": true,
+        "full_text_available": false,
+        "full_text_access_status": "abstract_only"
+      }
+    },
+    {
+      "node_id": "paper_40325104",
+      "node_type": "Paper",
+      "properties": {
+        "title": "A machine learning approach for multimodal data fusion for survival prediction in cancer patients.",
+        "doi": "10.1038/s41698-025-00917-6",
+        "pmid": "40325104",
+        "year": 2024,
+        "abstract_available": true,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "paper_40449048",
+      "node_type": "Paper",
+      "properties": {
+        "title": "Multimodal AI framework for lung cancer diagnosis: Integrating CNN and ANN models for imaging and clinical data analysis.",
+        "doi": "10.1016/j.compbiomed.2025.110488",
+        "pmid": "40449048",
+        "year": 2024,
+        "abstract_available": true,
+        "full_text_available": false,
+        "full_text_access_status": "abstract_only"
+      }
+    },
+    {
+      "node_id": "paper_41131352",
+      "node_type": "Paper",
+      "properties": {
+        "title": "HONeYBEE: enabling scalable multimodal AI in oncology through foundation model-driven embeddings.",
+        "doi": "10.1038/s41746-025-02003-4",
+        "pmid": "41131352",
+        "year": 2024,
+        "abstract_available": true,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "paper_41353186",
+      "node_type": "Paper",
+      "properties": {
+        "title": "Clinically aligned multi-modal image-text model for pan-cancer prognosis prediction.",
+        "doi": "10.1186/s13040-025-00495-0",
+        "pmid": "41353186",
+        "year": 2024,
+        "abstract_available": true,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "paper_41968976",
+      "node_type": "Paper",
+      "properties": {
+        "title": "Multimodal artificial intelligence predicts PIK3CA mutation in breast cancer from digital pathology and clinical data: a multicenter study.",
+        "doi": "10.20892/j.issn.2095-3941.2025.0771",
+        "pmid": "41968976",
+        "year": 2026,
+        "abstract_available": false,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "paper_41942785",
+      "node_type": "Paper",
+      "properties": {
+        "title": "Integrative multimodal transcriptomics identifies a cancer-associated fibroblast membrane signature for predicting prognosis and therapeutic response in pancreatic ductal adenocarcinoma.",
+        "doi": "10.1007/s00109-026-02669-7",
+        "pmid": "41942785",
+        "year": 2026,
+        "abstract_available": false,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "paper_42487970",
+      "node_type": "Paper",
+      "properties": {
+        "title": "A prediction model for platinum-resistant recurrence of ovarian cancer was established using multimodal artificial intelligence machine learning methods.",
+        "doi": "10.3389/fmed.2026.1842344",
+        "pmid": "42487970",
+        "year": 2026,
+        "abstract_available": false,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "paper_42510039",
+      "node_type": "Paper",
+      "properties": {
+        "title": "Recent Advances in Multimodal Assessment Scoring Systems for Prostate Cancer: An Integrated Pathological and Imaging Perspective.",
+        "doi": "10.3390/diagnostics16142175",
+        "pmid": "42510039",
+        "year": 2026,
+        "abstract_available": false,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "paper_42467849",
+      "node_type": "Paper",
+      "properties": {
+        "title": "Development and Validation of a Multimodal-Multitask Deep Learning Approach for Estimating Late Distant Recurrence Risk in HR-Positive Early Breast Cancer.",
+        "doi": "10.1158/2767-9764.CRC-26-0362",
+        "pmid": "42467849",
+        "year": 2026,
+        "abstract_available": false,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "paper_42523677",
+      "node_type": "Paper",
+      "properties": {
+        "title": "The role of artificial intelligence in thyroid cytology of indeterminate nodules: from digital cytology to multimodal precision triage.",
+        "doi": "10.3389/fendo.2026.1800918",
+        "pmid": "42523677",
+        "year": 2026,
+        "abstract_available": false,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "paper_42141332",
+      "node_type": "Paper",
+      "properties": {
+        "title": "MRI- and report-based multimodal model with SHAP-based explanation for preoperative prediction of deep stromal invasion in early-stage cervical cancer.",
+        "doi": "10.1186/s13244-026-02311-7",
+        "pmid": "42141332",
+        "year": 2026,
+        "abstract_available": false,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "paper_41647696",
+      "node_type": "Paper",
+      "properties": {
+        "title": "Multimodal identification of a rare head and neck cancer patient cohort in the clinical data warehouse of Greater Paris Teaching Hospital.",
+        "doi": "10.1016/j.esmorw.2025.100151",
+        "pmid": "41647696",
+        "year": 2025,
+        "abstract_available": false,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "paper_42400003",
+      "node_type": "Paper",
+      "properties": {
+        "title": "Multi-modal data integration reveals functionally credible predictive biomarkers in ovarian cancer.",
+        "doi": "10.1186/s13073-026-01706-x",
+        "pmid": "42400003",
+        "year": 2026,
+        "abstract_available": false,
+        "full_text_available": false,
+        "full_text_access_status": "not_found"
+      }
+    },
+    {
+      "node_id": "paper_42564290",
+      "node_type": "Paper",
+      "properties": {
+        "title": "Artificial intelligence driven exposome and multi omics integration for biomarker discovery in liver cancer: a literature review.",
+        "doi": "10.3389/fimmu.2026.1866011",
+        "pmid": "42564290",
+        "year": 2026,
+        "abstract_available": false,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "paper_42125301",
+      "node_type": "Paper",
+      "properties": {
+        "title": "Individualized Treatment Effect Inference of Head and Neck Cancer with Multimodal Data.",
+        "doi": "10.1108/atsip-06-2025-0051",
+        "pmid": "42125301",
+        "year": 2026,
+        "abstract_available": false,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "paper_40770286",
+      "node_type": "Paper",
+      "properties": {
+        "title": "The development of a multimodal prediction model based on CT and MRI for the prognosis of pancreatic cancer.",
+        "doi": "10.1186/s12876-025-04119-z",
+        "pmid": "40770286",
+        "year": 2025,
+        "abstract_available": false,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "paper_42558280",
+      "node_type": "Paper",
+      "properties": {
+        "title": "Artificial intelligence in the early diagnosis of prostate cancer: from multimodal imaging to liquid biopsy.",
+        "doi": "10.3389/fonc.2026.1906810",
+        "pmid": "42558280",
+        "year": 2026,
+        "abstract_available": false,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "paper_42389632",
+      "node_type": "Paper",
+      "properties": {
+        "title": "Multimodal fusion of EHR and ECG based on deep learning for predicting new-onset coronary heart disease in cancer patients.",
+        "doi": "10.3389/fcvm.2026.1834641",
+        "pmid": "42389632",
+        "year": 2026,
+        "abstract_available": false,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "paper_42332139",
+      "node_type": "Paper",
+      "properties": {
+        "title": "Handling missing modalities in multimodal survival prediction for non-small cell lung cancer.",
+        "doi": "10.1038/s41746-026-02783-3",
+        "pmid": "42332139",
+        "year": 2026,
+        "abstract_available": false,
+        "full_text_available": false,
+        "full_text_access_status": "not_found"
+      }
+    },
+    {
+      "node_id": "paper_41815162",
+      "node_type": "Paper",
+      "properties": {
+        "title": "A multimodal fusion model for bone tumor benign and malignant diagnosis: development and validation with clinical text and radiographs.",
+        "doi": "10.21037/tcr-2025-1832",
+        "pmid": "41815162",
+        "year": 2026,
+        "abstract_available": false,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "paper_42374268",
+      "node_type": "Paper",
+      "properties": {
+        "title": "Multimodal deep learning for papillary thyroid carcinoma diagnosis using ultrasound and cytology.",
+        "doi": "10.1186/s12880-026-02526-6",
+        "pmid": "42374268",
+        "year": 2026,
+        "abstract_available": false,
+        "full_text_available": false,
+        "full_text_access_status": "not_found"
+      }
+    },
+    {
+      "node_id": "paper_41645153",
+      "node_type": "Paper",
+      "properties": {
+        "title": "Fusion of deep learning and radiomics with dynamic spatiotemporal modeling for non-small cell lung cancer recurrence risk assessment after microwave ablation.",
+        "doi": "10.1186/s12880-026-02179-5",
+        "pmid": "41645153",
+        "year": 2026,
+        "abstract_available": false,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "paper_41102633",
+      "node_type": "Paper",
+      "properties": {
+        "title": "Generalized probabilistic canonical correlation analysis for multi-modal data integration with full or partial observations.",
+        "doi": "10.1186/s12859-025-06227-9",
+        "pmid": "41102633",
+        "year": 2025,
+        "abstract_available": false,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "paper_40657529",
+      "node_type": "Paper",
+      "properties": {
+        "title": "Survival Prediction of Esophageal Cancer Using 3D CT Imaging: A Context-Aware Approach With Non-Local Feature Aggregation and Graph-Based Spatial Interaction.",
+        "doi": "10.1109/JTEHM.2025.3562724",
+        "pmid": "40657529",
+        "year": 2025,
+        "abstract_available": false,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "paper_42569686",
+      "node_type": "Paper",
+      "properties": {
+        "title": "Does the surgical route matter in cerebellar mutism syndrome? Comparing transvermian and telovelar approaches for pediatric posterior fossa tumors.",
+        "doi": "10.1016/j.bas.2026.106168",
+        "pmid": "42569686",
+        "year": 2026,
+        "abstract_available": false,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "paper_42571026",
+      "node_type": "Paper",
+      "properties": {
+        "title": "Severe medial tibial plateau fractures: feasibility and functional and radiographic results of an extended approach with medial femoral epicondyle osteotomy.",
+        "doi": "10.1186/s13018-026-07100-y",
+        "pmid": "42571026",
+        "year": 2026,
+        "abstract_available": false,
+        "full_text_available": true,
+        "full_text_access_status": "accessible"
+      }
+    },
+    {
+      "node_id": "mech_cross_attention",
+      "node_type": "Mechanism",
+      "properties": {
+        "canonical_name": "cross-attention",
+        "category": "Attention",
+        "mapping_status": "MAPPED",
+        "role": null
+      }
+    },
+    {
+      "node_id": "mech_early_fusion",
+      "node_type": "Mechanism",
+      "properties": {
+        "canonical_name": "early fusion",
+        "category": "Fusion",
+        "mapping_status": "MAPPED",
+        "role": null
+      }
+    },
+    {
+      "node_id": "mech_late_fusion",
+      "node_type": "Mechanism",
+      "properties": {
+        "canonical_name": "late fusion",
+        "category": "Fusion",
+        "mapping_status": "MAPPED",
+        "role": null
+      }
+    },
+    {
+      "node_id": "mech_cnn",
+      "node_type": "Mechanism",
+      "properties": {
+        "canonical_name": "cnn",
+        "category": "Representation",
+        "mapping_status": "MAPPED",
+        "role": null
+      }
+    },
+    {
+      "node_id": "mech_unmapped_662c070b",
+      "node_type": "Mechanism",
+      "properties": {
+        "canonical_name": "UNMAPPED",
+        "category": "UNMAPPED",
+        "mapping_status": "UNMAPPED",
+        "role": null
+      }
+    },
+    {
+      "node_id": "mech_unmapped_3d3909ac",
+      "node_type": "Mechanism",
+      "properties": {
+        "canonical_name": "UNMAPPED",
+        "category": "UNMAPPED",
+        "mapping_status": "UNMAPPED",
+        "role": null
+      }
+    },
+    {
+      "node_id": "exp_66eba238",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_10.1038_s42256-023-00633-5",
+        "task": null,
+        "dataset": null,
+        "sample_count": null,
+        "fusion_strategy": "late_fusion",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "exp_00be53ae",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_10.3390_bioengineering11010013",
+        "task": "classification",
+        "dataset": null,
+        "sample_count": 404,
+        "fusion_strategy": "ensemble_fusion",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "metric_auc",
+      "node_type": "Metric",
+      "properties": {
+        "name": "AUC"
+      }
+    },
+    {
+      "node_id": "result_exp_00be53ae_0",
+      "node_type": "Result",
+      "properties": {
+        "metric": "AUC",
+        "method_value": 0.76,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "exp_fbed1069",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_38396486",
+        "task": "survival_prediction",
+        "dataset": "Head-Neck-PET-CT",
+        "sample_count": null,
+        "fusion_strategy": "cross_attention",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "dataset_head-neck-pet-ct",
+      "node_type": "Dataset",
+      "properties": {
+        "name": "Head-Neck-PET-CT"
+      }
+    },
+    {
+      "node_id": "metric_c-index",
+      "node_type": "Metric",
+      "properties": {
+        "name": "C-INDEX"
+      }
+    },
+    {
+      "node_id": "result_exp_fbed1069_0",
+      "node_type": "Result",
+      "properties": {
+        "metric": "C-INDEX",
+        "method_value": 0.796,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_fbed1069_1",
+      "node_type": "Result",
+      "properties": {
+        "metric": "C-INDEX",
+        "method_value": 0.777,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "exp_402b96d8",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_39074400",
+        "task": "diagnosis",
+        "dataset": null,
+        "sample_count": null,
+        "fusion_strategy": null,
+        "source_scope": "abstract"
+      }
+    },
+    {
+      "node_id": "result_exp_402b96d8_0",
+      "node_type": "Result",
+      "properties": {
+        "metric": "AUC",
+        "method_value": 0.77,
+        "baseline_value": 0.67,
+        "delta": 0.1,
+        "direction": "improvement",
+        "source_location": "Abstract",
+        "source_scope": "abstract"
+      }
+    },
+    {
+      "node_id": "result_exp_402b96d8_1",
+      "node_type": "Result",
+      "properties": {
+        "metric": "AUC",
+        "method_value": 0.87,
+        "baseline_value": 0.88,
+        "delta": -0.01,
+        "direction": "degradation",
+        "source_location": "Abstract",
+        "source_scope": "abstract"
+      }
+    },
+    {
+      "node_id": "result_exp_402b96d8_2",
+      "node_type": "Result",
+      "properties": {
+        "metric": null,
+        "method_value": null,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "degradation",
+        "source_location": "Abstract",
+        "source_scope": "abstract"
+      }
+    },
+    {
+      "node_id": "exp_786eb872",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_40325104",
+        "task": "survival_prediction",
+        "dataset": null,
+        "sample_count": null,
+        "fusion_strategy": "late_fusion",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "exp_2ef00b7c",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_40449048",
+        "task": null,
+        "dataset": null,
+        "sample_count": 999,
+        "fusion_strategy": null,
+        "source_scope": "abstract"
+      }
+    },
+    {
+      "node_id": "metric_accuracy",
+      "node_type": "Metric",
+      "properties": {
+        "name": "Accuracy"
+      }
+    },
+    {
+      "node_id": "result_exp_2ef00b7c_0",
+      "node_type": "Result",
+      "properties": {
+        "metric": "Accuracy",
+        "method_value": 0.99,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Abstract",
+        "source_scope": "abstract"
+      }
+    },
+    {
+      "node_id": "exp_c3aba3b5",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_41131352",
+        "task": "survival_prediction",
+        "dataset": "TCGA",
+        "sample_count": 10938,
+        "fusion_strategy": null,
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "dataset_tcga",
+      "node_type": "Dataset",
+      "properties": {
+        "name": "TCGA"
+      }
+    },
+    {
+      "node_id": "result_exp_c3aba3b5_0",
+      "node_type": "Result",
+      "properties": {
+        "metric": "Accuracy",
+        "method_value": 0.9021,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_c3aba3b5_1",
+      "node_type": "Result",
+      "properties": {
+        "metric": null,
+        "method_value": null,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "degradation",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "exp_f55caa12",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_41353186",
+        "task": "survival_prediction",
+        "dataset": "KHMC-HNSC",
+        "sample_count": null,
+        "fusion_strategy": "cross_attention",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "dataset_khmc-hnsc",
+      "node_type": "Dataset",
+      "properties": {
+        "name": "KHMC-HNSC"
+      }
+    },
+    {
+      "node_id": "result_exp_f55caa12_0",
+      "node_type": "Result",
+      "properties": {
+        "metric": "C-INDEX",
+        "method_value": 0.606,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_f55caa12_1",
+      "node_type": "Result",
+      "properties": {
+        "metric": "C-INDEX",
+        "method_value": 0.626,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_f55caa12_2",
+      "node_type": "Result",
+      "properties": {
+        "metric": "C-INDEX",
+        "method_value": 0.652,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_f55caa12_3",
+      "node_type": "Result",
+      "properties": {
+        "metric": "C-INDEX",
+        "method_value": 0.592,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_f55caa12_4",
+      "node_type": "Result",
+      "properties": {
+        "metric": null,
+        "method_value": null,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "degradation",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "exp_822a80ca",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_41968976",
+        "task": null,
+        "dataset": "TCGA",
+        "sample_count": 1047,
+        "fusion_strategy": "late_fusion",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_822a80ca_0",
+      "node_type": "Result",
+      "properties": {
+        "metric": "AUC",
+        "method_value": 0.694,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_822a80ca_1",
+      "node_type": "Result",
+      "properties": {
+        "metric": "AUC",
+        "method_value": 0.745,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_822a80ca_2",
+      "node_type": "Result",
+      "properties": {
+        "metric": "AUC",
+        "method_value": 0.695,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_822a80ca_3",
+      "node_type": "Result",
+      "properties": {
+        "metric": "AUC",
+        "method_value": 0.69,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_822a80ca_4",
+      "node_type": "Result",
+      "properties": {
+        "metric": "AUC",
+        "method_value": 0.68,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "exp_a953b80d",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_41942785",
+        "task": "survival_prediction",
+        "dataset": "IMvigor210",
+        "sample_count": null,
+        "fusion_strategy": null,
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "dataset_imvigor210",
+      "node_type": "Dataset",
+      "properties": {
+        "name": "IMvigor210"
+      }
+    },
+    {
+      "node_id": "exp_aef6b872",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_42487970",
+        "task": null,
+        "dataset": "PubMed",
+        "sample_count": 214,
+        "fusion_strategy": null,
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "dataset_pubmed",
+      "node_type": "Dataset",
+      "properties": {
+        "name": "PubMed"
+      }
+    },
+    {
+      "node_id": "metric_recall",
+      "node_type": "Metric",
+      "properties": {
+        "name": "RECALL"
+      }
+    },
+    {
+      "node_id": "metric_f1_score",
+      "node_type": "Metric",
+      "properties": {
+        "name": "F1 SCORE"
+      }
+    },
+    {
+      "node_id": "result_exp_aef6b872_0",
+      "node_type": "Result",
+      "properties": {
+        "metric": "ACCURACY",
+        "method_value": 0.98,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_aef6b872_1",
+      "node_type": "Result",
+      "properties": {
+        "metric": "RECALL",
+        "method_value": 0.95,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_aef6b872_2",
+      "node_type": "Result",
+      "properties": {
+        "metric": "F1 SCORE",
+        "method_value": 0.98,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_aef6b872_3",
+      "node_type": "Result",
+      "properties": {
+        "metric": "AUC",
+        "method_value": 0.96,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_aef6b872_4",
+      "node_type": "Result",
+      "properties": {
+        "metric": "ACCURACY",
+        "method_value": 0.84,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_aef6b872_5",
+      "node_type": "Result",
+      "properties": {
+        "metric": "AUC",
+        "method_value": 0.84,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_aef6b872_6",
+      "node_type": "Result",
+      "properties": {
+        "metric": null,
+        "method_value": null,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "degradation",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "exp_6b80b138",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_42510039",
+        "task": null,
+        "dataset": null,
+        "sample_count": 392,
+        "fusion_strategy": null,
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "exp_2ba3df29",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_42467849",
+        "task": "diagnosis",
+        "dataset": null,
+        "sample_count": 6516,
+        "fusion_strategy": null,
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "exp_d84dd4f4",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_42523677",
+        "task": null,
+        "dataset": null,
+        "sample_count": null,
+        "fusion_strategy": null,
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_d84dd4f4_0",
+      "node_type": "Result",
+      "properties": {
+        "metric": null,
+        "method_value": null,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "degradation",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "exp_0317bfe8",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_42141332",
+        "task": null,
+        "dataset": null,
+        "sample_count": null,
+        "fusion_strategy": null,
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "exp_9ea23f58",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_41647696",
+        "task": "diagnosis",
+        "dataset": null,
+        "sample_count": 2168,
+        "fusion_strategy": null,
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "exp_7cd20f89",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_42564290",
+        "task": null,
+        "dataset": null,
+        "sample_count": null,
+        "fusion_strategy": null,
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "exp_41ccf9dc",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_42125301",
+        "task": "survival_prediction",
+        "dataset": "RADCURE",
+        "sample_count": null,
+        "fusion_strategy": "early_fusion",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "dataset_radcure",
+      "node_type": "Dataset",
+      "properties": {
+        "name": "RADCURE"
+      }
+    },
+    {
+      "node_id": "exp_ceb375ec",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_40770286",
+        "task": "survival_prediction",
+        "dataset": null,
+        "sample_count": 272,
+        "fusion_strategy": null,
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_ceb375ec_0",
+      "node_type": "Result",
+      "properties": {
+        "metric": "C-INDEX",
+        "method_value": 0.807,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_ceb375ec_1",
+      "node_type": "Result",
+      "properties": {
+        "metric": "C-INDEX",
+        "method_value": 0.726,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "exp_acf445f7",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_42558280",
+        "task": "survival_prediction",
+        "dataset": null,
+        "sample_count": null,
+        "fusion_strategy": null,
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_acf445f7_0",
+      "node_type": "Result",
+      "properties": {
+        "metric": "AUC",
+        "method_value": 0.92,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "exp_d1cd804b",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_42389632",
+        "task": null,
+        "dataset": null,
+        "sample_count": 1454,
+        "fusion_strategy": null,
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_d1cd804b_0",
+      "node_type": "Result",
+      "properties": {
+        "metric": "AUC",
+        "method_value": 0.975,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_d1cd804b_1",
+      "node_type": "Result",
+      "properties": {
+        "metric": "AUC",
+        "method_value": 0.924,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "exp_213c04b9",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_41815162",
+        "task": "diagnosis",
+        "dataset": null,
+        "sample_count": 319,
+        "fusion_strategy": null,
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_213c04b9_0",
+      "node_type": "Result",
+      "properties": {
+        "metric": "AUC",
+        "method_value": 0.814,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_213c04b9_1",
+      "node_type": "Result",
+      "properties": {
+        "metric": "AUC",
+        "method_value": 0.782,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_213c04b9_2",
+      "node_type": "Result",
+      "properties": {
+        "metric": null,
+        "method_value": null,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "degradation",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "exp_2eaa3ab8",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_41645153",
+        "task": null,
+        "dataset": null,
+        "sample_count": 184,
+        "fusion_strategy": "cross_attention",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_2eaa3ab8_0",
+      "node_type": "Result",
+      "properties": {
+        "metric": "AUC",
+        "method_value": 0.92,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_2eaa3ab8_1",
+      "node_type": "Result",
+      "properties": {
+        "metric": "AUC",
+        "method_value": 0.85,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_2eaa3ab8_2",
+      "node_type": "Result",
+      "properties": {
+        "metric": "AUC",
+        "method_value": 0.78,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "result_exp_2eaa3ab8_3",
+      "node_type": "Result",
+      "properties": {
+        "metric": "AUC",
+        "method_value": 0.76,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "improvement",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "exp_6fcfa819",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_41102633",
+        "task": null,
+        "dataset": "OncoSearch",
+        "sample_count": null,
+        "fusion_strategy": null,
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "dataset_oncosearch",
+      "node_type": "Dataset",
+      "properties": {
+        "name": "OncoSearch"
+      }
+    },
+    {
+      "node_id": "exp_4c0020b7",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_40657529",
+        "task": "survival_prediction",
+        "dataset": null,
+        "sample_count": null,
+        "fusion_strategy": null,
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "exp_67dd3fef",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_42569686",
+        "task": null,
+        "dataset": "multicenter",
+        "sample_count": 1369,
+        "fusion_strategy": null,
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "dataset_multicenter",
+      "node_type": "Dataset",
+      "properties": {
+        "name": "multicenter"
+      }
+    },
+    {
+      "node_id": "exp_953f874e",
+      "node_type": "Experiment",
+      "properties": {
+        "paper_id": "paper_42571026",
+        "task": null,
+        "dataset": "Retrospective",
+        "sample_count": null,
+        "fusion_strategy": null,
+        "source_scope": "full_text"
+      }
+    },
+    {
+      "node_id": "dataset_retrospective",
+      "node_type": "Dataset",
+      "properties": {
+        "name": "Retrospective"
+      }
+    },
+    {
+      "node_id": "result_exp_953f874e_0",
+      "node_type": "Result",
+      "properties": {
+        "metric": null,
+        "method_value": null,
+        "baseline_value": null,
+        "delta": null,
+        "direction": "degradation",
+        "source_location": "Results",
+        "source_scope": "full_text"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "paper_10.1038_s42256-023-00633-5",
+      "target_id": "exp_66eba238",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_10.3390_bioengineering11010013",
+      "target_id": "exp_00be53ae",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_00be53ae",
+      "target_id": "metric_auc",
+      "relationship_type": "measures",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_00be53ae",
+      "target_id": "result_exp_00be53ae_0",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_38396486",
+      "target_id": "exp_fbed1069",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_fbed1069",
+      "target_id": "dataset_head-neck-pet-ct",
+      "relationship_type": "evaluated_on",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_fbed1069",
+      "target_id": "metric_c-index",
+      "relationship_type": "measures",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_fbed1069",
+      "target_id": "result_exp_fbed1069_0",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_fbed1069",
+      "target_id": "result_exp_fbed1069_1",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_39074400",
+      "target_id": "exp_402b96d8",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_402b96d8",
+      "target_id": "metric_auc",
+      "relationship_type": "measures",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_402b96d8",
+      "target_id": "result_exp_402b96d8_0",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_402b96d8",
+      "target_id": "result_exp_402b96d8_1",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_402b96d8",
+      "target_id": "result_exp_402b96d8_2",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_40325104",
+      "target_id": "exp_786eb872",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_40449048",
+      "target_id": "exp_2ef00b7c",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_2ef00b7c",
+      "target_id": "metric_accuracy",
+      "relationship_type": "measures",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_2ef00b7c",
+      "target_id": "result_exp_2ef00b7c_0",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_41131352",
+      "target_id": "exp_c3aba3b5",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_c3aba3b5",
+      "target_id": "dataset_tcga",
+      "relationship_type": "evaluated_on",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_c3aba3b5",
+      "target_id": "metric_accuracy",
+      "relationship_type": "measures",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_c3aba3b5",
+      "target_id": "result_exp_c3aba3b5_0",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_c3aba3b5",
+      "target_id": "result_exp_c3aba3b5_1",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_41353186",
+      "target_id": "exp_f55caa12",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_f55caa12",
+      "target_id": "dataset_khmc-hnsc",
+      "relationship_type": "evaluated_on",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_f55caa12",
+      "target_id": "metric_c-index",
+      "relationship_type": "measures",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_f55caa12",
+      "target_id": "result_exp_f55caa12_0",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_f55caa12",
+      "target_id": "result_exp_f55caa12_1",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_f55caa12",
+      "target_id": "result_exp_f55caa12_2",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_f55caa12",
+      "target_id": "result_exp_f55caa12_3",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_f55caa12",
+      "target_id": "result_exp_f55caa12_4",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_41968976",
+      "target_id": "exp_822a80ca",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_822a80ca",
+      "target_id": "dataset_tcga",
+      "relationship_type": "evaluated_on",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_822a80ca",
+      "target_id": "metric_auc",
+      "relationship_type": "measures",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_822a80ca",
+      "target_id": "result_exp_822a80ca_0",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_822a80ca",
+      "target_id": "result_exp_822a80ca_1",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_822a80ca",
+      "target_id": "result_exp_822a80ca_2",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_822a80ca",
+      "target_id": "result_exp_822a80ca_3",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_822a80ca",
+      "target_id": "result_exp_822a80ca_4",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_41942785",
+      "target_id": "exp_a953b80d",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_a953b80d",
+      "target_id": "dataset_imvigor210",
+      "relationship_type": "evaluated_on",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_42487970",
+      "target_id": "exp_aef6b872",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_aef6b872",
+      "target_id": "dataset_pubmed",
+      "relationship_type": "evaluated_on",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_aef6b872",
+      "target_id": "metric_accuracy",
+      "relationship_type": "measures",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_aef6b872",
+      "target_id": "metric_auc",
+      "relationship_type": "measures",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_aef6b872",
+      "target_id": "metric_recall",
+      "relationship_type": "measures",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_aef6b872",
+      "target_id": "metric_f1_score",
+      "relationship_type": "measures",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_aef6b872",
+      "target_id": "result_exp_aef6b872_0",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_aef6b872",
+      "target_id": "result_exp_aef6b872_1",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_aef6b872",
+      "target_id": "result_exp_aef6b872_2",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_aef6b872",
+      "target_id": "result_exp_aef6b872_3",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_aef6b872",
+      "target_id": "result_exp_aef6b872_4",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_aef6b872",
+      "target_id": "result_exp_aef6b872_5",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_aef6b872",
+      "target_id": "result_exp_aef6b872_6",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_42510039",
+      "target_id": "exp_6b80b138",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_42467849",
+      "target_id": "exp_2ba3df29",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_42523677",
+      "target_id": "exp_d84dd4f4",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_d84dd4f4",
+      "target_id": "result_exp_d84dd4f4_0",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_42141332",
+      "target_id": "exp_0317bfe8",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_41647696",
+      "target_id": "exp_9ea23f58",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_42564290",
+      "target_id": "exp_7cd20f89",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_42125301",
+      "target_id": "exp_41ccf9dc",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_41ccf9dc",
+      "target_id": "dataset_radcure",
+      "relationship_type": "evaluated_on",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_40770286",
+      "target_id": "exp_ceb375ec",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_ceb375ec",
+      "target_id": "metric_c-index",
+      "relationship_type": "measures",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_ceb375ec",
+      "target_id": "result_exp_ceb375ec_0",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_ceb375ec",
+      "target_id": "result_exp_ceb375ec_1",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_42558280",
+      "target_id": "exp_acf445f7",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_acf445f7",
+      "target_id": "metric_auc",
+      "relationship_type": "measures",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_acf445f7",
+      "target_id": "result_exp_acf445f7_0",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_42389632",
+      "target_id": "exp_d1cd804b",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_d1cd804b",
+      "target_id": "metric_auc",
+      "relationship_type": "measures",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_d1cd804b",
+      "target_id": "result_exp_d1cd804b_0",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_d1cd804b",
+      "target_id": "result_exp_d1cd804b_1",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_41815162",
+      "target_id": "exp_213c04b9",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_213c04b9",
+      "target_id": "metric_auc",
+      "relationship_type": "measures",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_213c04b9",
+      "target_id": "result_exp_213c04b9_0",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_213c04b9",
+      "target_id": "result_exp_213c04b9_1",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_213c04b9",
+      "target_id": "result_exp_213c04b9_2",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_41645153",
+      "target_id": "exp_2eaa3ab8",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_2eaa3ab8",
+      "target_id": "metric_auc",
+      "relationship_type": "measures",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_2eaa3ab8",
+      "target_id": "result_exp_2eaa3ab8_0",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_2eaa3ab8",
+      "target_id": "result_exp_2eaa3ab8_1",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_2eaa3ab8",
+      "target_id": "result_exp_2eaa3ab8_2",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_2eaa3ab8",
+      "target_id": "result_exp_2eaa3ab8_3",
+      "relationship_type": "produces",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_41102633",
+      "target_id": "exp_6fcfa819",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_6fcfa819",
+      "target_id": "dataset_oncosearch",
+      "relationship_type": "evaluated_on",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_40657529",
+      "target_id": "exp_4c0020b7",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_42569686",
+      "target_id": "exp_67dd3fef",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_67dd3fef",
+      "target_id": "dataset_multicenter",
+      "relationship_type": "evaluated_on",
+      "properties": {}
+    },
+    {
+      "source_id": "paper_42571026",
+      "target_id": "exp_953f874e",
+      "relationship_type": "has_experiment",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_953f874e",
+      "target_id": "dataset_retrospective",
+      "relationship_type": "evaluated_on",
+      "properties": {}
+    },
+    {
+      "source_id": "exp_953f874e",
+      "target_id": "result_exp_953f874e_0",
+      "relationship_type": "produces",
+      "properties": {}
+    }
+  ]
+}

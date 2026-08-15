@@ -1,0 +1,26 @@
+{
+  "blocked_component": "feature_representation",
+  "actual_hancock_modalities": [
+    "clinical",
+    "pathology_tabular",
+    "blood",
+    "text"
+  ],
+  "task": "classification",
+  "target": "recurrence",
+  "required_evidence_properties": [
+    "clinical/tabular/structured data",
+    "numerical and/or categorical clinical variables",
+    "explicit feature representation or encoding methodology",
+    "binary classification or closely related clinical prediction",
+    "experimental evaluation",
+    "explicit provenance",
+    "preferably open-access/full text"
+  ],
+  "excluded_modalities": [
+    "imaging"
+  ],
+  "exclusion_reasons": [
+    "HANCOCK imaging data is not available. Imaging-dependent representations such as CNN are not valid."
+  ]
+}

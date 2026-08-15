@@ -1,0 +1,22 @@
+{
+  "execution_timestamp": "2026-08-14T18:55:13.449032+00:00",
+  "stage": "Phase 6A: Final Research Results Package",
+  "status": "PACKAGE_GENERATED_SUCCESSFULLY",
+  "master_package_path": "evidence/final/stage6a_master_results.json",
+  "candidate_performance": {
+    "mean_roc_auc": 0.9751,
+    "std_roc_auc": 0.0114,
+    "mean_pr_auc": 0.9679,
+    "mean_f1": 0.9611,
+    "mean_accuracy": 0.9825,
+    "mean_brier_score": 0.0175
+  },
+  "margin_over_default_xgboost": 0.0047,
+  "claim_status_summary": {
+    "supported": 5,
+    "partially_supported": 1,
+    "not_supported": 4
+  },
+  "reproducibility_status": "PASS",
+  "zero_mutations_verified": true
+}

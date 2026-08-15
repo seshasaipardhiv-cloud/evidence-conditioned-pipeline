@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-08-14T06:14:18.373906+00:00",
+  "target": "recurrence",
+  "task": "classification",
+  "hancock_modalities": [
+    "clinical",
+    "pathology",
+    "blood",
+    "text"
+  ],
+  "hancock_imaging_available": false,
+  "evaluations": {
+    "clinical_tabular_representation": {
+      "status": "SUPPORTED",
+      "reason": "HANCOCK contains structured clinical tabular data, and representation is evidence-backed.",
+      "compatible": true
+    },
+    "cnn_representation": {
+      "status": "INCOMPATIBLE",
+      "reason": "HANCOCK has no validated imaging modality for CNN representation.",
+      "compatible": false
+    },
+    "transformer_representation": {
+      "status": "INCOMPATIBLE",
+      "reason": "Text-dependent representation not configured for clinical tabular task.",
+      "compatible": false
+    }
+  },
+  "selected_feature_representation": "clinical_tabular_representation",
+  "feature_representation_compatible": true
+}

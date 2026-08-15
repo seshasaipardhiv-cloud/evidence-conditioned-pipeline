@@ -1,0 +1,22 @@
+{
+  "original_selected_representation": "cnn_representation",
+  "original_compatibility_status": "incompatible",
+  "candidate_representations": [
+    {
+      "mechanism": "cnn",
+      "evidence_status": "INCOMPATIBLE",
+      "compatibility_status": "incompatible",
+      "reason": "HANCOCK does not provide a validated imaging modality"
+    }
+  ],
+  "evidence_backed_candidates": [],
+  "explicitly_configured_candidates": [],
+  "incompatible_candidates": [
+    "cnn"
+  ],
+  "unresolved_candidates": [],
+  "selected_replacement": null,
+  "selection_reason": "No explicitly configured or evidence-backed compatible representation found.",
+  "provenance": null,
+  "final_resolution_status": "BLOCKED"
+}

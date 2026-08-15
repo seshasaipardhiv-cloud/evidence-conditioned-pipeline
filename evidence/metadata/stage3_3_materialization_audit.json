@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-08-14T06:44:58.934714+00:00",
+  "resolved_components": [
+    "feature_representation",
+    "modality_fusion",
+    "ensembling",
+    "missing_value_handling",
+    "base_learner",
+    "imbalance_handling"
+  ],
+  "unresolved_components": [
+    "categorical_encoding",
+    "loss_function"
+  ],
+  "materialization_status": "BLOCKED_MISSING_COMPONENTS",
+  "preprocessing_contract": {
+    "train_only_fit": true,
+    "target_leakage_prevented": true,
+    "no_unsupported_encoders_instantiated": true
+  },
+  "training_allowed": false,
+  "blocking_reasons": [
+    "categorical_encoding is unresolved (requires explicit configuration or evidence)",
+    "loss_function is unresolved (requires explicit configuration or evidence)"
+  ]
+}

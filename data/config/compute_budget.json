@@ -1,0 +1,7 @@
+{
+  "max_epochs": 10,
+  "max_training_time_minutes": 15,
+  "max_memory_gb": 4,
+  "device": "cpu",
+  "max_parallel_jobs": 1
+}

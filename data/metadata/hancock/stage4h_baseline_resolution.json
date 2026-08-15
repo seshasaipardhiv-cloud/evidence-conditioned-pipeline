@@ -1,0 +1,38 @@
+[
+  {
+    "original_name": "single-modal approaches",
+    "normalized_name": "single-modal approaches",
+    "source_paper": null,
+    "source_sentence": null,
+    "executable": false,
+    "evidence_backed": false,
+    "compatibility_status": "INCOMPATIBLE",
+    "decision": "BLOCKED",
+    "reason": "Not executable from available HANCOCK modalities (e.g. requires imaging)",
+    "provenance": null
+  },
+  {
+    "original_name": "calm image and",
+    "normalized_name": "calm image and",
+    "source_paper": null,
+    "source_sentence": null,
+    "executable": false,
+    "evidence_backed": false,
+    "compatibility_status": "INVALID_ENTITY",
+    "decision": "REJECTED",
+    "reason": "Malformed entity fragment",
+    "provenance": null
+  },
+  {
+    "original_name": "single-modality PET",
+    "normalized_name": "single-modality pet",
+    "source_paper": null,
+    "source_sentence": null,
+    "executable": false,
+    "evidence_backed": false,
+    "compatibility_status": "INCOMPATIBLE",
+    "decision": "BLOCKED",
+    "reason": "Not executable from available HANCOCK modalities (e.g. requires imaging)",
+    "provenance": null
+  }
+]

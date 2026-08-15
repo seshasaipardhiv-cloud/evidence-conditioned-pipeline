@@ -1,0 +1,120 @@
+{
+  "candidate_pipeline_status": "BLOCKED_MISSING_EVIDENCE",
+  "required_components": [
+    {
+      "component": "missing_value_handling",
+      "category": "implementation_primitive",
+      "selected_value": null,
+      "evidence_status": "UNSUPPORTED",
+      "compatibility_status": "incompatible",
+      "provenance": null,
+      "execution_status": "BLOCKED",
+      "reason": "Dataset incompatibility (e.g. missing modality)."
+    },
+    {
+      "component": "categorical_encoding",
+      "category": "implementation_primitive",
+      "selected_value": null,
+      "evidence_status": "UNSUPPORTED",
+      "compatibility_status": "incompatible",
+      "provenance": null,
+      "execution_status": "BLOCKED",
+      "reason": "Dataset incompatibility (e.g. missing modality)."
+    },
+    {
+      "component": "base_learner",
+      "category": "implementation_primitive",
+      "selected_value": null,
+      "evidence_status": "UNSUPPORTED",
+      "compatibility_status": "incompatible",
+      "provenance": null,
+      "execution_status": "BLOCKED",
+      "reason": "Dataset incompatibility (e.g. missing modality)."
+    },
+    {
+      "component": "loss_function",
+      "category": "implementation_primitive",
+      "selected_value": null,
+      "evidence_status": "UNSUPPORTED",
+      "compatibility_status": "incompatible",
+      "provenance": null,
+      "execution_status": "BLOCKED",
+      "reason": "Dataset incompatibility (e.g. missing modality)."
+    },
+    {
+      "component": "imbalance_handling",
+      "category": "implementation_primitive",
+      "selected_value": null,
+      "evidence_status": "UNSUPPORTED",
+      "compatibility_status": "incompatible",
+      "provenance": null,
+      "execution_status": "BLOCKED",
+      "reason": "Dataset incompatibility (e.g. missing modality)."
+    },
+    {
+      "component": "modality_fusion",
+      "category": "evidence_conditioned",
+      "selected_value": "cross_attention",
+      "evidence_status": "EVIDENCE_BACKED",
+      "compatibility_status": "valid",
+      "provenance": "Inherited from Stage 3 validation.",
+      "execution_status": "EXECUTABLE",
+      "reason": "Materialization successful."
+    },
+    {
+      "component": "feature_representation",
+      "category": "evidence_conditioned",
+      "selected_value": "cnn_representation",
+      "evidence_status": "UNSUPPORTED",
+      "compatibility_status": "incompatible",
+      "provenance": null,
+      "execution_status": "BLOCKED",
+      "reason": "Dataset incompatibility (e.g. missing modality)."
+    },
+    {
+      "component": "ensembling",
+      "category": "evidence_conditioned",
+      "selected_value": "average_ensembling",
+      "evidence_status": "EVIDENCE_BACKED",
+      "compatibility_status": "valid",
+      "provenance": "Inherited from Stage 3 validation.",
+      "execution_status": "EXECUTABLE",
+      "reason": "Materialization successful."
+    }
+  ],
+  "evidence_backed_components": [
+    "modality_fusion",
+    "ensembling"
+  ],
+  "explicitly_configured_components": [],
+  "unsupported_components": [
+    "missing_value_handling",
+    "categorical_encoding",
+    "base_learner",
+    "loss_function",
+    "imbalance_handling",
+    "feature_representation"
+  ],
+  "incompatible_components": [
+    "missing_value_handling",
+    "categorical_encoding",
+    "base_learner",
+    "loss_function",
+    "imbalance_handling",
+    "feature_representation"
+  ],
+  "implementation_primitives_requiring_explicit_configuration": [
+    "missing_value_handling",
+    "categorical_encoding",
+    "base_learner",
+    "loss_function",
+    "imbalance_handling"
+  ],
+  "target_task_validation": true,
+  "leakage_validation": true,
+  "split_validation": true,
+  "materialization_validation": false,
+  "baseline_validation": false,
+  "final_readiness_decision": "BLOCKED_MISSING_EVIDENCE",
+  "training_allowed": false
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-14T18:55:13.415908+00:00",
+  "research_questions": {
+    "what_has_been_demonstrated": "1. An end-to-end evidence-conditioned pipeline synthesis architecture successfully bridges literature evidence to executable machine learning components.\n2. The system rigorously isolates target variables (8-variable firewall), enforces train-only preprocessing transformations, and prevents arbitrary library defaults from silently masquerading as scientific evidence.\n3. The candidate pipeline achieves high internal discrimination (ROC-AUC 0.9751 +/- 0.0114) and strong probability calibration (Brier score 0.0175) on the retrospective HANCOCK dataset.",
+    "what_remains_unproven": "1. Statistical significance of the predictive margin over default XGBoost (+0.0047 delta).\n2. Superiority across all random splits (candidate lost on seed 100).\n3. External generalization across other cancer cohorts or multi-institutional clinical systems.\n4. Real-world prospective clinical utility.",
+    "strongest_defensible_research_claim": "Evidence-conditioned pipeline synthesis provides a rigorous, traceable, and reproducible methodology for constructing valid machine learning pipelines from biomedical literature without unauthorized defaults or target leakage, yielding strong internal discrimination and calibration.",
+    "requirements_for_stronger_claims": "1. Multi-seed expansion (n >= 30 seeds or nested cross-validation) for formal statistical testing.\n2. Multi-cohort external validation across diverse healthcare systems.\n3. Prospective clinical utility and decision-curve analysis."
+  },
+  "final_status": "SCIENTIFIC_VALIDATION_COMPLETE_CONSERVATIVE_BOUNDS_ESTABLISHED"
+}

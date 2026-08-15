@@ -1,0 +1,36 @@
+{
+  "execution_timestamp": "2026-08-14T18:55:13.395188+00:00",
+  "stage": "Stage 5C: Statistical Validation, Component Ablation, and Robustness Analysis",
+  "analysis_status": "ANALYSIS_COMPLETE",
+  "candidate_mean_roc_auc": 0.9751,
+  "default_xgb_mean_roc_auc": 0.9704,
+  "margin_over_default_xgb": 0.0047,
+  "candidate_wins_across_seeds": "2 / 3",
+  "top_contributing_components": [
+    "SMOTE class balancing (delta when removed: -0.0053 ROC-AUC)",
+    "MICE & OneHot feature representation encoding",
+    "Regularized gradient tree boosting hyperparameters"
+  ],
+  "statistical_significance_claim": "DESCRIPTIVE_ONLY_NO_INFERENTIAL_CLAIM_N3",
+  "clinical_generalization_status": "INTERNAL_VALIDATION_ONLY_NO_EXTERNAL_VALIDATION",
+  "safety_firewalls": {
+    "stage5b_artifacts_unmodified": true,
+    "corpus_unchanged": true,
+    "target_leakage_prevented": true,
+    "preprocessing_train_only": true
+  },
+  "pre_audit_hashes": {
+    "papers": "670107ee79c518acff87df1db50ba712be870a3abe7a374e6ab4155707096bf5",
+    "experiments": "34692984a4dc6c6bf6bd4a684035c6bc75c36aeadd663b4b94a1da234fe13f05",
+    "evidence_claims": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mechanisms": "00cec963267f1caad2f797a67cbd9da064fdd8ae60415c6cb2cfdf9283dfe939",
+    "stage5b_results": "7d40871235434b83d210d5efa20dfa9c36e04fd164c743f8f8e01f731919c111"
+  },
+  "post_audit_hashes": {
+    "papers": "670107ee79c518acff87df1db50ba712be870a3abe7a374e6ab4155707096bf5",
+    "experiments": "34692984a4dc6c6bf6bd4a684035c6bc75c36aeadd663b4b94a1da234fe13f05",
+    "evidence_claims": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mechanisms": "00cec963267f1caad2f797a67cbd9da064fdd8ae60415c6cb2cfdf9283dfe939",
+    "stage5b_results": "7d40871235434b83d210d5efa20dfa9c36e04fd164c743f8f8e01f731919c111"
+  }
+}

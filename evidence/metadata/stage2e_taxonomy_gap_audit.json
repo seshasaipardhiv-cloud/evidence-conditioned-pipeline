@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-08-14T06:11:42.827896+00:00",
+  "taxonomy_status": "TAXONOMY_GAP",
+  "total_mechanisms_in_corpus": 6,
+  "representation_mechanisms": [
+    {
+      "mechanism_id": "mech_cnn",
+      "canonical_name": "cnn",
+      "category": "Representation",
+      "description": null,
+      "role": null,
+      "input_modality": null,
+      "output_representation": null,
+      "conditions": null,
+      "evidence_claim_ids": [],
+      "transferability_notes": null,
+      "mapping_status": "MAPPED"
+    }
+  ],
+  "unmapped_mechanisms": [
+    {
+      "mechanism_id": "mech_unmapped_662c070b",
+      "canonical_name": "UNMAPPED",
+      "category": "UNMAPPED",
+      "description": null,
+      "role": null,
+      "input_modality": null,
+      "output_representation": null,
+      "conditions": null,
+      "evidence_claim_ids": [],
+      "transferability_notes": null,
+      "mapping_status": "UNMAPPED"
+    },
+    {
+      "mechanism_id": "mech_unmapped_3d3909ac",
+      "canonical_name": "UNMAPPED",
+      "category": "UNMAPPED",
+      "description": null,
+      "role": null,
+      "input_modality": null,
+      "output_representation": null,
+      "conditions": null,
+      "evidence_claim_ids": [],
+      "transferability_notes": null,
+      "mapping_status": "UNMAPPED"
+    }
+  ],
+  "has_tabular_representation_in_taxonomy": false,
+  "gap_analysis": "The Stage 2/3 mechanism taxonomy mapped only 'cnn' under the Representation category (which is imaging-only). Structured clinical/tabular feature representation mechanisms such as clinical_tabular_representation or tabular_feature_vector were not defined as canonical representation mechanisms in the taxonomy, causing clinical representation evidence to remain unmapped or unrepresented."
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-08-14T05:59:07.531075+00:00",
+  "corpus_valid": true,
+  "critical_errors": 0,
+  "warnings": 0,
+  "total_papers_in_summary": 30,
+  "actual_papers_count": 30,
+  "seed_papers_count": 8,
+  "new_papers_count": 22,
+  "duplicate_papers": 0,
+  "suspicious_entity_count": 0,
+  "numerical_evidence_errors": 0,
+  "entity_confusion_errors": 0,
+  "provenance_coverage_percent": 100.0,
+  "baseline_verified": true
+}

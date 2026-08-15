@@ -1,0 +1,35 @@
+{
+  "execution_timestamp": "2026-08-14T06:14:18.376950+00:00",
+  "taxonomy_extension_status": "EXTENSION_SUCCESS",
+  "previous_mechanism_count": 6,
+  "new_mechanism_count": 7,
+  "supporting_papers": [
+    "paper_42487970"
+  ],
+  "supporting_experiments": [
+    "exp_aef6b872"
+  ],
+  "provenance_status": "PROVENANCE_INHERITED_AND_VERIFIED",
+  "compatibility_status": "SUPPORTED",
+  "original_artifact_hashes": {
+    "papers": "670107ee79c518acff87df1db50ba712be870a3abe7a374e6ab4155707096bf5",
+    "experiments": "34692984a4dc6c6bf6bd4a684035c6bc75c36aeadd663b4b94a1da234fe13f05",
+    "evidence_claims": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mechanisms": "9466e24b4ec5422272aa22c9c1805c7ab2331fdc1f7c5117cc19ca05a84afb9c"
+  },
+  "post_extension_hashes": {
+    "papers": "670107ee79c518acff87df1db50ba712be870a3abe7a374e6ab4155707096bf5",
+    "experiments": "34692984a4dc6c6bf6bd4a684035c6bc75c36aeadd663b4b94a1da234fe13f05",
+    "evidence_claims": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mechanisms": "00cec963267f1caad2f797a67cbd9da064fdd8ae60415c6cb2cfdf9283dfe939"
+  },
+  "stage3_recomposition_status": "RECOMPOSED_WITH_EVIDENCE",
+  "remaining_blocked_components": [
+    "missing_value_handling",
+    "categorical_encoding",
+    "base_learner",
+    "loss_function",
+    "imbalance_handling"
+  ],
+  "training_allowed": false
+}

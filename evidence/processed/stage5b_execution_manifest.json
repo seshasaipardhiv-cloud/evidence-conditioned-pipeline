@@ -1,0 +1,194 @@
+[
+  {
+    "seed": 42,
+    "split_info": {
+      "seed": 42,
+      "train_count": 496,
+      "val_count": 115,
+      "test_count": 152,
+      "train_patient_hash": "60efbd5890a052036a60156adbe6e6a29111400aca2073b886e97a090db88cab",
+      "val_patient_hash": "b12e8c8c48a3f3ca47cc3b89cc490e556e4cfc05b6bf13e8f6eab8bc11588dbf",
+      "test_patient_hash": "817d0709b93f9e678a36ffa0ca1acab10082c61bd517bc0df02773bf6e23c149",
+      "train_recurrence_rate": 0.2318548387096774,
+      "val_recurrence_rate": 0.23478260869565218,
+      "test_recurrence_rate": 0.23026315789473684,
+      "patient_overlap": 0
+    },
+    "models": {
+      "baseline_logistic_regression": {
+        "roc_auc": 0.9719,
+        "f1": 0.9855,
+        "accuracy": 0.9934,
+        "precision": 1.0,
+        "recall": 0.9714,
+        "brier_score": 0.0078,
+        "pr_auc": 0.9781
+      },
+      "baseline_random_forest": {
+        "roc_auc": 0.9757,
+        "f1": 0.9855,
+        "accuracy": 0.9934,
+        "precision": 1.0,
+        "recall": 0.9714,
+        "brier_score": 0.0127,
+        "pr_auc": 0.978
+      },
+      "baseline_simple_mlp": {
+        "roc_auc": 0.9536,
+        "f1": 0.8615,
+        "accuracy": 0.9408,
+        "precision": 0.9333,
+        "recall": 0.8,
+        "brier_score": 0.0707,
+        "pr_auc": 0.9201
+      },
+      "baseline_xgboost_default": {
+        "roc_auc": 0.9783,
+        "f1": 0.9855,
+        "accuracy": 0.9934,
+        "precision": 1.0,
+        "recall": 0.9714,
+        "brier_score": 0.0077,
+        "pr_auc": 0.9795
+      },
+      "candidate_pipeline": {
+        "roc_auc": 0.9888,
+        "f1": 0.9855,
+        "accuracy": 0.9934,
+        "precision": 1.0,
+        "recall": 0.9714,
+        "brier_score": 0.0074,
+        "pr_auc": 0.9838
+      }
+    },
+    "runtime_seconds": 3.78
+  },
+  {
+    "seed": 100,
+    "split_info": {
+      "seed": 100,
+      "train_count": 496,
+      "val_count": 115,
+      "test_count": 152,
+      "train_patient_hash": "8b22c90f0d28e361b61572b58dfc96a53eb3da579acf104e21ae0771a3ef5db7",
+      "val_patient_hash": "bd93efa1a99b3f17939d7c5b5a8f414ba9d1e04a3c4fba08d1b7141b99b47d8e",
+      "test_patient_hash": "955a234c1cb4b9246bb79aee4377abf0af17e3adf0c6d45bc29fff2682f0dbac",
+      "train_recurrence_rate": 0.2318548387096774,
+      "val_recurrence_rate": 0.23478260869565218,
+      "test_recurrence_rate": 0.23026315789473684,
+      "patient_overlap": 0
+    },
+    "models": {
+      "baseline_logistic_regression": {
+        "roc_auc": 0.9551,
+        "f1": 0.9254,
+        "accuracy": 0.9671,
+        "precision": 0.9688,
+        "recall": 0.8857,
+        "brier_score": 0.0307,
+        "pr_auc": 0.9428
+      },
+      "baseline_random_forest": {
+        "roc_auc": 0.9607,
+        "f1": 0.9412,
+        "accuracy": 0.9737,
+        "precision": 0.9697,
+        "recall": 0.9143,
+        "brier_score": 0.0274,
+        "pr_auc": 0.9445
+      },
+      "baseline_simple_mlp": {
+        "roc_auc": 0.9133,
+        "f1": 0.9118,
+        "accuracy": 0.9605,
+        "precision": 0.9394,
+        "recall": 0.8857,
+        "brier_score": 0.0564,
+        "pr_auc": 0.8688
+      },
+      "baseline_xgboost_default": {
+        "roc_auc": 0.9643,
+        "f1": 0.9412,
+        "accuracy": 0.9737,
+        "precision": 0.9697,
+        "recall": 0.9143,
+        "brier_score": 0.0267,
+        "pr_auc": 0.9567
+      },
+      "candidate_pipeline": {
+        "roc_auc": 0.9609,
+        "f1": 0.9412,
+        "accuracy": 0.9737,
+        "precision": 0.9697,
+        "recall": 0.9143,
+        "brier_score": 0.0256,
+        "pr_auc": 0.9538
+      }
+    },
+    "runtime_seconds": 1.55
+  },
+  {
+    "seed": 2026,
+    "split_info": {
+      "seed": 2026,
+      "train_count": 496,
+      "val_count": 115,
+      "test_count": 152,
+      "train_patient_hash": "a55bfb4d715ceb6e470cc13d56405d4e7769258e50c95fff33a5169b449d73db",
+      "val_patient_hash": "ac4c35a90d7dc8e2762fe369b4ffa76a02404502a599ad78674f51eb0ca2387c",
+      "test_patient_hash": "e493869ee72afa3b8a20cf90333db20d722acd2de8aa5363cdcc65005f101006",
+      "train_recurrence_rate": 0.2318548387096774,
+      "val_recurrence_rate": 0.23478260869565218,
+      "test_recurrence_rate": 0.23026315789473684,
+      "patient_overlap": 0
+    },
+    "models": {
+      "baseline_logistic_regression": {
+        "roc_auc": 0.9665,
+        "f1": 0.9565,
+        "accuracy": 0.9803,
+        "precision": 0.9706,
+        "recall": 0.9429,
+        "brier_score": 0.0217,
+        "pr_auc": 0.9399
+      },
+      "baseline_random_forest": {
+        "roc_auc": 0.9729,
+        "f1": 0.9565,
+        "accuracy": 0.9803,
+        "precision": 0.9706,
+        "recall": 0.9429,
+        "brier_score": 0.0221,
+        "pr_auc": 0.9257
+      },
+      "baseline_simple_mlp": {
+        "roc_auc": 0.9546,
+        "f1": 0.9275,
+        "accuracy": 0.9671,
+        "precision": 0.9412,
+        "recall": 0.9143,
+        "brier_score": 0.0778,
+        "pr_auc": 0.9291
+      },
+      "baseline_xgboost_default": {
+        "roc_auc": 0.9685,
+        "f1": 0.9565,
+        "accuracy": 0.9803,
+        "precision": 0.9706,
+        "recall": 0.9429,
+        "brier_score": 0.0196,
+        "pr_auc": 0.9634
+      },
+      "candidate_pipeline": {
+        "roc_auc": 0.9756,
+        "f1": 0.9565,
+        "accuracy": 0.9803,
+        "precision": 0.9706,
+        "recall": 0.9429,
+        "brier_score": 0.0194,
+        "pr_auc": 0.9662
+      }
+    },
+    "runtime_seconds": 1.54
+  }
+]

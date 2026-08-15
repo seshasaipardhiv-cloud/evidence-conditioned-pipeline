@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-08-14T06:52:26.168450+00:00",
+  "validations": {
+    "categorical_encoding": {
+      "is_valid": true,
+      "compatible_with_clinical_tabular": true,
+      "target_leakage_prevented": true,
+      "cross_split_leakage_prevented": true,
+      "preprocessing_train_only": true,
+      "patient_level_split_compatible": true,
+      "compute_budget_compatible": true,
+      "reproducibility_verified": true,
+      "issues": []
+    },
+    "loss_function": {
+      "is_valid": true,
+      "compatible_with_binary_recurrence": true,
+      "compatible_with_base_learner": true,
+      "not_inferred_from_learner": true,
+      "patient_level_split_compatible": true,
+      "compute_budget_compatible": true,
+      "reproducibility_verified": true,
+      "issues": []
+    }
+  },
+  "overall_valid": true,
+  "safety_checks": {
+    "hancock_tabular_modality_compatible": true,
+    "binary_recurrence_classification_compatible": true,
+    "xgboost_compatibility_verified": true,
+    "target_leakage_firewall_active": true,
+    "train_only_preprocessing_enforced": true,
+    "patient_level_split_verified": true,
+    "compute_budget_compatible": true,
+    "reproducibility_requirements_met": true
+  }
+}

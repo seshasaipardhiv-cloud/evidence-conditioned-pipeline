@@ -1,0 +1,108 @@
+{
+  "timestamp": "2026-08-14T18:55:38.915353+00:00",
+  "pdf_file": "final_research_paper.pdf",
+  "page_count": 15,
+  "total_extracted_words": 3987,
+  "all_qa_checks_passed": true,
+  "checks": {
+    "page_count_valid": true,
+    "no_blank_pages": true,
+    "title_intact": true,
+    "abstract_intact": true,
+    "all_sections_intact": true,
+    "all_eight_figures_present": true,
+    "all_three_tables_present": true,
+    "authoritative_candidate_roc_auc": true,
+    "authoritative_default_xgb_roc_auc": true,
+    "authoritative_delta_margin": true,
+    "authoritative_brier_score": true,
+    "per_seed_results_intact": true,
+    "operational_imputation_disclosed": true,
+    "multimodal_dormancy_disclosed": true,
+    "post_adjuvant_epoch_disclosed": true,
+    "progress_1_caveat_disclosed": true,
+    "shallow_mlp_baseline_disclosed": true,
+    "sample_size_n_3_disclosed": true,
+    "single_cohort_limitation_disclosed": true,
+    "no_internal_debug_paths": true
+  },
+  "page_analyses": [
+    {
+      "page_number": 1,
+      "word_count": 417,
+      "has_text": true
+    },
+    {
+      "page_number": 2,
+      "word_count": 440,
+      "has_text": true
+    },
+    {
+      "page_number": 3,
+      "word_count": 352,
+      "has_text": true
+    },
+    {
+      "page_number": 4,
+      "word_count": 335,
+      "has_text": true
+    },
+    {
+      "page_number": 5,
+      "word_count": 214,
+      "has_text": true
+    },
+    {
+      "page_number": 6,
+      "word_count": 320,
+      "has_text": true
+    },
+    {
+      "page_number": 7,
+      "word_count": 242,
+      "has_text": true
+    },
+    {
+      "page_number": 8,
+      "word_count": 137,
+      "has_text": true
+    },
+    {
+      "page_number": 9,
+      "word_count": 145,
+      "has_text": true
+    },
+    {
+      "page_number": 10,
+      "word_count": 99,
+      "has_text": true
+    },
+    {
+      "page_number": 11,
+      "word_count": 241,
+      "has_text": true
+    },
+    {
+      "page_number": 12,
+      "word_count": 234,
+      "has_text": true
+    },
+    {
+      "page_number": 13,
+      "word_count": 233,
+      "has_text": true
+    },
+    {
+      "page_number": 14,
+      "word_count": 385,
+      "has_text": true
+    },
+    {
+      "page_number": 15,
+      "word_count": 193,
+      "has_text": true
+    }
+  ],
+  "clipping_or_blank_issues": [],
+  "qa_status": "PDF_QA_PASSED"
+}

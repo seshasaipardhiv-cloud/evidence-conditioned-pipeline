@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-14T18:55:13.394181+00:00",
+  "brier_score_comparison": {
+    "candidate_pipeline": 0.0175,
+    "default_xgboost": 0.018,
+    "random_forest": 0.0207,
+    "logistic_regression": 0.0201,
+    "simple_mlp": 0.0683
+  },
+  "calibration_assessment": {
+    "candidate_achieves_best_brier": true,
+    "discrimination_vs_calibration_tradeoff": "NO_CALIBRATION_PENALTY",
+    "notes": "Candidate pipeline achieved lowest Brier score (0.0175), indicating well-calibrated probabilities without sacrificing discrimination."
+  }
+}

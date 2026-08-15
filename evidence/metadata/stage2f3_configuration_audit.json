@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-08-14T06:40:26.672425+00:00",
+  "config_files_examined": [],
+  "explicit_configurations_found": {},
+  "primitive_config_status": {
+    "missing_value_handling": "NOT_CONFIGURED",
+    "categorical_encoding": "NOT_CONFIGURED",
+    "base_learner": "NOT_CONFIGURED",
+    "loss_function": "NOT_CONFIGURED",
+    "imbalance_handling": "NOT_CONFIGURED"
+  }
+}

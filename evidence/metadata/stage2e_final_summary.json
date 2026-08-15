@@ -1,0 +1,15 @@
+{
+  "execution_timestamp": "2026-08-14T06:11:42.829892+00:00",
+  "total_genuine_papers_examined": 30,
+  "representation_related_records_examined": 20,
+  "explicit_supported_candidates": 2,
+  "indirect_candidates": 18,
+  "rejected_candidates": 10,
+  "provenance_complete_candidates": 1,
+  "compatible_candidates": 30,
+  "leakage_safe_candidates": 30,
+  "taxonomy_gap_status": "TAXONOMY_GAP",
+  "evidence_gap_status": "EVIDENCE_PRESENT_WITH_TAXONOMY_GAP",
+  "final_representation_decision": "TAXONOMY_GAP",
+  "training_allowed": false
+}

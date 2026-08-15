@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-08-14T18:55:36.016823+00:00",
+  "status": "STATISTICALLY_HONEST_AND_COMPLETE",
+  "checks": {
+    "candidate_roc_auc_0_9751": true,
+    "default_xgboost_0_9704": true,
+    "margin_0_0047_described_as_modest": true,
+    "seed_42_candidate_won_0_9888": true,
+    "seed_100_candidate_lost_0_9609": true,
+    "seed_2026_candidate_won_0_9756": true,
+    "ablation_without_smote_0_9773": true,
+    "ablation_mean_imputation_0_9767": true,
+    "ablation_ordinal_encoding_0_9784": true,
+    "ablation_default_xgboost_0_9686": true,
+    "evidence_validity_ne_empirical_optimality_present": true,
+    "sample_size_n_3_underpowered_stated": true,
+    "brier_score_0_0175": true
+  }
+}

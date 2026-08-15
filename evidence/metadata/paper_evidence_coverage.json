@@ -1,0 +1,186 @@
+[
+  {
+    "paper_id": "paper_10.1038_s42256-023-00633-5",
+    "title": "Multimodal data fusion for cancer biomarker discovery with deep learning",
+    "doi": "10.1038/s42256-023-00633-5",
+    "pmid": null,
+    "abstract_available": false,
+    "full_text_available": true,
+    "full_text_source": "PMC",
+    "full_text_access_status": "accessible",
+    "full_text_license": "This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.",
+    "claims_extracted": 0,
+    "experiments_extracted": 1,
+    "ablations_extracted": 0,
+    "claim_ids": [],
+    "source_scopes": [
+      "none"
+    ],
+    "evidence_statuses": [],
+    "evidence_coverage": "full"
+  },
+  {
+    "paper_id": "paper_10.3390_bioengineering11010013",
+    "title": "",
+    "doi": "10.3390/bioengineering11010013",
+    "pmid": null,
+    "abstract_available": false,
+    "full_text_available": true,
+    "full_text_source": "PMC",
+    "full_text_access_status": "accessible",
+    "full_text_license": "https://creativecommons.org/licenses/by/4.0/ Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license ( https://creativecommons.org/licenses/by/4.0/ ).",
+    "claims_extracted": 0,
+    "experiments_extracted": 1,
+    "ablations_extracted": 0,
+    "claim_ids": [],
+    "source_scopes": [
+      "none"
+    ],
+    "evidence_statuses": [],
+    "evidence_coverage": "full"
+  },
+  {
+    "paper_id": "paper_38396486",
+    "title": "An Innovative and Efficient Diagnostic Prediction Flow for Head and Neck Cancer: A Deep Learning Approach for Multi-Modal Survival Analysis Prediction Based on Text and Multi-Center PET/CT Images.",
+    "doi": "10.3390/diagnostics14040448",
+    "pmid": "38396486",
+    "abstract_available": true,
+    "full_text_available": true,
+    "full_text_source": "PMC",
+    "full_text_access_status": "accessible",
+    "full_text_license": "https://creativecommons.org/licenses/by/4.0/ Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license ( https://creativecommons.org/licenses/by/4.0/ ).",
+    "claims_extracted": 1,
+    "experiments_extracted": 1,
+    "ablations_extracted": 0,
+    "claim_ids": [
+      "claim_b8d21adb"
+    ],
+    "source_scopes": [
+      "abstract"
+    ],
+    "evidence_statuses": [
+      "direct_empirical"
+    ],
+    "evidence_coverage": "full"
+  },
+  {
+    "paper_id": "paper_39074400",
+    "title": "Multimodal AI Combining Clinical and Imaging Inputs Improves Prostate Cancer Detection.",
+    "doi": "10.1097/RLI.0000000000001102",
+    "pmid": "39074400",
+    "abstract_available": true,
+    "full_text_available": false,
+    "full_text_source": null,
+    "full_text_access_status": "abstract_only",
+    "full_text_license": null,
+    "claims_extracted": 1,
+    "experiments_extracted": 1,
+    "ablations_extracted": 0,
+    "claim_ids": [
+      "claim_bbf09dcd"
+    ],
+    "source_scopes": [
+      "abstract"
+    ],
+    "evidence_statuses": [
+      "direct_empirical"
+    ],
+    "evidence_coverage": "abstract_only"
+  },
+  {
+    "paper_id": "paper_40325104",
+    "title": "A machine learning approach for multimodal data fusion for survival prediction in cancer patients.",
+    "doi": "10.1038/s41698-025-00917-6",
+    "pmid": "40325104",
+    "abstract_available": true,
+    "full_text_available": true,
+    "full_text_source": "PMC",
+    "full_text_access_status": "accessible",
+    "full_text_license": "https://creativecommons.org/licenses/by-nc-nd/4.0/ Open Access  This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article\u2019s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article\u2019s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit  http://creativecommons.org/licenses/by-nc-nd/4.0/ .",
+    "claims_extracted": 1,
+    "experiments_extracted": 1,
+    "ablations_extracted": 0,
+    "claim_ids": [
+      "claim_6a203adf"
+    ],
+    "source_scopes": [
+      "abstract"
+    ],
+    "evidence_statuses": [
+      "qualitative"
+    ],
+    "evidence_coverage": "full"
+  },
+  {
+    "paper_id": "paper_40449048",
+    "title": "Multimodal AI framework for lung cancer diagnosis: Integrating CNN and ANN models for imaging and clinical data analysis.",
+    "doi": "10.1016/j.compbiomed.2025.110488",
+    "pmid": "40449048",
+    "abstract_available": true,
+    "full_text_available": false,
+    "full_text_source": null,
+    "full_text_access_status": "abstract_only",
+    "full_text_license": null,
+    "claims_extracted": 1,
+    "experiments_extracted": 1,
+    "ablations_extracted": 0,
+    "claim_ids": [
+      "claim_8b26d124"
+    ],
+    "source_scopes": [
+      "abstract"
+    ],
+    "evidence_statuses": [
+      "direct_empirical"
+    ],
+    "evidence_coverage": "abstract_only"
+  },
+  {
+    "paper_id": "paper_41131352",
+    "title": "HONeYBEE: enabling scalable multimodal AI in oncology through foundation model-driven embeddings.",
+    "doi": "10.1038/s41746-025-02003-4",
+    "pmid": "41131352",
+    "abstract_available": true,
+    "full_text_available": true,
+    "full_text_source": "PMC",
+    "full_text_access_status": "accessible",
+    "full_text_license": "https://creativecommons.org/licenses/by-nc-nd/4.0/ Open Access  This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article\u2019s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article\u2019s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit  http://creativecommons.org/licenses/by-nc-nd/4.0/ .",
+    "claims_extracted": 1,
+    "experiments_extracted": 1,
+    "ablations_extracted": 1,
+    "claim_ids": [
+      "claim_d9a94efa"
+    ],
+    "source_scopes": [
+      "abstract"
+    ],
+    "evidence_statuses": [
+      "qualitative"
+    ],
+    "evidence_coverage": "full"
+  },
+  {
+    "paper_id": "paper_41353186",
+    "title": "Clinically aligned multi-modal image-text model for pan-cancer prognosis prediction.",
+    "doi": "10.1186/s13040-025-00495-0",
+    "pmid": "41353186",
+    "abstract_available": true,
+    "full_text_available": true,
+    "full_text_source": "PMC",
+    "full_text_access_status": "accessible",
+    "full_text_license": "https://creativecommons.org/licenses/by-nc-nd/4.0/ Open Access  This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article\u2019s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article\u2019s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit  http://creativecommons.org/licenses/by-nc-nd/4.0/ .",
+    "claims_extracted": 1,
+    "experiments_extracted": 1,
+    "ablations_extracted": 0,
+    "claim_ids": [
+      "claim_44b3c0c9"
+    ],
+    "source_scopes": [
+      "abstract"
+    ],
+    "evidence_statuses": [
+      "direct_empirical"
+    ],
+    "evidence_coverage": "full"
+  }
+]

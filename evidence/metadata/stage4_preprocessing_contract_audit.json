@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-08-14T17:36:06.373369+00:00",
+  "contract": {
+    "train_only_fit": true,
+    "validation_test_transform_only": true,
+    "no_target_derived_encoding": true,
+    "no_cross_split_leakage": true
+  },
+  "transformers": {
+    "imputer": {
+      "class": "backend.models.imputation.MissForestMICEImputer",
+      "fit_scope": "TRAIN_ONLY",
+      "transform_scope": "ALL_SPLITS"
+    },
+    "encoder": {
+      "class": "backend.models.preprocessing.OneHotEncoder",
+      "fit_scope": "TRAIN_ONLY",
+      "transform_scope": "ALL_SPLITS"
+    },
+    "sampler": {
+      "class": "backend.models.sampling.SMOTE",
+      "fit_scope": "TRAIN_ONLY",
+      "transform_scope": "TRAIN_ONLY"
+    }
+  },
+  "contract_verified": true
+}

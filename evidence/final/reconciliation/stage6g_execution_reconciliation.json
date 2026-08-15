@@ -1,0 +1,89 @@
+{
+  "timestamp": "2026-08-14T18:55:35.889917+00:00",
+  "total_configured_components": 8,
+  "actually_executed_count": 6,
+  "dormant_component_count": 2,
+  "mismatched_component_count": 1,
+  "components": {
+    "feature_representation": {
+      "configured_value": "clinical_tabular_representation",
+      "configured_provenance": "EVIDENCE_BACKED (PMID: 42487970)",
+      "actual_implementation": "Direct extraction of structured clinical key-value pairs from clinical_data.json",
+      "actually_executed": true,
+      "source_file": "backend/app/stage5/executor_stage5b.py",
+      "source_lines": "189-208",
+      "discrepancy": "None. Tabular clinical features are directly parsed into numeric and categorical feature matrices.",
+      "scientific_consequence": "Valid tabular representation execution."
+    },
+    "modality_fusion": {
+      "configured_value": "cross_attention",
+      "configured_provenance": "EVIDENCE_BACKED (Stage 3.1 Taxonomy)",
+      "actual_implementation": "None (Bypassed / Not instantiated)",
+      "actually_executed": false,
+      "source_file": "backend/app/stage5/executor_stage5b.py",
+      "source_lines": "464-480",
+      "discrepancy": "PIPELINE_COMPONENT_DORMANT. The benchmark task is unimodal tabular clinical data; cross-attention is bypassed in code.",
+      "scientific_consequence": "The empirical HANCOCK experiment does not validate cross-attention. Must be labeled as EVIDENCE_BACKED_BUT_DORMANT."
+    },
+    "ensembling": {
+      "configured_value": "average_ensembling",
+      "configured_provenance": "EVIDENCE_BACKED (Stage 3.1 Taxonomy)",
+      "actual_implementation": "None (Single XGBClassifier fitted directly)",
+      "actually_executed": false,
+      "source_file": "backend/app/stage5/executor_stage5b.py",
+      "source_lines": "464-480",
+      "discrepancy": "PIPELINE_COMPONENT_DORMANT. Execution fits a single regularized XGBoost model without model ensembling.",
+      "scientific_consequence": "The empirical HANCOCK experiment does not evaluate model ensembling. Must be labeled as EVIDENCE_BACKED_BUT_DORMANT."
+    },
+    "missing_value_handling": {
+      "configured_value": "MissForest / MICE",
+      "configured_provenance": "EVIDENCE_BACKED (PMID: 41826845)",
+      "actual_implementation": "sklearn.impute.SimpleImputer(strategy='median') for numeric, SimpleImputer(strategy='most_frequent') for categorical",
+      "actually_executed": true,
+      "source_file": "backend/app/stage5/executor_stage5b.py",
+      "source_lines": "276-281",
+      "discrepancy": "PIPELINE_IMPLEMENTATION_MISMATCH. Configured as multivariate MICE/MissForest, but code executes univariate median/mode imputation.",
+      "scientific_consequence": "The reported results reflect univariate median/mode imputation, not iterative multivariate MICE. Manuscript must be reconciled."
+    },
+    "base_learner": {
+      "configured_value": "XGBoost",
+      "configured_provenance": "EVIDENCE_BACKED (PMID: 41775771)",
+      "actual_implementation": "xgboost.XGBClassifier(n_estimators=100, max_depth=4, learning_rate=0.05, subsample=0.8, colsample_bytree=0.8)",
+      "actually_executed": true,
+      "source_file": "backend/app/stage5/executor_stage5b.py",
+      "source_lines": "466-477",
+      "discrepancy": "None. XGBClassifier is directly instantiated and fitted.",
+      "scientific_consequence": "Valid execution of regularized gradient tree boosting base learner."
+    },
+    "imbalance_handling": {
+      "configured_value": "SMOTE",
+      "configured_provenance": "EVIDENCE_BACKED (PMID: 41006422)",
+      "actual_implementation": "imblearn.over_sampling.SMOTE(random_state=seed)",
+      "actually_executed": true,
+      "source_file": "backend/app/stage5/executor_stage5b.py",
+      "source_lines": "307-308",
+      "discrepancy": "None. SMOTE is fitted strictly on the training partition.",
+      "scientific_consequence": "Valid execution of class imbalance handling."
+    },
+    "categorical_encoding": {
+      "configured_value": "one_hot_encoding",
+      "configured_provenance": "EXPLICITLY_CONFIGURED (experiment_config.json)",
+      "actual_implementation": "sklearn.preprocessing.OneHotEncoder(handle_unknown='ignore', sparse_output=False)",
+      "actually_executed": true,
+      "source_file": "backend/app/stage5/executor_stage5b.py",
+      "source_lines": "293-299",
+      "discrepancy": "None. Fitted strictly on training categorical data.",
+      "scientific_consequence": "Valid explicit project configuration execution."
+    },
+    "loss_function": {
+      "configured_value": "binary_logistic",
+      "configured_provenance": "EXPLICITLY_CONFIGURED (experiment_config.json)",
+      "actual_implementation": "objective='binary:logistic', eval_metric='logloss'",
+      "actually_executed": true,
+      "source_file": "backend/app/stage5/executor_stage5b.py",
+      "source_lines": "472-474",
+      "discrepancy": "None. Passed to XGBClassifier.",
+      "scientific_consequence": "Valid explicit project configuration execution."
+    }
+  }
+}

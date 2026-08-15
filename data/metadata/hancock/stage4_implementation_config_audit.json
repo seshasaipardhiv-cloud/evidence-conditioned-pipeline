@@ -1,0 +1,59 @@
+{
+  "configured_primitives": [
+    {
+      "component": "missing_value_handling",
+      "selected_value": "mean_imputation",
+      "configuration_source": "explicit_configuration",
+      "evidence_status": "unsupported",
+      "compatibility_status": "valid",
+      "rationale": "Explicitly configured primitive.",
+      "training_allowed": false
+    },
+    {
+      "component": "categorical_encoding",
+      "selected_value": "one_hot_encoding",
+      "configuration_source": "explicit_configuration",
+      "evidence_status": "unsupported",
+      "compatibility_status": "valid",
+      "rationale": "Explicitly configured primitive.",
+      "training_allowed": false
+    },
+    {
+      "component": "base_learner",
+      "selected_value": "gradient_boosting",
+      "configuration_source": "explicit_configuration",
+      "evidence_status": "unsupported",
+      "compatibility_status": "valid",
+      "rationale": "Explicitly configured primitive.",
+      "training_allowed": false
+    },
+    {
+      "component": "loss_function",
+      "selected_value": "focal_loss",
+      "configuration_source": "explicit_configuration",
+      "evidence_status": "unsupported",
+      "compatibility_status": "valid",
+      "rationale": "Explicitly configured primitive.",
+      "training_allowed": false
+    },
+    {
+      "component": "feature_representation",
+      "selected_value": null,
+      "configuration_source": "none",
+      "evidence_status": "unsupported",
+      "compatibility_status": "incompatible",
+      "rationale": "Component explicitly left unresolved.",
+      "training_allowed": false
+    },
+    {
+      "component": "imbalance_handling",
+      "selected_value": "class_weighted_sampling",
+      "configuration_source": "explicit_configuration",
+      "evidence_status": "unsupported",
+      "compatibility_status": "valid",
+      "rationale": "Explicitly configured primitive.",
+      "training_allowed": false
+    }
+  ],
+  "training_allowed": false
+}

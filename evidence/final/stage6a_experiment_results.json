@@ -1,0 +1,450 @@
+{
+  "timestamp": "2026-08-14T18:55:13.444984+00:00",
+  "target_task": "recurrence_classification",
+  "candidate_pipeline": {
+    "name": "Candidate Pipeline (Evidence-Conditioned XGBoost)",
+    "mean_roc_auc": 0.9751,
+    "std_roc_auc": 0.0114,
+    "primary_metric": "roc_auc",
+    "aggregated_test_metrics": {
+      "roc_auc": {
+        "mean": 0.9751,
+        "std": 0.0114,
+        "min": 0.9609,
+        "max": 0.9888
+      },
+      "f1": {
+        "mean": 0.9611,
+        "std": 0.0184,
+        "min": 0.9412,
+        "max": 0.9855
+      },
+      "accuracy": {
+        "mean": 0.9825,
+        "std": 0.0082,
+        "min": 0.9737,
+        "max": 0.9934
+      },
+      "precision": {
+        "mean": 0.9801,
+        "std": 0.0141,
+        "min": 0.9697,
+        "max": 1.0
+      },
+      "recall": {
+        "mean": 0.9429,
+        "std": 0.0233,
+        "min": 0.9143,
+        "max": 0.9714
+      },
+      "brier_score": {
+        "mean": 0.0175,
+        "std": 0.0076,
+        "min": 0.0074,
+        "max": 0.0256
+      },
+      "pr_auc": {
+        "mean": 0.9679,
+        "std": 0.0123,
+        "min": 0.9538,
+        "max": 0.9838
+      }
+    },
+    "per_seed_results": [
+      {
+        "seed": 42,
+        "val_metrics": {
+          "roc_auc": 0.9693,
+          "f1": 0.9412,
+          "accuracy": 0.9739,
+          "precision": 1.0,
+          "recall": 0.8889,
+          "brier_score": 0.0201,
+          "pr_auc": 0.9586
+        },
+        "test_metrics": {
+          "roc_auc": 0.9888,
+          "f1": 0.9855,
+          "accuracy": 0.9934,
+          "precision": 1.0,
+          "recall": 0.9714,
+          "brier_score": 0.0074,
+          "pr_auc": 0.9838
+        }
+      },
+      {
+        "seed": 100,
+        "val_metrics": {
+          "roc_auc": 0.9886,
+          "f1": 0.9811,
+          "accuracy": 0.9913,
+          "precision": 1.0,
+          "recall": 0.963,
+          "brier_score": 0.0093,
+          "pr_auc": 0.9815
+        },
+        "test_metrics": {
+          "roc_auc": 0.9609,
+          "f1": 0.9412,
+          "accuracy": 0.9737,
+          "precision": 0.9697,
+          "recall": 0.9143,
+          "brier_score": 0.0256,
+          "pr_auc": 0.9538
+        }
+      },
+      {
+        "seed": 2026,
+        "val_metrics": {
+          "roc_auc": 0.9263,
+          "f1": 0.9057,
+          "accuracy": 0.9565,
+          "precision": 0.9231,
+          "recall": 0.8889,
+          "brier_score": 0.0426,
+          "pr_auc": 0.884
+        },
+        "test_metrics": {
+          "roc_auc": 0.9756,
+          "f1": 0.9565,
+          "accuracy": 0.9803,
+          "precision": 0.9706,
+          "recall": 0.9429,
+          "brier_score": 0.0194,
+          "pr_auc": 0.9662
+        }
+      }
+    ]
+  },
+  "baseline_comparisons": {
+    "baseline_logistic_regression": {
+      "baseline_mean_roc_auc": 0.9645,
+      "baseline_std_roc_auc": 0.007,
+      "absolute_delta_roc_auc": 0.0106,
+      "relative_improvement_percent": 1.1,
+      "per_seed_comparisons": [
+        {
+          "seed": 42,
+          "candidate_auc": 0.9888,
+          "baseline_auc": 0.9719,
+          "delta": 0.0169,
+          "candidate_wins": true
+        },
+        {
+          "seed": 100,
+          "candidate_auc": 0.9609,
+          "baseline_auc": 0.9551,
+          "delta": 0.0058,
+          "candidate_wins": true
+        },
+        {
+          "seed": 2026,
+          "candidate_auc": 0.9756,
+          "baseline_auc": 0.9665,
+          "delta": 0.0091,
+          "candidate_wins": true
+        }
+      ],
+      "candidate_win_rate": "3 / 3",
+      "baseline_metrics": {
+        "roc_auc": {
+          "mean": 0.9645,
+          "std": 0.007,
+          "min": 0.9551,
+          "max": 0.9719
+        },
+        "f1": {
+          "mean": 0.9558,
+          "std": 0.0245,
+          "min": 0.9254,
+          "max": 0.9855
+        },
+        "accuracy": {
+          "mean": 0.9803,
+          "std": 0.0107,
+          "min": 0.9671,
+          "max": 0.9934
+        },
+        "precision": {
+          "mean": 0.9798,
+          "std": 0.0143,
+          "min": 0.9688,
+          "max": 1.0
+        },
+        "recall": {
+          "mean": 0.9333,
+          "std": 0.0356,
+          "min": 0.8857,
+          "max": 0.9714
+        },
+        "brier_score": {
+          "mean": 0.0201,
+          "std": 0.0094,
+          "min": 0.0078,
+          "max": 0.0307
+        },
+        "pr_auc": {
+          "mean": 0.9536,
+          "std": 0.0174,
+          "min": 0.9399,
+          "max": 0.9781
+        }
+      }
+    },
+    "baseline_random_forest": {
+      "baseline_mean_roc_auc": 0.9698,
+      "baseline_std_roc_auc": 0.0065,
+      "absolute_delta_roc_auc": 0.0053,
+      "relative_improvement_percent": 0.55,
+      "per_seed_comparisons": [
+        {
+          "seed": 42,
+          "candidate_auc": 0.9888,
+          "baseline_auc": 0.9757,
+          "delta": 0.0131,
+          "candidate_wins": true
+        },
+        {
+          "seed": 100,
+          "candidate_auc": 0.9609,
+          "baseline_auc": 0.9607,
+          "delta": 0.0002,
+          "candidate_wins": true
+        },
+        {
+          "seed": 2026,
+          "candidate_auc": 0.9756,
+          "baseline_auc": 0.9729,
+          "delta": 0.0027,
+          "candidate_wins": true
+        }
+      ],
+      "candidate_win_rate": "3 / 3",
+      "baseline_metrics": {
+        "roc_auc": {
+          "mean": 0.9698,
+          "std": 0.0065,
+          "min": 0.9607,
+          "max": 0.9757
+        },
+        "f1": {
+          "mean": 0.9611,
+          "std": 0.0184,
+          "min": 0.9412,
+          "max": 0.9855
+        },
+        "accuracy": {
+          "mean": 0.9825,
+          "std": 0.0082,
+          "min": 0.9737,
+          "max": 0.9934
+        },
+        "precision": {
+          "mean": 0.9801,
+          "std": 0.0141,
+          "min": 0.9697,
+          "max": 1.0
+        },
+        "recall": {
+          "mean": 0.9429,
+          "std": 0.0233,
+          "min": 0.9143,
+          "max": 0.9714
+        },
+        "brier_score": {
+          "mean": 0.0207,
+          "std": 0.0061,
+          "min": 0.0127,
+          "max": 0.0274
+        },
+        "pr_auc": {
+          "mean": 0.9494,
+          "std": 0.0216,
+          "min": 0.9257,
+          "max": 0.978
+        }
+      }
+    },
+    "baseline_simple_mlp": {
+      "baseline_mean_roc_auc": 0.9405,
+      "baseline_std_roc_auc": 0.0192,
+      "absolute_delta_roc_auc": 0.0346,
+      "relative_improvement_percent": 3.68,
+      "per_seed_comparisons": [
+        {
+          "seed": 42,
+          "candidate_auc": 0.9888,
+          "baseline_auc": 0.9536,
+          "delta": 0.0352,
+          "candidate_wins": true
+        },
+        {
+          "seed": 100,
+          "candidate_auc": 0.9609,
+          "baseline_auc": 0.9133,
+          "delta": 0.0476,
+          "candidate_wins": true
+        },
+        {
+          "seed": 2026,
+          "candidate_auc": 0.9756,
+          "baseline_auc": 0.9546,
+          "delta": 0.021,
+          "candidate_wins": true
+        }
+      ],
+      "candidate_win_rate": "3 / 3",
+      "baseline_metrics": {
+        "roc_auc": {
+          "mean": 0.9405,
+          "std": 0.0192,
+          "min": 0.9133,
+          "max": 0.9546
+        },
+        "f1": {
+          "mean": 0.9003,
+          "std": 0.0282,
+          "min": 0.8615,
+          "max": 0.9275
+        },
+        "accuracy": {
+          "mean": 0.9561,
+          "std": 0.0112,
+          "min": 0.9408,
+          "max": 0.9671
+        },
+        "precision": {
+          "mean": 0.938,
+          "std": 0.0034,
+          "min": 0.9333,
+          "max": 0.9412
+        },
+        "recall": {
+          "mean": 0.8667,
+          "std": 0.0486,
+          "min": 0.8,
+          "max": 0.9143
+        },
+        "brier_score": {
+          "mean": 0.0683,
+          "std": 0.0089,
+          "min": 0.0564,
+          "max": 0.0778
+        },
+        "pr_auc": {
+          "mean": 0.906,
+          "std": 0.0266,
+          "min": 0.8688,
+          "max": 0.9291
+        }
+      }
+    },
+    "baseline_xgboost_default": {
+      "baseline_mean_roc_auc": 0.9704,
+      "baseline_std_roc_auc": 0.0059,
+      "absolute_delta_roc_auc": 0.0047,
+      "relative_improvement_percent": 0.48,
+      "per_seed_comparisons": [
+        {
+          "seed": 42,
+          "candidate_auc": 0.9888,
+          "baseline_auc": 0.9783,
+          "delta": 0.0105,
+          "candidate_wins": true
+        },
+        {
+          "seed": 100,
+          "candidate_auc": 0.9609,
+          "baseline_auc": 0.9643,
+          "delta": -0.0034,
+          "candidate_wins": false
+        },
+        {
+          "seed": 2026,
+          "candidate_auc": 0.9756,
+          "baseline_auc": 0.9685,
+          "delta": 0.0071,
+          "candidate_wins": true
+        }
+      ],
+      "candidate_win_rate": "2 / 3",
+      "baseline_metrics": {
+        "roc_auc": {
+          "mean": 0.9704,
+          "std": 0.0059,
+          "min": 0.9643,
+          "max": 0.9783
+        },
+        "f1": {
+          "mean": 0.9611,
+          "std": 0.0184,
+          "min": 0.9412,
+          "max": 0.9855
+        },
+        "accuracy": {
+          "mean": 0.9825,
+          "std": 0.0082,
+          "min": 0.9737,
+          "max": 0.9934
+        },
+        "precision": {
+          "mean": 0.9801,
+          "std": 0.0141,
+          "min": 0.9697,
+          "max": 1.0
+        },
+        "recall": {
+          "mean": 0.9429,
+          "std": 0.0233,
+          "min": 0.9143,
+          "max": 0.9714
+        },
+        "brier_score": {
+          "mean": 0.018,
+          "std": 0.0078,
+          "min": 0.0077,
+          "max": 0.0267
+        },
+        "pr_auc": {
+          "mean": 0.9665,
+          "std": 0.0096,
+          "min": 0.9567,
+          "max": 0.9795
+        }
+      }
+    }
+  },
+  "per_seed_margins": {
+    "42": {
+      "candidate_auc": 0.9888,
+      "default_xgb_auc": 0.9783,
+      "margin": 0.0105,
+      "candidate_won": true
+    },
+    "100": {
+      "candidate_auc": 0.9609,
+      "default_xgb_auc": 0.9643,
+      "margin": -0.0034,
+      "candidate_won": false
+    },
+    "2026": {
+      "candidate_auc": 0.9756,
+      "default_xgb_auc": 0.9685,
+      "margin": 0.0071,
+      "candidate_won": true
+    }
+  },
+  "seed_win_summary": {
+    "wins_across_seeds": "2 / 3",
+    "seed_42": "Candidate Won (+0.0105)",
+    "seed_100": "Default XGBoost Won (-0.0034)",
+    "seed_2026": "Candidate Won (+0.0071)"
+  },
+  "probability_calibration": {
+    "candidate_pipeline": 0.0175,
+    "default_xgboost": 0.018,
+    "random_forest": 0.0207,
+    "logistic_regression": 0.0201,
+    "simple_mlp": 0.0683
+  }
+}

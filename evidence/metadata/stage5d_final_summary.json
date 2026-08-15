@@ -1,0 +1,41 @@
+{
+  "execution_timestamp": "2026-08-14T18:55:13.417522+00:00",
+  "stage": "Stage 5D: Final Scientific Validation, Claim Audit, and Reproducibility Verification",
+  "audit_status": "AUDIT_COMPLETE",
+  "traceability_status": "PASS",
+  "reproducibility_status": "PASS",
+  "result_consistency_status": "VERIFIED_CONSISTENT",
+  "claim_counts": {
+    "supported": 5,
+    "partially_supported": 1,
+    "not_supported": 4
+  },
+  "candidate_mean_roc_auc": 0.9751,
+  "default_xgb_mean_roc_auc": 0.9704,
+  "overall_margin": 0.0047,
+  "generalization_boundary": {
+    "internal_validation": "SUPPORTED",
+    "external_validation": "NOT_ESTABLISHED",
+    "prospective_validation": "NOT_ESTABLISHED",
+    "clinical_utility": "NOT_ESTABLISHED",
+    "multi_institutional_generalization": "NOT_ESTABLISHED"
+  },
+  "safety_firewalls": {
+    "stage5b_artifacts_unmodified": true,
+    "corpus_unchanged": true
+  },
+  "pre_audit_hashes": {
+    "papers": "670107ee79c518acff87df1db50ba712be870a3abe7a374e6ab4155707096bf5",
+    "experiments": "34692984a4dc6c6bf6bd4a684035c6bc75c36aeadd663b4b94a1da234fe13f05",
+    "evidence_claims": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mechanisms": "00cec963267f1caad2f797a67cbd9da064fdd8ae60415c6cb2cfdf9283dfe939",
+    "stage5b_results": "7d40871235434b83d210d5efa20dfa9c36e04fd164c743f8f8e01f731919c111"
+  },
+  "post_audit_hashes": {
+    "papers": "670107ee79c518acff87df1db50ba712be870a3abe7a374e6ab4155707096bf5",
+    "experiments": "34692984a4dc6c6bf6bd4a684035c6bc75c36aeadd663b4b94a1da234fe13f05",
+    "evidence_claims": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mechanisms": "00cec963267f1caad2f797a67cbd9da064fdd8ae60415c6cb2cfdf9283dfe939",
+    "stage5b_results": "7d40871235434b83d210d5efa20dfa9c36e04fd164c743f8f8e01f731919c111"
+  }
+}

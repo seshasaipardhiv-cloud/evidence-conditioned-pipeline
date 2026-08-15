@@ -1,0 +1,126 @@
+{
+  "specification_version": "4.0",
+  "timestamp": "2026-08-14T17:36:06.372367+00:00",
+  "source_stage": "Stage 3.6 Configured Pipeline Specification",
+  "source_pipeline_hash": "6b6bcb1b217793230dba3467ea09fd94339c7497ccc85b0f8ed86c59f16686da",
+  "target_task": "recurrence_classification",
+  "primary_metric": "roc_auc",
+  "materialized_components": {
+    "feature_representation": {
+      "component": "feature_representation",
+      "selected_value": "clinical_tabular_representation",
+      "executable_class": "backend.models.tabular.ClinicalTabularRepresentation",
+      "classification": "EVIDENCE_BACKED",
+      "configuration_source": "literature_evidence",
+      "provenance": {
+        "paper_id": "paper_42487970",
+        "experiment_id": "exp_aef6b872",
+        "source_sentence": "Structured data, such as the patient\u2019s age and stage, can be directly used as input for the model...",
+        "stage_origin": "Stage 2E-1 Controlled Taxonomy Extension"
+      },
+      "compatibility_status": "COMPATIBLE",
+      "materialization_status": "MATERIALIZED"
+    },
+    "modality_fusion": {
+      "component": "modality_fusion",
+      "selected_value": "cross_attention",
+      "executable_class": "backend.models.fusion.CrossAttentionFusion",
+      "classification": "EVIDENCE_BACKED",
+      "configuration_source": "literature_evidence",
+      "provenance": {
+        "canonical_name": "cross-attention",
+        "mechanism_id": "mech_cross_attention",
+        "stage_origin": "Stage 3.1 Validated Pipeline Specification"
+      },
+      "compatibility_status": "COMPATIBLE",
+      "materialization_status": "MATERIALIZED"
+    },
+    "ensembling": {
+      "component": "ensembling",
+      "selected_value": "average_ensembling",
+      "executable_class": "backend.models.ensembles.AverageEnsemble",
+      "classification": "EVIDENCE_BACKED",
+      "configuration_source": "literature_evidence",
+      "provenance": {
+        "canonical_name": "average_ensembling",
+        "stage_origin": "Stage 3.1 Validated Pipeline Specification"
+      },
+      "compatibility_status": "COMPATIBLE",
+      "materialization_status": "MATERIALIZED"
+    },
+    "missing_value_handling": {
+      "component": "missing_value_handling",
+      "selected_value": "MissForest / MICE",
+      "executable_class": "backend.models.imputation.MissForestMICEImputer",
+      "classification": "EVIDENCE_BACKED",
+      "configuration_source": "literature_evidence",
+      "provenance": {
+        "pmid": "41826845",
+        "doi": "10.1186/s12874-026-02805-4",
+        "source_sentence": "Missing values were imputed using MissForest...",
+        "stage_origin": "Stage 2F-1 Literature Retrieval"
+      },
+      "compatibility_status": "COMPATIBLE",
+      "materialization_status": "MATERIALIZED"
+    },
+    "base_learner": {
+      "component": "base_learner",
+      "selected_value": "XGBoost",
+      "executable_class": "backend.models.classifiers.XGBoostClassifier",
+      "classification": "EVIDENCE_BACKED",
+      "configuration_source": "literature_evidence",
+      "provenance": {
+        "pmid": "41775771",
+        "doi": "10.1038/s41598-026-39104-3",
+        "source_sentence": "In this study, the XGBoost classifier was trained on the augmented feature set...",
+        "stage_origin": "Stage 2F-1 Literature Retrieval"
+      },
+      "compatibility_status": "COMPATIBLE",
+      "materialization_status": "MATERIALIZED"
+    },
+    "imbalance_handling": {
+      "component": "imbalance_handling",
+      "selected_value": "SMOTE",
+      "executable_class": "backend.models.sampling.SMOTE",
+      "classification": "EVIDENCE_BACKED",
+      "configuration_source": "literature_evidence",
+      "provenance": {
+        "pmid": "41006422",
+        "doi": "10.1038/s41598-025-16790-z",
+        "source_sentence": "SMOTE was applied to augment the RMBC group to address the class imbalance...",
+        "stage_origin": "Stage 2F-1 Literature Retrieval"
+      },
+      "compatibility_status": "COMPATIBLE",
+      "materialization_status": "MATERIALIZED"
+    },
+    "categorical_encoding": {
+      "component": "categorical_encoding",
+      "selected_value": "one_hot_encoding",
+      "executable_class": "backend.models.preprocessing.OneHotEncoder",
+      "classification": "EXPLICITLY_CONFIGURED",
+      "configuration_source": "explicit_project_configuration",
+      "provenance": {
+        "config_file": "experiment_config.json",
+        "literature_claim": false
+      },
+      "compatibility_status": "COMPATIBLE",
+      "materialization_status": "MATERIALIZED"
+    },
+    "loss_function": {
+      "component": "loss_function",
+      "selected_value": "binary_logistic",
+      "executable_class": "backend.models.losses.BinaryLogisticLoss",
+      "classification": "EXPLICITLY_CONFIGURED",
+      "configuration_source": "explicit_project_configuration",
+      "provenance": {
+        "config_file": "experiment_config.json",
+        "literature_claim": false
+      },
+      "compatibility_status": "COMPATIBLE",
+      "materialization_status": "MATERIALIZED"
+    }
+  },
+  "all_components_materialized": true,
+  "status": "MATERIALIZATION_COMPLETE",
+  "training_allowed": false
+}

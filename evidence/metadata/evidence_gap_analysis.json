@@ -1,0 +1,98 @@
+[
+  {
+    "gap_id": "gap_f5631e02",
+    "category": "task",
+    "description": "Cancer subtyping",
+    "existing_evidence_count": 0,
+    "priority": "MEDIUM",
+    "search_rationale": "multimodal cancer subtyping clustering"
+  },
+  {
+    "gap_id": "gap_83e274e4",
+    "category": "task",
+    "description": "Disease recurrence prediction",
+    "existing_evidence_count": 0,
+    "priority": "MEDIUM",
+    "search_rationale": "multimodal cancer recurrence prediction"
+  },
+  {
+    "gap_id": "gap_4e2dfd63",
+    "category": "modality",
+    "description": "Pathology/WSI images",
+    "existing_evidence_count": 0,
+    "priority": "HIGH",
+    "search_rationale": "multimodal cancer pathology whole slide image"
+  },
+  {
+    "gap_id": "gap_07ceb6d4",
+    "category": "modality",
+    "description": "Clinical notes/reports",
+    "existing_evidence_count": 1,
+    "priority": "HIGH",
+    "search_rationale": "multimodal cancer NLP clinical text report"
+  },
+  {
+    "gap_id": "gap_6e832f03",
+    "category": "modality",
+    "description": "Omics (genomic/transcriptomic)",
+    "existing_evidence_count": 0,
+    "priority": "HIGH",
+    "search_rationale": "multimodal cancer omics genomic integration"
+  },
+  {
+    "gap_id": "gap_3e7b92a1",
+    "category": "modality",
+    "description": "Clinical tabular data",
+    "existing_evidence_count": 0,
+    "priority": "HIGH",
+    "search_rationale": "multimodal cancer clinical tabular features"
+  },
+  {
+    "gap_id": "gap_4f6bbe10",
+    "category": "fusion",
+    "description": "Early Fusion",
+    "existing_evidence_count": 0,
+    "priority": "HIGH",
+    "search_rationale": "multimodal cancer early fusion"
+  },
+  {
+    "gap_id": "gap_848891de",
+    "category": "fusion",
+    "description": "Intermediate Fusion",
+    "existing_evidence_count": 0,
+    "priority": "HIGH",
+    "search_rationale": "multimodal cancer intermediate fusion"
+  },
+  {
+    "gap_id": "gap_7d4764b2",
+    "category": "fusion",
+    "description": "Gated Fusion",
+    "existing_evidence_count": 0,
+    "priority": "HIGH",
+    "search_rationale": "multimodal cancer gated fusion"
+  },
+  {
+    "gap_id": "gap_8a04a7e1",
+    "category": "fusion",
+    "description": "Joint Embedding",
+    "existing_evidence_count": 0,
+    "priority": "HIGH",
+    "search_rationale": "multimodal cancer joint embedding"
+  },
+  {
+    "gap_id": "gap_72ba98d8",
+    "category": "evidence_type",
+    "description": "Negative findings",
+    "existing_evidence_count": 0,
+    "priority": "MEDIUM",
+    "search_rationale": "multimodal cancer \"did not improve\" OR \"no significant\""
+  },
+  {
+    "gap_id": "gap_66b8d10b",
+    "category": "evidence_type",
+    "description": "Ablation/component analysis",
+    "existing_evidence_count": 0,
+    "priority": "HIGH",
+    "search_rationale": "multimodal cancer ablation study component"
+  }
+]

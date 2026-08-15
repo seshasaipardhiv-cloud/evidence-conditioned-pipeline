@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-08-14T06:11:42.829892+00:00",
+  "final_representation_decision": "TAXONOMY_GAP",
+  "decision_reasoning": "Found 1 genuine paper(s) in the Stage 2C corpus (e.g. paper_39074400, paper_40449048, paper_42487970) with explicit clinical/tabular input representation evidence, but the Stage 2/3 mechanism taxonomy only defines 'cnn' under the Representation category, creating a taxonomy gap.",
+  "hancock_modality_status": "clinical_tabular_only",
+  "training_allowed": false
+}

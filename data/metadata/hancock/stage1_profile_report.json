@@ -1,0 +1,281 @@
+{
+  "dataset_name": "HANCOCK",
+  "total_patients": 763,
+  "clinical": {
+    "patient_count": 763,
+    "record_count": 1526,
+    "numerical_fields": [
+      "year_of_initial_diagnosis",
+      "age_at_initial_diagnosis",
+      "days_to_last_information",
+      "days_to_first_treatment"
+    ],
+    "categorical_fields": [
+      "sex",
+      "smoking_status",
+      "primarily_metastasis",
+      "survival_status",
+      "survival_status_with_cause",
+      "first_treatment_intent",
+      "first_treatment_modality",
+      "adjuvant_treatment_intent",
+      "adjuvant_radiotherapy",
+      "adjuvant_radiotherapy_modality",
+      "adjuvant_systemic_therapy",
+      "adjuvant_systemic_therapy_modality",
+      "adjuvant_radiochemotherapy",
+      "recurrence",
+      "progress_1"
+    ],
+    "boolean_fields": [],
+    "missing_value_counts": {
+      "days_to_recurrence": 1172,
+      "days_to_progress_1": 1180,
+      "progress_2": 1486,
+      "days_to_progress_2": 1486,
+      "metastasis_1_locations": 1308,
+      "days_to_metastasis_1": 1308,
+      "metastasis_2_locations": 1456,
+      "days_to_metastasis_2": 1456,
+      "metastasis_3_locations": 1508,
+      "days_to_metastasis_3": 1508,
+      "metastasis_4_locations": 1520,
+      "days_to_metastasis_4": 1520,
+      "adjuvant_treatment_intent": 720,
+      "adjuvant_systemic_therapy_modality": 984,
+      "adjuvant_radiotherapy_modality": 580,
+      "primarily_metastasis": 48,
+      "smoking_status": 32,
+      "adjuvant_systemic_therapy": 4
+    },
+    "unique_value_counts": {
+      "year_of_initial_diagnosis": 15,
+      "age_at_initial_diagnosis": 57,
+      "sex": 2,
+      "smoking_status": 4,
+      "primarily_metastasis": 3,
+      "survival_status": 2,
+      "survival_status_with_cause": 4,
+      "days_to_last_information": 682,
+      "first_treatment_intent": 1,
+      "first_treatment_modality": 1,
+      "days_to_first_treatment": 86,
+      "adjuvant_treatment_intent": 3,
+      "adjuvant_radiotherapy": 2,
+      "adjuvant_radiotherapy_modality": 6,
+      "adjuvant_systemic_therapy": 3,
+      "adjuvant_systemic_therapy_modality": 24,
+      "adjuvant_radiochemotherapy": 2,
+      "recurrence": 2,
+      "days_to_recurrence": 165,
+      "progress_1": 2,
+      "days_to_progress_1": 159,
+      "progress_2": 2,
+      "days_to_progress_2": 21,
+      "metastasis_1_locations": 27,
+      "days_to_metastasis_1": 102,
+      "metastasis_2_locations": 18,
+      "days_to_metastasis_2": 34,
+      "metastasis_3_locations": 8,
+      "days_to_metastasis_3": 10,
+      "metastasis_4_locations": 4,
+      "days_to_metastasis_4": 4
+    },
+    "constant_fields": [
+      "first_treatment_intent",
+      "first_treatment_modality"
+    ],
+    "suspicious_identifier_fields": [],
+    "provenance": {
+      "source_type": "dataset",
+      "source_reference": "ingestion_report + extracted json files",
+      "extraction_method": "schema_based_profiler",
+      "confidence": "explicit",
+      "evidence_text": null
+    }
+  },
+  "pathology": {
+    "patient_count": 763,
+    "record_count": 763,
+    "categorical_fields": [
+      "primary_tumor_site",
+      "pT_stage",
+      "pN_stage",
+      "grading",
+      "hpv_association_p16",
+      "perinodal_invasion",
+      "lymphovascular_invasion_L",
+      "vascular_invasion_V",
+      "perineural_invasion_Pn",
+      "resection_status",
+      "resection_status_carcinoma_in_situ",
+      "carcinoma_in_situ",
+      "closest_resection_margin_in_cm",
+      "histologic_type"
+    ],
+    "numerical_fields": [
+      "number_of_positive_lymph_nodes",
+      "number_of_resected_lymph_nodes",
+      "infiltration_depth_in_mm"
+    ],
+    "missing_value_counts": {
+      "closest_resection_margin_in_cm": 171,
+      "perinodal_invasion": 365,
+      "number_of_positive_lymph_nodes": 152,
+      "histologic_type": 20,
+      "infiltration_depth_in_mm": 137
+    },
+    "unique_value_counts": {
+      "primary_tumor_site": 5,
+      "pT_stage": 9,
+      "pN_stage": 10,
+      "grading": 4,
+      "hpv_association_p16": 3,
+      "number_of_positive_lymph_nodes": 26,
+      "number_of_resected_lymph_nodes": 74,
+      "perinodal_invasion": 3,
+      "lymphovascular_invasion_L": 2,
+      "vascular_invasion_V": 2,
+      "perineural_invasion_Pn": 2,
+      "resection_status": 4,
+      "resection_status_carcinoma_in_situ": 3,
+      "carcinoma_in_situ": 2,
+      "closest_resection_margin_in_cm": 15,
+      "histologic_type": 9,
+      "infiltration_depth_in_mm": 45
+    },
+    "provenance": {
+      "source_type": "dataset",
+      "source_reference": "ingestion_report + extracted json files",
+      "extraction_method": "schema_based_profiler",
+      "confidence": "explicit",
+      "evidence_text": null
+    }
+  },
+  "blood": {
+    "patient_count": 693,
+    "observation_count": 23272,
+    "analyte_count": 38,
+    "analyte_names": [
+      "Basophils",
+      "Basophils %",
+      "CRP",
+      "Calcium",
+      "Chloride",
+      "Creatinine",
+      "Eosinophils",
+      "Eosinophils %",
+      "Erythrocytes",
+      "Glomerular filtration rate",
+      "Glucose",
+      "Granulocytes",
+      "Granulocytes %",
+      "Hematocrit",
+      "Hemoglobin",
+      "INR",
+      "Immature Granulocytyes",
+      "Leukocytes",
+      "Lymphocytes",
+      "Lymphocytes %",
+      "MCH",
+      "MCV",
+      "MHCH",
+      "MPV",
+      "Magnesium",
+      "Monocytes",
+      "Monocytes %",
+      "Normoblasts",
+      "PDW",
+      "PLCR",
+      "PT",
+      "Platelets",
+      "Potassium",
+      "RDW",
+      "Sodium",
+      "Thrombin time",
+      "Urea",
+      "aPPT"
+    ],
+    "units_observed": [
+      "%",
+      "fl",
+      "g/dl",
+      "mg/dl",
+      "mg/l",
+      "ml/min",
+      "mmol/l",
+      "pg",
+      "s",
+      "x10^3/\u00b5l",
+      "x10^6/\u00b5l"
+    ],
+    "missing_value_count": 88,
+    "repeated_measurements_detected": false,
+    "temporal_available": true,
+    "provenance": {
+      "source_type": "dataset",
+      "source_reference": "ingestion_report + extracted json files",
+      "extraction_method": "schema_based_profiler",
+      "confidence": "explicit",
+      "evidence_text": null
+    }
+  },
+  "text": {
+    "patient_count": 763,
+    "history_available_count": 529,
+    "report_available_count": 742,
+    "description_available_count": 763,
+    "history_char_count_stats": {
+      "min": 63.0,
+      "max": 2892.0,
+      "mean": 645.0680529300568,
+      "median": 560.0
+    },
+    "report_char_count_stats": {
+      "min": 982.0,
+      "max": 32982.0,
+      "mean": 9676.363881401618,
+      "median": 8712.5
+    },
+    "description_char_count_stats": {
+      "min": 7.0,
+      "max": 354.0,
+      "mean": 122.47182175622542,
+      "median": 112.0
+    },
+    "history_word_count_stats": {
+      "min": 9.0,
+      "max": 387.0,
+      "mean": 87.96408317580341,
+      "median": 76.0
+    },
+    "report_word_count_stats": {
+      "min": 139.0,
+      "max": 4526.0,
+      "mean": 1364.5134770889488,
+      "median": 1215.0
+    },
+    "description_word_count_stats": {
+      "min": 2.0,
+      "max": 39.0,
+      "mean": 12.838794233289645,
+      "median": 12.0
+    },
+    "empty_text_rate": 0.0,
+    "provenance": {
+      "source_type": "dataset",
+      "source_reference": "ingestion_report + extracted json files",
+      "extraction_method": "schema_based_profiler",
+      "confidence": "explicit",
+      "evidence_text": null
+    }
+  },
+  "provenance": {
+    "source_type": "dataset",
+    "source_reference": "ingestion_report + extracted json files",
+    "extraction_method": "schema_based_profiler",
+    "confidence": "explicit",
+    "evidence_text": null
+  },
+  "generated_at": "2026-08-14T18:55:00.193608"
+}

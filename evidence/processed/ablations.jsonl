@@ -1,0 +1,10 @@
+{"ablation_id":"abl_80f3cbeb","parent_experiment_id":"exp_ed32a87c","paper_id":"paper_41131352","condition_removed":"requiring complete-case cohorts","result":null,"source_location":"Ablation","source_scope":"full_text"}
+{"ablation_id":"abl_ed724ea9","parent_experiment_id":"exp_0fe228a3","paper_id":"paper_42487970","condition_removed":"the knowledge graph","result":null,"source_location":"Ablation","source_scope":"full_text"}
+{"ablation_id":"abl_c037c40a","parent_experiment_id":"exp_0fe228a3","paper_id":"paper_42487970","condition_removed":"analyses","result":null,"source_location":"Ablation","source_scope":"full_text"}
+{"ablation_id":"abl_3f85fab9","parent_experiment_id":"exp_e932a456","paper_id":"paper_42523677","condition_removed":"bias in testing WSI implementation","result":null,"source_location":"Ablation","source_scope":"full_text"}
+{"ablation_id":"abl_897f29e3","parent_experiment_id":"exp_e932a456","paper_id":"paper_42523677","condition_removed":"additional high-risk alterations","result":null,"source_location":"Ablation","source_scope":"full_text"}
+{"ablation_id":"abl_84383359","parent_experiment_id":"exp_aa4aaae3","paper_id":"paper_42558280","condition_removed":"compromising patient privacy","result":null,"source_location":"Ablation","source_scope":"full_text"}
+{"ablation_id":"abl_c23dc4e4","parent_experiment_id":"exp_1618cb49","paper_id":"paper_41815162","condition_removed":"prior exposure to","result":null,"source_location":"Ablation","source_scope":"full_text"}
+{"ablation_id":"abl_7e2517e3","parent_experiment_id":"exp_1618cb49","paper_id":"paper_41815162","condition_removed":"prior exposure to the diagnoses","result":null,"source_location":"Ablation","source_scope":"full_text"}
+{"ablation_id":"abl_ebd99fd6","parent_experiment_id":"exp_ab7ea67c","paper_id":"paper_41645153","condition_removed":"experiments varying Transformer depth","result":null,"source_location":"Ablation","source_scope":"full_text"}
+{"ablation_id":"abl_495aef5c","parent_experiment_id":"exp_20e5a5e3","paper_id":"paper_41102633","condition_removed":"study","result":null,"source_location":"Ablation","source_scope":"full_text"}

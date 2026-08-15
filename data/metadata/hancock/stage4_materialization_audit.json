@@ -1,0 +1,116 @@
+{
+  "pipeline_materializable": false,
+  "execution_status": "CONFIGURATION_VALIDATED",
+  "training_allowed": false,
+  "components": [
+    {
+      "component": "missing_value_handling",
+      "selected_mechanism": null,
+      "Stage3_status": "INSUFFICIENT_EVIDENCE",
+      "dataset_compatibility": false,
+      "implementation_available": false,
+      "materialization_status": "BLOCKED"
+    },
+    {
+      "component": "categorical_encoding",
+      "selected_mechanism": null,
+      "Stage3_status": "INSUFFICIENT_EVIDENCE",
+      "dataset_compatibility": false,
+      "implementation_available": false,
+      "materialization_status": "BLOCKED"
+    },
+    {
+      "component": "base_learner",
+      "selected_mechanism": null,
+      "Stage3_status": "INSUFFICIENT_EVIDENCE",
+      "dataset_compatibility": false,
+      "implementation_available": false,
+      "materialization_status": "BLOCKED"
+    },
+    {
+      "component": "loss_function",
+      "selected_mechanism": null,
+      "Stage3_status": "INSUFFICIENT_EVIDENCE",
+      "dataset_compatibility": false,
+      "implementation_available": false,
+      "materialization_status": "BLOCKED"
+    },
+    {
+      "component": "modality_fusion",
+      "selected_mechanism": "cross_attention",
+      "Stage3_status": "SUPPORTED",
+      "dataset_compatibility": true,
+      "implementation_available": true,
+      "materialization_status": "SUPPORTED"
+    },
+    {
+      "component": "feature_representation",
+      "selected_mechanism": "cnn_representation",
+      "Stage3_status": "SUPPORTED",
+      "dataset_compatibility": false,
+      "implementation_available": true,
+      "materialization_status": "BLOCKED"
+    },
+    {
+      "component": "imbalance_handling",
+      "selected_mechanism": null,
+      "Stage3_status": "INSUFFICIENT_EVIDENCE",
+      "dataset_compatibility": false,
+      "implementation_available": false,
+      "materialization_status": "BLOCKED"
+    },
+    {
+      "component": "ensembling",
+      "selected_mechanism": "average_ensembling",
+      "Stage3_status": "SUPPORTED",
+      "dataset_compatibility": true,
+      "implementation_available": true,
+      "materialization_status": "SUPPORTED"
+    }
+  ],
+  "target_firewall": {
+    "enforced": true,
+    "forbidden_fields_in_features": false,
+    "excluded_fields": [
+      "recurrence",
+      "survival_status",
+      "survival_status_with_cause",
+      "days_to_recurrence",
+      "days_to_last_information",
+      "days_to_progress_1",
+      "days_to_progress_2",
+      "days_to_metastasis_1"
+    ]
+  },
+  "preprocessing_contract": {
+    "enforced": true,
+    "fit_calls_during_setup": 0,
+    "allowed_fit_partition": "train",
+    "allowed_transform_partitions": [
+      "validation",
+      "test"
+    ]
+  },
+  "baseline_materialization": {
+    "single-modal approaches": {
+      "materialization_status": "BLOCKED",
+      "reason": "Baseline implementation not available."
+    },
+    "calm image and": {
+      "materialization_status": "BLOCKED",
+      "reason": "Malformed baseline entity."
+    },
+    "single-modality PET": {
+      "materialization_status": "BLOCKED",
+      "reason": "Baseline implementation not available."
+    }
+  },
+  "blocking_reasons": [
+    "Component 'missing_value_handling' is unresolved or blocked (Stage 3 Status: INSUFFICIENT_EVIDENCE, Data Compat: False, Impl: False).",
+    "Component 'categorical_encoding' is unresolved or blocked (Stage 3 Status: INSUFFICIENT_EVIDENCE, Data Compat: False, Impl: False).",
+    "Component 'base_learner' is unresolved or blocked (Stage 3 Status: INSUFFICIENT_EVIDENCE, Data Compat: False, Impl: False).",
+    "Component 'loss_function' is unresolved or blocked (Stage 3 Status: INSUFFICIENT_EVIDENCE, Data Compat: False, Impl: False).",
+    "Component 'feature_representation' is unresolved or blocked (Stage 3 Status: SUPPORTED, Data Compat: False, Impl: True).",
+    "Component 'imbalance_handling' is unresolved or blocked (Stage 3 Status: INSUFFICIENT_EVIDENCE, Data Compat: False, Impl: False)."
+  ]
+}

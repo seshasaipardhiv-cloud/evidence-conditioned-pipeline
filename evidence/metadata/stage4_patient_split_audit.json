@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-08-14T17:36:06.374368+00:00",
+  "patient_level_split_enabled": true,
+  "configured_seeds": [
+    42,
+    100,
+    2026
+  ],
+  "patient_overlap": 0,
+  "split_determinism_verified": true,
+  "stratification_verified": true,
+  "split_firewall_status": "SECURE"
+}

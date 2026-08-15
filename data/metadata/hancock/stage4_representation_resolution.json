@@ -1,0 +1,40 @@
+{
+  "original_representation": "cnn_representation",
+  "original_status": "incompatible",
+  "hancock_available_modalities": {
+    "clinical": true,
+    "pathology_tabular": true,
+    "blood": true,
+    "text": true,
+    "imaging": false
+  },
+  "candidate_representations": [
+    {
+      "mechanism": "cnn_representation",
+      "evidence_status": "INCOMPATIBLE",
+      "compatibility_status": "INCOMPATIBLE",
+      "reason": "HANCOCK does not provide a validated imaging modality; CNN requires imaging.",
+      "source": "original_stage3_selection"
+    },
+    {
+      "mechanism": "transformer_representation",
+      "evidence_status": "INSUFFICIENT_EVIDENCE",
+      "compatibility_status": "INSUFFICIENT_EVIDENCE",
+      "reason": "'transformer_representation' has zero evidence_count in Stage 3 rankings (score=0.0).",
+      "stage3_score": 0.0,
+      "stage3_evidence_count": 0,
+      "source": "stage3_alternatives"
+    }
+  ],
+  "evidence_backed_candidates": [],
+  "explicitly_configured_candidates": [],
+  "compatible_candidates": [],
+  "incompatible_candidates": [
+    "cnn_representation"
+  ],
+  "selected_replacement": null,
+  "selection_reason": "No evidence-backed or explicitly-configured compatible feature representation found for HANCOCK's clinical/pathology(tabular)/blood/text modalities. The Stage 2 corpus (30 papers) contains no experiments with an explicit feature_representation compatible with structured tabular/text data. The Stage 3 alternative (transformer_representation) has zero evidence support. feature_representation remains BLOCKED.",
+  "provenance": null,
+  "final_resolution_status": "BLOCKED",
+  "training_allowed": false
+}

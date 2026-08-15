@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-08-14T18:55:35.894071+00:00",
+  "baselines_evaluated": {
+    "default_xgboost": {
+      "config": "n_estimators=50, max_depth=6, lr=0.3, median_imputation, one_hot, no_smote",
+      "fairness_rating": "FAIR_REFERENCE_BASELINE",
+      "commentary": "Standard default XGBoost configuration without tuning or oversampling."
+    },
+    "random_forest": {
+      "config": "n_estimators=100, default parameters",
+      "fairness_rating": "FAIR_COMPETITIVE_BASELINE",
+      "commentary": "Standard ensemble baseline matching tree-based inductive bias."
+    },
+    "logistic_regression": {
+      "config": "L2 regularization, StandardScaler, max_iter=1000",
+      "fairness_rating": "FAIR_LINEAR_BASELINE",
+      "commentary": "Properly converged linear baseline with scaled features."
+    },
+    "simple_mlp": {
+      "config": "hidden_layer_sizes=(64, 32), max_iter=10, StandardScaler",
+      "fairness_rating": "UNDER_TRAINED_STRAWMAN",
+      "commentary": "max_iter=10 is severely underconverged for a multi-layer perceptron. Performance (0.9405) represents an undertrained reference rather than a competitive deep learning comparator."
+    }
+  },
+  "scientific_assessment": "The candidate's superiority over Simple MLP (+0.0346 ROC-AUC) should not be framed as outperforming deep learning in general. The manuscript must explicitly characterize Simple MLP as a shallow, minimal neural reference baseline.",
+  "reconciliation_action": "MANUSCRIPT_TONE_DOWN_REQUIRED"
+}

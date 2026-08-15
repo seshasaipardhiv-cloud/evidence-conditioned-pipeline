@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-08-14T18:55:38.919352+00:00",
+  "stage": "STAGE 7 \u2014 FINAL JOURNAL SUBMISSION PREPARATION",
+  "pdf_qa_status": "PDF_QA_PASSED",
+  "pdf_page_count": 15,
+  "total_extracted_words": 3987,
+  "submission_metadata_status": "GENERATED_WITH_PLACEHOLDERS",
+  "cover_letter_status": "GENERATED_CONSERVATIVE_FRAMING",
+  "primary_journal_target": "Journal of Biomedical Informatics (JBI)",
+  "submission_checklist_path": "evidence\\final\\submission\\submission_checklist.md",
+  "integrity_status": "ZERO_MUTATION_CONFIRMED",
+  "final_recommendation": "SUBMIT_TO_JOURNAL_OF_BIOMEDICAL_INFORMATICS"
+}

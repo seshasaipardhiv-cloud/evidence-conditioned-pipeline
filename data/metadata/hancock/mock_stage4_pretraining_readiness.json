@@ -1,0 +1,109 @@
+{
+  "candidate_pipeline_status": "BLOCKED_COMPATIBILITY",
+  "required_components": [
+    {
+      "component": "missing_value_handling",
+      "category": "implementation_primitive",
+      "selected_value": "mean_imputation",
+      "evidence_status": "EXPLICITLY_CONFIGURED",
+      "compatibility_status": "valid",
+      "provenance": "explicit_configuration",
+      "execution_status": "EXECUTABLE",
+      "reason": "Explicitly configured primitive."
+    },
+    {
+      "component": "categorical_encoding",
+      "category": "implementation_primitive",
+      "selected_value": "one_hot_encoding",
+      "evidence_status": "EXPLICITLY_CONFIGURED",
+      "compatibility_status": "valid",
+      "provenance": "explicit_configuration",
+      "execution_status": "EXECUTABLE",
+      "reason": "Explicitly configured primitive."
+    },
+    {
+      "component": "base_learner",
+      "category": "implementation_primitive",
+      "selected_value": "gradient_boosting",
+      "evidence_status": "EXPLICITLY_CONFIGURED",
+      "compatibility_status": "valid",
+      "provenance": "explicit_configuration",
+      "execution_status": "EXECUTABLE",
+      "reason": "Explicitly configured primitive."
+    },
+    {
+      "component": "loss_function",
+      "category": "implementation_primitive",
+      "selected_value": "focal_loss",
+      "evidence_status": "EXPLICITLY_CONFIGURED",
+      "compatibility_status": "valid",
+      "provenance": "explicit_configuration",
+      "execution_status": "EXECUTABLE",
+      "reason": "Explicitly configured primitive."
+    },
+    {
+      "component": "imbalance_handling",
+      "category": "implementation_primitive",
+      "selected_value": "class_weighted_sampling",
+      "evidence_status": "EXPLICITLY_CONFIGURED",
+      "compatibility_status": "valid",
+      "provenance": "explicit_configuration",
+      "execution_status": "EXECUTABLE",
+      "reason": "Explicitly configured primitive."
+    },
+    {
+      "component": "modality_fusion",
+      "category": "evidence_conditioned",
+      "selected_value": "cross_attention",
+      "evidence_status": "EVIDENCE_BACKED",
+      "compatibility_status": "valid",
+      "provenance": "Inherited from Stage 3 validation.",
+      "execution_status": "EXECUTABLE",
+      "reason": "Materialization successful."
+    },
+    {
+      "component": "feature_representation",
+      "category": "evidence_conditioned",
+      "selected_value": "mlp_representation",
+      "evidence_status": "EVIDENCE_BACKED",
+      "compatibility_status": "incompatible",
+      "provenance": "stage2_corpus",
+      "execution_status": "BLOCKED",
+      "reason": "Dataset incompatibility (e.g. missing modality)."
+    },
+    {
+      "component": "ensembling",
+      "category": "evidence_conditioned",
+      "selected_value": "average_ensembling",
+      "evidence_status": "EVIDENCE_BACKED",
+      "compatibility_status": "valid",
+      "provenance": "Inherited from Stage 3 validation.",
+      "execution_status": "EXECUTABLE",
+      "reason": "Materialization successful."
+    }
+  ],
+  "evidence_backed_components": [
+    "modality_fusion",
+    "feature_representation",
+    "ensembling"
+  ],
+  "explicitly_configured_components": [
+    "missing_value_handling",
+    "categorical_encoding",
+    "base_learner",
+    "loss_function",
+    "imbalance_handling"
+  ],
+  "unsupported_components": [],
+  "incompatible_components": [
+    "feature_representation"
+  ],
+  "implementation_primitives_requiring_explicit_configuration": [],
+  "target_task_validation": true,
+  "leakage_validation": true,
+  "split_validation": true,
+  "materialization_validation": false,
+  "baseline_validation": false,
+  "final_readiness_decision": "BLOCKED_COMPATIBILITY",
+  "training_allowed": false
+}

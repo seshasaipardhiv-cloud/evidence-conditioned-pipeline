@@ -1,0 +1,5 @@
+{
+  "status": "AUTHENTIC",
+  "reason": "No candidate was expanded, nothing to invalidate.",
+  "training_allowed": false
+}

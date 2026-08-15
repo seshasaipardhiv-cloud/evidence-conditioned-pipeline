@@ -1,0 +1,382 @@
+[
+  {
+    "pmid": "41558385",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "full_text_class": "ABSTRACT_ONLY",
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "42415301",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "full_text_class": "ABSTRACT_ONLY",
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "42430721",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "full_text_class": "FULL_TEXT_VERIFIED",
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "42589304",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": false,
+    "target_leakage_free": true,
+    "full_text_class": "FULL_TEXT_VERIFIED",
+    "reason": "Incompatible task (not classification / recurrence prediction)."
+  },
+  {
+    "pmid": "42595266",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": false,
+    "target_leakage_free": true,
+    "full_text_class": "ABSTRACT_ONLY",
+    "reason": "Incompatible task (not classification / recurrence prediction)."
+  },
+  {
+    "pmid": "42591753",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "full_text_class": "FULL_TEXT_VERIFIED",
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "42588044",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": false,
+    "target_leakage_free": true,
+    "full_text_class": "ABSTRACT_ONLY",
+    "reason": "Incompatible task (not classification / recurrence prediction)."
+  },
+  {
+    "pmid": "42567084",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "full_text_class": "ABSTRACT_ONLY",
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "36553074",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "full_text_class": "FULL_TEXT_VERIFIED",
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "42577918",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": false,
+    "target_leakage_free": true,
+    "full_text_class": "FULL_TEXT_VERIFIED",
+    "reason": "Incompatible task (not classification / recurrence prediction)."
+  },
+  {
+    "pmid": "41501032",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "full_text_class": "FULL_TEXT_VERIFIED",
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "42583186",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": false,
+    "target_leakage_free": true,
+    "full_text_class": "FULL_TEXT_VERIFIED",
+    "reason": "Incompatible task (not classification / recurrence prediction)."
+  },
+  {
+    "pmid": "42591559",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "full_text_class": "FULL_TEXT_VERIFIED",
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "42565327",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": false,
+    "target_leakage_free": true,
+    "full_text_class": "ABSTRACT_ONLY",
+    "reason": "Incompatible task (not classification / recurrence prediction)."
+  },
+  {
+    "pmid": "42578790",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "full_text_class": "ABSTRACT_ONLY",
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "42593153",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": false,
+    "target_leakage_free": true,
+    "full_text_class": "ABSTRACT_ONLY",
+    "reason": "Incompatible task (not classification / recurrence prediction)."
+  },
+  {
+    "pmid": "40596255",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "full_text_class": "FULL_TEXT_VERIFIED",
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "42572224",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": false,
+    "target_leakage_free": true,
+    "full_text_class": "FULL_TEXT_VERIFIED",
+    "reason": "Incompatible task (not classification / recurrence prediction)."
+  },
+  {
+    "pmid": "42595261",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": false,
+    "target_leakage_free": true,
+    "full_text_class": "ABSTRACT_ONLY",
+    "reason": "Incompatible task (not classification / recurrence prediction)."
+  },
+  {
+    "pmid": "42014603",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": false,
+    "target_leakage_free": true,
+    "full_text_class": "FULL_TEXT_VERIFIED",
+    "reason": "Incompatible task (not classification / recurrence prediction)."
+  },
+  {
+    "pmid": "42567688",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": false,
+    "target_leakage_free": true,
+    "full_text_class": "FULL_TEXT_VERIFIED",
+    "reason": "Incompatible task (not classification / recurrence prediction)."
+  },
+  {
+    "pmid": "42564457",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "full_text_class": "FULL_TEXT_VERIFIED",
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "39819725",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "full_text_class": "FULL_TEXT_VERIFIED",
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "42547776",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "full_text_class": "FULL_TEXT_VERIFIED",
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "42517104",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "full_text_class": "FULL_TEXT_VERIFIED",
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "42590195",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "full_text_class": "FULL_TEXT_VERIFIED",
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "42563988",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "full_text_class": "FULL_TEXT_VERIFIED",
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "42174791",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": false,
+    "target_leakage_free": true,
+    "full_text_class": "ABSTRACT_ONLY",
+    "reason": "Incompatible task (not classification / recurrence prediction)."
+  },
+  {
+    "pmid": "42551478",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "full_text_class": "ABSTRACT_ONLY",
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "42454979",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "full_text_class": "ABSTRACT_ONLY",
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "42551832",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "full_text_class": "ABSTRACT_ONLY",
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "41577997",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "full_text_class": "FULL_TEXT_VERIFIED",
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "42594139",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": false,
+    "target_leakage_free": true,
+    "full_text_class": "ABSTRACT_ONLY",
+    "reason": "Incompatible task (not classification / recurrence prediction)."
+  },
+  {
+    "pmid": "42577449",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "full_text_class": "FULL_TEXT_VERIFIED",
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "42594575",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": false,
+    "target_leakage_free": true,
+    "full_text_class": "ABSTRACT_ONLY",
+    "reason": "Incompatible task (not classification / recurrence prediction)."
+  },
+  {
+    "pmid": "42351600",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "full_text_class": "FULL_TEXT_VERIFIED",
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "32528215",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "full_text_class": "FULL_TEXT_VERIFIED",
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "42567561",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": false,
+    "target_leakage_free": true,
+    "full_text_class": "ABSTRACT_ONLY",
+    "reason": "Incompatible task (not classification / recurrence prediction)."
+  }
+]

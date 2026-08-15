@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-08-14T18:55:38.916354+00:00",
+  "target_venues": [
+    {
+      "name": "Journal of Biomedical Informatics (JBI)",
+      "publisher": "Elsevier",
+      "impact_factor_approx": "4.5 (2024/2025)",
+      "recommended_article_type": "Original Research / Methodological Article",
+      "scope_alignment": "HIGH: JBI explicitly prioritizes novel methodologies that advance informatics principles, reproducible algorithms, and compositional architectures rather than pure empirical benchmark mining.",
+      "word_limit": "Typically 5,000\u20138,000 words (our manuscript is 3,987 words \u2014 optimal).",
+      "abstract_limit": "Structured abstract up to 250\u2013300 words.",
+      "figure_table_limits": "No strict cap; 8 figures and 3 tables are standard for methodological papers.",
+      "reference_style": "Numbered (Vancouver) style.",
+      "data_code_policy": "Mandates data and code availability statement; open-source repositories highly favored.",
+      "pros": "Methodology-centric focus fits our core contribution (evidence synthesis + governance firewall).",
+      "cons": "Reviewers rigorously inspect mathematical/algorithmic formalisms."
+    },
+    {
+      "name": "Journal of the American Medical Informatics Association (JAMIA)",
+      "publisher": "Oxford University Press (AMIA)",
+      "impact_factor_approx": "4.7 (2024/2025)",
+      "recommended_article_type": "Research and Applications",
+      "scope_alignment": "HIGH: Focuses on clinical informatics, clinical ML rigor, reporting standards (TRIPOD+AI), and reproducible AI pipelines.",
+      "word_limit": "Typically 4,000 words for main text (our manuscript is 3,987 words \u2014 within boundary).",
+      "abstract_limit": "Structured abstract up to 250 words.",
+      "figure_table_limits": "Combined limit of 5\u20138 items (our 8 figures + 3 tables might require moving 3 figures/tables to online supplementary).",
+      "reference_style": "NLM / Vancouver style.",
+      "data_code_policy": "Strict compliance with TRIPOD+AI and open science statements.",
+      "pros": "High clinical prestige and wide readership among clinical informatics practitioners.",
+      "cons": "Tight word limit and strict limits on main-text display items."
+    }
+  ],
+  "recommendation": {
+    "primary_target": "Journal of Biomedical Informatics (JBI)",
+    "rationale": "Our manuscript's primary scientific novelty is methodological (evidence synthesis, provenance boundaries, and architectural firewalls). JBI's formatting accommodates full 8-figure / 3-table display without truncating the audit evidence into supplementary files.",
+    "secondary_target": "JAMIA (as Research and Applications, moving Figures 3, 5, and Table 3 to Supplementary Material if display limit is enforced)."
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "stage": "3.1",
+  "status": "BLOCKED_BY_TASK",
+  "target_gate": {
+    "task": "unknown",
+    "target": null,
+    "blocked": true,
+    "reason": "Task is unknown"
+  },
+  "mechanism_decisions": [
+    {
+      "mechanism": "None",
+      "component": "missing_value_handling",
+      "decision": "INSUFFICIENT_EVIDENCE",
+      "reason": "No mechanism selected due to insufficient evidence",
+      "posterior_mean": null,
+      "evidence_count": 0
+    },
+    {
+      "mechanism": "None",
+      "component": "categorical_encoding",
+      "decision": "INSUFFICIENT_EVIDENCE",
+      "reason": "No mechanism selected due to insufficient evidence",
+      "posterior_mean": null,
+      "evidence_count": 0
+    },
+    {
+      "mechanism": "cnn_representation",
+      "component": "feature_representation",
+      "decision": "INCOMPATIBLE",
+      "reason": "cnn_representation requires an image representation that is not established by the current Stage 1 modality context.",
+      "posterior_mean": 0.5894906328731389,
+      "evidence_count": 1
+    },
+    {
+      "mechanism": "cross_attention",
+      "component": "modality_fusion",
+      "decision": "BLOCKED_BY_TASK",
+      "reason": "Mechanism is compatible but execution is blocked by task.",
+      "posterior_mean": 0.666568266989164,
+      "evidence_count": 3
+    },
+    {
+      "mechanism": "None",
+      "component": "base_learner",
+      "decision": "INSUFFICIENT_EVIDENCE",
+      "reason": "No mechanism selected due to insufficient evidence",
+      "posterior_mean": null,
+      "evidence_count": 0
+    },
+    {
+      "mechanism": "None",
+      "component": "loss_function",
+      "decision": "INSUFFICIENT_EVIDENCE",
+      "reason": "No mechanism selected due to insufficient evidence",
+      "posterior_mean": null,
+      "evidence_count": 0
+    },
+    {
+      "mechanism": "None",
+      "component": "imbalance_handling",
+      "decision": "INSUFFICIENT_EVIDENCE",
+      "reason": "No mechanism selected due to insufficient evidence",
+      "posterior_mean": null,
+      "evidence_count": 0
+    },
+    {
+      "mechanism": "average_ensembling",
+      "component": "ensembling",
+      "decision": "BLOCKED_BY_TASK",
+      "reason": "Mechanism is compatible but execution is blocked by task.",
+      "posterior_mean": 0.5719531443222795,
+      "evidence_count": 1
+    }
+  ],
+  "baseline_decisions": [
+    {
+      "baseline": "single-modal approaches",
+      "decision": "BLOCKED_BY_TASK",
+      "reason": "Baseline entity is explicit and valid."
+    },
+    {
+      "baseline": "calm image and",
+      "decision": "INVALID_BASELINE_ENTITY",
+      "reason": "Malformed baseline fragment detected."
+    },
+    {
+      "baseline": "single-modality PET",
+      "decision": "BLOCKED_BY_TASK",
+      "reason": "Baseline entity is explicit and valid."
+    }
+  ],
+  "incompatibilities": [
+    {
+      "mechanism": "cnn_representation",
+      "component": "feature_representation",
+      "decision": "INCOMPATIBLE",
+      "reason": "cnn_representation requires an image representation that is not established by the current Stage 1 modality context.",
+      "posterior_mean": 0.5894906328731389,
+      "evidence_count": 1
+    }
+  ],
+  "insufficient_evidence": [
+    {
+      "mechanism": "None",
+      "component": "missing_value_handling",
+      "decision": "INSUFFICIENT_EVIDENCE",
+      "reason": "No mechanism selected due to insufficient evidence",
+      "posterior_mean": null,
+      "evidence_count": 0
+    },
+    {
+      "mechanism": "None",
+      "component": "categorical_encoding",
+      "decision": "INSUFFICIENT_EVIDENCE",
+      "reason": "No mechanism selected due to insufficient evidence",
+      "posterior_mean": null,
+      "evidence_count": 0
+    },
+    {
+      "mechanism": "None",
+      "component": "base_learner",
+      "decision": "INSUFFICIENT_EVIDENCE",
+      "reason": "No mechanism selected due to insufficient evidence",
+      "posterior_mean": null,
+      "evidence_count": 0
+    },
+    {
+      "mechanism": "None",
+      "component": "loss_function",
+      "decision": "INSUFFICIENT_EVIDENCE",
+      "reason": "No mechanism selected due to insufficient evidence",
+      "posterior_mean": null,
+      "evidence_count": 0
+    },
+    {
+      "mechanism": "None",
+      "component": "imbalance_handling",
+      "decision": "INSUFFICIENT_EVIDENCE",
+      "reason": "No mechanism selected due to insufficient evidence",
+      "posterior_mean": null,
+      "evidence_count": 0
+    }
+  ],
+  "invalid_baselines": [
+    {
+      "baseline": "calm image and",
+      "decision": "INVALID_BASELINE_ENTITY",
+      "reason": "Malformed baseline fragment detected."
+    }
+  ],
+  "supporting_evidence": [],
+  "provenance_checks": {
+    "all_mechanisms_have_provenance": true,
+    "all_baselines_have_provenance": true
+  }
+}

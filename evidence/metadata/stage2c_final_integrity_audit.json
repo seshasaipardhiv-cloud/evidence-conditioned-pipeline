@@ -1,0 +1,57 @@
+{
+  "summary": {
+    "corpus_valid": true,
+    "critical_errors": 0,
+    "warnings": 0,
+    "corpus_counts": {
+      "total_papers": 30,
+      "seed_papers": 8,
+      "new_papers": 22,
+      "full_text_papers": 25,
+      "abstract_only_papers": 2,
+      "unavailable_papers": 3
+    },
+    "duplicate_count": {
+      "duplicate_papers": 0,
+      "duplicate_experiments": 0,
+      "duplicate_claims": 0
+    },
+    "provenance_coverage": {
+      "total_non_null_fields": 62,
+      "fields_with_provenance": 62,
+      "fields_without_provenance": 0,
+      "provenance_coverage_percent": 100.0
+    },
+    "suspicious_entity_count": 0,
+    "numerical_evidence_errors": 0,
+    "entity_confusion_errors": 0,
+    "coverage": {
+      "tasks": {
+        "classification": 1,
+        "survival_prediction": 9,
+        "diagnosis": 4
+      },
+      "modalities": {
+        "imaging": 5,
+        "text": 1,
+        "clinical": 3
+      },
+      "fusion": {
+        "late_fusion": 3,
+        "ensemble_fusion": 1,
+        "cross_attention": 3,
+        "early_fusion": 1
+      },
+      "evidence": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0,
+        "unknown": 0,
+        "ablation": 10,
+        "comparative": 0
+      }
+    }
+  },
+  "missing_provenance": [],
+  "audit_log": []
+}

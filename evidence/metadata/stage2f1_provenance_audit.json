@@ -1,0 +1,73 @@
+{
+  "timestamp": "2026-08-14T06:32:29.634111+00:00",
+  "total_candidates_evaluated": 49,
+  "explicit_supported_count": 4,
+  "provenance_complete_count": 4,
+  "details": [
+    {
+      "primitive": "missing_value_handling",
+      "pmid": "41826845",
+      "doi": "10.1186/s12874-026-02805-4",
+      "title": "From raw clinical data to robust prediction: an AI framework for early lymphedema detection.",
+      "classification": "EXPLICIT_SUPPORTED",
+      "score": 1.0,
+      "rationale": "Explicit experimental procedural evidence verified for missing_value_handling.",
+      "source_sentences": [
+        "MissForest \u2013 Normalize \u2013 Balance: Missing values were imputed using MissForest, a non-parametric random forest\u2013based algorithm that iteratively predicts missing entries from observed feature relationships [\nMissForest \u2013 Normalize: Identical imputation and normalization steps as above, without class balancing, to isolate the effect of resampling."
+      ],
+      "provenance_complete": true,
+      "hancock_compatible": true,
+      "leakage_safe": true,
+      "full_text_status": "accessible"
+    },
+    {
+      "primitive": "missing_value_handling",
+      "pmid": "41144909",
+      "doi": "10.1097/SHK.0000000000002744",
+      "title": "Development of an Explainable Machine Learning Model to Predict Mortality Risk in Sepsis Patients: Insights From a Real-World Clinical Data.",
+      "classification": "EXPLICIT_SUPPORTED",
+      "score": 1.0,
+      "rationale": "Explicit experimental procedural evidence verified for missing_value_handling.",
+      "source_sentences": [
+        "Missing values were imputed using the mice package, and class imbalance was addressed with the Synthetic Minority Oversampling Technique."
+      ],
+      "provenance_complete": true,
+      "hancock_compatible": true,
+      "leakage_safe": true,
+      "full_text_status": "accessible"
+    },
+    {
+      "primitive": "base_learner",
+      "pmid": "41775771",
+      "doi": "10.1038/s41598-026-39104-3",
+      "title": "A hybrid SMOTE and Gaussian mixture model based optimized XGBoost framework for bipolar disorder detection.",
+      "classification": "EXPLICIT_SUPPORTED",
+      "score": 1.0,
+      "rationale": "Explicit experimental procedural evidence verified for base_learner.",
+      "source_sentences": [
+        "In this study, the XGBoost classifier was trained on the augmented feature set comprising both the original normalized clinical attributes and the GMM-derived latent features.",
+        "The final XGBoost classifier was trained on this enriched feature set."
+      ],
+      "provenance_complete": true,
+      "hancock_compatible": true,
+      "leakage_safe": true,
+      "full_text_status": "accessible"
+    },
+    {
+      "primitive": "imbalance_handling",
+      "pmid": "41006422",
+      "doi": "10.1038/s41598-025-16790-z",
+      "title": "SMOTE-augmented machine learning model predicts recurrent and metastatic breast cancer from microbiome analysis.",
+      "classification": "EXPLICIT_SUPPORTED",
+      "score": 1.0,
+      "rationale": "Explicit experimental procedural evidence verified for imbalance_handling.",
+      "source_sentences": [
+        "The OTUs with a relative abundance of less than 1% across all samples were excluded from further analysis\nData augmentation\nSMOTE was applied to augment the RMBC group to address the class imbalance in the dataset."
+      ],
+      "provenance_complete": true,
+      "hancock_compatible": true,
+      "leakage_safe": true,
+      "full_text_status": "accessible"
+    }
+  ]
+}

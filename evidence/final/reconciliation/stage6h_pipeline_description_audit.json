@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-08-14T18:55:35.979615+00:00",
+  "actual_executed_path": [
+    "clinical_tabular_representation",
+    "train_fitted_median_mode_imputation",
+    "one_hot_encoding",
+    "smote_oversampling",
+    "tuned_xgboost_classifier",
+    "binary_logistic_objective"
+  ],
+  "dormant_taxonomy_primitives": [
+    "cross_attention",
+    "average_ensembling"
+  ],
+  "status": "ACCURATELY_DOCUMENTED"
+}

@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-08-14T06:40:26.674484+00:00",
+  "evidence_backed_primitives": [
+    "missing_value_handling",
+    "base_learner",
+    "imbalance_handling"
+  ],
+  "explicitly_configured_primitives": [],
+  "unsupported_primitives": [
+    "categorical_encoding",
+    "loss_function"
+  ],
+  "blocked_primitives": [
+    "categorical_encoding",
+    "loss_function"
+  ],
+  "boundary_integrity": "VERIFIED",
+  "notes": "Unsupported primitives are strictly separated from evidence-backed primitives. No promotion without authenticated evidence."
+}

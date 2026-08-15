@@ -1,0 +1,15 @@
+{
+  "execution_status": "CONFIGURATION_VALIDATED",
+  "training_allowed": false,
+  "blocking_reasons": [
+    "Mechanism gate failed due to incompatible or insufficient evidence mechanisms."
+  ],
+  "validated_at": "2026-08-10T05:14:15.370502",
+  "stage3_compatibility_valid": true,
+  "target_valid": true,
+  "task_valid": true,
+  "split_valid": true,
+  "leakage_check_passed": true,
+  "mechanism_gate_passed": false,
+  "compute_budget_valid": true
+}

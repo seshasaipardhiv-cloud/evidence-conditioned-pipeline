@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-08-14T18:55:13.415908+00:00",
+  "levels": {
+    "internal_validation": "SUPPORTED",
+    "external_validation": "NOT_ESTABLISHED",
+    "prospective_validation": "NOT_ESTABLISHED",
+    "clinical_utility": "NOT_ESTABLISHED",
+    "multi_institutional_generalization": "NOT_ESTABLISHED"
+  },
+  "warning": "Internal retrospective ROC-AUC of 0.9751 must not be conflated with clinical diagnostic efficacy or cross-center transportability."
+}

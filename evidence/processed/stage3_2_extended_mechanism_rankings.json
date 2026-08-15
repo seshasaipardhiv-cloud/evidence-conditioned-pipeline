@@ -1,0 +1,145 @@
+{
+  "mean_imputation": {
+    "mechanism": "mean_imputation",
+    "component": "missing_value_handling",
+    "posterior_mean": 0.5,
+    "evidence_count": 0,
+    "support_count": 0,
+    "contradiction_count": 0,
+    "context_similarity_sum": 0.0,
+    "evidence_quality_sum": 0.0,
+    "final_score": 0.0
+  },
+  "one_hot_encoding": {
+    "mechanism": "one_hot_encoding",
+    "component": "categorical_encoding",
+    "posterior_mean": 0.5,
+    "evidence_count": 0,
+    "support_count": 0,
+    "contradiction_count": 0,
+    "context_similarity_sum": 0.0,
+    "evidence_quality_sum": 0.0,
+    "final_score": 0.0
+  },
+  "cnn_representation": {
+    "mechanism": "cnn_representation",
+    "component": "feature_representation",
+    "posterior_mean": 0.5894906328731389,
+    "evidence_count": 1,
+    "support_count": 1,
+    "contradiction_count": 0,
+    "context_similarity_sum": 0.43599800657159316,
+    "evidence_quality_sum": 1.0,
+    "final_score": 0.2570167408253154
+  },
+  "transformer_representation": {
+    "mechanism": "transformer_representation",
+    "component": "feature_representation",
+    "posterior_mean": 0.5,
+    "evidence_count": 0,
+    "support_count": 0,
+    "contradiction_count": 0,
+    "context_similarity_sum": 0.0,
+    "evidence_quality_sum": 0.0,
+    "final_score": 0.0
+  },
+  "late_fusion": {
+    "mechanism": "late_fusion",
+    "component": "modality_fusion",
+    "posterior_mean": 0.660225550283684,
+    "evidence_count": 3,
+    "support_count": 3,
+    "contradiction_count": 0,
+    "context_similarity_sum": 0.9431288928138021,
+    "evidence_quality_sum": 3.0,
+    "final_score": 0.6226777922464342
+  },
+  "early_fusion": {
+    "mechanism": "early_fusion",
+    "component": "modality_fusion",
+    "posterior_mean": 0.5652173913043479,
+    "evidence_count": 1,
+    "support_count": 1,
+    "contradiction_count": 0,
+    "context_similarity_sum": 0.30000000000000004,
+    "evidence_quality_sum": 1.0,
+    "final_score": 0.1695652173913044
+  },
+  "cross_attention": {
+    "mechanism": "cross_attention",
+    "component": "modality_fusion",
+    "posterior_mean": 0.666568266989164,
+    "evidence_count": 3,
+    "support_count": 3,
+    "contradiction_count": 0,
+    "context_similarity_sum": 0.9991146642527331,
+    "evidence_quality_sum": 3.0,
+    "final_score": 0.6659781302744048
+  },
+  "joint_embedding": {
+    "mechanism": "joint_embedding",
+    "component": "modality_fusion",
+    "posterior_mean": 0.5,
+    "evidence_count": 0,
+    "support_count": 0,
+    "contradiction_count": 0,
+    "context_similarity_sum": 0.0,
+    "evidence_quality_sum": 0.0,
+    "final_score": 0.0
+  },
+  "gradient_boosting": {
+    "mechanism": "gradient_boosting",
+    "component": "base_learner",
+    "posterior_mean": 0.5,
+    "evidence_count": 0,
+    "support_count": 0,
+    "contradiction_count": 0,
+    "context_similarity_sum": 0.0,
+    "evidence_quality_sum": 0.0,
+    "final_score": 0.0
+  },
+  "focal_loss": {
+    "mechanism": "focal_loss",
+    "component": "loss_function",
+    "posterior_mean": 0.5,
+    "evidence_count": 0,
+    "support_count": 0,
+    "contradiction_count": 0,
+    "context_similarity_sum": 0.0,
+    "evidence_quality_sum": 0.0,
+    "final_score": 0.0
+  },
+  "class_weighted_sampling": {
+    "mechanism": "class_weighted_sampling",
+    "component": "imbalance_handling",
+    "posterior_mean": 0.5,
+    "evidence_count": 0,
+    "support_count": 0,
+    "contradiction_count": 0,
+    "context_similarity_sum": 0.0,
+    "evidence_quality_sum": 0.0,
+    "final_score": 0.0
+  },
+  "average_ensembling": {
+    "mechanism": "average_ensembling",
+    "component": "ensembling",
+    "posterior_mean": 0.5719531443222795,
+    "evidence_count": 1,
+    "support_count": 1,
+    "contradiction_count": 0,
+    "context_similarity_sum": 0.3361928413577863,
+    "evidence_quality_sum": 1.0,
+    "final_score": 0.19228655271322717
+  },
+  "clinical_tabular_representation": {
+    "mechanism": "clinical_tabular_representation",
+    "component": "feature_representation",
+    "posterior_mean": 0.65,
+    "evidence_count": 1,
+    "support_count": 1,
+    "contradiction_count": 0,
+    "context_similarity_sum": 0.5,
+    "evidence_quality_sum": 1.0,
+    "final_score": 0.325
+  }
+}

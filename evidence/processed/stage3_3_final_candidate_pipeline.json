@@ -1,0 +1,30 @@
+{
+  "specification_version": "3.3",
+  "timestamp": "2026-08-14T06:44:58.932135+00:00",
+  "target_task": "recurrence_classification",
+  "primary_metric": "roc_auc",
+  "feature_representation": "clinical_tabular_representation",
+  "modality_fusion": "cross_attention",
+  "ensembling": "average_ensembling",
+  "missing_value_handling": "MissForest / MICE",
+  "base_learner": "XGBoost",
+  "imbalance_handling": "SMOTE",
+  "categorical_encoding": null,
+  "loss_function": null,
+  "component_execution_statuses": {
+    "feature_representation": "READY_WITH_EVIDENCE",
+    "modality_fusion": "READY_WITH_EVIDENCE",
+    "ensembling": "READY_WITH_EVIDENCE",
+    "missing_value_handling": "READY_WITH_EVIDENCE",
+    "base_learner": "READY_WITH_EVIDENCE",
+    "imbalance_handling": "READY_WITH_EVIDENCE",
+    "categorical_encoding": "BLOCKED",
+    "loss_function": "BLOCKED"
+  },
+  "unresolved_components": [
+    "categorical_encoding",
+    "loss_function"
+  ],
+  "status": "BLOCKED_MISSING_COMPONENTS",
+  "training_allowed": false
+}

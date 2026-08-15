@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-08-14T18:55:13.394181+00:00",
+  "sample_size_seeds": 3,
+  "inferential_claim_policy": "NO_STATISTICAL_SIGNIFICANCE_CLAIMED_FROM_N3",
+  "descriptive_statistics": {
+    "candidate_roc_auc": {
+      "mean": 0.9751,
+      "std": 0.0114,
+      "descriptive_range": [
+        0.9609,
+        0.9888
+      ]
+    },
+    "default_xgb_roc_auc": {
+      "mean": 0.9704,
+      "std": 0.0059,
+      "descriptive_range": [
+        0.9643,
+        0.9783
+      ]
+    },
+    "mean_delta_roc_auc": 0.0047
+  },
+  "p_value_generation": "SUPPRESSED_DUE_TO_SMALL_SAMPLE_SIZE",
+  "generalization_warning": {
+    "internal_test_roc_auc": 0.9751,
+    "clinical_utility_proven": false,
+    "external_validation_available": false,
+    "statement": "High internal ROC-AUC (>0.97) on HANCOCK single-center retrospective data does not establish generalizable clinical efficacy or readiness for diagnostic deployment without prospective multi-center external validation."
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "relative_path": "hancock\\structured\\StructuredData\\blood_data.json",
+    "file_type": "json",
+    "size_bytes": 5764921,
+    "sha256": "f574760cfa948762407f8260e3064c86bc101fdbffaea8d334017cd3d8618f0b",
+    "modality": "blood",
+    "status": "validated"
+  },
+  {
+    "relative_path": "hancock\\structured\\StructuredData\\blood_data_reference_ranges.json",
+    "file_type": "json",
+    "size_bytes": 9538,
+    "sha256": "e31f8d71a095da72209979d56e00844701e2d9e8f47dbd966d0f4bf6eb6ef8a3",
+    "modality": "metadata",
+    "status": "validated"
+  },
+  {
+    "relative_path": "hancock\\structured\\StructuredData\\clinical_data.json",
+    "file_type": "json",
+    "size_bytes": 809653,
+    "sha256": "355a53661f8e9a6b36dd7a5d66a57b650cd34cd3b87cbf7c91b4806fe7949bb4",
+    "modality": "clinical",
+    "status": "validated"
+  },
+  {
+    "relative_path": "hancock\\structured\\StructuredData\\pathological_data.json",
+    "file_type": "json",
+    "size_bytes": 457756,
+    "sha256": "9595b3427087bd4922147bf40321559f024c74d52b46c9c6a698c2751eaffaf5",
+    "modality": "pathology",
+    "status": "validated"
+  },
+  {
+    "relative_path": "hancock\\structured\\StructuredData\\test_clinical_data.json",
+    "file_type": "json",
+    "size_bytes": 782183,
+    "sha256": "d5aaab1144f09f9eba16035bc6b000ac43ea6a53ef03b121cab9ab320cc3dbe2",
+    "modality": "clinical",
+    "status": "validated"
+  }
+]

@@ -1,0 +1,75 @@
+{
+  "timestamp": "2026-08-14T17:36:06.372367+00:00",
+  "source_pipeline": "evidence\\processed\\stage3_6_configured_pipeline.json",
+  "pipeline_hash_verified": true,
+  "components_audited": {
+    "feature_representation": {
+      "component": "feature_representation",
+      "selected_value": "clinical_tabular_representation",
+      "executable_class": "backend.models.tabular.ClinicalTabularRepresentation",
+      "classification": "EVIDENCE_BACKED",
+      "materialization_status": "MATERIALIZED",
+      "hancock_compatible": true
+    },
+    "modality_fusion": {
+      "component": "modality_fusion",
+      "selected_value": "cross_attention",
+      "executable_class": "backend.models.fusion.CrossAttentionFusion",
+      "classification": "EVIDENCE_BACKED",
+      "materialization_status": "MATERIALIZED",
+      "hancock_compatible": true
+    },
+    "ensembling": {
+      "component": "ensembling",
+      "selected_value": "average_ensembling",
+      "executable_class": "backend.models.ensembles.AverageEnsemble",
+      "classification": "EVIDENCE_BACKED",
+      "materialization_status": "MATERIALIZED",
+      "hancock_compatible": true
+    },
+    "missing_value_handling": {
+      "component": "missing_value_handling",
+      "selected_value": "MissForest / MICE",
+      "executable_class": "backend.models.imputation.MissForestMICEImputer",
+      "classification": "EVIDENCE_BACKED",
+      "materialization_status": "MATERIALIZED",
+      "hancock_compatible": true
+    },
+    "base_learner": {
+      "component": "base_learner",
+      "selected_value": "XGBoost",
+      "executable_class": "backend.models.classifiers.XGBoostClassifier",
+      "classification": "EVIDENCE_BACKED",
+      "materialization_status": "MATERIALIZED",
+      "hancock_compatible": true
+    },
+    "imbalance_handling": {
+      "component": "imbalance_handling",
+      "selected_value": "SMOTE",
+      "executable_class": "backend.models.sampling.SMOTE",
+      "classification": "EVIDENCE_BACKED",
+      "materialization_status": "MATERIALIZED",
+      "hancock_compatible": true
+    },
+    "categorical_encoding": {
+      "component": "categorical_encoding",
+      "selected_value": "one_hot_encoding",
+      "executable_class": "backend.models.preprocessing.OneHotEncoder",
+      "classification": "EXPLICITLY_CONFIGURED",
+      "materialization_status": "MATERIALIZED",
+      "hancock_compatible": true
+    },
+    "loss_function": {
+      "component": "loss_function",
+      "selected_value": "binary_logistic",
+      "executable_class": "backend.models.losses.BinaryLogisticLoss",
+      "classification": "EXPLICITLY_CONFIGURED",
+      "materialization_status": "MATERIALIZED",
+      "hancock_compatible": true
+    }
+  },
+  "total_components": 8,
+  "materialized_count": 8,
+  "all_components_materialized": true,
+  "blocking_reasons": []
+}

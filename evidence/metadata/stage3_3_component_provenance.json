@@ -1,0 +1,104 @@
+{
+  "timestamp": "2026-08-14T06:44:58.933701+00:00",
+  "components": {
+    "feature_representation": {
+      "component": "feature_representation",
+      "selected_value": "clinical_tabular_representation",
+      "evidence_status": "EVIDENCE_BACKED",
+      "provenance": {
+        "paper_id": "paper_42487970",
+        "experiment_id": "exp_aef6b872",
+        "source_sentence": "Structured data, such as the patient\u2019s age and stage, can be directly used as input for the model...",
+        "stage_origin": "Stage 2E-1 Controlled Taxonomy Extension"
+      },
+      "compatibility_status": "COMPATIBLE",
+      "execution_status": "READY_WITH_EVIDENCE",
+      "source_artifact": "evidence/metadata/stage2e1_taxonomy_extension.json"
+    },
+    "modality_fusion": {
+      "component": "modality_fusion",
+      "selected_value": "cross_attention",
+      "evidence_status": "EVIDENCE_BACKED",
+      "provenance": {
+        "canonical_name": "cross-attention",
+        "mechanism_id": "mech_cross_attention",
+        "stage_origin": "Stage 3.1 Validated Pipeline Specification"
+      },
+      "compatibility_status": "COMPATIBLE",
+      "execution_status": "READY_WITH_EVIDENCE",
+      "source_artifact": "evidence/processed/stage3_validated_pipeline_specification.json"
+    },
+    "ensembling": {
+      "component": "ensembling",
+      "selected_value": "average_ensembling",
+      "evidence_status": "EVIDENCE_BACKED",
+      "provenance": {
+        "canonical_name": "average_ensembling",
+        "stage_origin": "Stage 3.1 Validated Pipeline Specification"
+      },
+      "compatibility_status": "COMPATIBLE",
+      "execution_status": "READY_WITH_EVIDENCE",
+      "source_artifact": "evidence/processed/stage3_validated_pipeline_specification.json"
+    },
+    "missing_value_handling": {
+      "component": "missing_value_handling",
+      "selected_value": "MissForest / MICE",
+      "evidence_status": "EVIDENCE_BACKED",
+      "provenance": {
+        "pmid": "41826845",
+        "doi": "10.1186/s12874-026-02805-4",
+        "source_sentence": "MissForest \u2013 Normalize \u2013 Balance: Missing values were imputed using MissForest, a non-parametric random forest\u2013based algorithm that iteratively predicts missing entries from observed feature relationships [\nMissForest \u2013 Normalize: Identical imputation and normalization steps as above, without class balancing, to isolate the effect of resampling.",
+        "full_text_status": "accessible"
+      },
+      "compatibility_status": "COMPATIBLE",
+      "execution_status": "READY_WITH_EVIDENCE",
+      "source_artifact": "evidence/metadata/stage2f4_primitive_configuration.json"
+    },
+    "base_learner": {
+      "component": "base_learner",
+      "selected_value": "XGBoost",
+      "evidence_status": "EVIDENCE_BACKED",
+      "provenance": {
+        "pmid": "41775771",
+        "doi": "10.1038/s41598-026-39104-3",
+        "source_sentence": "In this study, the XGBoost classifier was trained on the augmented feature set comprising both the original normalized clinical attributes and the GMM-derived latent features.",
+        "full_text_status": "accessible"
+      },
+      "compatibility_status": "COMPATIBLE",
+      "execution_status": "READY_WITH_EVIDENCE",
+      "source_artifact": "evidence/metadata/stage2f4_primitive_configuration.json"
+    },
+    "imbalance_handling": {
+      "component": "imbalance_handling",
+      "selected_value": "SMOTE",
+      "evidence_status": "EVIDENCE_BACKED",
+      "provenance": {
+        "pmid": "41006422",
+        "doi": "10.1038/s41598-025-16790-z",
+        "source_sentence": "The OTUs with a relative abundance of less than 1% across all samples were excluded from further analysis\nData augmentation\nSMOTE was applied to augment the RMBC group to address the class imbalance in the dataset.",
+        "full_text_status": "accessible"
+      },
+      "compatibility_status": "COMPATIBLE",
+      "execution_status": "READY_WITH_EVIDENCE",
+      "source_artifact": "evidence/metadata/stage2f4_primitive_configuration.json"
+    },
+    "categorical_encoding": {
+      "component": "categorical_encoding",
+      "selected_value": null,
+      "evidence_status": "UNSUPPORTED",
+      "provenance": null,
+      "compatibility_status": "UNTESTED",
+      "execution_status": "BLOCKED",
+      "source_artifact": "evidence/metadata/stage2f4_primitive_configuration.json"
+    },
+    "loss_function": {
+      "component": "loss_function",
+      "selected_value": null,
+      "evidence_status": "UNSUPPORTED",
+      "provenance": null,
+      "compatibility_status": "UNTESTED",
+      "execution_status": "BLOCKED",
+      "source_artifact": "evidence/metadata/stage2f4_primitive_configuration.json"
+    }
+  }
+}

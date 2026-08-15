@@ -1,0 +1,24 @@
+{
+  "target_gate": "PASS",
+  "task_gate": "PASS",
+  "split_gate": "PASS",
+  "leakage_gate": "PASS",
+  "corpus_gate": "PASS",
+  "evidence_gate": "FAIL",
+  "compatibility_gate": "FAIL",
+  "materialization_gate": "FAIL",
+  "representation_gate": "FAIL",
+  "baseline_gate": "FAIL",
+  "preprocessing_gate": "PASS",
+  "compute_budget_gate": "PASS",
+  "reproducibility_gate": "PASS",
+  "final_decision": "NO_GO",
+  "training_allowed": false,
+  "blocking_reasons": [
+    "Unsupported components found: ['missing_value_handling', 'categorical_encoding', 'base_learner', 'loss_function', 'imbalance_handling', 'feature_representation']",
+    "Incompatible components found: ['missing_value_handling', 'categorical_encoding', 'base_learner', 'loss_function', 'imbalance_handling']",
+    "Pipeline is not materializable.",
+    "Invalid baselines: ['single-modal approaches', 'calm image and', 'single-modality PET']",
+    "Feature representation remains BLOCKED."
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "decisions": [
+    {
+      "mechanism": "None",
+      "component": "missing_value_handling",
+      "status": "INSUFFICIENT_EVIDENCE"
+    },
+    {
+      "mechanism": "None",
+      "component": "categorical_encoding",
+      "status": "INSUFFICIENT_EVIDENCE"
+    },
+    {
+      "mechanism": "cnn_representation",
+      "component": "feature_representation",
+      "status": "SUPPORTED"
+    },
+    {
+      "mechanism": "cross_attention",
+      "component": "modality_fusion",
+      "status": "SUPPORTED"
+    },
+    {
+      "mechanism": "None",
+      "component": "base_learner",
+      "status": "INSUFFICIENT_EVIDENCE"
+    },
+    {
+      "mechanism": "None",
+      "component": "loss_function",
+      "status": "INSUFFICIENT_EVIDENCE"
+    },
+    {
+      "mechanism": "None",
+      "component": "imbalance_handling",
+      "status": "INSUFFICIENT_EVIDENCE"
+    },
+    {
+      "mechanism": "average_ensembling",
+      "component": "ensembling",
+      "status": "SUPPORTED"
+    },
+    {
+      "mechanism": "single-modal approaches",
+      "component": "baseline",
+      "status": "SUPPORTED"
+    },
+    {
+      "mechanism": "calm image and",
+      "component": "baseline",
+      "status": "INVALID_BASELINE_ENTITY"
+    },
+    {
+      "mechanism": "single-modality PET",
+      "component": "baseline",
+      "status": "SUPPORTED"
+    }
+  ]
+}

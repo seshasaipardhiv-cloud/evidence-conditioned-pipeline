@@ -1,0 +1,122 @@
+[
+  {
+    "field_name": "survival_status",
+    "data_type": "str",
+    "unique_value_count": 2,
+    "sample_value_types": [
+      "str"
+    ],
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "observed_value_pattern": "Top 5 values: ['living', 'deceased']",
+    "candidate_role": "event_indicator",
+    "possible_leakage_role": "derived from outcome or is outcome",
+    "source_schema": "clinical_data",
+    "confidence_status": "HIGH"
+  },
+  {
+    "field_name": "survival_status_with_cause",
+    "data_type": "str",
+    "unique_value_count": 4,
+    "sample_value_types": [
+      "str"
+    ],
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "observed_value_pattern": "Top 5 values: ['living', 'deceased not tumor specific', 'deceased tumor specific', 'deceased']",
+    "candidate_role": "potential_target",
+    "possible_leakage_role": "derived from outcome",
+    "source_schema": "clinical_data",
+    "confidence_status": "HIGH"
+  },
+  {
+    "field_name": "recurrence",
+    "data_type": "str",
+    "unique_value_count": 2,
+    "sample_value_types": [
+      "str"
+    ],
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "observed_value_pattern": "Top 5 values: ['no', 'yes']",
+    "candidate_role": "event_indicator",
+    "possible_leakage_role": "derived from outcome or is outcome",
+    "source_schema": "clinical_data",
+    "confidence_status": "HIGH"
+  },
+  {
+    "field_name": "days_to_recurrence",
+    "data_type": "int",
+    "unique_value_count": 164,
+    "sample_value_types": [
+      "int"
+    ],
+    "missing_count": 586,
+    "missing_rate": 0.7680209698558322,
+    "observed_value_pattern": "Top 5 values: ['357', '1202', '974', '256', '374']",
+    "candidate_role": "unresolved",
+    "possible_leakage_role": "time of positive outcome only",
+    "source_schema": "clinical_data",
+    "confidence_status": "LOW"
+  },
+  {
+    "field_name": "days_to_last_information",
+    "data_type": "int",
+    "unique_value_count": 682,
+    "sample_value_types": [
+      "int"
+    ],
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "observed_value_pattern": "Top 5 values: ['2258', '1753', '851', '2996', '2819']",
+    "candidate_role": "time_to_event",
+    "possible_leakage_role": "post_outcome",
+    "source_schema": "clinical_data",
+    "confidence_status": "HIGH"
+  },
+  {
+    "field_name": "days_to_progress_1",
+    "data_type": "int",
+    "unique_value_count": 158,
+    "sample_value_types": [
+      "int"
+    ],
+    "missing_count": 590,
+    "missing_rate": 0.7732634338138925,
+    "observed_value_pattern": "Top 5 values: ['357', '2483', '974', '256', '374']",
+    "candidate_role": "post_outcome",
+    "possible_leakage_role": "post_outcome",
+    "source_schema": "clinical_data",
+    "confidence_status": "HIGH"
+  },
+  {
+    "field_name": "days_to_progress_2",
+    "data_type": "int",
+    "unique_value_count": 20,
+    "sample_value_types": [
+      "int"
+    ],
+    "missing_count": 743,
+    "missing_rate": 0.9737876802096985,
+    "observed_value_pattern": "Top 5 values: ['2108', '217', '503', '726', '215']",
+    "candidate_role": "post_outcome",
+    "possible_leakage_role": "post_outcome",
+    "source_schema": "clinical_data",
+    "confidence_status": "HIGH"
+  },
+  {
+    "field_name": "days_to_metastasis_1",
+    "data_type": "int",
+    "unique_value_count": 101,
+    "sample_value_types": [
+      "int"
+    ],
+    "missing_count": 654,
+    "missing_rate": 0.8571428571428571,
+    "observed_value_pattern": "Top 5 values: ['357', '2483', '1462', '374', '243']",
+    "candidate_role": "post_outcome",
+    "possible_leakage_role": "post_outcome",
+    "source_schema": "clinical_data",
+    "confidence_status": "HIGH"
+  }
+]

@@ -1,0 +1,156 @@
+{
+  "context": {
+    "task": "unknown",
+    "modalities": [
+      "clinical",
+      "pathology",
+      "blood",
+      "text"
+    ],
+    "sample_size": 763,
+    "missingness_rate": 0.24456666666666668,
+    "class_imbalance": 0.0,
+    "text_available": true,
+    "imaging_available": false,
+    "clinical_available": true,
+    "blood_available": true,
+    "constraints": {
+      "computational": null,
+      "latency": null,
+      "interpretability": null,
+      "explicit_exclusions": null
+    }
+  },
+  "evidence_matched": 9,
+  "mechanism_rankings": {
+    "missing_value_handling": {
+      "component": "missing_value_handling",
+      "winner": null,
+      "selection_status": "insufficient_evidence",
+      "alternatives": [],
+      "insufficient_evidence": [
+        "mean_imputation"
+      ]
+    },
+    "categorical_encoding": {
+      "component": "categorical_encoding",
+      "winner": null,
+      "selection_status": "insufficient_evidence",
+      "alternatives": [],
+      "insufficient_evidence": [
+        "one_hot_encoding"
+      ]
+    },
+    "feature_representation": {
+      "component": "feature_representation",
+      "winner": "cnn_representation",
+      "selection_status": "selected",
+      "alternatives": [
+        {
+          "mechanism": "transformer_representation",
+          "component": "feature_representation",
+          "posterior_mean": 0.5,
+          "evidence_count": 0,
+          "support_count": 0,
+          "contradiction_count": 0,
+          "context_similarity_sum": 0.0,
+          "evidence_quality_sum": 0.0,
+          "final_score": 0.0
+        }
+      ],
+      "insufficient_evidence": []
+    },
+    "modality_fusion": {
+      "component": "modality_fusion",
+      "winner": "cross_attention",
+      "selection_status": "selected",
+      "alternatives": [
+        {
+          "mechanism": "late_fusion",
+          "component": "modality_fusion",
+          "posterior_mean": 0.660225550283684,
+          "evidence_count": 3,
+          "support_count": 3,
+          "contradiction_count": 0,
+          "context_similarity_sum": 0.9431288928138021,
+          "evidence_quality_sum": 3.0,
+          "final_score": 0.6226777922464342
+        },
+        {
+          "mechanism": "early_fusion",
+          "component": "modality_fusion",
+          "posterior_mean": 0.5652173913043479,
+          "evidence_count": 1,
+          "support_count": 1,
+          "contradiction_count": 0,
+          "context_similarity_sum": 0.30000000000000004,
+          "evidence_quality_sum": 1.0,
+          "final_score": 0.1695652173913044
+        },
+        {
+          "mechanism": "joint_embedding",
+          "component": "modality_fusion",
+          "posterior_mean": 0.5,
+          "evidence_count": 0,
+          "support_count": 0,
+          "contradiction_count": 0,
+          "context_similarity_sum": 0.0,
+          "evidence_quality_sum": 0.0,
+          "final_score": 0.0
+        }
+      ],
+      "insufficient_evidence": []
+    },
+    "base_learner": {
+      "component": "base_learner",
+      "winner": null,
+      "selection_status": "insufficient_evidence",
+      "alternatives": [],
+      "insufficient_evidence": [
+        "gradient_boosting"
+      ]
+    },
+    "loss_function": {
+      "component": "loss_function",
+      "winner": null,
+      "selection_status": "insufficient_evidence",
+      "alternatives": [],
+      "insufficient_evidence": [
+        "focal_loss"
+      ]
+    },
+    "imbalance_handling": {
+      "component": "imbalance_handling",
+      "winner": null,
+      "selection_status": "insufficient_evidence",
+      "alternatives": [],
+      "insufficient_evidence": [
+        "class_weighted_sampling"
+      ]
+    },
+    "ensembling": {
+      "component": "ensembling",
+      "winner": "average_ensembling",
+      "selection_status": "selected",
+      "alternatives": [],
+      "insufficient_evidence": []
+    }
+  },
+  "selected_pipeline": {
+    "missing_value_handling": null,
+    "categorical_encoding": null,
+    "feature_representation": "cnn_representation",
+    "modality_fusion": "cross_attention",
+    "base_learner": null,
+    "loss_function": null,
+    "imbalance_handling": null,
+    "ensembling": "average_ensembling"
+  },
+  "evidence_gaps": [
+    "missing_value_handling",
+    "categorical_encoding",
+    "base_learner",
+    "loss_function",
+    "imbalance_handling"
+  ]
+}

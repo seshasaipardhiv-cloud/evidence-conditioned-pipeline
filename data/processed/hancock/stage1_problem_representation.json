@@ -1,0 +1,540 @@
+{
+  "problem": {
+    "domain": {
+      "value": "oncology",
+      "provenance": {
+        "source_type": "user_input",
+        "source_reference": "user_problem_statement",
+        "extraction_method": "deterministic_parser",
+        "confidence": "inferred",
+        "evidence_text": "ystem for cancer research using clin"
+      }
+    },
+    "application_area": {
+      "value": null,
+      "provenance": {
+        "source_type": "user_input",
+        "source_reference": "user_problem_statement",
+        "extraction_method": "deterministic_parser",
+        "confidence": "unknown",
+        "evidence_text": null
+      }
+    },
+    "task_type": {
+      "value": "unknown",
+      "provenance": {
+        "source_type": "user_input",
+        "source_reference": "user_problem_statement",
+        "extraction_method": "deterministic_parser",
+        "confidence": "unknown",
+        "evidence_text": null
+      }
+    },
+    "prediction_objective": {
+      "value": null,
+      "provenance": {
+        "source_type": "user_input",
+        "source_reference": "user_problem_statement",
+        "extraction_method": "deterministic_parser",
+        "confidence": "unknown",
+        "evidence_text": null
+      }
+    },
+    "target_variable": {
+      "value": null,
+      "provenance": {
+        "source_type": "user_input",
+        "source_reference": "user_problem_statement",
+        "extraction_method": "deterministic_parser",
+        "confidence": "unknown",
+        "evidence_text": null
+      }
+    },
+    "desired_output": {
+      "value": null,
+      "provenance": {
+        "source_type": "user_input",
+        "source_reference": "user_problem_statement",
+        "extraction_method": "deterministic_parser",
+        "confidence": "unknown",
+        "evidence_text": null
+      }
+    },
+    "evaluation_metric": {
+      "value": null,
+      "provenance": {
+        "source_type": "user_input",
+        "source_reference": "user_problem_statement",
+        "extraction_method": "deterministic_parser",
+        "confidence": "unknown",
+        "evidence_text": null
+      }
+    },
+    "computational_constraints": {
+      "value": null,
+      "provenance": {
+        "source_type": "user_input",
+        "source_reference": "user_problem_statement",
+        "extraction_method": "deterministic_parser",
+        "confidence": "unknown",
+        "evidence_text": null
+      }
+    },
+    "latency_constraints": {
+      "value": null,
+      "provenance": {
+        "source_type": "user_input",
+        "source_reference": "user_problem_statement",
+        "extraction_method": "deterministic_parser",
+        "confidence": "unknown",
+        "evidence_text": null
+      }
+    },
+    "interpretability_requirements": {
+      "value": null,
+      "provenance": {
+        "source_type": "user_input",
+        "source_reference": "user_problem_statement",
+        "extraction_method": "deterministic_parser",
+        "confidence": "unknown",
+        "evidence_text": null
+      }
+    },
+    "modality_requirements": {
+      "value": [
+        "clinical",
+        "pathology",
+        "blood",
+        "text"
+      ],
+      "provenance": {
+        "source_type": "user_input",
+        "source_reference": "user_problem_statement",
+        "extraction_method": "deterministic_parser",
+        "confidence": "explicit",
+        "evidence_text": "rch using clinical, pathology, blood a; clinical, pathology, blood and text da; athology, blood and text data.; blood and text data."
+      }
+    },
+    "explicit_exclusions": {
+      "value": null,
+      "provenance": {
+        "source_type": "user_input",
+        "source_reference": "user_problem_statement",
+        "extraction_method": "deterministic_parser",
+        "confidence": "unknown",
+        "evidence_text": null
+      }
+    },
+    "raw_problem_statement": "We want to develop a multimodal machine learning system for cancer research using clinical, pathology, blood and text data."
+  },
+  "dataset": {
+    "dataset_name": "HANCOCK",
+    "total_patients": 763,
+    "clinical": {
+      "patient_count": 763,
+      "record_count": 1526,
+      "numerical_fields": [
+        "year_of_initial_diagnosis",
+        "age_at_initial_diagnosis",
+        "days_to_last_information",
+        "days_to_first_treatment"
+      ],
+      "categorical_fields": [
+        "sex",
+        "smoking_status",
+        "primarily_metastasis",
+        "survival_status",
+        "survival_status_with_cause",
+        "first_treatment_intent",
+        "first_treatment_modality",
+        "adjuvant_treatment_intent",
+        "adjuvant_radiotherapy",
+        "adjuvant_radiotherapy_modality",
+        "adjuvant_systemic_therapy",
+        "adjuvant_systemic_therapy_modality",
+        "adjuvant_radiochemotherapy",
+        "recurrence",
+        "progress_1"
+      ],
+      "boolean_fields": [],
+      "missing_value_counts": {
+        "days_to_recurrence": 1172,
+        "days_to_progress_1": 1180,
+        "progress_2": 1486,
+        "days_to_progress_2": 1486,
+        "metastasis_1_locations": 1308,
+        "days_to_metastasis_1": 1308,
+        "metastasis_2_locations": 1456,
+        "days_to_metastasis_2": 1456,
+        "metastasis_3_locations": 1508,
+        "days_to_metastasis_3": 1508,
+        "metastasis_4_locations": 1520,
+        "days_to_metastasis_4": 1520,
+        "adjuvant_treatment_intent": 720,
+        "adjuvant_systemic_therapy_modality": 984,
+        "adjuvant_radiotherapy_modality": 580,
+        "primarily_metastasis": 48,
+        "smoking_status": 32,
+        "adjuvant_systemic_therapy": 4
+      },
+      "unique_value_counts": {
+        "year_of_initial_diagnosis": 15,
+        "age_at_initial_diagnosis": 57,
+        "sex": 2,
+        "smoking_status": 4,
+        "primarily_metastasis": 3,
+        "survival_status": 2,
+        "survival_status_with_cause": 4,
+        "days_to_last_information": 682,
+        "first_treatment_intent": 1,
+        "first_treatment_modality": 1,
+        "days_to_first_treatment": 86,
+        "adjuvant_treatment_intent": 3,
+        "adjuvant_radiotherapy": 2,
+        "adjuvant_radiotherapy_modality": 6,
+        "adjuvant_systemic_therapy": 3,
+        "adjuvant_systemic_therapy_modality": 24,
+        "adjuvant_radiochemotherapy": 2,
+        "recurrence": 2,
+        "days_to_recurrence": 165,
+        "progress_1": 2,
+        "days_to_progress_1": 159,
+        "progress_2": 2,
+        "days_to_progress_2": 21,
+        "metastasis_1_locations": 27,
+        "days_to_metastasis_1": 102,
+        "metastasis_2_locations": 18,
+        "days_to_metastasis_2": 34,
+        "metastasis_3_locations": 8,
+        "days_to_metastasis_3": 10,
+        "metastasis_4_locations": 4,
+        "days_to_metastasis_4": 4
+      },
+      "constant_fields": [
+        "first_treatment_intent",
+        "first_treatment_modality"
+      ],
+      "suspicious_identifier_fields": [],
+      "provenance": {
+        "source_type": "dataset",
+        "source_reference": "ingestion_report + extracted json files",
+        "extraction_method": "schema_based_profiler",
+        "confidence": "explicit",
+        "evidence_text": null
+      }
+    },
+    "pathology": {
+      "patient_count": 763,
+      "record_count": 763,
+      "categorical_fields": [
+        "primary_tumor_site",
+        "pT_stage",
+        "pN_stage",
+        "grading",
+        "hpv_association_p16",
+        "perinodal_invasion",
+        "lymphovascular_invasion_L",
+        "vascular_invasion_V",
+        "perineural_invasion_Pn",
+        "resection_status",
+        "resection_status_carcinoma_in_situ",
+        "carcinoma_in_situ",
+        "closest_resection_margin_in_cm",
+        "histologic_type"
+      ],
+      "numerical_fields": [
+        "number_of_positive_lymph_nodes",
+        "number_of_resected_lymph_nodes",
+        "infiltration_depth_in_mm"
+      ],
+      "missing_value_counts": {
+        "closest_resection_margin_in_cm": 171,
+        "perinodal_invasion": 365,
+        "number_of_positive_lymph_nodes": 152,
+        "histologic_type": 20,
+        "infiltration_depth_in_mm": 137
+      },
+      "unique_value_counts": {
+        "primary_tumor_site": 5,
+        "pT_stage": 9,
+        "pN_stage": 10,
+        "grading": 4,
+        "hpv_association_p16": 3,
+        "number_of_positive_lymph_nodes": 26,
+        "number_of_resected_lymph_nodes": 74,
+        "perinodal_invasion": 3,
+        "lymphovascular_invasion_L": 2,
+        "vascular_invasion_V": 2,
+        "perineural_invasion_Pn": 2,
+        "resection_status": 4,
+        "resection_status_carcinoma_in_situ": 3,
+        "carcinoma_in_situ": 2,
+        "closest_resection_margin_in_cm": 15,
+        "histologic_type": 9,
+        "infiltration_depth_in_mm": 45
+      },
+      "provenance": {
+        "source_type": "dataset",
+        "source_reference": "ingestion_report + extracted json files",
+        "extraction_method": "schema_based_profiler",
+        "confidence": "explicit",
+        "evidence_text": null
+      }
+    },
+    "blood": {
+      "patient_count": 693,
+      "observation_count": 23272,
+      "analyte_count": 38,
+      "analyte_names": [
+        "Basophils",
+        "Basophils %",
+        "CRP",
+        "Calcium",
+        "Chloride",
+        "Creatinine",
+        "Eosinophils",
+        "Eosinophils %",
+        "Erythrocytes",
+        "Glomerular filtration rate",
+        "Glucose",
+        "Granulocytes",
+        "Granulocytes %",
+        "Hematocrit",
+        "Hemoglobin",
+        "INR",
+        "Immature Granulocytyes",
+        "Leukocytes",
+        "Lymphocytes",
+        "Lymphocytes %",
+        "MCH",
+        "MCV",
+        "MHCH",
+        "MPV",
+        "Magnesium",
+        "Monocytes",
+        "Monocytes %",
+        "Normoblasts",
+        "PDW",
+        "PLCR",
+        "PT",
+        "Platelets",
+        "Potassium",
+        "RDW",
+        "Sodium",
+        "Thrombin time",
+        "Urea",
+        "aPPT"
+      ],
+      "units_observed": [
+        "%",
+        "fl",
+        "g/dl",
+        "mg/dl",
+        "mg/l",
+        "ml/min",
+        "mmol/l",
+        "pg",
+        "s",
+        "x10^3/\u00b5l",
+        "x10^6/\u00b5l"
+      ],
+      "missing_value_count": 88,
+      "repeated_measurements_detected": false,
+      "temporal_available": true,
+      "provenance": {
+        "source_type": "dataset",
+        "source_reference": "ingestion_report + extracted json files",
+        "extraction_method": "schema_based_profiler",
+        "confidence": "explicit",
+        "evidence_text": null
+      }
+    },
+    "text": {
+      "patient_count": 763,
+      "history_available_count": 529,
+      "report_available_count": 742,
+      "description_available_count": 763,
+      "history_char_count_stats": {
+        "min": 63.0,
+        "max": 2892.0,
+        "mean": 645.0680529300568,
+        "median": 560.0
+      },
+      "report_char_count_stats": {
+        "min": 982.0,
+        "max": 32982.0,
+        "mean": 9676.363881401618,
+        "median": 8712.5
+      },
+      "description_char_count_stats": {
+        "min": 7.0,
+        "max": 354.0,
+        "mean": 122.47182175622542,
+        "median": 112.0
+      },
+      "history_word_count_stats": {
+        "min": 9.0,
+        "max": 387.0,
+        "mean": 87.96408317580341,
+        "median": 76.0
+      },
+      "report_word_count_stats": {
+        "min": 139.0,
+        "max": 4526.0,
+        "mean": 1364.5134770889488,
+        "median": 1215.0
+      },
+      "description_word_count_stats": {
+        "min": 2.0,
+        "max": 39.0,
+        "mean": 12.838794233289645,
+        "median": 12.0
+      },
+      "empty_text_rate": 0.0,
+      "provenance": {
+        "source_type": "dataset",
+        "source_reference": "ingestion_report + extracted json files",
+        "extraction_method": "schema_based_profiler",
+        "confidence": "explicit",
+        "evidence_text": null
+      }
+    },
+    "provenance": {
+      "source_type": "dataset",
+      "source_reference": "ingestion_report + extracted json files",
+      "extraction_method": "schema_based_profiler",
+      "confidence": "explicit",
+      "evidence_text": null
+    }
+  },
+  "task": {
+    "value": "unknown",
+    "provenance": {
+      "source_type": "user_input",
+      "source_reference": "user_problem_statement",
+      "extraction_method": "deterministic_parser",
+      "confidence": "unknown",
+      "evidence_text": null
+    }
+  },
+  "modalities": {
+    "clinical": true,
+    "pathology": true,
+    "blood": true,
+    "text": true
+  },
+  "dataset_features": {
+    "number_of_patients": 763,
+    "number_of_modalities": 4,
+    "modality_availability": {
+      "clinical": true,
+      "pathology": true,
+      "blood": true,
+      "text": true
+    },
+    "numerical_feature_count": 8,
+    "categorical_feature_count": 29,
+    "binary_feature_count": 0,
+    "missingness_rates": {
+      "clinical": 0.6648,
+      "pathology": 0.0651,
+      "blood": 0.0038
+    },
+    "duplicate_patient_count": 763,
+    "constant_feature_count": 2,
+    "sparse_modalities": [
+      "clinical"
+    ],
+    "text_length_stats": {
+      "history": {
+        "min": 63.0,
+        "max": 2892.0,
+        "mean": 645.0680529300568,
+        "median": 560.0
+      },
+      "report": {
+        "min": 982.0,
+        "max": 32982.0,
+        "mean": 9676.363881401618,
+        "median": 8712.5
+      },
+      "description": {
+        "min": 7.0,
+        "max": 354.0,
+        "mean": 122.47182175622542,
+        "median": 112.0
+      }
+    },
+    "repeated_measurement_modalities": [],
+    "temporal_modalities": [
+      "blood"
+    ],
+    "provenance": {
+      "source_type": "derived",
+      "source_reference": "dataset_profiler output",
+      "extraction_method": "structural_feature_extractor",
+      "confidence": "explicit",
+      "evidence_text": null
+    }
+  },
+  "missingness": {
+    "missing_clinical": 0,
+    "missing_pathology": 0,
+    "missing_blood": 70,
+    "missing_text": 0
+  },
+  "constraints": {
+    "computational": null,
+    "latency": null,
+    "interpretability": null,
+    "explicit_exclusions": null
+  },
+  "target_information": {
+    "target_status": "AMBIGUOUS",
+    "stated_target_variable": null,
+    "candidate_fields": [
+      "smoking_status",
+      "survival_status",
+      "survival_status_with_cause",
+      "recurrence",
+      "resection_status",
+      "resection_status_carcinoma_in_situ"
+    ],
+    "ambiguity_reason": "Target variable not stated in problem statement. The following dataset fields may be target-related and require human confirmation.",
+    "provenance": {
+      "source_type": "dataset",
+      "source_reference": "dataset field names",
+      "extraction_method": "field_name_heuristic",
+      "confidence": "inferred",
+      "evidence_text": "Candidate fields: ['smoking_status', 'survival_status', 'survival_status_with_cause', 'recurrence', 'resection_status', 'resection_status_carcinoma_in_situ']"
+    }
+  },
+  "compatibility": {
+    "status": "insufficient_information",
+    "reasons": [
+      "Task type is unknown. Cannot evaluate compatibility until task is specified."
+    ],
+    "missing_for_full_compatibility": [
+      "task_type"
+    ],
+    "provenance": {
+      "source_type": "derived",
+      "source_reference": "parsed_problem + dataset_features",
+      "extraction_method": "deterministic_task_identifier",
+      "confidence": "explicit",
+      "evidence_text": null
+    }
+  },
+  "warnings": [
+    "Task type could not be determined from the problem statement.",
+    "Prediction target status: AMBIGUOUS",
+    "Missing for full compatibility: ['task_type']"
+  ],
+  "provenance": {
+    "source_type": "derived",
+    "source_reference": "stage1_orchestrator",
+    "extraction_method": "stage1_pipeline",
+    "confidence": "explicit",
+    "evidence_text": null
+  }
+}

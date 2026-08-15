@@ -1,0 +1,46 @@
+[
+  {
+    "component": "feature_representation",
+    "current_status": "UNSUPPORTED",
+    "current_selected_value": null,
+    "reason": "Missing evidence",
+    "originating_stage": "Stage 4C",
+    "evidence_sources_checked": [
+      "stage3_validated_pipeline_specification.json"
+    ],
+    "resolution_status": "STILL_BLOCKED"
+  },
+  {
+    "component": "baseline:single-modal approaches",
+    "current_status": "BLOCKED",
+    "current_selected_value": "single-modal approaches",
+    "reason": "Baseline implementation not available.",
+    "originating_stage": "Stage 4B-3",
+    "evidence_sources_checked": [
+      "stage3_validated_pipeline_specification.json"
+    ],
+    "resolution_status": "STILL_BLOCKED"
+  },
+  {
+    "component": "baseline:calm image and",
+    "current_status": "BLOCKED",
+    "current_selected_value": "calm image and",
+    "reason": "Malformed baseline entity.",
+    "originating_stage": "Stage 4B-3",
+    "evidence_sources_checked": [
+      "stage3_validated_pipeline_specification.json"
+    ],
+    "resolution_status": "INVALID_ENTITY"
+  },
+  {
+    "component": "baseline:single-modality PET",
+    "current_status": "BLOCKED",
+    "current_selected_value": "single-modality PET",
+    "reason": "Baseline implementation not available.",
+    "originating_stage": "Stage 4B-3",
+    "evidence_sources_checked": [
+      "stage3_validated_pipeline_specification.json"
+    ],
+    "resolution_status": "STILL_BLOCKED"
+  }
+]

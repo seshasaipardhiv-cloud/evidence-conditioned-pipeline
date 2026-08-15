@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-14T18:55:35.981209+00:00",
+  "stage": "STAGE 6H \u2014 MANUSCRIPT RECONCILIATION, SCIENTIFIC CORRECTION & FINAL PAPER REBUILD",
+  "reconciliation_status": "SUCCESSFULLY_RECONCILED",
+  "final_manuscript_word_count": 3912,
+  "final_manuscript_sha256": "3eac14bc4babb6ad4001acfef9adfd6fb32db543465e715f4c43ff03f3f813bf",
+  "authoritative_metrics_preserved": {
+    "candidate_mean_roc_auc": 0.9751,
+    "candidate_std_roc_auc": 0.0114,
+    "default_xgboost_mean_roc_auc": 0.9704,
+    "margin_delta": 0.0047,
+    "candidate_brier_score": 0.0175
+  },
+  "source_immutability_status": "ZERO_MUTATION_CONFIRMED"
+}

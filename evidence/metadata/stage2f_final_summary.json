@@ -1,0 +1,24 @@
+{
+  "execution_timestamp": "2026-08-14T06:18:35.989254+00:00",
+  "total_papers_audited": 30,
+  "total_experiments_audited": 27,
+  "primitives_audited": 5,
+  "primitive_resolutions": {
+    "missing_value_handling": "UNSUPPORTED",
+    "categorical_encoding": "UNSUPPORTED",
+    "base_learner": "UNSUPPORTED",
+    "loss_function": "UNSUPPORTED",
+    "imbalance_handling": "UNSUPPORTED"
+  },
+  "explicitly_supported_primitives": [],
+  "unsupported_primitives": [
+    "missing_value_handling",
+    "categorical_encoding",
+    "base_learner",
+    "loss_function",
+    "imbalance_handling"
+  ],
+  "taxonomy_gaps": [],
+  "final_decision": "NO_PRIMITIVE_EVIDENCE",
+  "training_allowed": false
+}

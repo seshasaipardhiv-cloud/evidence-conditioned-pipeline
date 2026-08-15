@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-08-14T18:55:35.894634+00:00",
+  "total_problematic_claims": 4,
+  "claims": [
+    {
+      "file": "evidence/final/paper/final_research_paper.md",
+      "section": "Section 3 & Abstract",
+      "current_claim": "Candidate pipeline executes MissForest / MICE imputation.",
+      "problem": "executor_stage5b.py executed SimpleImputer(strategy='median') and SimpleImputer(strategy='most_frequent').",
+      "recommended_rewording": "Describe missing-value handling as median/mode imputation within the MICE component taxonomy family, clarifying that univariate imputation was executed in this benchmark."
+    },
+    {
+      "file": "evidence/final/paper/final_research_paper.md",
+      "section": "Section 3.9 & Section 7",
+      "current_claim": "Pipeline includes cross-attention and average ensembling as active evidence-backed components.",
+      "problem": "These two components were dormant/bypassed in executor_stage5b.py for the unimodal tabular task.",
+      "recommended_rewording": "Explicitly state that while cross_attention and average_ensembling are supported in the multimodal synthesis taxonomy, they were dormant during the unimodal clinical tabular experiment."
+    },
+    {
+      "file": "evidence/final/paper/final_research_paper.md",
+      "section": "Section 4 & Section 5",
+      "current_claim": "The clinical recurrence prediction task does not specify the precise temporal decision epoch.",
+      "problem": "Predictor matrix contains adjuvant therapy variables, making it a post-adjuvant prognosis model rather than pre-treatment staging.",
+      "recommended_rewording": "Formally specify the prediction epoch as 'Post-Adjuvant Recurrence Risk Prediction' in Section 4.1."
+    },
+    {
+      "file": "evidence/final/paper/final_research_paper.md",
+      "section": "Section 5.1 & Section 6",
+      "current_claim": "Candidate outperforms Simple MLP (+0.0346 ROC-AUC).",
+      "problem": "MLP used max_iter=10 (undertrained).",
+      "recommended_rewording": "Clarify that Simple MLP served as a minimal baseline rather than a fully converged deep-learning comparator."
+    }
+  ]
+}

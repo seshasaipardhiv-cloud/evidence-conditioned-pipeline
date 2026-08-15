@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-08-14T18:55:35.981732+00:00",
+  "manuscript_title": "Evidence-Conditioned Compositional Pipeline Synthesis: A Provenance-Aware Framework for Reproducible Clinical Machine Learning",
+  "paper_file": "final_research_paper.md",
+  "paper_sha256": "3eac14bc4babb6ad4001acfef9adfd6fb32db543465e715f4c43ff03f3f813bf",
+  "word_count": 3912,
+  "figure_count": 8,
+  "table_count": 3,
+  "verified_references_count": 4,
+  "pipeline_hash": "6b6bcb1b217793230dba3467ea09fd94339c7497ccc85b0f8ed86c59f16686da",
+  "experiment_contract_hash": "6eb6b035c8f87bcf52d7d6107a5a4eafa6c6330ca9bf6c1ca837cdbd63910024",
+  "audit_status": "AUDIT_PASSED",
+  "reconciliation_status": "RECONCILED_STAGE_6H",
+  "core_metrics": {
+    "candidate_mean_roc_auc": 0.9751,
+    "candidate_std_roc_auc": 0.0114,
+    "default_xgboost_mean_roc_auc": 0.9704,
+    "margin_delta": 0.0047,
+    "candidate_brier_score": 0.0175
+  },
+  "immutability_verified": true
+}

@@ -1,0 +1,22 @@
+{
+  "original_selected_representation": "cnn_representation",
+  "original_compatibility_status": "incompatible",
+  "candidate_representations": [
+    {
+      "mechanism": "mlp_representation",
+      "evidence_status": "EVIDENCE_BACKED",
+      "compatibility_status": "valid",
+      "confidence_status": "explicit"
+    }
+  ],
+  "evidence_backed_candidates": [
+    "mlp_representation"
+  ],
+  "explicitly_configured_candidates": [],
+  "incompatible_candidates": [],
+  "unresolved_candidates": [],
+  "selected_replacement": "mlp_representation",
+  "selection_reason": "Evidence-backed representation compatible with data.",
+  "provenance": "stage2_corpus",
+  "final_resolution_status": "RESOLVED"
+}

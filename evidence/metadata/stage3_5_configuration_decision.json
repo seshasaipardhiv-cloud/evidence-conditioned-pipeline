@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-08-14T06:52:26.168450+00:00",
+  "decisions": {
+    "categorical_encoding": {
+      "component": "categorical_encoding",
+      "selected_value": "one_hot_encoding",
+      "classification": "EXPLICITLY_CONFIGURED",
+      "evidence_status": "EXPLICITLY_CONFIGURED",
+      "configuration_source": "project_configuration",
+      "rationale": "Explicitly selected for categorical clinical variables in the tabular HANCOCK input.",
+      "reference": null,
+      "provenance": {
+        "config_file": "experiment_config.json",
+        "literature_claim": false
+      },
+      "compatibility_status": "COMPATIBLE",
+      "execution_status": "READY_WITH_EXPLICIT_CONFIG"
+    },
+    "loss_function": {
+      "component": "loss_function",
+      "selected_value": "binary_logistic",
+      "classification": "EXPLICITLY_CONFIGURED",
+      "evidence_status": "EXPLICITLY_CONFIGURED",
+      "configuration_source": "project_configuration",
+      "rationale": "Explicitly selected for binary recurrence classification with the XGBoost base learner.",
+      "reference": null,
+      "provenance": {
+        "config_file": "experiment_config.json",
+        "literature_claim": false
+      },
+      "compatibility_status": "COMPATIBLE",
+      "execution_status": "READY_WITH_EXPLICIT_CONFIG"
+    }
+  }
+}

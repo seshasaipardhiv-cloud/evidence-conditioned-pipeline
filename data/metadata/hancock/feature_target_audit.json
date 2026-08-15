@@ -1,0 +1,19 @@
+{
+  "target": "recurrence",
+  "target_not_in_features": true,
+  "outcome_fields_not_in_features": true,
+  "post_outcome_fields_not_in_features": true,
+  "patient_overlap": 0,
+  "preprocessing_fit_calls": 0,
+  "excluded_fields": [
+    "days_to_last_information",
+    "survival_status_with_cause",
+    "recurrence",
+    "days_to_progress_2",
+    "survival_status",
+    "days_to_metastasis_1",
+    "days_to_progress_1",
+    "days_to_recurrence"
+  ],
+  "exclusion_reason": "Derived outcome or post-outcome fields identified by Stage 4 leakage firewall."
+}

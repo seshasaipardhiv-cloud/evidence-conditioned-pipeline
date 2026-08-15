@@ -1,0 +1,120 @@
+{
+  "timestamp": "2026-08-14T18:55:13.413713+00:00",
+  "pipeline_hash": "6b6bcb1b217793230dba3467ea09fd94339c7497ccc85b0f8ed86c59f16686da",
+  "all_components_traced": true,
+  "components": {
+    "feature_representation": {
+      "component": "feature_representation",
+      "stage3_6_value": "clinical_tabular_representation",
+      "stage4_materialized_value": "clinical_tabular_representation",
+      "stage4_executable_class": "backend.models.tabular.ClinicalTabularRepresentation",
+      "stage5a_contract_value": "clinical_tabular_representation",
+      "classification": "EVIDENCE_BACKED",
+      "provenance": {
+        "paper_id": "paper_42487970",
+        "experiment_id": "exp_aef6b872",
+        "source_sentence": "Structured data, such as the patient\u2019s age and stage, can be directly used as input for the model...",
+        "stage_origin": "Stage 2E-1 Controlled Taxonomy Extension"
+      },
+      "fully_traceable": true
+    },
+    "modality_fusion": {
+      "component": "modality_fusion",
+      "stage3_6_value": "cross_attention",
+      "stage4_materialized_value": "cross_attention",
+      "stage4_executable_class": "backend.models.fusion.CrossAttentionFusion",
+      "stage5a_contract_value": "cross_attention",
+      "classification": "EVIDENCE_BACKED",
+      "provenance": {
+        "canonical_name": "cross-attention",
+        "mechanism_id": "mech_cross_attention",
+        "stage_origin": "Stage 3.1 Validated Pipeline Specification"
+      },
+      "fully_traceable": true
+    },
+    "ensembling": {
+      "component": "ensembling",
+      "stage3_6_value": "average_ensembling",
+      "stage4_materialized_value": "average_ensembling",
+      "stage4_executable_class": "backend.models.ensembles.AverageEnsemble",
+      "stage5a_contract_value": "average_ensembling",
+      "classification": "EVIDENCE_BACKED",
+      "provenance": {
+        "canonical_name": "average_ensembling",
+        "stage_origin": "Stage 3.1 Validated Pipeline Specification"
+      },
+      "fully_traceable": true
+    },
+    "missing_value_handling": {
+      "component": "missing_value_handling",
+      "stage3_6_value": "MissForest / MICE",
+      "stage4_materialized_value": "MissForest / MICE",
+      "stage4_executable_class": "backend.models.imputation.MissForestMICEImputer",
+      "stage5a_contract_value": "MissForest / MICE",
+      "classification": "EVIDENCE_BACKED",
+      "provenance": {
+        "pmid": "41826845",
+        "doi": "10.1186/s12874-026-02805-4",
+        "source_sentence": "Missing values were imputed using MissForest...",
+        "stage_origin": "Stage 2F-1 Literature Retrieval"
+      },
+      "fully_traceable": true
+    },
+    "base_learner": {
+      "component": "base_learner",
+      "stage3_6_value": "XGBoost",
+      "stage4_materialized_value": "XGBoost",
+      "stage4_executable_class": "backend.models.classifiers.XGBoostClassifier",
+      "stage5a_contract_value": "XGBoost",
+      "classification": "EVIDENCE_BACKED",
+      "provenance": {
+        "pmid": "41775771",
+        "doi": "10.1038/s41598-026-39104-3",
+        "source_sentence": "In this study, the XGBoost classifier was trained on the augmented feature set...",
+        "stage_origin": "Stage 2F-1 Literature Retrieval"
+      },
+      "fully_traceable": true
+    },
+    "imbalance_handling": {
+      "component": "imbalance_handling",
+      "stage3_6_value": "SMOTE",
+      "stage4_materialized_value": "SMOTE",
+      "stage4_executable_class": "backend.models.sampling.SMOTE",
+      "stage5a_contract_value": "SMOTE",
+      "classification": "EVIDENCE_BACKED",
+      "provenance": {
+        "pmid": "41006422",
+        "doi": "10.1038/s41598-025-16790-z",
+        "source_sentence": "SMOTE was applied to augment the RMBC group to address the class imbalance...",
+        "stage_origin": "Stage 2F-1 Literature Retrieval"
+      },
+      "fully_traceable": true
+    },
+    "categorical_encoding": {
+      "component": "categorical_encoding",
+      "stage3_6_value": "one_hot_encoding",
+      "stage4_materialized_value": "one_hot_encoding",
+      "stage4_executable_class": "backend.models.preprocessing.OneHotEncoder",
+      "stage5a_contract_value": "one_hot_encoding",
+      "classification": "EXPLICITLY_CONFIGURED",
+      "provenance": {
+        "config_file": "experiment_config.json",
+        "literature_claim": false
+      },
+      "fully_traceable": true
+    },
+    "loss_function": {
+      "component": "loss_function",
+      "stage3_6_value": "binary_logistic",
+      "stage4_materialized_value": "binary_logistic",
+      "stage4_executable_class": "backend.models.losses.BinaryLogisticLoss",
+      "stage5a_contract_value": "binary_logistic",
+      "classification": "EXPLICITLY_CONFIGURED",
+      "provenance": {
+        "config_file": "experiment_config.json",
+        "literature_claim": false
+      },
+      "fully_traceable": true
+    }
+  }
+}

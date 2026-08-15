@@ -1,0 +1,65 @@
+[
+  {
+    "pmid": "41335879",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": false,
+    "reason": "Target leakage detected in feature representation."
+  },
+  {
+    "pmid": "29427526",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "40273819",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": false,
+    "target_leakage_free": true,
+    "reason": "Incompatible task (not classification / recurrence prediction)."
+  },
+  {
+    "pmid": "41935148",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": false,
+    "reason": "Target leakage detected in feature representation."
+  },
+  {
+    "pmid": "40165728",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "32123303",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": true,
+    "target_leakage_free": true,
+    "reason": "No explicit clinical tabular feature representation methodology found in text."
+  },
+  {
+    "pmid": "15743751",
+    "representation_method": null,
+    "explicitly_demonstrated": false,
+    "modality_compatible_hancock": true,
+    "task_compatible_recurrence_classification": false,
+    "target_leakage_free": true,
+    "reason": "Incompatible task (not classification / recurrence prediction)."
+  }
+]

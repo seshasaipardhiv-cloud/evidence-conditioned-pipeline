@@ -1,0 +1,180 @@
+{
+  "contract_version": "5.0-A",
+  "timestamp": "2026-08-14T17:38:59.329237+00:00",
+  "contract_status": "CONTRACT_FROZEN",
+  "training_allowed": false,
+  "pipeline_identity": {
+    "specification_source": "stage3_6_configured_pipeline.json",
+    "pipeline_hash": "6b6bcb1b217793230dba3467ea09fd94339c7497ccc85b0f8ed86c59f16686da",
+    "target_task": "recurrence_classification",
+    "primary_metric": "roc_auc"
+  },
+  "dataset_cohort": {
+    "name": "HANCOCK Clinical Cohort",
+    "modality": "clinical_tabular",
+    "target_variable": "recurrence",
+    "task_type": "binary_classification",
+    "split_manifest_path": "data/metadata/hancock/data_split_manifest.json",
+    "split_ratios": {
+      "train": 0.65,
+      "validation": 0.15,
+      "test": 0.2
+    },
+    "random_seeds": [
+      42,
+      100,
+      2026
+    ],
+    "patient_overlap_policy": "STRICT_ZERO_OVERLAP"
+  },
+  "target_isolation_firewall": {
+    "excluded_outcome_fields": [
+      "recurrence",
+      "survival_status",
+      "survival_status_with_cause",
+      "days_to_recurrence",
+      "days_to_last_information",
+      "days_to_progress_1",
+      "days_to_progress_2",
+      "days_to_metastasis_1"
+    ],
+    "enforcement_rule": "Outcome and post-baseline censoring fields must never enter predictor matrix X."
+  },
+  "preprocessing_sequence": [
+    {
+      "step": 1,
+      "component": "missing_value_handling",
+      "mechanism": "MissForest / MICE",
+      "implementation_class": "backend.models.imputation.MissForestMICEImputer",
+      "classification": "EVIDENCE_BACKED",
+      "fit_scope": "TRAIN_ONLY",
+      "transform_scope": "ALL_SPLITS"
+    },
+    {
+      "step": 2,
+      "component": "categorical_encoding",
+      "mechanism": "one_hot_encoding",
+      "implementation_class": "backend.models.preprocessing.OneHotEncoder",
+      "classification": "EXPLICITLY_CONFIGURED",
+      "fit_scope": "TRAIN_ONLY",
+      "transform_scope": "ALL_SPLITS"
+    },
+    {
+      "step": 3,
+      "component": "imbalance_handling",
+      "mechanism": "SMOTE",
+      "implementation_class": "backend.models.sampling.SMOTE",
+      "classification": "EVIDENCE_BACKED",
+      "fit_scope": "TRAIN_ONLY",
+      "transform_scope": "TRAIN_ONLY"
+    }
+  ],
+  "model_architecture": {
+    "feature_representation": {
+      "mechanism": "clinical_tabular_representation",
+      "implementation_class": "backend.models.tabular.ClinicalTabularRepresentation",
+      "classification": "EVIDENCE_BACKED"
+    },
+    "modality_fusion": {
+      "mechanism": "cross_attention",
+      "implementation_class": "backend.models.fusion.CrossAttentionFusion",
+      "classification": "EVIDENCE_BACKED"
+    },
+    "base_learner": {
+      "mechanism": "XGBoost",
+      "implementation_class": "backend.models.classifiers.XGBoostClassifier",
+      "classification": "EVIDENCE_BACKED"
+    },
+    "loss_function": {
+      "mechanism": "binary_logistic",
+      "implementation_class": "backend.models.losses.BinaryLogisticLoss",
+      "classification": "EXPLICITLY_CONFIGURED"
+    },
+    "ensembling": {
+      "mechanism": "average_ensembling",
+      "implementation_class": "backend.models.ensembles.AverageEnsemble",
+      "classification": "EVIDENCE_BACKED"
+    }
+  },
+  "compute_budget": {
+    "max_epochs": 10,
+    "max_training_time_minutes": 15,
+    "max_memory_gb": 4,
+    "device": "cpu",
+    "max_parallel_jobs": 1
+  },
+  "baselines_to_evaluate": [
+    {
+      "baseline_id": "baseline_logistic_regression",
+      "name": "Logistic Regression (L2 regularized)",
+      "type": "linear_model",
+      "preprocessing": [
+        "median_imputation",
+        "one_hot_encoding",
+        "standard_scaler"
+      ]
+    },
+    {
+      "baseline_id": "baseline_random_forest",
+      "name": "Random Forest Classifier (100 trees)",
+      "type": "tree_ensemble",
+      "preprocessing": [
+        "median_imputation",
+        "one_hot_encoding"
+      ]
+    },
+    {
+      "baseline_id": "baseline_simple_mlp",
+      "name": "Simple Multi-Layer Perceptron (2-layer ReLU)",
+      "type": "neural_network",
+      "preprocessing": [
+        "median_imputation",
+        "one_hot_encoding",
+        "standard_scaler"
+      ]
+    },
+    {
+      "baseline_id": "baseline_xgboost_default",
+      "name": "XGBoost (Default parameters, unaugmented)",
+      "type": "gradient_boosting",
+      "preprocessing": [
+        "median_imputation",
+        "one_hot_encoding"
+      ]
+    }
+  ],
+  "evaluation_metrics": {
+    "primary": "roc_auc",
+    "secondary": [
+      "f1",
+      "accuracy",
+      "precision",
+      "recall",
+      "brier_score",
+      "pr_auc"
+    ]
+  },
+  "reproducibility_mandate": {
+    "environment_lock": true,
+    "seed_control": true,
+    "deterministic_splits": true,
+    "parameter_logging": true,
+    "zero_silent_fallback": true
+  },
+  "abort_conditions": [
+    "TARGET_LEAKAGE_DETECTED: Any target or outcome-derived variable enters predictor matrix X.",
+    "PATIENT_OVERLAP_DETECTED: Any patient ID is observed in more than one split fold.",
+    "PREPROCESSING_FIT_LEAKAGE: Preprocessing transformers fit on validation or test split data.",
+    "CONFIGURATION_TAMPERING: Pipeline SHA-256 hash does not match 6b6bcb1b217793230dba3467ea09fd94339c7497ccc85b0f8ed86c59f16686da.",
+    "COMPUTE_EXCEEDED: Memory usage exceeds 4 GB or single run duration exceeds 15 minutes.",
+    "DIVERGENCE_OR_NAN: Loss value evaluates to NaN or Inf during training.",
+    "UNAUTHORIZED_FALLBACK: System attempts to fall back to an unverified mechanism upon failure."
+  ],
+  "artifact_locations": {
+    "contract": "evidence/processed/stage5a_experiment_contract.json",
+    "reproducibility": "evidence/metadata/stage5a_reproducibility_manifest.json",
+    "audit": "evidence/metadata/stage5a_execution_audit.json",
+    "summary": "evidence/metadata/stage5a_final_summary.json",
+    "experiment_outputs": "data/experiments/stage5/"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "timestamp": "2026-08-14T17:36:06.374368+00:00",
+  "final_decision": "GO",
+  "training_allowed": false,
+  "gate_statuses": {
+    "corpus_integrity_gate": "PASS",
+    "pipeline_spec_hash_gate": "PASS",
+    "materialization_gate": "PASS",
+    "preprocessing_contract_gate": "PASS",
+    "target_isolation_gate": "PASS",
+    "patient_split_gate": "PASS",
+    "provenance_boundary_gate": "PASS",
+    "compute_budget_gate": "PASS",
+    "baseline_compatibility_gate": "PASS",
+    "zero_training_verified_gate": "PASS"
+  },
+  "blocking_reasons": [],
+  "rematerialized_components": {
+    "feature_representation": {
+      "selected_value": "clinical_tabular_representation",
+      "classification": "EVIDENCE_BACKED",
+      "executable_class": "backend.models.tabular.ClinicalTabularRepresentation",
+      "execution_status": "READY"
+    },
+    "modality_fusion": {
+      "selected_value": "cross_attention",
+      "classification": "EVIDENCE_BACKED",
+      "executable_class": "backend.models.fusion.CrossAttentionFusion",
+      "execution_status": "READY"
+    },
+    "ensembling": {
+      "selected_value": "average_ensembling",
+      "classification": "EVIDENCE_BACKED",
+      "executable_class": "backend.models.ensembles.AverageEnsemble",
+      "execution_status": "READY"
+    },
+    "missing_value_handling": {
+      "selected_value": "MissForest / MICE",
+      "classification": "EVIDENCE_BACKED",
+      "executable_class": "backend.models.imputation.MissForestMICEImputer",
+      "execution_status": "READY"
+    },
+    "base_learner": {
+      "selected_value": "XGBoost",
+      "classification": "EVIDENCE_BACKED",
+      "executable_class": "backend.models.classifiers.XGBoostClassifier",
+      "execution_status": "READY"
+    },
+    "imbalance_handling": {
+      "selected_value": "SMOTE",
+      "classification": "EVIDENCE_BACKED",
+      "executable_class": "backend.models.sampling.SMOTE",
+      "execution_status": "READY"
+    },
+    "categorical_encoding": {
+      "selected_value": "one_hot_encoding",
+      "classification": "EXPLICITLY_CONFIGURED",
+      "executable_class": "backend.models.preprocessing.OneHotEncoder",
+      "execution_status": "READY"
+    },
+    "loss_function": {
+      "selected_value": "binary_logistic",
+      "classification": "EXPLICITLY_CONFIGURED",
+      "executable_class": "backend.models.losses.BinaryLogisticLoss",
+      "execution_status": "READY"
+    }
+  },
+  "safety_firewalls": {
+    "target_leakage_secure": true,
+    "preprocessing_train_only": true,
+    "zero_model_fitting": true,
+    "patient_split_overlap_zero": true
+  }
+}

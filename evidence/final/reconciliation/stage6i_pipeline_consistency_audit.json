@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-08-14T18:55:36.004766+00:00",
+  "status": "CONSISTENT",
+  "checks": {
+    "actual_executed_imputation_documented": true,
+    "mice_missforest_not_claimed_as_executed": true,
+    "cross_attention_designated_dormant": true,
+    "average_ensembling_designated_dormant": true,
+    "smote_and_onehot_accurately_described": true,
+    "xgboost_tuned_params_accurately_described": true
+  },
+  "actual_executed_path": [
+    "clinical_tabular_representation",
+    "train_fitted_median_mode_imputation",
+    "one_hot_encoding",
+    "smote_oversampling",
+    "tuned_xgboost_classifier",
+    "binary_logistic_objective"
+  ],
+  "dormant_primitives": [
+    "cross_attention",
+    "average_ensembling"
+  ]
+}

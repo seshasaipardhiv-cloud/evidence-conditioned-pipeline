@@ -1,0 +1,63 @@
+{
+  "timestamp": "2026-08-14T06:14:18.373906+00:00",
+  "extension_status": "EXTENSION_SUCCESS",
+  "previous_mechanism_count": 6,
+  "new_mechanism_count": 7,
+  "new_mechanism": {
+    "mechanism_id": "mech_clinical_tabular_representation",
+    "canonical_name": "clinical_tabular_representation",
+    "category": "Representation",
+    "description": "Clinical and tabular feature representation using structured patient variables directly as model input.",
+    "role": "feature_representation",
+    "input_modality": "clinical",
+    "output_representation": "tabular_feature_vector",
+    "conditions": null,
+    "evidence_claim_ids": [
+      "claim_paper_42487970_clinical_rep"
+    ],
+    "transferability_notes": "Compatible with structured/clinical tabular cancer datasets.",
+    "mapping_status": "MAPPED"
+  },
+  "reason_for_addition": "Stage 2E identified a TAXONOMY_GAP where genuine evidence for structured clinical data (e.g. paper_42487970 / exp_aef6b872) had no canonical representation mechanism in the taxonomy.",
+  "supporting_paper_ids": [
+    "paper_42487970"
+  ],
+  "supporting_experiment_ids": [
+    "exp_aef6b872"
+  ],
+  "provenance_references": [
+    {
+      "paper_id": "paper_42487970",
+      "experiment_id": "exp_aef6b872",
+      "source_sentence": "Structured data, such as the patient\u2019s age and stage, can be directly used as input for the model to ensure that all information is in a unified unit and standard.",
+      "section": "unstructured",
+      "confidence_status": "explicit",
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "compatibility_requirements": {
+    "allowed_modalities": [
+      "clinical",
+      "tabular",
+      "structured"
+    ],
+    "incompatible_modalities": [
+      "imaging",
+      "pathology",
+      "text"
+    ],
+    "hancock_status": "SUPPORTED"
+  },
+  "pre_extension_hashes": {
+    "papers": "670107ee79c518acff87df1db50ba712be870a3abe7a374e6ab4155707096bf5",
+    "experiments": "34692984a4dc6c6bf6bd4a684035c6bc75c36aeadd663b4b94a1da234fe13f05",
+    "evidence_claims": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mechanisms": "9466e24b4ec5422272aa22c9c1805c7ab2331fdc1f7c5117cc19ca05a84afb9c"
+  },
+  "post_extension_hashes": {
+    "papers": "670107ee79c518acff87df1db50ba712be870a3abe7a374e6ab4155707096bf5",
+    "experiments": "34692984a4dc6c6bf6bd4a684035c6bc75c36aeadd663b4b94a1da234fe13f05",
+    "evidence_claims": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mechanisms": "00cec963267f1caad2f797a67cbd9da064fdd8ae60415c6cb2cfdf9283dfe939"
+  }
+}

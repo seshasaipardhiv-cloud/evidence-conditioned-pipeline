@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-08-14T18:55:35.979615+00:00",
+  "verified_peer_reviewed_references": 4,
+  "citations": [
+    "PMID: 42487970 (Tabular Clinical Features)",
+    "PMID: 41826845 (Missing Value Imputation Family)",
+    "PMID: 41775771 (XGBoost Base Learner)",
+    "PMID: 41006422 (SMOTE Imbalance Handling)"
+  ],
+  "conceptual_context_without_fabricated_metadata": [
+    "AutoML (TPOT, Auto-sklearn, Auto-PyTorch)",
+    "TRIPOD+AI & PROBAST Reporting Standards",
+    "Biomedical Data Leakage Literature"
+  ],
+  "zero_fabricated_citations_verified": true
+}

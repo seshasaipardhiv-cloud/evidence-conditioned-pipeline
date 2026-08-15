@@ -1,0 +1,660 @@
+[
+  {
+    "paper_id": "paper_10.1038_s42256-023-00633-5",
+    "field": "dataset",
+    "extracted_value": "tcga",
+    "verified_value": "tcga",
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": "Generic detection"
+  },
+  {
+    "paper_id": "paper_10.1038_s42256-023-00633-5",
+    "field": "task",
+    "extracted_value": "survival_prediction",
+    "verified_value": "survival_prediction",
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_10.1038_s42256-023-00633-5",
+    "field": "modalities",
+    "extracted_value": [
+      "clinical",
+      "imaging",
+      "text",
+      "omics"
+    ],
+    "verified_value": [
+      "clinical",
+      "imaging",
+      "omics"
+    ],
+    "verification_status": "INCORRECT",
+    "source_location": "Results",
+    "notes": "Text not explicitly part of experiment"
+  },
+  {
+    "paper_id": "paper_10.1038_s42256-023-00633-5",
+    "field": "proposed_method",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "NOT_AVAILABLE",
+    "source_location": "Results",
+    "notes": "Not cleanly extracted"
+  },
+  {
+    "paper_id": "paper_10.1038_s42256-023-00633-5",
+    "field": "baseline",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "NOT_AVAILABLE",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_10.1038_s42256-023-00633-5",
+    "field": "metric",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "NOT_AVAILABLE",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_10.1038_s42256-023-00633-5",
+    "field": "result",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "NOT_AVAILABLE",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_10.1038_s42256-023-00633-5",
+    "field": "fusion_strategy",
+    "extracted_value": "early_fusion",
+    "verified_value": "early_fusion",
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_10.3390_bioengineering11010013",
+    "field": "dataset",
+    "extracted_value": "the tcia",
+    "verified_value": "the tcia",
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_10.3390_bioengineering11010013",
+    "field": "task",
+    "extracted_value": "survival_prediction",
+    "verified_value": "diagnosis",
+    "verification_status": "INCORRECT",
+    "source_location": "Results",
+    "notes": "Abstract states detecting HPV status, not survival"
+  },
+  {
+    "paper_id": "paper_10.3390_bioengineering11010013",
+    "field": "modalities",
+    "extracted_value": [
+      "clinical",
+      "imaging",
+      "text",
+      "omics"
+    ],
+    "verified_value": [
+      "imaging"
+    ],
+    "verification_status": "INCORRECT",
+    "source_location": "Results",
+    "notes": "Only CT and PET mentioned"
+  },
+  {
+    "paper_id": "paper_10.3390_bioengineering11010013",
+    "field": "proposed_method",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "NOT_AVAILABLE",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_10.3390_bioengineering11010013",
+    "field": "baseline",
+    "extracted_value": "other existing model",
+    "verified_value": "other existing model",
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_10.3390_bioengineering11010013",
+    "field": "metric",
+    "extracted_value": "AUC",
+    "verified_value": "AUC",
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_10.3390_bioengineering11010013",
+    "field": "result",
+    "extracted_value": 0.76,
+    "verified_value": 0.76,
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_10.3390_bioengineering11010013",
+    "field": "fusion_strategy",
+    "extracted_value": "gated_fusion",
+    "verified_value": "gated_fusion",
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_38396486",
+    "field": "dataset",
+    "extracted_value": "multi-center",
+    "verified_value": "multi-center",
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_38396486",
+    "field": "task",
+    "extracted_value": "survival_prediction",
+    "verified_value": "survival_prediction",
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_38396486",
+    "field": "modalities",
+    "extracted_value": [
+      "clinical",
+      "imaging",
+      "text",
+      "omics"
+    ],
+    "verified_value": [
+      "clinical",
+      "imaging",
+      "text"
+    ],
+    "verification_status": "INCORRECT",
+    "source_location": "Results",
+    "notes": "Omics not present"
+  },
+  {
+    "paper_id": "paper_38396486",
+    "field": "proposed_method",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "NOT_AVAILABLE",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_38396486",
+    "field": "baseline",
+    "extracted_value": "using pet or ct alone",
+    "verified_value": "using pet or ct alone",
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_38396486",
+    "field": "metric",
+    "extracted_value": "C-INDEX",
+    "verified_value": "C-INDEX",
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": "Values reported without explicit metric name next to them, but validated as C-INDEX"
+  },
+  {
+    "paper_id": "paper_38396486",
+    "field": "result",
+    "extracted_value": 0.796,
+    "verified_value": 0.796,
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_38396486",
+    "field": "fusion_strategy",
+    "extracted_value": "cross_attention",
+    "verified_value": "cross_attention",
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_39074400",
+    "field": "dataset",
+    "extracted_value": "multicenter",
+    "verified_value": "multicenter",
+    "verification_status": "VERIFIED",
+    "source_location": "Abstract",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_39074400",
+    "field": "task",
+    "extracted_value": "classification",
+    "verified_value": "diagnosis",
+    "verification_status": "PARTIALLY_VERIFIED",
+    "source_location": "Abstract",
+    "notes": "Classification is technically true for diagnosis, but detecting cancer is diagnosis"
+  },
+  {
+    "paper_id": "paper_39074400",
+    "field": "modalities",
+    "extracted_value": [
+      "clinical",
+      "imaging"
+    ],
+    "verified_value": [
+      "clinical",
+      "imaging"
+    ],
+    "verification_status": "VERIFIED",
+    "source_location": "Abstract",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_39074400",
+    "field": "proposed_method",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "NOT_AVAILABLE",
+    "source_location": "Abstract",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_39074400",
+    "field": "baseline",
+    "extracted_value": null,
+    "verified_value": "clinical and MRI-only AI",
+    "verification_status": "INCORRECT",
+    "source_location": "Abstract",
+    "notes": "Experiment baseline missed the text baseline"
+  },
+  {
+    "paper_id": "paper_39074400",
+    "field": "metric",
+    "extracted_value": "AUC",
+    "verified_value": "AUC",
+    "verification_status": "VERIFIED",
+    "source_location": "Abstract",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_39074400",
+    "field": "result",
+    "extracted_value": 0.77,
+    "verified_value": 0.77,
+    "verification_status": "VERIFIED",
+    "source_location": "Abstract",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_39074400",
+    "field": "fusion_strategy",
+    "extracted_value": "early_fusion",
+    "verified_value": "early_fusion",
+    "verification_status": "VERIFIED",
+    "source_location": "Abstract",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_39074400",
+    "field": "mechanism",
+    "extracted_value": "pca",
+    "verified_value": null,
+    "verification_status": "INCORRECT",
+    "source_location": "Abstract",
+    "notes": "Matched csPCa instead of PCA mechanism"
+  },
+  {
+    "paper_id": "paper_40325104",
+    "field": "dataset",
+    "extracted_value": "The TCGA",
+    "verified_value": "TCGA",
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_40325104",
+    "field": "task",
+    "extracted_value": "survival_prediction",
+    "verified_value": "survival_prediction",
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_40325104",
+    "field": "modalities",
+    "extracted_value": [
+      "clinical",
+      "imaging",
+      "text",
+      "omics"
+    ],
+    "verified_value": [
+      "clinical",
+      "omics"
+    ],
+    "verification_status": "INCORRECT",
+    "source_location": "Results",
+    "notes": "Imaging and text not in abstract"
+  },
+  {
+    "paper_id": "paper_40325104",
+    "field": "proposed_method",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "NOT_AVAILABLE",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_40325104",
+    "field": "baseline",
+    "extracted_value": "unimodal model",
+    "verified_value": "single-modality approaches",
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_40325104",
+    "field": "metric",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "NOT_AVAILABLE",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_40325104",
+    "field": "result",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "NOT_AVAILABLE",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_40325104",
+    "field": "fusion_strategy",
+    "extracted_value": "early_fusion",
+    "verified_value": "late_fusion",
+    "verification_status": "INCORRECT",
+    "source_location": "Results",
+    "notes": "Abstract specifies late fusion models"
+  },
+  {
+    "paper_id": "paper_40449048",
+    "field": "dataset",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "NOT_AVAILABLE",
+    "source_location": "Abstract",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_40449048",
+    "field": "task",
+    "extracted_value": "classification",
+    "verified_value": "classification",
+    "verification_status": "VERIFIED",
+    "source_location": "Abstract",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_40449048",
+    "field": "modalities",
+    "extracted_value": [
+      "clinical",
+      "imaging"
+    ],
+    "verified_value": [
+      "clinical",
+      "imaging"
+    ],
+    "verification_status": "VERIFIED",
+    "source_location": "Abstract",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_40449048",
+    "field": "proposed_method",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "NOT_AVAILABLE",
+    "source_location": "Abstract",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_40449048",
+    "field": "baseline",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "NOT_AVAILABLE",
+    "source_location": "Abstract",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_40449048",
+    "field": "metric",
+    "extracted_value": "Accuracy",
+    "verified_value": "Accuracy",
+    "verification_status": "VERIFIED",
+    "source_location": "Abstract",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_40449048",
+    "field": "result",
+    "extracted_value": 0.99,
+    "verified_value": 0.99,
+    "verification_status": "VERIFIED",
+    "source_location": "Abstract",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_40449048",
+    "field": "fusion_strategy",
+    "extracted_value": null,
+    "verified_value": null,
+    "verification_status": "NOT_AVAILABLE",
+    "source_location": "Abstract",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_40449048",
+    "field": "mechanism",
+    "extracted_value": "cnn",
+    "verified_value": "cnn",
+    "verification_status": "VERIFIED",
+    "source_location": "Abstract",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_41131352",
+    "field": "dataset",
+    "extracted_value": "honeybee",
+    "verified_value": "tcga",
+    "verification_status": "INCORRECT",
+    "source_location": "Results",
+    "notes": "HONeYBEE is the framework, not the dataset"
+  },
+  {
+    "paper_id": "paper_41131352",
+    "field": "task",
+    "extracted_value": "survival_prediction",
+    "verified_value": "survival_prediction",
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_41131352",
+    "field": "modalities",
+    "extracted_value": [
+      "clinical",
+      "imaging",
+      "text",
+      "omics"
+    ],
+    "verified_value": [
+      "clinical",
+      "imaging",
+      "text",
+      "omics"
+    ],
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_41131352",
+    "field": "proposed_method",
+    "extracted_value": null,
+    "verified_value": "HONeYBEE",
+    "verification_status": "NOT_AVAILABLE",
+    "source_location": "Results",
+    "notes": "Method was missed"
+  },
+  {
+    "paper_id": "paper_41131352",
+    "field": "baseline",
+    "extracted_value": "weaker single modal",
+    "verified_value": "weaker single modal",
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_41131352",
+    "field": "metric",
+    "extracted_value": "Accuracy",
+    "verified_value": "Accuracy",
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_41131352",
+    "field": "result",
+    "extracted_value": 0.9021,
+    "verified_value": 0.9021,
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_41131352",
+    "field": "fusion_strategy",
+    "extracted_value": "intermediate_fusion",
+    "verified_value": "intermediate_fusion",
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_41353186",
+    "field": "dataset",
+    "extracted_value": "tcga",
+    "verified_value": "tcga",
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_41353186",
+    "field": "task",
+    "extracted_value": "survival_prediction",
+    "verified_value": "survival_prediction",
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_41353186",
+    "field": "modalities",
+    "extracted_value": [
+      "clinical",
+      "imaging",
+      "text",
+      "omics"
+    ],
+    "verified_value": [
+      "clinical",
+      "imaging",
+      "text"
+    ],
+    "verification_status": "INCORRECT",
+    "source_location": "Results",
+    "notes": "Omics is explicitly avoided by the proposed method"
+  },
+  {
+    "paper_id": "paper_41353186",
+    "field": "proposed_method",
+    "extracted_value": null,
+    "verified_value": "CALM",
+    "verification_status": "NOT_AVAILABLE",
+    "source_location": "Results",
+    "notes": "Method missed"
+  },
+  {
+    "paper_id": "paper_41353186",
+    "field": "baseline",
+    "extracted_value": "calm image and text model",
+    "verified_value": "image and text baselines",
+    "verification_status": "INCORRECT",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_41353186",
+    "field": "metric",
+    "extracted_value": "C-INDEX",
+    "verified_value": "C-INDEX",
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_41353186",
+    "field": "result",
+    "extracted_value": 0.606,
+    "verified_value": 0.606,
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  },
+  {
+    "paper_id": "paper_41353186",
+    "field": "fusion_strategy",
+    "extracted_value": "cross_attention",
+    "verified_value": "cross_attention",
+    "verification_status": "VERIFIED",
+    "source_location": "Results",
+    "notes": ""
+  }
+]

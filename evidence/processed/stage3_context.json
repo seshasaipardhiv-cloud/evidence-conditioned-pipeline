@@ -1,0 +1,22 @@
+{
+  "task": "unknown",
+  "modalities": [
+    "clinical",
+    "pathology",
+    "blood",
+    "text"
+  ],
+  "sample_size": 763,
+  "missingness_rate": 0.24456666666666668,
+  "class_imbalance": 0.0,
+  "text_available": true,
+  "imaging_available": false,
+  "clinical_available": true,
+  "blood_available": true,
+  "constraints": {
+    "computational": null,
+    "latency": null,
+    "interpretability": null,
+    "explicit_exclusions": null
+  }
+}

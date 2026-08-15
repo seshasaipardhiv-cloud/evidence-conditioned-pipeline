@@ -1,0 +1,65 @@
+{
+  "timestamp": "2026-08-14T06:18:35.989254+00:00",
+  "resolutions": {
+    "missing_value_handling": {
+      "component": "missing_value_handling",
+      "evidence_status": "UNSUPPORTED",
+      "best_candidate": null,
+      "paper_id": null,
+      "experiment_id": null,
+      "provenance": null,
+      "compatibility": "UNTESTED",
+      "leakage_status": "SAFE",
+      "taxonomy_status": "TAXONOMY_GAP",
+      "resolution_status": "UNSUPPORTED"
+    },
+    "categorical_encoding": {
+      "component": "categorical_encoding",
+      "evidence_status": "UNSUPPORTED",
+      "best_candidate": null,
+      "paper_id": null,
+      "experiment_id": null,
+      "provenance": null,
+      "compatibility": "UNTESTED",
+      "leakage_status": "SAFE",
+      "taxonomy_status": "TAXONOMY_GAP",
+      "resolution_status": "UNSUPPORTED"
+    },
+    "base_learner": {
+      "component": "base_learner",
+      "evidence_status": "INDIRECT_INSUFFICIENT",
+      "best_candidate": "\\bann\\b",
+      "paper_id": "paper_40449048",
+      "experiment_id": null,
+      "provenance": null,
+      "compatibility": "UNTESTED",
+      "leakage_status": "SAFE",
+      "taxonomy_status": "TAXONOMY_GAP",
+      "resolution_status": "UNSUPPORTED"
+    },
+    "loss_function": {
+      "component": "loss_function",
+      "evidence_status": "UNSUPPORTED",
+      "best_candidate": null,
+      "paper_id": null,
+      "experiment_id": null,
+      "provenance": null,
+      "compatibility": "UNTESTED",
+      "leakage_status": "SAFE",
+      "taxonomy_status": "TAXONOMY_GAP",
+      "resolution_status": "UNSUPPORTED"
+    },
+    "imbalance_handling": {
+      "component": "imbalance_handling",
+      "evidence_status": "UNSUPPORTED",
+      "best_candidate": null,
+      "paper_id": null,
+      "experiment_id": null,
+      "provenance": null,
+      "compatibility": "UNTESTED",
+      "leakage_status": "SAFE",
+      "taxonomy_status": "TAXONOMY_GAP",
+      "resolution_status": "UNSUPPORTED"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-08-14T18:55:35.979053+00:00",
+  "corrected_claims_count": 5,
+  "claims": [
+    {
+      "topic": "Imputation Primitive",
+      "original_risk": "Implying iterative MICE was executed",
+      "corrected_formulation": "Taxonomy associated with MICE, operationalized via train-fitted median/mode imputation for tabular benchmark.",
+      "status": "ALIGNED"
+    },
+    {
+      "topic": "Multimodal Fusion",
+      "original_risk": "Implying cross-attention contributed to tabular score",
+      "corrected_formulation": "General taxonomy capability, dormant during unimodal tabular benchmarking.",
+      "status": "ALIGNED"
+    },
+    {
+      "topic": "Ensembling",
+      "original_risk": "Implying model ensembling was evaluated in Stage 5B",
+      "corrected_formulation": "General taxonomy capability, dormant during single XGBoost evaluation.",
+      "status": "ALIGNED"
+    },
+    {
+      "topic": "Neural Comparison",
+      "original_risk": "Claiming candidate superior to deep learning",
+      "corrected_formulation": "Candidate exceeded shallow minimal MLP reference baseline (max_iter=10); does not claim superiority over optimized deep learning.",
+      "status": "ALIGNED"
+    },
+    {
+      "topic": "Prediction Timepoint",
+      "original_risk": "Ambiguous prediction epoch",
+      "corrected_formulation": "Defined as Post-Adjuvant Recurrence Risk Prediction with explicit prospective caveats.",
+      "status": "ALIGNED"
+    }
+  ]
+}

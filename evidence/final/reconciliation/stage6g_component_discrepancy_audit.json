@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-08-14T18:55:35.890509+00:00",
+  "imputation_audit": {
+    "claimed_primitive": "MissForest / MICE",
+    "cited_provenance": "PMID: 41826845",
+    "executed_code": "SimpleImputer(strategy='median') and SimpleImputer(strategy='most_frequent')",
+    "classification": "PIPELINE_IMPLEMENTATION_MISMATCH",
+    "root_cause": "The materializer mapped MissForestMICEImputer to a baseline SimpleImputer implementation in Stage 5B.",
+    "scientific_assessment": "The reported 0.9751 ROC-AUC reflects univariate median/mode imputation. The manuscript must accurately report median imputation rather than claiming MICE was executed.",
+    "reconciliation_action": "MANUSCRIPT_CORRECTION_REQUIRED"
+  },
+  "multimodal_dormancy_audit": {
+    "cross_attention": {
+      "claimed_primitive": "cross_attention",
+      "executed": false,
+      "classification": "EVIDENCE_BACKED_BUT_DORMANT",
+      "rationale": "Cross-attention is an evidence-backed multimodal fusion mechanism in the project taxonomy, but is pruned/dormant for unimodal tabular cohorts."
+    },
+    "average_ensembling": {
+      "claimed_primitive": "average_ensembling",
+      "executed": false,
+      "classification": "EVIDENCE_BACKED_BUT_DORMANT",
+      "rationale": "Model ensembling is an evidence-backed taxonomy mechanism, but was dormant during single-model XGBoost evaluation."
+    },
+    "scientific_assessment": "The reported empirical results cannot be attributed to cross-attention or ensembling. The manuscript must explicitly describe them as taxonomy-level capabilities dormant during unimodal benchmark execution.",
+    "reconciliation_action": "MANUSCRIPT_CORRECTION_REQUIRED"
+  }
+}

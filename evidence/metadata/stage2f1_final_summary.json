@@ -1,0 +1,36 @@
+{
+  "execution_timestamp": "2026-08-14T06:32:29.636149+00:00",
+  "final_decision": "PARTIALLY_SUPPORTED",
+  "training_allowed": false,
+  "queries_executed": 18,
+  "candidates_retrieved": 53,
+  "unique_candidates": 49,
+  "duplicate_candidates": 4,
+  "evaluations_by_primitive": {
+    "missing_value_handling": 9,
+    "categorical_encoding": 9,
+    "base_learner": 9,
+    "loss_function": 12,
+    "imbalance_handling": 10
+  },
+  "primitive_resolutions": {
+    "missing_value_handling": "SUPPORTED_BY_NEW_EVIDENCE",
+    "categorical_encoding": "NO_VALID_EVIDENCE",
+    "base_learner": "SUPPORTED_BY_NEW_EVIDENCE",
+    "loss_function": "NO_VALID_EVIDENCE",
+    "imbalance_handling": "SUPPORTED_BY_NEW_EVIDENCE"
+  },
+  "pre_search_hashes": {
+    "papers": "670107ee79c518acff87df1db50ba712be870a3abe7a374e6ab4155707096bf5",
+    "experiments": "34692984a4dc6c6bf6bd4a684035c6bc75c36aeadd663b4b94a1da234fe13f05",
+    "evidence_claims": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mechanisms": "00cec963267f1caad2f797a67cbd9da064fdd8ae60415c6cb2cfdf9283dfe939"
+  },
+  "post_search_hashes": {
+    "papers": "670107ee79c518acff87df1db50ba712be870a3abe7a374e6ab4155707096bf5",
+    "experiments": "34692984a4dc6c6bf6bd4a684035c6bc75c36aeadd663b4b94a1da234fe13f05",
+    "evidence_claims": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mechanisms": "00cec963267f1caad2f797a67cbd9da064fdd8ae60415c6cb2cfdf9283dfe939"
+  },
+  "corpus_unchanged": true
+}

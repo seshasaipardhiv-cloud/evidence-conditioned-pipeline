@@ -1,0 +1,133 @@
+{
+  "timestamp": "2026-08-14T18:55:35.691883+00:00",
+  "source_master_results": "evidence\\final\\stage6a_master_results.json",
+  "figures": [
+    {
+      "figure_id": "FIGURE_1",
+      "title": "Evidence-Conditioned Pipeline Synthesis Architecture",
+      "source_artifact": "evidence/final/stage6a_pipeline_provenance.json",
+      "exact_source_values": "6 EVIDENCE_BACKED components, 2 EXPLICITLY_CONFIGURED components",
+      "interpretation": "Flowchart showing literature evidence ingestion to pipeline execution with strict provenance boundaries.",
+      "limitations": "Does not imply explicit configurations are literature-backed.",
+      "generated_png": "fig1_pipeline_architecture.png",
+      "generated_svg": "fig1_pipeline_architecture.svg",
+      "sha256_png": "c489426ff40118204c3c32100ff3a5a2b729b1a330572364a012c804ddfefad5"
+    },
+    {
+      "figure_id": "FIGURE_2",
+      "title": "Candidate vs Baseline Predictive Performance",
+      "source_artifact": "evidence/final/stage6a_experiment_results.json",
+      "exact_source_values": {
+        "candidate": 0.9751,
+        "default_xgboost": 0.9704,
+        "random_forest": 0.9698,
+        "logistic_regression": 0.9645,
+        "simple_mlp": 0.9405
+      },
+      "interpretation": "Candidate achieves highest mean ROC-AUC with a +0.0047 delta over default XGBoost.",
+      "limitations": "Modest margin; underpowered n=3 seeds.",
+      "generated_png": "fig2_baseline_performance.png",
+      "generated_svg": "fig2_baseline_performance.svg",
+      "sha256_png": "e71b9c60f00509d4249374101c15f866a9d55dd87eb9b63814a43bb36e165b89"
+    },
+    {
+      "figure_id": "FIGURE_3",
+      "title": "Per-Seed Robustness & Margin Analysis",
+      "source_artifact": "evidence/final/stage6a_experiment_results.json",
+      "exact_source_values": {
+        "seed_42": {
+          "candidate": 0.9888,
+          "default_xgb": 0.9783
+        },
+        "seed_100": {
+          "candidate": 0.9609,
+          "default_xgb": 0.9643
+        },
+        "seed_2026": {
+          "candidate": 0.9756,
+          "default_xgb": 0.9685
+        }
+      },
+      "interpretation": "Candidate wins on 2 of 3 seeds (66.7%) but exhibits a loss on Seed 100.",
+      "limitations": "Universal fold dominance not achieved.",
+      "generated_png": "fig3_per_seed_robustness.png",
+      "generated_svg": "fig3_per_seed_robustness.svg",
+      "sha256_png": "cb9d934ff0cee9be2d8908c9dfd3baad05ee604670fd388cbd0159ef5894e31c"
+    },
+    {
+      "figure_id": "FIGURE_4",
+      "title": "Controlled Component Ablation Analysis",
+      "source_artifact": "evidence/final/stage6a_ablation_results.json",
+      "exact_source_values": {
+        "full_candidate": 0.9751,
+        "without_smote": 0.9773,
+        "mean_imputation": 0.9767,
+        "ordinal_encoding": 0.9784,
+        "default_xgboost": 0.9686
+      },
+      "interpretation": "Ablations without SMOTE and with Ordinal Encoding yielded slightly higher test ROC-AUC on this dataset.",
+      "limitations": "Controlled retrospective comparison; evidence validity does not equal empirical optimality.",
+      "generated_png": "fig4_component_ablation.png",
+      "generated_svg": "fig4_component_ablation.svg",
+      "sha256_png": "b21dd914952a599eac202e481f7d46812351eb6e54401c5cc6747335ce5046f2"
+    },
+    {
+      "figure_id": "FIGURE_5",
+      "title": "Probability Calibration & Brier Score Comparison",
+      "source_artifact": "evidence/final/stage6a_experiment_results.json",
+      "exact_source_values": {
+        "candidate": 0.0175,
+        "default_xgboost": 0.018,
+        "logistic_regression": 0.0201,
+        "random_forest": 0.0207,
+        "simple_mlp": 0.0683
+      },
+      "interpretation": "Candidate pipeline achieved lowest Brier score, showing well-calibrated probabilities.",
+      "limitations": "Single retrospective cohort.",
+      "generated_png": "fig5_calibration_comparison.png",
+      "generated_svg": "fig5_calibration_comparison.svg",
+      "sha256_png": "a784bcc71ca2eb6e55a2a6c4c5a4dc69c250b35ed11c444f293de6d75f573119"
+    },
+    {
+      "figure_id": "FIGURE_6",
+      "title": "Multi-Metric Candidate Pipeline Performance Profile",
+      "source_artifact": "evidence/final/stage6a_master_results.json",
+      "exact_source_values": {
+        "roc_auc": 0.9751,
+        "pr_auc": 0.9679,
+        "f1": 0.9611,
+        "accuracy": 0.9825,
+        "precision": 0.9801,
+        "recall": 0.9429,
+        "brier_score": 0.0175
+      },
+      "interpretation": "Comprehensive metric profile demonstrating high discrimination and precision.",
+      "limitations": "Retrospective single cohort.",
+      "generated_png": "fig6_multi_metric_profile.png",
+      "generated_svg": "fig6_multi_metric_profile.svg",
+      "sha256_png": "ef51f30106f53d761a1d5fc75b348697511d3c75e8add1626abf5da75998476b"
+    },
+    {
+      "figure_id": "FIGURE_7",
+      "title": "Synthesized Pipeline Component Provenance & Evidence Boundary",
+      "source_artifact": "evidence/final/stage6a_pipeline_provenance.json",
+      "exact_source_values": "8 pipeline components mapped to PubMed citations and project configs",
+      "interpretation": "Full transparency into evidence-backed vs explicitly configured choices.",
+      "limitations": "Explicit configs are project inputs, not literature claims.",
+      "generated_png": "fig7_provenance_boundary.png",
+      "generated_svg": "fig7_provenance_boundary.svg",
+      "sha256_png": "fc88c1309b7d4e77d009dc1a6eda5186f9f0a4e097e579e77c69d1fde292291e"
+    },
+    {
+      "figure_id": "FIGURE_8",
+      "title": "Formal Scientific Claim Boundary Matrix",
+      "source_artifact": "evidence/final/stage6a_claim_boundaries.json",
+      "exact_source_values": "5 Supported, 1 Partially Supported, 4 Not Supported",
+      "interpretation": "Strict scientific boundaries preventing unwarranted generalization or clinical deployment claims.",
+      "limitations": "External and prospective validation remain unestablished.",
+      "generated_png": "fig8_claim_boundary_matrix.png",
+      "generated_svg": "fig8_claim_boundary_matrix.svg",
+      "sha256_png": "110415c8ed003dbf91281eb1f286cae699ccc4f18afd07306984c249709d79d0"
+    }
+  ]
+}

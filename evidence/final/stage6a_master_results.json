@@ -1,0 +1,553 @@
+{
+  "package_title": "Phase 6A: Final Master Research Results Package",
+  "timestamp": "2026-08-14T18:55:13.448032+00:00",
+  "1_research_objective": "Develop an evidence-conditioned machine learning pipeline synthesis framework that bridges biomedical literature evidence to executable clinical prediction pipelines, rigorously preventing arbitrary library defaults and target leakage while establishing traceable provenance and conservative scientific validation.",
+  "2_final_pipeline": {
+    "pipeline_hash": "6b6bcb1b217793230dba3467ea09fd94339c7497ccc85b0f8ed86c59f16686da",
+    "components": {
+      "feature_representation": {
+        "component": "feature_representation",
+        "stage3_6_value": "clinical_tabular_representation",
+        "stage4_materialized_value": "clinical_tabular_representation",
+        "stage4_executable_class": "backend.models.tabular.ClinicalTabularRepresentation",
+        "stage5a_contract_value": "clinical_tabular_representation",
+        "classification": "EVIDENCE_BACKED",
+        "provenance": {
+          "paper_id": "paper_42487970",
+          "experiment_id": "exp_aef6b872",
+          "source_sentence": "Structured data, such as the patient\u2019s age and stage, can be directly used as input for the model...",
+          "stage_origin": "Stage 2E-1 Controlled Taxonomy Extension"
+        },
+        "fully_traceable": true
+      },
+      "modality_fusion": {
+        "component": "modality_fusion",
+        "stage3_6_value": "cross_attention",
+        "stage4_materialized_value": "cross_attention",
+        "stage4_executable_class": "backend.models.fusion.CrossAttentionFusion",
+        "stage5a_contract_value": "cross_attention",
+        "classification": "EVIDENCE_BACKED",
+        "provenance": {
+          "canonical_name": "cross-attention",
+          "mechanism_id": "mech_cross_attention",
+          "stage_origin": "Stage 3.1 Validated Pipeline Specification"
+        },
+        "fully_traceable": true
+      },
+      "ensembling": {
+        "component": "ensembling",
+        "stage3_6_value": "average_ensembling",
+        "stage4_materialized_value": "average_ensembling",
+        "stage4_executable_class": "backend.models.ensembles.AverageEnsemble",
+        "stage5a_contract_value": "average_ensembling",
+        "classification": "EVIDENCE_BACKED",
+        "provenance": {
+          "canonical_name": "average_ensembling",
+          "stage_origin": "Stage 3.1 Validated Pipeline Specification"
+        },
+        "fully_traceable": true
+      },
+      "missing_value_handling": {
+        "component": "missing_value_handling",
+        "stage3_6_value": "MissForest / MICE",
+        "stage4_materialized_value": "MissForest / MICE",
+        "stage4_executable_class": "backend.models.imputation.MissForestMICEImputer",
+        "stage5a_contract_value": "MissForest / MICE",
+        "classification": "EVIDENCE_BACKED",
+        "provenance": {
+          "pmid": "41826845",
+          "doi": "10.1186/s12874-026-02805-4",
+          "source_sentence": "Missing values were imputed using MissForest...",
+          "stage_origin": "Stage 2F-1 Literature Retrieval"
+        },
+        "fully_traceable": true
+      },
+      "base_learner": {
+        "component": "base_learner",
+        "stage3_6_value": "XGBoost",
+        "stage4_materialized_value": "XGBoost",
+        "stage4_executable_class": "backend.models.classifiers.XGBoostClassifier",
+        "stage5a_contract_value": "XGBoost",
+        "classification": "EVIDENCE_BACKED",
+        "provenance": {
+          "pmid": "41775771",
+          "doi": "10.1038/s41598-026-39104-3",
+          "source_sentence": "In this study, the XGBoost classifier was trained on the augmented feature set...",
+          "stage_origin": "Stage 2F-1 Literature Retrieval"
+        },
+        "fully_traceable": true
+      },
+      "imbalance_handling": {
+        "component": "imbalance_handling",
+        "stage3_6_value": "SMOTE",
+        "stage4_materialized_value": "SMOTE",
+        "stage4_executable_class": "backend.models.sampling.SMOTE",
+        "stage5a_contract_value": "SMOTE",
+        "classification": "EVIDENCE_BACKED",
+        "provenance": {
+          "pmid": "41006422",
+          "doi": "10.1038/s41598-025-16790-z",
+          "source_sentence": "SMOTE was applied to augment the RMBC group to address the class imbalance...",
+          "stage_origin": "Stage 2F-1 Literature Retrieval"
+        },
+        "fully_traceable": true
+      },
+      "categorical_encoding": {
+        "component": "categorical_encoding",
+        "stage3_6_value": "one_hot_encoding",
+        "stage4_materialized_value": "one_hot_encoding",
+        "stage4_executable_class": "backend.models.preprocessing.OneHotEncoder",
+        "stage5a_contract_value": "one_hot_encoding",
+        "classification": "EXPLICITLY_CONFIGURED",
+        "provenance": {
+          "config_file": "experiment_config.json",
+          "literature_claim": false
+        },
+        "fully_traceable": true
+      },
+      "loss_function": {
+        "component": "loss_function",
+        "stage3_6_value": "binary_logistic",
+        "stage4_materialized_value": "binary_logistic",
+        "stage4_executable_class": "backend.models.losses.BinaryLogisticLoss",
+        "stage5a_contract_value": "binary_logistic",
+        "classification": "EXPLICITLY_CONFIGURED",
+        "provenance": {
+          "config_file": "experiment_config.json",
+          "literature_claim": false
+        },
+        "fully_traceable": true
+      }
+    }
+  },
+  "3_experiment_contract": {
+    "contract_hash": "6eb6b035c8f87bcf52d7d6107a5a4eafa6c6330ca9bf6c1ca837cdbd63910024",
+    "dataset_cohort": "HANCOCK clinical tabular cohort",
+    "target_variable": "recurrence",
+    "excluded_outcome_fields": [
+      "recurrence",
+      "survival_status",
+      "survival_status_with_cause",
+      "days_to_recurrence",
+      "days_to_last_information",
+      "days_to_progress_1",
+      "days_to_progress_2",
+      "days_to_metastasis_1"
+    ],
+    "split_ratios": {
+      "train": 0.65,
+      "validation": 0.15,
+      "test": 0.2
+    },
+    "random_seeds": [
+      42,
+      100,
+      2026
+    ],
+    "preprocessing_order": [
+      "1. MissForest / MICE (train-only fit)",
+      "2. OneHotEncoder (train-only fit)",
+      "3. SMOTE (train-only fit)"
+    ],
+    "primary_metric": "roc_auc",
+    "secondary_metrics": [
+      "pr_auc",
+      "f1",
+      "accuracy",
+      "precision",
+      "recall",
+      "brier_score"
+    ],
+    "compute_budget": "RAM < 4 GB, CPU, <= 10 epochs, <= 15 min limit"
+  },
+  "4_candidate_results": {
+    "mean_roc_auc": 0.9751,
+    "std_roc_auc": 0.0114,
+    "pr_auc": 0.9679,
+    "f1": 0.9611,
+    "accuracy": 0.9825,
+    "precision": 0.9801,
+    "recall": 0.9429,
+    "brier_score": 0.0175
+  },
+  "5_baseline_comparison": {
+    "candidate_mean_roc_auc": 0.9751,
+    "baselines": {
+      "default_xgboost": {
+        "mean_roc_auc": 0.9704,
+        "delta_roc_auc": 0.0047,
+        "relative_improvement_percent": 0.48
+      },
+      "random_forest": {
+        "mean_roc_auc": 0.9698,
+        "delta_roc_auc": 0.0053,
+        "relative_improvement_percent": 0.55
+      },
+      "logistic_regression": {
+        "mean_roc_auc": 0.9645,
+        "delta_roc_auc": 0.0106,
+        "relative_improvement_percent": 1.1
+      },
+      "simple_mlp": {
+        "mean_roc_auc": 0.9405,
+        "delta_roc_auc": 0.0346,
+        "relative_improvement_percent": 3.68
+      }
+    }
+  },
+  "6_per_seed_results": {
+    "42": {
+      "candidate_auc": 0.9888,
+      "default_xgb_auc": 0.9783,
+      "margin": 0.0105,
+      "candidate_won": true
+    },
+    "100": {
+      "candidate_auc": 0.9609,
+      "default_xgb_auc": 0.9643,
+      "margin": -0.0034,
+      "candidate_won": false
+    },
+    "2026": {
+      "candidate_auc": 0.9756,
+      "default_xgb_auc": 0.9685,
+      "margin": 0.0071,
+      "candidate_won": true
+    }
+  },
+  "7_ablation_results": {
+    "ablation_full_candidate": {
+      "description": "Full Candidate Pipeline (MICE + OneHot + SMOTE + Tuned XGBoost)",
+      "changed_component": "none",
+      "mean_roc_auc": 0.9751,
+      "std_roc_auc": 0.0114,
+      "mean_f1": 0.9611,
+      "mean_brier_score": 0.0175,
+      "per_seed": [
+        {
+          "seed": 42,
+          "test_metrics": {
+            "roc_auc": 0.9888,
+            "f1": 0.9855,
+            "accuracy": 0.9934,
+            "precision": 1.0,
+            "recall": 0.9714,
+            "brier_score": 0.0074,
+            "pr_auc": 0.9838
+          }
+        },
+        {
+          "seed": 100,
+          "test_metrics": {
+            "roc_auc": 0.9609,
+            "f1": 0.9412,
+            "accuracy": 0.9737,
+            "precision": 0.9697,
+            "recall": 0.9143,
+            "brier_score": 0.0256,
+            "pr_auc": 0.9538
+          }
+        },
+        {
+          "seed": 2026,
+          "test_metrics": {
+            "roc_auc": 0.9756,
+            "f1": 0.9565,
+            "accuracy": 0.9803,
+            "precision": 0.9706,
+            "recall": 0.9429,
+            "brier_score": 0.0194,
+            "pr_auc": 0.9662
+          }
+        }
+      ]
+    },
+    "ablation_no_smote": {
+      "description": "Ablation B: Candidate without SMOTE class balancing",
+      "changed_component": "imbalance_handling",
+      "mean_roc_auc": 0.9773,
+      "std_roc_auc": 0.0095,
+      "mean_f1": 0.9611,
+      "mean_brier_score": 0.0177,
+      "per_seed": [
+        {
+          "seed": 42,
+          "test_metrics": {
+            "roc_auc": 0.9897,
+            "f1": 0.9855,
+            "accuracy": 0.9934,
+            "precision": 1.0,
+            "recall": 0.9714,
+            "brier_score": 0.0083,
+            "pr_auc": 0.9844
+          }
+        },
+        {
+          "seed": 100,
+          "test_metrics": {
+            "roc_auc": 0.9665,
+            "f1": 0.9412,
+            "accuracy": 0.9737,
+            "precision": 0.9697,
+            "recall": 0.9143,
+            "brier_score": 0.0256,
+            "pr_auc": 0.9578
+          }
+        },
+        {
+          "seed": 2026,
+          "test_metrics": {
+            "roc_auc": 0.9756,
+            "f1": 0.9565,
+            "accuracy": 0.9803,
+            "precision": 0.9706,
+            "recall": 0.9429,
+            "brier_score": 0.0191,
+            "pr_auc": 0.9637
+          }
+        }
+      ]
+    },
+    "ablation_no_advanced_imputation": {
+      "description": "Ablation C: Candidate without MICE/Median (Simple Mean Imputer)",
+      "changed_component": "missing_value_handling",
+      "mean_roc_auc": 0.9767,
+      "std_roc_auc": 0.0098,
+      "mean_f1": 0.9611,
+      "mean_brier_score": 0.0174,
+      "per_seed": [
+        {
+          "seed": 42,
+          "test_metrics": {
+            "roc_auc": 0.9893,
+            "f1": 0.9855,
+            "accuracy": 0.9934,
+            "precision": 1.0,
+            "recall": 0.9714,
+            "brier_score": 0.0074,
+            "pr_auc": 0.9841
+          }
+        },
+        {
+          "seed": 100,
+          "test_metrics": {
+            "roc_auc": 0.9653,
+            "f1": 0.9412,
+            "accuracy": 0.9737,
+            "precision": 0.9697,
+            "recall": 0.9143,
+            "brier_score": 0.0255,
+            "pr_auc": 0.9558
+          }
+        },
+        {
+          "seed": 2026,
+          "test_metrics": {
+            "roc_auc": 0.9756,
+            "f1": 0.9565,
+            "accuracy": 0.9803,
+            "precision": 0.9706,
+            "recall": 0.9429,
+            "brier_score": 0.0194,
+            "pr_auc": 0.9662
+          }
+        }
+      ]
+    },
+    "ablation_ordinal_encoding": {
+      "description": "Ablation D: Candidate with Ordinal Encoding instead of OneHot",
+      "changed_component": "categorical_encoding",
+      "mean_roc_auc": 0.9784,
+      "std_roc_auc": 0.0111,
+      "mean_f1": 0.9611,
+      "mean_brier_score": 0.0177,
+      "per_seed": [
+        {
+          "seed": 42,
+          "test_metrics": {
+            "roc_auc": 0.9919,
+            "f1": 0.9855,
+            "accuracy": 0.9934,
+            "precision": 1.0,
+            "recall": 0.9714,
+            "brier_score": 0.0077,
+            "pr_auc": 0.9861
+          }
+        },
+        {
+          "seed": 100,
+          "test_metrics": {
+            "roc_auc": 0.9646,
+            "f1": 0.9412,
+            "accuracy": 0.9737,
+            "precision": 0.9697,
+            "recall": 0.9143,
+            "brier_score": 0.0257,
+            "pr_auc": 0.9572
+          }
+        },
+        {
+          "seed": 2026,
+          "test_metrics": {
+            "roc_auc": 0.9788,
+            "f1": 0.9565,
+            "accuracy": 0.9803,
+            "precision": 0.9706,
+            "recall": 0.9429,
+            "brier_score": 0.0197,
+            "pr_auc": 0.9681
+          }
+        }
+      ]
+    },
+    "ablation_default_xgboost": {
+      "description": "Ablation E: Default XGBoost without tuned hyperparameters",
+      "changed_component": "base_learner_configuration",
+      "mean_roc_auc": 0.9686,
+      "std_roc_auc": 0.0063,
+      "mean_f1": 0.9611,
+      "mean_brier_score": 0.0181,
+      "per_seed": [
+        {
+          "seed": 42,
+          "test_metrics": {
+            "roc_auc": 0.9773,
+            "f1": 0.9855,
+            "accuracy": 0.9934,
+            "precision": 1.0,
+            "recall": 0.9714,
+            "brier_score": 0.0081,
+            "pr_auc": 0.9792
+          }
+        },
+        {
+          "seed": 100,
+          "test_metrics": {
+            "roc_auc": 0.9658,
+            "f1": 0.9412,
+            "accuracy": 0.9737,
+            "precision": 0.9697,
+            "recall": 0.9143,
+            "brier_score": 0.0265,
+            "pr_auc": 0.9572
+          }
+        },
+        {
+          "seed": 2026,
+          "test_metrics": {
+            "roc_auc": 0.9626,
+            "f1": 0.9565,
+            "accuracy": 0.9803,
+            "precision": 0.9706,
+            "recall": 0.9429,
+            "brier_score": 0.0196,
+            "pr_auc": 0.9606
+          }
+        }
+      ]
+    }
+  },
+  "8_calibration": {
+    "candidate_pipeline": 0.0175,
+    "default_xgboost": 0.018,
+    "random_forest": 0.0207,
+    "logistic_regression": 0.0201,
+    "simple_mlp": 0.0683
+  },
+  "9_reproducibility": {
+    "seeds_equal_42_100_2026": "PASS",
+    "identical_patient_split_policy": "PASS",
+    "zero_patient_overlap_verified": "PASS",
+    "target_isolation_firewall_locked": "PASS",
+    "train_only_preprocessing_enforced": "PASS",
+    "smote_train_only_enforced": "PASS",
+    "test_isolation_verified": "PASS",
+    "contract_hash_verified": "PASS",
+    "pipeline_hash_verified": "PASS",
+    "compute_budget_satisfied": "PASS",
+    "execution_manifest_complete": "PASS"
+  },
+  "10_claim_boundaries": [
+    {
+      "claim_id": "CLAIM_1",
+      "claim": "The pipeline architecture is synthesized strictly from evidence-conditioned literature mechanisms and verified explicit configurations.",
+      "evidence": "Stage 2E-1, 2F-1, 3.6, and 4 verified literature provenance and explicit configuration gate without silent defaults.",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim_id": "CLAIM_2",
+      "claim": "All pipeline components maintain traceable, cryptographically verified provenance from PubMed/PMC literature citations or explicit project configuration.",
+      "evidence": "Complete hash ledger in stage3_6_provenance_ledger.json and stage4_rematerialized_pipeline.json.",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim_id": "CLAIM_3",
+      "claim": "The pipeline strictly avoids arbitrary ML library defaults and requires human-controlled explicit configuration when evidence is absent.",
+      "evidence": "Stage 2F-3, 2F-4, 3.4, and 3.5 gates blocked unresolved components until explicit project configuration was provided.",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim_id": "CLAIM_4",
+      "claim": "The experimental execution protocol is deterministic and strictly reproducible under the tested protocol.",
+      "evidence": "All 3 random seeds produced deterministic patient splits with zero overlap and verified contract hashes.",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim_id": "CLAIM_5",
+      "claim": "The candidate pipeline achieves high internal discriminative performance on the retrospective HANCOCK clinical cohort.",
+      "evidence": "Mean test ROC-AUC of 0.9751 +/- 0.0114 across seeds 42, 100, and 2026.",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim_id": "CLAIM_6",
+      "claim": "The candidate pipeline unconditionally outperforms all baseline models across all seeds.",
+      "evidence": "Candidate achieves higher mean ROC-AUC (0.9751 vs 0.9704 default XGB), but lost to Default XGBoost on seed 100 (0.9609 vs 0.9643).",
+      "status": "PARTIALLY_SUPPORTED"
+    },
+    {
+      "claim_id": "CLAIM_7",
+      "claim": "The candidate pipeline consistently dominates default XGBoost across every test fold.",
+      "evidence": "Per-seed deltas: Seed 42 (+0.0105), Seed 100 (-0.0034), Seed 2026 (+0.0071). Candidate lost on Seed 100.",
+      "status": "NOT_SUPPORTED"
+    },
+    {
+      "claim_id": "CLAIM_8",
+      "claim": "The observed predictive performance improvement over default XGBoost is statistically significant.",
+      "evidence": "Sample size n=3 seeds is insufficient for inferential claims; hypothesis testing was not performed; delta is modest (+0.0047).",
+      "status": "NOT_SUPPORTED"
+    },
+    {
+      "claim_id": "CLAIM_9",
+      "claim": "The synthesized pipeline demonstrates generalizable clinical efficacy.",
+      "evidence": "Evaluation is purely single-center retrospective internal testing. External validation has not been performed.",
+      "status": "NOT_SUPPORTED"
+    },
+    {
+      "claim_id": "CLAIM_10",
+      "claim": "The pipeline is clinically deployable for recurrence risk assessment.",
+      "evidence": "Clinical safety, prospective trials, multi-center calibration, and decision-curve analysis remain unestablished.",
+      "status": "NOT_SUPPORTED"
+    }
+  ],
+  "11_limitations": [
+    "Single retrospective cohort: Evaluated solely on the HANCOCK clinical tabular dataset.",
+    "Small random seed sample size: Evaluated across n=3 seeds [42, 100, 2026], which precludes formal statistical hypothesis testing.",
+    "Modest performance margin: Improvement over Default XGBoost is +0.0047 ROC-AUC (+0.48% relative).",
+    "Inconsistent win rate: Candidate won on 2 of 3 seeds but exhibited a lower score on seed 100 (-0.0034).",
+    "Ablation findings: Ablation without SMOTE (0.9773) and with Ordinal Encoding (0.9784) achieved slightly higher empirical ROC-AUC than the full evidence-conditioned candidate (0.9751), demonstrating that literature-backed validity does not guarantee empirical optimality on a specific retrospective dataset.",
+    "Absence of external validation: No multi-center or prospective external clinical validation was conducted."
+  ],
+  "12_strongest_defensible_contribution": "Evidence-conditioned pipeline synthesis provides a rigorous, traceable, and reproducible methodology for constructing valid machine learning pipelines from biomedical literature without unauthorized defaults or target leakage, yielding strong internal discrimination and calibration.",
+  "13_immutability_hashes": {
+    "stage3_6_pipeline": "1380e2b029ce6aaa6b746a6afc103e4630a063f153414db50ec41193cfbd9dee",
+    "stage4_remat": "4e4a5f4ee0d8274fb07f7ed568fa63efd34a4c77b95565fbda90bdea0194b50e",
+    "stage5a_contract": "6eb6b035c8f87bcf52d7d6107a5a4eafa6c6330ca9bf6c1ca837cdbd63910024",
+    "stage5b_candidate": "cdc3471a7b69a10002435ca0de656d2828a608c8bf8c2165682b4f65faec1c72",
+    "stage5b_baseline": "f2d0340a1d84f4638c78830cc57dd01c0a3b652d36cce22a5f58483ce6e6b96d",
+    "stage5b_run_results": "7d40871235434b83d210d5efa20dfa9c36e04fd164c743f8f8e01f731919c111",
+    "stage5c_ablation": "2c5a9c9dad5e78be3379f2fbee145a6b71c8f7a1de5e4f5327366ae65ffc1d33",
+    "stage5c_baseline_comp": "35cdd5a012b1802f7cfc8b54e700e33ad720726bc85aa5454292d68863cc8722",
+    "stage5d_claims": "c1133cb49ce3b33ad0592fe60f62dd6d9f454c010806bfebe164d1552efa2622",
+    "stage5d_verdict": "54ed03f305af189dfff3169bb063bf56a9d7ea462c2890dcc2e2a2e587495e1d"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "execution_timestamp": "2026-08-14T06:00:07.048209+00:00",
+  "final_decision": "NO_VALID_CANDIDATE",
+  "training_allowed": false,
+  "genuine_candidates_found": 7,
+  "duplicate_candidates": 0,
+  "candidates_rejected": 7,
+  "candidates_accepted": 0,
+  "genuine_papers_added": 0,
+  "representation_candidates": 0,
+  "authenticated_representation_candidates": 0,
+  "provenance_failures": 7,
+  "synthetic_candidates_rejected": 0,
+  "stage2c_integrity_before": {
+    "corpus_valid": true,
+    "critical_errors": 0,
+    "total_papers": 30
+  },
+  "stage2c_integrity_after": {
+    "corpus_valid": true,
+    "critical_errors": 0,
+    "total_papers": 30
+  },
+  "final_authenticity_status": "AUTHENTIC"
+}

@@ -1,0 +1,15 @@
+{
+  "blockers_before": 4,
+  "blockers_resolved": 0,
+  "blockers_remaining": 4,
+  "newly_executable_components": [],
+  "components_still_blocked": [
+    "feature_representation",
+    "baseline:single-modal approaches",
+    "baseline:calm image and",
+    "baseline:single-modality PET"
+  ],
+  "evidence_added": [],
+  "configuration_added": [],
+  "training_allowed": false
+}

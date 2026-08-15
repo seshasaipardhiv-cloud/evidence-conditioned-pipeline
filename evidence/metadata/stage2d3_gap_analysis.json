@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-08-14T06:03:16.726888+00:00",
+  "previous_stage": "Stage 2D-2",
+  "previous_candidates_count": 7,
+  "rejection_breakdown": {
+    "task_mismatch": 2,
+    "modality_mismatch": 0,
+    "insufficient_methodological_detail": 3,
+    "missing_full_text": 0,
+    "missing_provenance": 0,
+    "target_leakage": 2,
+    "duplicate": 0,
+    "other_rejection_reasons": 0
+  },
+  "candidate_rejections": [
+    {
+      "pmid": "41335879",
+      "reason": "Target leakage detected in feature representation.",
+      "title": "Attention-enabled Explainable AI for Bladder Cancer Recurrence Prediction."
+    },
+    {
+      "pmid": "29427526",
+      "reason": "No explicit clinical tabular feature representation methodology found in text.",
+      "title": "NUP98-BPTF gene fusion identified in primary refractory acute megakaryoblastic leukemia of infancy."
+    },
+    {
+      "pmid": "40273819",
+      "reason": "Incompatible task (not classification / recurrence prediction).",
+      "title": "A framework to create, evaluate and select synthetic datasets for survival prediction in oncology."
+    },
+    {
+      "pmid": "41935148",
+      "reason": "Target leakage detected in feature representation.",
+      "title": "A distributed fusion framework for breast cancer recurrence prediction using MapReduce."
+    },
+    {
+      "pmid": "40165728",
+      "reason": "No explicit clinical tabular feature representation methodology found in text.",
+      "title": "A CNN-transformer fusion network for predicting high-grade patterns in stage IA invasive lung adenocarcinoma."
+    },
+    {
+      "pmid": "32123303",
+      "reason": "No explicit clinical tabular feature representation methodology found in text.",
+      "title": "Melanomas with activating RAF1 fusions: clinical, histopathologic, and molecular profiles."
+    },
+    {
+      "pmid": "15743751",
+      "reason": "Incompatible task (not classification / recurrence prediction).",
+      "title": "Primary lung adenocarcinoma with massive lymphocyte infiltration."
+    }
+  ],
+  "strategy_adjustment": "Broaden PubMed search terms across 11 query families (A through K) covering clinical tabular representation in oncology, while preserving strict representation acceptance, leakage firewall, and provenance gates."
+}

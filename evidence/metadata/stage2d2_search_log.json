@@ -1,0 +1,166 @@
+{
+  "search_timestamp": "2026-08-14T05:59:15.247049+00:00",
+  "total_queries": 5,
+  "queries": [
+    {
+      "query": "head and neck cancer clinical tabular recurrence machine learning",
+      "search_source": "PubMed / NCBI",
+      "timestamp": "2026-08-14T05:59:08.724447+00:00",
+      "retrieved_pmids": [
+        "40273819"
+      ],
+      "count": 1
+    },
+    {
+      "query": "structured clinical feature encoding recurrence classification oncology",
+      "search_source": "PubMed / NCBI",
+      "timestamp": "2026-08-14T05:59:10.052696+00:00",
+      "retrieved_pmids": [
+        "40165728",
+        "32123303",
+        "29427526",
+        "15743751"
+      ],
+      "count": 4
+    },
+    {
+      "query": "tabular clinical feature representation cancer recurrence prediction",
+      "search_source": "PubMed / NCBI",
+      "timestamp": "2026-08-14T05:59:11.311269+00:00",
+      "retrieved_pmids": [
+        "41935148",
+        "41335879"
+      ],
+      "count": 2
+    },
+    {
+      "query": "head and neck squamous cell carcinoma recurrence tabular features",
+      "search_source": "PubMed / NCBI",
+      "timestamp": "2026-08-14T05:59:12.419845+00:00",
+      "retrieved_pmids": [],
+      "count": 0
+    },
+    {
+      "query": "clinical variables machine learning recurrence prediction cancer tabular",
+      "search_source": "PubMed / NCBI",
+      "timestamp": "2026-08-14T05:59:13.707039+00:00",
+      "retrieved_pmids": [
+        "41335879"
+      ],
+      "count": 1
+    }
+  ],
+  "unique_candidates_found": 7,
+  "candidates": [
+    {
+      "pmid": "41335879",
+      "doi": "10.1109/EMBC58623.2025.11254767",
+      "title": "Attention-enabled Explainable AI for Bladder Cancer Recurrence Prediction.",
+      "publication_year": 2025,
+      "journal": "Annu Int Conf IEEE Eng Med Biol Soc",
+      "authors": [
+        "Abbas S",
+        "Soomro N",
+        "Shafik R",
+        "Heer R",
+        "Adhikari K"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T05:59:15.247049+00:00"
+    },
+    {
+      "pmid": "29427526",
+      "doi": "10.1002/gcc.22532",
+      "title": "NUP98-BPTF gene fusion identified in primary refractory acute megakaryoblastic leukemia of infancy.",
+      "publication_year": 2018,
+      "journal": "Genes Chromosomes Cancer",
+      "authors": [
+        "Roussy M",
+        "Bilodeau M",
+        "Jouan L",
+        "Tibout P",
+        "Laram\u00e9e L"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T05:59:15.247049+00:00"
+    },
+    {
+      "pmid": "40273819",
+      "doi": "10.1016/j.compbiomed.2025.110198",
+      "title": "A framework to create, evaluate and select synthetic datasets for survival prediction in oncology.",
+      "publication_year": 2025,
+      "journal": "Comput Biol Med",
+      "authors": [
+        "Christoforou AT",
+        "Spohn SKB",
+        "Sprave T",
+        "Fechter T",
+        "R\u00fchle A"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T05:59:15.247049+00:00"
+    },
+    {
+      "pmid": "41935148",
+      "doi": "10.1038/s41598-026-47382-0",
+      "title": "A distributed fusion framework for breast cancer recurrence prediction using MapReduce.",
+      "publication_year": 2026,
+      "journal": "Sci Rep",
+      "authors": [
+        "Shahare P",
+        "Mahalwar A",
+        "Shahade AK"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T05:59:15.247049+00:00"
+    },
+    {
+      "pmid": "40165728",
+      "doi": "10.1002/mp.17781",
+      "title": "A CNN-transformer fusion network for predicting high-grade patterns in stage IA invasive lung adenocarcinoma.",
+      "publication_year": 2025,
+      "journal": "Med Phys",
+      "authors": [
+        "Tao Y",
+        "Sun R",
+        "Li J",
+        "Wu W",
+        "Xie Y"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T05:59:15.247049+00:00"
+    },
+    {
+      "pmid": "32123303",
+      "doi": "10.1038/s41379-020-0510-7",
+      "title": "Melanomas with activating RAF1 fusions: clinical, histopathologic, and molecular profiles.",
+      "publication_year": 2020,
+      "journal": "Mod Pathol",
+      "authors": [
+        "Williams EA",
+        "Shah N",
+        "Montesion M",
+        "Sharaf R",
+        "Pavlick DC"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T05:59:15.247049+00:00"
+    },
+    {
+      "pmid": "15743751",
+      "doi": "10.1309/APKQ-4Q9D-52GN-LR8W",
+      "title": "Primary lung adenocarcinoma with massive lymphocyte infiltration.",
+      "publication_year": 2005,
+      "journal": "Am J Clin Pathol",
+      "authors": [
+        "Tsuta K",
+        "Ishii G",
+        "Kim E",
+        "Shiono S",
+        "Nishiwaki Y"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T05:59:15.247049+00:00"
+    }
+  ]
+}

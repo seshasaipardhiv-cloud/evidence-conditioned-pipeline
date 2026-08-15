@@ -1,0 +1,8 @@
+{
+  "missing_value_handling": "mean_imputation",
+  "categorical_encoding": "one_hot_encoding",
+  "base_learner": "gradient_boosting",
+  "loss_function": "focal_loss",
+  "imbalance_handling": "class_weighted_sampling",
+  "feature_representation": null
+}

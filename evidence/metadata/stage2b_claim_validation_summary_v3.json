@@ -1,0 +1,81 @@
+{
+  "stage": "2B_v3",
+  "audit": {
+    "total_fields": 64,
+    "verified": 39,
+    "incorrect": 11,
+    "partially_verified": 1,
+    "not_available": 13
+  },
+  "field_breakdown": {
+    "dataset": {
+      "VERIFIED": 3,
+      "INCORRECT": 2,
+      "NOT_AVAILABLE": 3,
+      "PARTIALLY_VERIFIED": 0
+    },
+    "task": {
+      "VERIFIED": 5,
+      "INCORRECT": 1,
+      "NOT_AVAILABLE": 2,
+      "PARTIALLY_VERIFIED": 0
+    },
+    "modalities": {
+      "VERIFIED": 1,
+      "INCORRECT": 0,
+      "NOT_AVAILABLE": 6,
+      "PARTIALLY_VERIFIED": 1
+    },
+    "proposed_method": {
+      "VERIFIED": 8,
+      "INCORRECT": 0,
+      "NOT_AVAILABLE": 0,
+      "PARTIALLY_VERIFIED": 0
+    },
+    "baselines": {
+      "VERIFIED": 2,
+      "INCORRECT": 6,
+      "NOT_AVAILABLE": 0,
+      "PARTIALLY_VERIFIED": 0
+    },
+    "fusion_strategy": {
+      "VERIFIED": 4,
+      "INCORRECT": 2,
+      "NOT_AVAILABLE": 2,
+      "PARTIALLY_VERIFIED": 0
+    },
+    "metric": {
+      "VERIFIED": 8,
+      "INCORRECT": 0,
+      "NOT_AVAILABLE": 0,
+      "PARTIALLY_VERIFIED": 0
+    },
+    "result": {
+      "VERIFIED": 8,
+      "INCORRECT": 0,
+      "NOT_AVAILABLE": 0,
+      "PARTIALLY_VERIFIED": 0
+    }
+  },
+  "false_extractions": {
+    "dataset": [
+      {
+        "pid": "paper_38396486",
+        "val": "Head-Neck-PET-CT"
+      },
+      {
+        "pid": "paper_41353186",
+        "val": "KHMC-HNSC"
+      }
+    ],
+    "method": [],
+    "modality": [],
+    "task": [
+      {
+        "pid": "paper_10.3390_bioengineering11010013",
+        "val": "classification"
+      }
+    ],
+    "mechanism": []
+  }
+}

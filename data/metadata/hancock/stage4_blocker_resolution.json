@@ -1,0 +1,55 @@
+{
+  "resolutions": [
+    {
+      "component": "missing_value_handling",
+      "original_status": "BLOCKED",
+      "resolved": false,
+      "new_status": "BLOCKED",
+      "implementation_mapping": null,
+      "provenance": "No explicit support found in Stage 2 evidence."
+    },
+    {
+      "component": "categorical_encoding",
+      "original_status": "BLOCKED",
+      "resolved": false,
+      "new_status": "BLOCKED",
+      "implementation_mapping": null,
+      "provenance": "No explicit support found in Stage 2 evidence."
+    },
+    {
+      "component": "base_learner",
+      "original_status": "BLOCKED",
+      "resolved": false,
+      "new_status": "BLOCKED",
+      "implementation_mapping": null,
+      "provenance": "No explicit support found in Stage 2 evidence."
+    },
+    {
+      "component": "loss_function",
+      "original_status": "BLOCKED",
+      "resolved": false,
+      "new_status": "BLOCKED",
+      "implementation_mapping": null,
+      "provenance": "No explicit support found in Stage 2 evidence."
+    },
+    {
+      "component": "feature_representation",
+      "original_status": "BLOCKED",
+      "resolved": false,
+      "new_status": "BLOCKED",
+      "implementation_mapping": null,
+      "provenance": "No explicit support found in Stage 2 evidence."
+    },
+    {
+      "component": "imbalance_handling",
+      "original_status": "BLOCKED",
+      "resolved": false,
+      "new_status": "BLOCKED",
+      "implementation_mapping": null,
+      "provenance": "No explicit support found in Stage 2 evidence."
+    }
+  ],
+  "pipeline_materializable": false,
+  "execution_status": "CONFIGURATION_VALIDATED",
+  "training_allowed": false
+}

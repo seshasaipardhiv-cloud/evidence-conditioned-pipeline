@@ -1,0 +1,44 @@
+{
+  "execution_timestamp": "2026-08-14T17:36:06.374368+00:00",
+  "final_decision": "GO",
+  "training_allowed": false,
+  "total_gates": 10,
+  "passed_gates": 10,
+  "failed_gates": 0,
+  "gate_statuses": {
+    "corpus_integrity_gate": "PASS",
+    "pipeline_spec_hash_gate": "PASS",
+    "materialization_gate": "PASS",
+    "preprocessing_contract_gate": "PASS",
+    "target_isolation_gate": "PASS",
+    "patient_split_gate": "PASS",
+    "provenance_boundary_gate": "PASS",
+    "compute_budget_gate": "PASS",
+    "baseline_compatibility_gate": "PASS",
+    "zero_training_verified_gate": "PASS"
+  },
+  "blocking_reasons": [],
+  "materialized_components": [
+    "feature_representation",
+    "modality_fusion",
+    "ensembling",
+    "missing_value_handling",
+    "base_learner",
+    "imbalance_handling",
+    "categorical_encoding",
+    "loss_function"
+  ],
+  "pre_audit_hashes": {
+    "papers": "670107ee79c518acff87df1db50ba712be870a3abe7a374e6ab4155707096bf5",
+    "experiments": "34692984a4dc6c6bf6bd4a684035c6bc75c36aeadd663b4b94a1da234fe13f05",
+    "evidence_claims": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mechanisms": "00cec963267f1caad2f797a67cbd9da064fdd8ae60415c6cb2cfdf9283dfe939"
+  },
+  "post_audit_hashes": {
+    "papers": "670107ee79c518acff87df1db50ba712be870a3abe7a374e6ab4155707096bf5",
+    "experiments": "34692984a4dc6c6bf6bd4a684035c6bc75c36aeadd663b4b94a1da234fe13f05",
+    "evidence_claims": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mechanisms": "00cec963267f1caad2f797a67cbd9da064fdd8ae60415c6cb2cfdf9283dfe939"
+  },
+  "corpus_unchanged": true
+}

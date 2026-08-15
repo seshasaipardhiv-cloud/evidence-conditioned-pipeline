@@ -1,0 +1,14 @@
+{
+  "categorical_encoding": {
+    "value": "one_hot_encoding",
+    "configuration_source": "project_configuration",
+    "rationale": "Explicitly selected for categorical clinical variables in the tabular HANCOCK input.",
+    "evidence_status": "EXPLICITLY_CONFIGURED"
+  },
+  "loss_function": {
+    "value": "binary_logistic",
+    "configuration_source": "project_configuration",
+    "rationale": "Explicitly selected for binary recurrence classification with the XGBoost base learner.",
+    "evidence_status": "EXPLICITLY_CONFIGURED"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-08-14T18:55:35.994168+00:00",
+  "total_claims_audited": 6,
+  "unsupported_claims_found": 0,
+  "claims_corrected_in_6h": 6,
+  "term_occurrences": {
+    "superiority": 2,
+    "state-of-the-art": 0,
+    "first": 0,
+    "best": 0,
+    "optimal": 6,
+    "clinically useful": 0,
+    "clinically effective": 0,
+    "deployment": 4,
+    "generalizable": 0,
+    "statistically significant": 1,
+    "deep-learning superiority": 0,
+    "external validity": 0,
+    "robust": 3,
+    "proven": 33
+  },
+  "audited_statements": [
+    {
+      "claim_type": "Universal Superiority",
+      "status": "NOT_PRESENT_AND_DISAVOWED",
+      "evidence": "Paper explicitly documents Seed 100 loss (-0.0034 delta) and notes candidate does not dominate all folds."
+    },
+    {
+      "claim_type": "State of the Art / First Ever",
+      "status": "NOT_PRESENT_AND_DISAVOWED",
+      "evidence": "Paper frames contribution around evidence-conditioned compositional synthesis without superlative hype."
+    },
+    {
+      "claim_type": "Statistical Significance",
+      "status": "NOT_PRESENT_AND_DISAVOWED",
+      "evidence": "Paper explicitly states n=3 seeds is underpowered for inferential testing and suppresses p-values."
+    },
+    {
+      "claim_type": "Clinical Deployment / Clinical Efficacy",
+      "status": "NOT_PRESENT_AND_DISAVOWED",
+      "evidence": "Section 8 and Section 9 state the framework is a research methodology and NOT clinically deployable."
+    },
+    {
+      "claim_type": "Deep Learning Superiority",
+      "status": "NOT_PRESENT_AND_DISAVOWED",
+      "evidence": "Section 5.1 explicitly clarifies that comparison to shallow MLP (max_iter=10) is not evidence of superiority over deep learning."
+    },
+    {
+      "claim_type": "External Generalizability",
+      "status": "NOT_PRESENT_AND_DISAVOWED",
+      "evidence": "Section 8 acknowledges evaluation is limited to a single retrospective HANCOCK dataset without external validation."
+    }
+  ],
+  "verdict": "ALL_CLAIMS_STRICTLY_CONSERVATIVE_AND_DEFENSIBLE"
+}

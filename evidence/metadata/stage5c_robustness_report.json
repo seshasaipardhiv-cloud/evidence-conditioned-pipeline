@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-08-14T18:55:13.394181+00:00",
+  "candidate_mean_roc_auc": 0.9751,
+  "default_xgb_mean_roc_auc": 0.9704,
+  "overall_mean_margin": 0.0047,
+  "per_seed_margins": {
+    "42": {
+      "candidate_auc": 0.9888,
+      "default_xgb_auc": 0.9783,
+      "margin": 0.0105,
+      "candidate_won": true
+    },
+    "100": {
+      "candidate_auc": 0.9609,
+      "default_xgb_auc": 0.9643,
+      "margin": -0.0034,
+      "candidate_won": false
+    },
+    "2026": {
+      "candidate_auc": 0.9756,
+      "default_xgb_auc": 0.9685,
+      "margin": 0.0071,
+      "candidate_won": true
+    }
+  },
+  "wins_across_seeds": "2 / 3",
+  "seed_dependency_assessment": {
+    "highest_margin_seed": "42 (+0.0105)",
+    "lowest_margin_seed": "100 (-0.0034)",
+    "variance_acceptable": true,
+    "notes": "Candidate outperforms Default XGBoost on seeds 42 and 2026, but is slightly lower (-0.0034) on seed 100. Small overall delta (+0.0047)."
+  },
+  "stability_evaluation": "MODERATE_STABILITY_OBSERVED"
+}

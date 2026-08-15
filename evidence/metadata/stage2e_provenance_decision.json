@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-08-14T06:11:42.827896+00:00",
+  "explicit_candidates_count": 2,
+  "provenance_complete_count": 1,
+  "provenance_status": "PROVENANCE_VALID",
+  "provenance_details": [
+    {
+      "paper_id": "paper_42487970",
+      "pmid": "42487970",
+      "doi": "10.3389/fmed.2026.1842344",
+      "source_sentences": [
+        "Structured data, such as the patient\u2019s age and stage, can be directly used as input for the model to ensure that all information is in a unified unit and standard.",
+        "Structured data, such as the patient\u2019s age and stage, can be directly used as input for the model to ensure that all information is in a unified unit and standard."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "paper_id": "paper_sim_imaging_1",
+    "title": "CNN representation for clinical recurrence",
+    "doi": "10.1234/sim.img.1",
+    "score": 0,
+    "reason": "imaging-only modality not compatible"
+  },
+  {
+    "paper_id": "paper_sim_background_2",
+    "title": "Review of tabular data representations",
+    "doi": "10.1234/sim.bg.2",
+    "score": 0,
+    "reason": "task is not classification"
+  },
+  {
+    "paper_id": "paper_sim_valid_3",
+    "title": "Advanced structured clinical feature encoding for cancer recurrence",
+    "doi": "10.1234/sim.valid.3",
+    "score": 100,
+    "reason": "Pass"
+  },
+  {
+    "paper_id": "paper_sim_duplicate_4",
+    "title": "A known paper",
+    "doi": "10.3390/bioengineering11010013",
+    "score": 0,
+    "reason": "duplicate DOI"
+  }
+]

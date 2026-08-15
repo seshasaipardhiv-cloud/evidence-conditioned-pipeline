@@ -1,0 +1,18 @@
+{
+  "stage": "2B",
+  "retrieval_date": "2026-08-09T23:16:23.179464",
+  "papers_with_full_text": 6,
+  "papers_still_abstract_only": 2,
+  "papers_with_no_evidence": 2,
+  "experiments_extracted": 8,
+  "ablations_extracted": 1,
+  "evidence_claims_total": 6,
+  "direct_empirical_claims": 4,
+  "qualitative_claims": 2,
+  "negative_findings": 4,
+  "negative_evidence_coverage": "present",
+  "contradiction_candidates": 0,
+  "contradiction_coverage": "not_established",
+  "unmapped_mechanisms": 2,
+  "claims_rejected_as_unsupported": 0
+}

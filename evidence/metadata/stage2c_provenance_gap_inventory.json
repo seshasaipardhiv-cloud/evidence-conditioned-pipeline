@@ -1,0 +1,363 @@
+[
+  {
+    "paper_id": "paper_10.3390_bioengineering11010013",
+    "experiment_id": "exp_cc520f97",
+    "field_name": "modalities",
+    "field_value": [
+      "imaging"
+    ],
+    "current_provenance_status": "MISSING"
+  },
+  {
+    "paper_id": "paper_10.3390_bioengineering11010013",
+    "experiment_id": "exp_cc520f97",
+    "field_name": "baselines",
+    "field_value": [
+      {
+        "name": "single-modality PET",
+        "source_sentence": "The experimental results demonstrate that the multi-modal ensemble model with soft voting outperformed single-modality PET/CT, with an AUC of 0.76 and\n1.",
+        "source_location": "results",
+        "comparison_context": "outperformed single-modality PET"
+      },
+      {
+        "name": "traditional 2D models",
+        "source_sentence": "Our models outperformed traditional 2D models significantly, as presented in Results and Analysis (\nCervical lymph nodes are more prone to metastatic malignant tumors and spread from the primary node to other head and neck regions.",
+        "source_location": "results",
+        "comparison_context": "outperformed traditional 2D models"
+      }
+    ],
+    "current_provenance_status": "MISSING"
+  },
+  {
+    "paper_id": "paper_38396486",
+    "experiment_id": "exp_1b449852",
+    "field_name": "baselines",
+    "field_value": [
+      {
+        "name": "single-modal approaches",
+        "source_sentence": "The utilization of cross-attention for multi-modal information fusion had a moderate impact on the results, while the combination of PET and CT modalities consistently outperformed single-modal approaches.",
+        "source_location": "results",
+        "comparison_context": "outperformed single-modal approaches"
+      }
+    ],
+    "current_provenance_status": "MISSING"
+  },
+  {
+    "paper_id": "paper_39074400",
+    "experiment_id": "exp_e7f1def8",
+    "field_name": "baselines",
+    "field_value": [
+      {
+        "name": "unimodal analysis",
+        "source_sentence": "Receiver operating characteristic comparisons determined the optimal feature combination and information fusion method and assessed the benefit of multimodal versus unimodal analysis.",
+        "source_location": "results",
+        "comparison_context": "versus unimodal analysis"
+      },
+      {
+        "name": "late fusion in",
+        "source_sentence": "Early fusion outperformed late fusion in external data (0.77 vs 0.73 AUC, P = 0.005).",
+        "source_location": "results",
+        "comparison_context": "outperformed late fusion in"
+      },
+      {
+        "name": "clinical and MRI-only",
+        "source_sentence": "CONCLUSIONS: Multimodal AI (combining DL suspicion levels and clinical parameters) outperforms clinical and MRI-only AI for csPCa detection.",
+        "source_location": "results",
+        "comparison_context": "outperforms clinical and MRI-only"
+      }
+    ],
+    "current_provenance_status": "MISSING"
+  },
+  {
+    "paper_id": "paper_40325104",
+    "experiment_id": "exp_177b1a4d",
+    "field_name": "baselines",
+    "field_value": [
+      {
+        "name": "unimodal models across",
+        "source_sentence": "Unless stated otherwise, the results correspond to the feature selection method being Spearman correlation with OS and the survival model being a heterogeneous ensemble of all models listed in Table\nPerformance of multimodal versus unimodal models across different cancer types\nFor each cancer type in TCGA, we calculated the advantage (henceforth referred to as the \u201cdelta\u201d) of the multimodal approach over unimodal models as the difference in average C-index between the multimodal model and the best unimodal model:\nFigure\n[Right] Table showing the advantage\nThe table also lists the average C-index of the best unimodal model and the size of the training set per cancer type (entries listed in decreasing order). [Left, top] Multimodal advantage\nSummarizing the above results, we found that multimodal models trained under our proposed late fusion strategy tended to outperform unimodal models across TCGA cancer types.",
+        "source_location": "results",
+        "comparison_context": "versus unimodal models across"
+      },
+      {
+        "name": "unimodal models of",
+        "source_sentence": "In Fig.\nPerformance of multimodal models (FUSED) versus unimodal models of each modality for NSCLC patients.",
+        "source_location": "results",
+        "comparison_context": "versus unimodal models of"
+      }
+    ],
+    "current_provenance_status": "MISSING"
+  },
+  {
+    "paper_id": "paper_41131352",
+    "experiment_id": "exp_ed32a87c",
+    "field_name": "baselines",
+    "field_value": [
+      {
+        "name": "single-modality embeddings for",
+        "source_sentence": "Table\nPerformance of multimodal fusion strategies vs. single-modality embeddings for cancer-type clustering\nIn each category, bold text: best performance, underline: second-best.",
+        "source_location": "results",
+        "comparison_context": "vs. single-modality embeddings for"
+      },
+      {
+        "name": "clinical embeddings alone",
+        "source_sentence": "While concatenation generally yielded the best multimodal performance, it did not consistently outperform clinical embeddings alone.",
+        "source_location": "results",
+        "comparison_context": "outperform clinical embeddings alone"
+      }
+    ],
+    "current_provenance_status": "MISSING"
+  },
+  {
+    "paper_id": "paper_41353186",
+    "experiment_id": "exp_33f48279",
+    "field_name": "modalities",
+    "field_value": [
+      "imaging",
+      "text"
+    ],
+    "current_provenance_status": "MISSING"
+  },
+  {
+    "paper_id": "paper_41353186",
+    "experiment_id": "exp_33f48279",
+    "field_name": "baselines",
+    "field_value": [
+      {
+        "name": "calm image and",
+        "source_sentence": "The highest value within each model group is highlighted in bold\nComparison of porpoise (omics-only and image and omics) vs calm image and text models (UNI and BioMedBERT, musk) across cancer types\nValues are C-index\nZero-shot prognosis prediction performance (C-index\u2009\u00b1\u2009standard deviation) on the external validation cohort (KHMC-HNSC)\nEffects of anchor text\nThe employment of anchor text yielded two primary benefits: (1) enhanced training stability and (2) improved predictive performance (Table\nThe performance gains were particularly pronounced when using MUSK-V and MUSK-L models.",
+        "source_location": "results",
+        "comparison_context": "vs calm image and"
+      },
+      {
+        "name": "multi-modal integration",
+        "source_sentence": "Comparison with uni- and multi-modal integration\nTo evaluate the effect of uni-modal versus multi-modal integration, we compared prognosis prediction models trained with image-only, text-only, and CALM (image and text).",
+        "source_location": "results",
+        "comparison_context": "versus multi-modal integration"
+      },
+      {
+        "name": "PORPOISE in LIHC",
+        "source_sentence": "Conversely, CALM outperformed PORPOISE in LIHC (0.700 vs. 0.622) and UCEC (0.713 vs. 0.634).",
+        "source_location": "results",
+        "comparison_context": "outperformed PORPOISE in LIHC"
+      }
+    ],
+    "current_provenance_status": "MISSING"
+  },
+  {
+    "paper_id": "paper_41968976",
+    "experiment_id": "exp_74f3f0f3",
+    "field_name": "baselines",
+    "field_value": [
+      {
+        "name": "all other models",
+        "source_sentence": "XGBoost outperformed all other models on the TCGA dataset, achieving an AUC of 0.694 (95% CI: 0.647\u20130.741) and ACC of 0.619 (95% CI: 0.561\u20130.678) (\nComparison of machine-learning algorithms for the clinical model\nACC, accuracy; AUC, area under the receiver operating characteristic curve; CI, confidence interval; F1, F1 score; GB, gradient boosting; k-NN, k-nearest neighbors; LR, logistic regression; NA, not available; RF, random forest; SEN, sensitivity; SPEC, specificity.",
+        "source_location": "results",
+        "comparison_context": "outperformed all other models"
+      }
+    ],
+    "current_provenance_status": "MISSING"
+  },
+  {
+    "paper_id": "paper_42487970",
+    "experiment_id": "exp_0fe228a3",
+    "field_name": "modalities",
+    "field_value": [
+      "clinical"
+    ],
+    "current_provenance_status": "MISSING"
+  },
+  {
+    "paper_id": "paper_42487970",
+    "experiment_id": "exp_0fe228a3",
+    "field_name": "baselines",
+    "field_value": [
+      {
+        "name": "them in the",
+        "source_sentence": "Compared to other models, especially 3D models (such as 3D ResNet-18 and 3D ViT), the image data expert model outperforms them in the actual assessment, especially in the comprehensive performance of accuracy and recall rate (\nClassification and localization performance of image-based diagnostic models.",
+        "source_location": "results",
+        "comparison_context": "outperforms them in the"
+      },
+      {
+        "name": "interpreting it as",
+        "source_sentence": "We include it here for completeness but caution against interpreting it as a meaningful predictor.",
+        "source_location": "results",
+        "comparison_context": "against interpreting it as"
+      },
+      {
+        "name": "radiologists in terms",
+        "source_sentence": "The image data expert model outperforms radiologists in terms of specificity and accuracy, especially in terms of false positive and false negative rates.",
+        "source_location": "results",
+        "comparison_context": "outperforms radiologists in terms"
+      },
+      {
+        "name": "observed probabilities",
+        "source_sentence": "Particularly in the combined performance of recall rate and F1 value, the integrated model has a significant advantage (\nResults of prediction model: F1 score comparison, AUC comparison, accuracy comparison, calibration curve showing predicted vs. observed probabilities (Brier score\u202f=\u202f0.042, Hosmer-Lemeshow\nTo further evaluate model discrimination and calibration beyond threshold-dependent metrics, ROC curve analysis and calibration assessment were performed for the full multimodal MoE model.",
+        "source_location": "results",
+        "comparison_context": "vs. observed probabilities"
+      }
+    ],
+    "current_provenance_status": "MISSING"
+  },
+  {
+    "paper_id": "paper_42510039",
+    "experiment_id": "exp_68dca7a1",
+    "field_name": "modalities",
+    "field_value": [
+      "imaging"
+    ],
+    "current_provenance_status": "MISSING"
+  },
+  {
+    "paper_id": "paper_42467849",
+    "experiment_id": "exp_40d6e908",
+    "field_name": "baselines",
+    "field_value": [
+      {
+        "name": "placebo in the",
+        "source_sentence": "Risk stratification by the image-only model indicated a 3.3% absolute ELT benefit in the high-risk group (HR = 0.67; 95% CI, 0.442\u20131.017;\nKaplan\u2013Meier analysis of DR comparing patients treated with ELT vs. placebo in the NSABP B-42 translational cohort.",
+        "source_location": "results",
+        "comparison_context": "vs. placebo in the"
+      }
+    ],
+    "current_provenance_status": "MISSING"
+  },
+  {
+    "paper_id": "paper_42523677",
+    "experiment_id": "exp_e932a456",
+    "field_name": "baselines",
+    "field_value": [
+      {
+        "name": "surgery",
+        "source_sentence": "AI, Artificial Intelligence; FNA, Fine-Needle Aspiration (\nupstream: Support a reduction in avoidable biopsies and indeterminate FNAs through improved selection using ultrasound;\nmidstream: to decrease interobserver variability in the interpretation of indeterminate cytology;\ndownstream: combine cytology with molecular results and imaging to refine post-test probability and choose surveillance vs surgery.",
+        "source_location": "results",
+        "comparison_context": "vs surgery"
+      },
+      {
+        "name": "LBC",
+        "source_sentence": "The validation of AI decision support tools in indeterminate nodules has shown promising performance of these tools in reducing biopsies in low-risk patients while upholding negative predictive value (NPV), a highly desirable outcome from a health infrastructure perspective (\nOn the other hand, the residual malignancy risk among cytologically low-risk indeterminate nodules managed by surveillance nodules makes a future role for AI in standardizing the follow-up intensity and identifying which nodules should be escalated to repeat FNA, molecular testing, closer follow-up, or surgery (\nCurrent limitations and requirements for clinical translation\nAcross systematic reviews and technical papers, several constraints consistently limit real-world deployment:\npre-analytic variability (smears vs LBC, fixation, stain);\nscanner and digitization heterogeneity;\ndomain shift across institutions;\nselection bias from \u201csurgery-only ground truth\u201d cohorts;\ninterpretability and workflow integration requirements;\nquality-control requirements for digital cytology workflows, including image acquisition consistency, focus verification, slide completeness assessment, and continuous performance monitoring (\nTranslated, four features appear throughout the most clinically mature literature: i) external validation across preparations-smears vs LBC, stains, scanners, and institutions; ii) calibrated probabilities and clinically justified thresholds reflecting local ROM; iii) prospective evaluation with readerimpact analyses, predefined workflow endpoints that include reduced benign surgery, safe surveillance, and optimized molecular testing; and iv) QA of digitization as a precondition rather than afterthought, including focus metrics, scan failure policies, and explicit z-stack strategies.",
+        "source_location": "results",
+        "comparison_context": "vs LBC"
+      }
+    ],
+    "current_provenance_status": "MISSING"
+  },
+  {
+    "paper_id": "paper_42141332",
+    "experiment_id": "exp_07c33eab",
+    "field_name": "baselines",
+    "field_value": [
+      {
+        "name": "all other models",
+        "source_sentence": "The text-radiomic-clinical fusion model (T\u2009+\u2009R\u2009+\u2009C) outperformed all other models, achieving AUCs of 0.912, 0.874, and 0.890 in the training, internal validation, and external validation cohorts, respectively.",
+        "source_location": "results",
+        "comparison_context": "outperformed all other models"
+      }
+    ],
+    "current_provenance_status": "MISSING"
+  },
+  {
+    "paper_id": "paper_42564290",
+    "experiment_id": "exp_0a23b639",
+    "field_name": "baselines",
+    "field_value": [
+      {
+        "name": "conventional indicators such",
+        "source_sentence": "In patients with unresectable HCC receiving atezolizumab plus bevacizumab, an integrated radiomic-clinical model derived from pretreatment CT outperformed conventional indicators such as BCLC stage and ALBI grade for prediction of 12-month mortality, and it separated groups with clearly different overall and progression-free survival (\nCurrent challenges and limitations\nDespite the growing number of studies in this area, true integration of exposome assessment with multi-omics and artificial intelligence in liver cancer remains uncommon.",
+        "source_location": "results",
+        "comparison_context": "outperformed conventional indicators such"
+      }
+    ],
+    "current_provenance_status": "MISSING"
+  },
+  {
+    "paper_id": "paper_42125301",
+    "experiment_id": "exp_dae685b8",
+    "field_name": "baselines",
+    "field_value": [
+      {
+        "name": "several ablative and",
+        "source_sentence": "We compare our final proposed model (Bi-AdaIN + MI) against several ablative and baseline configurations using two different network backbones: 3D Swin Transformer and 3D ResNet18.",
+        "source_location": "results",
+        "comparison_context": "against several ablative and"
+      }
+    ],
+    "current_provenance_status": "MISSING"
+  },
+  {
+    "paper_id": "paper_40770286",
+    "experiment_id": "exp_77c91384",
+    "field_name": "modalities",
+    "field_value": [
+      "clinical",
+      "imaging"
+    ],
+    "current_provenance_status": "MISSING"
+  },
+  {
+    "paper_id": "paper_40770286",
+    "experiment_id": "exp_77c91384",
+    "field_name": "baselines",
+    "field_value": [
+      {
+        "name": "COX-based ones",
+        "source_sentence": "Across the bimodal models, RSF-based combinations generally outperformed COX-based ones.",
+        "source_location": "results",
+        "comparison_context": "outperformed COX-based ones"
+      }
+    ],
+    "current_provenance_status": "MISSING"
+  },
+  {
+    "paper_id": "paper_42558280",
+    "experiment_id": "exp_aa4aaae3",
+    "field_name": "baselines",
+    "field_value": [
+      {
+        "name": "traditional clinical nomograms",
+        "source_sentence": "Following rigorous internal and external validation, the RSF model demonstrated superior predictive performance, yielding a C-index ranging from 0.54 to 0.91, which significantly outperformed traditional clinical nomograms (\nApplication of AI in liquid biopsy and multi-omics profiling for PCa\nIdeal liquid biomarkers, such as molecular signals derived from peripheral blood or urine, are regarded as the optimal carriers for non-invasive early screening of PCa due to their non-invasiveness and ease of accessibility.",
+        "source_location": "results",
+        "comparison_context": "outperformed traditional clinical nomograms"
+      }
+    ],
+    "current_provenance_status": "MISSING"
+  },
+  {
+    "paper_id": "paper_42389632",
+    "experiment_id": "exp_1a85d908",
+    "field_name": "modalities",
+    "field_value": [
+      "clinical"
+    ],
+    "current_provenance_status": "MISSING"
+  },
+  {
+    "paper_id": "paper_41815162",
+    "experiment_id": "exp_1618cb49",
+    "field_name": "baselines",
+    "field_value": [
+      {
+        "name": "junior radiologists",
+        "source_sentence": "Furthermore, the model's diagnostic performance rivals that of senior radiologists and significantly outperforms junior radiologists.",
+        "source_location": "results",
+        "comparison_context": "outperforms junior radiologists"
+      },
+      {
+        "name": "malignancy",
+        "source_sentence": "Blue text fragments provide evidence against malignancy, such as \u2018no local soft tissue swelling\u2019 which has low relevance to bone tumor malignancy.",
+        "source_location": "results",
+        "comparison_context": "against malignancy"
+      }
+    ],
+    "current_provenance_status": "MISSING"
+  },
+  {
+    "paper_id": "paper_41645153",
+    "experiment_id": "exp_ab7ea67c",
+    "field_name": "modalities",
+    "field_value": [
+      "imaging"
+    ],
+    "current_provenance_status": "MISSING"
+  }
+]

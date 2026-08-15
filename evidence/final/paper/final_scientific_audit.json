@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-08-14T18:55:35.982272+00:00",
+  "audit_status": "AUDIT_PASSED",
+  "reconciliation_stage": "6H",
+  "all_checks_passed": true,
+  "checks": {
+    "metric_candidate_roc_auc_0_9751": "PASS",
+    "metric_default_xgb_0_9704": "PASS",
+    "metric_delta_0_0047": "PASS",
+    "margin_described_as_modest": "PASS",
+    "seed_100_loss_documented": "PASS",
+    "candidate_wins_2_of_3_seeds": "PASS",
+    "ablation_without_smote_0_9773": "PASS",
+    "ablation_ordinal_0_9784": "PASS",
+    "ablation_default_xgb_0_9686": "PASS",
+    "brier_score_candidate_0_0175": "PASS",
+    "imputation_operational_median_mode_documented": "PASS",
+    "cross_attention_ensembling_dormant_documented": "PASS",
+    "temporal_epoch_post_adjuvant_documented": "PASS",
+    "mlp_shallow_reference_baseline_documented": "PASS",
+    "all_eight_figures_referenced": "PASS",
+    "no_statistically_significant_claim": "PASS",
+    "no_first_ever_claim": "PASS",
+    "no_state_of_the_art_claim": "PASS",
+    "limitations_present": "PASS",
+    "source_immutability_verified": "PASS"
+  }
+}

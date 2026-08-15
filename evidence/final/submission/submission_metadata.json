@@ -1,0 +1,58 @@
+{
+  "manuscript_title": "Evidence-Conditioned Compositional Pipeline Synthesis: A Provenance-Aware Framework for Reproducible Clinical Machine Learning",
+  "short_running_title": "Evidence-Conditioned Pipeline Synthesis",
+  "target_article_type": "Original Research Article / Methodology",
+  "primary_subject_category": "Biomedical Informatics / Clinical Machine Learning",
+  "mesh_keywords": [
+    "Machine Learning",
+    "Reproducibility of Results",
+    "Clinical Decision Support Systems",
+    "Automated Machine Learning (AutoML)",
+    "Data Leakage",
+    "Head and Neck Neoplasms",
+    "Prognosis",
+    "Algorithms"
+  ],
+  "abstract_structured": {
+    "Background": "Translating biomedical literature findings into reproducible clinical machine learning pipelines is frequently compromised by arbitrary library defaults, unverified substitutions, and subtle data leakage across validation boundaries.",
+    "Problem": "While existing literature provides fragmented empirical evidence for individual modeling primitives, a fundamental methodological gap remains in how to systematically compose published evidence into an executable, provenance-tracked, and leakage-firewalled pipeline without relying on unauthorized defaults.",
+    "Method": "We propose an Evidence-Conditioned Compositional Pipeline Synthesis framework. The architecture systematically extracts literature mechanisms from peer-reviewed biomedical studies, audits provenance authenticity, grounds primitives in a controlled domain taxonomy, and enforces a strict governance boundary requiring human-controlled explicit configuration for unresolved primitive slots. It materializes executable code subject to 10 independent verification gates, a strict target isolation firewall, and a frozen execution contract.",
+    "Experimental Demonstration": "We evaluated the framework on the retrospective HANCOCK clinical tabular cohort for post-adjuvant recurrence risk prediction across three deterministic random seeds (42, 100, 2026) with strict zero patient overlap and train-only preprocessing. Operational implementation utilized train-fitted median/mode imputation, while multimodal primitives (cross-attention and ensembling) remained dormant taxonomy capabilities during unimodal tabular benchmarking.",
+    "Results": "The actual executed candidate pipeline achieved a mean test ROC-AUC of 0.9751 \u00b1 0.0114 and a Brier score of 0.0175, compared to 0.9704 \u00b1 0.0059 for Default XGBoost (a modest margin of +0.0047) and 0.9405 \u00b1 0.0192 for a minimal shallow MLP baseline. The candidate won on 2 of 3 seeds but lost on Seed 100 (-0.0034 delta). Controlled ablations demonstrated that omitting SMOTE (0.9773) or using ordinal encoding (0.9784) achieved marginally higher ROC-AUC on this specific sample, demonstrating that evidence validity and empirical dataset optimality are distinct concepts.",
+    "Conclusion & Limitations": "Evaluated on a single retrospective cohort with n=3 seeds; statistical significance and clinical deployment readiness are not established. The primary contribution is the provenance-aware synthesis methodology and governance framework for reproducible clinical machine learning."
+  },
+  "authorship_metadata": {
+    "authors": [
+      {
+        "name": "AUTHOR_NAME_PLACEHOLDER",
+        "degree": "MD/PhD Placeholder",
+        "affiliation_id": "aff1",
+        "email": "AUTHOR_EMAIL_PLACEHOLDER@institution.edu",
+        "orcid": "0000-0000-0000-0000",
+        "is_corresponding": true
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "aff1",
+        "institution": "AFFILIATION_INSTITUTION_PLACEHOLDER",
+        "department": "Department of Biomedical Informatics Placeholder",
+        "city": "City Placeholder",
+        "country": "Country Placeholder"
+      }
+    ],
+    "corresponding_author": {
+      "name": "CORRESPONDING_AUTHOR_PLACEHOLDER",
+      "email": "CORRESPONDING_EMAIL_PLACEHOLDER@institution.edu",
+      "address": "DEPARTMENTAL_ADDRESS_PLACEHOLDER"
+    }
+  },
+  "mandatory_declarations": {
+    "funding_statement": "FUNDING_STATEMENT_PLACEHOLDER: This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors [or insert specific grant numbers].",
+    "conflict_of_interest_statement": "CONFLICT_OF_INTEREST_PLACEHOLDER: The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.",
+    "ethics_approval_statement": "ETHICS_APPROVAL_PLACEHOLDER: This study utilized the publicly available, de-identified retrospective HANCOCK dataset. Institutional Review Board (IRB) review was exempt / approved under institutional guidelines for de-identified secondary data research.",
+    "data_availability_statement": "The retrospective clinical tabular dataset evaluated in this study originates from the open-source HANCOCK benchmark cohort. All processed data splits and variable definitions are accessible in the project repository.",
+    "code_availability_statement": "All software code, synthesis engines, verification test suites (720/720 passing), and cryptographically frozen execution contracts are fully available in the open-source repository at https://github.com/ANONYMOUS/evidence-conditioned-pipeline under the MIT License.",
+    "acknowledgements": "ACKNOWLEDGEMENTS_PLACEHOLDER: The authors acknowledge the providers of the open-source HANCOCK clinical dataset."
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "rejected_fields": [
+    {
+      "field_name": "days_to_progress_1",
+      "reason": "Derived outcome, post-outcome, or target field.",
+      "detection_method": "hardcoded_rule",
+      "target_variable": "recurrence",
+      "status": "REJECTED"
+    },
+    {
+      "field_name": "days_to_metastasis_1",
+      "reason": "Derived outcome, post-outcome, or target field.",
+      "detection_method": "hardcoded_rule",
+      "target_variable": "recurrence",
+      "status": "REJECTED"
+    },
+    {
+      "field_name": "days_to_recurrence",
+      "reason": "Derived outcome, post-outcome, or target field.",
+      "detection_method": "hardcoded_rule",
+      "target_variable": "recurrence",
+      "status": "REJECTED"
+    },
+    {
+      "field_name": "survival_status_with_cause",
+      "reason": "Derived outcome, post-outcome, or target field.",
+      "detection_method": "hardcoded_rule",
+      "target_variable": "recurrence",
+      "status": "REJECTED"
+    },
+    {
+      "field_name": "days_to_progress_2",
+      "reason": "Derived outcome, post-outcome, or target field.",
+      "detection_method": "hardcoded_rule",
+      "target_variable": "recurrence",
+      "status": "REJECTED"
+    },
+    {
+      "field_name": "survival_status",
+      "reason": "Derived outcome, post-outcome, or target field.",
+      "detection_method": "hardcoded_rule",
+      "target_variable": "recurrence",
+      "status": "REJECTED"
+    },
+    {
+      "field_name": "recurrence",
+      "reason": "Derived outcome, post-outcome, or target field.",
+      "detection_method": "hardcoded_rule",
+      "target_variable": "recurrence",
+      "status": "REJECTED"
+    },
+    {
+      "field_name": "days_to_last_information",
+      "reason": "Derived outcome, post-outcome, or target field.",
+      "detection_method": "hardcoded_rule",
+      "target_variable": "recurrence",
+      "status": "REJECTED"
+    }
+  ]
+}

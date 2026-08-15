@@ -1,0 +1,10 @@
+{
+  "modality_fusion": {
+    "mechanism": "cross_attention",
+    "executable_implementation": "backend.models.fusion.CrossAttentionFusion"
+  },
+  "ensembling": {
+    "mechanism": "average_ensembling",
+    "executable_implementation": "backend.models.ensembles.AverageEnsemble"
+  }
+}

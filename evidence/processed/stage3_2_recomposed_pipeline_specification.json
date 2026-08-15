@@ -1,0 +1,40 @@
+{
+  "recomposition_timestamp": "2026-08-14T06:14:18.376950+00:00",
+  "status": "RECOMPOSED_WITH_EVIDENCE",
+  "original_stage3_specification_path": "evidence\\processed\\stage3_validated_pipeline_specification.json",
+  "replaced_components": {
+    "feature_representation": {
+      "original": "cnn_representation",
+      "new": "clinical_tabular_representation",
+      "reason": "Resolved TAXONOMY_GAP using genuine evidence from paper_42487970.",
+      "evidence_provenance": "exp_aef6b872"
+    }
+  },
+  "unchanged_components": {
+    "missing_value_handling": null,
+    "categorical_encoding": null,
+    "modality_fusion": "cross_attention",
+    "base_learner": null,
+    "loss_function": null,
+    "imbalance_handling": null,
+    "ensembling": "average_ensembling"
+  },
+  "selected_mechanisms": {
+    "missing_value_handling": null,
+    "categorical_encoding": null,
+    "feature_representation": "clinical_tabular_representation",
+    "modality_fusion": "cross_attention",
+    "base_learner": null,
+    "loss_function": null,
+    "imbalance_handling": null,
+    "ensembling": "average_ensembling"
+  },
+  "remaining_unsupported_components": [
+    "missing_value_handling",
+    "categorical_encoding",
+    "base_learner",
+    "loss_function",
+    "imbalance_handling"
+  ],
+  "training_allowed": false
+}

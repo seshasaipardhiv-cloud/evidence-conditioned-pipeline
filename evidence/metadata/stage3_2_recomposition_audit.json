@@ -1,0 +1,9 @@
+{
+  "stage2_artifacts_unchanged": true,
+  "stage3_artifacts_unchanged": true,
+  "no_unsupported_mechanism_selected": true,
+  "no_imaging_dependent_mechanism_selected": true,
+  "every_selected_mechanism_has_provenance": true,
+  "no_target_derived_feature_introduced": true,
+  "no_model_training_occurred": true
+}

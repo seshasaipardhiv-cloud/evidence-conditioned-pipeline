@@ -1,0 +1,64 @@
+{
+  "timestamp": "2026-08-14T18:55:35.750609+00:00",
+  "phase": "Phase 6D: Scientific Results, Discussion, Research Gap, Novelty, and Contribution Analysis",
+  "source_master_results": "evidence\\final\\stage6a_master_results.json",
+  "documents": {
+    "results": "results.md",
+    "discussion": "discussion.md",
+    "research_gap": "research_gap.md",
+    "novelty": "novelty.md",
+    "contributions": "contributions.md",
+    "threats_to_validity": "threats_to_validity.md",
+    "future_work": "future_work.md"
+  },
+  "document_hashes": {
+    "results.md": "a033b38ad3efd8b78d2e89ec95b37e3b0bfe0f4d81ef5901a822e665bda3d58d",
+    "discussion.md": "c1a3ed918a4cd08d37c41a35da00c8f75599cc7590fd29ec4aa575c63bf08de3",
+    "research_gap.md": "0a938a95b27a4ca2c3dee6ac1f24bce2244cd369b4362589f4abdfc506b7d0f2",
+    "novelty.md": "fe0c2bd9639ce1d7f7507acde45cc070ca393396d6cac1e23640a4695196c0b9",
+    "contributions.md": "98b3cb132575870ef224840a2381e9572b170cb758c75b0a9ab78a2a56d1b89f",
+    "threats_to_validity.md": "0e0f892ac8b2603088a903c5efa58e5080f8f367636ea7f28fa08a02ac992367",
+    "future_work.md": "724143f681f673e671c6bdf63cb69c3cf92640371a445941fcc4dbd8107d5b4c"
+  },
+  "scientific_positioning": "The project is positioned as an evidence-conditioned compositional pipeline synthesis methodology demonstrated through a controlled clinical tabular prediction experiment, rather than primarily as a single high-accuracy predictive model.",
+  "core_metrics": {
+    "candidate_mean_roc_auc": 0.9751,
+    "candidate_std_roc_auc": 0.0114,
+    "default_xgboost_mean_roc_auc": 0.9704,
+    "margin_delta": 0.0047,
+    "candidate_brier_score": 0.0175
+  },
+  "per_seed_margins": {
+    "seed_42": {
+      "candidate": 0.9888,
+      "default_xgb": 0.9783,
+      "delta": 0.0105,
+      "won": true
+    },
+    "seed_100": {
+      "candidate": 0.9609,
+      "default_xgb": 0.9643,
+      "delta": -0.0034,
+      "won": false
+    },
+    "seed_2026": {
+      "candidate": 0.9756,
+      "default_xgb": 0.9685,
+      "delta": 0.0071,
+      "won": true
+    }
+  },
+  "ablations": {
+    "full_candidate": 0.9751,
+    "without_smote": 0.9773,
+    "mean_imputation": 0.9767,
+    "ordinal_encoding": 0.9784,
+    "default_xgboost": 0.9686
+  },
+  "claim_status_summary": {
+    "supported": 5,
+    "partially_supported": 1,
+    "not_supported": 4
+  },
+  "immutability_verified": true
+}

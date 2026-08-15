@@ -1,0 +1,197 @@
+{
+  "timestamp": "2026-08-14T18:55:35.893508+00:00",
+  "temporal_contract_status": "TEMPORAL_CONTRACT_UNSPECIFIED",
+  "supported_clinical_prediction_epoch": "Post-Adjuvant Therapy Completion (Predicting subsequent recurrence given adjuvant regimen)",
+  "total_raw_features": 31,
+  "excluded_features_in_5b": 8,
+  "retained_features_in_X": 23,
+  "feature_breakdown": {
+    "year_of_initial_diagnosis": {
+      "category": "PRE-PREDICTION",
+      "excluded_in_5b": false,
+      "status": "SAFE",
+      "description": "Baseline demographic and diagnostic clinical characteristics."
+    },
+    "age_at_initial_diagnosis": {
+      "category": "PRE-PREDICTION",
+      "excluded_in_5b": false,
+      "status": "SAFE",
+      "description": "Baseline demographic and diagnostic clinical characteristics."
+    },
+    "sex": {
+      "category": "PRE-PREDICTION",
+      "excluded_in_5b": false,
+      "status": "SAFE",
+      "description": "Baseline demographic and diagnostic clinical characteristics."
+    },
+    "smoking_status": {
+      "category": "PRE-PREDICTION",
+      "excluded_in_5b": false,
+      "status": "SAFE",
+      "description": "Baseline demographic and diagnostic clinical characteristics."
+    },
+    "primarily_metastasis": {
+      "category": "PRE-PREDICTION",
+      "excluded_in_5b": false,
+      "status": "SAFE",
+      "description": "Baseline demographic and diagnostic clinical characteristics."
+    },
+    "survival_status": {
+      "category": "OUTCOME_PROXY",
+      "excluded_in_5b": true,
+      "status": "SAFE_EXCLUDED",
+      "description": "Direct outcome, progression timing, or survival censoring variable."
+    },
+    "survival_status_with_cause": {
+      "category": "OUTCOME_PROXY",
+      "excluded_in_5b": true,
+      "status": "SAFE_EXCLUDED",
+      "description": "Direct outcome, progression timing, or survival censoring variable."
+    },
+    "days_to_last_information": {
+      "category": "OUTCOME_PROXY",
+      "excluded_in_5b": true,
+      "status": "SAFE_EXCLUDED",
+      "description": "Direct outcome, progression timing, or survival censoring variable."
+    },
+    "first_treatment_intent": {
+      "category": "POST-PREDICTION",
+      "excluded_in_5b": false,
+      "status": "REQUIRES_TEMPORAL_ANCHORING",
+      "description": "Post-surgical and adjuvant therapy attributes. Valid only if prediction epoch is Post-Adjuvant."
+    },
+    "first_treatment_modality": {
+      "category": "POST-PREDICTION",
+      "excluded_in_5b": false,
+      "status": "REQUIRES_TEMPORAL_ANCHORING",
+      "description": "Post-surgical and adjuvant therapy attributes. Valid only if prediction epoch is Post-Adjuvant."
+    },
+    "days_to_first_treatment": {
+      "category": "POST-PREDICTION",
+      "excluded_in_5b": false,
+      "status": "REQUIRES_TEMPORAL_ANCHORING",
+      "description": "Post-surgical and adjuvant therapy attributes. Valid only if prediction epoch is Post-Adjuvant."
+    },
+    "adjuvant_treatment_intent": {
+      "category": "POST-PREDICTION",
+      "excluded_in_5b": false,
+      "status": "REQUIRES_TEMPORAL_ANCHORING",
+      "description": "Post-surgical and adjuvant therapy attributes. Valid only if prediction epoch is Post-Adjuvant."
+    },
+    "adjuvant_radiotherapy": {
+      "category": "POST-PREDICTION",
+      "excluded_in_5b": false,
+      "status": "REQUIRES_TEMPORAL_ANCHORING",
+      "description": "Post-surgical and adjuvant therapy attributes. Valid only if prediction epoch is Post-Adjuvant."
+    },
+    "adjuvant_radiotherapy_modality": {
+      "category": "POST-PREDICTION",
+      "excluded_in_5b": false,
+      "status": "REQUIRES_TEMPORAL_ANCHORING",
+      "description": "Post-surgical and adjuvant therapy attributes. Valid only if prediction epoch is Post-Adjuvant."
+    },
+    "adjuvant_systemic_therapy": {
+      "category": "POST-PREDICTION",
+      "excluded_in_5b": false,
+      "status": "REQUIRES_TEMPORAL_ANCHORING",
+      "description": "Post-surgical and adjuvant therapy attributes. Valid only if prediction epoch is Post-Adjuvant."
+    },
+    "adjuvant_systemic_therapy_modality": {
+      "category": "POST-PREDICTION",
+      "excluded_in_5b": false,
+      "status": "REQUIRES_TEMPORAL_ANCHORING",
+      "description": "Post-surgical and adjuvant therapy attributes. Valid only if prediction epoch is Post-Adjuvant."
+    },
+    "adjuvant_radiochemotherapy": {
+      "category": "POST-PREDICTION",
+      "excluded_in_5b": false,
+      "status": "REQUIRES_TEMPORAL_ANCHORING",
+      "description": "Post-surgical and adjuvant therapy attributes. Valid only if prediction epoch is Post-Adjuvant."
+    },
+    "recurrence": {
+      "category": "OUTCOME_PROXY",
+      "excluded_in_5b": true,
+      "status": "SAFE_EXCLUDED",
+      "description": "Primary binary target label."
+    },
+    "days_to_recurrence": {
+      "category": "OUTCOME_PROXY",
+      "excluded_in_5b": true,
+      "status": "SAFE_EXCLUDED",
+      "description": "Direct outcome, progression timing, or survival censoring variable."
+    },
+    "progress_1": {
+      "category": "OUTCOME_PROXY",
+      "excluded_in_5b": false,
+      "status": "SUBTLE_LEAKAGE_RISK",
+      "description": "Binary disease progression indicator (yes/no). Often occurs simultaneously with recurrence."
+    },
+    "days_to_progress_1": {
+      "category": "OUTCOME_PROXY",
+      "excluded_in_5b": true,
+      "status": "SAFE_EXCLUDED",
+      "description": "Direct outcome, progression timing, or survival censoring variable."
+    },
+    "progress_2": {
+      "category": "OUTCOME_PROXY",
+      "excluded_in_5b": false,
+      "status": "SUBTLE_LEAKAGE_RISK",
+      "description": "Binary disease progression indicator (yes/no). Often occurs simultaneously with recurrence."
+    },
+    "days_to_progress_2": {
+      "category": "OUTCOME_PROXY",
+      "excluded_in_5b": true,
+      "status": "SAFE_EXCLUDED",
+      "description": "Direct outcome, progression timing, or survival censoring variable."
+    },
+    "metastasis_1_locations": {
+      "category": "OUTCOME_PROXY",
+      "excluded_in_5b": false,
+      "status": "SUBTLE_LEAKAGE_RISK",
+      "description": "Distant metastasis locations and timing during post-treatment follow-up."
+    },
+    "days_to_metastasis_1": {
+      "category": "OUTCOME_PROXY",
+      "excluded_in_5b": true,
+      "status": "SAFE_EXCLUDED",
+      "description": "Direct outcome, progression timing, or survival censoring variable."
+    },
+    "metastasis_2_locations": {
+      "category": "OUTCOME_PROXY",
+      "excluded_in_5b": false,
+      "status": "SUBTLE_LEAKAGE_RISK",
+      "description": "Distant metastasis locations and timing during post-treatment follow-up."
+    },
+    "days_to_metastasis_2": {
+      "category": "OUTCOME_PROXY",
+      "excluded_in_5b": false,
+      "status": "SUBTLE_LEAKAGE_RISK",
+      "description": "Distant metastasis locations and timing during post-treatment follow-up."
+    },
+    "metastasis_3_locations": {
+      "category": "OUTCOME_PROXY",
+      "excluded_in_5b": false,
+      "status": "SUBTLE_LEAKAGE_RISK",
+      "description": "Distant metastasis locations and timing during post-treatment follow-up."
+    },
+    "days_to_metastasis_3": {
+      "category": "OUTCOME_PROXY",
+      "excluded_in_5b": false,
+      "status": "SUBTLE_LEAKAGE_RISK",
+      "description": "Distant metastasis locations and timing during post-treatment follow-up."
+    },
+    "metastasis_4_locations": {
+      "category": "OUTCOME_PROXY",
+      "excluded_in_5b": false,
+      "status": "SUBTLE_LEAKAGE_RISK",
+      "description": "Distant metastasis locations and timing during post-treatment follow-up."
+    },
+    "days_to_metastasis_4": {
+      "category": "OUTCOME_PROXY",
+      "excluded_in_5b": false,
+      "status": "SUBTLE_LEAKAGE_RISK",
+      "description": "Distant metastasis locations and timing during post-treatment follow-up."
+    }
+  },
+  "key_finding": "The feature matrix X includes adjuvant treatment and progression variables (e.g., progress_1). The clinical task must be formally bounded as 'Post-Adjuvant Recurrence Risk Prediction' in the manuscript, and future iterations must exclude progression/metastasis follow-up proxies to prevent indirect leakage."
+}

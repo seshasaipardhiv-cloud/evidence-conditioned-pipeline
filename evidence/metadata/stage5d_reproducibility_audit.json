@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-08-14T18:55:13.414275+00:00",
+  "overall_reproducibility_status": "PASS",
+  "checklist": {
+    "seeds_equal_42_100_2026": "PASS",
+    "identical_patient_split_policy": "PASS",
+    "zero_patient_overlap_verified": "PASS",
+    "target_isolation_firewall_locked": "PASS",
+    "train_only_preprocessing_enforced": "PASS",
+    "smote_train_only_enforced": "PASS",
+    "test_isolation_verified": "PASS",
+    "contract_hash_verified": "PASS",
+    "pipeline_hash_verified": "PASS",
+    "compute_budget_satisfied": "PASS",
+    "execution_manifest_complete": "PASS"
+  }
+}

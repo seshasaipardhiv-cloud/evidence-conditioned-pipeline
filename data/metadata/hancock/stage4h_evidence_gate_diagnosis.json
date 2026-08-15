@@ -1,0 +1,17 @@
+{
+  "unsupported_mechanisms": [
+    "feature_representation"
+  ],
+  "incompatible_mechanisms": [
+    "feature_representation"
+  ],
+  "missing_provenance": [],
+  "invalid_baselines": [
+    "calm image and"
+  ],
+  "missing_executable_implementation": [
+    "single-modal approaches",
+    "single-modality PET"
+  ],
+  "missing_evidence_for_implementation_primitives": []
+}

@@ -1,0 +1,66 @@
+{
+  "queries": [
+    "clinical tabular feature representation",
+    "structured clinical feature encoding",
+    "EHR/tabular multimodal representation",
+    "numerical + categorical clinical feature representation",
+    "clinical recurrence prediction",
+    "clinical cancer classification",
+    "tabular oncology machine learning representation"
+  ],
+  "candidates_returned": 4,
+  "candidates": [
+    {
+      "paper_id": "paper_sim_imaging_1",
+      "title": "CNN representation for clinical recurrence",
+      "doi": "10.1234/sim.img.1",
+      "modality": "imaging",
+      "task": "classification",
+      "representation_method": "cnn_representation",
+      "evidence_sentence": "We encoded the images using a CNN representation.",
+      "section": "Methods",
+      "metric": "AUC",
+      "result": "0.85",
+      "full_text_status": "AVAILABLE"
+    },
+    {
+      "paper_id": "paper_sim_background_2",
+      "title": "Review of tabular data representations",
+      "doi": "10.1234/sim.bg.2",
+      "modality": "clinical",
+      "task": "review",
+      "representation_method": "tabular_representation",
+      "evidence_sentence": "Many studies use clinical tabular representation for EHR data.",
+      "section": "Introduction",
+      "metric": null,
+      "result": null,
+      "full_text_status": "AVAILABLE"
+    },
+    {
+      "paper_id": "paper_sim_valid_3",
+      "title": "Advanced structured clinical feature encoding for cancer recurrence",
+      "doi": "10.1234/sim.valid.3",
+      "modality": "clinical",
+      "task": "classification",
+      "representation_method": "clinical_tabular_representation",
+      "evidence_sentence": "We applied a clinical_tabular_representation to explicitly encode the numerical and categorical clinical features for recurrence prediction, achieving high performance.",
+      "section": "Results",
+      "metric": "AUC",
+      "result": "0.88",
+      "full_text_status": "AVAILABLE"
+    },
+    {
+      "paper_id": "paper_sim_duplicate_4",
+      "title": "A known paper",
+      "doi": "10.3390/bioengineering11010013",
+      "modality": "clinical",
+      "task": "classification",
+      "representation_method": "another_tabular_representation",
+      "evidence_sentence": "We encoded tabular data.",
+      "section": "Methods",
+      "metric": "AUC",
+      "result": "0.80",
+      "full_text_status": "AVAILABLE"
+    }
+  ]
+}

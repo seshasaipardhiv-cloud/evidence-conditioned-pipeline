@@ -1,0 +1,731 @@
+{
+  "search_timestamp": "2026-08-14T06:03:34.017005+00:00",
+  "total_queries": 11,
+  "queries": [
+    {
+      "family_id": "A_clinical_tabular_ml",
+      "query": "clinical tabular machine learning classification",
+      "search_source": "PubMed / NCBI",
+      "timestamp": "2026-08-14T06:03:19.039550+00:00",
+      "retrieved_pmids": [
+        "42583186",
+        "42551478",
+        "42567084",
+        "42517104"
+      ],
+      "count": 4
+    },
+    {
+      "family_id": "B_structured_clinical_variables_ml",
+      "query": "structured clinical variables machine learning cancer",
+      "search_source": "PubMed / NCBI",
+      "timestamp": "2026-08-14T06:03:20.814757+00:00",
+      "retrieved_pmids": [
+        "42594575",
+        "42590195",
+        "42567688",
+        "42564457"
+      ],
+      "count": 4
+    },
+    {
+      "family_id": "C_ehr_representation",
+      "query": "electronic health record feature representation classification",
+      "search_source": "PubMed / NCBI",
+      "timestamp": "2026-08-14T06:03:22.012310+00:00",
+      "retrieved_pmids": [
+        "42547776",
+        "42454979",
+        "42430721",
+        "42415301"
+      ],
+      "count": 4
+    },
+    {
+      "family_id": "D_clinical_feature_representation",
+      "query": "clinical feature representation cancer prediction",
+      "search_source": "PubMed / NCBI",
+      "timestamp": "2026-08-14T06:03:23.311862+00:00",
+      "retrieved_pmids": [
+        "42595261",
+        "42594139",
+        "42591753",
+        "42591559"
+      ],
+      "count": 4
+    },
+    {
+      "family_id": "E_tabular_feature_representation_cancer",
+      "query": "tabular feature representation cancer classification",
+      "search_source": "PubMed / NCBI",
+      "timestamp": "2026-08-14T06:03:25.027444+00:00",
+      "retrieved_pmids": [
+        "41577997",
+        "41558385",
+        "40596255",
+        "39819725"
+      ],
+      "count": 4
+    },
+    {
+      "family_id": "F_hnscc_clinical_ml",
+      "query": "head and neck cancer clinical machine learning prediction",
+      "search_source": "PubMed / NCBI",
+      "timestamp": "2026-08-14T06:03:26.213713+00:00",
+      "retrieved_pmids": [
+        "42593153",
+        "42577918",
+        "42577449",
+        "42572224"
+      ],
+      "count": 4
+    },
+    {
+      "family_id": "G_hnscc_recurrence_prediction",
+      "query": "head and neck cancer recurrence prediction clinical",
+      "search_source": "PubMed / NCBI",
+      "timestamp": "2026-08-14T06:03:27.554711+00:00",
+      "retrieved_pmids": [
+        "42595266",
+        "42589304",
+        "42588044",
+        "42567561"
+      ],
+      "count": 4
+    },
+    {
+      "family_id": "H_hnscc_structured_clinical",
+      "query": "head and neck cancer structured clinical data recurrence",
+      "search_source": "PubMed / NCBI",
+      "timestamp": "2026-08-14T06:03:28.645854+00:00",
+      "retrieved_pmids": [],
+      "count": 0
+    },
+    {
+      "family_id": "I_cancer_recurrence_tabular_ml",
+      "query": "cancer recurrence tabular machine learning classification",
+      "search_source": "PubMed / NCBI",
+      "timestamp": "2026-08-14T06:03:29.866806+00:00",
+      "retrieved_pmids": [
+        "41501032",
+        "36553074",
+        "32528215"
+      ],
+      "count": 3
+    },
+    {
+      "family_id": "J_clinical_variables_recurrence_classification",
+      "query": "clinical variables recurrence classification oncology",
+      "search_source": "PubMed / NCBI",
+      "timestamp": "2026-08-14T06:03:31.044570+00:00",
+      "retrieved_pmids": [
+        "42578790",
+        "42551832",
+        "42565327",
+        "42563988"
+      ],
+      "count": 4
+    },
+    {
+      "family_id": "K_multimodal_clinical_representation",
+      "query": "multimodal clinical tabular feature representation cancer",
+      "search_source": "PubMed / NCBI",
+      "timestamp": "2026-08-14T06:03:32.187848+00:00",
+      "retrieved_pmids": [
+        "42351600",
+        "42174791",
+        "42014603",
+        "41577997"
+      ],
+      "count": 4
+    }
+  ],
+  "unique_candidates_found": 38,
+  "candidates": [
+    {
+      "pmid": "41558385",
+      "doi": "10.1016/j.compbiomed.2026.111466",
+      "title": "Transformer-based feature extraction approach for hematopoietic cancer subtype classification.",
+      "publication_year": 2026,
+      "journal": "Comput Biol Med",
+      "authors": [
+        "Park KH",
+        "Lee Y",
+        "Ding W",
+        "Ryu KS",
+        "Ryu KH"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42415301",
+      "doi": "10.1002/ccd.70728",
+      "title": "Wasserstein Deep Convolutional GAN With Growth Optimizer for Multi-Modal Feature Extraction in Cardiovascular Diagnosis.",
+      "publication_year": 2026,
+      "journal": "Catheter Cardiovasc Interv",
+      "authors": [
+        "Suneetha ARVN",
+        "Sujatha K"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42430721",
+      "doi": "10.2196/91249",
+      "title": "Natural Language Processing Applied to Psychiatric Clinical Notes: Scoping Review.",
+      "publication_year": 2026,
+      "journal": "JMIR Med Inform",
+      "authors": [
+        "Rao S",
+        "Chen X",
+        "Deng G",
+        "Xie J",
+        "Jiang T"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42589304",
+      "doi": "10.3390/ijms27156649",
+      "title": "A Convergence Model of Bioelectric, Gap Junctional, and Hippo-YAP Signalling in Oral Cancer Stem Cell Maintenance.",
+      "publication_year": 2026,
+      "journal": "Int J Mol Sci",
+      "authors": [
+        "Acharya SK",
+        "Ngeow WC",
+        "Hariri F",
+        "Liew FF",
+        "Choon YF"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42595266",
+      "doi": "10.1016/j.ijrobp.2026.07.060",
+      "title": "Explainable dual-task deep learning model for recurrence prediction and dose-sensitive region identification in HNC radiotherapy.",
+      "publication_year": 2026,
+      "journal": "Int J Radiat Oncol Biol Phys",
+      "authors": [
+        "Li H",
+        "Cai J",
+        "Zhou X",
+        "Zhou L",
+        "Li Y"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42591753",
+      "doi": "10.3389/frai.2026.1837513",
+      "title": "A comparative evaluation of quantum machine learning architectures for breast cancer classification using clinical and genomic data.",
+      "publication_year": 2026,
+      "journal": "Front Artif Intell",
+      "authors": [
+        "Allena S",
+        "G S S",
+        "Chandrasekaran B"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42588044",
+      "doi": "10.3390/nu18152421",
+      "title": "Association Between the Dietary Inflammatory Index (DII) and Head and Neck Cancer Incidence-A Narrative Review.",
+      "publication_year": 2026,
+      "journal": "Nutrients",
+      "authors": [
+        "Katarzyna SK"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42567084",
+      "doi": "10.1016/j.compbiolchem.2026.109285",
+      "title": "Optimizing predictive performance in heart disease diagnosis with stacked wrapper pre-processing techniques.",
+      "publication_year": 2026,
+      "journal": "Comput Biol Chem",
+      "authors": [
+        "Sangeetha A",
+        "Rao GM"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "36553074",
+      "doi": "10.3390/diagnostics12123067",
+      "title": "Using Recurrent Neural Networks for Predicting Type-2 Diabetes from Genomic and Tabular Data.",
+      "publication_year": 2022,
+      "journal": "Diagnostics (Basel)",
+      "authors": [
+        "Srinivasu PN",
+        "Shafi J",
+        "Krishna TB",
+        "Sujatha CN",
+        "Praveen SP"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42577918",
+      "doi": "10.1111/cgf.70314",
+      "title": "L-VISP: LSTM Visualization for Interpretable Symptom Prediction in Patient Cohorts.",
+      "publication_year": 2026,
+      "journal": "Comput Graph Forum",
+      "authors": [
+        "Floricel C",
+        "Wang Y",
+        "Wentzel A",
+        "Fuller CD",
+        "Marai GE"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "41501032",
+      "doi": "10.1038/s41467-025-68108-2",
+      "title": "Perioperative tislelizumab plus lenvatinib treatment for resectable hepatocellular carcinoma at high risk of recurrence: single-arm phase II trial.",
+      "publication_year": 2026,
+      "journal": "Nat Commun",
+      "authors": [
+        "Chen L",
+        "Zhai S",
+        "Liu Y",
+        "Gong W",
+        "Fang F"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42583186",
+      "doi": "10.46292/sci25-00137",
+      "title": "The ASIA Data Science Challenge: Predicting Functional and Neurological Recovery from Acute ISNCSCI Scores.",
+      "publication_year": 2026,
+      "journal": "Top Spinal Cord Inj Rehabil",
+      "authors": [
+        "Villines J",
+        "Stirnimann R",
+        "Lukas LP",
+        "Taran O",
+        "Tuci M"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42591559",
+      "doi": "10.21037/tcr-2026-0470",
+      "title": "A weakly supervised deep learning model for OSCC diagnosis and lesion highlighting in histopathology images.",
+      "publication_year": 2026,
+      "journal": "Transl Cancer Res",
+      "authors": [
+        "Yan J",
+        "Sun L",
+        "Wang S"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42565327",
+      "doi": "10.1097/PGP.0000000000001208",
+      "title": "Folate Receptor Alpha (FR\u03b1/FOLR1) Immunohistochemical Expression Across Molecularly Classified Endometrial Carcinomas.",
+      "publication_year": 2026,
+      "journal": "Int J Gynecol Pathol",
+      "authors": [
+        "Libert D",
+        "Liang B",
+        "Zdravkovic S",
+        "McHenry A",
+        "Hammer P"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42578790",
+      "doi": "10.1148/radiol.260264",
+      "title": "Contrast-enhanced CT Radiomics for High-Grade Pattern Identification and Prognostic Stratification in Lung Adenocarcinoma with Consolidation-to-Tumor Ratio of 25% or More.",
+      "publication_year": 2026,
+      "journal": "Radiology",
+      "authors": [
+        "E J",
+        "Kang L",
+        "Liu F",
+        "Wang D",
+        "Yang J"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42593153",
+      "doi": "10.2340/actadv.v106.10.2340/adv-2026-0843",
+      "title": "Machine-learning-based Phenomapping of Patients with Keratinocyte Carcinoma: Data-driven Subgrouping by Disease Burden, Comorbidities and Socioeconomic Status.",
+      "publication_year": 2026,
+      "journal": "Acta Derm Venereol",
+      "authors": [
+        "Sieborg J",
+        "Wenande E",
+        "Nielsen ML",
+        "Nielsen M",
+        "Thein D"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "40596255",
+      "doi": "10.1038/s41598-025-06426-7",
+      "title": "A novel double machine learning approach for detecting early breast cancer using advanced feature selection and dimensionality reduction techniques.",
+      "publication_year": 2025,
+      "journal": "Sci Rep",
+      "authors": [
+        "Athisayamani S",
+        "S T",
+        "Singh AR",
+        "Hwang JY",
+        "Joshi GP"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42572224",
+      "doi": "10.1002/cam4.72084",
+      "title": "Multivariable Radiomics Model for Predicting Programmed Death-Ligand 1 Expression After Neoadjuvant Chemoradiotherapy in Esophageal Squamous Cell Carcinoma.",
+      "publication_year": 2026,
+      "journal": "Cancer Med",
+      "authors": [
+        "Do Jung H",
+        "Lee TH",
+        "Kim BH",
+        "Lee HS",
+        "Son J"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42595261",
+      "doi": "10.1016/j.ijrobp.2026.07.061",
+      "title": "Leveraging Inter-Radiomic Feature Relationships for Enhanced Prediction of Distant Metastasis and Characterization of Heterogeneity in Head and Neck Cancer.",
+      "publication_year": 2026,
+      "journal": "Int J Radiat Oncol Biol Phys",
+      "authors": [
+        "Hou R",
+        "Shen Y",
+        "Zhang C",
+        "Islam MT",
+        "Zhu X"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42014603",
+      "doi": "10.1038/s41598-026-48666-1",
+      "title": "Multimodal survival analysis of glioblastoma using whole-slide histopathology, gene expression, clinical variables and language-model-derived mutation features.",
+      "publication_year": 2026,
+      "journal": "Sci Rep",
+      "authors": [
+        "Wang T",
+        "Alfaro J",
+        "Brennan PM",
+        "Rajan A"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42567688",
+      "doi": "10.2196/81066",
+      "title": "Human-AI Interaction With AI-Assisted Tumor Overlays in Pediatric Whole-Body Magnetic Resonance Imaging: Exploratory Reader Study.",
+      "publication_year": 2026,
+      "journal": "JMIR Hum Factors",
+      "authors": [
+        "Moturu A",
+        "Komolafe O",
+        "Joshi S",
+        "Doria AS",
+        "Goldenberg A"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42564457",
+      "doi": "10.3389/frai.2026.1760912",
+      "title": "From mechanistic models to artificial intelligence: exploring the potential of digital twins in geriatric oncology.",
+      "publication_year": 2026,
+      "journal": "Front Artif Intell",
+      "authors": [
+        "Karampelesis P",
+        "Denazis S",
+        "Koufopavlou O",
+        "Zacharaki EI"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "39819725",
+      "doi": "10.12122/j.issn.1673-4254.2025.01.20",
+      "title": "A multi-constraint representation learning model for identification of ovarian cancer with missing laboratory indicators.",
+      "publication_year": 2025,
+      "journal": "Nan Fang Yi Ke Da Xue Xue Bao",
+      "authors": [
+        "Lu Z",
+        "Huang F",
+        "Cai G",
+        "Liu J",
+        "Zhen X"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42547776",
+      "doi": "10.1038/s41598-026-48044-x",
+      "title": "Precision pharmacology: deep learning infused ontological framework with E-GRU enhancement for tailored medicine prescriptions.",
+      "publication_year": 2026,
+      "journal": "Sci Rep",
+      "authors": [
+        "Khalingarajah H",
+        "Vasudevan A",
+        "Abinaya P",
+        "Manonmani T",
+        "Raja N"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42517104",
+      "doi": "10.3389/fpubh.2026.1847173",
+      "title": "Identification of hidden subtypes in occupational health examinations and their biomedical characteristics using graph-enhanced deep representation learning.",
+      "publication_year": 2026,
+      "journal": "Front Public Health",
+      "authors": [
+        "Wang Z",
+        "Chen X",
+        "Xiang W",
+        "Wang Y",
+        "Sun Y"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42590195",
+      "doi": "10.3390/jcm15156094",
+      "title": "Explainable Machine Learning for Detecting Pancreatic Cancer from Structured Endoscopic Ultrasound Data: A Retrospective Multicenter Observational Study.",
+      "publication_year": 2026,
+      "journal": "J Clin Med",
+      "authors": [
+        "Zignani N",
+        "Balzarini M",
+        "Lopiano G",
+        "Campagner A",
+        "Dabizzi E"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42563988",
+      "doi": "10.3389/fendo.2026.1879290",
+      "title": "Acidophil stem cell-like pituitary neuroendocrine tumors with heterogeneous PIT1/SF1 or LH lineage-marker expression: a clinicopathological study of three cases.",
+      "publication_year": 2026,
+      "journal": "Front Endocrinol (Lausanne)",
+      "authors": [
+        "Zheng H",
+        "Yang X",
+        "Zhang M",
+        "Chen W"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42174791",
+      "doi": "10.3233/SHTI260114",
+      "title": "Colorectal Cancer Survival Prediction Using Multimodal Fusion.",
+      "publication_year": 2026,
+      "journal": "Stud Health Technol Inform",
+      "authors": [
+        "Shulajkovska M",
+        "Jelenc M",
+        "Jonnagaddala J",
+        "Gradi\u0161ek A"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42551478",
+      "doi": "10.1080/01616412.2026.2712459",
+      "title": "Multi-class severity classification of peripheral nerve impairment using multimodal electrodiagnostic features and explainable machine learning.",
+      "publication_year": 2026,
+      "journal": "Neurol Res",
+      "authors": [
+        "Almakadi AS",
+        "Alnemari DS",
+        "Alsahafi NT",
+        "Almutairi SN",
+        "Sadik SM"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42454979",
+      "doi": "10.1093/jamia/ocag113",
+      "title": "Medical code embeddings from claims-based co-occurrences: a unified semantic space for ICD-10 diagnoses and ATC medications.",
+      "publication_year": 2026,
+      "journal": "J Am Med Inform Assoc",
+      "authors": [
+        "Faujour C",
+        "Bou\u00e9e S",
+        "Emery C",
+        "Jannot AS"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42551832",
+      "doi": "10.1016/j.modpat.2026.101052",
+      "title": "CTNNB1-Driven Tumors of the Testis and Ovary: A Unifying Concept.",
+      "publication_year": 2026,
+      "journal": "Mod Pathol",
+      "authors": [
+        "Michalova K",
+        "Acosta AM",
+        "Martinek P",
+        "Grendar M",
+        "Oliva E"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "41577997",
+      "doi": "10.1038/s43856-025-01334-3",
+      "title": "Hybrid deep learning framework MedFusionNet assists multilabel biomedical risk stratification from imaging and tabular data.",
+      "publication_year": 2026,
+      "journal": "Commun Med (Lond)",
+      "authors": [
+        "Gorbachev S",
+        "Dixit A",
+        "Mani A",
+        "Wang Z"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42594139",
+      "doi": "10.1371/journal.pone.0345854",
+      "title": "Shedding light on neural learning to rank models for anticancer drug prioritization.",
+      "publication_year": 2026,
+      "journal": "PLoS One",
+      "authors": [
+        "Sarmeili F",
+        "Ghahremani-Nezhad B",
+        "Khalilpour M",
+        "Abbasi K",
+        "Dinarvand R"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42577449",
+      "doi": "10.3389/fendo.2026.1875494",
+      "title": "Integrative profiling of diverse post-translational modifications for prognostic stratification and personalized therapy in papillary thyroid cancer.",
+      "publication_year": 2026,
+      "journal": "Front Endocrinol (Lausanne)",
+      "authors": [
+        "Wang K",
+        "Li F",
+        "Zhou Y",
+        "Zhang D",
+        "Fu Y"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42594575",
+      "doi": "10.1016/j.compbiolchem.2026.109315",
+      "title": "Exploring conformational dynamics of the HER2 DFG-flip using machine-learning-guided metadynamics for type II inhibitor design.",
+      "publication_year": 2026,
+      "journal": "Comput Biol Chem",
+      "authors": [
+        "Ismail MI",
+        "Adel M",
+        "Dokla EME",
+        "Mohamady S",
+        "Elgabarty H"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42351600",
+      "doi": "10.3390/diagnostics16121941",
+      "title": "Data-Efficient and Explainable Multimodal Survival Prediction in NSCLC Using Deep Image Embeddings, Clinical Variables, and Gradient-Boosted Trees.",
+      "publication_year": 2026,
+      "journal": "Diagnostics (Basel)",
+      "authors": [
+        "Sahin S",
+        "Karacor AG"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "32528215",
+      "doi": "10.1117/12.2549389",
+      "title": "Siamese neural networks for the classification of high-dimensional radiomic features.",
+      "publication_year": 2020,
+      "journal": "Proc SPIE Int Soc Opt Eng",
+      "authors": [
+        "Mahajan A",
+        "Dormer J",
+        "Li Q",
+        "Chen D",
+        "Zhang Z"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    },
+    {
+      "pmid": "42567561",
+      "doi": "10.1136/jitc-2026-015585",
+      "title": "Circulating B cell and T cell activation states predict clinical outcomes in melanoma and reveal dynamic immune reinvigoration with checkpoint inhibitor immunotherapy.",
+      "publication_year": 2026,
+      "journal": "J Immunother Cancer",
+      "authors": [
+        "Booth L",
+        "Adams R",
+        "Clifford A",
+        "Aguilar F",
+        "Ali N"
+      ],
+      "retrieval_source": "PubMed / NCBI",
+      "retrieval_timestamp": "2026-08-14T06:03:34.017005+00:00"
+    }
+  ]
+}

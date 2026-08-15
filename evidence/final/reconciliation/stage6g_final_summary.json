@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-08-14T18:55:35.895814+00:00",
+  "stage": "STAGE 6G \u2014 SCIENTIFIC IMPLEMENTATION\u2013MANUSCRIPT RECONCILIATION AUDIT",
+  "overall_reconciliation_decision": "MANUSCRIPT_ONLY_RECONCILIATION",
+  "decision_justification": "The empirical execution in Stage 5B is fully deterministic, reproducible, and mathematically valid, achieving 0.9751 ROC-AUC under median imputation, one-hot encoding, SMOTE, and regularized XGBoost. The primary scientific defects are purely descriptive: (1) labeling median imputation as MICE, (2) failing to explicitly state that cross-attention/ensembling were dormant during unimodal benchmarking, (3) omitting the exact post-adjuvant prediction epoch, and (4) framing the MLP baseline as a competitive deep learner. Because scientific integrity demands reporting what was ACTUALLY executed rather than retraining to fit a narrative, a rigorous manuscript-level reconciliation is the correct, honest, and scientifically sound path.",
+  "forensic_findings_summary": {
+    "executed_components": "6 / 8",
+    "dormant_components": 2,
+    "implementation_mismatches": 1,
+    "temporal_epoch": "Post-Adjuvant Therapy Completion (Predicting subsequent recurrence given adjuvant regimen)",
+    "mlp_fairness": "UNDER_TRAINED_STRAWMAN",
+    "immutability_status": "VERIFIED_ZERO_MUTATION"
+  },
+  "exact_action_plan": [
+    "1. Update methodology.md and final_research_paper.md to accurately document SimpleImputer(median/mode) as the implemented imputer.",
+    "2. Explicitly document cross_attention and average_ensembling as taxonomy-level capabilities that were DORMANT during unimodal tabular benchmarking.",
+    "3. Formally specify the clinical prediction epoch as 'Post-Adjuvant Recurrence Risk Prediction' in Section 4.1.",
+    "4. Tone down the MLP baseline comparison, clarifying that max_iter=10 represents a shallow reference comparator.",
+    "5. Maintain all existing Stage 5B/5C numerical results (ROC-AUC 0.9751, deltas, ablations) with 100% fidelity."
+  ]
+}

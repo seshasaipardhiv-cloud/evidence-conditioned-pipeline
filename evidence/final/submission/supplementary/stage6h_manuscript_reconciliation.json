@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-08-14T18:55:35.979053+00:00",
+  "status": "RECONCILIATION_COMPLETE",
+  "reconciled_areas": {
+    "imputation": "Univariate median/mode imputation documented as the operational tabular executor, clarifying MICE/MissForest as the taxonomy component family.",
+    "multimodal_dormancy": "cross_attention and average_ensembling designated as EVIDENCE_BACKED_BUT_DORMANT during unimodal tabular evaluation.",
+    "temporal_epoch": "Formally defined as Post-Adjuvant Recurrence Risk Prediction with explicit prospective leakage caveats for progress_1.",
+    "mlp_baseline": "Shallow MLP explicitly framed as an undertrained minimal reference baseline (max_iter=10).",
+    "ablations": "Preserved exact numerical findings and reinforced that evidence validity != empirical dataset optimality.",
+    "related_work": "Expanded around AutoML, TRIPOD+AI, PROBAST, and clinical data leakage without fabricating citations."
+  }
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "paper_id": "paper_10.1038_s42256-023-00633-5",
+    "field_name": "fusion_strategy",
+    "extracted_value": "late_fusion",
+    "source_sentence": "A major decision that must be made is at what specific modelling stage the data fusion takes place: (i) early, (ii) intermediate or (iii) late (",
+    "source_location": "unstructured",
+    "classification": "GENUINE_EXTRACTION_ERROR",
+    "explanation": "The sentence is merely defining the types of fusion strategies that exist, not declaring which one the paper actually uses. The extractor failed to distinguish between a general description and a methodological claim.",
+    "correct_value_if_needed": "early_fusion"
+  },
+  {
+    "paper_id": "paper_10.3390_bioengineering11010013",
+    "field_name": "task",
+    "extracted_value": "classification",
+    "source_sentence": "In recent years, advanced deep learning (DL) models have come forth for various computer vision tasks in medical image analysis.",
+    "source_location": "unstructured",
+    "classification": "PARTIALLY_CORRECT",
+    "explanation": "The paper is indeed predicting HPV status which is a classification/diagnosis task. The word 'classification' is scientifically acceptable here, though the gold standard used 'diagnosis'. However, the source sentence itself is a background sentence, making the provenance weak.",
+    "correct_value_if_needed": "diagnosis"
+  },
+  {
+    "paper_id": "paper_10.3390_bioengineering11010013",
+    "field_name": "baselines",
+    "extracted_value": ["single-modality PET", "traditional 2D models"],
+    "source_sentence": "The experimental results demonstrate that the multi-modal ensemble model with soft voting outperformed single-modality PET/CT... Our models outperformed traditional 2D models significantly...",
+    "source_location": "unstructured",
+    "classification": "GOLD_STANDARD_ERROR",
+    "explanation": "The paper explicitly compares against 'single-modality PET/CT' and 'traditional 2D models' in the results. The gold standard erroneously listed 'None' for baselines.",
+    "correct_value_if_needed": ["single-modality PET/CT", "traditional 2D models"]
+  },
+  {
+    "paper_id": "paper_10.3390_bioengineering11010013",
+    "field_name": "fusion_strategy",
+    "extracted_value": "ensemble_fusion",
+    "source_sentence": "The experimental results demonstrate that the multi-modal ensemble model with soft voting outperformed...",
+    "source_location": "unstructured",
+    "classification": "PARTIALLY_CORRECT",
+    "explanation": "The paper uses an ensemble model (soft voting), which the extractor maps to 'ensemble_fusion'. The gold standard calls it 'gated_fusion'. Given the text says 'ensemble model with soft voting', 'ensemble_fusion' is actually a highly accurate description.",
+    "correct_value_if_needed": "ensemble_fusion"
+  },
+  {
+    "paper_id": "paper_38396486",
+    "field_name": "dataset",
+    "extracted_value": "Head-Neck-PET-CT",
+    "source_sentence": "HNC data were collected from seven different centers: The Head-Neck-PET-CT dataset included 296 patients from four centers in Canada...",
+    "source_location": "unstructured",
+    "classification": "GOLD_STANDARD_ERROR",
+    "explanation": "The paper explicitly names 'Head-Neck-PET-CT' as the dataset. The gold standard erroneously listed None.",
+    "correct_value_if_needed": "Head-Neck-PET-CT"
+  },
+  {
+    "paper_id": "paper_38396486",
+    "field_name": "baselines",
+    "extracted_value": ["single-modal approaches"],
+    "source_sentence": "...while the combination of PET and CT modalities consistently outperformed single-modal approaches.",
+    "source_location": "unstructured",
+    "classification": "GOLD_STANDARD_ERROR",
+    "explanation": "The text explicitly states it outperformed 'single-modal approaches'. The extractor correctly identified this as a baseline comparator. The gold standard listed None.",
+    "correct_value_if_needed": ["single-modal approaches"]
+  },
+  {
+    "paper_id": "paper_39074400",
+    "field_name": "baselines",
+    "extracted_value": ["unimodal analysis", "late fusion in", "clinical and MRI-only"],
+    "source_sentence": "Multimodal AI (combining DL suspicion levels and clinical parameters) outperforms clinical and MRI-only AI for csPCa detection.",
+    "source_location": "unstructured",
+    "classification": "GOLD_STANDARD_ERROR",
+    "explanation": "The paper explicitly compares multimodal against 'clinical and MRI-only AI' and 'unimodal analysis'. The extractor correctly found these comparators. The gold standard listed None.",
+    "correct_value_if_needed": ["unimodal analysis", "clinical and MRI-only AI"]
+  },
+  {
+    "paper_id": "paper_40325104",
+    "field_name": "baselines",
+    "extracted_value": ["unimodal models across", "unimodal models of"],
+    "source_sentence": "Performance of multimodal versus unimodal models across different cancer types... Performance of multimodal models (FUSED) versus unimodal models of each modality...",
+    "source_location": "unstructured",
+    "classification": "GOLD_STANDARD_ERROR",
+    "explanation": "The paper explicitly compares against 'unimodal models'. The extractor correctly identified this, though the regex captured trailing prepositions ('across', 'of'). The gold standard listed None.",
+    "correct_value_if_needed": ["unimodal models"]
+  },
+  {
+    "paper_id": "paper_41131352",
+    "field_name": "baselines",
+    "extracted_value": ["single-modality embeddings for", "clinical embeddings alone"],
+    "source_sentence": "Performance of multimodal fusion strategies vs. single-modality embeddings... While concatenation generally yielded the best multimodal performance, it did not consistently outperform clinical embeddings alone.",
+    "source_location": "unstructured",
+    "classification": "GOLD_STANDARD_ERROR",
+    "explanation": "The paper explicitly compares against 'single-modality embeddings' and 'clinical embeddings alone'. The gold standard only listed PORPOISE, missing these ablation/unimodal baselines.",
+    "correct_value_if_needed": ["PORPOISE", "single-modality embeddings", "clinical embeddings alone"]
+  },
+  {
+    "paper_id": "paper_41353186",
+    "field_name": "dataset",
+    "extracted_value": "KHMC-HNSC",
+    "source_sentence": "To assess the generalizability of CALM to in-house data, we evaluated it on the KHMC-HNSC cohort.",
+    "source_location": "unstructured",
+    "classification": "GOLD_STANDARD_ERROR",
+    "explanation": "The paper explicitly uses KHMC-HNSC as an external validation cohort. The gold standard only listed TCGA. The extractor correctly found the external dataset.",
+    "correct_value_if_needed": "TCGA and KHMC-HNSC"
+  },
+  {
+    "paper_id": "paper_41353186",
+    "field_name": "baselines",
+    "extracted_value": ["calm image and", "multi-modal integration", "PORPOISE in LIHC"],
+    "source_sentence": "Comparison of porpoise (omics-only and image and omics) vs calm image and text models... To evaluate the effect of uni-modal versus multi-modal integration...",
+    "source_location": "unstructured",
+    "classification": "PARTIALLY_CORRECT",
+    "explanation": "It successfully found PORPOISE (though with trailing 'in LIHC') and found internal ablation comparators (uni-modal). The gold standard only had 'PORPOISE'. The extractor is capturing real comparators, albeit somewhat noisily.",
+    "correct_value_if_needed": ["PORPOISE", "uni-modal integration"]
+  }
+]

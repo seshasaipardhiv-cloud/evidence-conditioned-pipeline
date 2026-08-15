@@ -1,0 +1,108 @@
+{
+  "target_variable": "recurrence",
+  "missing_target_policy": "exclude_from_supervised_analysis",
+  "splits": [
+    {
+      "seed": 42,
+      "train_patient_count": 496,
+      "validation_patient_count": 115,
+      "test_patient_count": 152,
+      "train_patient_hash": "60efbd5890a052036a60156adbe6e6a29111400aca2073b886e97a090db88cab",
+      "validation_patient_hash": "b12e8c8c48a3f3ca47cc3b89cc490e556e4cfc05b6bf13e8f6eab8bc11588dbf",
+      "test_patient_hash": "817d0709b93f9e678a36ffa0ca1acab10082c61bd517bc0df02773bf6e23c149",
+      "overlap_counts": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      },
+      "target_distribution": {
+        "train": {
+          "yes": 115,
+          "no": 381,
+          "missing": 0,
+          "recurrence_rate": 0.2318548387096774
+        },
+        "validation": {
+          "yes": 27,
+          "no": 88,
+          "missing": 0,
+          "recurrence_rate": 0.23478260869565218
+        },
+        "test": {
+          "yes": 35,
+          "no": 117,
+          "missing": 0,
+          "recurrence_rate": 0.23026315789473684
+        }
+      }
+    },
+    {
+      "seed": 100,
+      "train_patient_count": 496,
+      "validation_patient_count": 115,
+      "test_patient_count": 152,
+      "train_patient_hash": "8b22c90f0d28e361b61572b58dfc96a53eb3da579acf104e21ae0771a3ef5db7",
+      "validation_patient_hash": "bd93efa1a99b3f17939d7c5b5a8f414ba9d1e04a3c4fba08d1b7141b99b47d8e",
+      "test_patient_hash": "955a234c1cb4b9246bb79aee4377abf0af17e3adf0c6d45bc29fff2682f0dbac",
+      "overlap_counts": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      },
+      "target_distribution": {
+        "train": {
+          "yes": 115,
+          "no": 381,
+          "missing": 0,
+          "recurrence_rate": 0.2318548387096774
+        },
+        "validation": {
+          "yes": 27,
+          "no": 88,
+          "missing": 0,
+          "recurrence_rate": 0.23478260869565218
+        },
+        "test": {
+          "yes": 35,
+          "no": 117,
+          "missing": 0,
+          "recurrence_rate": 0.23026315789473684
+        }
+      }
+    },
+    {
+      "seed": 2026,
+      "train_patient_count": 496,
+      "validation_patient_count": 115,
+      "test_patient_count": 152,
+      "train_patient_hash": "a55bfb4d715ceb6e470cc13d56405d4e7769258e50c95fff33a5169b449d73db",
+      "validation_patient_hash": "ac4c35a90d7dc8e2762fe369b4ffa76a02404502a599ad78674f51eb0ca2387c",
+      "test_patient_hash": "e493869ee72afa3b8a20cf90333db20d722acd2de8aa5363cdcc65005f101006",
+      "overlap_counts": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+      },
+      "target_distribution": {
+        "train": {
+          "yes": 115,
+          "no": 381,
+          "missing": 0,
+          "recurrence_rate": 0.2318548387096774
+        },
+        "validation": {
+          "yes": 27,
+          "no": 88,
+          "missing": 0,
+          "recurrence_rate": 0.23478260869565218
+        },
+        "test": {
+          "yes": 35,
+          "no": 117,
+          "missing": 0,
+          "recurrence_rate": 0.23026315789473684
+        }
+      }
+    }
+  ]
+}

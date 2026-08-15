@@ -1,0 +1,19 @@
+[
+  {
+    "mechanism": "clinical_tabular_representation",
+    "paper_id": "paper_sim_valid_3",
+    "proposed_method": "",
+    "task": "classification",
+    "modalities": [
+      "clinical"
+    ],
+    "source_sentence": "",
+    "source_section": "Results",
+    "metric": "",
+    "result": "",
+    "evidence_status": "SUPPORTED",
+    "provenance": "prov_stage2d_6d46a0ed",
+    "compatibility_with_hancock": "SUPPORTED_AND_COMPATIBLE",
+    "reason": "Compatible tabular/clinical representation"
+  }
+]

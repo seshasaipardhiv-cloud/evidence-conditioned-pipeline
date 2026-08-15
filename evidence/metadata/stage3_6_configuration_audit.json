@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-08-14T06:55:28.069003+00:00",
+  "config_path": "experiment_config.json",
+  "config_hash": "5460af736047a945b7c25a20f93ac84b55a998b44fcd77c9722b9b53bc342aa9",
+  "all_components_resolved": true,
+  "unresolved_components": [],
+  "categorical_encoding_audit": {
+    "selected_value": "one_hot_encoding",
+    "configuration_source": "explicit_project_configuration",
+    "classification": "EXPLICITLY_CONFIGURED",
+    "valid": true,
+    "target_leakage_prevented": true,
+    "train_only_fit_enforced": true
+  },
+  "loss_function_audit": {
+    "selected_value": "binary_logistic",
+    "configuration_source": "explicit_project_configuration",
+    "classification": "EXPLICITLY_CONFIGURED",
+    "valid": true,
+    "compatible_with_xgboost": true,
+    "compatible_with_binary_recurrence": true
+  },
+  "safety_firewalls": {
+    "target_leakage_secure": true,
+    "preprocessing_train_only": true,
+    "patient_level_split_verified": true,
+    "zero_model_fitting": true
+  }
+}

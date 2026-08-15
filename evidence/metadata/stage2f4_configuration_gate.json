@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-08-14T06:42:49.121874+00:00",
+  "overall_gate_status": "GATE_BLOCKED",
+  "training_allowed": false,
+  "primitive_gate_statuses": {
+    "missing_value_handling": "PASS_EVIDENCE",
+    "categorical_encoding": "BLOCKED_UNSUPPORTED",
+    "base_learner": "PASS_EVIDENCE",
+    "loss_function": "BLOCKED_UNSUPPORTED",
+    "imbalance_handling": "PASS_EVIDENCE"
+  },
+  "blocked_primitives": [
+    "categorical_encoding",
+    "loss_function"
+  ],
+  "safety_firewalls": {
+    "target_leakage_protected": true,
+    "preprocessing_train_only": true,
+    "no_inferred_defaults": true,
+    "zero_model_fitting": true
+  }
+}
