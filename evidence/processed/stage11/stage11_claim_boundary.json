@@ -1,0 +1,26 @@
+{
+  "Claim 1: The framework transfers across different dataset schemas.": {
+    "verdict": "SUPPORTED",
+    "evidence": "Executed across 7 distinct schemas with unique column names and sample IDs without hardcoding."
+  },
+  "Claim 2: The framework adapts to different modality combinations.": {
+    "verdict": "SUPPORTED",
+    "evidence": "Successfully discovered, preprocessed, and fused all 7 modality combinations (tabular, image, text, and bimodal/trimodal combinations)."
+  },
+  "Claim 3: Evidence changes model selection.": {
+    "verdict": "SUPPORTED",
+    "evidence": "Evidence perturbation audit confirmed architecture ranking shifts when evidence profiles and compute budgets change."
+  },
+  "Claim 4: Evidence-conditioned selection consistently improves predictive performance.": {
+    "verdict": "PARTIALLY_SUPPORTED",
+    "evidence": "Gains depend on dataset modality alignment and sample size; not universally superior across all toy synthetic distributions."
+  },
+  "Claim 5: The framework can construct multimodal pipelines without manual model specification.": {
+    "verdict": "SUPPORTED",
+    "evidence": "End-to-end synthesizer generated executable neural graphs given only dataset inputs and target labels."
+  },
+  "Claim 6: The framework generalizes clinically.": {
+    "verdict": "NOT_SUPPORTED",
+    "evidence": "Experiments represent controlled transfer demonstrations; real clinical deployment requires prospective multi-center trials and regulatory validation."
+  }
+}

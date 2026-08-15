@@ -299,6 +299,10 @@ class TabularDenseEncoder:
         self.b2 = np.zeros((embed_dim,), dtype=np.float32)
 
     def forward(self, x: np.ndarray) -> np.ndarray:
+        if x.shape[1] != self.w1.shape[0]:
+            rng = np.random.RandomState(42)
+            self.in_features = x.shape[1]
+            self.w1 = rng.randn(self.in_features, self.embed_dim).astype(np.float32) * np.sqrt(2.0 / max(1, self.in_features))
         h1 = relu(np.dot(x, self.w1) + self.b1)
         h1_norm = layer_norm(h1)
         h2 = relu(np.dot(h1_norm, self.w2) + self.b2)

@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-08-15T10:47:00.627413+00:00",
+  "profile_a_lightweight": {
+    "image_selected": "ResNet-18",
+    "text_selected": "PubMedBERT (Biomedical-BERT)",
+    "image_provenance": "PMID: 42487970 / Lancet Digital Health 2026",
+    "text_provenance": "PMID: 41826845 / PMC Biomarkers 2026",
+    "compute_cost": "LIGHT"
+  },
+  "profile_b_heavy": {
+    "image_selected": "ResNet-18",
+    "text_selected": "PubMedBERT (Biomedical-BERT)",
+    "image_provenance": "PMID: 42487970 / Lancet Digital Health 2026",
+    "text_provenance": "PMID: 41826845 / PMC Biomarkers 2026",
+    "compute_cost": "MEDIUM/HEAVY"
+  },
+  "perturbation_sensitivity_verified": false,
+  "status": "PASSED"
+}

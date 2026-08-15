@@ -1,0 +1,77 @@
+{
+  "status": "DISCOVERED",
+  "detected_modalities": [
+    "tabular",
+    "image",
+    "text"
+  ],
+  "sample_count": 40,
+  "identifier_field": "subject_identifier",
+  "target_field": "outcome_endpoint",
+  "tabular_features": {
+    "numerical": [
+      "biomarker_alpha",
+      "clinical_score_beta"
+    ],
+    "categorical": [],
+    "total_tabular_count": 2
+  },
+  "image_modality": {
+    "available": true,
+    "count": 40,
+    "sample_ids_with_images": [
+      "COHORT_G_TRIMODAL_PT_000",
+      "COHORT_G_TRIMODAL_PT_001",
+      "COHORT_G_TRIMODAL_PT_002",
+      "COHORT_G_TRIMODAL_PT_003",
+      "COHORT_G_TRIMODAL_PT_004",
+      "COHORT_G_TRIMODAL_PT_005",
+      "COHORT_G_TRIMODAL_PT_006",
+      "COHORT_G_TRIMODAL_PT_007",
+      "COHORT_G_TRIMODAL_PT_008",
+      "COHORT_G_TRIMODAL_PT_009"
+    ],
+    "total_valid_images": 40
+  },
+  "text_modality": {
+    "available": true,
+    "count": 40,
+    "text_fields": [
+      "raw_text"
+    ],
+    "sample_ids_with_text": [
+      "COHORT_G_TRIMODAL_PT_000",
+      "COHORT_G_TRIMODAL_PT_001",
+      "COHORT_G_TRIMODAL_PT_002",
+      "COHORT_G_TRIMODAL_PT_003",
+      "COHORT_G_TRIMODAL_PT_004",
+      "COHORT_G_TRIMODAL_PT_005",
+      "COHORT_G_TRIMODAL_PT_006",
+      "COHORT_G_TRIMODAL_PT_007",
+      "COHORT_G_TRIMODAL_PT_008",
+      "COHORT_G_TRIMODAL_PT_009"
+    ]
+  },
+  "missingness": {
+    "tabular": {},
+    "image": {
+      "unresolved_images": 0
+    },
+    "text": {
+      "missing_texts": 0
+    }
+  },
+  "modality_mappings": {
+    "total_unique_samples": 40,
+    "samples_with_tabular": 40,
+    "samples_with_image": 40,
+    "samples_with_text": 40,
+    "complete_multimodal_samples": 40
+  },
+  "unresolved_fields": [],
+  "reason": "Successfully discovered modalities: tabular, image, text for 40 samples.",
+  "metadata": {
+    "discovery_timestamp": "2026-08-15T10:44:19.109012+00:00",
+    "multimodal_ready": true
+  }
+}

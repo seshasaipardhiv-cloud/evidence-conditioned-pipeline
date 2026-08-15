@@ -146,15 +146,23 @@ class TextModelSelector:
                 score += 0.5
 
             # Domain compatibility matching
-            if any(d in cand["domain_compatibility"] for d in [domain_type, "biomedical", "clinical"]):
-                score += 1.2
+            if domain_type in cand["domain_compatibility"]:
+                score += 1.5
+            elif any(d in cand["domain_compatibility"] for d in ["biomedical", "clinical"]):
+                score += 0.8
 
             # Task compatibility matching
-            if any(t in cand["task_compatibility"] for t in [task_type, "binary_classification"]):
-                score += 1.0
+            if task_type in cand["task_compatibility"]:
+                score += 1.2
+            elif "binary_classification" in cand["task_compatibility"]:
+                score += 0.6
 
-            # Lightweight efficiency bonus under LIGHT budget
-            if compute_budget.upper() == "LIGHT" and cand["compute_cost"] == "LIGHT":
+            # Budget alignment
+            if compute_budget.upper() == "HEAVY" and cand["compute_cost"] in ["HEAVY", "MEDIUM"]:
+                score += 1.5
+            elif compute_budget.upper() == "MEDIUM" and cand["compute_cost"] == "MEDIUM":
+                score += 1.2
+            elif compute_budget.upper() == "LIGHT" and cand["compute_cost"] == "LIGHT":
                 score += 1.0
 
             scored_candidates.append({

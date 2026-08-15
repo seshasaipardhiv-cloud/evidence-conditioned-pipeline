@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-08-15T10:44:27.347481+00:00",
+  "overall_status": "PASSED",
+  "scenarios": {
+    "missing_image_handled": {
+      "status": "SAFE_ZERO_FALLBACK",
+      "passed": true
+    },
+    "corrupt_image_handled": {
+      "status": "SAFE_CORRUPTION_DETECTION",
+      "passed": true
+    },
+    "empty_and_none_text_handled": {
+      "status": "SAFE_PAD_FALLBACK",
+      "passed": true
+    },
+    "patient_overlap_firewall": {
+      "status": "REJECTED_OVERLAP",
+      "passed": true
+    }
+  }
+}

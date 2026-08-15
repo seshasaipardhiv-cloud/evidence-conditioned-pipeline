@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-15T10:44:27.348990+00:00",
+  "seeds_evaluated": [
+    42,
+    100,
+    2026
+  ],
+  "deterministic_reproducibility_verified": true,
+  "zero_patient_overlap_all_cohorts": true
+}

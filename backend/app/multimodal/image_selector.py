@@ -179,15 +179,21 @@ class ImageModelSelector:
                 score += 0.5
 
             # Task compatibility matching
-            if any(t in cand["task_compatibility"] for t in [task_type, "binary_classification"]):
-                score += 1.0
+            if task_type in cand["task_compatibility"]:
+                score += 1.2
+            elif "binary_classification" in cand["task_compatibility"]:
+                score += 0.6
 
             # Modality matching
-            if any(m in cand["modality_compatibility"] for m in subtypes):
-                score += 1.0
+            matched_mods = sum(1 for m in subtypes if m in cand["modality_compatibility"])
+            score += matched_mods * 0.8
 
-            # Efficiency bonus under LIGHT budget
-            if compute_budget.upper() == "LIGHT" and cand["compute_cost"] == "LIGHT":
+            # Budget alignment
+            if compute_budget.upper() == "HEAVY" and cand["compute_cost"] in ["HEAVY", "MEDIUM"]:
+                score += 1.5
+            elif compute_budget.upper() == "MEDIUM" and cand["compute_cost"] == "MEDIUM":
+                score += 1.2
+            elif compute_budget.upper() == "LIGHT" and cand["compute_cost"] == "LIGHT":
                 score += 1.0
 
             scored_candidates.append({

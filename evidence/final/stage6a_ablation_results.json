@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-15T10:39:56.280056+00:00",
+  "timestamp": "2026-08-15T10:56:14.549904+00:00",
   "target_task": "recurrence_classification",
   "reference_candidate_roc_auc": 0.9751,
   "ablations": {
