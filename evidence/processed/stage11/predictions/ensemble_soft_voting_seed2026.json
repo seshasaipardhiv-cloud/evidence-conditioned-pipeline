@@ -1,0 +1,1370 @@
+[
+  {
+    "patient_id": "001",
+    "true_label": 0,
+    "predicted_probability": 0.01054,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "002",
+    "true_label": 0,
+    "predicted_probability": 0.00714,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "003",
+    "true_label": 0,
+    "predicted_probability": 0.01177,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "004",
+    "true_label": 0,
+    "predicted_probability": 0.0089,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "005",
+    "true_label": 0,
+    "predicted_probability": 0.02839,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "006",
+    "true_label": 0,
+    "predicted_probability": 0.00237,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "007",
+    "true_label": 0,
+    "predicted_probability": 0.00288,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "008",
+    "true_label": 1,
+    "predicted_probability": 0.99675,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "009",
+    "true_label": 0,
+    "predicted_probability": 0.00696,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "010",
+    "true_label": 0,
+    "predicted_probability": 0.04399,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "011",
+    "true_label": 0,
+    "predicted_probability": 0.00277,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "012",
+    "true_label": 0,
+    "predicted_probability": 0.00673,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "013",
+    "true_label": 0,
+    "predicted_probability": 0.02483,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "014",
+    "true_label": 0,
+    "predicted_probability": 0.01564,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "015",
+    "true_label": 0,
+    "predicted_probability": 0.00696,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "016",
+    "true_label": 0,
+    "predicted_probability": 0.00312,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "017",
+    "true_label": 1,
+    "predicted_probability": 0.00763,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "018",
+    "true_label": 1,
+    "predicted_probability": 0.97027,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "019",
+    "true_label": 0,
+    "predicted_probability": 0.0047,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "020",
+    "true_label": 0,
+    "predicted_probability": 0.00764,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "021",
+    "true_label": 0,
+    "predicted_probability": 0.07781,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "022",
+    "true_label": 0,
+    "predicted_probability": 0.00554,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "023",
+    "true_label": 0,
+    "predicted_probability": 0.01047,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "024",
+    "true_label": 1,
+    "predicted_probability": 0.99098,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "025",
+    "true_label": 0,
+    "predicted_probability": 0.01023,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "026",
+    "true_label": 0,
+    "predicted_probability": 0.00695,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "027",
+    "true_label": 1,
+    "predicted_probability": 0.99184,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "028",
+    "true_label": 0,
+    "predicted_probability": 0.00285,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "029",
+    "true_label": 0,
+    "predicted_probability": 0.02556,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "030",
+    "true_label": 0,
+    "predicted_probability": 0.01457,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "031",
+    "true_label": 0,
+    "predicted_probability": 0.00411,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "032",
+    "true_label": 1,
+    "predicted_probability": 0.96434,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "033",
+    "true_label": 1,
+    "predicted_probability": 0.97461,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "034",
+    "true_label": 0,
+    "predicted_probability": 0.00599,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "035",
+    "true_label": 0,
+    "predicted_probability": 0.00706,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "036",
+    "true_label": 0,
+    "predicted_probability": 0.00324,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "037",
+    "true_label": 0,
+    "predicted_probability": 0.00671,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "038",
+    "true_label": 1,
+    "predicted_probability": 0.96269,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "039",
+    "true_label": 0,
+    "predicted_probability": 0.00451,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "040",
+    "true_label": 0,
+    "predicted_probability": 0.02277,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "041",
+    "true_label": 0,
+    "predicted_probability": 0.01262,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "042",
+    "true_label": 0,
+    "predicted_probability": 0.00947,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "043",
+    "true_label": 0,
+    "predicted_probability": 0.01298,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "044",
+    "true_label": 0,
+    "predicted_probability": 0.06014,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "045",
+    "true_label": 1,
+    "predicted_probability": 0.96643,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "046",
+    "true_label": 0,
+    "predicted_probability": 0.00848,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "047",
+    "true_label": 0,
+    "predicted_probability": 0.0099,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "048",
+    "true_label": 0,
+    "predicted_probability": 0.09434,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "049",
+    "true_label": 0,
+    "predicted_probability": 0.00708,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "050",
+    "true_label": 0,
+    "predicted_probability": 0.00578,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "051",
+    "true_label": 0,
+    "predicted_probability": 0.03735,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "052",
+    "true_label": 1,
+    "predicted_probability": 0.9671,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "053",
+    "true_label": 0,
+    "predicted_probability": 0.00357,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "054",
+    "true_label": 0,
+    "predicted_probability": 0.00278,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "055",
+    "true_label": 0,
+    "predicted_probability": 0.00594,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "056",
+    "true_label": 1,
+    "predicted_probability": 0.97663,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "057",
+    "true_label": 0,
+    "predicted_probability": 0.01088,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "058",
+    "true_label": 0,
+    "predicted_probability": 0.00822,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "059",
+    "true_label": 1,
+    "predicted_probability": 0.98729,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "060",
+    "true_label": 1,
+    "predicted_probability": 0.99362,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "061",
+    "true_label": 0,
+    "predicted_probability": 0.00286,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "062",
+    "true_label": 1,
+    "predicted_probability": 0.98065,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "063",
+    "true_label": 1,
+    "predicted_probability": 0.01176,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "064",
+    "true_label": 0,
+    "predicted_probability": 0.138,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "065",
+    "true_label": 1,
+    "predicted_probability": 0.98773,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "066",
+    "true_label": 1,
+    "predicted_probability": 0.97974,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "067",
+    "true_label": 1,
+    "predicted_probability": 0.93548,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "068",
+    "true_label": 0,
+    "predicted_probability": 0.00414,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "069",
+    "true_label": 1,
+    "predicted_probability": 0.98833,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "070",
+    "true_label": 0,
+    "predicted_probability": 0.02303,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "071",
+    "true_label": 0,
+    "predicted_probability": 0.00372,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "072",
+    "true_label": 0,
+    "predicted_probability": 0.00287,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "073",
+    "true_label": 0,
+    "predicted_probability": 0.04367,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "074",
+    "true_label": 0,
+    "predicted_probability": 0.01605,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "075",
+    "true_label": 1,
+    "predicted_probability": 0.98855,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "076",
+    "true_label": 0,
+    "predicted_probability": 0.01084,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "077",
+    "true_label": 0,
+    "predicted_probability": 0.96155,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "078",
+    "true_label": 0,
+    "predicted_probability": 0.00894,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "079",
+    "true_label": 0,
+    "predicted_probability": 0.0142,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "080",
+    "true_label": 0,
+    "predicted_probability": 0.0438,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "081",
+    "true_label": 0,
+    "predicted_probability": 0.01349,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "082",
+    "true_label": 0,
+    "predicted_probability": 0.00359,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "083",
+    "true_label": 0,
+    "predicted_probability": 0.05519,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "084",
+    "true_label": 0,
+    "predicted_probability": 0.0522,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "085",
+    "true_label": 1,
+    "predicted_probability": 0.98646,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "086",
+    "true_label": 0,
+    "predicted_probability": 0.00304,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "087",
+    "true_label": 1,
+    "predicted_probability": 0.98009,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "088",
+    "true_label": 0,
+    "predicted_probability": 0.00932,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "089",
+    "true_label": 0,
+    "predicted_probability": 0.00579,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "090",
+    "true_label": 1,
+    "predicted_probability": 0.96484,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "091",
+    "true_label": 0,
+    "predicted_probability": 0.00929,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "092",
+    "true_label": 0,
+    "predicted_probability": 0.01398,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "093",
+    "true_label": 0,
+    "predicted_probability": 0.003,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "094",
+    "true_label": 0,
+    "predicted_probability": 0.0585,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "095",
+    "true_label": 0,
+    "predicted_probability": 0.00269,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "096",
+    "true_label": 0,
+    "predicted_probability": 0.02547,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "097",
+    "true_label": 0,
+    "predicted_probability": 0.00408,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "098",
+    "true_label": 0,
+    "predicted_probability": 0.01046,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "099",
+    "true_label": 0,
+    "predicted_probability": 0.01326,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "100",
+    "true_label": 1,
+    "predicted_probability": 0.99353,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "101",
+    "true_label": 1,
+    "predicted_probability": 0.96794,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "102",
+    "true_label": 0,
+    "predicted_probability": 0.00324,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "103",
+    "true_label": 0,
+    "predicted_probability": 0.0026,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "104",
+    "true_label": 1,
+    "predicted_probability": 0.98219,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "105",
+    "true_label": 1,
+    "predicted_probability": 0.98726,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "106",
+    "true_label": 0,
+    "predicted_probability": 0.00519,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "107",
+    "true_label": 0,
+    "predicted_probability": 0.02443,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "108",
+    "true_label": 1,
+    "predicted_probability": 0.9611,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "109",
+    "true_label": 1,
+    "predicted_probability": 0.95587,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "110",
+    "true_label": 0,
+    "predicted_probability": 0.00794,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "111",
+    "true_label": 0,
+    "predicted_probability": 0.03997,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "112",
+    "true_label": 0,
+    "predicted_probability": 0.01055,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "113",
+    "true_label": 0,
+    "predicted_probability": 0.01296,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "114",
+    "true_label": 0,
+    "predicted_probability": 0.02392,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "115",
+    "true_label": 0,
+    "predicted_probability": 0.00828,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "116",
+    "true_label": 0,
+    "predicted_probability": 0.00428,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "117",
+    "true_label": 0,
+    "predicted_probability": 0.01194,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "118",
+    "true_label": 0,
+    "predicted_probability": 0.14397,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "119",
+    "true_label": 0,
+    "predicted_probability": 0.00623,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "120",
+    "true_label": 0,
+    "predicted_probability": 0.01095,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "121",
+    "true_label": 0,
+    "predicted_probability": 0.0065,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "122",
+    "true_label": 1,
+    "predicted_probability": 0.97071,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "123",
+    "true_label": 0,
+    "predicted_probability": 0.02347,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "124",
+    "true_label": 0,
+    "predicted_probability": 0.0026,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "125",
+    "true_label": 0,
+    "predicted_probability": 0.01094,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "126",
+    "true_label": 0,
+    "predicted_probability": 0.00602,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "127",
+    "true_label": 0,
+    "predicted_probability": 0.00391,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "128",
+    "true_label": 1,
+    "predicted_probability": 0.96356,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "129",
+    "true_label": 0,
+    "predicted_probability": 0.00343,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "130",
+    "true_label": 0,
+    "predicted_probability": 0.00432,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "131",
+    "true_label": 0,
+    "predicted_probability": 0.00825,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "132",
+    "true_label": 0,
+    "predicted_probability": 0.00357,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "133",
+    "true_label": 1,
+    "predicted_probability": 0.94189,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "134",
+    "true_label": 0,
+    "predicted_probability": 0.01886,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "135",
+    "true_label": 1,
+    "predicted_probability": 0.9657,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "136",
+    "true_label": 0,
+    "predicted_probability": 0.00933,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "137",
+    "true_label": 0,
+    "predicted_probability": 0.00623,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "138",
+    "true_label": 0,
+    "predicted_probability": 0.01178,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "139",
+    "true_label": 1,
+    "predicted_probability": 0.97747,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "140",
+    "true_label": 0,
+    "predicted_probability": 0.00782,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "141",
+    "true_label": 1,
+    "predicted_probability": 0.96356,
+    "predicted_class": 1,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "142",
+    "true_label": 0,
+    "predicted_probability": 0.00778,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "143",
+    "true_label": 0,
+    "predicted_probability": 0.00366,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "144",
+    "true_label": 0,
+    "predicted_probability": 0.00869,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "145",
+    "true_label": 0,
+    "predicted_probability": 0.00303,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "146",
+    "true_label": 0,
+    "predicted_probability": 0.00677,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "147",
+    "true_label": 0,
+    "predicted_probability": 0.01367,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "148",
+    "true_label": 0,
+    "predicted_probability": 0.01354,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "149",
+    "true_label": 0,
+    "predicted_probability": 0.00269,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "150",
+    "true_label": 0,
+    "predicted_probability": 0.00326,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "151",
+    "true_label": 0,
+    "predicted_probability": 0.00237,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "152",
+    "true_label": 0,
+    "predicted_probability": 0.01314,
+    "predicted_class": 0,
+    "model_name": "ensemble_soft_voting",
+    "seed": 2026,
+    "split": "test"
+  }
+]

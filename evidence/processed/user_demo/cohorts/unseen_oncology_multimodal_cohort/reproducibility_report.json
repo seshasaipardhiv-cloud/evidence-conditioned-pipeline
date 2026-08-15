@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-08-15T14:55:57.679092+00:00",
+  "seeds": [
+    42,
+    100,
+    2026
+  ],
+  "compute_budget": "LIGHT",
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "deterministic_execution": true,
+  "artifact_hashes": {
+    "baseline_comparison.json": "215fc6d99be4f538752e1e53eb7b36e4d9d663424c4215348c6ddba7377a0d01",
+    "claim_boundary_matrix.json": "ef5d9cbdb49ccda4622862fb13c9d1507a483498f32ecf50289ee6281a7013b5",
+    "decision_ledger.json": "86e609965e2a10b04ce9cf534f354f16d4f372c17540a34c0c2390f85aa843ea",
+    "evidence_and_model_selection.json": "d0383a3ff00f3c17bf037ba69f056006cd11377cd1ce969177b4b51d21851c07",
+    "execution_results.json": "3f231f209eafa42bf93c7e7c6e51e8e910207b65437f17df7e1ccbb152cbbd49",
+    "modality_discovery.json": "3f1c2f01ae4b508caec1d7bd4b4716dd1d5c3b41dd468bcb3ea553d95aff2585",
+    "preprocessing_selection.json": "ceeb1cd500454a159293d50832aee09a4932e3cde5d864c47f01dc26336336cf",
+    "reproducibility_report.json": "84bfffd90e38873712307943b41a70f23d4d59378bf4ad623bf40ae5edc2a230",
+    "safety_audit.json": "a9f7a790f268ea921efd8fd80255a382c7a7da43a1b5fd3e47de7596411b100d"
+  }
+}

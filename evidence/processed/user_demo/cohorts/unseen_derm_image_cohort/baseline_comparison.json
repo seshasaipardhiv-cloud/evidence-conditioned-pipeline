@@ -189,9 +189,12 @@
     "metrics": {
       "roc_auc_mean": 0.6667,
       "roc_auc_std": 0.4714,
+      "pr_auc_mean": 0.8341,
       "brier_score_mean": 0.2346,
-      "f1_mean": 0.8,
-      "accuracy_mean": 0.6667
+      "accuracy_mean": 0.6667,
+      "precision_mean": 0.6667,
+      "recall_mean": 1.0,
+      "f1_mean": 0.8
     }
   },
   "fixed_default_baseline": {
@@ -206,15 +209,19 @@
     "metrics": {
       "roc_auc_mean": 0.6667,
       "roc_auc_std": 0.4714,
+      "pr_auc_mean": 0.8341,
       "brier_score_mean": 0.2346,
-      "f1_mean": 0.8,
-      "accuracy_mean": 0.6667
+      "accuracy_mean": 0.6667,
+      "precision_mean": 0.6667,
+      "recall_mean": 1.0,
+      "f1_mean": 0.8
     }
   },
   "deltas": {
     "roc_auc_delta": 0.0,
+    "pr_auc_delta": 0.0,
     "brier_delta": 0.0,
-    "f1_delta": 0.0,
-    "accuracy_delta": 0.0
+    "accuracy_delta": 0.0,
+    "f1_delta": 0.0
   }
 }

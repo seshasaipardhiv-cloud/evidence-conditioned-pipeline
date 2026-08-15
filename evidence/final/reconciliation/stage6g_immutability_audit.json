@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-15T10:56:37.835304+00:00",
+  "timestamp": "2026-08-15T16:26:20.469334+00:00",
   "immutability_verified": true,
   "total_source_files_checked": 9,
   "mismatch_count": 0,
@@ -9,10 +9,10 @@
     "evidence/processed/stage5b_candidate_results.json": "cdc3471a7b69a10002435ca0de656d2828a608c8bf8c2165682b4f65faec1c72",
     "evidence/processed/stage5b_baseline_results.json": "f2d0340a1d84f4638c78830cc57dd01c0a3b652d36cce22a5f58483ce6e6b96d",
     "evidence/metadata/stage5b_safety_audit.json": "46b22a2cfaed58f1624558accfeaeab3760da793cc35cb39082e1a5fb8a9f612",
-    "evidence/metadata/stage5c_statistical_analysis.json": "51390e6ad6f1e6058dfd17884a63383b8ba1cd7d46fb1b0697948bb9d685a893",
-    "evidence/metadata/stage5c_ablation_results.json": "6bf228e49d50a9c5e1eea5dc1fa9651868d8f469ba2bbc2155674914d055506b",
-    "evidence/metadata/stage5c_robustness_report.json": "a0d5c6f21c23bbd59a59ab60696202bbc53e4448b6a5d0ae11d55ac90e20a1ee",
-    "evidence/metadata/stage5c_calibration_report.json": "915fd619ec350b4727846104c0a00b0a6e4a3e4237d044a8f645ef20f464a48d",
-    "evidence/final/stage6a_master_results.json": "969aabdff8a149288ac218b3e72ac73d611b8c6fb9ee2765431fe854b85273fd"
+    "evidence/metadata/stage5c_statistical_analysis.json": "2bc8d88e0eb967304365dc60cb2b0b5b6b5af6e6aab2bba37e225b222ae831c2",
+    "evidence/metadata/stage5c_ablation_results.json": "430f5b8e2b20af3d041fdde68b8f32e0c01a94ea18235ee73fac50724683c8b8",
+    "evidence/metadata/stage5c_robustness_report.json": "c74621ae8e8bd5d768eb3e14a3ee18919ee10dc507701111167b71f3d499c67a",
+    "evidence/metadata/stage5c_calibration_report.json": "a761c6d43a97e3637c51faee232e9f1ed1364c68a23e40541ba555d6fe962f14",
+    "evidence/final/stage6a_master_results.json": "ed3a8cb8bb6ddd3b366a16c210e4a43839d3c338325ed71e7a2199b06046d657"
   }
 }

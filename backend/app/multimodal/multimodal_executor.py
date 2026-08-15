@@ -13,7 +13,7 @@ import time
 from typing import Any, Dict, List, Optional, Tuple, Union
 
 import numpy as np
-from sklearn.metrics import accuracy_score, brier_score_loss, f1_score, precision_score, recall_score, roc_auc_score
+from sklearn.metrics import accuracy_score, average_precision_score, brier_score_loss, f1_score, precision_score, recall_score, roc_auc_score
 
 from backend.app.multimodal.image_selector import ImageModelSelector
 from backend.app.multimodal.multimodal_pipeline import MultimodalPipeline
@@ -32,11 +32,16 @@ def compute_binary_metrics(y_true: np.ndarray, y_prob: np.ndarray) -> Dict[str, 
     y_prob = np.clip(np.array(y_prob, dtype=float), 1e-7, 1.0 - 1e-7)
     y_pred = (y_prob >= 0.5).astype(int)
 
-    # Calculate ROC-AUC if both classes present
+    # Calculate ROC-AUC and PR-AUC if both classes present
     if len(np.unique(y_true)) > 1:
         roc_auc = float(roc_auc_score(y_true, y_prob))
+        try:
+            pr_auc = float(average_precision_score(y_true, y_prob))
+        except Exception:
+            pr_auc = 0.5
     else:
         roc_auc = 0.5
+        pr_auc = 0.5
 
     brier = float(brier_score_loss(y_true, y_prob))
     acc = float(accuracy_score(y_true, y_pred))
@@ -46,6 +51,7 @@ def compute_binary_metrics(y_true: np.ndarray, y_prob: np.ndarray) -> Dict[str, 
 
     return {
         "roc_auc": round(roc_auc, 4),
+        "pr_auc": round(pr_auc, 4),
         "brier_score": round(brier, 4),
         "accuracy": round(acc, 4),
         "f1_score": round(f1, 4),
@@ -272,15 +278,21 @@ class MultimodalExecutor:
         for key, res_list in seed_results.items():
             if res_list:
                 aucs = [r["roc_auc"] for r in res_list]
+                pr_aucs = [r.get("pr_auc", 0.5) for r in res_list]
                 briers = [r["brier_score"] for r in res_list]
                 f1s = [r["f1_score"] for r in res_list]
                 accs = [r["accuracy"] for r in res_list]
+                precs = [r.get("precision", 0.0) for r in res_list]
+                recs = [r.get("recall", 0.0) for r in res_list]
                 summary_metrics[key] = {
                     "mean_roc_auc": round(float(np.mean(aucs)), 4),
                     "std_roc_auc": round(float(np.std(aucs)), 4),
+                    "mean_pr_auc": round(float(np.mean(pr_aucs)), 4),
                     "mean_brier_score": round(float(np.mean(briers)), 4),
                     "mean_f1_score": round(float(np.mean(f1s)), 4),
                     "mean_accuracy": round(float(np.mean(accs)), 4),
+                    "mean_precision": round(float(np.mean(precs)), 4),
+                    "mean_recall": round(float(np.mean(recs)), 4),
                     "per_seed_roc_auc": {r["seed"]: r["roc_auc"] for r in res_list},
                 }
 

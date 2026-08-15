@@ -1,0 +1,142 @@
+{
+  "experiment": "stage11_controlled_ensemble_ablation",
+  "authoritative_candidate_roc_auc": 0.9751,
+  "ablations": [
+    {
+      "ablation_id": "A_candidate_only",
+      "description": "Candidate Only",
+      "member_models": [
+        "candidate_pipeline"
+      ],
+      "mean_roc_auc": 0.9751,
+      "std_roc_auc": 0.0114,
+      "delta_vs_candidate": 0.0,
+      "per_seed_roc_auc": {
+        "42": 0.9888,
+        "100": 0.9609,
+        "2026": 0.9756
+      }
+    },
+    {
+      "ablation_id": "B_best_individual_only",
+      "description": "Best Individual Alternative Only (Random Forest)",
+      "member_models": [
+        "random_forest"
+      ],
+      "mean_roc_auc": 0.9698,
+      "std_roc_auc": 0.0065,
+      "delta_vs_candidate": -0.0053,
+      "per_seed_roc_auc": {
+        "42": 0.9757,
+        "100": 0.9607,
+        "2026": 0.9729
+      }
+    },
+    {
+      "ablation_id": "C_candidate_plus_xgboost",
+      "description": "Candidate + Default XGBoost",
+      "member_models": [
+        "candidate_pipeline",
+        "xgboost_default"
+      ],
+      "mean_roc_auc": 0.9744,
+      "std_roc_auc": 0.0102,
+      "delta_vs_candidate": -0.0007,
+      "per_seed_roc_auc": {
+        "42": 0.9873,
+        "100": 0.9624,
+        "2026": 0.9736
+      }
+    },
+    {
+      "ablation_id": "D_candidate_plus_rf",
+      "description": "Candidate + Random Forest",
+      "member_models": [
+        "candidate_pipeline",
+        "random_forest"
+      ],
+      "mean_roc_auc": 0.9707,
+      "std_roc_auc": 0.0082,
+      "delta_vs_candidate": -0.0044,
+      "per_seed_roc_auc": {
+        "42": 0.9778,
+        "100": 0.9592,
+        "2026": 0.9751
+      }
+    },
+    {
+      "ablation_id": "E_candidate_plus_lr",
+      "description": "Candidate + Logistic Regression",
+      "member_models": [
+        "candidate_pipeline",
+        "logistic_regression"
+      ],
+      "mean_roc_auc": 0.9695,
+      "std_roc_auc": 0.0098,
+      "delta_vs_candidate": -0.0056,
+      "per_seed_roc_auc": {
+        "42": 0.9807,
+        "100": 0.9568,
+        "2026": 0.9709
+      }
+    },
+    {
+      "ablation_id": "F_candidate_plus_et",
+      "description": "Candidate + Extra Trees",
+      "member_models": [
+        "candidate_pipeline",
+        "extra_trees"
+      ],
+      "mean_roc_auc": 0.9691,
+      "std_roc_auc": 0.0127,
+      "delta_vs_candidate": -0.006,
+      "per_seed_roc_auc": {
+        "42": 0.9856,
+        "100": 0.9546,
+        "2026": 0.967
+      }
+    },
+    {
+      "ablation_id": "G_candidate_plus_all",
+      "description": "Candidate + All Alternative Models (9 Models)",
+      "member_models": [
+        "candidate_pipeline",
+        "xgboost_default",
+        "random_forest",
+        "logistic_regression",
+        "extra_trees",
+        "hist_gradient_boosting",
+        "svm",
+        "knn",
+        "decision_tree"
+      ],
+      "mean_roc_auc": 0.9669,
+      "std_roc_auc": 0.0096,
+      "delta_vs_candidate": -0.0082,
+      "per_seed_roc_auc": {
+        "42": 0.9748,
+        "100": 0.9534,
+        "2026": 0.9724
+      }
+    },
+    {
+      "ablation_id": "H_stacking",
+      "description": "Stacking Meta-Learner (5 Base Models)",
+      "member_models": [
+        "candidate_pipeline",
+        "xgboost_default",
+        "random_forest",
+        "extra_trees",
+        "logistic_regression"
+      ],
+      "mean_roc_auc": 0.9656,
+      "std_roc_auc": 0.009,
+      "delta_vs_candidate": -0.0095,
+      "per_seed_roc_auc": {
+        "42": 0.9756,
+        "100": 0.9538,
+        "2026": 0.9673
+      }
+    }
+  ]
+}

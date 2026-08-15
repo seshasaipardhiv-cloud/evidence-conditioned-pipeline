@@ -11,7 +11,7 @@
     2026
   ],
   "compute_budget": "LIGHT",
-  "runtime_seconds": 0.03,
+  "runtime_seconds": 0.02,
   "selected_models": {
     "image": null,
     "text": null
@@ -20,9 +20,12 @@
     "multimodal_candidate": {
       "mean_roc_auc": 0.5625,
       "std_roc_auc": 0.368,
+      "mean_pr_auc": 0.707,
       "mean_brier_score": 0.2294,
       "mean_f1_score": 0.4722,
       "mean_accuracy": 0.5833,
+      "mean_precision": 0.4167,
+      "mean_recall": 0.5833,
       "per_seed_roc_auc": {
         "42": 0.9375,
         "100": 0.0625,
@@ -34,6 +37,7 @@
     "multimodal_candidate": [
       {
         "roc_auc": 0.9375,
+        "pr_auc": 0.95,
         "brier_score": 0.152,
         "accuracy": 0.75,
         "f1_score": 0.75,
@@ -43,6 +47,7 @@
       },
       {
         "roc_auc": 0.0625,
+        "pr_auc": 0.378,
         "brier_score": 0.2846,
         "accuracy": 0.5,
         "f1_score": 0.0,
@@ -52,6 +57,7 @@
       },
       {
         "roc_auc": 0.6875,
+        "pr_auc": 0.7929,
         "brier_score": 0.2515,
         "accuracy": 0.5,
         "f1_score": 0.6667,

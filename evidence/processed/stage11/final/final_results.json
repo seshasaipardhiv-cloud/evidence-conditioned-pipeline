@@ -1,0 +1,769 @@
+{
+  "experiment_stage": "stage11_final",
+  "timestamp": "2026-08-15T16:24:39.662191+00:00",
+  "target_variable": "recurrence",
+  "task_type": "binary_classification",
+  "cohort": "HANCOCK_retrospective_clinical_tabular",
+  "candidate_model": "Evidence-Conditioned XGBoost (PMID: 41826845)",
+  "candidate_roc_auc": 0.9751,
+  "best_individual_model": "Default XGBoost",
+  "best_individual_roc_auc": 0.9704,
+  "best_ensemble": "Candidate Bagging (10x Resamples)",
+  "best_ensemble_roc_auc": 0.9749,
+  "ensemble_outperformed_candidate": false,
+  "individual_models": [
+    {
+      "model_name": "candidate_pipeline",
+      "display_name": "Evidence-Conditioned Candidate",
+      "model_family": "gradient_boosting",
+      "evidence_status": "EVIDENCE_BACKED",
+      "provenance": "Literature-derived pipeline with median/mode imputation, one-hot encoding, SMOTE, and tuned XGBoost.",
+      "citation_pmid": "PMID: 41826845 / PMC Biomarkers 2026",
+      "mean_roc_auc": 0.9751,
+      "std_roc_auc": 0.0114,
+      "mean_pr_auc": 0.9679,
+      "std_pr_auc": 0.0123,
+      "mean_brier_score": 0.0175,
+      "mean_accuracy": 0.9825,
+      "mean_precision": 0.9801,
+      "mean_recall": 0.9429,
+      "mean_f1_score": 0.9611,
+      "mean_runtime_sec": 0.4843,
+      "per_seed_roc_auc": {
+        "42": 0.9888,
+        "100": 0.9609,
+        "2026": 0.9756
+      }
+    },
+    {
+      "model_name": "xgboost_default",
+      "display_name": "Default XGBoost",
+      "model_family": "gradient_boosting",
+      "evidence_status": "BASELINE",
+      "provenance": "Standard untuned XGBoost default baseline.",
+      "citation_pmid": null,
+      "mean_roc_auc": 0.9704,
+      "std_roc_auc": 0.0059,
+      "mean_pr_auc": 0.9665,
+      "std_pr_auc": 0.0096,
+      "mean_brier_score": 0.018,
+      "mean_accuracy": 0.9825,
+      "mean_precision": 0.9801,
+      "mean_recall": 0.9429,
+      "mean_f1_score": 0.9611,
+      "mean_runtime_sec": 0.0272,
+      "per_seed_roc_auc": {
+        "42": 0.9783,
+        "100": 0.9643,
+        "2026": 0.9685
+      }
+    },
+    {
+      "model_name": "random_forest",
+      "display_name": "Random Forest",
+      "model_family": "ensemble_tree",
+      "evidence_status": "BASELINE",
+      "provenance": "Standard Breiman Random Forest ensemble baseline.",
+      "citation_pmid": null,
+      "mean_roc_auc": 0.9698,
+      "std_roc_auc": 0.0065,
+      "mean_pr_auc": 0.9494,
+      "std_pr_auc": 0.0216,
+      "mean_brier_score": 0.0207,
+      "mean_accuracy": 0.9825,
+      "mean_precision": 0.9801,
+      "mean_recall": 0.9429,
+      "mean_f1_score": 0.9611,
+      "mean_runtime_sec": 0.1009,
+      "per_seed_roc_auc": {
+        "42": 0.9757,
+        "100": 0.9607,
+        "2026": 0.9729
+      }
+    }
+  ],
+  "ensembles": [
+    {
+      "ensemble_strategy": "ensemble_bagging",
+      "display_name": "Candidate Bagging (10x Resamples)",
+      "method": "Bootstrap Aggregation",
+      "base_models": [
+        "candidate_pipeline"
+      ],
+      "meta_model": null,
+      "selection_rule": "Bootstrap resampling with replacement on train fold (N=10 bags)",
+      "mean_roc_auc": 0.9749,
+      "std_roc_auc": 0.0131,
+      "mean_pr_auc": 0.9663,
+      "std_pr_auc": 0.0151,
+      "mean_brier_score": 0.0173,
+      "mean_accuracy": 0.9825,
+      "mean_f1_score": 0.9611,
+      "delta_vs_candidate": -0.0002,
+      "delta_vs_best_individual": 0.0045,
+      "per_seed_roc_auc": {
+        "42": 0.9915,
+        "100": 0.9595,
+        "2026": 0.9736
+      },
+      "per_seed_margins_vs_candidate": {
+        "42": 0.0027,
+        "100": -0.0014,
+        "2026": -0.002
+      },
+      "per_seed_records": [
+        {
+          "seed": 42,
+          "test_metrics": {
+            "roc_auc": 0.9915,
+            "pr_auc": 0.9857,
+            "brier_score": 0.0071,
+            "accuracy": 0.9934,
+            "precision": 1.0,
+            "recall": 0.9714,
+            "f1": 0.9855
+          },
+          "weights": {
+            "bag_1": 0.1,
+            "bag_2": 0.1,
+            "bag_3": 0.1,
+            "bag_4": 0.1,
+            "bag_5": 0.1,
+            "bag_6": 0.1,
+            "bag_7": 0.1,
+            "bag_8": 0.1,
+            "bag_9": 0.1,
+            "bag_10": 0.1
+          },
+          "base_models": [
+            "candidate_pipeline",
+            "candidate_pipeline",
+            "candidate_pipeline",
+            "candidate_pipeline",
+            "candidate_pipeline",
+            "candidate_pipeline",
+            "candidate_pipeline",
+            "candidate_pipeline",
+            "candidate_pipeline",
+            "candidate_pipeline"
+          ]
+        },
+        {
+          "seed": 100,
+          "test_metrics": {
+            "roc_auc": 0.9595,
+            "pr_auc": 0.9488,
+            "brier_score": 0.0256,
+            "accuracy": 0.9737,
+            "precision": 0.9697,
+            "recall": 0.9143,
+            "f1": 0.9412
+          },
+          "weights": {
+            "bag_1": 0.1,
+            "bag_2": 0.1,
+            "bag_3": 0.1,
+            "bag_4": 0.1,
+            "bag_5": 0.1,
+            "bag_6": 0.1,
+            "bag_7": 0.1,
+            "bag_8": 0.1,
+            "bag_9": 0.1,
+            "bag_10": 0.1
+          },
+          "base_models": [
+            "candidate_pipeline",
+            "candidate_pipeline",
+            "candidate_pipeline",
+            "candidate_pipeline",
+            "candidate_pipeline",
+            "candidate_pipeline",
+            "candidate_pipeline",
+            "candidate_pipeline",
+            "candidate_pipeline",
+            "candidate_pipeline"
+          ]
+        },
+        {
+          "seed": 2026,
+          "test_metrics": {
+            "roc_auc": 0.9736,
+            "pr_auc": 0.9645,
+            "brier_score": 0.0193,
+            "accuracy": 0.9803,
+            "precision": 0.9706,
+            "recall": 0.9429,
+            "f1": 0.9565
+          },
+          "weights": {
+            "bag_1": 0.1,
+            "bag_2": 0.1,
+            "bag_3": 0.1,
+            "bag_4": 0.1,
+            "bag_5": 0.1,
+            "bag_6": 0.1,
+            "bag_7": 0.1,
+            "bag_8": 0.1,
+            "bag_9": 0.1,
+            "bag_10": 0.1
+          },
+          "base_models": [
+            "candidate_pipeline",
+            "candidate_pipeline",
+            "candidate_pipeline",
+            "candidate_pipeline",
+            "candidate_pipeline",
+            "candidate_pipeline",
+            "candidate_pipeline",
+            "candidate_pipeline",
+            "candidate_pipeline",
+            "candidate_pipeline"
+          ]
+        }
+      ],
+      "performs_worse_than_candidate": true
+    },
+    {
+      "ensemble_strategy": "ensemble_weighted_voting",
+      "display_name": "Validation-Weighted Voting",
+      "method": "Validation-Performance-Weighted Averaging",
+      "base_models": [
+        "candidate_pipeline",
+        "xgboost_default",
+        "random_forest"
+      ],
+      "meta_model": null,
+      "selection_rule": "Softmax temperature=0.5 on validation fold ROC-AUC scores",
+      "mean_roc_auc": 0.9701,
+      "std_roc_auc": 0.0076,
+      "mean_pr_auc": 0.9643,
+      "std_pr_auc": 0.0107,
+      "mean_brier_score": 0.018,
+      "mean_accuracy": 0.9825,
+      "mean_f1_score": 0.9611,
+      "delta_vs_candidate": -0.005,
+      "delta_vs_best_individual": -0.0003,
+      "per_seed_roc_auc": {
+        "42": 0.9775,
+        "100": 0.9597,
+        "2026": 0.9731
+      },
+      "per_seed_margins_vs_candidate": {
+        "42": -0.0113,
+        "100": -0.0012,
+        "2026": -0.0025
+      },
+      "per_seed_records": [
+        {
+          "seed": 42,
+          "test_metrics": {
+            "roc_auc": 0.9775,
+            "pr_auc": 0.9793,
+            "brier_score": 0.0081,
+            "accuracy": 0.9934,
+            "precision": 1.0,
+            "recall": 0.9714,
+            "f1": 0.9855
+          },
+          "weights": {
+            "candidate_pipeline": 0.3353,
+            "xgboost_default": 0.3307,
+            "random_forest": 0.334
+          },
+          "base_models": [
+            "candidate_pipeline",
+            "xgboost_default",
+            "random_forest"
+          ]
+        },
+        {
+          "seed": 100,
+          "test_metrics": {
+            "roc_auc": 0.9597,
+            "pr_auc": 0.9547,
+            "brier_score": 0.026,
+            "accuracy": 0.9737,
+            "precision": 0.9697,
+            "recall": 0.9143,
+            "f1": 0.9412
+          },
+          "weights": {
+            "candidate_pipeline": 0.3332,
+            "xgboost_default": 0.326,
+            "random_forest": 0.3409
+          },
+          "base_models": [
+            "candidate_pipeline",
+            "xgboost_default",
+            "random_forest"
+          ]
+        },
+        {
+          "seed": 2026,
+          "test_metrics": {
+            "roc_auc": 0.9731,
+            "pr_auc": 0.9589,
+            "brier_score": 0.0198,
+            "accuracy": 0.9803,
+            "precision": 0.9706,
+            "recall": 0.9429,
+            "f1": 0.9565
+          },
+          "weights": {
+            "candidate_pipeline": 0.3197,
+            "xgboost_default": 0.3246,
+            "random_forest": 0.3558
+          },
+          "base_models": [
+            "candidate_pipeline",
+            "xgboost_default",
+            "random_forest"
+          ]
+        }
+      ],
+      "performs_worse_than_candidate": true
+    },
+    {
+      "ensemble_strategy": "ensemble_soft_voting",
+      "display_name": "Soft Voting",
+      "method": "Probability Averaging",
+      "base_models": [
+        "candidate_pipeline",
+        "xgboost_default",
+        "random_forest"
+      ],
+      "meta_model": null,
+      "selection_rule": "Uniform arithmetic mean of predicted probabilities (1/M)",
+      "mean_roc_auc": 0.9702,
+      "std_roc_auc": 0.0076,
+      "mean_pr_auc": 0.9655,
+      "std_pr_auc": 0.0103,
+      "mean_brier_score": 0.018,
+      "mean_accuracy": 0.9825,
+      "mean_f1_score": 0.9611,
+      "delta_vs_candidate": -0.0049,
+      "delta_vs_best_individual": -0.0002,
+      "per_seed_roc_auc": {
+        "42": 0.9775,
+        "100": 0.9597,
+        "2026": 0.9734
+      },
+      "per_seed_margins_vs_candidate": {
+        "42": -0.0113,
+        "100": -0.0012,
+        "2026": -0.0022
+      },
+      "per_seed_records": [
+        {
+          "seed": 42,
+          "test_metrics": {
+            "roc_auc": 0.9775,
+            "pr_auc": 0.9793,
+            "brier_score": 0.0081,
+            "accuracy": 0.9934,
+            "precision": 1.0,
+            "recall": 0.9714,
+            "f1": 0.9855
+          },
+          "weights": {
+            "candidate_pipeline": 0.3333,
+            "xgboost_default": 0.3333,
+            "random_forest": 0.3333
+          },
+          "base_models": [
+            "candidate_pipeline",
+            "xgboost_default",
+            "random_forest"
+          ]
+        },
+        {
+          "seed": 100,
+          "test_metrics": {
+            "roc_auc": 0.9597,
+            "pr_auc": 0.9547,
+            "brier_score": 0.026,
+            "accuracy": 0.9737,
+            "precision": 0.9697,
+            "recall": 0.9143,
+            "f1": 0.9412
+          },
+          "weights": {
+            "candidate_pipeline": 0.3333,
+            "xgboost_default": 0.3333,
+            "random_forest": 0.3333
+          },
+          "base_models": [
+            "candidate_pipeline",
+            "xgboost_default",
+            "random_forest"
+          ]
+        },
+        {
+          "seed": 2026,
+          "test_metrics": {
+            "roc_auc": 0.9734,
+            "pr_auc": 0.9625,
+            "brier_score": 0.0198,
+            "accuracy": 0.9803,
+            "precision": 0.9706,
+            "recall": 0.9429,
+            "f1": 0.9565
+          },
+          "weights": {
+            "candidate_pipeline": 0.3333,
+            "xgboost_default": 0.3333,
+            "random_forest": 0.3333
+          },
+          "base_models": [
+            "candidate_pipeline",
+            "xgboost_default",
+            "random_forest"
+          ]
+        }
+      ],
+      "performs_worse_than_candidate": true
+    },
+    {
+      "ensemble_strategy": "ensemble_rank_averaging",
+      "display_name": "Rank Averaging",
+      "method": "Rank Averaging",
+      "base_models": [
+        "candidate_pipeline",
+        "xgboost_default",
+        "random_forest"
+      ],
+      "meta_model": null,
+      "selection_rule": "Normalized percentile rank averaging on predicted probabilities [0, 1]",
+      "mean_roc_auc": 0.9717,
+      "std_roc_auc": 0.0089,
+      "mean_pr_auc": 0.9667,
+      "std_pr_auc": 0.0101,
+      "mean_brier_score": 0.1529,
+      "mean_accuracy": 0.7632,
+      "mean_f1_score": 0.6516,
+      "delta_vs_candidate": -0.0034,
+      "delta_vs_best_individual": 0.0013,
+      "per_seed_roc_auc": {
+        "42": 0.9795,
+        "100": 0.9592,
+        "2026": 0.9764
+      },
+      "per_seed_margins_vs_candidate": {
+        "42": -0.0093,
+        "100": -0.0017,
+        "2026": 0.0008
+      },
+      "per_seed_records": [
+        {
+          "seed": 42,
+          "test_metrics": {
+            "roc_auc": 0.9795,
+            "pr_auc": 0.9798,
+            "brier_score": 0.1521,
+            "accuracy": 0.7566,
+            "precision": 0.4857,
+            "recall": 0.9714,
+            "f1": 0.6476
+          },
+          "weights": {
+            "candidate_pipeline": 0.3333,
+            "xgboost_default": 0.3333,
+            "random_forest": 0.3333
+          },
+          "base_models": [
+            "candidate_pipeline",
+            "xgboost_default",
+            "random_forest"
+          ]
+        },
+        {
+          "seed": 100,
+          "test_metrics": {
+            "roc_auc": 0.9592,
+            "pr_auc": 0.9551,
+            "brier_score": 0.154,
+            "accuracy": 0.7697,
+            "precision": 0.5,
+            "recall": 0.9429,
+            "f1": 0.6535
+          },
+          "weights": {
+            "candidate_pipeline": 0.3333,
+            "xgboost_default": 0.3333,
+            "random_forest": 0.3333
+          },
+          "base_models": [
+            "candidate_pipeline",
+            "xgboost_default",
+            "random_forest"
+          ]
+        },
+        {
+          "seed": 2026,
+          "test_metrics": {
+            "roc_auc": 0.9764,
+            "pr_auc": 0.9652,
+            "brier_score": 0.1526,
+            "accuracy": 0.7632,
+            "precision": 0.4928,
+            "recall": 0.9714,
+            "f1": 0.6538
+          },
+          "weights": {
+            "candidate_pipeline": 0.3333,
+            "xgboost_default": 0.3333,
+            "random_forest": 0.3333
+          },
+          "base_models": [
+            "candidate_pipeline",
+            "xgboost_default",
+            "random_forest"
+          ]
+        }
+      ],
+      "performs_worse_than_candidate": true
+    },
+    {
+      "ensemble_strategy": "ensemble_stacking",
+      "display_name": "Stacking Ensemble",
+      "method": "Stacking Meta-Learner",
+      "base_models": [
+        "candidate_pipeline",
+        "xgboost_default",
+        "random_forest"
+      ],
+      "meta_model": "LogisticRegression(penalty='l2', C=1.0, max_iter=1000)",
+      "selection_rule": "Logistic Regression meta-model fitted on validation fold probability vectors",
+      "mean_roc_auc": 0.9698,
+      "std_roc_auc": 0.0076,
+      "mean_pr_auc": 0.9626,
+      "std_pr_auc": 0.0118,
+      "mean_brier_score": 0.0194,
+      "mean_accuracy": 0.9825,
+      "mean_f1_score": 0.9611,
+      "delta_vs_candidate": -0.0053,
+      "delta_vs_best_individual": -0.0006,
+      "per_seed_roc_auc": {
+        "42": 0.9775,
+        "100": 0.9595,
+        "2026": 0.9724
+      },
+      "per_seed_margins_vs_candidate": {
+        "42": -0.0113,
+        "100": -0.0014,
+        "2026": -0.0032
+      },
+      "per_seed_records": [
+        {
+          "seed": 42,
+          "test_metrics": {
+            "roc_auc": 0.9775,
+            "pr_auc": 0.9793,
+            "brier_score": 0.0092,
+            "accuracy": 0.9934,
+            "precision": 1.0,
+            "recall": 0.9714,
+            "f1": 0.9855
+          },
+          "weights": {
+            "candidate_pipeline": 0.3224,
+            "xgboost_default": 0.3112,
+            "random_forest": 0.3663
+          },
+          "base_models": [
+            "candidate_pipeline",
+            "xgboost_default",
+            "random_forest"
+          ],
+          "meta_model": "LogisticRegression(penalty='l2', C=1.0)"
+        },
+        {
+          "seed": 100,
+          "test_metrics": {
+            "roc_auc": 0.9595,
+            "pr_auc": 0.9541,
+            "brier_score": 0.0265,
+            "accuracy": 0.9737,
+            "precision": 0.9697,
+            "recall": 0.9143,
+            "f1": 0.9412
+          },
+          "weights": {
+            "candidate_pipeline": 0.3177,
+            "xgboost_default": 0.326,
+            "random_forest": 0.3563
+          },
+          "base_models": [
+            "candidate_pipeline",
+            "xgboost_default",
+            "random_forest"
+          ],
+          "meta_model": "LogisticRegression(penalty='l2', C=1.0)"
+        },
+        {
+          "seed": 2026,
+          "test_metrics": {
+            "roc_auc": 0.9724,
+            "pr_auc": 0.9544,
+            "brier_score": 0.0226,
+            "accuracy": 0.9803,
+            "precision": 0.9706,
+            "recall": 0.9429,
+            "f1": 0.9565
+          },
+          "weights": {
+            "candidate_pipeline": 0.3048,
+            "xgboost_default": 0.3096,
+            "random_forest": 0.3857
+          },
+          "base_models": [
+            "candidate_pipeline",
+            "xgboost_default",
+            "random_forest"
+          ],
+          "meta_model": "LogisticRegression(penalty='l2', C=1.0)"
+        }
+      ],
+      "performs_worse_than_candidate": true
+    }
+  ],
+  "ablations": [
+    {
+      "ablation_id": "A_candidate_only",
+      "description": "Candidate Only",
+      "member_models": [
+        "candidate_pipeline"
+      ],
+      "mean_roc_auc": 0.9751,
+      "std_roc_auc": 0.0114,
+      "delta_vs_candidate": 0.0,
+      "per_seed_roc_auc": {
+        "42": 0.9888,
+        "100": 0.9609,
+        "2026": 0.9756
+      }
+    },
+    {
+      "ablation_id": "B_best_individual_only",
+      "description": "Best Individual Alternative Only (Random Forest)",
+      "member_models": [
+        "random_forest"
+      ],
+      "mean_roc_auc": 0.9698,
+      "std_roc_auc": 0.0065,
+      "delta_vs_candidate": -0.0053,
+      "per_seed_roc_auc": {
+        "42": 0.9757,
+        "100": 0.9607,
+        "2026": 0.9729
+      }
+    },
+    {
+      "ablation_id": "C_candidate_plus_xgboost",
+      "description": "Candidate + Default XGBoost",
+      "member_models": [
+        "candidate_pipeline",
+        "xgboost_default"
+      ],
+      "mean_roc_auc": 0.9744,
+      "std_roc_auc": 0.0102,
+      "delta_vs_candidate": -0.0007,
+      "per_seed_roc_auc": {
+        "42": 0.9873,
+        "100": 0.9624,
+        "2026": 0.9736
+      }
+    },
+    {
+      "ablation_id": "D_candidate_plus_rf",
+      "description": "Candidate + Random Forest",
+      "member_models": [
+        "candidate_pipeline",
+        "random_forest"
+      ],
+      "mean_roc_auc": 0.9707,
+      "std_roc_auc": 0.0082,
+      "delta_vs_candidate": -0.0044,
+      "per_seed_roc_auc": {
+        "42": 0.9778,
+        "100": 0.9592,
+        "2026": 0.9751
+      }
+    },
+    {
+      "ablation_id": "E_candidate_plus_lr",
+      "description": "Candidate + Logistic Regression",
+      "member_models": [
+        "candidate_pipeline",
+        "logistic_regression"
+      ],
+      "mean_roc_auc": 0.9695,
+      "std_roc_auc": 0.0098,
+      "delta_vs_candidate": -0.0056,
+      "per_seed_roc_auc": {
+        "42": 0.9807,
+        "100": 0.9568,
+        "2026": 0.9709
+      }
+    },
+    {
+      "ablation_id": "F_candidate_plus_et",
+      "description": "Candidate + Extra Trees",
+      "member_models": [
+        "candidate_pipeline",
+        "extra_trees"
+      ],
+      "mean_roc_auc": 0.9691,
+      "std_roc_auc": 0.0127,
+      "delta_vs_candidate": -0.006,
+      "per_seed_roc_auc": {
+        "42": 0.9856,
+        "100": 0.9546,
+        "2026": 0.967
+      }
+    },
+    {
+      "ablation_id": "G_candidate_plus_all",
+      "description": "Candidate + All Alternative Models (9 Models)",
+      "member_models": [
+        "candidate_pipeline",
+        "xgboost_default",
+        "random_forest",
+        "logistic_regression",
+        "extra_trees",
+        "hist_gradient_boosting",
+        "svm",
+        "knn",
+        "decision_tree"
+      ],
+      "mean_roc_auc": 0.9669,
+      "std_roc_auc": 0.0096,
+      "delta_vs_candidate": -0.0082,
+      "per_seed_roc_auc": {
+        "42": 0.9748,
+        "100": 0.9534,
+        "2026": 0.9724
+      }
+    },
+    {
+      "ablation_id": "H_stacking",
+      "description": "Stacking Meta-Learner (5 Base Models)",
+      "member_models": [
+        "candidate_pipeline",
+        "xgboost_default",
+        "random_forest",
+        "extra_trees",
+        "logistic_regression"
+      ],
+      "mean_roc_auc": 0.9656,
+      "std_roc_auc": 0.009,
+      "delta_vs_candidate": -0.0095,
+      "per_seed_roc_auc": {
+        "42": 0.9756,
+        "100": 0.9538,
+        "2026": 0.9673
+      }
+    }
+  ],
+  "status": "VALIDATED"
+}

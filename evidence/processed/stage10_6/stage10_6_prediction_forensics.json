@@ -1,0 +1,86 @@
+{
+  "unseen_cardiac_tabular_cohort": {
+    "sample_count": 8,
+    "prediction_correlation": 0.9997,
+    "mean_absolute_difference": 0.004,
+    "max_prediction_difference": 0.0096,
+    "identical_prediction_count": 0,
+    "identical_prediction_fraction": 0.0,
+    "candidate_distribution": {
+      "mean": 0.5441,
+      "std": 0.165,
+      "min": 0.3313,
+      "max": 0.7763
+    },
+    "baseline_distribution": {
+      "mean": 0.5411,
+      "std": 0.1646,
+      "min": 0.3217,
+      "max": 0.7677
+    },
+    "differentiation_verdict": "IDENTICAL_RANKINGS_SLIGHT_NUMERICAL_NOISE"
+  },
+  "unseen_derm_image_cohort": {
+    "sample_count": 8,
+    "prediction_correlation": 1.0,
+    "mean_absolute_difference": 0.0032,
+    "max_prediction_difference": 0.0077,
+    "identical_prediction_count": 1,
+    "identical_prediction_fraction": 0.125,
+    "candidate_distribution": {
+      "mean": 0.5956,
+      "std": 0.2641,
+      "min": 0.236,
+      "max": 0.8448
+    },
+    "baseline_distribution": {
+      "mean": 0.5931,
+      "std": 0.262,
+      "min": 0.2369,
+      "max": 0.8395
+    },
+    "differentiation_verdict": "IDENTICAL_RANKINGS_SLIGHT_NUMERICAL_NOISE"
+  },
+  "unseen_pathology_text_cohort": {
+    "sample_count": 8,
+    "prediction_correlation": 0.9999,
+    "mean_absolute_difference": 0.004,
+    "max_prediction_difference": 0.0096,
+    "identical_prediction_count": 0,
+    "identical_prediction_fraction": 0.0,
+    "candidate_distribution": {
+      "mean": 0.5026,
+      "std": 0.2736,
+      "min": 0.1883,
+      "max": 0.8262
+    },
+    "baseline_distribution": {
+      "mean": 0.4995,
+      "std": 0.2734,
+      "min": 0.1895,
+      "max": 0.8238
+    },
+    "differentiation_verdict": "IDENTICAL_RANKINGS_SLIGHT_NUMERICAL_NOISE"
+  },
+  "unseen_oncology_multimodal_cohort": {
+    "sample_count": 8,
+    "prediction_correlation": 0.6121,
+    "mean_absolute_difference": 0.1411,
+    "max_prediction_difference": 0.3075,
+    "identical_prediction_count": 0,
+    "identical_prediction_fraction": 0.0,
+    "candidate_distribution": {
+      "mean": 0.5661,
+      "std": 0.136,
+      "min": 0.3719,
+      "max": 0.7895
+    },
+    "baseline_distribution": {
+      "mean": 0.4518,
+      "std": 0.1357,
+      "min": 0.2269,
+      "max": 0.6394
+    },
+    "differentiation_verdict": "MATERIAL_PROBABILITY_DIVERGENCE"
+  }
+}

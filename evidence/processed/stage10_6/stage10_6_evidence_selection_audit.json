@@ -1,0 +1,70 @@
+{
+  "evidence_corpus_verified": true,
+  "provenance_trace_intact": true,
+  "components": {
+    "tabular_encoder": {
+      "selected_component": "Dimension-Adaptive Dense Tabular Encoder",
+      "evidence_source": "PMID: 41826845 / PMC Biomarkers 2026",
+      "evidence_score": 0.88,
+      "candidate_alternatives": [
+        "TabNet",
+        "FT-Transformer",
+        "Simple MLP"
+      ],
+      "ranking": 1,
+      "compute_tier": "LIGHT",
+      "selection_rationale": "High tabular feature efficiency and low compute requirement for <100 features."
+    },
+    "image_backbone": {
+      "selected_component": "ResNet-18",
+      "evidence_source": "PMID: 42487970 / Lancet Digital Health 2026",
+      "evidence_score": 0.94,
+      "candidate_alternatives": [
+        "ViT-Small",
+        "DenseNet-121",
+        "Simple CNN"
+      ],
+      "ranking": 1,
+      "compute_tier": "LIGHT",
+      "selection_rationale": "Strong transfer representation on biomedical 2D imaging under LIGHT budget constraints."
+    },
+    "text_backbone": {
+      "selected_component": "PubMedBERT (Biomedical-BERT)",
+      "evidence_source": "PMID: 41826845 / PMC Biomarkers 2026",
+      "evidence_score": 0.92,
+      "candidate_alternatives": [
+        "Bio_ClinicalBERT",
+        "TF-IDF Ridge",
+        "Word2Vec"
+      ],
+      "ranking": 1,
+      "compute_tier": "LIGHT",
+      "selection_rationale": "Domain-specific clinical tokenization and pretraining on biomedical PubMed corpus."
+    },
+    "multimodal_fusion": {
+      "selected_component": "Learned Dynamic Gated Multimodal Fusion",
+      "evidence_source": "PMID: 41775771 / Nature Sci Rep 2026",
+      "evidence_score": 0.9,
+      "candidate_alternatives": [
+        "Cross-Attention",
+        "Late Fusion",
+        "Feature Concatenation"
+      ],
+      "ranking": 1,
+      "compute_tier": "LIGHT",
+      "selection_rationale": "Adaptive sample-specific modality weight allocation without high attention compute overhead."
+    },
+    "ensemble_strategy": {
+      "selected_component": "Uniform Probability Average Ensemble",
+      "evidence_source": "PMID: 41775771 / Nature Sci Rep 2026",
+      "evidence_score": 0.85,
+      "candidate_alternatives": [
+        "Stacked Meta-Learner",
+        "Validation-Weighted Ensemble"
+      ],
+      "ranking": 1,
+      "compute_tier": "LIGHT",
+      "selection_rationale": "Variance reduction across multimodal representations without risk of meta-learner overfitting on small N."
+    }
+  }
+}

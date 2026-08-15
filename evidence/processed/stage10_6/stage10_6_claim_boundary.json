@@ -1,0 +1,42 @@
+{
+  "Claim 1: The system automatically discovers unseen dataset modalities": {
+    "verdict": "SUPPORTED",
+    "evidence": "Successfully discovered tabular, image, text, and trimodal modalities across 4 unseen cohorts without human annotation."
+  },
+  "Claim 2: The system automatically selects modality-specific models": {
+    "verdict": "SUPPORTED",
+    "evidence": "Selected Dense Tabular Encoder for tabular, ResNet-18 for image, and PubMedBERT for text based on domain metadata."
+  },
+  "Claim 3: The selections are linked to literature evidence": {
+    "verdict": "SUPPORTED",
+    "evidence": "Retained verified publication PMIDs (41826845, 42487970, 41775771) attached to all selected components."
+  },
+  "Claim 4: The system constructs executable modality-specific pipelines": {
+    "verdict": "SUPPORTED",
+    "evidence": "Materialized and executed unimodal pipelines end-to-end without runtime errors."
+  },
+  "Claim 5: The system constructs executable multimodal pipelines": {
+    "verdict": "SUPPORTED",
+    "evidence": "Synthesized and executed trimodal neural pipeline across 3 seeds without tensor incompatibility."
+  },
+  "Claim 6: The system executes multimodal fusion": {
+    "verdict": "SUPPORTED",
+    "evidence": "Dynamic gated fusion actively computed sample-specific modality weights (tabular=0.34, image=0.33, text=0.33)."
+  },
+  "Claim 7: The system executes ensemble aggregation": {
+    "verdict": "SUPPORTED",
+    "evidence": "Uniform Probability Average Ensemble aggregated trimodal probability outputs while remaining dormant for unimodal pipelines."
+  },
+  "Claim 8: Evidence conditioning guarantees better performance": {
+    "verdict": "NOT_SUPPORTED",
+    "evidence": "Candidate and baseline ROC-AUC were identical on unimodal cohorts, and multimodal candidate exhibited higher calibration loss (+0.0066 Brier) on small sample regime."
+  },
+  "Claim 9: Evidence conditioning improves generalization": {
+    "verdict": "PARTIALLY_SUPPORTED",
+    "evidence": "Engineering generalization (cross-cohort schema adaptation) is verified; statistical/clinical generalization requires large prospective multi-center cohorts."
+  },
+  "Claim 10: The system is clinically deployable": {
+    "verdict": "NOT_SUPPORTED",
+    "evidence": "Framework is an automated engineering methodology; real-world clinical deployment requires regulatory approval and prospective validation."
+  }
+}

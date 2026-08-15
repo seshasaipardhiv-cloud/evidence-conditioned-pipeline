@@ -1,0 +1,21 @@
+{
+  "modality_count": 3,
+  "modalities": [
+    "tabular",
+    "image",
+    "text"
+  ],
+  "tabular_representation_generated": true,
+  "image_representation_generated": true,
+  "text_representation_generated": true,
+  "all_representations_reach_fusion": true,
+  "gated_fusion_weights_computed": true,
+  "mean_modality_weights": {
+    "tabular": 0.3374,
+    "image": 0.3251,
+    "text": 0.3374
+  },
+  "sample_weight_variance": 0.003072,
+  "fused_representation_distinct_from_inputs": true,
+  "fusion_execution_verdict": "GENUINELY_EXECUTABLE_DYNAMIC_GATED_FUSION"
+}

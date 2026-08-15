@@ -1,0 +1,1370 @@
+[
+  {
+    "patient_id": "001",
+    "true_label": 0,
+    "predicted_probability": 0.00616,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "002",
+    "true_label": 0,
+    "predicted_probability": 0.02088,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "003",
+    "true_label": 0,
+    "predicted_probability": 0.0906,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "004",
+    "true_label": 0,
+    "predicted_probability": 0.01378,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "005",
+    "true_label": 0,
+    "predicted_probability": 0.02042,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "006",
+    "true_label": 0,
+    "predicted_probability": 0.00897,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "007",
+    "true_label": 0,
+    "predicted_probability": 0.0082,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "008",
+    "true_label": 1,
+    "predicted_probability": 0.99991,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "009",
+    "true_label": 0,
+    "predicted_probability": 0.01735,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "010",
+    "true_label": 0,
+    "predicted_probability": 0.03234,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "011",
+    "true_label": 0,
+    "predicted_probability": 0.01293,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "012",
+    "true_label": 0,
+    "predicted_probability": 0.01001,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "013",
+    "true_label": 0,
+    "predicted_probability": 0.00074,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "014",
+    "true_label": 0,
+    "predicted_probability": 0.01428,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "015",
+    "true_label": 0,
+    "predicted_probability": 0.00828,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "016",
+    "true_label": 0,
+    "predicted_probability": 0.02543,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "017",
+    "true_label": 1,
+    "predicted_probability": 0.01925,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "018",
+    "true_label": 1,
+    "predicted_probability": 0.99842,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "019",
+    "true_label": 0,
+    "predicted_probability": 0.08947,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "020",
+    "true_label": 0,
+    "predicted_probability": 0.02277,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "021",
+    "true_label": 0,
+    "predicted_probability": 0.0187,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "022",
+    "true_label": 0,
+    "predicted_probability": 0.14808,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "023",
+    "true_label": 0,
+    "predicted_probability": 0.02218,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "024",
+    "true_label": 1,
+    "predicted_probability": 0.99896,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "025",
+    "true_label": 0,
+    "predicted_probability": 0.00982,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "026",
+    "true_label": 0,
+    "predicted_probability": 0.00362,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "027",
+    "true_label": 1,
+    "predicted_probability": 0.99961,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "028",
+    "true_label": 0,
+    "predicted_probability": 0.00605,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "029",
+    "true_label": 0,
+    "predicted_probability": 0.08829,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "030",
+    "true_label": 0,
+    "predicted_probability": 0.00062,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "031",
+    "true_label": 0,
+    "predicted_probability": 0.01454,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "032",
+    "true_label": 1,
+    "predicted_probability": 0.99899,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "033",
+    "true_label": 1,
+    "predicted_probability": 0.99946,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "034",
+    "true_label": 0,
+    "predicted_probability": 0.0082,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "035",
+    "true_label": 0,
+    "predicted_probability": 0.00296,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "036",
+    "true_label": 0,
+    "predicted_probability": 0.00671,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "037",
+    "true_label": 0,
+    "predicted_probability": 0.01228,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "038",
+    "true_label": 1,
+    "predicted_probability": 0.99561,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "039",
+    "true_label": 0,
+    "predicted_probability": 0.00314,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "040",
+    "true_label": 0,
+    "predicted_probability": 0.00013,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "041",
+    "true_label": 0,
+    "predicted_probability": 0.00843,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "042",
+    "true_label": 0,
+    "predicted_probability": 0.01159,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "043",
+    "true_label": 0,
+    "predicted_probability": 0.0017,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "044",
+    "true_label": 0,
+    "predicted_probability": 0.004,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "045",
+    "true_label": 1,
+    "predicted_probability": 0.98964,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "046",
+    "true_label": 0,
+    "predicted_probability": 0.00129,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "047",
+    "true_label": 0,
+    "predicted_probability": 0.00616,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "048",
+    "true_label": 0,
+    "predicted_probability": 0.34727,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "049",
+    "true_label": 0,
+    "predicted_probability": 0.01913,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "050",
+    "true_label": 0,
+    "predicted_probability": 0.00661,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "051",
+    "true_label": 0,
+    "predicted_probability": 0.00741,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "052",
+    "true_label": 1,
+    "predicted_probability": 0.99929,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "053",
+    "true_label": 0,
+    "predicted_probability": 0.00741,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "054",
+    "true_label": 0,
+    "predicted_probability": 0.01383,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "055",
+    "true_label": 0,
+    "predicted_probability": 0.00438,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "056",
+    "true_label": 1,
+    "predicted_probability": 0.99924,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "057",
+    "true_label": 0,
+    "predicted_probability": 0.01309,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "058",
+    "true_label": 0,
+    "predicted_probability": 0.04578,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "059",
+    "true_label": 1,
+    "predicted_probability": 0.99964,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "060",
+    "true_label": 1,
+    "predicted_probability": 0.99967,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "061",
+    "true_label": 0,
+    "predicted_probability": 0.01043,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "062",
+    "true_label": 1,
+    "predicted_probability": 0.99901,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "063",
+    "true_label": 1,
+    "predicted_probability": 0.00452,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "064",
+    "true_label": 0,
+    "predicted_probability": 0.01698,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "065",
+    "true_label": 1,
+    "predicted_probability": 0.99998,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "066",
+    "true_label": 1,
+    "predicted_probability": 0.99871,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "067",
+    "true_label": 1,
+    "predicted_probability": 0.99774,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "068",
+    "true_label": 0,
+    "predicted_probability": 0.00533,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "069",
+    "true_label": 1,
+    "predicted_probability": 0.99788,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "070",
+    "true_label": 0,
+    "predicted_probability": 0.00053,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "071",
+    "true_label": 0,
+    "predicted_probability": 0.00552,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "072",
+    "true_label": 0,
+    "predicted_probability": 0.01042,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "073",
+    "true_label": 0,
+    "predicted_probability": 0.00317,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "074",
+    "true_label": 0,
+    "predicted_probability": 0.00013,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "075",
+    "true_label": 1,
+    "predicted_probability": 0.99999,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "076",
+    "true_label": 0,
+    "predicted_probability": 0.03182,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "077",
+    "true_label": 0,
+    "predicted_probability": 0.99955,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "078",
+    "true_label": 0,
+    "predicted_probability": 0.0057,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "079",
+    "true_label": 0,
+    "predicted_probability": 0.00164,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "080",
+    "true_label": 0,
+    "predicted_probability": 0.00844,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "081",
+    "true_label": 0,
+    "predicted_probability": 0.1957,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "082",
+    "true_label": 0,
+    "predicted_probability": 0.00935,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "083",
+    "true_label": 0,
+    "predicted_probability": 0.01193,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "084",
+    "true_label": 0,
+    "predicted_probability": 0.00306,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "085",
+    "true_label": 1,
+    "predicted_probability": 0.99881,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "086",
+    "true_label": 0,
+    "predicted_probability": 0.00773,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "087",
+    "true_label": 1,
+    "predicted_probability": 0.99994,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "088",
+    "true_label": 0,
+    "predicted_probability": 0.00666,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "089",
+    "true_label": 0,
+    "predicted_probability": 0.00318,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "090",
+    "true_label": 1,
+    "predicted_probability": 0.99726,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "091",
+    "true_label": 0,
+    "predicted_probability": 0.01028,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "092",
+    "true_label": 0,
+    "predicted_probability": 0.0295,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "093",
+    "true_label": 0,
+    "predicted_probability": 0.00494,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "094",
+    "true_label": 0,
+    "predicted_probability": 0.04278,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "095",
+    "true_label": 0,
+    "predicted_probability": 0.00571,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "096",
+    "true_label": 0,
+    "predicted_probability": 0.01336,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "097",
+    "true_label": 0,
+    "predicted_probability": 0.07763,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "098",
+    "true_label": 0,
+    "predicted_probability": 0.00905,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "099",
+    "true_label": 0,
+    "predicted_probability": 0.04795,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "100",
+    "true_label": 1,
+    "predicted_probability": 0.99969,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "101",
+    "true_label": 1,
+    "predicted_probability": 0.99999,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "102",
+    "true_label": 0,
+    "predicted_probability": 0.00602,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "103",
+    "true_label": 0,
+    "predicted_probability": 0.00632,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "104",
+    "true_label": 1,
+    "predicted_probability": 0.99997,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "105",
+    "true_label": 1,
+    "predicted_probability": 0.99996,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "106",
+    "true_label": 0,
+    "predicted_probability": 0.05536,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "107",
+    "true_label": 0,
+    "predicted_probability": 0.05385,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "108",
+    "true_label": 1,
+    "predicted_probability": 0.94457,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "109",
+    "true_label": 1,
+    "predicted_probability": 0.99551,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "110",
+    "true_label": 0,
+    "predicted_probability": 0.00433,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "111",
+    "true_label": 0,
+    "predicted_probability": 0.00448,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "112",
+    "true_label": 0,
+    "predicted_probability": 0.14911,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "113",
+    "true_label": 0,
+    "predicted_probability": 0.001,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "114",
+    "true_label": 0,
+    "predicted_probability": 0.00265,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "115",
+    "true_label": 0,
+    "predicted_probability": 0.01233,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "116",
+    "true_label": 0,
+    "predicted_probability": 0.00517,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "117",
+    "true_label": 0,
+    "predicted_probability": 0.07274,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "118",
+    "true_label": 0,
+    "predicted_probability": 0.27917,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "119",
+    "true_label": 0,
+    "predicted_probability": 0.00891,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "120",
+    "true_label": 0,
+    "predicted_probability": 0.0165,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "121",
+    "true_label": 0,
+    "predicted_probability": 0.00448,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "122",
+    "true_label": 1,
+    "predicted_probability": 0.99988,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "123",
+    "true_label": 0,
+    "predicted_probability": 0.01299,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "124",
+    "true_label": 0,
+    "predicted_probability": 0.00529,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "125",
+    "true_label": 0,
+    "predicted_probability": 0.00446,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "126",
+    "true_label": 0,
+    "predicted_probability": 0.03463,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "127",
+    "true_label": 0,
+    "predicted_probability": 0.00365,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "128",
+    "true_label": 1,
+    "predicted_probability": 0.99838,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "129",
+    "true_label": 0,
+    "predicted_probability": 0.00886,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "130",
+    "true_label": 0,
+    "predicted_probability": 0.01609,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "131",
+    "true_label": 0,
+    "predicted_probability": 0.00491,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "132",
+    "true_label": 0,
+    "predicted_probability": 0.02242,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "133",
+    "true_label": 1,
+    "predicted_probability": 0.99833,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "134",
+    "true_label": 0,
+    "predicted_probability": 0.00105,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "135",
+    "true_label": 1,
+    "predicted_probability": 0.99324,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "136",
+    "true_label": 0,
+    "predicted_probability": 0.00954,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "137",
+    "true_label": 0,
+    "predicted_probability": 0.00976,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "138",
+    "true_label": 0,
+    "predicted_probability": 0.00106,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "139",
+    "true_label": 1,
+    "predicted_probability": 0.99906,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "140",
+    "true_label": 0,
+    "predicted_probability": 0.01047,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "141",
+    "true_label": 1,
+    "predicted_probability": 0.99733,
+    "predicted_class": 1,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "142",
+    "true_label": 0,
+    "predicted_probability": 0.00061,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "143",
+    "true_label": 0,
+    "predicted_probability": 0.00048,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "144",
+    "true_label": 0,
+    "predicted_probability": 0.00886,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "145",
+    "true_label": 0,
+    "predicted_probability": 0.00306,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "146",
+    "true_label": 0,
+    "predicted_probability": 0.01325,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "147",
+    "true_label": 0,
+    "predicted_probability": 0.00097,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "148",
+    "true_label": 0,
+    "predicted_probability": 0.04204,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "149",
+    "true_label": 0,
+    "predicted_probability": 0.01608,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "150",
+    "true_label": 0,
+    "predicted_probability": 0.00562,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "151",
+    "true_label": 0,
+    "predicted_probability": 0.005,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "152",
+    "true_label": 0,
+    "predicted_probability": 0.06149,
+    "predicted_class": 0,
+    "model_name": "logistic_regression",
+    "seed": 2026,
+    "split": "test"
+  }
+]

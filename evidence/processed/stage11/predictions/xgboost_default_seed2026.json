@@ -1,0 +1,1370 @@
+[
+  {
+    "patient_id": "001",
+    "true_label": 0,
+    "predicted_probability": 0.00579,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "002",
+    "true_label": 0,
+    "predicted_probability": 0.00245,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "003",
+    "true_label": 0,
+    "predicted_probability": 0.01023,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "004",
+    "true_label": 0,
+    "predicted_probability": 0.00297,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "005",
+    "true_label": 0,
+    "predicted_probability": 0.00151,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "006",
+    "true_label": 0,
+    "predicted_probability": 0.00033,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "007",
+    "true_label": 0,
+    "predicted_probability": 0.001,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "008",
+    "true_label": 1,
+    "predicted_probability": 0.99675,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "009",
+    "true_label": 0,
+    "predicted_probability": 0.0021,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "010",
+    "true_label": 0,
+    "predicted_probability": 0.01317,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "011",
+    "true_label": 0,
+    "predicted_probability": 0.0008,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "012",
+    "true_label": 0,
+    "predicted_probability": 0.0006,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "013",
+    "true_label": 0,
+    "predicted_probability": 0.00108,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "014",
+    "true_label": 0,
+    "predicted_probability": 0.02944,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "015",
+    "true_label": 0,
+    "predicted_probability": 0.00152,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "016",
+    "true_label": 0,
+    "predicted_probability": 0.00168,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "017",
+    "true_label": 1,
+    "predicted_probability": 0.00127,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "018",
+    "true_label": 1,
+    "predicted_probability": 0.99837,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "019",
+    "true_label": 0,
+    "predicted_probability": 0.00237,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "020",
+    "true_label": 0,
+    "predicted_probability": 0.01112,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "021",
+    "true_label": 0,
+    "predicted_probability": 0.02789,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "022",
+    "true_label": 0,
+    "predicted_probability": 0.00648,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "023",
+    "true_label": 0,
+    "predicted_probability": 0.00245,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "024",
+    "true_label": 1,
+    "predicted_probability": 0.99905,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "025",
+    "true_label": 0,
+    "predicted_probability": 0.00954,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "026",
+    "true_label": 0,
+    "predicted_probability": 0.00176,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "027",
+    "true_label": 1,
+    "predicted_probability": 0.99359,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "028",
+    "true_label": 0,
+    "predicted_probability": 0.00073,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "029",
+    "true_label": 0,
+    "predicted_probability": 0.00645,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "030",
+    "true_label": 0,
+    "predicted_probability": 0.00151,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "031",
+    "true_label": 0,
+    "predicted_probability": 0.00152,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "032",
+    "true_label": 1,
+    "predicted_probability": 0.99952,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "033",
+    "true_label": 1,
+    "predicted_probability": 0.99354,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "034",
+    "true_label": 0,
+    "predicted_probability": 0.00049,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "035",
+    "true_label": 0,
+    "predicted_probability": 0.00133,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "036",
+    "true_label": 0,
+    "predicted_probability": 0.002,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "037",
+    "true_label": 0,
+    "predicted_probability": 0.00701,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "038",
+    "true_label": 1,
+    "predicted_probability": 0.99676,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "039",
+    "true_label": 0,
+    "predicted_probability": 0.00284,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "040",
+    "true_label": 0,
+    "predicted_probability": 0.00103,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "041",
+    "true_label": 0,
+    "predicted_probability": 0.00342,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "042",
+    "true_label": 0,
+    "predicted_probability": 0.00089,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "043",
+    "true_label": 0,
+    "predicted_probability": 0.00113,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "044",
+    "true_label": 0,
+    "predicted_probability": 0.04405,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "045",
+    "true_label": 1,
+    "predicted_probability": 0.9977,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "046",
+    "true_label": 0,
+    "predicted_probability": 0.00425,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "047",
+    "true_label": 0,
+    "predicted_probability": 0.00307,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "048",
+    "true_label": 0,
+    "predicted_probability": 0.03769,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "049",
+    "true_label": 0,
+    "predicted_probability": 0.00156,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "050",
+    "true_label": 0,
+    "predicted_probability": 0.00317,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "051",
+    "true_label": 0,
+    "predicted_probability": 0.0029,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "052",
+    "true_label": 1,
+    "predicted_probability": 0.99924,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "053",
+    "true_label": 0,
+    "predicted_probability": 0.00109,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "054",
+    "true_label": 0,
+    "predicted_probability": 0.00047,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "055",
+    "true_label": 0,
+    "predicted_probability": 0.00085,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "056",
+    "true_label": 1,
+    "predicted_probability": 0.99882,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "057",
+    "true_label": 0,
+    "predicted_probability": 0.00138,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "058",
+    "true_label": 0,
+    "predicted_probability": 0.00437,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "059",
+    "true_label": 1,
+    "predicted_probability": 0.99948,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "060",
+    "true_label": 1,
+    "predicted_probability": 0.99735,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "061",
+    "true_label": 0,
+    "predicted_probability": 0.00129,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "062",
+    "true_label": 1,
+    "predicted_probability": 0.99944,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "063",
+    "true_label": 1,
+    "predicted_probability": 0.00362,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "064",
+    "true_label": 0,
+    "predicted_probability": 0.00284,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "065",
+    "true_label": 1,
+    "predicted_probability": 0.9992,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "066",
+    "true_label": 1,
+    "predicted_probability": 0.99759,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "067",
+    "true_label": 1,
+    "predicted_probability": 0.99829,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "068",
+    "true_label": 0,
+    "predicted_probability": 0.0023,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "069",
+    "true_label": 1,
+    "predicted_probability": 0.99477,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "070",
+    "true_label": 0,
+    "predicted_probability": 0.00098,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "071",
+    "true_label": 0,
+    "predicted_probability": 0.00042,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "072",
+    "true_label": 0,
+    "predicted_probability": 0.00125,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "073",
+    "true_label": 0,
+    "predicted_probability": 0.00341,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "074",
+    "true_label": 0,
+    "predicted_probability": 0.00114,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "075",
+    "true_label": 1,
+    "predicted_probability": 0.99234,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "076",
+    "true_label": 0,
+    "predicted_probability": 0.0098,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "077",
+    "true_label": 0,
+    "predicted_probability": 0.97287,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "078",
+    "true_label": 0,
+    "predicted_probability": 0.00268,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "079",
+    "true_label": 0,
+    "predicted_probability": 0.00175,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "080",
+    "true_label": 0,
+    "predicted_probability": 0.00573,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "081",
+    "true_label": 0,
+    "predicted_probability": 0.00463,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "082",
+    "true_label": 0,
+    "predicted_probability": 0.00245,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "083",
+    "true_label": 0,
+    "predicted_probability": 0.0581,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "084",
+    "true_label": 0,
+    "predicted_probability": 0.0334,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "085",
+    "true_label": 1,
+    "predicted_probability": 0.99833,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "086",
+    "true_label": 0,
+    "predicted_probability": 0.00127,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "087",
+    "true_label": 1,
+    "predicted_probability": 0.98762,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "088",
+    "true_label": 0,
+    "predicted_probability": 0.00087,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "089",
+    "true_label": 0,
+    "predicted_probability": 0.00501,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "090",
+    "true_label": 1,
+    "predicted_probability": 0.99538,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "091",
+    "true_label": 0,
+    "predicted_probability": 0.00245,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "092",
+    "true_label": 0,
+    "predicted_probability": 0.0014,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "093",
+    "true_label": 0,
+    "predicted_probability": 0.00145,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "094",
+    "true_label": 0,
+    "predicted_probability": 0.01475,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "095",
+    "true_label": 0,
+    "predicted_probability": 0.00058,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "096",
+    "true_label": 0,
+    "predicted_probability": 0.00883,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "097",
+    "true_label": 0,
+    "predicted_probability": 0.00282,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "098",
+    "true_label": 0,
+    "predicted_probability": 0.00296,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "099",
+    "true_label": 0,
+    "predicted_probability": 0.02145,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "100",
+    "true_label": 1,
+    "predicted_probability": 0.99854,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "101",
+    "true_label": 1,
+    "predicted_probability": 0.9964,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "102",
+    "true_label": 0,
+    "predicted_probability": 0.002,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "103",
+    "true_label": 0,
+    "predicted_probability": 0.00085,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "104",
+    "true_label": 1,
+    "predicted_probability": 0.98762,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "105",
+    "true_label": 1,
+    "predicted_probability": 0.99812,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "106",
+    "true_label": 0,
+    "predicted_probability": 0.00268,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "107",
+    "true_label": 0,
+    "predicted_probability": 0.04469,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "108",
+    "true_label": 1,
+    "predicted_probability": 0.98518,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "109",
+    "true_label": 1,
+    "predicted_probability": 0.99606,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "110",
+    "true_label": 0,
+    "predicted_probability": 0.00175,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "111",
+    "true_label": 0,
+    "predicted_probability": 0.00428,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "112",
+    "true_label": 0,
+    "predicted_probability": 0.00813,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "113",
+    "true_label": 0,
+    "predicted_probability": 0.00113,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "114",
+    "true_label": 0,
+    "predicted_probability": 0.01748,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "115",
+    "true_label": 0,
+    "predicted_probability": 0.00365,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "116",
+    "true_label": 0,
+    "predicted_probability": 0.00275,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "117",
+    "true_label": 0,
+    "predicted_probability": 0.00564,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "118",
+    "true_label": 0,
+    "predicted_probability": 0.16028,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "119",
+    "true_label": 0,
+    "predicted_probability": 0.00569,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "120",
+    "true_label": 0,
+    "predicted_probability": 0.00408,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "121",
+    "true_label": 0,
+    "predicted_probability": 0.00134,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "122",
+    "true_label": 1,
+    "predicted_probability": 0.99092,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "123",
+    "true_label": 0,
+    "predicted_probability": 0.00875,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "124",
+    "true_label": 0,
+    "predicted_probability": 0.00085,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "125",
+    "true_label": 0,
+    "predicted_probability": 0.00275,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "126",
+    "true_label": 0,
+    "predicted_probability": 0.00325,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "127",
+    "true_label": 0,
+    "predicted_probability": 0.00064,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "128",
+    "true_label": 1,
+    "predicted_probability": 0.99837,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "129",
+    "true_label": 0,
+    "predicted_probability": 0.00163,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "130",
+    "true_label": 0,
+    "predicted_probability": 0.00176,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "131",
+    "true_label": 0,
+    "predicted_probability": 0.00249,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "132",
+    "true_label": 0,
+    "predicted_probability": 0.00177,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "133",
+    "true_label": 1,
+    "predicted_probability": 0.92793,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "134",
+    "true_label": 0,
+    "predicted_probability": 0.0111,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "135",
+    "true_label": 1,
+    "predicted_probability": 0.99612,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "136",
+    "true_label": 0,
+    "predicted_probability": 0.00353,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "137",
+    "true_label": 0,
+    "predicted_probability": 0.00569,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "138",
+    "true_label": 0,
+    "predicted_probability": 0.00397,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "139",
+    "true_label": 1,
+    "predicted_probability": 0.99626,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "140",
+    "true_label": 0,
+    "predicted_probability": 0.00306,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "141",
+    "true_label": 1,
+    "predicted_probability": 0.99767,
+    "predicted_class": 1,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "142",
+    "true_label": 0,
+    "predicted_probability": 0.00128,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "143",
+    "true_label": 0,
+    "predicted_probability": 0.00217,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "144",
+    "true_label": 0,
+    "predicted_probability": 0.00248,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "145",
+    "true_label": 0,
+    "predicted_probability": 0.00087,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "146",
+    "true_label": 0,
+    "predicted_probability": 0.00236,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "147",
+    "true_label": 0,
+    "predicted_probability": 0.00033,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "148",
+    "true_label": 0,
+    "predicted_probability": 0.02472,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "149",
+    "true_label": 0,
+    "predicted_probability": 0.00071,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "150",
+    "true_label": 0,
+    "predicted_probability": 0.00112,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "151",
+    "true_label": 0,
+    "predicted_probability": 0.00033,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "152",
+    "true_label": 0,
+    "predicted_probability": 0.00551,
+    "predicted_class": 0,
+    "model_name": "xgboost_default",
+    "seed": 2026,
+    "split": "test"
+  }
+]

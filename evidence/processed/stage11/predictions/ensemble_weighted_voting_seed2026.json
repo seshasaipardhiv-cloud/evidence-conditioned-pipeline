@@ -1,0 +1,1370 @@
+[
+  {
+    "patient_id": "001",
+    "true_label": 0,
+    "predicted_probability": 0.01049,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "002",
+    "true_label": 0,
+    "predicted_probability": 0.00722,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "003",
+    "true_label": 0,
+    "predicted_probability": 0.0117,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "004",
+    "true_label": 0,
+    "predicted_probability": 0.00891,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "005",
+    "true_label": 0,
+    "predicted_probability": 0.02976,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "006",
+    "true_label": 0,
+    "predicted_probability": 0.00228,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "007",
+    "true_label": 0,
+    "predicted_probability": 0.00277,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "008",
+    "true_label": 1,
+    "predicted_probability": 0.99687,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "009",
+    "true_label": 0,
+    "predicted_probability": 0.00705,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "010",
+    "true_label": 0,
+    "predicted_probability": 0.04586,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "011",
+    "true_label": 0,
+    "predicted_probability": 0.00266,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "012",
+    "true_label": 0,
+    "predicted_probability": 0.00682,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "013",
+    "true_label": 0,
+    "predicted_probability": 0.02599,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "014",
+    "true_label": 0,
+    "predicted_probability": 0.01515,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "015",
+    "true_label": 0,
+    "predicted_probability": 0.00704,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "016",
+    "true_label": 0,
+    "predicted_probability": 0.003,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "017",
+    "true_label": 1,
+    "predicted_probability": 0.00768,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "018",
+    "true_label": 1,
+    "predicted_probability": 0.96859,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "019",
+    "true_label": 0,
+    "predicted_probability": 0.00452,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "020",
+    "true_label": 0,
+    "predicted_probability": 0.00738,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "021",
+    "true_label": 0,
+    "predicted_probability": 0.08089,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "022",
+    "true_label": 0,
+    "predicted_probability": 0.00534,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "023",
+    "true_label": 0,
+    "predicted_probability": 0.01078,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "024",
+    "true_label": 1,
+    "predicted_probability": 0.99062,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "025",
+    "true_label": 0,
+    "predicted_probability": 0.01022,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "026",
+    "true_label": 0,
+    "predicted_probability": 0.00704,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "027",
+    "true_label": 1,
+    "predicted_probability": 0.99179,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "028",
+    "true_label": 0,
+    "predicted_probability": 0.00274,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "029",
+    "true_label": 0,
+    "predicted_probability": 0.02599,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "030",
+    "true_label": 0,
+    "predicted_probability": 0.01507,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "031",
+    "true_label": 0,
+    "predicted_probability": 0.00395,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "032",
+    "true_label": 1,
+    "predicted_probability": 0.96219,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "033",
+    "true_label": 1,
+    "predicted_probability": 0.97345,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "034",
+    "true_label": 0,
+    "predicted_probability": 0.00611,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "035",
+    "true_label": 0,
+    "predicted_probability": 0.00713,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "036",
+    "true_label": 0,
+    "predicted_probability": 0.00311,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "037",
+    "true_label": 0,
+    "predicted_probability": 0.00647,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "038",
+    "true_label": 1,
+    "predicted_probability": 0.96059,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "039",
+    "true_label": 0,
+    "predicted_probability": 0.00434,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "040",
+    "true_label": 0,
+    "predicted_probability": 0.02401,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "041",
+    "true_label": 0,
+    "predicted_probability": 0.01284,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "042",
+    "true_label": 0,
+    "predicted_probability": 0.00981,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "043",
+    "true_label": 0,
+    "predicted_probability": 0.01354,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "044",
+    "true_label": 0,
+    "predicted_probability": 0.05897,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "045",
+    "true_label": 1,
+    "predicted_probability": 0.96454,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "046",
+    "true_label": 0,
+    "predicted_probability": 0.00852,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "047",
+    "true_label": 0,
+    "predicted_probability": 0.00987,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "048",
+    "true_label": 0,
+    "predicted_probability": 0.09319,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "049",
+    "true_label": 0,
+    "predicted_probability": 0.00715,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "050",
+    "true_label": 0,
+    "predicted_probability": 0.00556,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "051",
+    "true_label": 0,
+    "predicted_probability": 0.03944,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "052",
+    "true_label": 1,
+    "predicted_probability": 0.9652,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "053",
+    "true_label": 0,
+    "predicted_probability": 0.00343,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "054",
+    "true_label": 0,
+    "predicted_probability": 0.00267,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "055",
+    "true_label": 0,
+    "predicted_probability": 0.00606,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "056",
+    "true_label": 1,
+    "predicted_probability": 0.97542,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "057",
+    "true_label": 0,
+    "predicted_probability": 0.01116,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "058",
+    "true_label": 0,
+    "predicted_probability": 0.00827,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "059",
+    "true_label": 1,
+    "predicted_probability": 0.98673,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "060",
+    "true_label": 1,
+    "predicted_probability": 0.99351,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "061",
+    "true_label": 0,
+    "predicted_probability": 0.00275,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "062",
+    "true_label": 1,
+    "predicted_probability": 0.97964,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "063",
+    "true_label": 1,
+    "predicted_probability": 0.01202,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "064",
+    "true_label": 0,
+    "predicted_probability": 0.1468,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "065",
+    "true_label": 1,
+    "predicted_probability": 0.98715,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "066",
+    "true_label": 1,
+    "predicted_probability": 0.97876,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "067",
+    "true_label": 1,
+    "predicted_probability": 0.93161,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "068",
+    "true_label": 0,
+    "predicted_probability": 0.00398,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "069",
+    "true_label": 1,
+    "predicted_probability": 0.98806,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "070",
+    "true_label": 0,
+    "predicted_probability": 0.02426,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "071",
+    "true_label": 0,
+    "predicted_probability": 0.00357,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "072",
+    "true_label": 0,
+    "predicted_probability": 0.00276,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "073",
+    "true_label": 0,
+    "predicted_probability": 0.04514,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "074",
+    "true_label": 0,
+    "predicted_probability": 0.01685,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "075",
+    "true_label": 1,
+    "predicted_probability": 0.98826,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "076",
+    "true_label": 0,
+    "predicted_probability": 0.01081,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "077",
+    "true_label": 0,
+    "predicted_probability": 0.96227,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "078",
+    "true_label": 0,
+    "predicted_probability": 0.00895,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "079",
+    "true_label": 0,
+    "predicted_probability": 0.01471,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "080",
+    "true_label": 0,
+    "predicted_probability": 0.04528,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "081",
+    "true_label": 0,
+    "predicted_probability": 0.01332,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "082",
+    "true_label": 0,
+    "predicted_probability": 0.00345,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "083",
+    "true_label": 0,
+    "predicted_probability": 0.05574,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "084",
+    "true_label": 0,
+    "predicted_probability": 0.05311,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "085",
+    "true_label": 1,
+    "predicted_probability": 0.98593,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "086",
+    "true_label": 0,
+    "predicted_probability": 0.00292,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "087",
+    "true_label": 1,
+    "predicted_probability": 0.98085,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "088",
+    "true_label": 0,
+    "predicted_probability": 0.00966,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "089",
+    "true_label": 0,
+    "predicted_probability": 0.00557,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "090",
+    "true_label": 1,
+    "predicted_probability": 0.96301,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "091",
+    "true_label": 0,
+    "predicted_probability": 0.00892,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "092",
+    "true_label": 0,
+    "predicted_probability": 0.01449,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "093",
+    "true_label": 0,
+    "predicted_probability": 0.00289,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "094",
+    "true_label": 0,
+    "predicted_probability": 0.06051,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "095",
+    "true_label": 0,
+    "predicted_probability": 0.00258,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "096",
+    "true_label": 0,
+    "predicted_probability": 0.02591,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "097",
+    "true_label": 0,
+    "predicted_probability": 0.00393,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "098",
+    "true_label": 0,
+    "predicted_probability": 0.01076,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "099",
+    "true_label": 0,
+    "predicted_probability": 0.01282,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "100",
+    "true_label": 1,
+    "predicted_probability": 0.99342,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "101",
+    "true_label": 1,
+    "predicted_probability": 0.96707,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "102",
+    "true_label": 0,
+    "predicted_probability": 0.00311,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "103",
+    "true_label": 0,
+    "predicted_probability": 0.0025,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "104",
+    "true_label": 1,
+    "predicted_probability": 0.98286,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "105",
+    "true_label": 1,
+    "predicted_probability": 0.98669,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "106",
+    "true_label": 0,
+    "predicted_probability": 0.00499,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "107",
+    "true_label": 0,
+    "predicted_probability": 0.02365,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "108",
+    "true_label": 1,
+    "predicted_probability": 0.95937,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "109",
+    "true_label": 1,
+    "predicted_probability": 0.95441,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "110",
+    "true_label": 0,
+    "predicted_probability": 0.00798,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "111",
+    "true_label": 0,
+    "predicted_probability": 0.04196,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "112",
+    "true_label": 0,
+    "predicted_probability": 0.01052,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "113",
+    "true_label": 0,
+    "predicted_probability": 0.01352,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "114",
+    "true_label": 0,
+    "predicted_probability": 0.02338,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "115",
+    "true_label": 0,
+    "predicted_probability": 0.00832,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "116",
+    "true_label": 0,
+    "predicted_probability": 0.00411,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "117",
+    "true_label": 0,
+    "predicted_probability": 0.0122,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "118",
+    "true_label": 0,
+    "predicted_probability": 0.14174,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "119",
+    "true_label": 0,
+    "predicted_probability": 0.006,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "120",
+    "true_label": 0,
+    "predicted_probability": 0.01125,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "121",
+    "true_label": 0,
+    "predicted_probability": 0.0066,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "122",
+    "true_label": 1,
+    "predicted_probability": 0.96934,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "123",
+    "true_label": 0,
+    "predicted_probability": 0.02327,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "124",
+    "true_label": 0,
+    "predicted_probability": 0.0025,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "125",
+    "true_label": 0,
+    "predicted_probability": 0.01123,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "126",
+    "true_label": 0,
+    "predicted_probability": 0.00578,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "127",
+    "true_label": 0,
+    "predicted_probability": 0.00375,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "128",
+    "true_label": 1,
+    "predicted_probability": 0.96144,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "129",
+    "true_label": 0,
+    "predicted_probability": 0.00329,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "130",
+    "true_label": 0,
+    "predicted_probability": 0.00415,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "131",
+    "true_label": 0,
+    "predicted_probability": 0.00828,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "132",
+    "true_label": 0,
+    "predicted_probability": 0.00343,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "133",
+    "true_label": 1,
+    "predicted_probability": 0.94248,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "134",
+    "true_label": 0,
+    "predicted_probability": 0.01851,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "135",
+    "true_label": 1,
+    "predicted_probability": 0.96383,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "136",
+    "true_label": 0,
+    "predicted_probability": 0.00933,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "137",
+    "true_label": 0,
+    "predicted_probability": 0.006,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "138",
+    "true_label": 0,
+    "predicted_probability": 0.01168,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "139",
+    "true_label": 1,
+    "predicted_probability": 0.97694,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "140",
+    "true_label": 0,
+    "predicted_probability": 0.00788,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "141",
+    "true_label": 1,
+    "predicted_probability": 0.96143,
+    "predicted_class": 1,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "142",
+    "true_label": 0,
+    "predicted_probability": 0.00782,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "143",
+    "true_label": 0,
+    "predicted_probability": 0.00352,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "144",
+    "true_label": 0,
+    "predicted_probability": 0.0087,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "145",
+    "true_label": 0,
+    "predicted_probability": 0.00291,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "146",
+    "true_label": 0,
+    "predicted_probability": 0.00687,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "147",
+    "true_label": 0,
+    "predicted_probability": 0.01419,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "148",
+    "true_label": 0,
+    "predicted_probability": 0.01311,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "149",
+    "true_label": 0,
+    "predicted_probability": 0.00258,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "150",
+    "true_label": 0,
+    "predicted_probability": 0.00313,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "151",
+    "true_label": 0,
+    "predicted_probability": 0.00228,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "152",
+    "true_label": 0,
+    "predicted_probability": 0.01299,
+    "predicted_class": 0,
+    "model_name": "ensemble_weighted_voting",
+    "seed": 2026,
+    "split": "test"
+  }
+]

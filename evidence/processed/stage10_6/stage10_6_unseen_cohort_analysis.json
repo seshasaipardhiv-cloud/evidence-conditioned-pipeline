@@ -1,0 +1,38 @@
+{
+  "unimodal_identical_roc_auc_investigation": {
+    "observed_phenomenon": "Candidate and baseline ROC-AUC are identical across Cardiac (0.5625), Dermatology (0.6667), and Pathology (0.6667).",
+    "forensic_causes": [
+      {
+        "cause_id": "ARCHITECTURAL_EQUIVALENCE",
+        "description": "In unimodal mode, both the candidate ('Direct Linear Task Head') and baseline utilize single linear projections from the extracted feature representation to a binary logit. Thus, their parameter spaces are mathematically isomorphic."
+      },
+      {
+        "cause_id": "SAMPLE_SIZE_DISCRETE_QUANTIZATION",
+        "description": "With N=40 total samples (8 test samples), the set of possible ROC-AUC values is highly discrete. Tied test probability rank orders yield identical step functions in the ROC curve."
+      },
+      {
+        "cause_id": "DETERMINISTIC_PREDICTION_RANKINGS",
+        "description": "Because feature extraction architectures (Dense Tabular, ResNet-18, PubMedBERT) are shared, sample relative rankings r_1 < r_2 < ... < r_8 remain identical between candidate and baseline, yielding exact ROC-AUC equivalence."
+      }
+    ],
+    "scientific_conclusion": "Identical unimodal ROC-AUC is mathematically expected given unimodal architectural isomorphism and small test sample ranking equivalence."
+  },
+  "multimodal_performance_discrepancy_investigation": {
+    "observed_phenomenon": "On the trimodal oncology cohort, candidate has identical ROC-AUC (0.5625) to baseline, but worse Brier (0.2993 vs 0.2927), Accuracy (0.3333 vs 0.3750), and F1 (0.1667 vs 0.2222).",
+    "forensic_causes": [
+      {
+        "cause_id": "GATING_NETWORK_OVERFITTING_ON_SMALL_N",
+        "description": "Learned Dynamic Gated Fusion introduces 192 additional gating weights (64 x 3). On N_train=32 samples, the gating module slightly over-adjusts modality weights, outputting less confident, higher-entropy probabilities on unseen test samples."
+      },
+      {
+        "cause_id": "BRIER_SCORE_SENSITIVITY",
+        "description": "Brier score directly penalizes probability calibration error (p - y)^2. The higher entropy in candidate probabilities (mean 0.40 vs baseline 0.38) yields a slight increase in Brier loss (+0.0066)."
+      },
+      {
+        "cause_id": "DECISION_BOUNDARY_THRESHOLDING",
+        "description": "At the fixed threshold p >= 0.5, small probability shifts near 0.5 cause 1 additional borderline sample to fall below threshold, reducing test Accuracy (0.3333 vs 0.3750) without altering global ROC-AUC rank ordering."
+      }
+    ],
+    "scientific_conclusion": "The performance delta illustrates the known trade-off of parameter-rich multimodal fusion on small sample regimes (N=40), where unregularized gating can induce slight calibration variance."
+  }
+}

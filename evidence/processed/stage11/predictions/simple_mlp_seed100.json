@@ -1,0 +1,1370 @@
+[
+  {
+    "patient_id": "001",
+    "true_label": 0,
+    "predicted_probability": 0.03405,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "002",
+    "true_label": 0,
+    "predicted_probability": 0.01391,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "003",
+    "true_label": 1,
+    "predicted_probability": 0.99725,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "004",
+    "true_label": 1,
+    "predicted_probability": 1.0,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "005",
+    "true_label": 0,
+    "predicted_probability": 0.02038,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "006",
+    "true_label": 0,
+    "predicted_probability": 0.00274,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "007",
+    "true_label": 0,
+    "predicted_probability": 0.00649,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "008",
+    "true_label": 0,
+    "predicted_probability": 0.01511,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "009",
+    "true_label": 0,
+    "predicted_probability": 0.03158,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "010",
+    "true_label": 0,
+    "predicted_probability": 0.00171,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "011",
+    "true_label": 1,
+    "predicted_probability": 0.99961,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "012",
+    "true_label": 0,
+    "predicted_probability": 0.00279,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "013",
+    "true_label": 0,
+    "predicted_probability": 0.00447,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "014",
+    "true_label": 0,
+    "predicted_probability": 0.01219,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "015",
+    "true_label": 0,
+    "predicted_probability": 0.00619,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "016",
+    "true_label": 1,
+    "predicted_probability": 0.86938,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "017",
+    "true_label": 0,
+    "predicted_probability": 0.00347,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "018",
+    "true_label": 1,
+    "predicted_probability": 0.99475,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "019",
+    "true_label": 0,
+    "predicted_probability": 0.00836,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "020",
+    "true_label": 0,
+    "predicted_probability": 0.02889,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "021",
+    "true_label": 0,
+    "predicted_probability": 0.00468,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "022",
+    "true_label": 1,
+    "predicted_probability": 0.99965,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "023",
+    "true_label": 1,
+    "predicted_probability": 0.99985,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "024",
+    "true_label": 0,
+    "predicted_probability": 0.019,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "025",
+    "true_label": 0,
+    "predicted_probability": 0.01416,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "026",
+    "true_label": 0,
+    "predicted_probability": 0.0111,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "027",
+    "true_label": 0,
+    "predicted_probability": 0.00263,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "028",
+    "true_label": 0,
+    "predicted_probability": 0.00156,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "029",
+    "true_label": 0,
+    "predicted_probability": 0.00739,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "030",
+    "true_label": 0,
+    "predicted_probability": 0.00542,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "031",
+    "true_label": 0,
+    "predicted_probability": 0.01001,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "032",
+    "true_label": 0,
+    "predicted_probability": 0.00216,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "033",
+    "true_label": 0,
+    "predicted_probability": 0.00107,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "034",
+    "true_label": 0,
+    "predicted_probability": 0.00543,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "035",
+    "true_label": 0,
+    "predicted_probability": 0.00713,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "036",
+    "true_label": 0,
+    "predicted_probability": 0.00352,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "037",
+    "true_label": 0,
+    "predicted_probability": 0.0143,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "038",
+    "true_label": 0,
+    "predicted_probability": 0.00028,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "039",
+    "true_label": 0,
+    "predicted_probability": 0.01596,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "040",
+    "true_label": 1,
+    "predicted_probability": 0.99887,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "041",
+    "true_label": 0,
+    "predicted_probability": 0.00111,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "042",
+    "true_label": 0,
+    "predicted_probability": 0.00784,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "043",
+    "true_label": 1,
+    "predicted_probability": 0.99975,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "044",
+    "true_label": 1,
+    "predicted_probability": 0.98898,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "045",
+    "true_label": 0,
+    "predicted_probability": 0.00234,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "046",
+    "true_label": 0,
+    "predicted_probability": 0.00303,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "047",
+    "true_label": 0,
+    "predicted_probability": 0.0008,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "048",
+    "true_label": 0,
+    "predicted_probability": 0.03516,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "049",
+    "true_label": 0,
+    "predicted_probability": 0.00134,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "050",
+    "true_label": 0,
+    "predicted_probability": 0.00389,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "051",
+    "true_label": 0,
+    "predicted_probability": 0.00903,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "052",
+    "true_label": 1,
+    "predicted_probability": 0.99825,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "053",
+    "true_label": 1,
+    "predicted_probability": 0.99909,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "054",
+    "true_label": 1,
+    "predicted_probability": 0.77964,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "055",
+    "true_label": 0,
+    "predicted_probability": 0.00194,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "056",
+    "true_label": 0,
+    "predicted_probability": 0.00299,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "057",
+    "true_label": 0,
+    "predicted_probability": 0.02377,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "058",
+    "true_label": 0,
+    "predicted_probability": 0.00113,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "059",
+    "true_label": 1,
+    "predicted_probability": 0.84066,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "060",
+    "true_label": 1,
+    "predicted_probability": 0.99357,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "061",
+    "true_label": 0,
+    "predicted_probability": 0.0017,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "062",
+    "true_label": 0,
+    "predicted_probability": 0.01702,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "063",
+    "true_label": 0,
+    "predicted_probability": 0.01097,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "064",
+    "true_label": 0,
+    "predicted_probability": 0.01783,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "065",
+    "true_label": 0,
+    "predicted_probability": 0.00433,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "066",
+    "true_label": 0,
+    "predicted_probability": 0.00241,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "067",
+    "true_label": 0,
+    "predicted_probability": 0.02443,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "068",
+    "true_label": 0,
+    "predicted_probability": 0.00402,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "069",
+    "true_label": 1,
+    "predicted_probability": 0.0162,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "070",
+    "true_label": 0,
+    "predicted_probability": 0.00157,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "071",
+    "true_label": 0,
+    "predicted_probability": 0.00837,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "072",
+    "true_label": 1,
+    "predicted_probability": 0.99979,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "073",
+    "true_label": 0,
+    "predicted_probability": 0.00476,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "074",
+    "true_label": 0,
+    "predicted_probability": 0.01182,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "075",
+    "true_label": 0,
+    "predicted_probability": 0.94611,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "076",
+    "true_label": 0,
+    "predicted_probability": 0.00375,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "077",
+    "true_label": 0,
+    "predicted_probability": 0.14526,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "078",
+    "true_label": 0,
+    "predicted_probability": 0.00677,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "079",
+    "true_label": 1,
+    "predicted_probability": 0.99862,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "080",
+    "true_label": 0,
+    "predicted_probability": 0.03072,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "081",
+    "true_label": 0,
+    "predicted_probability": 0.00255,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "082",
+    "true_label": 0,
+    "predicted_probability": 0.0029,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "083",
+    "true_label": 0,
+    "predicted_probability": 0.01409,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "084",
+    "true_label": 0,
+    "predicted_probability": 0.00653,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "085",
+    "true_label": 0,
+    "predicted_probability": 0.00581,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "086",
+    "true_label": 0,
+    "predicted_probability": 0.03088,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "087",
+    "true_label": 0,
+    "predicted_probability": 0.00662,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "088",
+    "true_label": 0,
+    "predicted_probability": 0.00362,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "089",
+    "true_label": 0,
+    "predicted_probability": 0.00102,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "090",
+    "true_label": 0,
+    "predicted_probability": 0.05096,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "091",
+    "true_label": 1,
+    "predicted_probability": 0.0657,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "092",
+    "true_label": 1,
+    "predicted_probability": 0.99945,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "093",
+    "true_label": 1,
+    "predicted_probability": 0.98811,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "094",
+    "true_label": 0,
+    "predicted_probability": 0.03555,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "095",
+    "true_label": 0,
+    "predicted_probability": 0.00837,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "096",
+    "true_label": 0,
+    "predicted_probability": 0.00183,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "097",
+    "true_label": 1,
+    "predicted_probability": 0.86517,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "098",
+    "true_label": 1,
+    "predicted_probability": 0.9994,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "099",
+    "true_label": 0,
+    "predicted_probability": 0.03221,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "100",
+    "true_label": 0,
+    "predicted_probability": 0.00431,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "101",
+    "true_label": 0,
+    "predicted_probability": 0.02063,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "102",
+    "true_label": 0,
+    "predicted_probability": 0.00099,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "103",
+    "true_label": 1,
+    "predicted_probability": 0.98265,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "104",
+    "true_label": 1,
+    "predicted_probability": 0.99148,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "105",
+    "true_label": 0,
+    "predicted_probability": 0.00491,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "106",
+    "true_label": 0,
+    "predicted_probability": 0.01891,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "107",
+    "true_label": 0,
+    "predicted_probability": 0.00408,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "108",
+    "true_label": 0,
+    "predicted_probability": 0.00674,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "109",
+    "true_label": 0,
+    "predicted_probability": 0.82708,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "110",
+    "true_label": 0,
+    "predicted_probability": 0.03159,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "111",
+    "true_label": 0,
+    "predicted_probability": 0.00106,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "112",
+    "true_label": 0,
+    "predicted_probability": 0.00985,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "113",
+    "true_label": 0,
+    "predicted_probability": 0.01375,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "114",
+    "true_label": 0,
+    "predicted_probability": 0.0099,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "115",
+    "true_label": 0,
+    "predicted_probability": 0.03766,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "116",
+    "true_label": 0,
+    "predicted_probability": 0.03409,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "117",
+    "true_label": 0,
+    "predicted_probability": 0.00038,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "118",
+    "true_label": 1,
+    "predicted_probability": 0.99294,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "119",
+    "true_label": 0,
+    "predicted_probability": 0.00487,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "120",
+    "true_label": 0,
+    "predicted_probability": 0.00829,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "121",
+    "true_label": 0,
+    "predicted_probability": 0.00065,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "122",
+    "true_label": 0,
+    "predicted_probability": 0.04948,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "123",
+    "true_label": 0,
+    "predicted_probability": 0.00186,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "124",
+    "true_label": 0,
+    "predicted_probability": 0.00329,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "125",
+    "true_label": 0,
+    "predicted_probability": 0.00245,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "126",
+    "true_label": 0,
+    "predicted_probability": 0.01913,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "127",
+    "true_label": 0,
+    "predicted_probability": 0.00941,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "128",
+    "true_label": 1,
+    "predicted_probability": 0.99976,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "129",
+    "true_label": 0,
+    "predicted_probability": 0.00164,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "130",
+    "true_label": 1,
+    "predicted_probability": 0.00044,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "131",
+    "true_label": 1,
+    "predicted_probability": 0.99974,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "132",
+    "true_label": 1,
+    "predicted_probability": 0.99839,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "133",
+    "true_label": 0,
+    "predicted_probability": 0.00137,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "134",
+    "true_label": 0,
+    "predicted_probability": 0.00085,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "135",
+    "true_label": 0,
+    "predicted_probability": 0.00096,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "136",
+    "true_label": 1,
+    "predicted_probability": 0.99984,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "137",
+    "true_label": 0,
+    "predicted_probability": 0.02155,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "138",
+    "true_label": 0,
+    "predicted_probability": 0.02358,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "139",
+    "true_label": 0,
+    "predicted_probability": 0.00019,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "140",
+    "true_label": 0,
+    "predicted_probability": 0.00722,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "141",
+    "true_label": 1,
+    "predicted_probability": 0.99978,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "142",
+    "true_label": 1,
+    "predicted_probability": 0.02718,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "143",
+    "true_label": 1,
+    "predicted_probability": 0.99961,
+    "predicted_class": 1,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "144",
+    "true_label": 0,
+    "predicted_probability": 0.00338,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "145",
+    "true_label": 0,
+    "predicted_probability": 0.0009,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "146",
+    "true_label": 0,
+    "predicted_probability": 0.00694,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "147",
+    "true_label": 0,
+    "predicted_probability": 0.00823,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "148",
+    "true_label": 0,
+    "predicted_probability": 0.00409,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "149",
+    "true_label": 1,
+    "predicted_probability": 0.01508,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "150",
+    "true_label": 0,
+    "predicted_probability": 0.00433,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "151",
+    "true_label": 0,
+    "predicted_probability": 0.00887,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  },
+  {
+    "patient_id": "152",
+    "true_label": 0,
+    "predicted_probability": 0.02965,
+    "predicted_class": 0,
+    "model_name": "simple_mlp",
+    "seed": 100,
+    "split": "test"
+  }
+]

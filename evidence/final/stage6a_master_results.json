@@ -1,6 +1,6 @@
 {
   "package_title": "Phase 6A: Final Master Research Results Package",
-  "timestamp": "2026-08-15T10:56:14.552836+00:00",
+  "timestamp": "2026-08-15T16:25:50.624705+00:00",
   "1_research_objective": "Develop an evidence-conditioned machine learning pipeline synthesis framework that bridges biomedical literature evidence to executable clinical prediction pipelines, rigorously preventing arbitrary library defaults and target leakage while establishing traceable provenance and conservative scientific validation.",
   "2_final_pipeline": {
     "pipeline_hash": "6b6bcb1b217793230dba3467ea09fd94339c7497ccc85b0f8ed86c59f16686da",
@@ -545,9 +545,9 @@
     "stage5b_candidate": "cdc3471a7b69a10002435ca0de656d2828a608c8bf8c2165682b4f65faec1c72",
     "stage5b_baseline": "f2d0340a1d84f4638c78830cc57dd01c0a3b652d36cce22a5f58483ce6e6b96d",
     "stage5b_run_results": "7d40871235434b83d210d5efa20dfa9c36e04fd164c743f8f8e01f731919c111",
-    "stage5c_ablation": "6bf228e49d50a9c5e1eea5dc1fa9651868d8f469ba2bbc2155674914d055506b",
+    "stage5c_ablation": "430f5b8e2b20af3d041fdde68b8f32e0c01a94ea18235ee73fac50724683c8b8",
     "stage5c_baseline_comp": "35cdd5a012b1802f7cfc8b54e700e33ad720726bc85aa5454292d68863cc8722",
-    "stage5d_claims": "15cd13b0af315f0a0bb9f1d030625dc0e2d987eec77827d0d37b91e99a32f639",
-    "stage5d_verdict": "69c024b6f0b24a42a52bf8a14309ca409d6542dc4dd6d5595e4d5f886182aa7f"
+    "stage5d_claims": "39d89eda981d94210fdc241cb7d5fb75a1931ca5b8a6468f013c5da96bc99058",
+    "stage5d_verdict": "afbf1c5a8bdb2b97a7939dc82d8fc348ad8fa31f96fb7bb7ae11f9915c108738"
   }
 }

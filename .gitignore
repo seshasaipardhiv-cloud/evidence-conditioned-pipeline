@@ -1,47 +1,74 @@
 # Python
 __pycache__/
 *.py[cod]
+*$py.class
 *.pyo
+*.pyd
 
-# Virtual environment
+# Virtual Environments
 .venv/
 venv/
 env/
+ENV/
+env.bak/
+venv.bak/
 
-# Testing
+# Testing & Coverage
 .pytest_cache/
 .coverage
+.coverage.*
 htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
 
-# IDE
+# IDEs & Editors
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
 
-# Environment / secrets
+# Environment & Secrets
 .env
 .env.*
+!.env.example
 *.pem
 *.key
+*.cert
+*.crt
 
-# Logs
+# Logs & Diagnostics
+logs/
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Temporary files
+# Temporary Files & Scratch
+scratch/
 *.tmp
 *.temp
+temp/
+tmp/
 
-# Local databases
+# Local Databases
 *.db
 *.sqlite
 *.sqlite3
 
-# Raw/private datasets
+# Raw / Private Datasets & Large Artifacts
 data/raw/
 data/private/
-
-# Experiment-generated model artifacts
 data/experiments/
+experiments/checkpoints/
+*.checkpoint
 
-# OS
+# OS-specific
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db

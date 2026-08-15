@@ -1,0 +1,17 @@
+{
+  "figures_generated_count": 24,
+  "figures": [
+    "figure1_individual_roc_auc",
+    "figure2_individual_pr_auc",
+    "figure3_individual_brier_score",
+    "figure4_individual_f1_score",
+    "figure5_candidate_vs_ensemble_roc",
+    "figure6_candidate_vs_ensemble_pr",
+    "figure7_per_seed_stability",
+    "figure8_roc_curves",
+    "figure9_pr_curves",
+    "figure10_calibration_confusion",
+    "figure11_candidate_vs_individual_vs_ensembles",
+    "figure12_ensemble_composition_and_performance"
+  ]
+}

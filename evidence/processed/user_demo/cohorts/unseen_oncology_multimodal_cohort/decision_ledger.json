@@ -959,6 +959,106 @@
       "train_only": true
     }
   },
+  "selected_preprocessors": {
+    "tabular": {
+      "standard_scaling": true,
+      "median_imputation": true,
+      "train_only": true
+    },
+    "image": {
+      "target_size": [
+        32,
+        32
+      ],
+      "normalization": "imagenet",
+      "train_only": true
+    },
+    "text": {
+      "max_seq_len": 32,
+      "lowercase": true,
+      "train_only": true
+    }
+  },
+  "selected_models": {
+    "tabular": "Dimension-Adaptive Dense Tabular Encoder",
+    "image": "ResNet-18",
+    "text": "PubMedBERT (Biomedical-BERT)"
+  },
+  "selected_fusion": "Learned Dynamic Gated Multimodal Fusion",
+  "selected_ensemble": "Uniform Probability Average Ensemble",
+  "safety_gate_results": {
+    "overall_status": "PASSED",
+    "passed_gates_count": 14,
+    "total_gates_count": 14,
+    "gate_results": {
+      "gate_1_modality_detection_valid": {
+        "passed": true,
+        "details": "Modalities: ['tabular', 'image', 'text']"
+      },
+      "gate_2_sample_correspondence": {
+        "passed": true,
+        "details": "Train samples: 32, Test samples: 8"
+      },
+      "gate_3_patient_overlap_firewall": {
+        "passed": true,
+        "overlaps": {
+          "train_val": [],
+          "train_test": [],
+          "val_test": [],
+          "duplicate_hashes": []
+        }
+      },
+      "gate_4_target_leakage": {
+        "passed": true,
+        "detected_leaks": []
+      },
+      "gate_5_temporal_leakage_post_adjuvant": {
+        "passed": true,
+        "temporal_exclusions": []
+      },
+      "gate_6_image_preprocessing_isolation": {
+        "passed": true,
+        "details": "Train-only image normalization and augmentations enforced."
+      },
+      "gate_7_text_preprocessing_isolation": {
+        "passed": true,
+        "details": "Vocabulary and IDF weights fitted strictly on train fold."
+      },
+      "gate_8_image_architecture_provenance": {
+        "passed": true,
+        "provenance": "PMID: 42487970 / Lancet Digital Health 2026"
+      },
+      "gate_9_text_model_provenance": {
+        "passed": true,
+        "provenance": "PMID: 41826845 / PMC Biomarkers 2026"
+      },
+      "gate_10_fusion_dimension_compatibility": {
+        "passed": true,
+        "embedding_dimension": 64
+      },
+      "gate_11_missing_modality_contract": {
+        "passed": true,
+        "strategy": "Deterministic zero/mean tensor fallback without row dropping"
+      },
+      "gate_12_compute_budget_compliance": {
+        "passed": true,
+        "configured_budget": "LIGHT",
+        "required_budget": "LIGHT"
+      },
+      "gate_13_deterministic_seed_verification": {
+        "passed": true,
+        "seeds": [
+          42,
+          100,
+          2026
+        ]
+      },
+      "gate_14_pipeline_hash_integrity": {
+        "passed": true,
+        "pipeline_config_sha256": "1a6840adb2740ba0ed4df6c2613df70a2f91b692fd8b6a6e3f8ea80954feba1a"
+      }
+    }
+  },
   "safety_audit": {
     "overall_status": "PASSED",
     "passed_gates_count": 14,
@@ -1032,6 +1132,16 @@
       }
     }
   },
+  "training_configuration": {
+    "seeds": [
+      42,
+      100,
+      2026
+    ],
+    "compute_budget": "LIGHT",
+    "embed_dim": 64,
+    "train_test_split": "80/20 train-isolated"
+  },
   "seeds": [
     42,
     100,
@@ -1040,16 +1150,39 @@
   "candidate_metrics": {
     "roc_auc_mean": 0.5625,
     "roc_auc_std": 0.4177,
+    "pr_auc_mean": 0.6996,
     "brier_score_mean": 0.2993,
-    "f1_mean": 0.1667,
-    "accuracy_mean": 0.3333
+    "accuracy_mean": 0.3333,
+    "precision_mean": 0.1667,
+    "recall_mean": 0.1667,
+    "f1_mean": 0.1667
+  },
+  "evaluation_metrics": {
+    "roc_auc_mean": 0.5625,
+    "roc_auc_std": 0.4177,
+    "pr_auc_mean": 0.6996,
+    "brier_score_mean": 0.2993,
+    "accuracy_mean": 0.3333,
+    "precision_mean": 0.1667,
+    "recall_mean": 0.1667,
+    "f1_mean": 0.1667
   },
   "baseline_metrics": {
     "roc_auc_mean": 0.5625,
     "roc_auc_std": 0.4177,
+    "pr_auc_mean": 0.6996,
     "brier_score_mean": 0.2927,
-    "f1_mean": 0.2222,
-    "accuracy_mean": 0.375
+    "accuracy_mean": 0.375,
+    "precision_mean": 0.2,
+    "recall_mean": 0.25,
+    "f1_mean": 0.2222
+  },
+  "deltas": {
+    "roc_auc_delta": 0.0,
+    "pr_auc_delta": 0.0,
+    "brier_delta": 0.0066,
+    "accuracy_delta": -0.0417,
+    "f1_delta": -0.0555
   },
   "claim_boundary_matrix": {
     "Claim 1: The framework transfers across unseen datasets without manual model specification": "SUPPORTED",
@@ -1059,6 +1192,39 @@
     "Claim 5: Evidence-conditioned selection consistently improves predictive performance": "PARTIALLY_SUPPORTED",
     "Claim 6: The framework generalizes clinically to real-world multicenter clinical settings": "NOT_SUPPORTED"
   },
-  "runtime_seconds": 8.6,
-  "generated_at": "2026-08-15T11:37:18.551473+00:00"
+  "reproducibility_information": {
+    "timestamp": "2026-08-15T14:55:57.679092+00:00",
+    "seeds": [
+      42,
+      100,
+      2026
+    ],
+    "compute_budget": "LIGHT",
+    "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "deterministic_execution": true,
+    "artifact_hashes": {
+      "baseline_comparison.json": "215fc6d99be4f538752e1e53eb7b36e4d9d663424c4215348c6ddba7377a0d01",
+      "claim_boundary_matrix.json": "ef5d9cbdb49ccda4622862fb13c9d1507a483498f32ecf50289ee6281a7013b5",
+      "decision_ledger.json": "86e609965e2a10b04ce9cf534f354f16d4f372c17540a34c0c2390f85aa843ea",
+      "evidence_and_model_selection.json": "d0383a3ff00f3c17bf037ba69f056006cd11377cd1ce969177b4b51d21851c07",
+      "execution_results.json": "3f231f209eafa42bf93c7e7c6e51e8e910207b65437f17df7e1ccbb152cbbd49",
+      "modality_discovery.json": "3f1c2f01ae4b508caec1d7bd4b4716dd1d5c3b41dd468bcb3ea553d95aff2585",
+      "preprocessing_selection.json": "ceeb1cd500454a159293d50832aee09a4932e3cde5d864c47f01dc26336336cf",
+      "reproducibility_report.json": "84bfffd90e38873712307943b41a70f23d4d59378bf4ad623bf40ae5edc2a230",
+      "safety_audit.json": "a9f7a790f268ea921efd8fd80255a382c7a7da43a1b5fd3e47de7596411b100d"
+    }
+  },
+  "artifact_hashes": {
+    "baseline_comparison.json": "215fc6d99be4f538752e1e53eb7b36e4d9d663424c4215348c6ddba7377a0d01",
+    "claim_boundary_matrix.json": "ef5d9cbdb49ccda4622862fb13c9d1507a483498f32ecf50289ee6281a7013b5",
+    "decision_ledger.json": "86e609965e2a10b04ce9cf534f354f16d4f372c17540a34c0c2390f85aa843ea",
+    "evidence_and_model_selection.json": "d0383a3ff00f3c17bf037ba69f056006cd11377cd1ce969177b4b51d21851c07",
+    "execution_results.json": "3f231f209eafa42bf93c7e7c6e51e8e910207b65437f17df7e1ccbb152cbbd49",
+    "modality_discovery.json": "3f1c2f01ae4b508caec1d7bd4b4716dd1d5c3b41dd468bcb3ea553d95aff2585",
+    "preprocessing_selection.json": "ceeb1cd500454a159293d50832aee09a4932e3cde5d864c47f01dc26336336cf",
+    "reproducibility_report.json": "84bfffd90e38873712307943b41a70f23d4d59378bf4ad623bf40ae5edc2a230",
+    "safety_audit.json": "a9f7a790f268ea921efd8fd80255a382c7a7da43a1b5fd3e47de7596411b100d"
+  },
+  "runtime_seconds": 8.38,
+  "generated_at": "2026-08-15T14:55:57.679092+00:00"
 }

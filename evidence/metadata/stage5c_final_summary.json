@@ -1,5 +1,5 @@
 {
-  "execution_timestamp": "2026-08-15T10:56:14.491092+00:00",
+  "execution_timestamp": "2026-08-15T16:25:50.430516+00:00",
   "stage": "Stage 5C: Statistical Validation, Component Ablation, and Robustness Analysis",
   "analysis_status": "ANALYSIS_COMPLETE",
   "candidate_mean_roc_auc": 0.9751,

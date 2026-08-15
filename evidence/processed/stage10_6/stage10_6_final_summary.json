@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-08-15T15:03:48.296921+00:00",
+  "stage": "STAGE 10.6 \u2014 UNSEEN-COHORT FORENSIC ANALYSIS",
+  "status": "COMPLETED",
+  "cohorts_analyzed_count": 4,
+  "cohort_names": [
+    "unseen_cardiac_tabular_cohort",
+    "unseen_derm_image_cohort",
+    "unseen_pathology_text_cohort",
+    "unseen_oncology_multimodal_cohort"
+  ],
+  "figures_generated_count": 16,
+  "json_artifacts_generated": [
+    "stage10_6_prediction_forensics.json",
+    "stage10_6_model_differentiation.json",
+    "stage10_6_evidence_selection_audit.json",
+    "stage10_6_preprocessing_audit.json",
+    "stage10_6_fusion_execution_audit.json",
+    "stage10_6_ensemble_execution_audit.json",
+    "stage10_6_unseen_cohort_analysis.json",
+    "stage10_6_claim_boundary.json",
+    "stage10_6_final_summary.json"
+  ],
+  "historical_integrity": "ZERO_MUTATION_CONFIRMED",
+  "supported_claims_count": 7,
+  "partially_supported_claims_count": 1,
+  "not_supported_claims_count": 2
+}

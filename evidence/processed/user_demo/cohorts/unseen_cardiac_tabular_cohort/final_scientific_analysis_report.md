@@ -1,7 +1,7 @@
 # Evidence-Conditioned Pipeline Synthesis: Final Scientific Analysis Report
 
-**Date Generated:** 2026-08-15T11:37:05.555278+00:00  
-**Execution Runtime:** 0.35 seconds  
+**Date Generated:** 2026-08-15T14:55:43.176418+00:00  
+**Execution Runtime:** 1.24 seconds  
 **Seeds Evaluated:** [42, 100, 2026]  
 
 ---
@@ -35,7 +35,7 @@ Every selected component retains verified publication provenance:
 
 ## 4. Multi-Seed Empirical Benchmark vs. Fixed-Default Baseline
 
-| Metric | Evidence-Conditioned Synthesized Pipeline | Fixed-Default Baseline | Empirical Delta ($\Delta$) |
+| Metric | Evidence-Conditioned Synthesized Pipeline | Fixed-Default Baseline | Empirical Delta (Δ) |
 | :--- | :---: | :---: | :---: |
 | **Mean ROC-AUC** | **`0.5625 ± 0.3680`** | `0.5625 ± 0.3680` | `+0.0000` |
 | **Brier Score Loss** | **`0.2294`** | `0.2294` | **`0.0000`** *(lower is better)* |

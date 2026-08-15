@@ -1,0 +1,29 @@
+{
+  "isolation_status": "STRICT_TRAIN_ONLY_FITTING_CONFIRMED",
+  "test_contamination_detected": false,
+  "leakage_gates_passed": true,
+  "modality_checks": {
+    "tabular": {
+      "scaler_type": "StandardScaler / MedianImputer",
+      "fitting_partition": "Train Partition Only (80%)",
+      "test_transform_isolation": "Transform-only on test partition without re-estimating mean/variance",
+      "status": "PASSED"
+    },
+    "image": {
+      "normalization": "ImageNet (mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])",
+      "resize_resolution": "(32, 32, 3)",
+      "fitting_partition": "Deterministic per-image transform; no global statistical fitting on test fold",
+      "status": "PASSED"
+    },
+    "text": {
+      "tokenizer": "Subword / Word-level Tokenizer with max_seq_len=32",
+      "vocabulary_fitting": "Train Partition Only (80%)",
+      "out_of_vocabulary_handling": "Mapped to [UNK] token on test partition",
+      "status": "PASSED"
+    },
+    "multimodal": {
+      "patient_id_firewall": "0% overlap between train and test patient IDs across all modalities simultaneously",
+      "status": "PASSED"
+    }
+  }
+}

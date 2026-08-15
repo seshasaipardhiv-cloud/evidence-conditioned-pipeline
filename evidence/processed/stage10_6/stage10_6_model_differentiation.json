@@ -1,0 +1,52 @@
+{
+  "unseen_cardiac_tabular_cohort": {
+    "cohort": "unseen_cardiac_tabular_cohort",
+    "modalities": [
+      "tabular"
+    ],
+    "candidate_architecture": "Evidence-Conditioned Tabular Pipeline with Task Head",
+    "baseline_architecture": "Standard Fixed Tabular Pipeline with Linear Layer",
+    "architectural_status": "ARCHITECTURALLY_EQUIVALENT_UNIMODAL_HEAD",
+    "parameter_difference": "Zero functional parameter difference (both utilize identical feature dimension to single-logit projection)",
+    "execution_path_difference": "Identical linear task projection; candidate incorporates verified literature provenance tracking",
+    "theoretical_divergence": false
+  },
+  "unseen_derm_image_cohort": {
+    "cohort": "unseen_derm_image_cohort",
+    "modalities": [
+      "image"
+    ],
+    "candidate_architecture": "Evidence-Conditioned Image Pipeline with Task Head",
+    "baseline_architecture": "Standard Fixed Image Pipeline with Linear Layer",
+    "architectural_status": "ARCHITECTURALLY_EQUIVALENT_UNIMODAL_HEAD",
+    "parameter_difference": "Zero functional parameter difference (both utilize identical feature dimension to single-logit projection)",
+    "execution_path_difference": "Identical linear task projection; candidate incorporates verified literature provenance tracking",
+    "theoretical_divergence": false
+  },
+  "unseen_pathology_text_cohort": {
+    "cohort": "unseen_pathology_text_cohort",
+    "modalities": [
+      "text"
+    ],
+    "candidate_architecture": "Evidence-Conditioned Text Pipeline with Task Head",
+    "baseline_architecture": "Standard Fixed Text Pipeline with Linear Layer",
+    "architectural_status": "ARCHITECTURALLY_EQUIVALENT_UNIMODAL_HEAD",
+    "parameter_difference": "Zero functional parameter difference (both utilize identical feature dimension to single-logit projection)",
+    "execution_path_difference": "Identical linear task projection; candidate incorporates verified literature provenance tracking",
+    "theoretical_divergence": false
+  },
+  "unseen_oncology_multimodal_cohort": {
+    "cohort": "unseen_oncology_multimodal_cohort",
+    "modalities": [
+      "tabular",
+      "image",
+      "text"
+    ],
+    "candidate_architecture": "Learned Dynamic Gated Multimodal Fusion + Uniform Average Ensemble",
+    "baseline_architecture": "Fixed Feature Concatenation + Single Linear Layer",
+    "architectural_status": "GENUINELY_DIFFERENT_MULTIMODAL_ARCHITECTURES",
+    "parameter_difference": "Candidate instantiates additional gating projection network (64 -> 3 weights per sample) and ensemble averaging",
+    "execution_path_difference": "Candidate executes learned gating weights before linear combination; baseline simply concatenates raw representation tensors [h_tab || h_img || h_txt]",
+    "theoretical_divergence": true
+  }
+}

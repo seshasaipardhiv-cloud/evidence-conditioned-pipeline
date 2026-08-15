@@ -1,0 +1,186 @@
+{
+  "experiment_stage": "stage11",
+  "timestamp": "2026-08-15T16:24:39.660190+00:00",
+  "seeds": [
+    42,
+    100,
+    2026
+  ],
+  "models_evaluated_count": 3,
+  "models": [
+    {
+      "model_name": "candidate_pipeline",
+      "display_name": "Evidence-Conditioned Candidate",
+      "model_family": "gradient_boosting",
+      "evidence_status": "EVIDENCE_BACKED",
+      "provenance": "Literature-derived pipeline with median/mode imputation, one-hot encoding, SMOTE, and tuned XGBoost.",
+      "citation_pmid": "PMID: 41826845 / PMC Biomarkers 2026",
+      "mean_roc_auc": 0.9751,
+      "std_roc_auc": 0.0114,
+      "mean_pr_auc": 0.9679,
+      "std_pr_auc": 0.0123,
+      "mean_brier_score": 0.0175,
+      "mean_accuracy": 0.9825,
+      "mean_precision": 0.9801,
+      "mean_recall": 0.9429,
+      "mean_f1_score": 0.9611,
+      "mean_runtime_sec": 0.4843,
+      "per_seed_roc_auc": {
+        "42": 0.9888,
+        "100": 0.9609,
+        "2026": 0.9756
+      }
+    },
+    {
+      "model_name": "xgboost_default",
+      "display_name": "Default XGBoost",
+      "model_family": "gradient_boosting",
+      "evidence_status": "BASELINE",
+      "provenance": "Standard untuned XGBoost default baseline.",
+      "citation_pmid": null,
+      "mean_roc_auc": 0.9704,
+      "std_roc_auc": 0.0059,
+      "mean_pr_auc": 0.9665,
+      "std_pr_auc": 0.0096,
+      "mean_brier_score": 0.018,
+      "mean_accuracy": 0.9825,
+      "mean_precision": 0.9801,
+      "mean_recall": 0.9429,
+      "mean_f1_score": 0.9611,
+      "mean_runtime_sec": 0.0272,
+      "per_seed_roc_auc": {
+        "42": 0.9783,
+        "100": 0.9643,
+        "2026": 0.9685
+      }
+    },
+    {
+      "model_name": "random_forest",
+      "display_name": "Random Forest",
+      "model_family": "ensemble_tree",
+      "evidence_status": "BASELINE",
+      "provenance": "Standard Breiman Random Forest ensemble baseline.",
+      "citation_pmid": null,
+      "mean_roc_auc": 0.9698,
+      "std_roc_auc": 0.0065,
+      "mean_pr_auc": 0.9494,
+      "std_pr_auc": 0.0216,
+      "mean_brier_score": 0.0207,
+      "mean_accuracy": 0.9825,
+      "mean_precision": 0.9801,
+      "mean_recall": 0.9429,
+      "mean_f1_score": 0.9611,
+      "mean_runtime_sec": 0.1009,
+      "per_seed_roc_auc": {
+        "42": 0.9757,
+        "100": 0.9607,
+        "2026": 0.9729
+      }
+    }
+  ],
+  "rankings": {
+    "best_roc_auc": [
+      {
+        "rank": 1,
+        "model": "Evidence-Conditioned Candidate",
+        "roc_auc": 0.9751
+      },
+      {
+        "rank": 2,
+        "model": "Default XGBoost",
+        "roc_auc": 0.9704
+      },
+      {
+        "rank": 3,
+        "model": "Random Forest",
+        "roc_auc": 0.9698
+      }
+    ],
+    "best_pr_auc": [
+      {
+        "rank": 1,
+        "model": "Evidence-Conditioned Candidate",
+        "pr_auc": 0.9679
+      },
+      {
+        "rank": 2,
+        "model": "Default XGBoost",
+        "pr_auc": 0.9665
+      },
+      {
+        "rank": 3,
+        "model": "Random Forest",
+        "pr_auc": 0.9494
+      }
+    ],
+    "best_brier_score": [
+      {
+        "rank": 1,
+        "model": "Evidence-Conditioned Candidate",
+        "brier_score": 0.0175
+      },
+      {
+        "rank": 2,
+        "model": "Default XGBoost",
+        "brier_score": 0.018
+      },
+      {
+        "rank": 3,
+        "model": "Random Forest",
+        "brier_score": 0.0207
+      }
+    ],
+    "best_f1_score": [
+      {
+        "rank": 1,
+        "model": "Evidence-Conditioned Candidate",
+        "f1_score": 0.9611
+      },
+      {
+        "rank": 2,
+        "model": "Default XGBoost",
+        "f1_score": 0.9611
+      },
+      {
+        "rank": 3,
+        "model": "Random Forest",
+        "f1_score": 0.9611
+      }
+    ],
+    "best_accuracy": [
+      {
+        "rank": 1,
+        "model": "Evidence-Conditioned Candidate",
+        "accuracy": 0.9825
+      },
+      {
+        "rank": 2,
+        "model": "Default XGBoost",
+        "accuracy": 0.9825
+      },
+      {
+        "rank": 3,
+        "model": "Random Forest",
+        "accuracy": 0.9825
+      }
+    ],
+    "best_runtime": [
+      {
+        "rank": 1,
+        "model": "Default XGBoost",
+        "runtime_sec": 0.0272
+      },
+      {
+        "rank": 2,
+        "model": "Random Forest",
+        "runtime_sec": 0.1009
+      },
+      {
+        "rank": 3,
+        "model": "Evidence-Conditioned Candidate",
+        "runtime_sec": 0.4843
+      }
+    ]
+  },
+  "status": "VALIDATED"
+}

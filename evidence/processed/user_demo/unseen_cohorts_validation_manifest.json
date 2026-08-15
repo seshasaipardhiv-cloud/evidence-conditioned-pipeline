@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-15T11:37:18.553496+00:00",
+  "timestamp": "2026-08-15T14:55:57.681091+00:00",
   "cohorts_evaluated_count": 4,
   "cohort_names": [
     "unseen_cardiac_tabular_cohort",
@@ -18,16 +18,22 @@
       "candidate_metrics": {
         "roc_auc_mean": 0.5625,
         "roc_auc_std": 0.368,
+        "pr_auc_mean": 0.707,
         "brier_score_mean": 0.2294,
-        "f1_mean": 0.4722,
-        "accuracy_mean": 0.5833
+        "accuracy_mean": 0.5833,
+        "precision_mean": 0.4167,
+        "recall_mean": 0.5833,
+        "f1_mean": 0.4722
       },
       "baseline_metrics": {
         "roc_auc_mean": 0.5625,
         "roc_auc_std": 0.368,
+        "pr_auc_mean": 0.707,
         "brier_score_mean": 0.2294,
-        "f1_mean": 0.4722,
-        "accuracy_mean": 0.5833
+        "accuracy_mean": 0.5833,
+        "precision_mean": 0.4167,
+        "recall_mean": 0.5833,
+        "f1_mean": 0.4722
       },
       "safety_status": "PASSED",
       "selected_components": {
@@ -45,16 +51,22 @@
       "candidate_metrics": {
         "roc_auc_mean": 0.6667,
         "roc_auc_std": 0.4714,
+        "pr_auc_mean": 0.8341,
         "brier_score_mean": 0.2346,
-        "f1_mean": 0.8,
-        "accuracy_mean": 0.6667
+        "accuracy_mean": 0.6667,
+        "precision_mean": 0.6667,
+        "recall_mean": 1.0,
+        "f1_mean": 0.8
       },
       "baseline_metrics": {
         "roc_auc_mean": 0.6667,
         "roc_auc_std": 0.4714,
+        "pr_auc_mean": 0.8341,
         "brier_score_mean": 0.2346,
-        "f1_mean": 0.8,
-        "accuracy_mean": 0.6667
+        "accuracy_mean": 0.6667,
+        "precision_mean": 0.6667,
+        "recall_mean": 1.0,
+        "f1_mean": 0.8
       },
       "safety_status": "PASSED",
       "selected_components": {
@@ -72,16 +84,22 @@
       "candidate_metrics": {
         "roc_auc_mean": 0.6667,
         "roc_auc_std": 0.4714,
+        "pr_auc_mean": 0.8333,
         "brier_score_mean": 0.2095,
-        "f1_mean": 0.6667,
-        "accuracy_mean": 0.8333
+        "accuracy_mean": 0.8333,
+        "precision_mean": 0.6667,
+        "recall_mean": 0.6667,
+        "f1_mean": 0.6667
       },
       "baseline_metrics": {
         "roc_auc_mean": 0.6667,
         "roc_auc_std": 0.4714,
+        "pr_auc_mean": 0.8333,
         "brier_score_mean": 0.2095,
-        "f1_mean": 0.6667,
-        "accuracy_mean": 0.8333
+        "accuracy_mean": 0.8333,
+        "precision_mean": 0.6667,
+        "recall_mean": 0.6667,
+        "f1_mean": 0.6667
       },
       "safety_status": "PASSED",
       "selected_components": {
@@ -101,16 +119,22 @@
       "candidate_metrics": {
         "roc_auc_mean": 0.5625,
         "roc_auc_std": 0.4177,
+        "pr_auc_mean": 0.6996,
         "brier_score_mean": 0.2993,
-        "f1_mean": 0.1667,
-        "accuracy_mean": 0.3333
+        "accuracy_mean": 0.3333,
+        "precision_mean": 0.1667,
+        "recall_mean": 0.1667,
+        "f1_mean": 0.1667
       },
       "baseline_metrics": {
         "roc_auc_mean": 0.5625,
         "roc_auc_std": 0.4177,
+        "pr_auc_mean": 0.6996,
         "brier_score_mean": 0.2927,
-        "f1_mean": 0.2222,
-        "accuracy_mean": 0.375
+        "accuracy_mean": 0.375,
+        "precision_mean": 0.2,
+        "recall_mean": 0.25,
+        "f1_mean": 0.2222
       },
       "safety_status": "PASSED",
       "selected_components": {

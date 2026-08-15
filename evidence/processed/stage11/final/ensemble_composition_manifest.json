@@ -1,0 +1,244 @@
+{
+  "timestamp": "2026-08-15T16:24:39.659189+00:00",
+  "experiment": "stage11_ensemble_composition_ledger",
+  "ensembles_count": 5,
+  "ensembles": [
+    {
+      "ensemble_name": "Candidate Bagging (10x Resamples)",
+      "ensemble_identifier": "ensemble_bagging",
+      "ensemble_type": "Bootstrap Aggregation",
+      "base_models": [
+        "candidate_pipeline"
+      ],
+      "base_model_display_names": [
+        "Evidence-Conditioned Candidate"
+      ],
+      "meta_model": null,
+      "selection_rule": "Bootstrap resampling with replacement on train fold (N=10 bags)",
+      "validation_selection_information": "Weights and meta-classifiers trained strictly on validation fold predictions. Test data completely isolated.",
+      "whether_members_are_fixed_or_dynamic": "Fixed model pool with dynamic validation-score weighting / meta-fitting per seed",
+      "seeds": [
+        42,
+        100,
+        2026
+      ],
+      "per_seed_weights": {
+        "42": {
+          "bag_1": 0.1,
+          "bag_2": 0.1,
+          "bag_3": 0.1,
+          "bag_4": 0.1,
+          "bag_5": 0.1,
+          "bag_6": 0.1,
+          "bag_7": 0.1,
+          "bag_8": 0.1,
+          "bag_9": 0.1,
+          "bag_10": 0.1
+        },
+        "100": {
+          "bag_1": 0.1,
+          "bag_2": 0.1,
+          "bag_3": 0.1,
+          "bag_4": 0.1,
+          "bag_5": 0.1,
+          "bag_6": 0.1,
+          "bag_7": 0.1,
+          "bag_8": 0.1,
+          "bag_9": 0.1,
+          "bag_10": 0.1
+        },
+        "2026": {
+          "bag_1": 0.1,
+          "bag_2": 0.1,
+          "bag_3": 0.1,
+          "bag_4": 0.1,
+          "bag_5": 0.1,
+          "bag_6": 0.1,
+          "bag_7": 0.1,
+          "bag_8": 0.1,
+          "bag_9": 0.1,
+          "bag_10": 0.1
+        }
+      },
+      "exact_source_artifact": "evidence/processed/stage11/stage11_ensemble_comparison.json",
+      "mean_roc_auc": 0.9749,
+      "std_roc_auc": 0.0131
+    },
+    {
+      "ensemble_name": "Validation-Weighted Voting",
+      "ensemble_identifier": "ensemble_weighted_voting",
+      "ensemble_type": "Validation-Performance-Weighted Averaging",
+      "base_models": [
+        "candidate_pipeline",
+        "xgboost_default",
+        "random_forest"
+      ],
+      "base_model_display_names": [
+        "Evidence-Conditioned Candidate",
+        "Default XGBoost",
+        "Random Forest"
+      ],
+      "meta_model": null,
+      "selection_rule": "Softmax temperature=0.5 on validation fold ROC-AUC scores",
+      "validation_selection_information": "Weights and meta-classifiers trained strictly on validation fold predictions. Test data completely isolated.",
+      "whether_members_are_fixed_or_dynamic": "Fixed model pool with dynamic validation-score weighting / meta-fitting per seed",
+      "seeds": [
+        42,
+        100,
+        2026
+      ],
+      "per_seed_weights": {
+        "42": {
+          "candidate_pipeline": 0.3353,
+          "xgboost_default": 0.3307,
+          "random_forest": 0.334
+        },
+        "100": {
+          "candidate_pipeline": 0.3332,
+          "xgboost_default": 0.326,
+          "random_forest": 0.3409
+        },
+        "2026": {
+          "candidate_pipeline": 0.3197,
+          "xgboost_default": 0.3246,
+          "random_forest": 0.3558
+        }
+      },
+      "exact_source_artifact": "evidence/processed/stage11/stage11_ensemble_comparison.json",
+      "mean_roc_auc": 0.9701,
+      "std_roc_auc": 0.0076
+    },
+    {
+      "ensemble_name": "Soft Voting",
+      "ensemble_identifier": "ensemble_soft_voting",
+      "ensemble_type": "Probability Averaging",
+      "base_models": [
+        "candidate_pipeline",
+        "xgboost_default",
+        "random_forest"
+      ],
+      "base_model_display_names": [
+        "Evidence-Conditioned Candidate",
+        "Default XGBoost",
+        "Random Forest"
+      ],
+      "meta_model": null,
+      "selection_rule": "Uniform arithmetic mean of predicted probabilities (1/M)",
+      "validation_selection_information": "Weights and meta-classifiers trained strictly on validation fold predictions. Test data completely isolated.",
+      "whether_members_are_fixed_or_dynamic": "Fixed model pool with dynamic validation-score weighting / meta-fitting per seed",
+      "seeds": [
+        42,
+        100,
+        2026
+      ],
+      "per_seed_weights": {
+        "42": {
+          "candidate_pipeline": 0.3333,
+          "xgboost_default": 0.3333,
+          "random_forest": 0.3333
+        },
+        "100": {
+          "candidate_pipeline": 0.3333,
+          "xgboost_default": 0.3333,
+          "random_forest": 0.3333
+        },
+        "2026": {
+          "candidate_pipeline": 0.3333,
+          "xgboost_default": 0.3333,
+          "random_forest": 0.3333
+        }
+      },
+      "exact_source_artifact": "evidence/processed/stage11/stage11_ensemble_comparison.json",
+      "mean_roc_auc": 0.9702,
+      "std_roc_auc": 0.0076
+    },
+    {
+      "ensemble_name": "Rank Averaging",
+      "ensemble_identifier": "ensemble_rank_averaging",
+      "ensemble_type": "Rank Averaging",
+      "base_models": [
+        "candidate_pipeline",
+        "xgboost_default",
+        "random_forest"
+      ],
+      "base_model_display_names": [
+        "Evidence-Conditioned Candidate",
+        "Default XGBoost",
+        "Random Forest"
+      ],
+      "meta_model": null,
+      "selection_rule": "Normalized percentile rank averaging on predicted probabilities [0, 1]",
+      "validation_selection_information": "Weights and meta-classifiers trained strictly on validation fold predictions. Test data completely isolated.",
+      "whether_members_are_fixed_or_dynamic": "Fixed model pool with dynamic validation-score weighting / meta-fitting per seed",
+      "seeds": [
+        42,
+        100,
+        2026
+      ],
+      "per_seed_weights": {
+        "42": {
+          "candidate_pipeline": 0.3333,
+          "xgboost_default": 0.3333,
+          "random_forest": 0.3333
+        },
+        "100": {
+          "candidate_pipeline": 0.3333,
+          "xgboost_default": 0.3333,
+          "random_forest": 0.3333
+        },
+        "2026": {
+          "candidate_pipeline": 0.3333,
+          "xgboost_default": 0.3333,
+          "random_forest": 0.3333
+        }
+      },
+      "exact_source_artifact": "evidence/processed/stage11/stage11_ensemble_comparison.json",
+      "mean_roc_auc": 0.9717,
+      "std_roc_auc": 0.0089
+    },
+    {
+      "ensemble_name": "Stacking Ensemble",
+      "ensemble_identifier": "ensemble_stacking",
+      "ensemble_type": "Stacking Meta-Learner",
+      "base_models": [
+        "candidate_pipeline",
+        "xgboost_default",
+        "random_forest"
+      ],
+      "base_model_display_names": [
+        "Evidence-Conditioned Candidate",
+        "Default XGBoost",
+        "Random Forest"
+      ],
+      "meta_model": "LogisticRegression(penalty='l2', C=1.0, max_iter=1000)",
+      "selection_rule": "Logistic Regression meta-model fitted on validation fold probability vectors",
+      "validation_selection_information": "Weights and meta-classifiers trained strictly on validation fold predictions. Test data completely isolated.",
+      "whether_members_are_fixed_or_dynamic": "Fixed model pool with dynamic validation-score weighting / meta-fitting per seed",
+      "seeds": [
+        42,
+        100,
+        2026
+      ],
+      "per_seed_weights": {
+        "42": {
+          "candidate_pipeline": 0.3224,
+          "xgboost_default": 0.3112,
+          "random_forest": 0.3663
+        },
+        "100": {
+          "candidate_pipeline": 0.3177,
+          "xgboost_default": 0.326,
+          "random_forest": 0.3563
+        },
+        "2026": {
+          "candidate_pipeline": 0.3048,
+          "xgboost_default": 0.3096,
+          "random_forest": 0.3857
+        }
+      },
+      "exact_source_artifact": "evidence/processed/stage11/stage11_ensemble_comparison.json",
+      "mean_roc_auc": 0.9698,
+      "std_roc_auc": 0.0076
+    }
+  ]
+}

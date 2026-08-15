@@ -1,0 +1,1370 @@
+[
+  {
+    "patient_id": "001",
+    "true_label": 0,
+    "predicted_probability": 0.04886,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "002",
+    "true_label": 0,
+    "predicted_probability": 0.04813,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "003",
+    "true_label": 0,
+    "predicted_probability": 0.04913,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "004",
+    "true_label": 0,
+    "predicted_probability": 0.0485,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "005",
+    "true_label": 0,
+    "predicted_probability": 0.05405,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "006",
+    "true_label": 0,
+    "predicted_probability": 0.04695,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "007",
+    "true_label": 0,
+    "predicted_probability": 0.04705,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "008",
+    "true_label": 1,
+    "predicted_probability": 0.88082,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "009",
+    "true_label": 0,
+    "predicted_probability": 0.04809,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "010",
+    "true_label": 0,
+    "predicted_probability": 0.05853,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "011",
+    "true_label": 0,
+    "predicted_probability": 0.04703,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "012",
+    "true_label": 0,
+    "predicted_probability": 0.04804,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "013",
+    "true_label": 0,
+    "predicted_probability": 0.05302,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "014",
+    "true_label": 0,
+    "predicted_probability": 0.04979,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "015",
+    "true_label": 0,
+    "predicted_probability": 0.04809,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "016",
+    "true_label": 0,
+    "predicted_probability": 0.0471,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "017",
+    "true_label": 1,
+    "predicted_probability": 0.04823,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "018",
+    "true_label": 1,
+    "predicted_probability": 0.86363,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "019",
+    "true_label": 0,
+    "predicted_probability": 0.04743,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "020",
+    "true_label": 0,
+    "predicted_probability": 0.04806,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "021",
+    "true_label": 0,
+    "predicted_probability": 0.06957,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "022",
+    "true_label": 0,
+    "predicted_probability": 0.04761,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "023",
+    "true_label": 0,
+    "predicted_probability": 0.04903,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "024",
+    "true_label": 1,
+    "predicted_probability": 0.87714,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "025",
+    "true_label": 0,
+    "predicted_probability": 0.0488,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "026",
+    "true_label": 0,
+    "predicted_probability": 0.04809,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "027",
+    "true_label": 1,
+    "predicted_probability": 0.87799,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "028",
+    "true_label": 0,
+    "predicted_probability": 0.04705,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "029",
+    "true_label": 0,
+    "predicted_probability": 0.05278,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "030",
+    "true_label": 0,
+    "predicted_probability": 0.05011,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "031",
+    "true_label": 0,
+    "predicted_probability": 0.04731,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "032",
+    "true_label": 1,
+    "predicted_probability": 0.8594,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "033",
+    "true_label": 1,
+    "predicted_probability": 0.86689,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "034",
+    "true_label": 0,
+    "predicted_probability": 0.04789,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "035",
+    "true_label": 0,
+    "predicted_probability": 0.04811,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "036",
+    "true_label": 0,
+    "predicted_probability": 0.04713,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "037",
+    "true_label": 0,
+    "predicted_probability": 0.04786,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "038",
+    "true_label": 1,
+    "predicted_probability": 0.85847,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "039",
+    "true_label": 0,
+    "predicted_probability": 0.04739,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "040",
+    "true_label": 0,
+    "predicted_probability": 0.05254,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "041",
+    "true_label": 0,
+    "predicted_probability": 0.04949,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "042",
+    "true_label": 0,
+    "predicted_probability": 0.04881,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "043",
+    "true_label": 0,
+    "predicted_probability": 0.04976,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "044",
+    "true_label": 0,
+    "predicted_probability": 0.06115,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "045",
+    "true_label": 1,
+    "predicted_probability": 0.86104,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "046",
+    "true_label": 0,
+    "predicted_probability": 0.04842,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "047",
+    "true_label": 0,
+    "predicted_probability": 0.04872,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "048",
+    "true_label": 0,
+    "predicted_probability": 0.07191,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "049",
+    "true_label": 0,
+    "predicted_probability": 0.04812,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "050",
+    "true_label": 0,
+    "predicted_probability": 0.04766,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "051",
+    "true_label": 0,
+    "predicted_probability": 0.05685,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "052",
+    "true_label": 1,
+    "predicted_probability": 0.86141,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "053",
+    "true_label": 0,
+    "predicted_probability": 0.0472,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "054",
+    "true_label": 0,
+    "predicted_probability": 0.04703,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "055",
+    "true_label": 0,
+    "predicted_probability": 0.04788,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "056",
+    "true_label": 1,
+    "predicted_probability": 0.86798,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "057",
+    "true_label": 0,
+    "predicted_probability": 0.04911,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "058",
+    "true_label": 0,
+    "predicted_probability": 0.04836,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "059",
+    "true_label": 1,
+    "predicted_probability": 0.87485,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "060",
+    "true_label": 1,
+    "predicted_probability": 0.87887,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "061",
+    "true_label": 0,
+    "predicted_probability": 0.04705,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "062",
+    "true_label": 1,
+    "predicted_probability": 0.87055,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "063",
+    "true_label": 1,
+    "predicted_probability": 0.04931,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "064",
+    "true_label": 0,
+    "predicted_probability": 0.09771,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "065",
+    "true_label": 1,
+    "predicted_probability": 0.87507,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "066",
+    "true_label": 1,
+    "predicted_probability": 0.87007,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "067",
+    "true_label": 1,
+    "predicted_probability": 0.83818,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "068",
+    "true_label": 0,
+    "predicted_probability": 0.04732,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "069",
+    "true_label": 1,
+    "predicted_probability": 0.8758,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "070",
+    "true_label": 0,
+    "predicted_probability": 0.0526,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "071",
+    "true_label": 0,
+    "predicted_probability": 0.04723,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "072",
+    "true_label": 0,
+    "predicted_probability": 0.04705,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "073",
+    "true_label": 0,
+    "predicted_probability": 0.05821,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "074",
+    "true_label": 0,
+    "predicted_probability": 0.05063,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "075",
+    "true_label": 1,
+    "predicted_probability": 0.87591,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "076",
+    "true_label": 0,
+    "predicted_probability": 0.04893,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "077",
+    "true_label": 0,
+    "predicted_probability": 0.86169,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "078",
+    "true_label": 0,
+    "predicted_probability": 0.04851,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "079",
+    "true_label": 0,
+    "predicted_probability": 0.05003,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "080",
+    "true_label": 0,
+    "predicted_probability": 0.05825,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "081",
+    "true_label": 0,
+    "predicted_probability": 0.04949,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "082",
+    "true_label": 0,
+    "predicted_probability": 0.0472,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "083",
+    "true_label": 0,
+    "predicted_probability": 0.0608,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "084",
+    "true_label": 0,
+    "predicted_probability": 0.06021,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "085",
+    "true_label": 1,
+    "predicted_probability": 0.87443,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "086",
+    "true_label": 0,
+    "predicted_probability": 0.04709,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "087",
+    "true_label": 1,
+    "predicted_probability": 0.87251,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "088",
+    "true_label": 0,
+    "predicted_probability": 0.04878,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "089",
+    "true_label": 0,
+    "predicted_probability": 0.04766,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "090",
+    "true_label": 1,
+    "predicted_probability": 0.86016,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "091",
+    "true_label": 0,
+    "predicted_probability": 0.0484,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "092",
+    "true_label": 0,
+    "predicted_probability": 0.04998,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "093",
+    "true_label": 0,
+    "predicted_probability": 0.04708,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "094",
+    "true_label": 0,
+    "predicted_probability": 0.0628,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "095",
+    "true_label": 0,
+    "predicted_probability": 0.04701,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "096",
+    "true_label": 0,
+    "predicted_probability": 0.05276,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "097",
+    "true_label": 0,
+    "predicted_probability": 0.0473,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "098",
+    "true_label": 0,
+    "predicted_probability": 0.04902,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "099",
+    "true_label": 0,
+    "predicted_probability": 0.04927,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "100",
+    "true_label": 1,
+    "predicted_probability": 0.87883,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "101",
+    "true_label": 1,
+    "predicted_probability": 0.86332,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "102",
+    "true_label": 0,
+    "predicted_probability": 0.04713,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "103",
+    "true_label": 0,
+    "predicted_probability": 0.047,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "104",
+    "true_label": 1,
+    "predicted_probability": 0.87358,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "105",
+    "true_label": 1,
+    "predicted_probability": 0.87483,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "106",
+    "true_label": 0,
+    "predicted_probability": 0.04753,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "107",
+    "true_label": 0,
+    "predicted_probability": 0.05176,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "108",
+    "true_label": 1,
+    "predicted_probability": 0.85804,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "109",
+    "true_label": 1,
+    "predicted_probability": 0.85512,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "110",
+    "true_label": 0,
+    "predicted_probability": 0.0483,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "111",
+    "true_label": 0,
+    "predicted_probability": 0.05751,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "112",
+    "true_label": 0,
+    "predicted_probability": 0.04886,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "113",
+    "true_label": 0,
+    "predicted_probability": 0.04976,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "114",
+    "true_label": 0,
+    "predicted_probability": 0.05181,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "115",
+    "true_label": 0,
+    "predicted_probability": 0.04837,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "116",
+    "true_label": 0,
+    "predicted_probability": 0.04735,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "117",
+    "true_label": 0,
+    "predicted_probability": 0.04935,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "118",
+    "true_label": 0,
+    "predicted_probability": 0.08931,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "119",
+    "true_label": 0,
+    "predicted_probability": 0.04776,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "120",
+    "true_label": 0,
+    "predicted_probability": 0.04913,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "121",
+    "true_label": 0,
+    "predicted_probability": 0.04799,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "122",
+    "true_label": 1,
+    "predicted_probability": 0.86432,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "123",
+    "true_label": 0,
+    "predicted_probability": 0.0519,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "124",
+    "true_label": 0,
+    "predicted_probability": 0.047,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "125",
+    "true_label": 0,
+    "predicted_probability": 0.04913,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "126",
+    "true_label": 0,
+    "predicted_probability": 0.04771,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "127",
+    "true_label": 0,
+    "predicted_probability": 0.04727,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "128",
+    "true_label": 1,
+    "predicted_probability": 0.85896,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "129",
+    "true_label": 0,
+    "predicted_probability": 0.04717,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "130",
+    "true_label": 0,
+    "predicted_probability": 0.04735,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "131",
+    "true_label": 0,
+    "predicted_probability": 0.04836,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "132",
+    "true_label": 0,
+    "predicted_probability": 0.0472,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "133",
+    "true_label": 1,
+    "predicted_probability": 0.84937,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "134",
+    "true_label": 0,
+    "predicted_probability": 0.05067,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "135",
+    "true_label": 1,
+    "predicted_probability": 0.86063,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "136",
+    "true_label": 0,
+    "predicted_probability": 0.0486,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "137",
+    "true_label": 0,
+    "predicted_probability": 0.04776,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "138",
+    "true_label": 0,
+    "predicted_probability": 0.04912,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "139",
+    "true_label": 1,
+    "predicted_probability": 0.86934,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "140",
+    "true_label": 0,
+    "predicted_probability": 0.04827,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "141",
+    "true_label": 1,
+    "predicted_probability": 0.85896,
+    "predicted_class": 1,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "142",
+    "true_label": 0,
+    "predicted_probability": 0.04826,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "143",
+    "true_label": 0,
+    "predicted_probability": 0.04722,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "144",
+    "true_label": 0,
+    "predicted_probability": 0.04846,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "145",
+    "true_label": 0,
+    "predicted_probability": 0.04709,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "146",
+    "true_label": 0,
+    "predicted_probability": 0.04805,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "147",
+    "true_label": 0,
+    "predicted_probability": 0.04991,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "148",
+    "true_label": 0,
+    "predicted_probability": 0.04933,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "149",
+    "true_label": 0,
+    "predicted_probability": 0.04701,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "150",
+    "true_label": 0,
+    "predicted_probability": 0.04713,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "151",
+    "true_label": 0,
+    "predicted_probability": 0.04695,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  },
+  {
+    "patient_id": "152",
+    "true_label": 0,
+    "predicted_probability": 0.04942,
+    "predicted_class": 0,
+    "model_name": "ensemble_stacking",
+    "seed": 2026,
+    "split": "test"
+  }
+]

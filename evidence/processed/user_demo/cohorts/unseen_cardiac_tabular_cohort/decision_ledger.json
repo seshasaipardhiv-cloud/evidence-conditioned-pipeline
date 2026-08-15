@@ -61,6 +61,95 @@
     "image": null,
     "text": null
   },
+  "selected_preprocessors": {
+    "tabular": {
+      "standard_scaling": true,
+      "median_imputation": true,
+      "train_only": true
+    },
+    "image": null,
+    "text": null
+  },
+  "selected_models": {
+    "tabular": "Dimension-Adaptive Dense Tabular Encoder",
+    "image": null,
+    "text": null
+  },
+  "selected_fusion": "Direct Linear Task Head (Unimodal)",
+  "selected_ensemble": null,
+  "safety_gate_results": {
+    "overall_status": "PASSED",
+    "passed_gates_count": 14,
+    "total_gates_count": 14,
+    "gate_results": {
+      "gate_1_modality_detection_valid": {
+        "passed": true,
+        "details": "Modalities: ['tabular']"
+      },
+      "gate_2_sample_correspondence": {
+        "passed": true,
+        "details": "Train samples: 32, Test samples: 8"
+      },
+      "gate_3_patient_overlap_firewall": {
+        "passed": true,
+        "overlaps": {
+          "train_val": [],
+          "train_test": [],
+          "val_test": [],
+          "duplicate_hashes": []
+        }
+      },
+      "gate_4_target_leakage": {
+        "passed": true,
+        "detected_leaks": []
+      },
+      "gate_5_temporal_leakage_post_adjuvant": {
+        "passed": true,
+        "temporal_exclusions": []
+      },
+      "gate_6_image_preprocessing_isolation": {
+        "passed": true,
+        "details": "Train-only image normalization and augmentations enforced."
+      },
+      "gate_7_text_preprocessing_isolation": {
+        "passed": true,
+        "details": "Vocabulary and IDF weights fitted strictly on train fold."
+      },
+      "gate_8_image_architecture_provenance": {
+        "passed": true,
+        "provenance": "N/A"
+      },
+      "gate_9_text_model_provenance": {
+        "passed": true,
+        "provenance": "N/A"
+      },
+      "gate_10_fusion_dimension_compatibility": {
+        "passed": true,
+        "embedding_dimension": 64
+      },
+      "gate_11_missing_modality_contract": {
+        "passed": true,
+        "strategy": "Deterministic zero/mean tensor fallback without row dropping"
+      },
+      "gate_12_compute_budget_compliance": {
+        "passed": true,
+        "configured_budget": "LIGHT",
+        "required_budget": "LIGHT"
+      },
+      "gate_13_deterministic_seed_verification": {
+        "passed": true,
+        "seeds": [
+          42,
+          100,
+          2026
+        ]
+      },
+      "gate_14_pipeline_hash_integrity": {
+        "passed": true,
+        "pipeline_config_sha256": "ebcade8ecfb5c75fc95ee8dd563d8301f711ed7660197a1d26e622b1a177dd86"
+      }
+    }
+  },
   "safety_audit": {
     "overall_status": "PASSED",
     "passed_gates_count": 14,
@@ -134,6 +223,16 @@
       }
     }
   },
+  "training_configuration": {
+    "seeds": [
+      42,
+      100,
+      2026
+    ],
+    "compute_budget": "LIGHT",
+    "embed_dim": 64,
+    "train_test_split": "80/20 train-isolated"
+  },
   "seeds": [
     42,
     100,
@@ -142,16 +241,39 @@
   "candidate_metrics": {
     "roc_auc_mean": 0.5625,
     "roc_auc_std": 0.368,
+    "pr_auc_mean": 0.707,
     "brier_score_mean": 0.2294,
-    "f1_mean": 0.4722,
-    "accuracy_mean": 0.5833
+    "accuracy_mean": 0.5833,
+    "precision_mean": 0.4167,
+    "recall_mean": 0.5833,
+    "f1_mean": 0.4722
+  },
+  "evaluation_metrics": {
+    "roc_auc_mean": 0.5625,
+    "roc_auc_std": 0.368,
+    "pr_auc_mean": 0.707,
+    "brier_score_mean": 0.2294,
+    "accuracy_mean": 0.5833,
+    "precision_mean": 0.4167,
+    "recall_mean": 0.5833,
+    "f1_mean": 0.4722
   },
   "baseline_metrics": {
     "roc_auc_mean": 0.5625,
     "roc_auc_std": 0.368,
+    "pr_auc_mean": 0.707,
     "brier_score_mean": 0.2294,
-    "f1_mean": 0.4722,
-    "accuracy_mean": 0.5833
+    "accuracy_mean": 0.5833,
+    "precision_mean": 0.4167,
+    "recall_mean": 0.5833,
+    "f1_mean": 0.4722
+  },
+  "deltas": {
+    "roc_auc_delta": 0.0,
+    "pr_auc_delta": 0.0,
+    "brier_delta": 0.0,
+    "accuracy_delta": 0.0,
+    "f1_delta": 0.0
   },
   "claim_boundary_matrix": {
     "Claim 1: The framework transfers across unseen datasets without manual model specification": "SUPPORTED",
@@ -161,6 +283,39 @@
     "Claim 5: Evidence-conditioned selection consistently improves predictive performance": "PARTIALLY_SUPPORTED",
     "Claim 6: The framework generalizes clinically to real-world multicenter clinical settings": "NOT_SUPPORTED"
   },
-  "runtime_seconds": 0.35,
-  "generated_at": "2026-08-15T11:37:05.555278+00:00"
+  "reproducibility_information": {
+    "timestamp": "2026-08-15T14:55:43.176418+00:00",
+    "seeds": [
+      42,
+      100,
+      2026
+    ],
+    "compute_budget": "LIGHT",
+    "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "deterministic_execution": true,
+    "artifact_hashes": {
+      "baseline_comparison.json": "227658fbbab2293c86f9f7dd86f464b50ea277afa6e20ef0ce96f558c5b3a0c0",
+      "claim_boundary_matrix.json": "ef5d9cbdb49ccda4622862fb13c9d1507a483498f32ecf50289ee6281a7013b5",
+      "decision_ledger.json": "091dc620b0e88c0d9b6de09c9fdb43979c65ac707b69800d31fe25a7ab495581",
+      "evidence_and_model_selection.json": "d035658039a91c4e94e4d1d492528f6f2a903528d9d1f3e4986851b1d7637008",
+      "execution_results.json": "05c42c41dc130c785da030e623426e1d76989d2b286ba6615d69c624b9d5d39a",
+      "modality_discovery.json": "50097adf2f86c886127e87350bf6e596bd48ae726064d09972ddecc3e245caec",
+      "preprocessing_selection.json": "d3c2dac72915770b214d6b59a236f309c22db5fcf0cbba19ddec04a9f54e4072",
+      "reproducibility_report.json": "e589c847db57645ab1657dad42ed50dc42fb8f740e1e1035dadd3d77276a0e61",
+      "safety_audit.json": "b76047efa82fc0805de0d816378d1a08d472e6fa20de5f56aa7595cbff9582f6"
+    }
+  },
+  "artifact_hashes": {
+    "baseline_comparison.json": "227658fbbab2293c86f9f7dd86f464b50ea277afa6e20ef0ce96f558c5b3a0c0",
+    "claim_boundary_matrix.json": "ef5d9cbdb49ccda4622862fb13c9d1507a483498f32ecf50289ee6281a7013b5",
+    "decision_ledger.json": "091dc620b0e88c0d9b6de09c9fdb43979c65ac707b69800d31fe25a7ab495581",
+    "evidence_and_model_selection.json": "d035658039a91c4e94e4d1d492528f6f2a903528d9d1f3e4986851b1d7637008",
+    "execution_results.json": "05c42c41dc130c785da030e623426e1d76989d2b286ba6615d69c624b9d5d39a",
+    "modality_discovery.json": "50097adf2f86c886127e87350bf6e596bd48ae726064d09972ddecc3e245caec",
+    "preprocessing_selection.json": "d3c2dac72915770b214d6b59a236f309c22db5fcf0cbba19ddec04a9f54e4072",
+    "reproducibility_report.json": "e589c847db57645ab1657dad42ed50dc42fb8f740e1e1035dadd3d77276a0e61",
+    "safety_audit.json": "b76047efa82fc0805de0d816378d1a08d472e6fa20de5f56aa7595cbff9582f6"
+  },
+  "runtime_seconds": 1.24,
+  "generated_at": "2026-08-15T14:55:43.176418+00:00"
 }

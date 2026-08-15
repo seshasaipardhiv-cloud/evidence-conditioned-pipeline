@@ -1,0 +1,63 @@
+{
+  "timestamp": "2026-08-15T16:24:45.081925+00:00",
+  "stage": "STAGE 11 \u2014 MODEL ALTERNATIVE & ENSEMBLE BENCHMARKING",
+  "overall_status": "PASSED",
+  "checks": {
+    "1_zero_patient_overlap": {
+      "status": "PASSED",
+      "evidence": "Strict patient hashing confirms 0% intersection between train, validation, and test sets across all seeds."
+    },
+    "2_zero_target_leakage": {
+      "status": "PASSED",
+      "evidence": "All 8 post-baseline outcome and censoring variables (survival_status, recurrence, days_to_*) barred from feature matrix."
+    },
+    "3_zero_test_contamination": {
+      "status": "PASSED",
+      "evidence": "Test features are transformed strictly using train-fitted imputers, scalers, and encoders."
+    },
+    "4_identical_splits": {
+      "status": "PASSED",
+      "evidence": "All candidate and alternative baseline models evaluated on identical frozen splits per seed."
+    },
+    "5_identical_seeds": {
+      "status": "PASSED",
+      "evidence": "Multi-seed evaluation executed strictly over [42, 100, 2026]."
+    },
+    "6_train_only_preprocessing": {
+      "status": "PASSED",
+      "evidence": "Imputation, categorical encoding, and SMOTE resamplers fitted exclusively on training fold."
+    },
+    "7_ensemble_weights_validation_only": {
+      "status": "PASSED",
+      "evidence": "Weighted voting derives softmax weights exclusively from validation fold ROC-AUC scores."
+    },
+    "8_stacking_meta_model_validation_only": {
+      "status": "PASSED",
+      "evidence": "Stacking LogisticRegression meta-classifier trained strictly on validation fold out-of-fold probability vectors."
+    },
+    "9_roc_auc_recomputation": {
+      "status": "PASSED",
+      "evidence": "Independent ROC-AUC recomputation matches stored predictions exactly."
+    },
+    "10_pr_auc_recomputation": {
+      "status": "PASSED",
+      "evidence": "Independent PR-AUC recomputation matches stored predictions exactly."
+    },
+    "11_brier_recomputation": {
+      "status": "PASSED",
+      "evidence": "Independent Brier score recomputation matches stored predictions exactly."
+    },
+    "12_prediction_correspondence": {
+      "status": "PASSED",
+      "evidence": "Found 45 individual and ensemble raw prediction manifests in predictions/."
+    },
+    "13_deterministic_reproducibility": {
+      "status": "PASSED",
+      "evidence": "Random state seeded across all classifiers, splits, and samplers."
+    },
+    "14_historical_immutability": {
+      "status": "PASSED",
+      "evidence": "Historical Stage 5B, 6A, 10, 10.5 authoritative artifacts verified with ZERO_MUTATION_CONFIRMED."
+    }
+  }
+}
