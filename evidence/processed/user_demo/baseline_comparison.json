@@ -1,0 +1,500 @@
+{
+  "candidate_pipeline": {
+    "name": "Evidence-Conditioned Synthesized Pipeline",
+    "components": {
+      "tabular_encoder": {
+        "component": "tabular_dense_projection",
+        "name": "Dimension-Adaptive Dense Tabular Encoder",
+        "evidence_status": "EVIDENCE_BACKED",
+        "evidence_source": "PMID: 41826845 / PMC Biomarkers 2026",
+        "input_dim": 3,
+        "embed_dim": 64,
+        "compute_cost": "LIGHT"
+      },
+      "image_backbone": {
+        "component": "image_backbone",
+        "selected_value": "resnet18",
+        "name": "ResNet-18",
+        "family": "residual_cnn",
+        "evidence_status": "EVIDENCE_BACKED",
+        "evidence_source": "PMID: 42487970 / Lancet Digital Health 2026",
+        "rationale": "Lightweight residual network offering rapid convergence, minimal compute footprint, and robust representation on small clinical imaging cohorts.",
+        "compatibility": {
+          "task": "binary_classification",
+          "modality": [
+            "general_imaging"
+          ]
+        },
+        "compute_cost": "LIGHT",
+        "embedding_dim": 256,
+        "default_image_size": [
+          224,
+          224
+        ],
+        "score": 4.7,
+        "execution_status": "EXECUTABLE",
+        "selection_rankings": [
+          {
+            "architecture_id": "resnet50",
+            "name": "ResNet-50",
+            "score": 0.0,
+            "status": "REJECTED_COMPUTE_BUDGET",
+            "reason": "Compute cost (MEDIUM) exceeds budget (LIGHT)."
+          },
+          {
+            "architecture_id": "resnet18",
+            "name": "ResNet-18",
+            "score": 4.7,
+            "status": "ADMISSIBLE",
+            "evidence_source": "PMID: 42487970 / Lancet Digital Health 2026",
+            "evidence_status": "EVIDENCE_BACKED",
+            "compute_cost": "LIGHT",
+            "embedding_dim": 256,
+            "default_image_size": [
+              224,
+              224
+            ],
+            "rationale": "Lightweight residual network offering rapid convergence, minimal compute footprint, and robust representation on small clinical imaging cohorts.",
+            "cand_ref": {
+              "architecture_id": "resnet18",
+              "family": "residual_cnn",
+              "name": "ResNet-18",
+              "evidence_source": "PMID: 42487970 / Lancet Digital Health 2026",
+              "evidence_status": "EVIDENCE_BACKED",
+              "task_compatibility": [
+                "binary_classification",
+                "recurrence_prediction",
+                "clinical_image",
+                "rgb_image"
+              ],
+              "modality_compatibility": [
+                "clinical_image",
+                "endoscopic",
+                "radiology",
+                "rgb_image"
+              ],
+              "compute_cost": "LIGHT",
+              "min_samples": 20,
+              "default_image_size": [
+                224,
+                224
+              ],
+              "embedding_dim": 256,
+              "rationale": "Lightweight residual network offering rapid convergence, minimal compute footprint, and robust representation on small clinical imaging cohorts."
+            }
+          },
+          {
+            "architecture_id": "efficientnet_b0",
+            "name": "EfficientNet-B0",
+            "score": 4.7,
+            "status": "ADMISSIBLE",
+            "evidence_source": "PMID: 41006422 / Sci Rep 2025",
+            "evidence_status": "EVIDENCE_BACKED",
+            "compute_cost": "LIGHT",
+            "embedding_dim": 256,
+            "default_image_size": [
+              224,
+              224
+            ],
+            "rationale": "Compound scaled convolutional architecture balancing parameter efficiency with multi-scale feature representation.",
+            "cand_ref": {
+              "architecture_id": "efficientnet_b0",
+              "family": "scaled_cnn",
+              "name": "EfficientNet-B0",
+              "evidence_source": "PMID: 41006422 / Sci Rep 2025",
+              "evidence_status": "EVIDENCE_BACKED",
+              "task_compatibility": [
+                "binary_classification",
+                "tumor_grading",
+                "rgb_image"
+              ],
+              "modality_compatibility": [
+                "histopathology",
+                "dermatology",
+                "rgb_image"
+              ],
+              "compute_cost": "LIGHT",
+              "min_samples": 30,
+              "default_image_size": [
+                224,
+                224
+              ],
+              "embedding_dim": 256,
+              "rationale": "Compound scaled convolutional architecture balancing parameter efficiency with multi-scale feature representation."
+            }
+          },
+          {
+            "architecture_id": "vit_small",
+            "name": "Vision Transformer (ViT-Small)",
+            "score": 0.0,
+            "status": "REJECTED_COMPUTE_BUDGET",
+            "reason": "Compute cost (MEDIUM) exceeds budget (LIGHT)."
+          },
+          {
+            "architecture_id": "swin_transformer",
+            "name": "Swin Transformer (Swin-T)",
+            "score": 0.0,
+            "status": "REJECTED_COMPUTE_BUDGET",
+            "reason": "Compute cost (HEAVY) exceeds budget (LIGHT)."
+          },
+          {
+            "architecture_id": "simple_cnn",
+            "name": "Simple 3-Layer CNN",
+            "score": 3.7,
+            "status": "ADMISSIBLE",
+            "evidence_source": "Standard Minimal Reference Baseline",
+            "evidence_status": "EXPLICITLY_CONFIGURED",
+            "compute_cost": "LIGHT",
+            "embedding_dim": 128,
+            "default_image_size": [
+              128,
+              128
+            ],
+            "rationale": "Minimal lightweight 3-layer convolutional reference baseline for parameter efficiency verification.",
+            "cand_ref": {
+              "architecture_id": "simple_cnn",
+              "family": "baseline_cnn",
+              "name": "Simple 3-Layer CNN",
+              "evidence_source": "Standard Minimal Reference Baseline",
+              "evidence_status": "EXPLICITLY_CONFIGURED",
+              "task_compatibility": [
+                "binary_classification",
+                "baseline_comparator",
+                "rgb_image"
+              ],
+              "modality_compatibility": [
+                "clinical_image",
+                "rgb_image",
+                "grayscale"
+              ],
+              "compute_cost": "LIGHT",
+              "min_samples": 10,
+              "default_image_size": [
+                128,
+                128
+              ],
+              "embedding_dim": 128,
+              "rationale": "Minimal lightweight 3-layer convolutional reference baseline for parameter efficiency verification."
+            }
+          }
+        ]
+      },
+      "text_backbone": {
+        "component": "text_backbone",
+        "selected_value": "pubmedbert",
+        "name": "PubMedBERT (Biomedical-BERT)",
+        "family": "biomedical_transformer",
+        "evidence_status": "EVIDENCE_BACKED",
+        "evidence_source": "PMID: 41826845 / PMC Biomarkers 2026",
+        "rationale": "Pretrained from scratch on PubMed abstracts and full-text articles; achieves superior domain vocabulary alignment and contextualization on clinical oncology narratives.",
+        "compatibility": {
+          "task": "binary_classification",
+          "domain": "biomedical"
+        },
+        "compute_cost": "LIGHT",
+        "embedding_dim": 256,
+        "max_seq_length": 512,
+        "score": 6.2,
+        "execution_status": "EXECUTABLE",
+        "selection_rankings": [
+          {
+            "model_id": "pubmedbert",
+            "name": "PubMedBERT (Biomedical-BERT)",
+            "score": 6.2,
+            "status": "ADMISSIBLE",
+            "evidence_source": "PMID: 41826845 / PMC Biomarkers 2026",
+            "evidence_status": "EVIDENCE_BACKED",
+            "compute_cost": "LIGHT",
+            "embedding_dim": 256,
+            "max_seq_length": 512,
+            "rationale": "Pretrained from scratch on PubMed abstracts and full-text articles; achieves superior domain vocabulary alignment and contextualization on clinical oncology narratives.",
+            "cand_ref": {
+              "model_id": "pubmedbert",
+              "family": "biomedical_transformer",
+              "name": "PubMedBERT (Biomedical-BERT)",
+              "evidence_source": "PMID: 41826845 / PMC Biomarkers 2026",
+              "evidence_status": "EVIDENCE_BACKED",
+              "domain_compatibility": [
+                "biomedical",
+                "clinical",
+                "oncology",
+                "pathology"
+              ],
+              "task_compatibility": [
+                "binary_classification",
+                "risk_prediction",
+                "text_classification"
+              ],
+              "compute_cost": "LIGHT",
+              "max_seq_length": 512,
+              "embedding_dim": 256,
+              "rationale": "Pretrained from scratch on PubMed abstracts and full-text articles; achieves superior domain vocabulary alignment and contextualization on clinical oncology narratives."
+            }
+          },
+          {
+            "model_id": "clinicalbert",
+            "name": "ClinicalBERT",
+            "score": 0.0,
+            "status": "REJECTED_COMPUTE_BUDGET",
+            "reason": "Compute cost (MEDIUM) exceeds budget (LIGHT)."
+          },
+          {
+            "model_id": "biobert",
+            "name": "BioBERT v1.1",
+            "score": 6.2,
+            "status": "ADMISSIBLE",
+            "evidence_source": "PMID: 41775771 / Nature Sci Rep 2026",
+            "evidence_status": "EVIDENCE_BACKED",
+            "compute_cost": "LIGHT",
+            "embedding_dim": 256,
+            "max_seq_length": 512,
+            "rationale": "Domain-specific language model initialized from BERT and trained on PubMed/PMC; widely validated across biomedical extraction benchmarks.",
+            "cand_ref": {
+              "model_id": "biobert",
+              "family": "biomedical_transformer",
+              "name": "BioBERT v1.1",
+              "evidence_source": "PMID: 41775771 / Nature Sci Rep 2026",
+              "evidence_status": "EVIDENCE_BACKED",
+              "domain_compatibility": [
+                "biomedical",
+                "clinical_text",
+                "surgical_reports"
+              ],
+              "task_compatibility": [
+                "binary_classification",
+                "multimodal_fusion"
+              ],
+              "compute_cost": "LIGHT",
+              "max_seq_length": 512,
+              "embedding_dim": 256,
+              "rationale": "Domain-specific language model initialized from BERT and trained on PubMed/PMC; widely validated across biomedical extraction benchmarks."
+            }
+          },
+          {
+            "model_id": "roberta_base",
+            "name": "RoBERTa-Base",
+            "score": 0.0,
+            "status": "REJECTED_COMPUTE_BUDGET",
+            "reason": "Compute cost (MEDIUM) exceeds budget (LIGHT)."
+          },
+          {
+            "model_id": "tfidf_linear",
+            "name": "TF-IDF + Linear Classifier",
+            "score": 3.7,
+            "status": "ADMISSIBLE",
+            "evidence_source": "Standard Minimal Reference Baseline",
+            "evidence_status": "EXPLICITLY_CONFIGURED",
+            "compute_cost": "LIGHT",
+            "embedding_dim": 128,
+            "max_seq_length": 1000,
+            "rationale": "Term frequency-inverse document frequency representation with linear classification head; fast, interpretable, low-compute reference baseline.",
+            "cand_ref": {
+              "model_id": "tfidf_linear",
+              "family": "bag_of_words_linear",
+              "name": "TF-IDF + Linear Classifier",
+              "evidence_source": "Standard Minimal Reference Baseline",
+              "evidence_status": "EXPLICITLY_CONFIGURED",
+              "domain_compatibility": [
+                "clinical_text",
+                "tabular_text",
+                "short_text"
+              ],
+              "task_compatibility": [
+                "binary_classification",
+                "baseline_comparator"
+              ],
+              "compute_cost": "LIGHT",
+              "max_seq_length": 1000,
+              "embedding_dim": 128,
+              "rationale": "Term frequency-inverse document frequency representation with linear classification head; fast, interpretable, low-compute reference baseline."
+            }
+          }
+        ]
+      },
+      "fusion": {
+        "component": "multimodal_fusion",
+        "selected_value": "gated_fusion",
+        "name": "Learned Dynamic Gated Multimodal Fusion",
+        "evidence_status": "EVIDENCE_BACKED",
+        "evidence_source": "PMID: 41775771 / Nature Sci Rep 2026",
+        "rationale": "Learns input-dependent gating coefficients dynamically balancing representation contributions across arbitrary number of modalities.",
+        "compute_cost": "LIGHT",
+        "score": 3.7,
+        "execution_status": "EXECUTABLE",
+        "selection_rankings": [
+          {
+            "fusion_id": "cross_attention",
+            "name": "Bi-directional Multi-Head Cross-Attention Fusion",
+            "score": 0.0,
+            "status": "REJECTED_MODALITY_INCOMPATIBLE",
+            "reason": "Active modalities ['tabular', 'image', 'text'] not supported by Bi-directional Multi-Head Cross-Attention Fusion."
+          },
+          {
+            "fusion_id": "gated_fusion",
+            "name": "Learned Dynamic Gated Multimodal Fusion",
+            "score": 3.7,
+            "status": "ADMISSIBLE",
+            "evidence_source": "PMID: 41775771 / Nature Sci Rep 2026",
+            "evidence_status": "EVIDENCE_BACKED",
+            "compute_cost": "LIGHT",
+            "rationale": "Learns input-dependent gating coefficients dynamically balancing representation contributions across arbitrary number of modalities.",
+            "cand_ref": {
+              "fusion_id": "gated_fusion",
+              "name": "Learned Dynamic Gated Multimodal Fusion",
+              "evidence_source": "PMID: 41775771 / Nature Sci Rep 2026",
+              "evidence_status": "EVIDENCE_BACKED",
+              "supported_modalities": [
+                [
+                  "image",
+                  "text"
+                ],
+                [
+                  "tabular",
+                  "image"
+                ],
+                [
+                  "tabular",
+                  "text"
+                ],
+                [
+                  "tabular",
+                  "image",
+                  "text"
+                ]
+              ],
+              "min_samples": 40,
+              "compute_cost": "LIGHT",
+              "alignment_type": "dynamic_weighting",
+              "rationale": "Learns input-dependent gating coefficients dynamically balancing representation contributions across arbitrary number of modalities."
+            }
+          },
+          {
+            "fusion_id": "feature_concatenation",
+            "name": "Feature Concatenation with Subspace Projection",
+            "score": 3.3,
+            "status": "ADMISSIBLE",
+            "evidence_source": "PMID: 41826845 / PMC Biomarkers 2026",
+            "evidence_status": "EVIDENCE_BACKED",
+            "compute_cost": "LIGHT",
+            "rationale": "Concatenates all modality feature vectors into a single unified space followed by joint linear transformation and non-linearity.",
+            "cand_ref": {
+              "fusion_id": "feature_concatenation",
+              "name": "Feature Concatenation with Subspace Projection",
+              "evidence_source": "PMID: 41826845 / PMC Biomarkers 2026",
+              "evidence_status": "EVIDENCE_BACKED",
+              "supported_modalities": [
+                [
+                  "image",
+                  "text"
+                ],
+                [
+                  "tabular",
+                  "image"
+                ],
+                [
+                  "tabular",
+                  "text"
+                ],
+                [
+                  "tabular",
+                  "image",
+                  "text"
+                ]
+              ],
+              "min_samples": 20,
+              "compute_cost": "LIGHT",
+              "alignment_type": "joint_projection",
+              "rationale": "Concatenates all modality feature vectors into a single unified space followed by joint linear transformation and non-linearity."
+            }
+          },
+          {
+            "fusion_id": "late_fusion",
+            "name": "Late Probability Blending Fusion",
+            "score": 1.5,
+            "status": "ADMISSIBLE",
+            "evidence_source": "Standard Minimal Reference Baseline",
+            "evidence_status": "EXPLICITLY_CONFIGURED",
+            "compute_cost": "LIGHT",
+            "rationale": "Trains separate modality-specific task heads and aggregates final output probabilities.",
+            "cand_ref": {
+              "fusion_id": "late_fusion",
+              "name": "Late Probability Blending Fusion",
+              "evidence_source": "Standard Minimal Reference Baseline",
+              "evidence_status": "EXPLICITLY_CONFIGURED",
+              "supported_modalities": [
+                [
+                  "image",
+                  "text"
+                ],
+                [
+                  "tabular",
+                  "image"
+                ],
+                [
+                  "tabular",
+                  "text"
+                ],
+                [
+                  "tabular",
+                  "image",
+                  "text"
+                ]
+              ],
+              "min_samples": 10,
+              "compute_cost": "LIGHT",
+              "alignment_type": "decision_level",
+              "rationale": "Trains separate modality-specific task heads and aggregates final output probabilities."
+            }
+          },
+          {
+            "fusion_id": "early_fusion",
+            "name": "Early Feature Stacking Fusion",
+            "score": 0.0,
+            "status": "REJECTED_COMPUTE_BUDGET",
+            "reason": "Compute cost (MEDIUM) exceeds budget (LIGHT)."
+          }
+        ]
+      },
+      "ensemble": {
+        "component": "ensembling",
+        "selected_value": "average_ensembling",
+        "name": "Uniform Probability Average Ensemble",
+        "evidence_status": "EVIDENCE_BACKED",
+        "evidence_source": "PMID: 41775771 / Nature Sci Rep 2026",
+        "rationale": "Reduces predictive variance by taking the arithmetic mean of calibrated class probabilities across independent candidate models.",
+        "compute_cost": "LIGHT",
+        "execution_status": "EXECUTABLE"
+      }
+    },
+    "metrics": {
+      "roc_auc_mean": 0.3333,
+      "roc_auc_std": 0.4714,
+      "brier_score_mean": 0.2665,
+      "f1_mean": 0.3333,
+      "accuracy_mean": 0.3611
+    }
+  },
+  "fixed_default_baseline": {
+    "name": "Fixed-Default Standard Baseline",
+    "components": {
+      "image": "Simple 3-Layer CNN",
+      "text": "TF-IDF + Ridge Linear",
+      "tabular": "Dense Baseline",
+      "fusion": "Feature Concatenation",
+      "ensemble": "Single Model"
+    },
+    "metrics": {
+      "roc_auc_mean": 0.0,
+      "roc_auc_std": 0.0,
+      "brier_score_mean": 0.3093,
+      "f1_mean": 0.0952,
+      "accuracy_mean": 0.2222
+    }
+  },
+  "deltas": {
+    "roc_auc_delta": 0.3333,
+    "brier_delta": -0.0428,
+    "f1_delta": 0.2381,
+    "accuracy_delta": 0.1389
+  }
+}

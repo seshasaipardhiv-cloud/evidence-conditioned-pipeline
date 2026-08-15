@@ -1,0 +1,184 @@
+{
+  "candidate_pipeline": {
+    "name": "Evidence-Conditioned Synthesized Pipeline",
+    "components": {
+      "text_backbone": {
+        "component": "text_backbone",
+        "selected_value": "pubmedbert",
+        "name": "PubMedBERT (Biomedical-BERT)",
+        "family": "biomedical_transformer",
+        "evidence_status": "EVIDENCE_BACKED",
+        "evidence_source": "PMID: 41826845 / PMC Biomarkers 2026",
+        "rationale": "Pretrained from scratch on PubMed abstracts and full-text articles; achieves superior domain vocabulary alignment and contextualization on clinical oncology narratives.",
+        "compatibility": {
+          "task": "binary_classification",
+          "domain": "biomedical"
+        },
+        "compute_cost": "LIGHT",
+        "embedding_dim": 256,
+        "max_seq_length": 512,
+        "score": 6.2,
+        "execution_status": "EXECUTABLE",
+        "selection_rankings": [
+          {
+            "model_id": "pubmedbert",
+            "name": "PubMedBERT (Biomedical-BERT)",
+            "score": 6.2,
+            "status": "ADMISSIBLE",
+            "evidence_source": "PMID: 41826845 / PMC Biomarkers 2026",
+            "evidence_status": "EVIDENCE_BACKED",
+            "compute_cost": "LIGHT",
+            "embedding_dim": 256,
+            "max_seq_length": 512,
+            "rationale": "Pretrained from scratch on PubMed abstracts and full-text articles; achieves superior domain vocabulary alignment and contextualization on clinical oncology narratives.",
+            "cand_ref": {
+              "model_id": "pubmedbert",
+              "family": "biomedical_transformer",
+              "name": "PubMedBERT (Biomedical-BERT)",
+              "evidence_source": "PMID: 41826845 / PMC Biomarkers 2026",
+              "evidence_status": "EVIDENCE_BACKED",
+              "domain_compatibility": [
+                "biomedical",
+                "clinical",
+                "oncology",
+                "pathology"
+              ],
+              "task_compatibility": [
+                "binary_classification",
+                "risk_prediction",
+                "text_classification"
+              ],
+              "compute_cost": "LIGHT",
+              "max_seq_length": 512,
+              "embedding_dim": 256,
+              "rationale": "Pretrained from scratch on PubMed abstracts and full-text articles; achieves superior domain vocabulary alignment and contextualization on clinical oncology narratives."
+            }
+          },
+          {
+            "model_id": "clinicalbert",
+            "name": "ClinicalBERT",
+            "score": 0.0,
+            "status": "REJECTED_COMPUTE_BUDGET",
+            "reason": "Compute cost (MEDIUM) exceeds budget (LIGHT)."
+          },
+          {
+            "model_id": "biobert",
+            "name": "BioBERT v1.1",
+            "score": 6.2,
+            "status": "ADMISSIBLE",
+            "evidence_source": "PMID: 41775771 / Nature Sci Rep 2026",
+            "evidence_status": "EVIDENCE_BACKED",
+            "compute_cost": "LIGHT",
+            "embedding_dim": 256,
+            "max_seq_length": 512,
+            "rationale": "Domain-specific language model initialized from BERT and trained on PubMed/PMC; widely validated across biomedical extraction benchmarks.",
+            "cand_ref": {
+              "model_id": "biobert",
+              "family": "biomedical_transformer",
+              "name": "BioBERT v1.1",
+              "evidence_source": "PMID: 41775771 / Nature Sci Rep 2026",
+              "evidence_status": "EVIDENCE_BACKED",
+              "domain_compatibility": [
+                "biomedical",
+                "clinical_text",
+                "surgical_reports"
+              ],
+              "task_compatibility": [
+                "binary_classification",
+                "multimodal_fusion"
+              ],
+              "compute_cost": "LIGHT",
+              "max_seq_length": 512,
+              "embedding_dim": 256,
+              "rationale": "Domain-specific language model initialized from BERT and trained on PubMed/PMC; widely validated across biomedical extraction benchmarks."
+            }
+          },
+          {
+            "model_id": "roberta_base",
+            "name": "RoBERTa-Base",
+            "score": 0.0,
+            "status": "REJECTED_COMPUTE_BUDGET",
+            "reason": "Compute cost (MEDIUM) exceeds budget (LIGHT)."
+          },
+          {
+            "model_id": "tfidf_linear",
+            "name": "TF-IDF + Linear Classifier",
+            "score": 3.7,
+            "status": "ADMISSIBLE",
+            "evidence_source": "Standard Minimal Reference Baseline",
+            "evidence_status": "EXPLICITLY_CONFIGURED",
+            "compute_cost": "LIGHT",
+            "embedding_dim": 128,
+            "max_seq_length": 1000,
+            "rationale": "Term frequency-inverse document frequency representation with linear classification head; fast, interpretable, low-compute reference baseline.",
+            "cand_ref": {
+              "model_id": "tfidf_linear",
+              "family": "bag_of_words_linear",
+              "name": "TF-IDF + Linear Classifier",
+              "evidence_source": "Standard Minimal Reference Baseline",
+              "evidence_status": "EXPLICITLY_CONFIGURED",
+              "domain_compatibility": [
+                "clinical_text",
+                "tabular_text",
+                "short_text"
+              ],
+              "task_compatibility": [
+                "binary_classification",
+                "baseline_comparator"
+              ],
+              "compute_cost": "LIGHT",
+              "max_seq_length": 1000,
+              "embedding_dim": 128,
+              "rationale": "Term frequency-inverse document frequency representation with linear classification head; fast, interpretable, low-compute reference baseline."
+            }
+          }
+        ]
+      },
+      "fusion": {
+        "component": "unimodal_direct_head",
+        "name": "Direct Linear Task Head (Unimodal)",
+        "evidence_status": "STANDARD_BASELINE",
+        "evidence_source": "Canonical Unimodal Design",
+        "compute_cost": "LIGHT"
+      },
+      "ensemble": {
+        "component": "ensembling",
+        "selected_value": null,
+        "evidence_status": "DORMANT_INSUFFICIENT_MODELS",
+        "evidence_source": "None",
+        "rationale": "Ensemble dormant: Only 1 model available (minimum required: 2).",
+        "execution_status": "DORMANT"
+      }
+    },
+    "metrics": {
+      "roc_auc_mean": 0.6667,
+      "roc_auc_std": 0.4714,
+      "brier_score_mean": 0.2095,
+      "f1_mean": 0.6667,
+      "accuracy_mean": 0.8333
+    }
+  },
+  "fixed_default_baseline": {
+    "name": "Fixed-Default Standard Baseline",
+    "components": {
+      "image": "Simple 3-Layer CNN",
+      "text": "TF-IDF + Ridge Linear",
+      "tabular": "Dense Baseline",
+      "fusion": "Feature Concatenation",
+      "ensemble": "Single Model"
+    },
+    "metrics": {
+      "roc_auc_mean": 0.6667,
+      "roc_auc_std": 0.4714,
+      "brier_score_mean": 0.2095,
+      "f1_mean": 0.6667,
+      "accuracy_mean": 0.8333
+    }
+  },
+  "deltas": {
+    "roc_auc_delta": 0.0,
+    "brier_delta": 0.0,
+    "f1_delta": 0.0,
+    "accuracy_delta": 0.0
+  }
+}

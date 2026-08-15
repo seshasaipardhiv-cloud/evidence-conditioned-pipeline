@@ -1,0 +1,12 @@
+{
+  "tabular": null,
+  "image": {
+    "target_size": [
+      32,
+      32
+    ],
+    "normalization": "imagenet",
+    "train_only": true
+  },
+  "text": null
+}

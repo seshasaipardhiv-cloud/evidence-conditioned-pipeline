@@ -1,0 +1,125 @@
+{
+  "timestamp": "2026-08-15T11:37:18.553496+00:00",
+  "cohorts_evaluated_count": 4,
+  "cohort_names": [
+    "unseen_cardiac_tabular_cohort",
+    "unseen_derm_image_cohort",
+    "unseen_pathology_text_cohort",
+    "unseen_oncology_multimodal_cohort"
+  ],
+  "all_safety_gates_passed": true,
+  "cohort_results": {
+    "unseen_cardiac_tabular_cohort": {
+      "discovered_modalities": [
+        "tabular"
+      ],
+      "target_column": "adverse_cardiac_event",
+      "sample_count": 40,
+      "candidate_metrics": {
+        "roc_auc_mean": 0.5625,
+        "roc_auc_std": 0.368,
+        "brier_score_mean": 0.2294,
+        "f1_mean": 0.4722,
+        "accuracy_mean": 0.5833
+      },
+      "baseline_metrics": {
+        "roc_auc_mean": 0.5625,
+        "roc_auc_std": 0.368,
+        "brier_score_mean": 0.2294,
+        "f1_mean": 0.4722,
+        "accuracy_mean": 0.5833
+      },
+      "safety_status": "PASSED",
+      "selected_components": {
+        "tabular_encoder": "Dimension-Adaptive Dense Tabular Encoder",
+        "fusion": "Direct Linear Task Head (Unimodal)",
+        "ensemble": null
+      }
+    },
+    "unseen_derm_image_cohort": {
+      "discovered_modalities": [
+        "image"
+      ],
+      "target_column": "malignancy_flag",
+      "sample_count": 40,
+      "candidate_metrics": {
+        "roc_auc_mean": 0.6667,
+        "roc_auc_std": 0.4714,
+        "brier_score_mean": 0.2346,
+        "f1_mean": 0.8,
+        "accuracy_mean": 0.6667
+      },
+      "baseline_metrics": {
+        "roc_auc_mean": 0.6667,
+        "roc_auc_std": 0.4714,
+        "brier_score_mean": 0.2346,
+        "f1_mean": 0.8,
+        "accuracy_mean": 0.6667
+      },
+      "safety_status": "PASSED",
+      "selected_components": {
+        "image_backbone": "ResNet-18",
+        "fusion": "Direct Linear Task Head (Unimodal)",
+        "ensemble": null
+      }
+    },
+    "unseen_pathology_text_cohort": {
+      "discovered_modalities": [
+        "text"
+      ],
+      "target_column": "high_grade_dysplasia",
+      "sample_count": 40,
+      "candidate_metrics": {
+        "roc_auc_mean": 0.6667,
+        "roc_auc_std": 0.4714,
+        "brier_score_mean": 0.2095,
+        "f1_mean": 0.6667,
+        "accuracy_mean": 0.8333
+      },
+      "baseline_metrics": {
+        "roc_auc_mean": 0.6667,
+        "roc_auc_std": 0.4714,
+        "brier_score_mean": 0.2095,
+        "f1_mean": 0.6667,
+        "accuracy_mean": 0.8333
+      },
+      "safety_status": "PASSED",
+      "selected_components": {
+        "text_backbone": "PubMedBERT (Biomedical-BERT)",
+        "fusion": "Direct Linear Task Head (Unimodal)",
+        "ensemble": null
+      }
+    },
+    "unseen_oncology_multimodal_cohort": {
+      "discovered_modalities": [
+        "tabular",
+        "image",
+        "text"
+      ],
+      "target_column": "disease_progression",
+      "sample_count": 40,
+      "candidate_metrics": {
+        "roc_auc_mean": 0.5625,
+        "roc_auc_std": 0.4177,
+        "brier_score_mean": 0.2993,
+        "f1_mean": 0.1667,
+        "accuracy_mean": 0.3333
+      },
+      "baseline_metrics": {
+        "roc_auc_mean": 0.5625,
+        "roc_auc_std": 0.4177,
+        "brier_score_mean": 0.2927,
+        "f1_mean": 0.2222,
+        "accuracy_mean": 0.375
+      },
+      "safety_status": "PASSED",
+      "selected_components": {
+        "tabular_encoder": "Dimension-Adaptive Dense Tabular Encoder",
+        "image_backbone": "ResNet-18",
+        "text_backbone": "PubMedBERT (Biomedical-BERT)",
+        "fusion": "Learned Dynamic Gated Multimodal Fusion",
+        "ensemble": "Uniform Probability Average Ensemble"
+      }
+    }
+  }
+}

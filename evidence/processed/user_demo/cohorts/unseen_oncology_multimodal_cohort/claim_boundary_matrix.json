@@ -1,0 +1,8 @@
+{
+  "Claim 1: The framework transfers across unseen datasets without manual model specification": "SUPPORTED",
+  "Claim 2: The framework dynamically adapts to discovered modality combinations": "SUPPORTED",
+  "Claim 3: Evidence conditioning alters component selection based on domain and compute tier": "SUPPORTED",
+  "Claim 4: Evidence conditioning provides principled selection and maintains provenance": "SUPPORTED",
+  "Claim 5: Evidence-conditioned selection consistently improves predictive performance": "PARTIALLY_SUPPORTED",
+  "Claim 6: The framework generalizes clinically to real-world multicenter clinical settings": "NOT_SUPPORTED"
+}

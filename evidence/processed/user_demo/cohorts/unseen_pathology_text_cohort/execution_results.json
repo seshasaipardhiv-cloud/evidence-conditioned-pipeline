@@ -1,0 +1,313 @@
+{
+  "experiment_id": "EXP_MULTIMODAL_EXECUTION_01",
+  "active_modalities": [
+    "text"
+  ],
+  "fusion_mechanism": "feature_concatenation",
+  "sample_count": 40,
+  "seeds": [
+    42,
+    100,
+    2026
+  ],
+  "compute_budget": "LIGHT",
+  "runtime_seconds": 0.66,
+  "selected_models": {
+    "image": null,
+    "text": {
+      "component": "text_backbone",
+      "selected_value": "pubmedbert",
+      "name": "PubMedBERT (Biomedical-BERT)",
+      "family": "biomedical_transformer",
+      "evidence_status": "EVIDENCE_BACKED",
+      "evidence_source": "PMID: 41826845 / PMC Biomarkers 2026",
+      "rationale": "Pretrained from scratch on PubMed abstracts and full-text articles; achieves superior domain vocabulary alignment and contextualization on clinical oncology narratives.",
+      "compatibility": {
+        "task": "binary_classification",
+        "domain": "clinical"
+      },
+      "compute_cost": "LIGHT",
+      "embedding_dim": 256,
+      "max_seq_length": 512,
+      "score": 6.2,
+      "execution_status": "EXECUTABLE",
+      "selection_rankings": [
+        {
+          "model_id": "pubmedbert",
+          "name": "PubMedBERT (Biomedical-BERT)",
+          "score": 6.2,
+          "status": "ADMISSIBLE",
+          "evidence_source": "PMID: 41826845 / PMC Biomarkers 2026",
+          "evidence_status": "EVIDENCE_BACKED",
+          "compute_cost": "LIGHT",
+          "embedding_dim": 256,
+          "max_seq_length": 512,
+          "rationale": "Pretrained from scratch on PubMed abstracts and full-text articles; achieves superior domain vocabulary alignment and contextualization on clinical oncology narratives.",
+          "cand_ref": {
+            "model_id": "pubmedbert",
+            "family": "biomedical_transformer",
+            "name": "PubMedBERT (Biomedical-BERT)",
+            "evidence_source": "PMID: 41826845 / PMC Biomarkers 2026",
+            "evidence_status": "EVIDENCE_BACKED",
+            "domain_compatibility": [
+              "biomedical",
+              "clinical",
+              "oncology",
+              "pathology"
+            ],
+            "task_compatibility": [
+              "binary_classification",
+              "risk_prediction",
+              "text_classification"
+            ],
+            "compute_cost": "LIGHT",
+            "max_seq_length": 512,
+            "embedding_dim": 256,
+            "rationale": "Pretrained from scratch on PubMed abstracts and full-text articles; achieves superior domain vocabulary alignment and contextualization on clinical oncology narratives."
+          }
+        },
+        {
+          "model_id": "clinicalbert",
+          "name": "ClinicalBERT",
+          "score": 0.0,
+          "status": "REJECTED_COMPUTE_BUDGET",
+          "reason": "Compute cost (MEDIUM) exceeds budget (LIGHT)."
+        },
+        {
+          "model_id": "biobert",
+          "name": "BioBERT v1.1",
+          "score": 5.5,
+          "status": "ADMISSIBLE",
+          "evidence_source": "PMID: 41775771 / Nature Sci Rep 2026",
+          "evidence_status": "EVIDENCE_BACKED",
+          "compute_cost": "LIGHT",
+          "embedding_dim": 256,
+          "max_seq_length": 512,
+          "rationale": "Domain-specific language model initialized from BERT and trained on PubMed/PMC; widely validated across biomedical extraction benchmarks.",
+          "cand_ref": {
+            "model_id": "biobert",
+            "family": "biomedical_transformer",
+            "name": "BioBERT v1.1",
+            "evidence_source": "PMID: 41775771 / Nature Sci Rep 2026",
+            "evidence_status": "EVIDENCE_BACKED",
+            "domain_compatibility": [
+              "biomedical",
+              "clinical_text",
+              "surgical_reports"
+            ],
+            "task_compatibility": [
+              "binary_classification",
+              "multimodal_fusion"
+            ],
+            "compute_cost": "LIGHT",
+            "max_seq_length": 512,
+            "embedding_dim": 256,
+            "rationale": "Domain-specific language model initialized from BERT and trained on PubMed/PMC; widely validated across biomedical extraction benchmarks."
+          }
+        },
+        {
+          "model_id": "roberta_base",
+          "name": "RoBERTa-Base",
+          "score": 0.0,
+          "status": "REJECTED_COMPUTE_BUDGET",
+          "reason": "Compute cost (MEDIUM) exceeds budget (LIGHT)."
+        },
+        {
+          "model_id": "tfidf_linear",
+          "name": "TF-IDF + Linear Classifier",
+          "score": 3.7,
+          "status": "ADMISSIBLE",
+          "evidence_source": "Standard Minimal Reference Baseline",
+          "evidence_status": "EXPLICITLY_CONFIGURED",
+          "compute_cost": "LIGHT",
+          "embedding_dim": 128,
+          "max_seq_length": 1000,
+          "rationale": "Term frequency-inverse document frequency representation with linear classification head; fast, interpretable, low-compute reference baseline.",
+          "cand_ref": {
+            "model_id": "tfidf_linear",
+            "family": "bag_of_words_linear",
+            "name": "TF-IDF + Linear Classifier",
+            "evidence_source": "Standard Minimal Reference Baseline",
+            "evidence_status": "EXPLICITLY_CONFIGURED",
+            "domain_compatibility": [
+              "clinical_text",
+              "tabular_text",
+              "short_text"
+            ],
+            "task_compatibility": [
+              "binary_classification",
+              "baseline_comparator"
+            ],
+            "compute_cost": "LIGHT",
+            "max_seq_length": 1000,
+            "embedding_dim": 128,
+            "rationale": "Term frequency-inverse document frequency representation with linear classification head; fast, interpretable, low-compute reference baseline."
+          }
+        }
+      ]
+    }
+  },
+  "summary_metrics": {
+    "multimodal_candidate": {
+      "mean_roc_auc": 0.6667,
+      "std_roc_auc": 0.4714,
+      "mean_brier_score": 0.2095,
+      "mean_f1_score": 0.6667,
+      "mean_accuracy": 0.8333,
+      "per_seed_roc_auc": {
+        "42": 1.0,
+        "100": 1.0,
+        "2026": 0.0
+      }
+    },
+    "text_only_baseline": {
+      "mean_roc_auc": 0.6667,
+      "std_roc_auc": 0.4714,
+      "mean_brier_score": 0.2095,
+      "mean_f1_score": 0.6667,
+      "mean_accuracy": 0.8333,
+      "per_seed_roc_auc": {
+        "42": 1.0,
+        "100": 1.0,
+        "2026": 0.0
+      }
+    }
+  },
+  "detailed_seed_results": {
+    "multimodal_candidate": [
+      {
+        "roc_auc": 1.0,
+        "brier_score": 0.2027,
+        "accuracy": 1.0,
+        "f1_score": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "seed": 42
+      },
+      {
+        "roc_auc": 1.0,
+        "brier_score": 0.1258,
+        "accuracy": 1.0,
+        "f1_score": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "seed": 100
+      },
+      {
+        "roc_auc": 0.0,
+        "brier_score": 0.2999,
+        "accuracy": 0.5,
+        "f1_score": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "seed": 2026
+      }
+    ],
+    "image_only_baseline": [],
+    "text_only_baseline": [
+      {
+        "roc_auc": 1.0,
+        "brier_score": 0.2027,
+        "accuracy": 1.0,
+        "f1_score": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "seed": 42
+      },
+      {
+        "roc_auc": 1.0,
+        "brier_score": 0.1258,
+        "accuracy": 1.0,
+        "f1_score": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "seed": 100
+      },
+      {
+        "roc_auc": 0.0,
+        "brier_score": 0.2999,
+        "accuracy": 0.5,
+        "f1_score": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "seed": 2026
+      }
+    ],
+    "late_fusion_baseline": [],
+    "concat_fusion_ablation": []
+  },
+  "safety_audit": {
+    "overall_status": "PASSED",
+    "passed_gates_count": 14,
+    "total_gates_count": 14,
+    "gate_results": {
+      "gate_1_modality_detection_valid": {
+        "passed": true,
+        "details": "Modalities: ['text']"
+      },
+      "gate_2_sample_correspondence": {
+        "passed": true,
+        "details": "Train samples: 32, Test samples: 8"
+      },
+      "gate_3_patient_overlap_firewall": {
+        "passed": true,
+        "overlaps": {
+          "train_val": [],
+          "train_test": [],
+          "val_test": [],
+          "duplicate_hashes": []
+        }
+      },
+      "gate_4_target_leakage": {
+        "passed": true,
+        "detected_leaks": []
+      },
+      "gate_5_temporal_leakage_post_adjuvant": {
+        "passed": true,
+        "temporal_exclusions": []
+      },
+      "gate_6_image_preprocessing_isolation": {
+        "passed": true,
+        "details": "Train-only image normalization and augmentations enforced."
+      },
+      "gate_7_text_preprocessing_isolation": {
+        "passed": true,
+        "details": "Vocabulary and IDF weights fitted strictly on train fold."
+      },
+      "gate_8_image_architecture_provenance": {
+        "passed": true,
+        "provenance": "N/A"
+      },
+      "gate_9_text_model_provenance": {
+        "passed": true,
+        "provenance": "PMID: 41826845 / PMC Biomarkers 2026"
+      },
+      "gate_10_fusion_dimension_compatibility": {
+        "passed": true,
+        "embedding_dimension": 64
+      },
+      "gate_11_missing_modality_contract": {
+        "passed": true,
+        "strategy": "Deterministic zero/mean tensor fallback without row dropping"
+      },
+      "gate_12_compute_budget_compliance": {
+        "passed": true,
+        "configured_budget": "LIGHT",
+        "required_budget": "LIGHT"
+      },
+      "gate_13_deterministic_seed_verification": {
+        "passed": true,
+        "seeds": [
+          42,
+          100,
+          2026
+        ]
+      },
+      "gate_14_pipeline_hash_integrity": {
+        "passed": true,
+        "pipeline_config_sha256": "4d122df25c00fd927b541f669b43463407d9106bcbbe4c3ae040137a3bd4fa4c"
+      }
+    }
+  },
+  "status": "COMPLETED"
+}

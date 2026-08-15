@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-08-15T11:37:08.320467+00:00",
+  "discovered_modalities": [
+    "text"
+  ],
+  "sample_count": 40,
+  "id_column": "patient_record_id",
+  "target_column": "high_grade_dysplasia",
+  "tabular_feature_count": 0,
+  "image_count": 0,
+  "text_count": 40
+}

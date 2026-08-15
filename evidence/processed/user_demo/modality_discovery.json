@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-08-15T11:36:32.815008+00:00",
+  "discovered_modalities": [
+    "tabular",
+    "image",
+    "text"
+  ],
+  "sample_count": 60,
+  "id_column": "patient_record_id",
+  "target_column": "five_year_recurrence_flag",
+  "tabular_feature_count": 3,
+  "image_count": 60,
+  "text_count": 60
+}

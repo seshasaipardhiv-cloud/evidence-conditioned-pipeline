@@ -1,0 +1,61 @@
+{
+  "candidate_pipeline": {
+    "name": "Evidence-Conditioned Synthesized Pipeline",
+    "components": {
+      "tabular_encoder": {
+        "component": "tabular_dense_projection",
+        "name": "Dimension-Adaptive Dense Tabular Encoder",
+        "evidence_status": "EVIDENCE_BACKED",
+        "evidence_source": "PMID: 41826845 / PMC Biomarkers 2026",
+        "input_dim": 8,
+        "embed_dim": 64,
+        "compute_cost": "LIGHT"
+      },
+      "fusion": {
+        "component": "unimodal_direct_head",
+        "name": "Direct Linear Task Head (Unimodal)",
+        "evidence_status": "STANDARD_BASELINE",
+        "evidence_source": "Canonical Unimodal Design",
+        "compute_cost": "LIGHT"
+      },
+      "ensemble": {
+        "component": "ensembling",
+        "selected_value": null,
+        "evidence_status": "DORMANT_INSUFFICIENT_MODELS",
+        "evidence_source": "None",
+        "rationale": "Ensemble dormant: Only 1 model available (minimum required: 2).",
+        "execution_status": "DORMANT"
+      }
+    },
+    "metrics": {
+      "roc_auc_mean": 0.5625,
+      "roc_auc_std": 0.368,
+      "brier_score_mean": 0.2294,
+      "f1_mean": 0.4722,
+      "accuracy_mean": 0.5833
+    }
+  },
+  "fixed_default_baseline": {
+    "name": "Fixed-Default Standard Baseline",
+    "components": {
+      "image": "Simple 3-Layer CNN",
+      "text": "TF-IDF + Ridge Linear",
+      "tabular": "Dense Baseline",
+      "fusion": "Feature Concatenation",
+      "ensemble": "Single Model"
+    },
+    "metrics": {
+      "roc_auc_mean": 0.5625,
+      "roc_auc_std": 0.368,
+      "brier_score_mean": 0.2294,
+      "f1_mean": 0.4722,
+      "accuracy_mean": 0.5833
+    }
+  },
+  "deltas": {
+    "roc_auc_delta": 0.0,
+    "brier_delta": 0.0,
+    "f1_delta": 0.0,
+    "accuracy_delta": 0.0
+  }
+}

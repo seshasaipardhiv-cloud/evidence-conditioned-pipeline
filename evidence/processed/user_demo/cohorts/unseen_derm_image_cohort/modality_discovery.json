@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-08-15T11:37:05.556255+00:00",
+  "discovered_modalities": [
+    "image"
+  ],
+  "sample_count": 40,
+  "id_column": "patient_record_id",
+  "target_column": "malignancy_flag",
+  "tabular_feature_count": 0,
+  "image_count": 40,
+  "text_count": 0
+}

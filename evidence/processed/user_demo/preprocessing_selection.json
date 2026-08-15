@@ -1,0 +1,20 @@
+{
+  "tabular": {
+    "standard_scaling": true,
+    "median_imputation": true,
+    "train_only": true
+  },
+  "image": {
+    "target_size": [
+      32,
+      32
+    ],
+    "normalization": "imagenet",
+    "train_only": true
+  },
+  "text": {
+    "max_seq_len": 32,
+    "lowercase": true,
+    "train_only": true
+  }
+}

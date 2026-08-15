@@ -1,0 +1,9 @@
+{
+  "tabular": null,
+  "image": null,
+  "text": {
+    "max_seq_len": 32,
+    "lowercase": true,
+    "train_only": true
+  }
+}

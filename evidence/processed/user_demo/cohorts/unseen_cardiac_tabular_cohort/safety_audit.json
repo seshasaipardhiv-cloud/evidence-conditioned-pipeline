@@ -1,0 +1,73 @@
+{
+  "overall_status": "PASSED",
+  "passed_gates_count": 14,
+  "total_gates_count": 14,
+  "gate_results": {
+    "gate_1_modality_detection_valid": {
+      "passed": true,
+      "details": "Modalities: ['tabular']"
+    },
+    "gate_2_sample_correspondence": {
+      "passed": true,
+      "details": "Train samples: 32, Test samples: 8"
+    },
+    "gate_3_patient_overlap_firewall": {
+      "passed": true,
+      "overlaps": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": [],
+        "duplicate_hashes": []
+      }
+    },
+    "gate_4_target_leakage": {
+      "passed": true,
+      "detected_leaks": []
+    },
+    "gate_5_temporal_leakage_post_adjuvant": {
+      "passed": true,
+      "temporal_exclusions": []
+    },
+    "gate_6_image_preprocessing_isolation": {
+      "passed": true,
+      "details": "Train-only image normalization and augmentations enforced."
+    },
+    "gate_7_text_preprocessing_isolation": {
+      "passed": true,
+      "details": "Vocabulary and IDF weights fitted strictly on train fold."
+    },
+    "gate_8_image_architecture_provenance": {
+      "passed": true,
+      "provenance": "N/A"
+    },
+    "gate_9_text_model_provenance": {
+      "passed": true,
+      "provenance": "N/A"
+    },
+    "gate_10_fusion_dimension_compatibility": {
+      "passed": true,
+      "embedding_dimension": 64
+    },
+    "gate_11_missing_modality_contract": {
+      "passed": true,
+      "strategy": "Deterministic zero/mean tensor fallback without row dropping"
+    },
+    "gate_12_compute_budget_compliance": {
+      "passed": true,
+      "configured_budget": "LIGHT",
+      "required_budget": "LIGHT"
+    },
+    "gate_13_deterministic_seed_verification": {
+      "passed": true,
+      "seeds": [
+        42,
+        100,
+        2026
+      ]
+    },
+    "gate_14_pipeline_hash_integrity": {
+      "passed": true,
+      "pipeline_config_sha256": "ebcade8ecfb5c75fc95ee8dd563d8301f711ed7660197a1d26e622b1a177dd86"
+    }
+  }
+}

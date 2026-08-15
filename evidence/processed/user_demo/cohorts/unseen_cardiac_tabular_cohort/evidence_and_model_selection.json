@@ -1,0 +1,26 @@
+{
+  "tabular_encoder": {
+    "component": "tabular_dense_projection",
+    "name": "Dimension-Adaptive Dense Tabular Encoder",
+    "evidence_status": "EVIDENCE_BACKED",
+    "evidence_source": "PMID: 41826845 / PMC Biomarkers 2026",
+    "input_dim": 8,
+    "embed_dim": 64,
+    "compute_cost": "LIGHT"
+  },
+  "fusion": {
+    "component": "unimodal_direct_head",
+    "name": "Direct Linear Task Head (Unimodal)",
+    "evidence_status": "STANDARD_BASELINE",
+    "evidence_source": "Canonical Unimodal Design",
+    "compute_cost": "LIGHT"
+  },
+  "ensemble": {
+    "component": "ensembling",
+    "selected_value": null,
+    "evidence_status": "DORMANT_INSUFFICIENT_MODELS",
+    "evidence_source": "None",
+    "rationale": "Ensemble dormant: Only 1 model available (minimum required: 2).",
+    "execution_status": "DORMANT"
+  }
+}

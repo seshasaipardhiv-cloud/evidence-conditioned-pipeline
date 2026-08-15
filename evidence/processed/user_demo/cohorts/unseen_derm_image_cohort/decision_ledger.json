@@ -1,0 +1,487 @@
+{
+  "dataset_info": {
+    "sample_count": 40,
+    "discovered_modalities": [
+      "image"
+    ],
+    "id_column": "patient_record_id",
+    "target_column": "malignancy_flag"
+  },
+  "evidence_used": {
+    "image": {
+      "component": "image_backbone",
+      "selected_value": "resnet18",
+      "name": "ResNet-18",
+      "family": "residual_cnn",
+      "evidence_status": "EVIDENCE_BACKED",
+      "evidence_source": "PMID: 42487970 / Lancet Digital Health 2026",
+      "rationale": "Lightweight residual network offering rapid convergence, minimal compute footprint, and robust representation on small clinical imaging cohorts.",
+      "compatibility": {
+        "task": "binary_classification",
+        "modality": [
+          "general_imaging"
+        ]
+      },
+      "compute_cost": "LIGHT",
+      "embedding_dim": 256,
+      "default_image_size": [
+        224,
+        224
+      ],
+      "score": 4.7,
+      "execution_status": "EXECUTABLE",
+      "selection_rankings": [
+        {
+          "architecture_id": "resnet50",
+          "name": "ResNet-50",
+          "score": 0.0,
+          "status": "REJECTED_COMPUTE_BUDGET",
+          "reason": "Compute cost (MEDIUM) exceeds budget (LIGHT)."
+        },
+        {
+          "architecture_id": "resnet18",
+          "name": "ResNet-18",
+          "score": 4.7,
+          "status": "ADMISSIBLE",
+          "evidence_source": "PMID: 42487970 / Lancet Digital Health 2026",
+          "evidence_status": "EVIDENCE_BACKED",
+          "compute_cost": "LIGHT",
+          "embedding_dim": 256,
+          "default_image_size": [
+            224,
+            224
+          ],
+          "rationale": "Lightweight residual network offering rapid convergence, minimal compute footprint, and robust representation on small clinical imaging cohorts.",
+          "cand_ref": {
+            "architecture_id": "resnet18",
+            "family": "residual_cnn",
+            "name": "ResNet-18",
+            "evidence_source": "PMID: 42487970 / Lancet Digital Health 2026",
+            "evidence_status": "EVIDENCE_BACKED",
+            "task_compatibility": [
+              "binary_classification",
+              "recurrence_prediction",
+              "clinical_image",
+              "rgb_image"
+            ],
+            "modality_compatibility": [
+              "clinical_image",
+              "endoscopic",
+              "radiology",
+              "rgb_image"
+            ],
+            "compute_cost": "LIGHT",
+            "min_samples": 20,
+            "default_image_size": [
+              224,
+              224
+            ],
+            "embedding_dim": 256,
+            "rationale": "Lightweight residual network offering rapid convergence, minimal compute footprint, and robust representation on small clinical imaging cohorts."
+          }
+        },
+        {
+          "architecture_id": "efficientnet_b0",
+          "name": "EfficientNet-B0",
+          "score": 4.7,
+          "status": "ADMISSIBLE",
+          "evidence_source": "PMID: 41006422 / Sci Rep 2025",
+          "evidence_status": "EVIDENCE_BACKED",
+          "compute_cost": "LIGHT",
+          "embedding_dim": 256,
+          "default_image_size": [
+            224,
+            224
+          ],
+          "rationale": "Compound scaled convolutional architecture balancing parameter efficiency with multi-scale feature representation.",
+          "cand_ref": {
+            "architecture_id": "efficientnet_b0",
+            "family": "scaled_cnn",
+            "name": "EfficientNet-B0",
+            "evidence_source": "PMID: 41006422 / Sci Rep 2025",
+            "evidence_status": "EVIDENCE_BACKED",
+            "task_compatibility": [
+              "binary_classification",
+              "tumor_grading",
+              "rgb_image"
+            ],
+            "modality_compatibility": [
+              "histopathology",
+              "dermatology",
+              "rgb_image"
+            ],
+            "compute_cost": "LIGHT",
+            "min_samples": 30,
+            "default_image_size": [
+              224,
+              224
+            ],
+            "embedding_dim": 256,
+            "rationale": "Compound scaled convolutional architecture balancing parameter efficiency with multi-scale feature representation."
+          }
+        },
+        {
+          "architecture_id": "vit_small",
+          "name": "Vision Transformer (ViT-Small)",
+          "score": 0.0,
+          "status": "REJECTED_COMPUTE_BUDGET",
+          "reason": "Compute cost (MEDIUM) exceeds budget (LIGHT)."
+        },
+        {
+          "architecture_id": "swin_transformer",
+          "name": "Swin Transformer (Swin-T)",
+          "score": 0.0,
+          "status": "REJECTED_COMPUTE_BUDGET",
+          "reason": "Compute cost (HEAVY) exceeds budget (LIGHT)."
+        },
+        {
+          "architecture_id": "simple_cnn",
+          "name": "Simple 3-Layer CNN",
+          "score": 3.7,
+          "status": "ADMISSIBLE",
+          "evidence_source": "Standard Minimal Reference Baseline",
+          "evidence_status": "EXPLICITLY_CONFIGURED",
+          "compute_cost": "LIGHT",
+          "embedding_dim": 128,
+          "default_image_size": [
+            128,
+            128
+          ],
+          "rationale": "Minimal lightweight 3-layer convolutional reference baseline for parameter efficiency verification.",
+          "cand_ref": {
+            "architecture_id": "simple_cnn",
+            "family": "baseline_cnn",
+            "name": "Simple 3-Layer CNN",
+            "evidence_source": "Standard Minimal Reference Baseline",
+            "evidence_status": "EXPLICITLY_CONFIGURED",
+            "task_compatibility": [
+              "binary_classification",
+              "baseline_comparator",
+              "rgb_image"
+            ],
+            "modality_compatibility": [
+              "clinical_image",
+              "rgb_image",
+              "grayscale"
+            ],
+            "compute_cost": "LIGHT",
+            "min_samples": 10,
+            "default_image_size": [
+              128,
+              128
+            ],
+            "embedding_dim": 128,
+            "rationale": "Minimal lightweight 3-layer convolutional reference baseline for parameter efficiency verification."
+          }
+        }
+      ]
+    },
+    "ensemble": {
+      "component": "ensembling",
+      "selected_value": null,
+      "evidence_status": "DORMANT_INSUFFICIENT_MODELS",
+      "evidence_source": "None",
+      "rationale": "Ensemble dormant: Only 1 model available (minimum required: 2).",
+      "execution_status": "DORMANT"
+    }
+  },
+  "selected_components": {
+    "image_backbone": {
+      "component": "image_backbone",
+      "selected_value": "resnet18",
+      "name": "ResNet-18",
+      "family": "residual_cnn",
+      "evidence_status": "EVIDENCE_BACKED",
+      "evidence_source": "PMID: 42487970 / Lancet Digital Health 2026",
+      "rationale": "Lightweight residual network offering rapid convergence, minimal compute footprint, and robust representation on small clinical imaging cohorts.",
+      "compatibility": {
+        "task": "binary_classification",
+        "modality": [
+          "general_imaging"
+        ]
+      },
+      "compute_cost": "LIGHT",
+      "embedding_dim": 256,
+      "default_image_size": [
+        224,
+        224
+      ],
+      "score": 4.7,
+      "execution_status": "EXECUTABLE",
+      "selection_rankings": [
+        {
+          "architecture_id": "resnet50",
+          "name": "ResNet-50",
+          "score": 0.0,
+          "status": "REJECTED_COMPUTE_BUDGET",
+          "reason": "Compute cost (MEDIUM) exceeds budget (LIGHT)."
+        },
+        {
+          "architecture_id": "resnet18",
+          "name": "ResNet-18",
+          "score": 4.7,
+          "status": "ADMISSIBLE",
+          "evidence_source": "PMID: 42487970 / Lancet Digital Health 2026",
+          "evidence_status": "EVIDENCE_BACKED",
+          "compute_cost": "LIGHT",
+          "embedding_dim": 256,
+          "default_image_size": [
+            224,
+            224
+          ],
+          "rationale": "Lightweight residual network offering rapid convergence, minimal compute footprint, and robust representation on small clinical imaging cohorts.",
+          "cand_ref": {
+            "architecture_id": "resnet18",
+            "family": "residual_cnn",
+            "name": "ResNet-18",
+            "evidence_source": "PMID: 42487970 / Lancet Digital Health 2026",
+            "evidence_status": "EVIDENCE_BACKED",
+            "task_compatibility": [
+              "binary_classification",
+              "recurrence_prediction",
+              "clinical_image",
+              "rgb_image"
+            ],
+            "modality_compatibility": [
+              "clinical_image",
+              "endoscopic",
+              "radiology",
+              "rgb_image"
+            ],
+            "compute_cost": "LIGHT",
+            "min_samples": 20,
+            "default_image_size": [
+              224,
+              224
+            ],
+            "embedding_dim": 256,
+            "rationale": "Lightweight residual network offering rapid convergence, minimal compute footprint, and robust representation on small clinical imaging cohorts."
+          }
+        },
+        {
+          "architecture_id": "efficientnet_b0",
+          "name": "EfficientNet-B0",
+          "score": 4.7,
+          "status": "ADMISSIBLE",
+          "evidence_source": "PMID: 41006422 / Sci Rep 2025",
+          "evidence_status": "EVIDENCE_BACKED",
+          "compute_cost": "LIGHT",
+          "embedding_dim": 256,
+          "default_image_size": [
+            224,
+            224
+          ],
+          "rationale": "Compound scaled convolutional architecture balancing parameter efficiency with multi-scale feature representation.",
+          "cand_ref": {
+            "architecture_id": "efficientnet_b0",
+            "family": "scaled_cnn",
+            "name": "EfficientNet-B0",
+            "evidence_source": "PMID: 41006422 / Sci Rep 2025",
+            "evidence_status": "EVIDENCE_BACKED",
+            "task_compatibility": [
+              "binary_classification",
+              "tumor_grading",
+              "rgb_image"
+            ],
+            "modality_compatibility": [
+              "histopathology",
+              "dermatology",
+              "rgb_image"
+            ],
+            "compute_cost": "LIGHT",
+            "min_samples": 30,
+            "default_image_size": [
+              224,
+              224
+            ],
+            "embedding_dim": 256,
+            "rationale": "Compound scaled convolutional architecture balancing parameter efficiency with multi-scale feature representation."
+          }
+        },
+        {
+          "architecture_id": "vit_small",
+          "name": "Vision Transformer (ViT-Small)",
+          "score": 0.0,
+          "status": "REJECTED_COMPUTE_BUDGET",
+          "reason": "Compute cost (MEDIUM) exceeds budget (LIGHT)."
+        },
+        {
+          "architecture_id": "swin_transformer",
+          "name": "Swin Transformer (Swin-T)",
+          "score": 0.0,
+          "status": "REJECTED_COMPUTE_BUDGET",
+          "reason": "Compute cost (HEAVY) exceeds budget (LIGHT)."
+        },
+        {
+          "architecture_id": "simple_cnn",
+          "name": "Simple 3-Layer CNN",
+          "score": 3.7,
+          "status": "ADMISSIBLE",
+          "evidence_source": "Standard Minimal Reference Baseline",
+          "evidence_status": "EXPLICITLY_CONFIGURED",
+          "compute_cost": "LIGHT",
+          "embedding_dim": 128,
+          "default_image_size": [
+            128,
+            128
+          ],
+          "rationale": "Minimal lightweight 3-layer convolutional reference baseline for parameter efficiency verification.",
+          "cand_ref": {
+            "architecture_id": "simple_cnn",
+            "family": "baseline_cnn",
+            "name": "Simple 3-Layer CNN",
+            "evidence_source": "Standard Minimal Reference Baseline",
+            "evidence_status": "EXPLICITLY_CONFIGURED",
+            "task_compatibility": [
+              "binary_classification",
+              "baseline_comparator",
+              "rgb_image"
+            ],
+            "modality_compatibility": [
+              "clinical_image",
+              "rgb_image",
+              "grayscale"
+            ],
+            "compute_cost": "LIGHT",
+            "min_samples": 10,
+            "default_image_size": [
+              128,
+              128
+            ],
+            "embedding_dim": 128,
+            "rationale": "Minimal lightweight 3-layer convolutional reference baseline for parameter efficiency verification."
+          }
+        }
+      ]
+    },
+    "fusion": {
+      "component": "unimodal_direct_head",
+      "name": "Direct Linear Task Head (Unimodal)",
+      "evidence_status": "STANDARD_BASELINE",
+      "evidence_source": "Canonical Unimodal Design",
+      "compute_cost": "LIGHT"
+    },
+    "ensemble": {
+      "component": "ensembling",
+      "selected_value": null,
+      "evidence_status": "DORMANT_INSUFFICIENT_MODELS",
+      "evidence_source": "None",
+      "rationale": "Ensemble dormant: Only 1 model available (minimum required: 2).",
+      "execution_status": "DORMANT"
+    }
+  },
+  "preprocessing": {
+    "tabular": null,
+    "image": {
+      "target_size": [
+        32,
+        32
+      ],
+      "normalization": "imagenet",
+      "train_only": true
+    },
+    "text": null
+  },
+  "safety_audit": {
+    "overall_status": "PASSED",
+    "passed_gates_count": 14,
+    "total_gates_count": 14,
+    "gate_results": {
+      "gate_1_modality_detection_valid": {
+        "passed": true,
+        "details": "Modalities: ['image']"
+      },
+      "gate_2_sample_correspondence": {
+        "passed": true,
+        "details": "Train samples: 32, Test samples: 8"
+      },
+      "gate_3_patient_overlap_firewall": {
+        "passed": true,
+        "overlaps": {
+          "train_val": [],
+          "train_test": [],
+          "val_test": [],
+          "duplicate_hashes": []
+        }
+      },
+      "gate_4_target_leakage": {
+        "passed": true,
+        "detected_leaks": []
+      },
+      "gate_5_temporal_leakage_post_adjuvant": {
+        "passed": true,
+        "temporal_exclusions": []
+      },
+      "gate_6_image_preprocessing_isolation": {
+        "passed": true,
+        "details": "Train-only image normalization and augmentations enforced."
+      },
+      "gate_7_text_preprocessing_isolation": {
+        "passed": true,
+        "details": "Vocabulary and IDF weights fitted strictly on train fold."
+      },
+      "gate_8_image_architecture_provenance": {
+        "passed": true,
+        "provenance": "PMID: 42487970 / Lancet Digital Health 2026"
+      },
+      "gate_9_text_model_provenance": {
+        "passed": true,
+        "provenance": "N/A"
+      },
+      "gate_10_fusion_dimension_compatibility": {
+        "passed": true,
+        "embedding_dimension": 64
+      },
+      "gate_11_missing_modality_contract": {
+        "passed": true,
+        "strategy": "Deterministic zero/mean tensor fallback without row dropping"
+      },
+      "gate_12_compute_budget_compliance": {
+        "passed": true,
+        "configured_budget": "LIGHT",
+        "required_budget": "LIGHT"
+      },
+      "gate_13_deterministic_seed_verification": {
+        "passed": true,
+        "seeds": [
+          42,
+          100,
+          2026
+        ]
+      },
+      "gate_14_pipeline_hash_integrity": {
+        "passed": true,
+        "pipeline_config_sha256": "0f5a48fe08c400dbae25c5c49562e5ab376ceb0e3236018ecd393f0f86da9d64"
+      }
+    }
+  },
+  "seeds": [
+    42,
+    100,
+    2026
+  ],
+  "candidate_metrics": {
+    "roc_auc_mean": 0.6667,
+    "roc_auc_std": 0.4714,
+    "brier_score_mean": 0.2346,
+    "f1_mean": 0.8,
+    "accuracy_mean": 0.6667
+  },
+  "baseline_metrics": {
+    "roc_auc_mean": 0.6667,
+    "roc_auc_std": 0.4714,
+    "brier_score_mean": 0.2346,
+    "f1_mean": 0.8,
+    "accuracy_mean": 0.6667
+  },
+  "claim_boundary_matrix": {
+    "Claim 1: The framework transfers across unseen datasets without manual model specification": "SUPPORTED",
+    "Claim 2: The framework dynamically adapts to discovered modality combinations": "SUPPORTED",
+    "Claim 3: Evidence conditioning alters component selection based on domain and compute tier": "SUPPORTED",
+    "Claim 4: Evidence conditioning provides principled selection and maintains provenance": "SUPPORTED",
+    "Claim 5: Evidence-conditioned selection consistently improves predictive performance": "PARTIALLY_SUPPORTED",
+    "Claim 6: The framework generalizes clinically to real-world multicenter clinical settings": "NOT_SUPPORTED"
+  },
+  "runtime_seconds": 2.76,
+  "generated_at": "2026-08-15T11:37:08.317605+00:00"
+}
