@@ -1,0 +1,144 @@
+{
+  "component": "multimodal_fusion",
+  "selected_value": "gated_fusion",
+  "name": "Learned Dynamic Gated Multimodal Fusion",
+  "evidence_status": "EVIDENCE_BACKED",
+  "evidence_source": "PMID: 41775771 / Nature Sci Rep 2026",
+  "rationale": "Learns input-dependent gating coefficients dynamically balancing representation contributions across arbitrary number of modalities.",
+  "compute_cost": "LIGHT",
+  "score": 3.7,
+  "execution_status": "EXECUTABLE",
+  "selection_rankings": [
+    {
+      "fusion_id": "cross_attention",
+      "name": "Bi-directional Multi-Head Cross-Attention Fusion",
+      "score": 0.0,
+      "status": "REJECTED_MODALITY_INCOMPATIBLE",
+      "reason": "Active modalities ['tabular', 'image', 'text'] not supported by Bi-directional Multi-Head Cross-Attention Fusion."
+    },
+    {
+      "fusion_id": "gated_fusion",
+      "name": "Learned Dynamic Gated Multimodal Fusion",
+      "score": 3.7,
+      "status": "ADMISSIBLE",
+      "evidence_source": "PMID: 41775771 / Nature Sci Rep 2026",
+      "evidence_status": "EVIDENCE_BACKED",
+      "compute_cost": "LIGHT",
+      "rationale": "Learns input-dependent gating coefficients dynamically balancing representation contributions across arbitrary number of modalities.",
+      "cand_ref": {
+        "fusion_id": "gated_fusion",
+        "name": "Learned Dynamic Gated Multimodal Fusion",
+        "evidence_source": "PMID: 41775771 / Nature Sci Rep 2026",
+        "evidence_status": "EVIDENCE_BACKED",
+        "supported_modalities": [
+          [
+            "image",
+            "text"
+          ],
+          [
+            "tabular",
+            "image"
+          ],
+          [
+            "tabular",
+            "text"
+          ],
+          [
+            "tabular",
+            "image",
+            "text"
+          ]
+        ],
+        "min_samples": 40,
+        "compute_cost": "LIGHT",
+        "alignment_type": "dynamic_weighting",
+        "rationale": "Learns input-dependent gating coefficients dynamically balancing representation contributions across arbitrary number of modalities."
+      }
+    },
+    {
+      "fusion_id": "feature_concatenation",
+      "name": "Feature Concatenation with Subspace Projection",
+      "score": 3.3,
+      "status": "ADMISSIBLE",
+      "evidence_source": "PMID: 41826845 / PMC Biomarkers 2026",
+      "evidence_status": "EVIDENCE_BACKED",
+      "compute_cost": "LIGHT",
+      "rationale": "Concatenates all modality feature vectors into a single unified space followed by joint linear transformation and non-linearity.",
+      "cand_ref": {
+        "fusion_id": "feature_concatenation",
+        "name": "Feature Concatenation with Subspace Projection",
+        "evidence_source": "PMID: 41826845 / PMC Biomarkers 2026",
+        "evidence_status": "EVIDENCE_BACKED",
+        "supported_modalities": [
+          [
+            "image",
+            "text"
+          ],
+          [
+            "tabular",
+            "image"
+          ],
+          [
+            "tabular",
+            "text"
+          ],
+          [
+            "tabular",
+            "image",
+            "text"
+          ]
+        ],
+        "min_samples": 20,
+        "compute_cost": "LIGHT",
+        "alignment_type": "joint_projection",
+        "rationale": "Concatenates all modality feature vectors into a single unified space followed by joint linear transformation and non-linearity."
+      }
+    },
+    {
+      "fusion_id": "late_fusion",
+      "name": "Late Probability Blending Fusion",
+      "score": 1.5,
+      "status": "ADMISSIBLE",
+      "evidence_source": "Standard Minimal Reference Baseline",
+      "evidence_status": "EXPLICITLY_CONFIGURED",
+      "compute_cost": "LIGHT",
+      "rationale": "Trains separate modality-specific task heads and aggregates final output probabilities.",
+      "cand_ref": {
+        "fusion_id": "late_fusion",
+        "name": "Late Probability Blending Fusion",
+        "evidence_source": "Standard Minimal Reference Baseline",
+        "evidence_status": "EXPLICITLY_CONFIGURED",
+        "supported_modalities": [
+          [
+            "image",
+            "text"
+          ],
+          [
+            "tabular",
+            "image"
+          ],
+          [
+            "tabular",
+            "text"
+          ],
+          [
+            "tabular",
+            "image",
+            "text"
+          ]
+        ],
+        "min_samples": 10,
+        "compute_cost": "LIGHT",
+        "alignment_type": "decision_level",
+        "rationale": "Trains separate modality-specific task heads and aggregates final output probabilities."
+      }
+    },
+    {
+      "fusion_id": "early_fusion",
+      "name": "Early Feature Stacking Fusion",
+      "score": 0.0,
+      "status": "REJECTED_COMPUTE_BUDGET",
+      "reason": "Compute cost (MEDIUM) exceeds budget (LIGHT)."
+    }
+  ]
+}

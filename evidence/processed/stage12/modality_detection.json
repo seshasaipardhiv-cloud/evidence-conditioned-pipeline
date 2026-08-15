@@ -1,0 +1,78 @@
+{
+  "status": "DISCOVERED",
+  "detected_modalities": [
+    "tabular",
+    "image",
+    "text"
+  ],
+  "sample_count": 50,
+  "identifier_field": "patient_record_id",
+  "target_field": "five_year_recurrence_flag",
+  "tabular_features": {
+    "numerical": [
+      "cellular_proliferation_index",
+      "molecular_risk_signature",
+      "serum_glycoprotein_level"
+    ],
+    "categorical": [],
+    "total_tabular_count": 3
+  },
+  "image_modality": {
+    "available": true,
+    "count": 50,
+    "sample_ids_with_images": [
+      "UNSEEN_E2E_PT_000",
+      "UNSEEN_E2E_PT_001",
+      "UNSEEN_E2E_PT_002",
+      "UNSEEN_E2E_PT_003",
+      "UNSEEN_E2E_PT_004",
+      "UNSEEN_E2E_PT_005",
+      "UNSEEN_E2E_PT_006",
+      "UNSEEN_E2E_PT_007",
+      "UNSEEN_E2E_PT_008",
+      "UNSEEN_E2E_PT_009"
+    ],
+    "total_valid_images": 50
+  },
+  "text_modality": {
+    "available": true,
+    "count": 50,
+    "text_fields": [
+      "raw_text"
+    ],
+    "sample_ids_with_text": [
+      "UNSEEN_E2E_PT_000",
+      "UNSEEN_E2E_PT_001",
+      "UNSEEN_E2E_PT_002",
+      "UNSEEN_E2E_PT_003",
+      "UNSEEN_E2E_PT_004",
+      "UNSEEN_E2E_PT_005",
+      "UNSEEN_E2E_PT_006",
+      "UNSEEN_E2E_PT_007",
+      "UNSEEN_E2E_PT_008",
+      "UNSEEN_E2E_PT_009"
+    ]
+  },
+  "missingness": {
+    "tabular": {},
+    "image": {
+      "unresolved_images": 0
+    },
+    "text": {
+      "missing_texts": 0
+    }
+  },
+  "modality_mappings": {
+    "total_unique_samples": 50,
+    "samples_with_tabular": 50,
+    "samples_with_image": 50,
+    "samples_with_text": 50,
+    "complete_multimodal_samples": 50
+  },
+  "unresolved_fields": [],
+  "reason": "Successfully discovered modalities: tabular, image, text for 50 samples.",
+  "metadata": {
+    "discovery_timestamp": "2026-08-15T11:02:20.781790+00:00",
+    "multimodal_ready": true
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "component": "ensembling",
+  "selected_value": "average_ensembling",
+  "name": "Uniform Probability Average Ensemble",
+  "evidence_status": "EVIDENCE_BACKED",
+  "evidence_source": "PMID: 41775771 / Nature Sci Rep 2026",
+  "rationale": "Reduces predictive variance by taking the arithmetic mean of calibrated class probabilities across independent candidate models.",
+  "compute_cost": "LIGHT",
+  "execution_status": "EXECUTABLE"
+}

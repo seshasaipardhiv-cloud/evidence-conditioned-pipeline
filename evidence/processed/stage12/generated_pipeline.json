@@ -1,0 +1,25 @@
+{
+  "pipeline_id": "SYNTHESIZED_E2E_PIPELINE_01",
+  "active_modalities": [
+    "tabular",
+    "image",
+    "text"
+  ],
+  "image_backbone": "ResNet-18",
+  "text_backbone": "PubMedBERT (Biomedical-BERT)",
+  "tabular_encoder": "DenseTabularProjectionEncoder",
+  "fusion_mechanism": "Learned Dynamic Gated Multimodal Fusion",
+  "ensemble_strategy": "Uniform Probability Average Ensemble",
+  "embed_dim": 64,
+  "seeds": [
+    42,
+    100,
+    2026
+  ],
+  "compute_budget": "LIGHT",
+  "provenance": {
+    "image_pmid": "PMID: 42487970 / Lancet Digital Health 2026",
+    "text_pmid": "PMID: 41826845 / PMC Biomarkers 2026",
+    "fusion_pmid": "PMID: 41775771 / Nature Sci Rep 2026"
+  }
+}

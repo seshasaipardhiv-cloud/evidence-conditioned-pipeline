@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-15T11:02:31.980823+00:00",
+  "seeds_evaluated": [
+    42,
+    100,
+    2026
+  ],
+  "per_seed_roc_auc": {
+    "42": 1.0,
+    "100": 1.0,
+    "2026": 1.0
+  },
+  "exact_deterministic_reproducibility": true,
+  "zero_partition_overlap": true
+}

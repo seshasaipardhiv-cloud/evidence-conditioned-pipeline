@@ -1,0 +1,22 @@
+{
+  "experiment_id": "STAGE12_FINAL_E2E_SYNTHESIS",
+  "timestamp": "2026-08-15T11:02:32.311503+00:00",
+  "status": "PASS",
+  "active_modalities": [
+    "tabular",
+    "image",
+    "text"
+  ],
+  "dataset_name": "Unseen_Trimodal_Clinical_Cohort_E2E",
+  "sample_count": 50,
+  "seeds": [
+    42,
+    100,
+    2026
+  ],
+  "candidate_roc_auc": "1.0000 \u00b1 0.0000",
+  "candidate_brier": "0.0772",
+  "baseline_roc_auc": "1.0000 \u00b1 0.0000",
+  "safety_status": "PASSED",
+  "reproducibility": "CONFIRMED"
+}

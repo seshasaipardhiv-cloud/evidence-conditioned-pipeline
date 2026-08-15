@@ -74,32 +74,40 @@ class MultimodalSafetyAuditor:
             "details": f"Train samples: {len(train_pids)}, Test samples: {len(test_pids)}",
         }
 
-        # Gate 3: Patient Overlap Firewall (Strictly 0 overlap across folds)
+        # Gate 3: Patient Overlap & Duplicate Firewall (Strictly 0 overlap across folds)
         s_train = set(train_pids)
         s_val = set(val_pids)
         s_test = set(test_pids)
         overlap_train_val = s_train.intersection(s_val)
         overlap_train_test = s_train.intersection(s_test)
         overlap_val_test = s_val.intersection(s_test)
-        g3_pass = (len(overlap_train_val) == 0 and len(overlap_train_test) == 0 and len(overlap_val_test) == 0)
+
+        train_hashes = set(train_features.get("image_hashes", {}).values())
+        test_hashes = set(test_features.get("image_hashes", {}).values())
+        dup_overlap = train_hashes.intersection(test_hashes) if (train_hashes and test_hashes) else set()
+
+        g3_pass = (len(overlap_train_val) == 0 and len(overlap_train_test) == 0 and len(overlap_val_test) == 0 and len(dup_overlap) == 0)
         gate_results["gate_3_patient_overlap_firewall"] = {
             "passed": g3_pass,
             "overlaps": {
                 "train_val": list(overlap_train_val),
                 "train_test": list(overlap_train_test),
                 "val_test": list(overlap_val_test),
+                "duplicate_hashes": list(dup_overlap),
             },
         }
 
         # Gate 4: Target Leakage
-        forbidden_keys = {"recurrence", "relapse", "label", "outcome", "target", "recurrence_flag"}
+        forbidden_keys = {"recurrence", "relapse", "label", "outcome", "target", "recurrence_flag", "five_year_recurrence_flag"}
         found_leaks = []
-        if "tabular" in modalities and "data" in train_features.get("tabular", {}):
-            # Check column names if available
+        if "tabular" in modalities and isinstance(train_features.get("tabular"), dict):
             cols = train_features["tabular"].get("columns", [])
             for c in cols:
                 if str(c).lower() in forbidden_keys:
                     found_leaks.append(c)
+        for k in train_features.keys():
+            if str(k).lower() in forbidden_keys:
+                found_leaks.append(k)
         g4_pass = len(found_leaks) == 0
         gate_results["gate_4_target_leakage"] = {
             "passed": g4_pass,
@@ -109,10 +117,13 @@ class MultimodalSafetyAuditor:
         # Gate 5: Temporal Leakage & Post-Adjuvant Epoch
         # progress_1 and prospective post-epoch variables must be excluded
         temporal_leaks = []
-        if "tabular" in modalities:
-            cols = train_features.get("tabular", {}).get("columns", [])
+        if "tabular" in modalities and isinstance(train_features.get("tabular"), dict):
+            cols = train_features["tabular"].get("columns", [])
             if "progress_1" in cols:
                 temporal_leaks.append("progress_1")
+        for k in train_features.keys():
+            if "post_recurrence" in str(k).lower() or "progress_1" in str(k).lower():
+                temporal_leaks.append(k)
         g5_pass = len(temporal_leaks) == 0
         gate_results["gate_5_temporal_leakage_post_adjuvant"] = {
             "passed": g5_pass,

@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-08-15T11:02:31.979810+00:00",
+  "evidence_conditioned_candidate": {
+    "mean_roc_auc": 1.0,
+    "std_roc_auc": 0.0,
+    "mean_brier_score": 0.0772,
+    "mean_f1_score": 1.0,
+    "mean_accuracy": 1.0
+  },
+  "fixed_default_baseline": {
+    "mean_roc_auc": 1.0,
+    "std_roc_auc": 0.0,
+    "mean_brier_score": 0.0725,
+    "mean_f1_score": 1.0,
+    "mean_accuracy": 1.0
+  },
+  "delta_roc_auc": 0.0,
+  "delta_brier": 0.0047
+}

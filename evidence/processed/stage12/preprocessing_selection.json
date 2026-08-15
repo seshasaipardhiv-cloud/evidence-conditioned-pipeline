@@ -1,0 +1,22 @@
+{
+  "tabular": {
+    "strategy": "train_only_standard_scaling_and_median_imputation",
+    "evidence_status": "EXPLICITLY_CONFIGURED",
+    "train_fitted_isolation": true
+  },
+  "image": {
+    "strategy": "train_only_channel_mean_std_normalization",
+    "target_resolution": [
+      32,
+      32
+    ],
+    "evidence_status": "EVIDENCE_BACKED",
+    "evidence_source": "PMID: 42487970 / Lancet Digital Health 2026"
+  },
+  "text": {
+    "strategy": "train_only_vocabulary_mapping_and_padding",
+    "max_seq_length": 64,
+    "evidence_status": "EVIDENCE_BACKED",
+    "evidence_source": "PMID: 41826845 / PMC Biomarkers 2026"
+  }
+}

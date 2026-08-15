@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-08-15T11:02:20.782767+00:00",
+  "detected_modalities": [
+    "tabular",
+    "image",
+    "text"
+  ],
+  "target_identified": "five_year_recurrence_flag",
+  "id_column_identified": "patient_record_id",
+  "excluded_fields": [],
+  "sample_count": 50
+}
