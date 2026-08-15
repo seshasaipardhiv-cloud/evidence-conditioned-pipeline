@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-08-15T10:28:22.593112+00:00",
+  "overall_status": "PASSED",
+  "scenarios_tested_count": 10,
+  "scenarios": {
+    "1_tabular_only": {
+      "modalities": [
+        "tabular"
+      ],
+      "status": "DISCOVERED",
+      "pass": true
+    },
+    "2_image_only": {
+      "modalities": [
+        "image"
+      ],
+      "status": "DISCOVERED",
+      "pass": true
+    },
+    "3_text_only": {
+      "modalities": [
+        "text"
+      ],
+      "status": "DISCOVERED",
+      "pass": true
+    },
+    "4_image_text": {
+      "modalities": [
+        "image",
+        "text"
+      ],
+      "status": "DISCOVERED",
+      "pass": true
+    },
+    "5_tabular_image": {
+      "modalities": [
+        "tabular",
+        "image"
+      ],
+      "pass": true
+    },
+    "6_tabular_text": {
+      "modalities": [
+        "tabular",
+        "text"
+      ],
+      "pass": true
+    },
+    "7_tabular_image_text": {
+      "modalities": [
+        "tabular",
+        "image",
+        "text"
+      ],
+      "pass": true
+    },
+    "8_missing_modality": {
+      "status": "BLOCKED",
+      "pass": true
+    },
+    "9_malformed_modality": {
+      "status": "BLOCKED",
+      "pass": true
+    },
+    "10_mismatched_patient_overlap": {
+      "gate_passed": false,
+      "pass": true
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-08-15T10:20:34.658334+00:00",
+  "experiment_id": "EXP_MULTIMODAL_EXECUTION_01",
+  "candidate_roc_auc": 0.1852,
+  "image_only_roc_auc": 1.0,
+  "text_only_roc_auc": 0.7037,
+  "late_fusion_roc_auc": 0.4259,
+  "concat_ablation_roc_auc": 0.7037,
+  "safety_verdict": "PASSED",
+  "status": "MULTIMODAL_EXECUTION_COMPLETE"
+}

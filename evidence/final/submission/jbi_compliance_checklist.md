@@ -2,7 +2,7 @@
 
 **Target Journal:** *Journal of Biomedical Informatics* (Elsevier)  
 **Submission Portal:** Elsevier Editorial Manager  
-**Audit Date:** August 14, 2026  
+**Audit Date:** August 15, 2026  
 **Compliance Score:** 86.7% (13/15 Passed, 2 Needs Author Input)  
 
 ---

@@ -5,7 +5,7 @@
     "image",
     "text"
   ],
-  "sample_count": 150,
+  "sample_count": 100,
   "identifier_field": "patient_id",
   "target_field": "recurrence",
   "tabular_features": {
@@ -15,7 +15,7 @@
   },
   "image_modality": {
     "available": true,
-    "count": 150,
+    "count": 100,
     "sample_ids_with_images": [
       "HANCOCK_PT_0000",
       "HANCOCK_PT_0001",
@@ -28,11 +28,11 @@
       "HANCOCK_PT_0008",
       "HANCOCK_PT_0009"
     ],
-    "total_valid_images": 150
+    "total_valid_images": 100
   },
   "text_modality": {
     "available": true,
-    "count": 150,
+    "count": 100,
     "text_fields": [
       "raw_text"
     ],
@@ -59,16 +59,16 @@
     }
   },
   "modality_mappings": {
-    "total_unique_samples": 150,
-    "samples_with_tabular": 150,
-    "samples_with_image": 150,
-    "samples_with_text": 150,
-    "complete_multimodal_samples": 150
+    "total_unique_samples": 100,
+    "samples_with_tabular": 100,
+    "samples_with_image": 100,
+    "samples_with_text": 100,
+    "complete_multimodal_samples": 100
   },
   "unresolved_fields": [],
-  "reason": "Successfully discovered modalities: tabular, image, text for 150 samples.",
+  "reason": "Successfully discovered modalities: tabular, image, text for 100 samples.",
   "metadata": {
-    "discovery_timestamp": "2026-08-15T10:12:19.541464+00:00",
+    "discovery_timestamp": "2026-08-15T10:20:14.532089+00:00",
     "multimodal_ready": true
   }
 }

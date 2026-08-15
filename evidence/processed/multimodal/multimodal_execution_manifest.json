@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-08-15T10:20:34.653592+00:00",
+  "experiment_id": "EXP_MULTIMODAL_EXECUTION_01",
+  "active_modalities": [
+    "image",
+    "text"
+  ],
+  "fusion_mechanism": "cross_attention",
+  "sample_count": 100,
+  "seeds": [
+    42,
+    100,
+    2026
+  ],
+  "runtime_seconds": 20.1,
+  "compute_budget": "LIGHT",
+  "status": "COMPLETED"
+}

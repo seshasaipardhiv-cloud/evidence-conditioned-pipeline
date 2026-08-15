@@ -122,17 +122,17 @@ def generate_demonstration_data(
 
 
 def run_demonstration():
-    print("=================================================================")
-    print("STAGE: EVIDENCE-CONDITIONED MULTIMODAL EXECUTION DEMONSTRATION")
-    print("=================================================================")
+    print("=================================================================", flush=True)
+    print("STAGE: EVIDENCE-CONDITIONED MULTIMODAL EXECUTION DEMONSTRATION", flush=True)
+    print("=================================================================", flush=True)
 
     # 1. Generate Multimodal Dataset
-    print("\n[Step 1] Initializing multimodal cohort data...")
-    ds = generate_demonstration_data(num_samples=150)
-    print(f"Generated {len(ds['pids'])} patient records (Tabular + Imaging + Pathology Text).")
+    print("\n[Step 1] Initializing multimodal cohort data...", flush=True)
+    ds = generate_demonstration_data(num_samples=100)
+    print(f"Generated {len(ds['pids'])} patient records (Tabular + Imaging + Pathology Text).", flush=True)
 
     # 2. Modality Discovery
-    print("\n[Step 2] Executing Modality Discovery Engine...")
+    print("\n[Step 2] Executing Modality Discovery Engine...", flush=True)
     discovery_engine = ModalityDiscoveryEngine(output_dir="evidence/processed/multimodal")
     disc_res = discovery_engine.discover(
         tabular_data=[{"patient_id": pid, "recurrence": ds["labels"][i]} for i, pid in enumerate(ds["pids"])],
@@ -141,23 +141,23 @@ def run_demonstration():
         candidate_target="recurrence",
         candidate_id="patient_id",
     )
-    print(f"Modality Discovery Status: {disc_res.status}")
-    print(f"Detected Modalities: {disc_res.detected_modalities}")
+    print(f"Modality Discovery Status: {disc_res.status}", flush=True)
+    print(f"Detected Modalities: {disc_res.detected_modalities}", flush=True)
 
     # 3. Evidence-Conditioned Model Selection
-    print("\n[Step 3] Selecting Evidence-Conditioned Image & Text Models...")
+    print("\n[Step 3] Selecting Evidence-Conditioned Image & Text Models...", flush=True)
     img_selector = ImageModelSelector()
     txt_selector = TextModelSelector()
 
     sel_img = img_selector.select(task_type="binary_classification", compute_budget="LIGHT")
     sel_txt = txt_selector.select(task_type="binary_classification", domain_type="clinical", compute_budget="LIGHT")
 
-    print(f"Selected Image Architecture: {sel_img['name']} ({sel_img['evidence_source']})")
-    print(f"Selected Text Architecture:  {sel_txt['name']} ({sel_txt['evidence_source']})")
+    print(f"Selected Image Architecture: {sel_img['name']} ({sel_img['evidence_source']})", flush=True)
+    print(f"Selected Text Architecture:  {sel_txt['name']} ({sel_txt['evidence_source']})", flush=True)
 
     # 4. Multimodal Execution & Baseline Benchmarking
-    print("\n[Step 4] Running Multi-Seed Multimodal Training & Baseline Benchmarking...")
-    executor = MultimodalExecutor(seeds=[42, 100, 2026], compute_budget="LIGHT", epochs=15, learning_rate=0.02)
+    print("\n[Step 4] Running Multi-Seed Multimodal Training & Baseline Benchmarking...", flush=True)
+    executor = MultimodalExecutor(seeds=[42, 100, 2026], compute_budget="LIGHT", epochs=5, learning_rate=0.02)
 
     results = executor.run_experiment(
         patient_ids=ds["pids"],
@@ -167,23 +167,23 @@ def run_demonstration():
         raw_texts=ds["text_records"],
         active_modalities=["image", "text"],
         fusion_mechanism="cross_attention",
-        embed_dim=256,
+        embed_dim=128,
     )
 
-    print("\n--- Empirical Benchmark Results (Mean ± Std over n=3 seeds) ---")
+    print("\n--- Empirical Benchmark Results (Mean ± Std over n=3 seeds) ---", flush=True)
     for name, m in results["summary_metrics"].items():
-        print(f"  {name:25s}: ROC-AUC = {m['mean_roc_auc']:.4f} ± {m['std_roc_auc']:.4f} | Brier = {m['mean_brier_score']:.4f}")
+        print(f"  {name:25s}: ROC-AUC = {m['mean_roc_auc']:.4f} ± {m['std_roc_auc']:.4f} | Brier = {m['mean_brier_score']:.4f}", flush=True)
 
     # 5. Results Packaging & Visualizations
-    print("\n[Step 5] Packaging Machine-Readable Results & Visualizations...")
+    print("\n[Step 5] Packaging Machine-Readable Results & Visualizations...", flush=True)
     packager = MultimodalResultsPackager(output_dir="evidence/processed/multimodal")
     saved_files = packager.package_results(results)
 
-    print("Created artifacts:")
+    print("Created artifacts:", flush=True)
     for k, v in saved_files.items():
-        print(f"  - {k}: {v}")
+        print(f"  - {k}: {v}", flush=True)
 
-    print("\n[Step 6] Execution Status: MULTIMODAL_EXECUTION_COMPLETE")
+    print("\n[Step 6] Execution Status: MULTIMODAL_EXECUTION_COMPLETE", flush=True)
     return results
 
 

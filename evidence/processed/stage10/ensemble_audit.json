@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-08-15T10:28:22.627967+00:00",
+  "average_ensemble": {
+    "output": [
+      0.7,
+      0.30000000000000004,
+      0.8,
+      0.2
+    ],
+    "passed": true
+  },
+  "weighted_ensemble": {
+    "output": [
+      0.7059927880764008,
+      0.29400718212127686,
+      0.8059927850961686,
+      0.1940071851015091
+    ],
+    "passed": true
+  },
+  "ensemble_selector": {
+    "single_model_status": "DORMANT",
+    "multi_model_status": "EXECUTABLE",
+    "selected_mechanism": "weighted_ensembling",
+    "passed": true
+  },
+  "status": "PASSED"
+}

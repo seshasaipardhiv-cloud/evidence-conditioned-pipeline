@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-08-15T10:28:22.627967+00:00",
+  "overall_status": "PASSED",
+  "mechanisms": {
+    "cross_attention": {
+      "shape": [
+        4,
+        64
+      ],
+      "passed": true
+    },
+    "feature_concatenation": {
+      "shape": [
+        4,
+        64
+      ],
+      "passed": true
+    },
+    "gated_fusion": {
+      "shape": [
+        4,
+        64
+      ],
+      "passed": true
+    },
+    "late_fusion": {
+      "shape": [
+        4
+      ],
+      "passed": true
+    }
+  }
+}

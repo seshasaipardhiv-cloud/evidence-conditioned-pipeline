@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-08-15T10:28:22.583765+00:00",
+  "status": "VALIDATED",
+  "image_selection_audit": {
+    "light_budget_selected": "ResNet-18",
+    "heavy_budget_selected": "ResNet-50",
+    "radiology_domain_selected": "ResNet-50",
+    "budget_sensitivity_proven": true,
+    "provenance_retained": true
+  },
+  "text_selection_audit": {
+    "clinical_domain_selected": "PubMedBERT (Biomedical-BERT)",
+    "biomedical_domain_selected": "PubMedBERT (Biomedical-BERT)",
+    "medium_budget_selected": "PubMedBERT (Biomedical-BERT)",
+    "domain_sensitivity_proven": true,
+    "provenance_retained": true
+  },
+  "unsupported_model_rejection": {
+    "unsupported_rejected": true,
+    "arbitrary_defaults_barred": true
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "image_only_baseline": {
+    "mean_roc_auc": 1.0,
+    "std_roc_auc": 0.0,
+    "mean_brier_score": 0.1232,
+    "mean_f1_score": 0.9231,
+    "mean_accuracy": 0.8571,
+    "per_seed_roc_auc": {
+      "42": 1.0,
+      "100": 1.0,
+      "2026": 1.0
+    }
+  },
+  "text_only_baseline": {
+    "mean_roc_auc": 0.7037,
+    "std_roc_auc": 0.2658,
+    "mean_brier_score": 0.1172,
+    "mean_f1_score": 0.9231,
+    "mean_accuracy": 0.8571,
+    "per_seed_roc_auc": {
+      "42": 0.9444,
+      "100": 0.8333,
+      "2026": 0.3333
+    }
+  },
+  "late_fusion_baseline": {
+    "mean_roc_auc": 0.4259,
+    "std_roc_auc": 0.3798,
+    "mean_brier_score": 0.2158,
+    "mean_f1_score": 0.6154,
+    "mean_accuracy": 0.619,
+    "per_seed_roc_auc": {
+      "42": 0.963,
+      "100": 0.1481,
+      "2026": 0.1667
+    }
+  },
+  "concat_fusion_ablation": {
+    "mean_roc_auc": 0.7037,
+    "std_roc_auc": 0.2772,
+    "mean_brier_score": 0.1179,
+    "mean_f1_score": 0.9231,
+    "mean_accuracy": 0.8571,
+    "per_seed_roc_auc": {
+      "42": 0.3333,
+      "100": 1.0,
+      "2026": 0.7778
+    }
+  }
+}

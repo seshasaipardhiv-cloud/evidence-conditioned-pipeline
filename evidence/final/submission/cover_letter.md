@@ -1,6 +1,6 @@
 # Cover Letter
 
-**Date:** August 14, 2026  
+**Date:** August 15, 2026  
 **To:** The Editor-in-Chief  
 **Target Journal:** *Journal of Biomedical Informatics* / *JAMIA*  
 **Submission Title:** Evidence-Conditioned Compositional Pipeline Synthesis: A Provenance-Aware Framework for Reproducible Clinical Machine Learning  

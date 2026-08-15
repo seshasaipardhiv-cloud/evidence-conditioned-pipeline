@@ -1,0 +1,77 @@
+{
+  "status": "DISCOVERED",
+  "detected_modalities": [
+    "tabular",
+    "image",
+    "text"
+  ],
+  "sample_count": 100,
+  "identifier_field": "patient_id",
+  "target_field": "recurrence",
+  "tabular_features": {
+    "numerical": [
+      "age",
+      "tumor_size"
+    ],
+    "categorical": [],
+    "total_tabular_count": 2
+  },
+  "image_modality": {
+    "available": true,
+    "count": 100,
+    "sample_ids_with_images": [
+      "AUTO_PT_0000",
+      "AUTO_PT_0001",
+      "AUTO_PT_0002",
+      "AUTO_PT_0003",
+      "AUTO_PT_0004",
+      "AUTO_PT_0005",
+      "AUTO_PT_0006",
+      "AUTO_PT_0007",
+      "AUTO_PT_0008",
+      "AUTO_PT_0009"
+    ],
+    "total_valid_images": 100
+  },
+  "text_modality": {
+    "available": true,
+    "count": 100,
+    "text_fields": [
+      "raw_text"
+    ],
+    "sample_ids_with_text": [
+      "AUTO_PT_0000",
+      "AUTO_PT_0001",
+      "AUTO_PT_0002",
+      "AUTO_PT_0003",
+      "AUTO_PT_0004",
+      "AUTO_PT_0005",
+      "AUTO_PT_0006",
+      "AUTO_PT_0007",
+      "AUTO_PT_0008",
+      "AUTO_PT_0009"
+    ]
+  },
+  "missingness": {
+    "tabular": {},
+    "image": {
+      "unresolved_images": 0
+    },
+    "text": {
+      "missing_texts": 0
+    }
+  },
+  "modality_mappings": {
+    "total_unique_samples": 100,
+    "samples_with_tabular": 100,
+    "samples_with_image": 100,
+    "samples_with_text": 100,
+    "complete_multimodal_samples": 100
+  },
+  "unresolved_fields": [],
+  "reason": "Successfully discovered modalities: tabular, image, text for 100 samples.",
+  "metadata": {
+    "discovery_timestamp": "2026-08-15T10:28:22.688966+00:00",
+    "multimodal_ready": true
+  }
+}

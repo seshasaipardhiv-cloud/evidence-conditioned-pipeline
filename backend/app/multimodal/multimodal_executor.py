@@ -181,8 +181,9 @@ class MultimodalExecutor:
                 seed=seed,
             )
             candidate.fit_preprocessors(train_tab, train_img, train_txt)
+            train_reps_cand = candidate.extract_features(train_tab, train_img, train_txt, is_training=True)
             for _ in range(self.epochs):
-                candidate.train_step(train_tab, train_img, train_txt, y_train, lr=self.learning_rate)
+                candidate.train_step(y_true=y_train, lr=self.learning_rate, cached_reps=train_reps_cand)
             candidate.is_trained = True
 
             test_probs = candidate.predict_proba(test_tab, test_img, test_txt)
@@ -199,8 +200,9 @@ class MultimodalExecutor:
                     seed=seed,
                 )
                 img_pipe.fit_preprocessors(image_paths=train_img)
+                train_reps_img = img_pipe.extract_features(image_paths=train_img, is_training=True)
                 for _ in range(self.epochs):
-                    img_pipe.train_step(None, train_img, None, y_train, lr=self.learning_rate)
+                    img_pipe.train_step(y_true=y_train, lr=self.learning_rate, cached_reps=train_reps_img)
                 img_pipe.is_trained = True
                 img_probs = img_pipe.predict_proba(None, test_img, None)
                 m = compute_binary_metrics(y_test, img_probs)
@@ -216,8 +218,9 @@ class MultimodalExecutor:
                     seed=seed,
                 )
                 txt_pipe.fit_preprocessors(raw_texts=train_txt)
+                train_reps_txt = txt_pipe.extract_features(raw_texts=train_txt, is_training=True)
                 for _ in range(self.epochs):
-                    txt_pipe.train_step(None, None, train_txt, y_train, lr=self.learning_rate)
+                    txt_pipe.train_step(y_true=y_train, lr=self.learning_rate, cached_reps=train_reps_txt)
                 txt_pipe.is_trained = True
                 txt_probs = txt_pipe.predict_proba(None, None, test_txt)
                 m = compute_binary_metrics(y_test, txt_probs)
@@ -235,8 +238,9 @@ class MultimodalExecutor:
                     seed=seed,
                 )
                 late_pipe.fit_preprocessors(train_tab, train_img, train_txt)
+                train_reps_late = late_pipe.extract_features(train_tab, train_img, train_txt, is_training=True)
                 for _ in range(self.epochs):
-                    late_pipe.train_step(train_tab, train_img, train_txt, y_train, lr=self.learning_rate)
+                    late_pipe.train_step(y_true=y_train, lr=self.learning_rate, cached_reps=train_reps_late)
                 late_pipe.is_trained = True
                 late_probs = late_pipe.predict_proba(test_tab, test_img, test_txt)
                 m = compute_binary_metrics(y_test, late_probs)
@@ -254,8 +258,9 @@ class MultimodalExecutor:
                     seed=seed,
                 )
                 concat_pipe.fit_preprocessors(train_tab, train_img, train_txt)
+                train_reps_concat = concat_pipe.extract_features(train_tab, train_img, train_txt, is_training=True)
                 for _ in range(self.epochs):
-                    concat_pipe.train_step(train_tab, train_img, train_txt, y_train, lr=self.learning_rate)
+                    concat_pipe.train_step(y_true=y_train, lr=self.learning_rate, cached_reps=train_reps_concat)
                 concat_pipe.is_trained = True
                 concat_probs = concat_pipe.predict_proba(test_tab, test_img, test_txt)
                 m = compute_binary_metrics(y_test, concat_probs)

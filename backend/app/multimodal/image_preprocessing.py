@@ -45,6 +45,7 @@ class ImagePreprocessor:
         # Fitted statistics on training set only
         self.fitted_mean_image: Optional[np.ndarray] = None
         self.is_fitted = False
+        self._cache: Dict[str, np.ndarray] = {}
 
     def fit(self, image_paths: List[Union[str, Path, None]]) -> "ImagePreprocessor":
         """
@@ -100,6 +101,10 @@ class ImagePreprocessor:
 
     def _load_single_image(self, path: Union[str, Path], apply_augment: bool = False) -> Optional[np.ndarray]:
         try:
+            p_str = str(path)
+            if not apply_augment and p_str in self._cache:
+                return self._cache[p_str].copy()
+
             p = Path(path)
             if not p.exists():
                 return None
@@ -122,7 +127,10 @@ class ImagePreprocessor:
 
                 # Standardize with mean and std
                 arr = (arr - self.mean) / self.std
-                return arr.astype(np.float32)
+                res = arr.astype(np.float32)
+                if not apply_augment:
+                    self._cache[p_str] = res
+                return res
         except Exception as e:
             logger.warning("Corrupt or unreadable image at %s: %s", path, str(e))
             return None

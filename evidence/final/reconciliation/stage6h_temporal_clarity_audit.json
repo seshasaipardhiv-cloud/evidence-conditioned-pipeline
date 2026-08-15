@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-14T18:55:35.979615+00:00",
+  "timestamp": "2026-08-15T10:30:41.495884+00:00",
   "defined_prediction_epoch": "Post-Adjuvant Recurrence Risk Prediction",
   "treatment_variables_justification": "Adjuvant radiotherapy, chemotherapy, and timing attributes are available post-adjuvant completion.",
   "prospective_caveat": "progress_1 and metastasis follow-up variables require explicit temporal exclusion in prospective deployments.",

@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-08-15T10:28:22.689945+00:00",
+  "discovered_modalities": [
+    "tabular",
+    "image",
+    "text"
+  ],
+  "sample_count": 100,
+  "target_variable": "recurrence",
+  "decisions": [
+    {
+      "stage": "modality_discovery",
+      "decision": [
+        "tabular",
+        "image",
+        "text"
+      ],
+      "rationale": "Automated cross-modality schema inspection."
+    },
+    {
+      "stage": "image_model_selection",
+      "decision": "ResNet-18",
+      "provenance": "PMID: 42487970 / Lancet Digital Health 2026",
+      "rationale": "Lightweight residual network offering rapid convergence, minimal compute footprint, and robust representation on small clinical imaging cohorts."
+    },
+    {
+      "stage": "text_model_selection",
+      "decision": "PubMedBERT (Biomedical-BERT)",
+      "provenance": "PMID: 41826845 / PMC Biomarkers 2026",
+      "rationale": "Pretrained from scratch on PubMed abstracts and full-text articles; achieves superior domain vocabulary alignment and contextualization on clinical oncology narratives."
+    },
+    {
+      "stage": "fusion_selection",
+      "decision": "Bi-directional Multi-Head Cross-Attention Fusion",
+      "provenance": "PMID: 42487970 / Multimodal Biomedical Deep Learning 2026",
+      "rationale": "Enables asymmetric query-key-value cross-attention between imaging tokens and pathology text narratives with residual gating."
+    },
+    {
+      "stage": "ensemble_selection",
+      "decision": "Uniform Probability Average Ensemble",
+      "provenance": "PMID: 41775771 / Nature Sci Rep 2026",
+      "rationale": "Reduces predictive variance by taking the arithmetic mean of calibrated class probabilities across independent candidate models."
+    }
+  ]
+}

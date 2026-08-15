@@ -164,11 +164,12 @@ class MultimodalPipeline:
         image_paths: Optional[List[Any]] = None,
         raw_texts: Optional[List[Optional[str]]] = None,
         is_training: bool = False,
+        cached_reps: Optional[Dict[str, np.ndarray]] = None,
     ) -> Tuple[np.ndarray, np.ndarray]:
         """
         Full forward pass returning (probabilities, fused_representation).
         """
-        reps = self.extract_features(tabular_data, image_paths, raw_texts, is_training=is_training)
+        reps = cached_reps or self.extract_features(tabular_data, image_paths, raw_texts, is_training=is_training)
 
         if not reps:
             raise ValueError("No valid representations extracted from active modalities.")
@@ -210,17 +211,18 @@ class MultimodalPipeline:
 
     def train_step(
         self,
-        tabular_data: Optional[np.ndarray],
-        image_paths: Optional[List[Any]],
-        raw_texts: Optional[List[Optional[str]]],
-        y_true: np.ndarray,
+        tabular_data: Optional[np.ndarray] = None,
+        image_paths: Optional[List[Any]] = None,
+        raw_texts: Optional[List[Optional[str]]] = None,
+        y_true: Optional[np.ndarray] = None,
         lr: float = 0.01,
         weight_decay: float = 1e-4,
+        cached_reps: Optional[Dict[str, np.ndarray]] = None,
     ) -> float:
         """
         Executes one gradient descent optimization step using Binary Cross-Entropy loss.
         """
-        probs, fused = self.forward(tabular_data, image_paths, raw_texts, is_training=True)
+        probs, fused = self.forward(tabular_data, image_paths, raw_texts, is_training=True, cached_reps=cached_reps)
         y = y_true.astype(np.float32)
 
         # Compute Binary Cross Entropy Loss with numerical clipping

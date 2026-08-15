@@ -1,0 +1,43 @@
+{
+  "candidate_summary": {
+    "mean_roc_auc": 0.1852,
+    "std_roc_auc": 0.1292,
+    "mean_brier_score": 0.1331,
+    "mean_f1_score": 0.9231,
+    "mean_accuracy": 0.8571,
+    "per_seed_roc_auc": {
+      "42": 0.3519,
+      "100": 0.1667,
+      "2026": 0.037
+    }
+  },
+  "detailed_seeds": [
+    {
+      "roc_auc": 0.3519,
+      "brier_score": 0.1285,
+      "accuracy": 0.8571,
+      "f1_score": 0.9231,
+      "precision": 0.8571,
+      "recall": 1.0,
+      "seed": 42
+    },
+    {
+      "roc_auc": 0.1667,
+      "brier_score": 0.1318,
+      "accuracy": 0.8571,
+      "f1_score": 0.9231,
+      "precision": 0.8571,
+      "recall": 1.0,
+      "seed": 100
+    },
+    {
+      "roc_auc": 0.037,
+      "brier_score": 0.1389,
+      "accuracy": 0.8571,
+      "f1_score": 0.9231,
+      "precision": 0.8571,
+      "recall": 1.0,
+      "seed": 2026
+    }
+  ]
+}
