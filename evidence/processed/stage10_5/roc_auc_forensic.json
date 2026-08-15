@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-08-15T10:36:11.182343+00:00",
+  "metric": "ROC-AUC",
+  "reported_candidate_mean": 1.0,
+  "reported_candidate_std": 0.0,
+  "independent_recomputed_mean": 1.0,
+  "independent_recomputed_std": 0.0,
+  "exact_match": true,
+  "per_seed_roc_auc": {
+    "42": 1.0,
+    "100": 1.0,
+    "2026": 1.0
+  },
+  "probability_orientation": "CORRECT (Higher probability strictly assigned to positive class)",
+  "mathematical_explanation": "Every positive test instance received a predicted probability higher than every negative test instance. The Wilcoxon-Mann-Whitney U statistic evaluates to U/(n_pos * n_neg) = 1.0, producing a mathematically exact ROC-AUC of 1.0000."
+}

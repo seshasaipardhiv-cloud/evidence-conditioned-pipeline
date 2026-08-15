@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-08-15T10:36:11.192650+00:00",
+  "model_selection_used_test_set": false,
+  "fusion_selection_used_test_set": false,
+  "ensemble_weighting_used_test_set": false,
+  "preprocessing_fit_on_test_set": false,
+  "threshold_optimized_on_test_set": false,
+  "test_set_isolation_status": "STRICTLY_PRESERVED"
+}

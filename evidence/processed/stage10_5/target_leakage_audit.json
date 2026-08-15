@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-15T10:36:11.192650+00:00",
+  "target_variable": "recurrence",
+  "forbidden_variables_scanned": [
+    "survival_status",
+    "days_to_recurrence",
+    "progress_1",
+    "metastasis_date",
+    "recurrence_indicator"
+  ],
+  "target_in_image_tensors": false,
+  "target_in_text_embeddings": false,
+  "target_in_tabular_features": false,
+  "target_leakage_verdict": "ZERO_LEAKAGE_CONFIRMED"
+}

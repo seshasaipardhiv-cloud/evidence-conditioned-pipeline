@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-15T10:36:11.184304+00:00",
+  "total_cohort_samples": 100,
+  "total_positive_samples": 41,
+  "total_negative_samples": 59,
+  "class_prevalence": 0.41,
+  "test_samples_per_seed": 20,
+  "train_samples_per_seed": 80,
+  "statistical_power_assessment": "UNDERPOWERED_DEMONSTRATION (n=20 test instances per fold; high metric sensitivity to single rank swaps)"
+}

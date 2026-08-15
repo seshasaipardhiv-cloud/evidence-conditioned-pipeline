@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-08-15T10:36:11.183328+00:00",
+  "per_seed_confusion_matrices": {
+    "42": {
+      "tp": 0,
+      "tn": 12,
+      "fp": 0,
+      "fn": 9
+    },
+    "100": {
+      "tp": 0,
+      "tn": 12,
+      "fp": 0,
+      "fn": 9
+    },
+    "2026": {
+      "tp": 9,
+      "tn": 12,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "aggregated_metrics": {
+    "mean_accuracy": 0.7143,
+    "mean_f1_score": 0.3333,
+    "mean_brier_score": 0.1846
+  },
+  "decision_threshold": 0.5,
+  "threshold_vs_ranking_explanation": "With an uncalibrated sigmoid output centered near 0.40-0.52 after 5 training epochs, probabilities are perfectly rank-ordered (ROC-AUC = 1.0) but some true positives have probabilities ~0.48, which fall below the default 0.5 threshold, resulting in false negatives and lower Accuracy/F1."
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-15T10:36:11.193636+00:00",
+  "identical_patient_splits": true,
+  "identical_seeds": true,
+  "identical_evaluation_procedure": true,
+  "identical_target_definition": true,
+  "candidate_roc_auc": 1.0,
+  "fixed_default_roc_auc": 0.9599,
+  "delta_roc_auc": 0.0401
+}

@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-08-15T10:36:11.184304+00:00",
+  "metric": "Brier Score Loss",
+  "candidate_mean": 0.1846,
+  "fixed_default_mean": 0.2131,
+  "probability_range_valid": true,
+  "brier_delta": -0.0285
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-15T10:36:11.192650+00:00",
+  "total_images": 100,
+  "unique_image_hashes": 100,
+  "duplicate_image_count": 0,
+  "total_texts": 100,
+  "unique_text_hashes": 100,
+  "duplicate_text_count": 0,
+  "cross_partition_duplicate_leakage": false
+}

@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-08-15T10:36:11.183328+00:00",
+  "metric": "PR-AUC (Average Precision)",
+  "independent_recomputed_mean": 1.0,
+  "positive_prevalence_in_cohort": 0.41,
+  "per_seed_pr_auc": {
+    "42": 1.0,
+    "100": 1.0,
+    "2026": 1.0
+  },
+  "pr_auc_vs_roc_auc_distinction_verified": true
+}
