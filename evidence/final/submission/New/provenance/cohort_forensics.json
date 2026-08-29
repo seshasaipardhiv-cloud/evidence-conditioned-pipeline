@@ -1,5 +1,5 @@
 {
-  "audit_timestamp": "2026-08-29T09:32:54.207844+00:00",
+  "audit_timestamp": "2026-08-29T09:55:26.817662+00:00",
   "purpose": "Forensic audit for train/test leakage, target encoding, and data integrity",
   "summary": {
     "cohorts_audited": 5,
@@ -40,13 +40,7 @@
       "leakage_detected": false,
       "status": "PASS",
       "forensic_conclusion": "No critical leakage detected. Results may be reported with synthetic/demo caveats.",
-      "findings": [
-        {
-          "type": "NEAR_PERFECT_ROC_AUC",
-          "severity": "WARNING",
-          "detail": "ROC-AUC values: [0.987, 1.0, 1.0]. Near-perfect performance on small synthetic data \u2014 inspect for data construction artefacts."
-        }
-      ],
+      "findings": [],
       "seeds_audited": [
         42,
         100,
@@ -84,7 +78,7 @@
         {
           "type": "NEAR_PERFECT_ROC_AUC",
           "severity": "WARNING",
-          "detail": "ROC-AUC values: [0.5938, 1.0, 1.0]. Near-perfect performance on small synthetic data \u2014 inspect for data construction artefacts."
+          "detail": "ROC-AUC values: [0.5538, 1.0, 1.0]. Near-perfect performance on small synthetic data \u2014 inspect for data construction artefacts."
         }
       ],
       "seeds_audited": [

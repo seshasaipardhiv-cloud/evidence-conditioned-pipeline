@@ -55,5 +55,5 @@
     }
   ],
   "important_note": "Vision and language model names (ResNet-18, PubMedBERT) reflect the evidence-selected architecture names. The actual sklearn implementations used here are MLP/LR proxies operating on pixel/TF-IDF features. Full deep model training would require GPU and significantly more data.",
-  "timestamp": "2026-08-29T09:32:54.290008+00:00"
+  "timestamp": "2026-08-29T09:55:27.435299+00:00"
 }

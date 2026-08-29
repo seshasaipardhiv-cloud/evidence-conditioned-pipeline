@@ -98,11 +98,17 @@ class MasterEndToEndRunner:
         pmid_report = verify_all_papers(out_dir=str(self.new_out_dir / "provenance"))
 
         # 5. Cohort Forensic Leakage Audit
-        logger.info("[STEP 4/7] Running Forensic Audit on Cohorts...")
+        logger.info("[STEP 4/8] Running Forensic Audit on Cohorts...")
         forensics_report = run_cohort_forensics(cohort_results, out_dir=str(self.new_out_dir / "provenance"))
 
-        # 6. Package Final Results & Canonical Predictions (Single Source of Truth)
-        logger.info("[STEP 5/7] Compiling Canonical Predictions & Final Results Store...")
+        # 6. Deep Forensic Validation on Cohorts C and D
+        logger.info("[STEP 5/8] Running Deep Forensic Validation on Cohorts C and D (Baselines & Lexical/Pixel Analysis)...")
+        from backend.app.final_integration.cohort_c_d_forensics import CohortForensicsEngine
+        c_d_engine = CohortForensicsEngine(base_out=str(self.new_out_dir), seeds=self.cohort_evaluator.seeds)
+        c_d_report = c_d_engine.run_full_forensics()
+
+        # 7. Package Final Results & Canonical Predictions (Single Source of Truth)
+        logger.info("[STEP 6/8] Compiling Canonical Predictions & Final Results Store...")
         canonical_path = self.results_packager.package_all(cohort_results, decision_ledger, stage2d_manifest)
 
         # Load final results for reconciliation
@@ -110,12 +116,12 @@ class MasterEndToEndRunner:
         with open(final_results_file, "r", encoding="utf-8") as f:
             final_results_data = json.load(f)
 
-        # 7. Generate Results Reconciliation Report
-        logger.info("[STEP 6/7] Generating Result Reconciliation Report...")
+        # 8. Generate Results Reconciliation Report
+        logger.info("[STEP 7/8] Generating Result Reconciliation Report...")
         generate_reconciliation_report(final_results_data, out_dir=str(self.new_out_dir / "results"))
 
-        # 8. Render All 18 Plots from Canonical Results
-        logger.info("[STEP 7/7] Rendering 18 Publication Plots (strictly from canonical predictions)...")
+        # 9. Render All 18 Plots from Canonical Results
+        logger.info("[STEP 8/8] Rendering 18 Publication Plots (strictly from canonical predictions)...")
         self.plot_generator.generate_all_18_plots(cohort_results, decision_ledger)
 
         elapsed = round(time.time() - start_time, 2)

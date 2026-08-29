@@ -37,7 +37,7 @@
       2026
     ],
     "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
-    "canonical_data_hash": "b37b3910132b29b85f46a8e0c7186af62df5e642401d92a9b5b81d2140435906"
+    "canonical_data_hash": "570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553"
   },
   {
     "cohort_name": "Cohort_B_Unseen_Cardiac_Tabular",
@@ -77,7 +77,7 @@
       2026
     ],
     "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
-    "canonical_data_hash": "b37b3910132b29b85f46a8e0c7186af62df5e642401d92a9b5b81d2140435906"
+    "canonical_data_hash": "570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553"
   },
   {
     "cohort_name": "Cohort_C_Unseen_Derm_Image",
@@ -96,28 +96,28 @@
       "Logistic Regression"
     ],
     "ensemble_weights": {
-      "ResNet-18": 0.3333,
-      "EfficientNet-B0": 0.3333,
-      "Logistic Regression": 0.3333
+      "ResNet-18": 0.3253,
+      "EfficientNet-B0": 0.3253,
+      "Logistic Regression": 0.3494
     },
-    "roc_auc_mean": 0.9957,
-    "roc_auc_std": 0.0061,
-    "pr_auc_mean": 0.994,
-    "brier_score_mean": 0.0427,
-    "accuracy_mean": 0.9444,
-    "precision_mean": 0.9524,
-    "recall_mean": 0.9047,
-    "f1_mean": 0.9267,
-    "f1_std": 0.0584,
-    "ensemble_roc_auc_mean": 1.0,
-    "ensemble_f1_mean": 1.0,
+    "roc_auc_mean": 0.4125,
+    "roc_auc_std": 0.0707,
+    "pr_auc_mean": 0.4417,
+    "brier_score_mean": 0.4304,
+    "accuracy_mean": 0.3889,
+    "precision_mean": 0.354,
+    "recall_mean": 0.5,
+    "f1_mean": 0.4106,
+    "f1_std": 0.0957,
+    "ensemble_roc_auc_mean": 0.3241,
+    "ensemble_f1_mean": 0.5,
     "seeds": [
       42,
       100,
       2026
     ],
     "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
-    "canonical_data_hash": "b37b3910132b29b85f46a8e0c7186af62df5e642401d92a9b5b81d2140435906"
+    "canonical_data_hash": "570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553"
   },
   {
     "cohort_name": "Cohort_D_Unseen_Pathology_Text",
@@ -157,7 +157,7 @@
       2026
     ],
     "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
-    "canonical_data_hash": "b37b3910132b29b85f46a8e0c7186af62df5e642401d92a9b5b81d2140435906"
+    "canonical_data_hash": "570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553"
   },
   {
     "cohort_name": "Cohort_E_Unseen_Trimodal_Oncology",
@@ -182,23 +182,23 @@
       "Tabular-Only Baseline": 0.3333,
       "Vision-Text Baseline": 0.3333
     },
-    "roc_auc_mean": 0.8646,
-    "roc_auc_std": 0.1915,
-    "pr_auc_mean": 0.8556,
-    "brier_score_mean": 0.0909,
-    "accuracy_mean": 0.8889,
-    "precision_mean": 0.0,
-    "recall_mean": 0.0,
-    "f1_mean": 0.0,
-    "f1_std": 0.0,
-    "ensemble_roc_auc_mean": 0.7,
-    "ensemble_f1_mean": 0.0,
+    "roc_auc_mean": 0.8513,
+    "roc_auc_std": 0.2103,
+    "pr_auc_mean": 0.8586,
+    "brier_score_mean": 0.1585,
+    "accuracy_mean": 0.8704,
+    "precision_mean": 0.6667,
+    "recall_mean": 0.5333,
+    "f1_mean": 0.5833,
+    "f1_std": 0.4249,
+    "ensemble_roc_auc_mean": 0.5104,
+    "ensemble_f1_mean": 0.2738,
     "seeds": [
       42,
       100,
       2026
     ],
     "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
-    "canonical_data_hash": "b37b3910132b29b85f46a8e0c7186af62df5e642401d92a9b5b81d2140435906"
+    "canonical_data_hash": "570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553"
   }
 ]

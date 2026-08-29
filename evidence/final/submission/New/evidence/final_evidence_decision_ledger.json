@@ -5,7 +5,7 @@
     "ground_truth_status": "NOT_AVAILABLE_WITHOUT_GOLD_LABELS",
     "checkpoint_sha256": "405fc1be40760a25a2426bc6213072dd03deb1a46f72478c4f7f63683398eacf",
     "note": "All evidence scores in this ledger originate from runtime SciBERT NER extraction. Decisions marked FALLBACK_DEFAULT received score=0.50 because no matching entity was found in the runtime evidence_scores.json.",
-    "timestamp": "2026-08-29T09:32:54.290008+00:00"
+    "timestamp": "2026-08-29T09:55:27.433300+00:00"
   },
   "decisions": [
     {

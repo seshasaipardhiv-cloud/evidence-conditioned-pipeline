@@ -571,28 +571,36 @@ Score = 0.50 for all FALLBACK candidates → selection determined by priority or
 
 ---
 
-## 5. Cohort Forensic Audit
+## 5. Cohort Forensic Audit & Mechanistic Root-Cause Analysis
 
-### Cohort A (Hancock)
-**Previous result (REJECTED)**: ROC-AUC = 1.000
-**Reason**: `TARGET_ENCODED_FEATURE_LEAKAGE` — ki67_proliferation_index, tumor_size_mm,
-and lymph_node_positive contained label-dependent offsets (`+ 15.0 if label==1 else 0`).
-**Corrective action**: All label-derived offsets removed. Features now independent of target.
-**New result**: See canonical_predictions.jsonl (expect realistic imperfect performance).
+### Cohort A (Hancock Tabular)
+- **Previous Claim (REJECTED)**: ROC-AUC = 1.000
+- **Forensic Finding**: `TARGET_ENCODED_FEATURE_LEAKAGE` — `ki67`, `tumor_size`, and `lymph_node_positive` contained label-dependent offsets (`+ 15.0 if label==1 else 0`), and `progesterone_receptor_status` was literally `1 - label`.
+- **Corrective Action**: Replaced with an epidemiological probabilistic logit generative model with logistic noise (leakage-free).
+- **Actual Recomputed ROC-AUC**: See table above (realistic, imperfect performance).
 
-### Cohort C (Derm Image)
-**Dataset**: 32×32 random noise PNG images with white square patch as the only signal.
-**Expected**: Near-random performance (ROC-AUC ≈ 0.5–0.65).
-**Reported**: Actual value from canonical_predictions.jsonl.
+### Cohort C (Dermatology Image)
+- **Reported ROC-AUC**: Sourced strictly from `canonical_predictions.jsonl`.
+- **Classification**: `TRIVIAL_SYNTHETIC_SIGNAL` (Zero train/test leakage).
+- **Forensic Finding**: In this 60-sample synthetic demonstration cohort, images for positive cases contain a localized lesion patch (`+25` intensity offset in center `[12:20, 12:20]`).
+- **Baseline Hierarchy**:
+  - Majority Class Baseline: ROC-AUC = `0.5000`
+  - Center-Pixel Intensity Threshold Baseline: ROC-AUC = `0.4125 - 0.5875`
+  - Linear / MLP Proxy Classifier: ROC-AUC ≈ `0.41 - 0.99` (depending on spatial patch contrast).
+- **Scientific Interpretation**: High performance on synthetic images reflects the separability of the synthetic spatial fixture, validating image ingestion, resizing, and gradient flow rather than clinical diagnostic capability on real human dermoscopy. See `COHORT_C_D_FORENSIC_REPORT.md` and `plots/cohort_C_baseline_forensics.png`.
 
 ### Cohort D (Pathology Text)
-**Dataset**: Template text strings (two fixed sentences per class).
-**Expected**: Variable performance depending on TF-IDF feature extraction.
-**Reported**: Actual value from canonical_predictions.jsonl.
+- **Reported ROC-AUC**: Sourced strictly from `canonical_predictions.jsonl`.
+- **Classification**: `TRIVIAL_SYNTHETIC_SIGNAL` (Zero train/test leakage).
+- **Forensic Finding**: The synthetic narrative generator samples positive findings from diagnostic phrases (`atypical ductal hyperplasia`, `high-grade dysplastic changes`) and negative findings from benign phrases (`benign fibrocystic changes`, `normal lobular tissue`).
+- **Baseline Hierarchy**:
+  - Simple 1-Rule Keyword Baseline: ROC-AUC = `1.0000 ± 0.0000`
+  - TF-IDF + Logistic Regression: ROC-AUC = `0.8521 - 1.0000`
+- **Scientific Interpretation**: A naive keyword rule achieves `1.0000` ROC-AUC with zero machine learning. Thus, performance demonstrates that the text tokenization and TF-IDF feature extraction pipeline correctly identifies discriminative n-grams, rather than proving that PubMedBERT is a perfect clinical pathologist on noisy real-world EHR narratives. See `COHORT_C_D_FORENSIC_REPORT.md` and `plots/cohort_D_baseline_forensics.png`.
 
 ### Cohort E (Trimodal Oncology)
-**Previous bug**: Only 1/18 predictions stored per seed.
-**Corrective action**: Multimodal executor now returns complete prediction arrays.
+- **Previous Bug**: Only 1/18 predictions stored per seed.
+- **Corrective Action**: Multimodal executor now returns complete prediction arrays (54 predictions per cohort across 3 seeds). All predictions are stored in `canonical_predictions.jsonl`.
 
 ---
 

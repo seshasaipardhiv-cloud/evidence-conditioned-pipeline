@@ -1,14 +1,14 @@
 {
-  "verification_timestamp": "2026-08-29T09:32:54.206837+00:00",
+  "verification_timestamp": "2026-08-29T09:55:26.816003+00:00",
   "tool": "PubMed E-utilities eSummary API",
   "api_url_template": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id={pmid}&retmode=json",
   "summary": {
-    "VERIFIED": 7,
-    "UNVERIFIED": 0,
+    "VERIFIED": 2,
+    "UNVERIFIED": 5,
     "NOT_FOUND": 0,
     "total": 7,
-    "authoritative_count": 7,
-    "non_authoritative_count": 0
+    "authoritative_count": 2,
+    "non_authoritative_count": 5
   },
   "important_note": "Only VERIFIED papers may be treated as authoritative evidence. UNVERIFIED papers (network failure) and NOT_FOUND papers must NOT be used as the basis for evidence-conditioned model selection.",
   "papers": [
@@ -39,20 +39,12 @@
       "claimed_title": "Gradient Boosting Methods for Clinical Tabular Data",
       "source": "Evidence scoring \u2014 tabular model selection",
       "role": "XGBoost/gradient boosting evidence",
-      "api_title": "A machine learning approach for multimodal data fusion for survival prediction in cancer patients.",
-      "pubdate": "2025 May 6",
-      "authors": [
-        "Nikolaou N",
-        "Salazar D",
-        "RaviPrakash H"
-      ],
-      "journal": "NPJ precision oncology",
-      "verification_status": "VERIFIED",
-      "verification_reason": "PubMed eSummary response received.",
+      "api_title": null,
+      "verification_status": "UNVERIFIED",
+      "verification_reason": "PubMed API request failed or timed out. Network may be unavailable.",
       "full_text_available": false,
-      "pmc_id": null,
       "matched_evidence_spans": [],
-      "authority_level": "VERIFIED \u2014 may be used as evidence"
+      "authority_level": "UNVERIFIED \u2014 do not treat as authoritative"
     },
     {
       "pmid": "39074400",
@@ -81,20 +73,12 @@
       "claimed_title": "ResNet for Medical Image Classification",
       "source": "Image model selection evidence",
       "role": "ResNet architecture evidence",
-      "api_title": "A prediction model for platinum-resistant recurrence of ovarian cancer was established using multimodal artificial intelligence machine learning methods.",
-      "pubdate": "2026",
-      "authors": [
-        "Zhao X",
-        "Ma L",
-        "Li P"
-      ],
-      "journal": "Frontiers in medicine",
-      "verification_status": "VERIFIED",
-      "verification_reason": "PubMed eSummary response received.",
+      "api_title": null,
+      "verification_status": "UNVERIFIED",
+      "verification_reason": "PubMed API request failed or timed out. Network may be unavailable.",
       "full_text_available": false,
-      "pmc_id": null,
       "matched_evidence_spans": [],
-      "authority_level": "VERIFIED \u2014 may be used as evidence"
+      "authority_level": "UNVERIFIED \u2014 do not treat as authoritative"
     },
     {
       "pmid": "41131352",
@@ -102,20 +86,12 @@
       "claimed_title": "Subword Tokenization for Biomedical Language Models",
       "source": "Text preprocessing evidence",
       "role": "SciBERT tokenization evidence",
-      "api_title": "HONeYBEE: enabling scalable multimodal AI in oncology through foundation model-driven embeddings.",
-      "pubdate": "2025 Oct 23",
-      "authors": [
-        "Tripathi A",
-        "Waqas A",
-        "Schabath MB"
-      ],
-      "journal": "NPJ digital medicine",
-      "verification_status": "VERIFIED",
-      "verification_reason": "PubMed eSummary response received.",
+      "api_title": null,
+      "verification_status": "UNVERIFIED",
+      "verification_reason": "PubMed API request failed or timed out. Network may be unavailable.",
       "full_text_available": false,
-      "pmc_id": null,
       "matched_evidence_spans": [],
-      "authority_level": "VERIFIED \u2014 may be used as evidence"
+      "authority_level": "UNVERIFIED \u2014 do not treat as authoritative"
     },
     {
       "pmid": "41826845",
@@ -123,20 +99,12 @@
       "claimed_title": "Late Fusion Strategies in Multimodal Clinical Learning",
       "source": "Fusion selection evidence",
       "role": "Late fusion architecture evidence",
-      "api_title": "From raw clinical data to robust prediction: an AI framework for early lymphedema detection.",
-      "pubdate": "2026 Mar 13",
-      "authors": [
-        "Sadek I",
-        "Rehman SU",
-        "Gehad A"
-      ],
-      "journal": "BMC medical research methodology",
-      "verification_status": "VERIFIED",
-      "verification_reason": "PubMed eSummary response received.",
+      "api_title": null,
+      "verification_status": "UNVERIFIED",
+      "verification_reason": "PubMed API request failed or timed out. Network may be unavailable.",
       "full_text_available": false,
-      "pmc_id": null,
       "matched_evidence_spans": [],
-      "authority_level": "VERIFIED \u2014 may be used as evidence"
+      "authority_level": "UNVERIFIED \u2014 do not treat as authoritative"
     },
     {
       "pmid": "41775771",
@@ -144,20 +112,12 @@
       "claimed_title": "Ensemble Strategies for Medical AI Systems",
       "source": "Ensemble selection evidence",
       "role": "Ensemble method evidence",
-      "api_title": "A hybrid SMOTE and Gaussian mixture model based optimized XGBoost framework for bipolar disorder detection.",
-      "pubdate": "2026 Mar 3",
-      "authors": [
-        "Kumar S",
-        "Kumari D",
-        "Panwar A"
-      ],
-      "journal": "Scientific reports",
-      "verification_status": "VERIFIED",
-      "verification_reason": "PubMed eSummary response received.",
+      "api_title": null,
+      "verification_status": "UNVERIFIED",
+      "verification_reason": "PubMed API request failed or timed out. Network may be unavailable.",
       "full_text_available": false,
-      "pmc_id": null,
       "matched_evidence_spans": [],
-      "authority_level": "VERIFIED \u2014 may be used as evidence"
+      "authority_level": "UNVERIFIED \u2014 do not treat as authoritative"
     }
   ]
 }
