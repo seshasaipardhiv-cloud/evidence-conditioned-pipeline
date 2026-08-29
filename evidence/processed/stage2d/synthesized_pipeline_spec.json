@@ -1,0 +1,492 @@
+{
+  "pipeline_id": "synth_pipeline_20132",
+  "target_modalities": [
+    "tabular",
+    "image",
+    "text"
+  ],
+  "sample_count": 50,
+  "task_type": "binary_classification",
+  "compute_budget": "LIGHT",
+  "selected_components": {
+    "tabular_model": {
+      "component_type": "tabular_model",
+      "selected_name": "Random Forest",
+      "canonical_id": "random_forest",
+      "winning_score": 0.5552,
+      "evidence_score": 0.5552,
+      "supporting_pmids": [
+        "38396486"
+      ],
+      "supporting_dois": [
+        "10.3390/diagnostics14040448"
+      ],
+      "candidate_rankings": [
+        {
+          "canonical_id": "random_forest",
+          "name": "Random Forest",
+          "base_evidence_score": 0.5552,
+          "dataset_multiplier": 1.0,
+          "final_score": 0.5552,
+          "supporting_pmids": [
+            "38396486"
+          ],
+          "supporting_dois": [
+            "10.3390/diagnostics14040448"
+          ],
+          "evidence_status": "LITERATURE_GROUNDED"
+        },
+        {
+          "canonical_id": "xgboost",
+          "name": "XGBoost",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 1.0,
+          "final_score": 0.45,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        },
+        {
+          "canonical_id": "logistic_regression",
+          "name": "Logistic Regression",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 1.0,
+          "final_score": 0.45,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        },
+        {
+          "canonical_id": "mlp_tabular",
+          "name": "Tabular MLP",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 0.65,
+          "final_score": 0.2925,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        }
+      ],
+      "decision_rationale": "Selected 'Random Forest' with evidence score 0.555 and dataset conditioning factor 1.00 (final score: 0.5552). Outranked 3 alternative candidate(s).",
+      "provenance_trace": "Evidence: 38396486 | Score: 0.5552"
+    },
+    "image_model": {
+      "component_type": "image_model",
+      "selected_name": "ResNet-18",
+      "canonical_id": "resnet18",
+      "winning_score": 0.45,
+      "evidence_score": 0.45,
+      "supporting_pmids": [
+        "PMID:LiteratureBaseline"
+      ],
+      "supporting_dois": [],
+      "candidate_rankings": [
+        {
+          "canonical_id": "resnet18",
+          "name": "ResNet-18",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 1.0,
+          "final_score": 0.45,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        },
+        {
+          "canonical_id": "efficientnet_b0",
+          "name": "EfficientNet-B0",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 1.0,
+          "final_score": 0.45,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        },
+        {
+          "canonical_id": "resnet50",
+          "name": "ResNet-50",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 0.455,
+          "final_score": 0.2047,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        },
+        {
+          "canonical_id": "vit_small",
+          "name": "Vision Transformer (ViT)",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 0.455,
+          "final_score": 0.2047,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        }
+      ],
+      "decision_rationale": "Selected 'ResNet-18' with evidence score 0.450 and dataset conditioning factor 1.00 (final score: 0.4500). Outranked 3 alternative candidate(s).",
+      "provenance_trace": "Evidence: PMID:LiteratureBaseline | Score: 0.45"
+    },
+    "text_model": {
+      "component_type": "text_model",
+      "selected_name": "PubMedBERT",
+      "canonical_id": "pubmedbert",
+      "winning_score": 0.45,
+      "evidence_score": 0.45,
+      "supporting_pmids": [
+        "PMID:LiteratureBaseline"
+      ],
+      "supporting_dois": [],
+      "candidate_rankings": [
+        {
+          "canonical_id": "pubmedbert",
+          "name": "PubMedBERT",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 1.0,
+          "final_score": 0.45,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        },
+        {
+          "canonical_id": "clinicalbert",
+          "name": "ClinicalBERT",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 1.0,
+          "final_score": 0.45,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        },
+        {
+          "canonical_id": "tfidf_mlp",
+          "name": "TF-IDF + Dense MLP",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 1.0,
+          "final_score": 0.45,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        }
+      ],
+      "decision_rationale": "Selected 'PubMedBERT' with evidence score 0.450 and dataset conditioning factor 1.00 (final score: 0.4500). Outranked 2 alternative candidate(s).",
+      "provenance_trace": "Evidence: PMID:LiteratureBaseline | Score: 0.45"
+    },
+    "preprocessing": {
+      "component_type": "preprocessing",
+      "selected_name": "MICE Imputation",
+      "canonical_id": "mice_imputation",
+      "winning_score": 0.45,
+      "evidence_score": 0.45,
+      "supporting_pmids": [
+        "PMID:LiteratureBaseline"
+      ],
+      "supporting_dois": [],
+      "candidate_rankings": [
+        {
+          "canonical_id": "mice_imputation",
+          "name": "MICE Imputation",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 1.0,
+          "final_score": 0.45,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        },
+        {
+          "canonical_id": "standard_scaler",
+          "name": "Standard Scaling",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 1.0,
+          "final_score": 0.45,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        },
+        {
+          "canonical_id": "one_hot_encoding",
+          "name": "One-Hot Encoding",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 1.0,
+          "final_score": 0.45,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        }
+      ],
+      "decision_rationale": "Selected 'MICE Imputation' with evidence score 0.450 and dataset conditioning factor 1.00 (final score: 0.4500). Outranked 2 alternative candidate(s).",
+      "provenance_trace": "Evidence: PMID:LiteratureBaseline | Score: 0.45"
+    },
+    "sampling": {
+      "component_type": "sampling",
+      "selected_name": "SMOTE",
+      "canonical_id": "smote",
+      "winning_score": 0.45,
+      "evidence_score": 0.45,
+      "supporting_pmids": [
+        "PMID:LiteratureBaseline"
+      ],
+      "supporting_dois": [],
+      "candidate_rankings": [
+        {
+          "canonical_id": "smote",
+          "name": "SMOTE",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 1.0,
+          "final_score": 0.45,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        },
+        {
+          "canonical_id": "adasyn",
+          "name": "ADASYN",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 1.0,
+          "final_score": 0.45,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        },
+        {
+          "canonical_id": "random_oversample",
+          "name": "Random Oversampling",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 1.0,
+          "final_score": 0.45,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        }
+      ],
+      "decision_rationale": "Selected 'SMOTE' with evidence score 0.450 and dataset conditioning factor 1.00 (final score: 0.4500). Outranked 2 alternative candidate(s).",
+      "provenance_trace": "Evidence: PMID:LiteratureBaseline | Score: 0.45"
+    },
+    "fusion": {
+      "component_type": "fusion",
+      "selected_name": "Late Fusion (Concatenation)",
+      "canonical_id": "late_fusion",
+      "winning_score": 0.45,
+      "evidence_score": 0.45,
+      "supporting_pmids": [
+        "PMID:LiteratureBaseline"
+      ],
+      "supporting_dois": [],
+      "candidate_rankings": [
+        {
+          "canonical_id": "late_fusion",
+          "name": "Late Fusion (Concatenation)",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 1.0,
+          "final_score": 0.45,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        },
+        {
+          "canonical_id": "gated_fusion",
+          "name": "Gated Multimodal Fusion",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 1.0,
+          "final_score": 0.45,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        },
+        {
+          "canonical_id": "cross_attention",
+          "name": "Cross-Modal Attention",
+          "base_evidence_score": 0.5795,
+          "dataset_multiplier": 0.65,
+          "final_score": 0.3767,
+          "supporting_pmids": [
+            "38396486"
+          ],
+          "supporting_dois": [
+            "10.3390/diagnostics14040448"
+          ],
+          "evidence_status": "LITERATURE_GROUNDED"
+        }
+      ],
+      "decision_rationale": "Selected 'Late Fusion (Concatenation)' with evidence score 0.450 and dataset conditioning factor 1.00 (final score: 0.4500). Outranked 2 alternative candidate(s).",
+      "provenance_trace": "Evidence: PMID:LiteratureBaseline | Score: 0.45"
+    },
+    "loss": {
+      "component_type": "loss",
+      "selected_name": "Focal Loss",
+      "canonical_id": "focal_loss",
+      "winning_score": 0.5625,
+      "evidence_score": 0.45,
+      "supporting_pmids": [
+        "PMID:LiteratureBaseline"
+      ],
+      "supporting_dois": [],
+      "candidate_rankings": [
+        {
+          "canonical_id": "focal_loss",
+          "name": "Focal Loss",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 1.25,
+          "final_score": 0.5625,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        },
+        {
+          "canonical_id": "binary_cross_entropy",
+          "name": "Binary Cross-Entropy",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 1.0,
+          "final_score": 0.45,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        }
+      ],
+      "decision_rationale": "Selected 'Focal Loss' with evidence score 0.450 and dataset conditioning factor 1.25 (final score: 0.5625). Outranked 1 alternative candidate(s).",
+      "provenance_trace": "Evidence: PMID:LiteratureBaseline | Score: 0.5625"
+    },
+    "optimizer": {
+      "component_type": "optimizer",
+      "selected_name": "AdamW",
+      "canonical_id": "adamw",
+      "winning_score": 0.45,
+      "evidence_score": 0.45,
+      "supporting_pmids": [
+        "PMID:LiteratureBaseline"
+      ],
+      "supporting_dois": [],
+      "candidate_rankings": [
+        {
+          "canonical_id": "adamw",
+          "name": "AdamW",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 1.0,
+          "final_score": 0.45,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        },
+        {
+          "canonical_id": "adam",
+          "name": "Adam",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 1.0,
+          "final_score": 0.45,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        },
+        {
+          "canonical_id": "sgd",
+          "name": "SGD with Momentum",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 1.0,
+          "final_score": 0.45,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        }
+      ],
+      "decision_rationale": "Selected 'AdamW' with evidence score 0.450 and dataset conditioning factor 1.00 (final score: 0.4500). Outranked 2 alternative candidate(s).",
+      "provenance_trace": "Evidence: PMID:LiteratureBaseline | Score: 0.45"
+    },
+    "ensemble": {
+      "component_type": "ensemble",
+      "selected_name": "Validation-Gated Blend",
+      "canonical_id": "gated_blend",
+      "winning_score": 0.45,
+      "evidence_score": 0.45,
+      "supporting_pmids": [
+        "PMID:LiteratureBaseline"
+      ],
+      "supporting_dois": [],
+      "candidate_rankings": [
+        {
+          "canonical_id": "gated_blend",
+          "name": "Validation-Gated Blend",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 1.0,
+          "final_score": 0.45,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        },
+        {
+          "canonical_id": "stacking",
+          "name": "Super Learner Stacking",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 1.0,
+          "final_score": 0.45,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        },
+        {
+          "canonical_id": "soft_voting",
+          "name": "Soft Voting Ensemble",
+          "base_evidence_score": 0.45,
+          "dataset_multiplier": 1.0,
+          "final_score": 0.45,
+          "supporting_pmids": [
+            "PMID:LiteratureBaseline"
+          ],
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
+        }
+      ],
+      "decision_rationale": "Selected 'Validation-Gated Blend' with evidence score 0.450 and dataset conditioning factor 1.00 (final score: 0.4500). Outranked 2 alternative candidate(s).",
+      "provenance_trace": "Evidence: PMID:LiteratureBaseline | Score: 0.45"
+    }
+  },
+  "total_evidence_score": 0.4617,
+  "synthesis_timestamp": "2026-08-29T08:21:02.938494+00:00"
+}

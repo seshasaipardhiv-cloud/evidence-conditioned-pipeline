@@ -1,0 +1,90 @@
+{
+  "training_type": "WEAKLY_SUPERVISED",
+  "model_name": "allenai/scibert_scivocab_uncased",
+  "seed": 42,
+  "epochs_trained": 15,
+  "final_train_loss": 0.3745,
+  "final_val_loss": 0.3754,
+  "best_val_loss": 0.3544,
+  "checkpoint_path": "evidence\\processed\\stage2d\\checkpoints\\scibert_ner_head_seed42.pt",
+  "checkpoint_sha256": "405fc1be40760a25a2426bc6213072dd03deb1a46f72478c4f7f63683398eacf",
+  "training_samples_count": 60,
+  "validation_samples_count": 15,
+  "loss_history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.7798,
+      "val_loss": 0.4294
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.3963,
+      "val_loss": 0.3748
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.369,
+      "val_loss": 0.3635
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.3616,
+      "val_loss": 0.3596
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.3588,
+      "val_loss": 0.3577
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.3573,
+      "val_loss": 0.3566
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.3564,
+      "val_loss": 0.3558
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.3557,
+      "val_loss": 0.3553
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.3552,
+      "val_loss": 0.3549
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.3549,
+      "val_loss": 0.3547
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.3546,
+      "val_loss": 0.3544
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.3549,
+      "val_loss": 0.3561
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.3577,
+      "val_loss": 0.3592
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.3665,
+      "val_loss": 0.3672
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.3745,
+      "val_loss": 0.3754
+    }
+  ]
+}

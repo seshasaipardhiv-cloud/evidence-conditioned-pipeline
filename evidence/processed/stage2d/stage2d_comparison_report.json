@@ -1,0 +1,83 @@
+{
+  "comparison_title": "Stage 2C (Baseline) vs Stage 2D (Scientific Quality Improvement)",
+  "ground_truth_status": "NOT_AVAILABLE_WITHOUT_GOLD_LABELS",
+  "stage2c_baseline": {
+    "total_entities": 124,
+    "total_relations": 160,
+    "high_confidence_entities": 36,
+    "review_flagged_entities": 65,
+    "supervision_status": "WEAKLY_SUPERVISED"
+  },
+  "stage2d_enhanced": {
+    "total_entities": 87,
+    "total_relations": 103,
+    "confidence_tier_distribution": {
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 87
+    },
+    "mean_confidence": 0.1544,
+    "ontology_classes_covered": 9,
+    "entity_type_distribution": {
+      "DATASET": 31,
+      "MODEL_ARCH": 16,
+      "LOSS": 11,
+      "REGULARIZATION": 9,
+      "HYPERPARAMETER": 2,
+      "OPTIMIZATION": 7,
+      "PREPROCESSING": 6,
+      "FUSION": 2,
+      "SAMPLING": 3
+    },
+    "section_distribution": {
+      "abstract": 87
+    },
+    "scored_mechanisms_count": 67,
+    "supervision_status": "WEAKLY_SUPERVISED_WITH_NOISE_ROBUST_TRAINING"
+  },
+  "controlled_5_scenario_validation": {
+    "all_scenarios_passed": true,
+    "scenarios": [
+      {
+        "scenario_id": "Scenario_A",
+        "target_slot": "tabular_model",
+        "expected_winner": "XGBoost",
+        "actual_winner": "XGBoost",
+        "winning_score": 0.7847,
+        "passed": true
+      },
+      {
+        "scenario_id": "Scenario_B",
+        "target_slot": "tabular_model",
+        "expected_winner": "Random Forest",
+        "actual_winner": "Random Forest",
+        "winning_score": 0.7847,
+        "passed": true
+      },
+      {
+        "scenario_id": "Scenario_C",
+        "target_slot": "tabular_model",
+        "expected_winner": "Logistic Regression",
+        "actual_winner": "Logistic Regression",
+        "winning_score": 0.7847,
+        "passed": true
+      },
+      {
+        "scenario_id": "Scenario_D",
+        "target_slot": "image_model",
+        "expected_winner": "ResNet-18",
+        "actual_winner": "ResNet-18",
+        "winning_score": 0.7847,
+        "passed": true
+      },
+      {
+        "scenario_id": "Scenario_E",
+        "target_slot": "image_model",
+        "expected_winner": "EfficientNet-B0",
+        "actual_winner": "EfficientNet-B0",
+        "winning_score": 0.7847,
+        "passed": true
+      }
+    ]
+  }
+}

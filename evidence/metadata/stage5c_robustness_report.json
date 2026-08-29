@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-29T05:27:12.102703+00:00",
+  "timestamp": "2026-08-29T08:26:33.860099+00:00",
   "candidate_mean_roc_auc": 0.9751,
   "default_xgb_mean_roc_auc": 0.9704,
   "overall_mean_margin": 0.0047,
