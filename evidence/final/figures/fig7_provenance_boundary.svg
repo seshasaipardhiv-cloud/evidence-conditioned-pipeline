@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-08-29T10:37:11.482368</dc:date>
+    <dc:date>2026-08-29T10:57:32.337026</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -32,7 +32,7 @@ z
    <g id="line2d_1">
     <path d="M 45.549273 216 
 L 740.534727 216 
-" clip-path="url(#paf06e7a20d)" style="fill: none; stroke: #cbd5e0; stroke-width: 1.5; stroke-linecap: square"/>
+" clip-path="url(#pa4b95b5a69)" style="fill: none; stroke: #cbd5e0; stroke-width: 1.5; stroke-linecap: square"/>
    </g>
    <g id="text_1">
     <!-- Figure 7: Synthesized Pipeline Component Provenance &amp; Evidence Boundary -->
@@ -3568,7 +3568,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="paf06e7a20d">
+  <clipPath id="pa4b95b5a69">
    <rect x="10.8" y="10.8" width="764.484" height="410.4"/>
   </clipPath>
  </defs>

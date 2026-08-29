@@ -1,6 +1,6 @@
 {
   "experiment_stage": "stage11",
-  "timestamp": "2026-08-29T05:04:27.739912+00:00",
+  "timestamp": "2026-08-29T05:25:40.234533+00:00",
   "seeds": [
     42,
     100,
@@ -24,7 +24,7 @@
       "mean_precision": 0.9801,
       "mean_recall": 0.9429,
       "mean_f1_score": 0.9611,
-      "mean_runtime_sec": 0.1822,
+      "mean_runtime_sec": 0.0986,
       "per_seed_roc_auc": {
         "42": 0.9888,
         "100": 0.9609,
@@ -47,7 +47,7 @@
       "mean_precision": 0.9801,
       "mean_recall": 0.9429,
       "mean_f1_score": 0.9611,
-      "mean_runtime_sec": 0.0363,
+      "mean_runtime_sec": 0.0289,
       "per_seed_roc_auc": {
         "42": 0.9783,
         "100": 0.9643,
@@ -70,7 +70,7 @@
       "mean_precision": 0.9801,
       "mean_recall": 0.9429,
       "mean_f1_score": 0.9611,
-      "mean_runtime_sec": 0.1295,
+      "mean_runtime_sec": 0.0958,
       "per_seed_roc_auc": {
         "42": 0.9757,
         "100": 0.9607,
@@ -168,17 +168,17 @@
       {
         "rank": 1,
         "model": "Default XGBoost",
-        "runtime_sec": 0.0363
+        "runtime_sec": 0.0289
       },
       {
         "rank": 2,
         "model": "Random Forest",
-        "runtime_sec": 0.1295
+        "runtime_sec": 0.0958
       },
       {
         "rank": 3,
         "model": "Evidence-Conditioned Candidate",
-        "runtime_sec": 0.1822
+        "runtime_sec": 0.0986
       }
     ]
   },
