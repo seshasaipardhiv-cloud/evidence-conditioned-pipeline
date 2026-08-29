@@ -1,0 +1,2141 @@
+{
+  "head": {
+    "canonical_name": "head",
+    "entity_type": "FEATURE_REPR",
+    "mechanism_category": "Representation",
+    "composite_score": 0.6869,
+    "ner_confidence_score": 0.4402,
+    "relation_confidence_score": 0.4656,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.6131,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 2,
+    "supporting_paper_ids": [
+      "paper_41353186",
+      "paper_38396486"
+    ],
+    "supporting_pmids": [
+      "41353186",
+      "38396486"
+    ],
+    "supporting_dois": [
+      "10.1186/s13040-025-00495-0",
+      "10.3390/diagnostics14040448"
+    ],
+    "total_mention_count": 2,
+    "participating_relation_count": 3,
+    "selection_rationale": "Supported by 2 paper(s) with mean SciBERT confidence 0.440, 3 relation link(s), and composite score 0.6869.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "image": {
+    "canonical_name": "image",
+    "entity_type": "DATASET",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.7199,
+    "ner_confidence_score": 0.6098,
+    "relation_confidence_score": 0.4034,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.6131,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 2,
+    "supporting_paper_ids": [
+      "paper_41353186",
+      "paper_38396486"
+    ],
+    "supporting_pmids": [
+      "41353186",
+      "38396486"
+    ],
+    "supporting_dois": [
+      "10.1186/s13040-025-00495-0",
+      "10.3390/diagnostics14040448"
+    ],
+    "total_mention_count": 6,
+    "participating_relation_count": 15,
+    "selection_rationale": "Supported by 2 paper(s) with mean SciBERT confidence 0.610, 15 relation link(s), and composite score 0.7199.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "hn": {
+    "canonical_name": "HN",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6195,
+    "ner_confidence_score": 0.3734,
+    "relation_confidence_score": 0.3544,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_38396486"
+    ],
+    "supporting_pmids": [
+      "38396486"
+    ],
+    "supporting_dois": [
+      "10.3390/diagnostics14040448"
+    ],
+    "total_mention_count": 2,
+    "participating_relation_count": 2,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.373, 2 relation link(s), and composite score 0.6195.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "text": {
+    "canonical_name": "text",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6817,
+    "ner_confidence_score": 0.4809,
+    "relation_confidence_score": 0.3635,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.6131,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 2,
+    "supporting_paper_ids": [
+      "paper_41353186",
+      "paper_38396486"
+    ],
+    "supporting_pmids": [
+      "41353186",
+      "38396486"
+    ],
+    "supporting_dois": [
+      "10.1186/s13040-025-00495-0",
+      "10.3390/diagnostics14040448"
+    ],
+    "total_mention_count": 5,
+    "participating_relation_count": 12,
+    "selection_rationale": "Supported by 2 paper(s) with mean SciBERT confidence 0.481, 12 relation link(s), and composite score 0.6817.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "cross-attention": {
+    "canonical_name": "cross-attention",
+    "entity_type": "FUSION",
+    "mechanism_category": "Fusion",
+    "composite_score": 0.7786,
+    "ner_confidence_score": 0.9853,
+    "relation_confidence_score": 0.3953,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_38396486"
+    ],
+    "supporting_pmids": [
+      "38396486"
+    ],
+    "supporting_dois": [
+      "10.3390/diagnostics14040448"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 4,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.985, 4 relation link(s), and composite score 0.7786.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "pet": {
+    "canonical_name": "PET",
+    "entity_type": "PREPROCESSING",
+    "mechanism_category": "Preprocessing",
+    "composite_score": 0.5706,
+    "ner_confidence_score": 0.2439,
+    "relation_confidence_score": 0.2439,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_38396486"
+    ],
+    "supporting_pmids": [
+      "38396486"
+    ],
+    "supporting_dois": [
+      "10.3390/diagnostics14040448"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 4,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.244, 4 relation link(s), and composite score 0.5706.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "comme": {
+    "canonical_name": "comme",
+    "entity_type": "DATASET",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6793,
+    "ner_confidence_score": 0.525,
+    "relation_confidence_score": 0.5,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_38396486"
+    ],
+    "supporting_pmids": [
+      "38396486"
+    ],
+    "supporting_dois": [
+      "10.3390/diagnostics14040448"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 0,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.525, 0 relation link(s), and composite score 0.6793.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "metastasis": {
+    "canonical_name": "metastasis",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6981,
+    "ner_confidence_score": 0.6934,
+    "relation_confidence_score": 0.3446,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_38396486"
+    ],
+    "supporting_pmids": [
+      "38396486"
+    ],
+    "supporting_dois": [
+      "10.3390/diagnostics14040448"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.693, 1 relation link(s), and composite score 0.6981.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "recurrence": {
+    "canonical_name": "recurrence",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6109,
+    "ner_confidence_score": 0.3446,
+    "relation_confidence_score": 0.3446,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_38396486"
+    ],
+    "supporting_pmids": [
+      "38396486"
+    ],
+    "supporting_dois": [
+      "10.3390/diagnostics14040448"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.345, 1 relation link(s), and composite score 0.6109.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "ct": {
+    "canonical_name": "CT",
+    "entity_type": "DATASET",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6279,
+    "ner_confidence_score": 0.3872,
+    "relation_confidence_score": 0.3872,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_38396486"
+    ],
+    "supporting_pmids": [
+      "38396486"
+    ],
+    "supporting_dois": [
+      "10.3390/diagnostics14040448"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.387, 1 relation link(s), and composite score 0.6279.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "textual": {
+    "canonical_name": "textual",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.7611,
+    "ner_confidence_score": 0.9198,
+    "relation_confidence_score": 0.3872,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_38396486"
+    ],
+    "supporting_pmids": [
+      "38396486"
+    ],
+    "supporting_dois": [
+      "10.3390/diagnostics14040448"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.920, 1 relation link(s), and composite score 0.7611.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "survival": {
+    "canonical_name": "survival",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6802,
+    "ner_confidence_score": 0.5287,
+    "relation_confidence_score": 0.5,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_38396486"
+    ],
+    "supporting_pmids": [
+      "38396486"
+    ],
+    "supporting_dois": [
+      "10.3390/diagnostics14040448"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 0,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.529, 0 relation link(s), and composite score 0.6802.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "csp": {
+    "canonical_name": "csP",
+    "entity_type": "OPTIMIZATION",
+    "mechanism_category": "Regularization",
+    "composite_score": 0.6451,
+    "ner_confidence_score": 0.6444,
+    "relation_confidence_score": 0.4731,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_39074400"
+    ],
+    "supporting_pmids": [
+      "39074400"
+    ],
+    "supporting_dois": [
+      "10.1097/RLI.0000000000001102"
+    ],
+    "total_mention_count": 5,
+    "participating_relation_count": 7,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.644, 7 relation link(s), and composite score 0.6451.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "prostate": {
+    "canonical_name": "prostate",
+    "entity_type": "FEATURE_REPR",
+    "mechanism_category": "Representation",
+    "composite_score": 0.7071,
+    "ner_confidence_score": 0.7896,
+    "relation_confidence_score": 0.6443,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_39074400"
+    ],
+    "supporting_pmids": [
+      "39074400"
+    ],
+    "supporting_dois": [
+      "10.1097/RLI.0000000000001102"
+    ],
+    "total_mention_count": 2,
+    "participating_relation_count": 5,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.790, 5 relation link(s), and composite score 0.7071.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "clinical": {
+    "canonical_name": "Clinical",
+    "entity_type": "PREPROCESSING",
+    "mechanism_category": "Preprocessing",
+    "composite_score": 0.78,
+    "ner_confidence_score": 0.8539,
+    "relation_confidence_score": 0.6234,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41353186"
+    ],
+    "supporting_pmids": [
+      "41353186"
+    ],
+    "supporting_dois": [
+      "10.1186/s13040-025-00495-0"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 2,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.854, 2 relation link(s), and composite score 0.7800.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "mri": {
+    "canonical_name": "MRI",
+    "entity_type": "FEATURE_REPR",
+    "mechanism_category": "Representation",
+    "composite_score": 0.5172,
+    "ner_confidence_score": 0.2573,
+    "relation_confidence_score": 0.2654,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_39074400"
+    ],
+    "supporting_pmids": [
+      "39074400"
+    ],
+    "supporting_dois": [
+      "10.1097/RLI.0000000000001102"
+    ],
+    "total_mention_count": 2,
+    "participating_relation_count": 7,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.257, 7 relation link(s), and composite score 0.5172.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "dl": {
+    "canonical_name": "DL",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6295,
+    "ner_confidence_score": 0.579,
+    "relation_confidence_score": 0.4781,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_39074400"
+    ],
+    "supporting_pmids": [
+      "39074400"
+    ],
+    "supporting_dois": [
+      "10.1097/RLI.0000000000001102"
+    ],
+    "total_mention_count": 3,
+    "participating_relation_count": 9,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.579, 9 relation link(s), and composite score 0.6295.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "dl model": {
+    "canonical_name": "DL model",
+    "entity_type": "MODEL_ARCH",
+    "mechanism_category": "Representation",
+    "composite_score": 0.5954,
+    "ner_confidence_score": 0.4567,
+    "relation_confidence_score": 0.4545,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_39074400"
+    ],
+    "supporting_pmids": [
+      "39074400"
+    ],
+    "supporting_dois": [
+      "10.1097/RLI.0000000000001102"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.457, 1 relation link(s), and composite score 0.5954.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "suspicion": {
+    "canonical_name": "suspicion",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.698,
+    "ner_confidence_score": 0.7852,
+    "relation_confidence_score": 0.5912,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_39074400"
+    ],
+    "supporting_pmids": [
+      "39074400"
+    ],
+    "supporting_dois": [
+      "10.1097/RLI.0000000000001102"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 4,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.785, 4 relation link(s), and composite score 0.6980.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "early": {
+    "canonical_name": "early",
+    "entity_type": "FUSION",
+    "mechanism_category": "Fusion",
+    "composite_score": 0.7518,
+    "ner_confidence_score": 0.8468,
+    "relation_confidence_score": 0.8468,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_39074400"
+    ],
+    "supporting_pmids": [
+      "39074400"
+    ],
+    "supporting_dois": [
+      "10.1097/RLI.0000000000001102"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.847, 1 relation link(s), and composite score 0.7518.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "late": {
+    "canonical_name": "late",
+    "entity_type": "FUSION",
+    "mechanism_category": "Fusion",
+    "composite_score": 0.7887,
+    "ner_confidence_score": 0.9946,
+    "relation_confidence_score": 0.8468,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_39074400"
+    ],
+    "supporting_pmids": [
+      "39074400"
+    ],
+    "supporting_dois": [
+      "10.1097/RLI.0000000000001102"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.995, 1 relation link(s), and composite score 0.7887.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "diagnostic": {
+    "canonical_name": "diagnostic",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6803,
+    "ner_confidence_score": 0.7691,
+    "relation_confidence_score": 0.5,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_39074400"
+    ],
+    "supporting_pmids": [
+      "39074400"
+    ],
+    "supporting_dois": [
+      "10.1097/RLI.0000000000001102"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 0,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.769, 0 relation link(s), and composite score 0.6803.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "pi": {
+    "canonical_name": "PI",
+    "entity_type": "DATASET",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.7101,
+    "ner_confidence_score": 0.7427,
+    "relation_confidence_score": 0.7427,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_39074400"
+    ],
+    "supporting_pmids": [
+      "39074400"
+    ],
+    "supporting_dois": [
+      "10.1097/RLI.0000000000001102"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.743, 1 relation link(s), and composite score 0.7101.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "rad": {
+    "canonical_name": "RAD",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.7195,
+    "ner_confidence_score": 0.7803,
+    "relation_confidence_score": 0.7427,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_39074400"
+    ],
+    "supporting_pmids": [
+      "39074400"
+    ],
+    "supporting_dois": [
+      "10.1097/RLI.0000000000001102"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.780, 1 relation link(s), and composite score 0.7195.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "internally": {
+    "canonical_name": "Internally",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.7342,
+    "ner_confidence_score": 0.8354,
+    "relation_confidence_score": 0.7487,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_39074400"
+    ],
+    "supporting_pmids": [
+      "39074400"
+    ],
+    "supporting_dois": [
+      "10.1097/RLI.0000000000001102"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 2,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.835, 2 relation link(s), and composite score 0.7342.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "dl suspicion": {
+    "canonical_name": "DL suspicion",
+    "entity_type": "MODEL_ARCH",
+    "mechanism_category": "Representation",
+    "composite_score": 0.6794,
+    "ner_confidence_score": 0.6919,
+    "relation_confidence_score": 0.6229,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_39074400"
+    ],
+    "supporting_pmids": [
+      "39074400"
+    ],
+    "supporting_dois": [
+      "10.1097/RLI.0000000000001102"
+    ],
+    "total_mention_count": 3,
+    "participating_relation_count": 6,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.692, 6 relation link(s), and composite score 0.6794.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "early fusion": {
+    "canonical_name": "early fusion",
+    "entity_type": "FUSION",
+    "mechanism_category": "Fusion",
+    "composite_score": 0.7753,
+    "ner_confidence_score": 0.9997,
+    "relation_confidence_score": 0.7487,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_39074400"
+    ],
+    "supporting_pmids": [
+      "39074400"
+    ],
+    "supporting_dois": [
+      "10.1097/RLI.0000000000001102"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 2,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 1.000, 2 relation link(s), and composite score 0.7753.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "auc": {
+    "canonical_name": "AUC",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.7525,
+    "ner_confidence_score": 0.9109,
+    "relation_confidence_score": 0.7452,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_39074400"
+    ],
+    "supporting_pmids": [
+      "39074400"
+    ],
+    "supporting_dois": [
+      "10.1097/RLI.0000000000001102"
+    ],
+    "total_mention_count": 2,
+    "participating_relation_count": 4,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.911, 4 relation link(s), and composite score 0.7525.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "late fusion": {
+    "canonical_name": "Late fusion",
+    "entity_type": "FUSION",
+    "mechanism_category": "Fusion",
+    "composite_score": 0.7803,
+    "ner_confidence_score": 0.9025,
+    "relation_confidence_score": 0.5446,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40325104"
+    ],
+    "supporting_pmids": [
+      "40325104"
+    ],
+    "supporting_dois": [
+      "10.1038/s41698-025-00917-6"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 4,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.902, 4 relation link(s), and composite score 0.7803.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "external": {
+    "canonical_name": "external",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6939,
+    "ner_confidence_score": 0.8101,
+    "relation_confidence_score": 0.5225,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_39074400"
+    ],
+    "supporting_pmids": [
+      "39074400"
+    ],
+    "supporting_dois": [
+      "10.1097/RLI.0000000000001102"
+    ],
+    "total_mention_count": 2,
+    "participating_relation_count": 4,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.810, 4 relation link(s), and composite score 0.6939.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "ai": {
+    "canonical_name": "AI",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6388,
+    "ner_confidence_score": 0.5172,
+    "relation_confidence_score": 0.417,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.6131,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 2,
+    "supporting_paper_ids": [
+      "paper_39074400",
+      "paper_40449048"
+    ],
+    "supporting_pmids": [
+      "40449048",
+      "39074400"
+    ],
+    "supporting_dois": [
+      "10.1016/j.compbiomed.2025.110488",
+      "10.1097/RLI.0000000000001102"
+    ],
+    "total_mention_count": 3,
+    "participating_relation_count": 4,
+    "selection_rationale": "Supported by 2 paper(s) with mean SciBERT confidence 0.517, 4 relation link(s), and composite score 0.6388.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "radiol": {
+    "canonical_name": "radiol",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.5491,
+    "ner_confidence_score": 0.3402,
+    "relation_confidence_score": 0.3402,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_39074400"
+    ],
+    "supporting_pmids": [
+      "39074400"
+    ],
+    "supporting_dois": [
+      "10.1097/RLI.0000000000001102"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 2,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.340, 2 relation link(s), and composite score 0.5491.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "genotyping": {
+    "canonical_name": "genotyping",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6663,
+    "ner_confidence_score": 0.4733,
+    "relation_confidence_score": 0.5,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40325104"
+    ],
+    "supporting_pmids": [
+      "40325104"
+    ],
+    "supporting_dois": [
+      "10.1038/s41698-025-00917-6"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 0,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.473, 0 relation link(s), and composite score 0.6663.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "cancer": {
+    "canonical_name": "Cancer",
+    "entity_type": "DATASET",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.7478,
+    "ner_confidence_score": 0.6303,
+    "relation_confidence_score": 0.5548,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.6131,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 2,
+    "supporting_paper_ids": [
+      "paper_41131352",
+      "paper_40325104"
+    ],
+    "supporting_pmids": [
+      "41131352",
+      "40325104"
+    ],
+    "supporting_dois": [
+      "10.1038/s41698-025-00917-6",
+      "10.1038/s41746-025-02003-4"
+    ],
+    "total_mention_count": 2,
+    "participating_relation_count": 10,
+    "selection_rationale": "Supported by 2 paper(s) with mean SciBERT confidence 0.630, 10 relation link(s), and composite score 0.7478.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "tcga": {
+    "canonical_name": "TCGA",
+    "entity_type": "DATASET",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.8761,
+    "ner_confidence_score": 0.9992,
+    "relation_confidence_score": 0.635,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.7737,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 3,
+    "supporting_paper_ids": [
+      "paper_41131352",
+      "paper_40325104",
+      "paper_41353186"
+    ],
+    "supporting_pmids": [
+      "41131352",
+      "41353186",
+      "40325104"
+    ],
+    "supporting_dois": [
+      "10.1186/s13040-025-00495-0",
+      "10.1038/s41698-025-00917-6",
+      "10.1038/s41746-025-02003-4"
+    ],
+    "total_mention_count": 4,
+    "participating_relation_count": 18,
+    "selection_rationale": "Supported by 3 paper(s) with mean SciBERT confidence 0.999, 18 relation link(s), and composite score 0.8761.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "transcripts": {
+    "canonical_name": "transcripts",
+    "entity_type": "FEATURE_REPR",
+    "mechanism_category": "Representation",
+    "composite_score": 0.7582,
+    "ner_confidence_score": 0.7143,
+    "relation_confidence_score": 0.7109,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40325104"
+    ],
+    "supporting_pmids": [
+      "40325104"
+    ],
+    "supporting_dois": [
+      "10.1038/s41698-025-00917-6"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 3,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.714, 3 relation link(s), and composite score 0.7582.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "proteins": {
+    "canonical_name": "proteins",
+    "entity_type": "FEATURE_REPR",
+    "mechanism_category": "Representation",
+    "composite_score": 0.8128,
+    "ner_confidence_score": 0.8961,
+    "relation_confidence_score": 0.7715,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40325104"
+    ],
+    "supporting_pmids": [
+      "40325104"
+    ],
+    "supporting_dois": [
+      "10.1038/s41698-025-00917-6"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 3,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.896, 3 relation link(s), and composite score 0.8128.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "lung": {
+    "canonical_name": "lung",
+    "entity_type": "DATASET",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6765,
+    "ner_confidence_score": 0.533,
+    "relation_confidence_score": 0.4417,
+    "full_text_score": 0.8,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.6131,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 2,
+    "supporting_paper_ids": [
+      "paper_40325104",
+      "paper_40449048"
+    ],
+    "supporting_pmids": [
+      "40449048",
+      "40325104"
+    ],
+    "supporting_dois": [
+      "10.1038/s41698-025-00917-6",
+      "10.1016/j.compbiomed.2025.110488"
+    ],
+    "total_mention_count": 2,
+    "participating_relation_count": 7,
+    "selection_rationale": "Supported by 2 paper(s) with mean SciBERT confidence 0.533, 7 relation link(s), and composite score 0.6765.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "breast": {
+    "canonical_name": "breast",
+    "entity_type": "DATASET",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.5781,
+    "ner_confidence_score": 0.2628,
+    "relation_confidence_score": 0.2628,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40325104"
+    ],
+    "supporting_pmids": [
+      "40325104"
+    ],
+    "supporting_dois": [
+      "10.1038/s41698-025-00917-6"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 4,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.263, 4 relation link(s), and composite score 0.5781.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "pan-cancer": {
+    "canonical_name": "pan-cancer",
+    "entity_type": "DATASET",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6517,
+    "ner_confidence_score": 0.4658,
+    "relation_confidence_score": 0.415,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40325104"
+    ],
+    "supporting_pmids": [
+      "40325104"
+    ],
+    "supporting_dois": [
+      "10.1038/s41698-025-00917-6"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 4,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.466, 4 relation link(s), and composite score 0.6517.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "reusable": {
+    "canonical_name": "reusable",
+    "entity_type": "HYPERPARAMETER",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6724,
+    "ner_confidence_score": 0.4973,
+    "relation_confidence_score": 0.5,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40325104"
+    ],
+    "supporting_pmids": [
+      "40325104"
+    ],
+    "supporting_dois": [
+      "10.1038/s41698-025-00917-6"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 0,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.497, 0 relation link(s), and composite score 0.6724.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "artificial": {
+    "canonical_name": "Artificial",
+    "entity_type": "REGULARIZATION",
+    "mechanism_category": "Regularization",
+    "composite_score": 0.5776,
+    "ner_confidence_score": 0.3583,
+    "relation_confidence_score": 0.5,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40449048"
+    ],
+    "supporting_pmids": [
+      "40449048"
+    ],
+    "supporting_dois": [
+      "10.1016/j.compbiomed.2025.110488"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 0,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.358, 0 relation link(s), and composite score 0.5776.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "cnn": {
+    "canonical_name": "CNN",
+    "entity_type": "MODEL_ARCH",
+    "mechanism_category": "Representation",
+    "composite_score": 0.5503,
+    "ner_confidence_score": 0.3433,
+    "relation_confidence_score": 0.3433,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40449048"
+    ],
+    "supporting_pmids": [
+      "40449048"
+    ],
+    "supporting_dois": [
+      "10.1016/j.compbiomed.2025.110488"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 3,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.343, 3 relation link(s), and composite score 0.5503.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "large": {
+    "canonical_name": "large",
+    "entity_type": "PREPROCESSING",
+    "mechanism_category": "Preprocessing",
+    "composite_score": 0.6922,
+    "ner_confidence_score": 0.4552,
+    "relation_confidence_score": 0.4492,
+    "full_text_score": 0.8667,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.7737,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 3,
+    "supporting_paper_ids": [
+      "paper_41131352",
+      "paper_40449048",
+      "paper_41353186"
+    ],
+    "supporting_pmids": [
+      "40449048",
+      "41353186",
+      "41131352"
+    ],
+    "supporting_dois": [
+      "10.1186/s13040-025-00495-0",
+      "10.1016/j.compbiomed.2025.110488",
+      "10.1038/s41746-025-02003-4"
+    ],
+    "total_mention_count": 3,
+    "participating_relation_count": 12,
+    "selection_rationale": "Supported by 3 paper(s) with mean SciBERT confidence 0.455, 12 relation link(s), and composite score 0.6922.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "weighted accuracy": {
+    "canonical_name": "weighted accuracy",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.692,
+    "ner_confidence_score": 0.862,
+    "relation_confidence_score": 0.4229,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40449048"
+    ],
+    "supporting_pmids": [
+      "40449048"
+    ],
+    "supporting_dois": [
+      "10.1016/j.compbiomed.2025.110488"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 3,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.862, 3 relation link(s), and composite score 0.6920.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "grad": {
+    "canonical_name": "Grad",
+    "entity_type": "OPTIMIZATION",
+    "mechanism_category": "Regularization",
+    "composite_score": 0.6244,
+    "ner_confidence_score": 0.7311,
+    "relation_confidence_score": 0.1906,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40449048"
+    ],
+    "supporting_pmids": [
+      "40449048"
+    ],
+    "supporting_dois": [
+      "10.1016/j.compbiomed.2025.110488"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.731, 1 relation link(s), and composite score 0.6244.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "cam": {
+    "canonical_name": "CAM",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.4893,
+    "ner_confidence_score": 0.1906,
+    "relation_confidence_score": 0.1906,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40449048"
+    ],
+    "supporting_pmids": [
+      "40449048"
+    ],
+    "supporting_dois": [
+      "10.1016/j.compbiomed.2025.110488"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.191, 1 relation link(s), and composite score 0.4893.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "demographic": {
+    "canonical_name": "demographic",
+    "entity_type": "OPTIMIZATION",
+    "mechanism_category": "Regularization",
+    "composite_score": 0.5312,
+    "ner_confidence_score": 0.2954,
+    "relation_confidence_score": 0.2954,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40449048"
+    ],
+    "supporting_pmids": [
+      "40449048"
+    ],
+    "supporting_dois": [
+      "10.1016/j.compbiomed.2025.110488"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.295, 1 relation link(s), and composite score 0.5312.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "symptomatic": {
+    "canonical_name": "symptomatic",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.5753,
+    "ner_confidence_score": 0.4719,
+    "relation_confidence_score": 0.2954,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40449048"
+    ],
+    "supporting_pmids": [
+      "40449048"
+    ],
+    "supporting_dois": [
+      "10.1016/j.compbiomed.2025.110488"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.472, 1 relation link(s), and composite score 0.5753.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "shap": {
+    "canonical_name": "SHAP",
+    "entity_type": "OPTIMIZATION",
+    "mechanism_category": "Regularization",
+    "composite_score": 0.6123,
+    "ner_confidence_score": 0.4981,
+    "relation_confidence_score": 0.4981,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40449048"
+    ],
+    "supporting_pmids": [
+      "40449048"
+    ],
+    "supporting_dois": [
+      "10.1016/j.compbiomed.2025.110488"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 2,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.498, 2 relation link(s), and composite score 0.6123.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "ann": {
+    "canonical_name": "ANN",
+    "entity_type": "MODEL_ARCH",
+    "mechanism_category": "Representation",
+    "composite_score": 0.7329,
+    "ner_confidence_score": 0.8791,
+    "relation_confidence_score": 0.6672,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40449048"
+    ],
+    "supporting_pmids": [
+      "40449048"
+    ],
+    "supporting_dois": [
+      "10.1016/j.compbiomed.2025.110488"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 2,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.879, 2 relation link(s), and composite score 0.7329.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "spatial": {
+    "canonical_name": "spatial",
+    "entity_type": "FEATURE_REPR",
+    "mechanism_category": "Representation",
+    "composite_score": 0.5998,
+    "ner_confidence_score": 0.467,
+    "relation_confidence_score": 0.467,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40449048"
+    ],
+    "supporting_pmids": [
+      "40449048"
+    ],
+    "supporting_dois": [
+      "10.1016/j.compbiomed.2025.110488"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 2,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.467, 2 relation link(s), and composite score 0.5998.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "interpret": {
+    "canonical_name": "interpret",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6592,
+    "ner_confidence_score": 0.4568,
+    "relation_confidence_score": 0.4538,
+    "full_text_score": 0.8,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.6131,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 2,
+    "supporting_paper_ids": [
+      "paper_40449048",
+      "paper_41353186"
+    ],
+    "supporting_pmids": [
+      "40449048",
+      "41353186"
+    ],
+    "supporting_dois": [
+      "10.1186/s13040-025-00495-0",
+      "10.1016/j.compbiomed.2025.110488"
+    ],
+    "total_mention_count": 2,
+    "participating_relation_count": 4,
+    "selection_rationale": "Supported by 2 paper(s) with mean SciBERT confidence 0.457, 4 relation link(s), and composite score 0.6592.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "honeybee": {
+    "canonical_name": "HONeYBEE",
+    "entity_type": "MODEL_ARCH",
+    "mechanism_category": "Representation",
+    "composite_score": 0.6921,
+    "ner_confidence_score": 0.5764,
+    "relation_confidence_score": 0.5,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41131352"
+    ],
+    "supporting_pmids": [
+      "41131352"
+    ],
+    "supporting_dois": [
+      "10.1038/s41746-025-02003-4"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 0,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.576, 0 relation link(s), and composite score 0.6921.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "whole": {
+    "canonical_name": "whole",
+    "entity_type": "PREPROCESSING",
+    "mechanism_category": "Preprocessing",
+    "composite_score": 0.7226,
+    "ner_confidence_score": 0.803,
+    "relation_confidence_score": 0.3253,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41131352"
+    ],
+    "supporting_pmids": [
+      "41131352"
+    ],
+    "supporting_dois": [
+      "10.1038/s41746-025-02003-4"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.803, 1 relation link(s), and composite score 0.7226.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "radiology": {
+    "canonical_name": "radiology",
+    "entity_type": "OPTIMIZATION",
+    "mechanism_category": "Regularization",
+    "composite_score": 0.6032,
+    "ner_confidence_score": 0.3253,
+    "relation_confidence_score": 0.3253,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41131352"
+    ],
+    "supporting_pmids": [
+      "41131352"
+    ],
+    "supporting_dois": [
+      "10.1038/s41746-025-02003-4"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.325, 1 relation link(s), and composite score 0.6032.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "atlas": {
+    "canonical_name": "Atlas",
+    "entity_type": "DATASET",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6138,
+    "ner_confidence_score": 0.355,
+    "relation_confidence_score": 0.347,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41131352"
+    ],
+    "supporting_pmids": [
+      "41131352"
+    ],
+    "supporting_dois": [
+      "10.1038/s41746-025-02003-4"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 7,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.355, 7 relation link(s), and composite score 0.6138.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "single": {
+    "canonical_name": "single",
+    "entity_type": "PREPROCESSING",
+    "mechanism_category": "Preprocessing",
+    "composite_score": 0.766,
+    "ner_confidence_score": 0.8112,
+    "relation_confidence_score": 0.6013,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41131352"
+    ],
+    "supporting_pmids": [
+      "41131352"
+    ],
+    "supporting_dois": [
+      "10.1038/s41746-025-02003-4"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 7,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.811, 7 relation link(s), and composite score 0.7660.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "precision": {
+    "canonical_name": "precision",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.7632,
+    "ner_confidence_score": 0.8014,
+    "relation_confidence_score": 0.5985,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41131352"
+    ],
+    "supporting_pmids": [
+      "41131352"
+    ],
+    "supporting_dois": [
+      "10.1038/s41746-025-02003-4"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 7,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.801, 7 relation link(s), and composite score 0.7632.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "10": {
+    "canonical_name": "10",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6919,
+    "ner_confidence_score": 0.5747,
+    "relation_confidence_score": 0.5013,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41131352"
+    ],
+    "supporting_pmids": [
+      "41131352"
+    ],
+    "supporting_dois": [
+      "10.1038/s41746-025-02003-4"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 7,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.575, 7 relation link(s), and composite score 0.6919.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "retrieval": {
+    "canonical_name": "retrieval",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.7939,
+    "ner_confidence_score": 0.9139,
+    "relation_confidence_score": 0.6159,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41131352"
+    ],
+    "supporting_pmids": [
+      "41131352"
+    ],
+    "supporting_dois": [
+      "10.1038/s41746-025-02003-4"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 7,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.914, 7 relation link(s), and composite score 0.7939.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "survival prediction concordance indices": {
+    "canonical_name": "survival prediction concordance indices",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.7501,
+    "ner_confidence_score": 0.8081,
+    "relation_confidence_score": 0.5,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41131352"
+    ],
+    "supporting_pmids": [
+      "41131352"
+    ],
+    "supporting_dois": [
+      "10.1038/s41746-025-02003-4"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 0,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.808, 0 relation link(s), and composite score 0.7501.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "general-purpose": {
+    "canonical_name": "general-purpose",
+    "entity_type": "PREPROCESSING",
+    "mechanism_category": "Preprocessing",
+    "composite_score": 0.7313,
+    "ner_confidence_score": 0.7295,
+    "relation_confidence_score": 0.5057,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41131352"
+    ],
+    "supporting_pmids": [
+      "41131352"
+    ],
+    "supporting_dois": [
+      "10.1038/s41746-025-02003-4"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 3,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.730, 3 relation link(s), and composite score 0.7313.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "medical": {
+    "canonical_name": "medical",
+    "entity_type": "MODEL_ARCH",
+    "mechanism_category": "Representation",
+    "composite_score": 0.6254,
+    "ner_confidence_score": 0.381,
+    "relation_confidence_score": 0.381,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41131352"
+    ],
+    "supporting_pmids": [
+      "41131352"
+    ],
+    "supporting_dois": [
+      "10.1038/s41746-025-02003-4"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 3,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.381, 3 relation link(s), and composite score 0.6254.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "fine": {
+    "canonical_name": "fine",
+    "entity_type": "SAMPLING",
+    "mechanism_category": "Sampling",
+    "composite_score": 0.7559,
+    "ner_confidence_score": 0.828,
+    "relation_confidence_score": 0.5057,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41131352"
+    ],
+    "supporting_pmids": [
+      "41131352"
+    ],
+    "supporting_dois": [
+      "10.1038/s41746-025-02003-4"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 3,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.828, 3 relation link(s), and composite score 0.7559.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "histology": {
+    "canonical_name": "histology",
+    "entity_type": "FEATURE_REPR",
+    "mechanism_category": "Representation",
+    "composite_score": 0.6259,
+    "ner_confidence_score": 0.3116,
+    "relation_confidence_score": 0.5,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41353186"
+    ],
+    "supporting_pmids": [
+      "41353186"
+    ],
+    "supporting_dois": [
+      "10.1186/s13040-025-00495-0"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 0,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.312, 0 relation link(s), and composite score 0.6259.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "cal": {
+    "canonical_name": "CAL",
+    "entity_type": "OPTIMIZATION",
+    "mechanism_category": "Regularization",
+    "composite_score": 0.6211,
+    "ner_confidence_score": 0.3761,
+    "relation_confidence_score": 0.3606,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41353186"
+    ],
+    "supporting_pmids": [
+      "41353186"
+    ],
+    "supporting_dois": [
+      "10.1186/s13040-025-00495-0"
+    ],
+    "total_mention_count": 4,
+    "participating_relation_count": 12,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.376, 12 relation link(s), and composite score 0.6211.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "risk": {
+    "canonical_name": "risk",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.8029,
+    "ner_confidence_score": 0.9456,
+    "relation_confidence_score": 0.6234,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41353186"
+    ],
+    "supporting_pmids": [
+      "41353186"
+    ],
+    "supporting_dois": [
+      "10.1186/s13040-025-00495-0"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 2,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.946, 2 relation link(s), and composite score 0.8029.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "language": {
+    "canonical_name": "language",
+    "entity_type": "MODEL_ARCH",
+    "mechanism_category": "Representation",
+    "composite_score": 0.7322,
+    "ner_confidence_score": 0.7028,
+    "relation_confidence_score": 0.5567,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41353186"
+    ],
+    "supporting_pmids": [
+      "41353186"
+    ],
+    "supporting_dois": [
+      "10.1186/s13040-025-00495-0"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 6,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.703, 6 relation link(s), and composite score 0.7322.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "anchor": {
+    "canonical_name": "anchor",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.668,
+    "ner_confidence_score": 0.4965,
+    "relation_confidence_score": 0.4724,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41353186"
+    ],
+    "supporting_pmids": [
+      "41353186"
+    ],
+    "supporting_dois": [
+      "10.1186/s13040-025-00495-0"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 6,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.496, 6 relation link(s), and composite score 0.6680.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "few": {
+    "canonical_name": "few",
+    "entity_type": "PREPROCESSING",
+    "mechanism_category": "Preprocessing",
+    "composite_score": 0.6812,
+    "ner_confidence_score": 0.5341,
+    "relation_confidence_score": 0.4975,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41353186"
+    ],
+    "supporting_pmids": [
+      "41353186"
+    ],
+    "supporting_dois": [
+      "10.1186/s13040-025-00495-0"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 6,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.534, 6 relation link(s), and composite score 0.6812.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "shot": {
+    "canonical_name": "shot",
+    "entity_type": "OPTIMIZATION",
+    "mechanism_category": "Regularization",
+    "composite_score": 0.7514,
+    "ner_confidence_score": 0.7794,
+    "relation_confidence_score": 0.5567,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41353186"
+    ],
+    "supporting_pmids": [
+      "41353186"
+    ],
+    "supporting_dois": [
+      "10.1186/s13040-025-00495-0"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 6,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.779, 6 relation link(s), and composite score 0.7514.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "calm": {
+    "canonical_name": "CALM",
+    "entity_type": "MODEL_ARCH",
+    "mechanism_category": "Representation",
+    "composite_score": 0.7284,
+    "ner_confidence_score": 0.6794,
+    "relation_confidence_score": 0.5699,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41353186"
+    ],
+    "supporting_pmids": [
+      "41353186"
+    ],
+    "supporting_dois": [
+      "10.1186/s13040-025-00495-0"
+    ],
+    "total_mention_count": 3,
+    "participating_relation_count": 8,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.679, 8 relation link(s), and composite score 0.7284.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "c-index": {
+    "canonical_name": "C-index",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.818,
+    "ner_confidence_score": 0.9859,
+    "relation_confidence_score": 0.6565,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41353186"
+    ],
+    "supporting_pmids": [
+      "41353186"
+    ],
+    "supporting_dois": [
+      "10.1186/s13040-025-00495-0"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 4,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.986, 4 relation link(s), and composite score 0.8180.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "por": {
+    "canonical_name": "POR",
+    "entity_type": "FEATURE_REPR",
+    "mechanism_category": "Representation",
+    "composite_score": 0.581,
+    "ner_confidence_score": 0.2699,
+    "relation_confidence_score": 0.2699,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41353186"
+    ],
+    "supporting_pmids": [
+      "41353186"
+    ],
+    "supporting_dois": [
+      "10.1186/s13040-025-00495-0"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 2,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.270, 2 relation link(s), and composite score 0.5810.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "zero-shot": {
+    "canonical_name": "zero-shot",
+    "entity_type": "PREPROCESSING",
+    "mechanism_category": "Preprocessing",
+    "composite_score": 0.7252,
+    "ner_confidence_score": 0.6567,
+    "relation_confidence_score": 0.5865,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41353186"
+    ],
+    "supporting_pmids": [
+      "41353186"
+    ],
+    "supporting_dois": [
+      "10.1186/s13040-025-00495-0"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 2,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.657, 2 relation link(s), and composite score 0.7252.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "attention": {
+    "canonical_name": "Attention",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.7447,
+    "ner_confidence_score": 0.7437,
+    "relation_confidence_score": 0.5715,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41353186"
+    ],
+    "supporting_pmids": [
+      "41353186"
+    ],
+    "supporting_dois": [
+      "10.1186/s13040-025-00495-0"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 2,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.744, 2 relation link(s), and composite score 0.7447.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  },
+  "pathology": {
+    "canonical_name": "pathology",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6838,
+    "ner_confidence_score": 0.5483,
+    "relation_confidence_score": 0.4915,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.8,
+    "consistency_score": 0.9,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41353186"
+    ],
+    "supporting_pmids": [
+      "41353186"
+    ],
+    "supporting_dois": [
+      "10.1186/s13040-025-00495-0"
+    ],
+    "total_mention_count": 1,
+    "participating_relation_count": 2,
+    "selection_rationale": "Supported by 1 paper(s) with mean SciBERT confidence 0.548, 2 relation link(s), and composite score 0.6838.",
+    "scoring_version": "Stage2C_Deterministic_v1.0"
+  }
+}

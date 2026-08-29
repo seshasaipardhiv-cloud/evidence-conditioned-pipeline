@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-15T16:26:20.469334+00:00",
+  "timestamp": "2026-08-29T05:07:13.037313+00:00",
   "stage": "STAGE 6G \u2014 SCIENTIFIC IMPLEMENTATION\u2013MANUSCRIPT RECONCILIATION AUDIT",
   "overall_reconciliation_decision": "MANUSCRIPT_ONLY_RECONCILIATION",
   "decision_justification": "The empirical execution in Stage 5B is fully deterministic, reproducible, and mathematically valid, achieving 0.9751 ROC-AUC under median imputation, one-hot encoding, SMOTE, and regularized XGBoost. The primary scientific defects are purely descriptive: (1) labeling median imputation as MICE, (2) failing to explicitly state that cross-attention/ensembling were dormant during unimodal benchmarking, (3) omitting the exact post-adjuvant prediction epoch, and (4) framing the MLP baseline as a competitive deep learner. Because scientific integrity demands reporting what was ACTUALLY executed rather than retraining to fit a narrative, a rigorous manuscript-level reconciliation is the correct, honest, and scientifically sound path.",

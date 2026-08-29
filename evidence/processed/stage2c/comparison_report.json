@@ -1,0 +1,130 @@
+{
+  "comparison_title": "4-Way Automated Extraction & Pipeline Synthesis Evaluation",
+  "method_a_regex": {
+    "name": "Legacy Regex / Keyword",
+    "total_entities": 5,
+    "ontology_classes_covered": 3,
+    "entity_distribution": {
+      "Attention": 1,
+      "Fusion": 3,
+      "Representation": 1
+    },
+    "relations_supported": 0,
+    "evidence_scoring_supported": false,
+    "dynamic_pipeline_selection": false
+  },
+  "method_b_transformer_ner": {
+    "name": "SciBERT Transformer NER",
+    "model": "allenai/scibert_scivocab_uncased",
+    "total_entities": 124,
+    "ontology_classes_covered": 10,
+    "entity_distribution": {
+      "FEATURE_REPR": 9,
+      "DATASET": 19,
+      "EVALUATION": 41,
+      "FUSION": 7,
+      "PREPROCESSING": 9,
+      "OPTIMIZATION": 14,
+      "MODEL_ARCH": 18,
+      "SAMPLING": 5,
+      "HYPERPARAMETER": 1,
+      "REGULARIZATION": 1
+    },
+    "confidence_stats": {
+      "mean": 0.6166,
+      "min": 0.1906,
+      "max": 0.9997
+    },
+    "confidence_tier_distribution": {
+      "HIGH": 36,
+      "MEDIUM": 23,
+      "LOW": 65
+    },
+    "relations_supported": 0,
+    "evidence_scoring_supported": false,
+    "dynamic_pipeline_selection": false
+  },
+  "method_c_transformer_plus_relations": {
+    "name": "SciBERT NER + Heuristic Relations",
+    "total_entities": 124,
+    "total_relations": 160,
+    "relation_distribution": {
+      "CO_OCCURS": 118,
+      "HAS_PREPROCESSING": 8,
+      "HAS_OPTIMIZER": 8,
+      "HAS_EVALUATION": 16,
+      "HAS_FEATURE_REPR": 3,
+      "HAS_FUSION": 1,
+      "HAS_SAMPLING": 3,
+      "CO_PREPROCESSING_SAMPLING": 3
+    },
+    "evidence_scoring_supported": false,
+    "dynamic_pipeline_selection": false
+  },
+  "method_d_evidence_conditioned_synthesis": {
+    "name": "SciBERT NER + Relations + Automatic Evidence Ranking & Synthesis",
+    "total_entities": 124,
+    "total_relations": 160,
+    "total_scored_mechanisms": 78,
+    "synthesized_pipeline_id": "synth_pipeline_98020",
+    "selected_components_count": 9,
+    "overall_pipeline_evidence_score": 0.4867,
+    "selected_components": {
+      "tabular_model": "XGBoost",
+      "image_model": "ResNet-18",
+      "text_model": "PubMedBERT",
+      "preprocessing": "MICE Imputation",
+      "sampling": "SMOTE",
+      "fusion": "Late Fusion (Concatenation)",
+      "loss": "Focal Loss",
+      "optimizer": "AdamW",
+      "ensemble": "Validation-Gated Blend"
+    },
+    "dynamic_pipeline_selection": true
+  },
+  "controlled_evidence_switching": {
+    "all_decisions_switched_dynamically": true,
+    "component_switches": [
+      {
+        "component_slot": "tabular_model",
+        "scenario_a_selection": "XGBoost",
+        "scenario_a_score": 0.8732,
+        "scenario_b_selection": "Random Forest",
+        "scenario_b_score": 0.8785,
+        "decision_switched": true
+      },
+      {
+        "component_slot": "image_model",
+        "scenario_a_selection": "ResNet-18",
+        "scenario_a_score": 0.8787,
+        "scenario_b_selection": "EfficientNet-B0",
+        "scenario_b_score": 0.884,
+        "decision_switched": true
+      },
+      {
+        "component_slot": "sampling",
+        "scenario_a_selection": "SMOTE",
+        "scenario_a_score": 0.8405,
+        "scenario_b_selection": "ADASYN",
+        "scenario_b_score": 0.8395,
+        "decision_switched": true
+      },
+      {
+        "component_slot": "loss",
+        "scenario_a_selection": "Binary Cross-Entropy",
+        "scenario_a_score": 0.846,
+        "scenario_b_selection": "Focal Loss",
+        "scenario_b_score": 1.0625,
+        "decision_switched": true
+      },
+      {
+        "component_slot": "optimizer",
+        "scenario_a_selection": "AdamW",
+        "scenario_a_score": 0.7755,
+        "scenario_b_selection": "SGD with Momentum",
+        "scenario_b_score": 0.773,
+        "decision_switched": true
+      }
+    ]
+  }
+}

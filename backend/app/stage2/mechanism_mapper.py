@@ -1,5 +1,5 @@
 import re
-from typing import Optional, Tuple
+from typing import List, Optional, Tuple
 from backend.app.stage2.models import MechanismCategory
 
 
@@ -102,3 +102,89 @@ class MechanismMapper:
             return MechanismCategory.unmapped, raw_text
 
         return category, canonical
+
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Stage 2C: Transformer-Based Mechanism Mapper
+# ──────────────────────────────────────────────────────────────────────────────
+
+class TransformerMechanismMapper:
+    """
+    Mechanism mapper backed by the Stage 2C SciBERT NER pipeline.
+
+    This is NOT a wrapper around the legacy MechanismMapper.  It calls
+    TransformerNERPipeline directly and returns NEREntity records with:
+      - extraction_method = transformer_ner
+      - per-entity confidence scores
+      - review_flag for uncertain extractions
+      - full character-level provenance
+
+    Scientific rules:
+      - If the Transformer model is unavailable, returns empty list and logs
+        a clear error. NEVER calls regex extraction and labels it as NER.
+      - Entities below LOW_CONFIDENCE_THRESHOLD have review_flag = True.
+      - UNMAPPED entities are returned as-is (entity_type = "O", mechanism
+        category = UNMAPPED) rather than silently being upgraded.
+    """
+
+    def __init__(self):
+        # Lazy import to avoid circular and to allow the rest of the system
+        # to function even when torch/transformers are not installed.
+        from backend.app.stage2.transformer_ner import TransformerNERPipeline
+        self._pipeline = TransformerNERPipeline()
+        self._legacy_mapper = MechanismMapper()  # kept for comparison only
+
+    @property
+    def model_available(self) -> bool:
+        return self._pipeline.model_available
+
+    def extract_entities(
+        self,
+        text: str,
+        paper_id: str,
+        pmid: Optional[str] = None,
+        doi: Optional[str] = None,
+        section: Optional[str] = None,
+    ) -> "List":
+        """
+        Extract NEREntity records from text using SciBERT.
+
+        Returns List[NEREntity].
+        If model unavailable: returns [] with a logged error (no regex fallback).
+        """
+        from backend.app.stage2.models import NEREntity
+        return self._pipeline.extract(
+            text=text,
+            paper_id=paper_id,
+            pmid=pmid,
+            doi=doi,
+            section=section,
+        )
+
+    def extract_entities_with_relations(
+        self,
+        text: str,
+        paper_id: str,
+        pmid: Optional[str] = None,
+        doi: Optional[str] = None,
+        section: Optional[str] = None,
+    ) -> "Tuple":
+        """
+        Extract NEREntity records AND RelationRecord associations.
+
+        Returns (List[NEREntity], List[RelationRecord]).
+        """
+        from backend.app.stage2.relation_extractor import RelationExtractor
+        entities = self.extract_entities(text, paper_id, pmid, doi, section)
+        relations = RelationExtractor().extract(entities)
+        return entities, relations
+
+    def legacy_map_for_comparison(
+        self, raw_text: str, context_sentence: str
+    ) -> "Tuple[MechanismCategory, str]":
+        """
+        Run the legacy regex mapper.  For comparison experiments only.
+        Result is explicitly labelled as regex_based in comparison reports.
+        """
+        return self._legacy_mapper.map_mechanism_in_context(raw_text, context_sentence)
+

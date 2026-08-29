@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-15T16:26:20.552545+00:00",
+  "timestamp": "2026-08-29T05:07:13.251172+00:00",
   "immutability_verified": true,
   "checked_artifacts_count": 12,
   "mismatch_count": 0,
@@ -9,12 +9,12 @@
     "evidence/processed/stage5b_candidate_results.json": "cdc3471a7b69a10002435ca0de656d2828a608c8bf8c2165682b4f65faec1c72",
     "evidence/processed/stage5b_baseline_results.json": "f2d0340a1d84f4638c78830cc57dd01c0a3b652d36cce22a5f58483ce6e6b96d",
     "evidence/metadata/stage5b_safety_audit.json": "46b22a2cfaed58f1624558accfeaeab3760da793cc35cb39082e1a5fb8a9f612",
-    "evidence/metadata/stage5c_statistical_analysis.json": "2bc8d88e0eb967304365dc60cb2b0b5b6b5af6e6aab2bba37e225b222ae831c2",
-    "evidence/metadata/stage5c_ablation_results.json": "430f5b8e2b20af3d041fdde68b8f32e0c01a94ea18235ee73fac50724683c8b8",
-    "evidence/metadata/stage5c_robustness_report.json": "c74621ae8e8bd5d768eb3e14a3ee18919ee10dc507701111167b71f3d499c67a",
-    "evidence/metadata/stage5c_calibration_report.json": "a761c6d43a97e3637c51faee232e9f1ed1364c68a23e40541ba555d6fe962f14",
-    "evidence/final/stage6a_master_results.json": "ed3a8cb8bb6ddd3b366a16c210e4a43839d3c338325ed71e7a2199b06046d657",
-    "evidence/final/figures/figure_manifest.json": "8fa26dfc2fd9ff233aec421f4ee2510eafd7bc270c4118d81ae4dd94d34c9c7e",
+    "evidence/metadata/stage5c_statistical_analysis.json": "e2b923b8205359c1eca238326ed06657bb395477e4cb92f07cb6d1628d07b3a5",
+    "evidence/metadata/stage5c_ablation_results.json": "4269aad58d119f13faa9588edc7e10bcd29db376749cd7458c7b010290f43b4f",
+    "evidence/metadata/stage5c_robustness_report.json": "e9f03b6cda7766b66ac888478b8357eb7e2609578bf81a89f5a6769bed776dab",
+    "evidence/metadata/stage5c_calibration_report.json": "f21561841e21973233bfbcbfabff942e73f9dae5b72a216f482eaa645e669689",
+    "evidence/final/stage6a_master_results.json": "e3dfb2c32dc1eeb758f74b82ae2e11c12bb6778a0db793de90fc533deaa061ef",
+    "evidence/final/figures/figure_manifest.json": "48f2c786e0221c2df4b41cb1b196615a1b884669cd70ab7fdfc1688969203f20",
     "evidence/processed/stage3_6_configured_pipeline.json": "1380e2b029ce6aaa6b746a6afc103e4630a063f153414db50ec41193cfbd9dee",
     "evidence/processed/stage5a_experiment_contract.json": "6eb6b035c8f87bcf52d7d6107a5a4eafa6c6330ca9bf6c1ca837cdbd63910024"
   }

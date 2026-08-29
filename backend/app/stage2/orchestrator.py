@@ -418,35 +418,223 @@ class Stage2Orchestrator:
             paper_exps = exps_by_paper[p.paper_id]
             paper_abls = abls_by_paper[p.paper_id]
 
-            evidence_coverage = (
-                "full" if p.full_text_available else
-                "abstract_only" if p.abstract_available else
-                "metadata_only" if p.title else
-                "none"
-            )
-            source_scopes = list({c.source_scope.value for c in paper_claims})
-            if not source_scopes:
-                source_scopes = [SourceScope.abstract.value if p.abstract_available else SourceScope.none.value]
+                # ─────────────────────────────────────────────────────────────────────────
+    # Stage 2C — Transformer NER Extraction & Automatic Evidence Synthesis
+    # ─────────────────────────────────────────────────────────────────────────
 
-            coverage.append({
-                "paper_id": p.paper_id,
-                "title": p.title,
-                "doi": p.doi,
-                "pmid": p.pmid,
-                "abstract_available": p.abstract_available,
-                "full_text_available": p.full_text_available,
-                "full_text_source": p.full_text_source,
-                "full_text_access_status": p.full_text_access_status.value,
-                "full_text_license": p.full_text_license,
-                "claims_extracted": len(paper_claims),
-                "experiments_extracted": len(paper_exps),
-                "ablations_extracted": len(paper_abls),
-                "claim_ids": [c.evidence_id for c in paper_claims],
-                "source_scopes": source_scopes,
-                "evidence_statuses": list({c.evidence_status.value for c in paper_claims}),
-                "evidence_coverage": evidence_coverage,
-            })
-        return coverage
+    def run_stage2c(self) -> dict:
+        """
+        Stage 2C: SciBERT Transformer NER extraction, deterministic evidence scoring,
+        and automatic dataset-conditioned pipeline component synthesis.
+
+        Produces:
+          evidence/processed/stage2c/ner_entities.jsonl
+          evidence/processed/stage2c/relations.jsonl
+          evidence/processed/stage2c/evidence_scores.json
+          evidence/processed/stage2c/synthesized_pipeline_spec.json
+          evidence/processed/stage2c/bootstrap_seed_annotations.jsonl
+          evidence/processed/stage2c/extraction_manifest.json
+          evidence/processed/stage2c/comparison_report.json
+          evidence/processed/stage2c/plots/*.png  (10 publication-quality figures)
+        """
+        logger.info("Starting Stage 2C — Transformer NER & Automatic Evidence Synthesis")
+
+        from backend.app.stage2.mechanism_mapper import TransformerMechanismMapper
+        from backend.app.stage2.relation_extractor import RelationExtractor
+        from backend.app.stage2.evidence_scoring import EvidenceScoringEngine
+        from backend.app.stage2.pipeline_selector import AutomaticPipelineSelector
+        from backend.app.stage2.models import NEREntity, RelationRecord
+
+        # ── 1. Load papers ────────────────────────────────────────────────────
+        papers_path = Path("evidence/processed/papers.jsonl")
+        if not papers_path.exists():
+            raise RuntimeError(
+                "Run Stage 2A before Stage 2C (evidence/processed/papers.jsonl not found)."
+            )
+
+        papers: List[PaperRecord] = []
+        with open(papers_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line:
+                    papers.append(PaperRecord.model_validate_json(line))
+
+        logger.info(f"Loaded {len(papers)} papers for Stage 2C NER extraction")
+
+        # ── 2. Initialise mappers ─────────────────────────────────────────────
+        transformer_mapper = TransformerMechanismMapper()
+        relation_extractor = RelationExtractor()
+        scoring_engine = EvidenceScoringEngine()
+        pipeline_selector = AutomaticPipelineSelector()
+
+        model_available = transformer_mapper.model_available
+        if not model_available:
+            logger.error(
+                "SciBERT model NOT available. Stage 2C will produce empty entity files. "
+                "No regex fallback is performed."
+            )
+
+        # ── 3. Extract entities per paper ────────────────────────────────────
+        all_entities: List[NEREntity] = []
+        papers_processed = 0
+        papers_with_entities = 0
+
+        for paper in papers:
+            text_to_process = []
+            if paper.abstract and paper.abstract.strip():
+                text_to_process.append((paper.abstract.strip(), "abstract"))
+
+            for text, section in text_to_process:
+                try:
+                    entities = transformer_mapper.extract_entities(
+                        text=text,
+                        paper_id=paper.paper_id,
+                        pmid=paper.pmid,
+                        doi=paper.doi,
+                        section=section,
+                    )
+                    all_entities.extend(entities)
+                    if entities:
+                        papers_with_entities += 1
+                except Exception as exc:
+                    logger.warning(f"Stage 2C extraction failed for {paper.paper_id}: {exc}")
+
+            papers_processed += 1
+            time.sleep(0.02)
+
+        # ── 4. Extract relations ──────────────────────────────────────────────
+        all_relations = relation_extractor.extract(all_entities)
+
+        # ── 5. Generate bootstrap labels ─────────────────────────────────────
+        from backend.app.stage2.annotation.bootstrap_labels import BootstrapLabelGenerator
+        bootstrap_gen = BootstrapLabelGenerator()
+        all_bootstrap: List[NEREntity] = []
+
+        for paper in papers:
+            if paper.abstract and paper.abstract.strip():
+                bs_ents = bootstrap_gen.generate(
+                    text=paper.abstract.strip(),
+                    paper_id=paper.paper_id,
+                    pmid=paper.pmid,
+                    doi=paper.doi,
+                    section="abstract",
+                )
+                all_bootstrap.extend(bs_ents)
+
+        # ── 6. Deterministic Evidence Scoring ─────────────────────────────────
+        evidence_scores = scoring_engine.score_corpus_evidence(
+            entities=all_entities,
+            relations=all_relations,
+            papers=papers,
+        )
+
+        # ── 7. Automatic Pipeline Component Synthesis ─────────────────────────
+        synthesized_spec = pipeline_selector.select_pipeline(
+            scored_evidence=evidence_scores,
+            modalities=["tabular", "image", "text"],
+            sample_count=50,
+            compute_budget="LIGHT",
+        )
+
+        # ── 8. Persist outputs ────────────────────────────────────────────────
+        out_dir = Path("evidence/processed/stage2c")
+        out_dir.mkdir(parents=True, exist_ok=True)
+
+        with open(out_dir / "ner_entities.jsonl", "w", encoding="utf-8") as f:
+            for e in all_entities:
+                f.write(e.model_dump_json() + "\n")
+
+        with open(out_dir / "relations.jsonl", "w", encoding="utf-8") as f:
+            for r in all_relations:
+                f.write(r.model_dump_json() + "\n")
+
+        with open(out_dir / "evidence_scores.json", "w", encoding="utf-8") as f:
+            json.dump({k: v.model_dump() for k, v in evidence_scores.items()}, f, indent=2)
+
+        with open(out_dir / "synthesized_pipeline_spec.json", "w", encoding="utf-8") as f:
+            json.dump(synthesized_spec.model_dump(), f, indent=2)
+
+        bootstrap_gen.save_to_jsonl(
+            all_bootstrap,
+            str(out_dir / "bootstrap_seed_annotations.jsonl"),
+        )
+
+        # ── 9. Extraction manifest ────────────────────────────────────────────
+        entity_types_dist: Dict = defaultdict(int)
+        for e in all_entities:
+            entity_types_dist[e.entity_type] += 1
+
+        confidence_levels_dist: Dict = defaultdict(int)
+        for e in all_entities:
+            confidence_levels_dist[e.confidence_level] += 1
+
+        relation_type_dist: Dict = defaultdict(int)
+        for r in all_relations:
+            relation_type_dist[r.relation_type] += 1
+
+        manifest = {
+            "stage": "2C",
+            "model": "allenai/scibert_scivocab_uncased",
+            "model_available": model_available,
+            "papers_loaded": len(papers),
+            "papers_processed": papers_processed,
+            "papers_with_entities": papers_with_entities,
+            "total_entities_extracted": len(all_entities),
+            "total_relations_extracted": len(all_relations),
+            "total_scored_mechanisms": len(evidence_scores),
+            "bootstrap_entities_generated": len(all_bootstrap),
+            "entity_type_distribution": dict(entity_types_dist),
+            "confidence_level_distribution": dict(confidence_levels_dist),
+            "relation_type_distribution": dict(relation_type_dist),
+            "synthesized_pipeline_id": synthesized_spec.pipeline_id,
+            "selected_components": {
+                k: v.selected_name for k, v in synthesized_spec.selected_components.items()
+            },
+            "overall_pipeline_evidence_score": synthesized_spec.total_evidence_score,
+            "review_flagged_entities": sum(1 for e in all_entities if e.review_flag),
+            "high_confidence_entities": sum(
+                1 for e in all_entities if e.confidence_level == "HIGH"
+            ),
+            "bootstrap_note": (
+                "bootstrap_seed_annotations.jsonl contains weak-supervision labels. "
+                "ALL bootstrap records are marked is_bootstrap=True, review_flag=True, "
+                "extraction_method=bootstrap_weak."
+            ),
+            "extraction_date": datetime.now().isoformat(),
+        }
+
+        with open(out_dir / "extraction_manifest.json", "w", encoding="utf-8") as f:
+            json.dump(manifest, f, indent=2)
+
+        # ── 10. Run 4-Way comparison report + 10 plots ─────────────────────────
+        try:
+            from backend.app.stage2.comparison_runner import ComparisonRunner
+            runner = ComparisonRunner()
+            comparison = runner.run(
+                papers=papers,
+                transformer_entities=all_entities,
+                relations=all_relations,
+                evidence_scores=evidence_scores,
+                pipeline_spec=synthesized_spec,
+            )
+            with open(out_dir / "comparison_report.json", "w", encoding="utf-8") as f:
+                json.dump(comparison, f, indent=2)
+            runner.generate_plots(
+                comparison=comparison,
+                plots_dir=str(out_dir / "plots"),
+                evidence_scores=evidence_scores,
+                pipeline_spec=synthesized_spec,
+            )
+            logger.info("Stage 2C 4-way comparison report and 10 plots generated.")
+        except Exception as exc:
+            logger.warning(f"Comparison report/plots failed (non-fatal): {exc}", exc_info=True)
+
+        logger.info(
+            f"Stage 2C complete. "
+            f"Entities: {len(all_entities)}, Relations: {len(all_relations)}, "
+            f"Scored Mechanisms: {len(evidence_scores)}, Bootstrap: {len(all_bootstrap)}"
+        )
+        return manifest
 
 
 if __name__ == "__main__":
@@ -457,7 +645,10 @@ if __name__ == "__main__":
     stage = "2b" if len(sys.argv) < 2 else sys.argv[1].lower()
     if stage in ("2a", "stage2a"):
         report = orchestrator.run_stage2a()
+    elif stage in ("2c", "stage2c"):
+        report = orchestrator.run_stage2c()
     else:
         report = orchestrator.run_stage2b()
 
     print(json.dumps(report, indent=2))
+

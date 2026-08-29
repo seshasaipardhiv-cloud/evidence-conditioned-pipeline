@@ -3,16 +3,22 @@
 **Only the backend foundation is implemented. Scientific stages have not yet been implemented.**
 
 ## Purpose
-This project is the foundational backend infrastructure for the "Evidence-Conditioned Compositional Pipeline Synthesis for Multimodal Cancer Problems" research project. It sets up the basic directories, PostgreSQL database via Docker, FastAPI app, configuration and testing foundation.
+This project is the scientific framework for the "Evidence-Conditioned Compositional Pipeline Synthesis for Multimodal Cancer Problems" research project. It integrates evidence ingestion, Transformer-based scientific NLP entity extraction, evidence graph synthesis, multimodal candidate generation, and rigorous forensic benchmarking.
 
 ## Current Implementation Status
-Currently, only STEP 1 (Project and Backend Foundation) is complete. The system is scaffolded without any ML components, RAG, vector search, or external APIs.
+- **Stage 1**: Foundation & Data Schema
+- **Stage 2A/2B**: Evidence Acquisition (PubMed/PMC/Unpaywall) & Controlled Graph Ingestion
+- **Stage 2C**: Deep-Learning NLP Mechanism Extraction (SciBERT-based Transformer NER, Relation Extraction, Provenance Tracking)
+- **Stage 5B/6A**: Primary Clinical Tabular Experiment & Automated Pipelines
+- **Stage 6A–6I**: Manuscript, Audit, & Provenance Infrastructure
+- **Stage 10/10.5**: Multimodal Evidence-Conditioned Automation & Forensic Validation
+- **Stage 11/11.x**: Model Alternative & Transparent Ensemble Benchmarking
 
-## Architecture
-- FastAPI application (Python 3.11+)
-- PostgreSQL (running in Docker)
-- SQLAlchemy ORM & Alembic for database operations
-- Pytest for testing
+## Stage 2C: Deep-Learning NLP Extraction Architecture
+- **Model**: `allenai/scibert_scivocab_uncased` (SciBERT 12-layer Transformer)
+- **Token Classification**: 23 BIO labels mapping to 11 methodology entity classes (`MODEL_ARCH`, `SAMPLING`, `PREPROCESSING`, `LOSS`, `REGULARIZATION`, etc.)
+- **Association**: Co-sentence proximity and typed relation extraction (`HAS_LOSS`, `HAS_OPTIMIZER`, etc.)
+- **Safety & Provenance**: Strict confidence thresholding, human-review flags (`review_flag=True`), and immutable paper/DOI/PMID/span offsets. Zero silent regex fallback.
 
 ## Setup Instructions
 

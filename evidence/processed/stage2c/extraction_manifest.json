@@ -1,0 +1,56 @@
+{
+  "stage": "2C",
+  "model": "allenai/scibert_scivocab_uncased",
+  "model_available": true,
+  "papers_loaded": 30,
+  "papers_processed": 30,
+  "papers_with_entities": 6,
+  "total_entities_extracted": 124,
+  "total_relations_extracted": 160,
+  "total_scored_mechanisms": 78,
+  "bootstrap_entities_generated": 26,
+  "entity_type_distribution": {
+    "FEATURE_REPR": 9,
+    "DATASET": 19,
+    "EVALUATION": 41,
+    "FUSION": 7,
+    "PREPROCESSING": 9,
+    "OPTIMIZATION": 14,
+    "MODEL_ARCH": 18,
+    "SAMPLING": 5,
+    "HYPERPARAMETER": 1,
+    "REGULARIZATION": 1
+  },
+  "confidence_level_distribution": {
+    "LOW": 65,
+    "HIGH": 36,
+    "MEDIUM": 23
+  },
+  "relation_type_distribution": {
+    "CO_OCCURS": 118,
+    "HAS_PREPROCESSING": 8,
+    "HAS_OPTIMIZER": 8,
+    "HAS_EVALUATION": 16,
+    "HAS_FEATURE_REPR": 3,
+    "HAS_FUSION": 1,
+    "HAS_SAMPLING": 3,
+    "CO_PREPROCESSING_SAMPLING": 3
+  },
+  "synthesized_pipeline_id": "synth_pipeline_98020",
+  "selected_components": {
+    "tabular_model": "XGBoost",
+    "image_model": "ResNet-18",
+    "text_model": "PubMedBERT",
+    "preprocessing": "MICE Imputation",
+    "sampling": "SMOTE",
+    "fusion": "Late Fusion (Concatenation)",
+    "loss": "Focal Loss",
+    "optimizer": "AdamW",
+    "ensemble": "Validation-Gated Blend"
+  },
+  "overall_pipeline_evidence_score": 0.4867,
+  "review_flagged_entities": 65,
+  "high_confidence_entities": 36,
+  "bootstrap_note": "bootstrap_seed_annotations.jsonl contains weak-supervision labels. ALL bootstrap records are marked is_bootstrap=True, review_flag=True, extraction_method=bootstrap_weak.",
+  "extraction_date": "2026-08-29T10:51:08.123859"
+}
