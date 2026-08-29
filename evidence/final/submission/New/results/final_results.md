@@ -1,9 +1,12 @@
-# Final Verified Multi-Cohort Results Table
+# Final Verified Multi-Cohort Results
 
-| Cohort | Modalities | Selected Model | Preprocessing | Fusion | Ensemble Strategy | Ensemble Members | Test ROC-AUC (Mean ± Std) | PR-AUC | Brier | F1-Score | Safety |
-|---|---|---|---|---|---|---|:---:|:---:|:---:|:---:|:---:|
-| **Cohort_A_Authoritative_Hancock** | tabular | XGBoost | Standard Scaling + MICE Imputation + SMOTE | Unimodal Direct Head | Validation-Performance-Weighted Averaging | XGBoost + Random Forest + Logistic Regression | **1.0000 ± 0.0000** (Ens: 1.0000) | 1.0000 | 0.0000 | 1.0000 | COMPLIANT_14_GATES_VERIFIED |
-| **Cohort_B_Unseen_Cardiac_Tabular** | tabular | XGBoost | Standard Scaling + MICE Imputation + SMOTE | Unimodal Direct Head | Validation-Performance-Weighted Averaging | XGBoost + Random Forest + Logistic Regression | **0.8889 ± 0.1200** (Ens: 0.9815) | 0.8519 | 0.1713 | 0.8321 | COMPLIANT_14_GATES_VERIFIED |
-| **Cohort_C_Unseen_Derm_Image** | image | ResNet-18 | Bicubic Resize / WordPiece Tokenization | Unimodal Direct Head | Validation-Performance-Weighted Averaging | ResNet-18 + EfficientNet-B0 + Logistic Regression | **0.5844 ± 0.1376** (Ens: 0.6296) | 0.6868 | 0.3263 | 0.6034 | COMPLIANT_14_GATES_VERIFIED |
-| **Cohort_D_Unseen_Pathology_Text** | text | PubMedBERT | Bicubic Resize / WordPiece Tokenization | Unimodal Direct Head | Validation-Performance-Weighted Averaging | PubMedBERT + ClinicalBERT + TF-IDF + Linear | **0.4897 ± 0.0915** (Ens: 0.4954) | 0.5472 | 0.3832 | 0.5238 | COMPLIANT_14_GATES_VERIFIED |
-| **Cohort_E_Unseen_Trimodal_Oncology** | tabular, image, text | XGBoost | Standard Scaling + MICE Imputation + SMOTE | Late Fusion (Feature Concatenation) | Validation-Performance-Weighted Averaging | Multimodal Candidate + Tabular-Only Baseline + Vision-Text Baseline | **0.8800 ± 0.0000** (Ens: 0.7760) | 0.8500 | 0.1400 | 0.8450 | COMPLIANT_14_GATES_VERIFIED |
+> **Source**: All values computed programmatically from `canonical_predictions.jsonl`.
+> **Data SHA-256**: `b37b3910132b29b85f46a8e0c7186af62df5e642401d92a9b5b81d2140435906`
+
+| Cohort | Dataset Status | Modalities | Model | Ens. Members | ROC-AUC (mean±std) | PR-AUC | Brier | F1 | Ens. ROC-AUC |
+|---|---|---|---|---|:---:|:---:|:---:|:---:|:---:|
+| **Cohort_A_Authoritative_Hancock** | `CONTROLLED_SYNTHETIC_DEMONSTRATION` | tabular | XGBoost | XGBoost + Random Forest + Logistic Regression | **0.5536 ± 0.1312** | 0.4554 | 0.2076 | 0.3238 | 0.2840 |
+| **Cohort_B_Unseen_Cardiac_Tabular** | `CONTROLLED_SYNTHETIC_DEMONSTRATION` | tabular | XGBoost | XGBoost + Random Forest + Logistic Regression | **0.6741 ± 0.1313** | 0.308 | 0.1845 | 0.1111 | 0.5500 |
+| **Cohort_C_Unseen_Derm_Image** | `SYNTHETIC_DEMONSTRATION` | image | ResNet-18 | ResNet-18 + EfficientNet-B0 + Logistic Regression | **0.9957 ± 0.0061** | 0.994 | 0.0427 | 0.9267 | 1.0000 |
+| **Cohort_D_Unseen_Pathology_Text** | `SYNTHETIC_DEMONSTRATION` | text | TF-IDF + Linear Classifier | PubMedBERT + ClinicalBERT + TF-IDF + Linear Classifier | **1.0000 ± 0.0000** | 1.0 | 0.0032 | 1.0 | 1.0000 |
+| **Cohort_E_Unseen_Trimodal_Oncology** | `SYNTHETIC_DEMONSTRATION` | tabular, image, text | Multimodal Pipeline (tabular + image + text) | Multimodal Candidate + Tabular-Only Baseline + Vision-Text Baseline | **0.8646 ± 0.1915** | 0.8556 | 0.0909 | N/A | 0.7000 |

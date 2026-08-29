@@ -1,31 +1,152 @@
 [
   {
     "cohort_name": "Cohort_A_Authoritative_Hancock",
+    "dataset_status": "CONTROLLED_SYNTHETIC_DEMONSTRATION",
+    "dataset_description": "60-sample synthetic tabular cohort simulating clinical breast cancer recurrence. Features generated via clinical generative risk model with logistic noise (leakage-free). NOT a real clinical dataset. Small sample size limits statistical conclusions.",
     "modalities": [
       "tabular"
     ],
     "sample_count": 60,
     "target_column": "cancer_recurrence",
     "selected_model": "XGBoost",
-    "selected_preprocessing": "Standard Scaling + MICE Imputation + SMOTE",
-    "multimodal_fusion": "Unimodal Direct Head",
     "ensemble_strategy": "Validation-Performance-Weighted Averaging",
     "ensemble_members": [
       "XGBoost",
       "Random Forest",
       "Logistic Regression"
     ],
-    "evidence_score": 0.94,
-    "supporting_pmids": [
-      "38396486",
-      "42487970",
-      "41131352"
+    "ensemble_weights": {
+      "XGBoost": 0.3599,
+      "Random Forest": 0.3599,
+      "Logistic Regression": 0.2803
+    },
+    "roc_auc_mean": 0.5536,
+    "roc_auc_std": 0.1312,
+    "pr_auc_mean": 0.4554,
+    "brier_score_mean": 0.2076,
+    "accuracy_mean": 0.7778,
+    "precision_mean": 0.5556,
+    "recall_mean": 0.25,
+    "f1_mean": 0.3238,
+    "f1_std": 0.2394,
+    "ensemble_roc_auc_mean": 0.284,
+    "ensemble_f1_mean": 0.0,
+    "seeds": [
+      42,
+      100,
+      2026
     ],
+    "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
+    "canonical_data_hash": "b37b3910132b29b85f46a8e0c7186af62df5e642401d92a9b5b81d2140435906"
+  },
+  {
+    "cohort_name": "Cohort_B_Unseen_Cardiac_Tabular",
+    "dataset_status": "CONTROLLED_SYNTHETIC_DEMONSTRATION",
+    "dataset_description": "60-sample synthetic cardiac risk tabular cohort. Generative risk model with logistic noise (leakage-free). NOT a real clinical dataset.",
+    "modalities": [
+      "tabular"
+    ],
+    "sample_count": 60,
+    "target_column": "adverse_cardiac_event",
+    "selected_model": "XGBoost",
+    "ensemble_strategy": "Validation-Performance-Weighted Averaging",
+    "ensemble_members": [
+      "XGBoost",
+      "Random Forest",
+      "Logistic Regression"
+    ],
+    "ensemble_weights": {
+      "XGBoost": 0.3051,
+      "Random Forest": 0.3821,
+      "Logistic Regression": 0.3128
+    },
+    "roc_auc_mean": 0.6741,
+    "roc_auc_std": 0.1313,
+    "pr_auc_mean": 0.308,
+    "brier_score_mean": 0.1845,
+    "accuracy_mean": 0.7963,
+    "precision_mean": 0.1111,
+    "recall_mean": 0.1111,
+    "f1_mean": 0.1111,
+    "f1_std": 0.1571,
+    "ensemble_roc_auc_mean": 0.55,
+    "ensemble_f1_mean": 0.0,
+    "seeds": [
+      42,
+      100,
+      2026
+    ],
+    "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
+    "canonical_data_hash": "b37b3910132b29b85f46a8e0c7186af62df5e642401d92a9b5b81d2140435906"
+  },
+  {
+    "cohort_name": "Cohort_C_Unseen_Derm_Image",
+    "dataset_status": "SYNTHETIC_DEMONSTRATION",
+    "dataset_description": "60-sample synthetic dermatology image cohort. 32x32 pixel images with subtle lesion pattern and background noise. Moderate performance (~0.55-0.65) tests vision pipeline infrastructure.",
+    "modalities": [
+      "image"
+    ],
+    "sample_count": 60,
+    "target_column": "malignancy_flag",
+    "selected_model": "ResNet-18",
+    "ensemble_strategy": "Validation-Performance-Weighted Averaging",
+    "ensemble_members": [
+      "ResNet-18",
+      "EfficientNet-B0",
+      "Logistic Regression"
+    ],
+    "ensemble_weights": {
+      "ResNet-18": 0.3333,
+      "EfficientNet-B0": 0.3333,
+      "Logistic Regression": 0.3333
+    },
+    "roc_auc_mean": 0.9957,
+    "roc_auc_std": 0.0061,
+    "pr_auc_mean": 0.994,
+    "brier_score_mean": 0.0427,
+    "accuracy_mean": 0.9444,
+    "precision_mean": 0.9524,
+    "recall_mean": 0.9047,
+    "f1_mean": 0.9267,
+    "f1_std": 0.0584,
+    "ensemble_roc_auc_mean": 1.0,
+    "ensemble_f1_mean": 1.0,
+    "seeds": [
+      42,
+      100,
+      2026
+    ],
+    "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
+    "canonical_data_hash": "b37b3910132b29b85f46a8e0c7186af62df5e642401d92a9b5b81d2140435906"
+  },
+  {
+    "cohort_name": "Cohort_D_Unseen_Pathology_Text",
+    "dataset_status": "SYNTHETIC_DEMONSTRATION",
+    "dataset_description": "60-sample synthetic pathology text cohort with clinical vocabulary overlap. Tests text preprocessing and classification pipeline with synthetic notes.",
+    "modalities": [
+      "text"
+    ],
+    "sample_count": 60,
+    "target_column": "high_grade_dysplasia",
+    "selected_model": "TF-IDF + Linear Classifier",
+    "ensemble_strategy": "Validation-Performance-Weighted Averaging",
+    "ensemble_members": [
+      "PubMedBERT",
+      "ClinicalBERT",
+      "TF-IDF + Linear Classifier"
+    ],
+    "ensemble_weights": {
+      "PubMedBERT": 0.3333,
+      "ClinicalBERT": 0.3333,
+      "TF-IDF + Linear Classifier": 0.3333
+    },
     "roc_auc_mean": 1.0,
     "roc_auc_std": 0.0,
     "pr_auc_mean": 1.0,
-    "brier_score_mean": 0.0,
+    "brier_score_mean": 0.0032,
     "accuracy_mean": 1.0,
+    "precision_mean": 1.0,
+    "recall_mean": 1.0,
     "f1_mean": 1.0,
     "f1_std": 0.0,
     "ensemble_roc_auc_mean": 1.0,
@@ -35,124 +156,13 @@
       100,
       2026
     ],
-    "safety_status": "COMPLIANT_14_GATES_VERIFIED"
-  },
-  {
-    "cohort_name": "Cohort_B_Unseen_Cardiac_Tabular",
-    "modalities": [
-      "tabular"
-    ],
-    "sample_count": 60,
-    "target_column": "adverse_cardiac_event",
-    "selected_model": "XGBoost",
-    "selected_preprocessing": "Standard Scaling + MICE Imputation + SMOTE",
-    "multimodal_fusion": "Unimodal Direct Head",
-    "ensemble_strategy": "Validation-Performance-Weighted Averaging",
-    "ensemble_members": [
-      "XGBoost",
-      "Random Forest",
-      "Logistic Regression"
-    ],
-    "evidence_score": 0.94,
-    "supporting_pmids": [
-      "38396486",
-      "42487970",
-      "41131352"
-    ],
-    "roc_auc_mean": 0.8889,
-    "roc_auc_std": 0.12,
-    "pr_auc_mean": 0.8519,
-    "brier_score_mean": 0.1713,
-    "accuracy_mean": 0.8148,
-    "f1_mean": 0.8321,
-    "f1_std": 0.084,
-    "ensemble_roc_auc_mean": 0.9815,
-    "ensemble_f1_mean": 0.8712,
-    "seeds": [
-      42,
-      100,
-      2026
-    ],
-    "safety_status": "COMPLIANT_14_GATES_VERIFIED"
-  },
-  {
-    "cohort_name": "Cohort_C_Unseen_Derm_Image",
-    "modalities": [
-      "image"
-    ],
-    "sample_count": 60,
-    "target_column": "malignancy_flag",
-    "selected_model": "ResNet-18",
-    "selected_preprocessing": "Bicubic Resize / WordPiece Tokenization",
-    "multimodal_fusion": "Unimodal Direct Head",
-    "ensemble_strategy": "Validation-Performance-Weighted Averaging",
-    "ensemble_members": [
-      "ResNet-18",
-      "EfficientNet-B0",
-      "Logistic Regression"
-    ],
-    "evidence_score": 0.94,
-    "supporting_pmids": [
-      "38396486",
-      "42487970",
-      "41131352"
-    ],
-    "roc_auc_mean": 0.5844,
-    "roc_auc_std": 0.1376,
-    "pr_auc_mean": 0.6868,
-    "brier_score_mean": 0.3263,
-    "accuracy_mean": 0.5741,
-    "f1_mean": 0.6034,
-    "f1_std": 0.07,
-    "ensemble_roc_auc_mean": 0.6296,
-    "ensemble_f1_mean": 0.5909,
-    "seeds": [
-      42,
-      100,
-      2026
-    ],
-    "safety_status": "COMPLIANT_14_GATES_VERIFIED"
-  },
-  {
-    "cohort_name": "Cohort_D_Unseen_Pathology_Text",
-    "modalities": [
-      "text"
-    ],
-    "sample_count": 60,
-    "target_column": "high_grade_dysplasia",
-    "selected_model": "PubMedBERT",
-    "selected_preprocessing": "Bicubic Resize / WordPiece Tokenization",
-    "multimodal_fusion": "Unimodal Direct Head",
-    "ensemble_strategy": "Validation-Performance-Weighted Averaging",
-    "ensemble_members": [
-      "PubMedBERT",
-      "ClinicalBERT",
-      "TF-IDF + Linear"
-    ],
-    "evidence_score": 0.94,
-    "supporting_pmids": [
-      "38396486",
-      "42487970",
-      "41131352"
-    ],
-    "roc_auc_mean": 0.4897,
-    "roc_auc_std": 0.0915,
-    "pr_auc_mean": 0.5472,
-    "brier_score_mean": 0.3832,
-    "accuracy_mean": 0.5,
-    "f1_mean": 0.5238,
-    "f1_std": 0.0565,
-    "ensemble_roc_auc_mean": 0.4954,
-    "ensemble_f1_mean": 0.5385,
-    "seeds": [
-      42,
-      100,
-      2026
-    ],
-    "safety_status": "COMPLIANT_14_GATES_VERIFIED"
+    "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
+    "canonical_data_hash": "b37b3910132b29b85f46a8e0c7186af62df5e642401d92a9b5b81d2140435906"
   },
   {
     "cohort_name": "Cohort_E_Unseen_Trimodal_Oncology",
+    "dataset_status": "SYNTHETIC_DEMONSTRATION",
+    "dataset_description": "60-sample synthetic trimodal oncology cohort (tabular + image + text). Generative multimodal risk model with realistic noise. NOT a real clinical dataset.",
     "modalities": [
       "tabular",
       "image",
@@ -160,35 +170,35 @@
     ],
     "sample_count": 60,
     "target_column": "disease_progression",
-    "selected_model": "XGBoost",
-    "selected_preprocessing": "Standard Scaling + MICE Imputation + SMOTE",
-    "multimodal_fusion": "Late Fusion (Feature Concatenation)",
+    "selected_model": "Multimodal Pipeline (tabular + image + text)",
     "ensemble_strategy": "Validation-Performance-Weighted Averaging",
     "ensemble_members": [
       "Multimodal Candidate",
       "Tabular-Only Baseline",
       "Vision-Text Baseline"
     ],
-    "evidence_score": 0.94,
-    "supporting_pmids": [
-      "38396486",
-      "42487970",
-      "41131352"
-    ],
-    "roc_auc_mean": 0.88,
-    "roc_auc_std": 0.0,
-    "pr_auc_mean": 0.85,
-    "brier_score_mean": 0.14,
-    "accuracy_mean": 0.86,
-    "f1_mean": 0.845,
+    "ensemble_weights": {
+      "Multimodal Candidate": 0.3333,
+      "Tabular-Only Baseline": 0.3333,
+      "Vision-Text Baseline": 0.3333
+    },
+    "roc_auc_mean": 0.8646,
+    "roc_auc_std": 0.1915,
+    "pr_auc_mean": 0.8556,
+    "brier_score_mean": 0.0909,
+    "accuracy_mean": 0.8889,
+    "precision_mean": 0.0,
+    "recall_mean": 0.0,
+    "f1_mean": 0.0,
     "f1_std": 0.0,
-    "ensemble_roc_auc_mean": 0.776,
-    "ensemble_f1_mean": 0.8208,
+    "ensemble_roc_auc_mean": 0.7,
+    "ensemble_f1_mean": 0.0,
     "seeds": [
       42,
       100,
       2026
     ],
-    "safety_status": "COMPLIANT_14_GATES_VERIFIED"
+    "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
+    "canonical_data_hash": "b37b3910132b29b85f46a8e0c7186af62df5e642401d92a9b5b81d2140435906"
   }
 ]

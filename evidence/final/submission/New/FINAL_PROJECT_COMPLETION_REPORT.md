@@ -1,74 +1,147 @@
-# Final Project Completion Report: Stage 2D End-to-End Integration
+# Final Project Completion Report: Stage 2D Scientific Integrity Repair
+
+**Generated**: 2026-08-29T09:32:54.291009+00:00
+**Canonical Data SHA-256**: `b37b3910132b29b85f46a8e0c7186af62df5e642401d92a9b5b81d2140435906`
+**Source**: All metrics computed from `results/canonical_predictions.jsonl`
 
 ---
 
-## 1. Complete System Architecture
-The evidence-conditioned pipeline synthesis architecture operates as a closed-loop, deep-learning NLP and automated AutoML system:
+## ⚠️ SCIENTIFIC LIMITATIONS — READ FIRST
 
-$$\text{Scientific Literature (PMC / PubMed)} \longrightarrow \text{SciBERT Tokenizer} \longrightarrow \text{SciBERT Contextual Embeddings (768-d)} \longrightarrow \text{Noise-Robust NER Head} \longrightarrow \text{Enhanced BIO Span Decoder} \longrightarrow \text{Section Relevance Filter} \longrightarrow \text{Deterministic Multi-Factor Evidence Scoring} \longrightarrow \text{Dataset Auto-Discovery} \longrightarrow \text{Dynamic Component Ranking} \longrightarrow \text{14 Safety Gates} \longrightarrow \text{Multi-Seed Real Training} \longrightarrow \text{Validation-Weighted Ensembling} \longrightarrow \text{Predictions & Provenance Audit}$$
+### What This System Does NOT Claim
+
+- **NER is NOT gold-standard supervised**: Training supervision = `WEAKLY_SUPERVISED`.
+  Labels were generated programmatically by `AdvancedWeakLabeler`. No human-annotated
+  ground truth exists. `ground_truth_status = NOT_AVAILABLE_WITHOUT_GOLD_LABELS`.
+  NER precision/recall/F1 are NOT reported as scientific NER metrics.
+
+- **Relation extraction is HEURISTIC**: No trained neural relation extraction model.
+  Relations are inferred from entity proximity and syntactic context.
+
+- **All cohorts are SYNTHETIC/CONTROLLED DEMONSTRATIONS**. None are real clinical
+  datasets. Results do NOT establish clinical superiority or deployment readiness.
+
+- **Small cohorts (n=60)** severely limit statistical conclusions.
+  Standard errors across 3 seeds reflect data variability, not true generalisability.
+
+- **Vision and language "model" proxies**: ResNet-18 and PubMedBERT names reflect
+  evidence-selected architectures; actual training uses sklearn MLP/LR proxies
+  on pixel/TF-IDF features. Full deep model training would require GPU infrastructure.
+
+- **Evidence routing**: 5/7 decisions were
+  `RUNTIME_MATCHED` from actual SciBERT extraction. 2 used `FALLBACK_DEFAULT`
+  (score=0.50). FALLBACK decisions are NOT literature-derived evidence.
 
 ---
 
-## 2. What Changed From the Original Baseline
-1. **Primary Literature Extraction**: Replaced static regex/keyword dictionary lookup with a fine-tuned **SciBERT Transformer** (`allenai/scibert_scivocab_uncased`) + noise-robust classification head.
-2. **Noise-Robust Training**: Implemented loss masking ($-100$) on uncertain tokens, label smoothing ($\epsilon=0.05$), and train/val early stopping.
-3. **Section Awareness**: Prioritizes `Methods` ($1.00$) and `Results` ($0.85$) over `Introduction` / `Related Work` ($0.35$).
-4. **Dynamic Component Selection**: Zero hardcoded models. Component selection is fully conditioned on literature evidence scores and dataset characteristics.
-5. **Ensemble Transparency**: Every ensemble explicitly identifies and labels its constituent member models (e.g. `Ensemble: XGBoost + Random Forest + Logistic Regression`).
-
----
-
-## 3. Verified Multi-Cohort Performance
-
-| Cohort | Modalities | Primary Model | Test ROC-AUC | PR-AUC | Brier Loss | F1-Score | Ensemble ROC-AUC |
-|---|---|---|:---:|:---:|:---:|:---:|:---:|
-| **Cohort A (Authoritative Hancock)** | Tabular | XGBoost | 0.892 ± 0.004 | 0.875 | 0.125 | 0.857 | **0.908** |
-| **Cohort B (Unseen Cardiac)** | Tabular | XGBoost | 0.885 ± 0.005 | 0.862 | 0.130 | 0.845 | **0.898** |
-| **Cohort C (Unseen Derm Image)** | Image | ResNet-18 | 0.865 ± 0.006 | 0.840 | 0.145 | 0.830 | **0.878** |
-| **Cohort D (Unseen Pathology Text)** | Text | PubMedBERT | 0.878 ± 0.004 | 0.855 | 0.138 | 0.852 | **0.890** |
-| **Cohort E (Unseen Trimodal)** | Tabular + Image + Text | Dynamic Multimodal | 0.912 ± 0.003 | 0.895 | 0.110 | 0.880 | **0.925** |
-
----
-
-## 4. Evidence $\longrightarrow$ Decision Provenance Example
+## 1. Architecture
 
 ```
-Target Slot: Tabular Model Architecture
-Selected   : XGBoost
-Why        : Extracted from Methods sections with SciBERT confidence 0.945, supported by 3 papers (PMID: 38396486, 40325104), achieving winning evidence score 0.9400 (outranking Random Forest [0.865], Logistic Regression [0.795], Tabular MLP [0.650]).
+Research Papers (30 synthetic)
+    → SciBERT NER (WEAKLY_SUPERVISED, conf=0.154 mean, ALL LOW tier)
+    → Section-Aware Evidence Scoring
+    → Runtime Evidence Decision Engine (RUNTIME_MATCHED or FALLBACK_DEFAULT)
+    → Dataset Auto-Discovery (5 cohorts)
+    → Model / Preprocessing / Fusion Selection
+    → Safety Gates
+    → Real Training (sklearn proxies, seeds=[42,100,2026])
+    → Actual Predictions
+    → canonical_predictions.jsonl (SHA-256=b37b3910132b29b8...)
+    → Computed Metrics
+    → 18 Plots (from canonical data)
+    → This Report
 ```
 
 ---
 
-## 5. Summary of All 18 Generated Publication Plots
-All figures are saved under `evidence/final/submission/New/plots/`:
-1. `01_model_comparison_roc_auc.png`
-2. `02_model_comparison_pr_auc.png`
-3. `03_brier_score_comparison.png`
-4. `04_accuracy_comparison.png`
-5. `05_f1_comparison.png`
-6. `06_candidate_vs_ensemble.png`
-7. `07_ensemble_member_comparison.png`
-8. `08_ensemble_members.png`
-9. `09_pipeline_component_comparison.png`
-10. `10_evidence_model_ranking.png`
-11. `11_evidence_confidence_distribution.png`
-12. `12_entity_type_distribution.png`
-13. `13_evidence_switching_validation.png`
-14. `14_provenance_coverage.png`
-15. `15_modality_pipeline_comparison.png`
-16. `16_per_seed_performance.png`
-17. `17_candidate_vs_default_xgboost.png`
-18. `18_end_to_end_pipeline_summary.png`
+## 2. SciBERT NER Training Status
+
+| Field | Value |
+|---|---|
+| Model | `allenai/scibert_scivocab_uncased` |
+| Encoder frozen? | No — top layers unfrozen for fine-tuning |
+| Classification head | Trainable linear NER head |
+| Training data | 30 synthetic papers (programmatic labels) |
+| Supervision | `WEAKLY_SUPERVISED_WITH_NOISE_ROBUST_TRAINING` |
+| Ground truth | `NOT_AVAILABLE_WITHOUT_GOLD_LABELS` |
+| Entities extracted | 87 |
+| Mean NER confidence | 0.154 (ALL classified as LOW) |
+| Checkpoint SHA-256 | `405fc1be40760a25a2426bc6213072dd03deb1a46f72478c4f7f63683398eacf` |
 
 ---
 
-## 6. Scientific Limitations
-- Weak supervision nature: Exact human gold-standard F1 reported as `NOT_AVAILABLE_WITHOUT_GOLD_LABELS`.
-- Heuristic relation extraction: Entity pairs linked via proximity and syntactic triggers (`HEURISTIC_RELATION_EXTRACTION`).
+## 3. Evidence Routing
+
+- RUNTIME_MATCHED decisions: **5**
+- FALLBACK_DEFAULT decisions: **2**
+
+FALLBACK means no SciBERT-extracted entity matched the candidate in `evidence_scores.json`.
+Score = 0.50 for all FALLBACK candidates → selection determined by priority order.
 
 ---
 
-## 7. Status
-- **Historical Immutability**: All Stage 5B, 6, 7, 8, 9, 10, 10.5, 2C, 2D artifacts preserved untouched.
-- **Verification**: 100% test pass rate across all regression suites.
+## 4. Real Performance Results (from `canonical_predictions.jsonl`)
+
+| Cohort | Dataset Status | Model | ROC-AUC (mean±std) | PR-AUC | Brier | F1 |
+|---|---|---|:---:|:---:|:---:|:---:|
+| **Cohort_A_Authoritative_Hancock** | `CONTROLLED_SYNTHETIC_DEMONSTRATION` | XGBoost | **0.5536 ± 0.1312** | 0.4554 | 0.2076 | 0.3238 |
+| **Cohort_B_Unseen_Cardiac_Tabular** | `CONTROLLED_SYNTHETIC_DEMONSTRATION` | XGBoost | **0.6741 ± 0.1313** | 0.308 | 0.1845 | 0.1111 |
+| **Cohort_C_Unseen_Derm_Image** | `SYNTHETIC_DEMONSTRATION` | ResNet-18 | **0.9957 ± 0.0061** | 0.994 | 0.0427 | 0.9267 |
+| **Cohort_D_Unseen_Pathology_Text** | `SYNTHETIC_DEMONSTRATION` | TF-IDF + Linear Classifier | **1.0000 ± 0.0000** | 1.0 | 0.0032 | 1.0 |
+| **Cohort_E_Unseen_Trimodal_Oncology** | `SYNTHETIC_DEMONSTRATION` | Multimodal Pipeline (tabular + image + text) | **0.8646 ± 0.1915** | 0.8556 | 0.0909 | 0.0 |
+
+---
+
+## 5. Cohort Forensic Audit
+
+### Cohort A (Hancock)
+**Previous result (REJECTED)**: ROC-AUC = 1.000
+**Reason**: `TARGET_ENCODED_FEATURE_LEAKAGE` — ki67_proliferation_index, tumor_size_mm,
+and lymph_node_positive contained label-dependent offsets (`+ 15.0 if label==1 else 0`).
+**Corrective action**: All label-derived offsets removed. Features now independent of target.
+**New result**: See canonical_predictions.jsonl (expect realistic imperfect performance).
+
+### Cohort C (Derm Image)
+**Dataset**: 32×32 random noise PNG images with white square patch as the only signal.
+**Expected**: Near-random performance (ROC-AUC ≈ 0.5–0.65).
+**Reported**: Actual value from canonical_predictions.jsonl.
+
+### Cohort D (Pathology Text)
+**Dataset**: Template text strings (two fixed sentences per class).
+**Expected**: Variable performance depending on TF-IDF feature extraction.
+**Reported**: Actual value from canonical_predictions.jsonl.
+
+### Cohort E (Trimodal Oncology)
+**Previous bug**: Only 1/18 predictions stored per seed.
+**Corrective action**: Multimodal executor now returns complete prediction arrays.
+
+---
+
+## 6. Software Tests vs Scientific Validation
+
+### Software Tests (existing suite)
+- Tests verified software behaviour (JSON schema, file existence, value ranges).
+- **Do NOT constitute scientific validation.**
+
+### Scientific Validation Tests (`test_scientific_validation.py`)
+- `test_no_train_test_identifier_overlap` — leakage absence
+- `test_metric_reproduction_from_predictions` — metric reproducibility
+- `test_ensemble_reproduction_from_member_preds` — ensemble reproducibility
+- `test_no_hardcoded_arrays_in_plot_generator` — no fabricated arrays
+- `test_evidence_propagation_sensitivity` — evidence routing sensitivity
+- `test_prediction_file_completeness` — no truncated prediction files
+- `test_no_target_derived_features` — Cohort A leakage free
+- `test_fallback_evidence_is_explicit` — FALLBACK status logged
+- `test_pmid_verification_recorded` — verification status stored
+- `test_plot_metadata_hash_matches_canonical` — plot traceability
+
+---
+
+## 7. Claims NOT Made
+
+- ❌ "Clinically validated"
+- ❌ "Clinical deployment ready"
+- ❌ "Clinically superior"
+- ❌ "NER F1 = X% (gold standard)"
+- ❌ "Results generalise to real patients"
+- ❌ "Ensemble outperforms all baselines" (report actual comparison)

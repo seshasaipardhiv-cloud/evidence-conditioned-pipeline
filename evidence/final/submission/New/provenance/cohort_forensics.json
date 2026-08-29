@@ -1,0 +1,107 @@
+{
+  "audit_timestamp": "2026-08-29T09:32:54.207844+00:00",
+  "purpose": "Forensic audit for train/test leakage, target encoding, and data integrity",
+  "summary": {
+    "cohorts_audited": 5,
+    "leakage_detected_count": 1
+  },
+  "cohort_audits": {
+    "Cohort_A_Authoritative_Hancock": {
+      "cohort_key": "Cohort_A_Authoritative_Hancock",
+      "dataset_status": "CONTROLLED_SYNTHETIC_DEMONSTRATION",
+      "leakage_detected": false,
+      "status": "PASS",
+      "forensic_conclusion": "No critical leakage detected. Results may be reported with synthetic/demo caveats.",
+      "findings": [],
+      "seeds_audited": [
+        42,
+        100,
+        2026
+      ],
+      "n_seeds": 3
+    },
+    "Cohort_B_Unseen_Cardiac_Tabular": {
+      "cohort_key": "Cohort_B_Unseen_Cardiac_Tabular",
+      "dataset_status": "CONTROLLED_SYNTHETIC_DEMONSTRATION",
+      "leakage_detected": false,
+      "status": "PASS",
+      "forensic_conclusion": "No critical leakage detected. Results may be reported with synthetic/demo caveats.",
+      "findings": [],
+      "seeds_audited": [
+        42,
+        100,
+        2026
+      ],
+      "n_seeds": 3
+    },
+    "Cohort_C_Unseen_Derm_Image": {
+      "cohort_key": "Cohort_C_Unseen_Derm_Image",
+      "dataset_status": "SYNTHETIC_DEMONSTRATION",
+      "leakage_detected": false,
+      "status": "PASS",
+      "forensic_conclusion": "No critical leakage detected. Results may be reported with synthetic/demo caveats.",
+      "findings": [
+        {
+          "type": "NEAR_PERFECT_ROC_AUC",
+          "severity": "WARNING",
+          "detail": "ROC-AUC values: [0.987, 1.0, 1.0]. Near-perfect performance on small synthetic data \u2014 inspect for data construction artefacts."
+        }
+      ],
+      "seeds_audited": [
+        42,
+        100,
+        2026
+      ],
+      "n_seeds": 3
+    },
+    "Cohort_D_Unseen_Pathology_Text": {
+      "cohort_key": "Cohort_D_Unseen_Pathology_Text",
+      "dataset_status": "SYNTHETIC_DEMONSTRATION",
+      "leakage_detected": false,
+      "status": "PASS",
+      "forensic_conclusion": "No critical leakage detected. Results may be reported with synthetic/demo caveats.",
+      "findings": [
+        {
+          "type": "NEAR_PERFECT_ROC_AUC",
+          "severity": "WARNING",
+          "detail": "ROC-AUC values: [1.0, 1.0, 1.0]. Near-perfect performance on small synthetic data \u2014 inspect for data construction artefacts."
+        }
+      ],
+      "seeds_audited": [
+        42,
+        100,
+        2026
+      ],
+      "n_seeds": 3
+    },
+    "Cohort_E_Unseen_Trimodal_Oncology": {
+      "cohort_key": "Cohort_E_Unseen_Trimodal_Oncology",
+      "dataset_status": "SYNTHETIC_DEMONSTRATION",
+      "leakage_detected": false,
+      "status": "PASS",
+      "forensic_conclusion": "No critical leakage detected. Results may be reported with synthetic/demo caveats.",
+      "findings": [
+        {
+          "type": "NEAR_PERFECT_ROC_AUC",
+          "severity": "WARNING",
+          "detail": "ROC-AUC values: [0.5938, 1.0, 1.0]. Near-perfect performance on small synthetic data \u2014 inspect for data construction artefacts."
+        }
+      ],
+      "seeds_audited": [
+        42,
+        100,
+        2026
+      ],
+      "n_seeds": 3
+    },
+    "Cohort_A_PRE_REPAIR_HISTORICAL": {
+      "cohort_key": "Cohort_A_Authoritative_Hancock (PRE-REPAIR)",
+      "status": "REJECTED",
+      "leakage_detected": true,
+      "leakage_type": "TARGET_ENCODED_FEATURE_LEAKAGE",
+      "forensic_conclusion": "The pre-repair Cohort A generator contained label-derived feature offsets. Specifically: ki67_proliferation_index += 15.0 if label==1 else 0, tumor_size_mm += 10 if label==1 else 0, lymph_node_positive = int(1 if label==1 and i%2==0 else 0). XGBoost trivially learned label=1 \u2194 ki67>27. Result: ROC-AUC=1.000, all probabilities either 0.9978 or 0.0042. This result is REJECTED. The corrected Cohort A uses label-independent features.",
+      "pre_repair_roc_auc": 1.0,
+      "pre_repair_status": "REJECTED \u2014 TARGET_ENCODED_FEATURE_LEAKAGE"
+    }
+  }
+}

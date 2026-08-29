@@ -2,19 +2,22 @@
   "comparison_title": "Legacy Regex vs Stage 2D SciBERT NER & Evidence Scoring",
   "regex_legacy_extractor": {
     "method": "Regex / Keyword Dictionary Lookup",
-    "entity_count": 124,
-    "confidence_calibration": "Binary (1.0 or 0.0)",
-    "section_awareness": false,
-    "relation_extraction": false,
-    "noise_resilience": "Low (Matches occurrences without syntactic context)"
+    "limitations": [
+      "No contextual understanding",
+      "Binary confidence (1.0 or 0.0)",
+      "No section awareness",
+      "No relation extraction"
+    ]
   },
   "scibert_stage2d_extractor": {
-    "method": "SciBERT Transformer Contextual Embeddings + Noise-Robust Linear Head",
+    "method": "SciBERT Transformer + Noise-Robust Linear Head",
+    "training_supervision": "WEAKLY_SUPERVISED_WITH_NOISE_ROBUST_TRAINING",
+    "ground_truth_status": "NOT_AVAILABLE_WITHOUT_GOLD_LABELS",
+    "mean_ner_confidence": 0.154,
+    "confidence_tier": "ALL_LOW",
     "entity_count": 87,
-    "confidence_calibration": "Calibrated Softmax Token & Span Confidence",
     "section_awareness": true,
-    "relation_extraction": "Context-Cued Heuristic Relation Association",
-    "noise_resilience": "High (Methods vs Background vs Future Work syntax filtering)",
-    "checkpoint_sha256": "405fc1be40760a25a2426bc6213072dd03deb1a46f72478c4f7f63683398eacf"
+    "checkpoint_sha256": "405fc1be40760a25a2426bc6213072dd03deb1a46f72478c4f7f63683398eacf",
+    "important_note": "NER precision/recall/F1 cannot be reported as gold-standard metrics without human-annotated ground truth. Mean confidence = 0.154 (LOW tier)."
   }
 }

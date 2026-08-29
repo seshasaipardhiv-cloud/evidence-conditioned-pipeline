@@ -875,8 +875,8 @@
       "40449048"
     ],
     "supporting_dois": [
-      "10.1016/j.compbiomed.2025.110488",
-      "10.1097/RLI.0000000000001102"
+      "10.1097/RLI.0000000000001102",
+      "10.1016/j.compbiomed.2025.110488"
     ],
     "total_mention_count": 2,
     "methods_section_mentions": 0,
@@ -1166,16 +1166,16 @@
     "task_modality_match_score": 0.85,
     "supporting_paper_count": 2,
     "supporting_paper_ids": [
-      "paper_40325104",
-      "paper_39074400"
+      "paper_39074400",
+      "paper_40325104"
     ],
     "supporting_pmids": [
       "39074400",
       "40325104"
     ],
     "supporting_dois": [
-      "10.1097/RLI.0000000000001102",
-      "10.1038/s41698-025-00917-6"
+      "10.1038/s41698-025-00917-6",
+      "10.1097/RLI.0000000000001102"
     ],
     "total_mention_count": 2,
     "methods_section_mentions": 0,
