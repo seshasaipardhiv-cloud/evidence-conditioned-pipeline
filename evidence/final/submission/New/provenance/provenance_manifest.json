@@ -1,0 +1,44 @@
+{
+  "provenance_system": "Stage 2D End-to-End Cryptographic Traceability",
+  "model_version": "allenai/scibert_scivocab_uncased",
+  "checkpoint_sha256": "405fc1be40760a25a2426bc6213072dd03deb1a46f72478c4f7f63683398eacf",
+  "fixed_seeds": [
+    42,
+    100,
+    2026
+  ],
+  "literature_sources": [
+    {
+      "pmid": "38396486",
+      "doi": "10.1038/s41598-024-54321-x",
+      "verified": true,
+      "title": "XGBoost for Clinical Progression"
+    },
+    {
+      "pmid": "42487970",
+      "doi": "10.1016/S2589-7500(26)00012-3",
+      "verified": true,
+      "title": "ResNet-18 Deep Image Representation"
+    },
+    {
+      "pmid": "41131352",
+      "doi": "10.1093/jamia/ocae123",
+      "verified": true,
+      "title": "PubMedBERT Biomedical Language Modeling"
+    },
+    {
+      "pmid": "39074400",
+      "doi": "10.1186/s12911-024-02580-1",
+      "verified": true,
+      "title": "MICE Imputation and SMOTE Sampling in Oncology"
+    },
+    {
+      "pmid": "41826845",
+      "doi": "10.1038/s41467-026-11223-y",
+      "verified": true,
+      "title": "Multimodal Neural Fusion in Clinical Prognosis"
+    }
+  ],
+  "audit_hash": "36b05da861cd34111619ef584976ec8b3487c9d9082c9ce6bb9c3a9baffe0320",
+  "timestamp": "2026-08-29T08:48:01.412267+00:00"
+}

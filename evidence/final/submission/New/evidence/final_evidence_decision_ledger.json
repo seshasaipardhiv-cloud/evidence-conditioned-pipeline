@@ -1,0 +1,212 @@
+{
+  "metadata": {
+    "extraction_engine": "SciBERT NER (allenai/scibert_scivocab_uncased)",
+    "supervision_status": "WEAKLY_SUPERVISED_WITH_NOISE_ROBUST_TRAINING",
+    "checkpoint_sha256": "405fc1be40760a25a2426bc6213072dd03deb1a46f72478c4f7f63683398eacf",
+    "timestamp": "2026-08-29T08:48:01.411692+00:00"
+  },
+  "decisions": [
+    {
+      "target_slot": "tabular_model",
+      "modality": "tabular",
+      "selected_model": "XGBoost",
+      "evidence_score": 0.5,
+      "ner_confidence": 0.7,
+      "section_relevance": 0.8,
+      "supporting_pmids": [
+        "42487970"
+      ],
+      "candidate_ranking": [
+        {
+          "name": "XGBoost",
+          "score": 0.5
+        },
+        {
+          "name": "Random Forest",
+          "score": 0.5
+        },
+        {
+          "name": "Logistic Regression",
+          "score": 0.5
+        },
+        {
+          "name": "Tabular MLP",
+          "score": 0.25
+        }
+      ],
+      "selection_reason": "Extracted from Methods sections with SciBERT confidence 0.700, supported by 1 paper(s) (PMIDs: 42487970), achieving winning evidence score 0.5000."
+    },
+    {
+      "target_slot": "tabular_model",
+      "modality": "tabular",
+      "selected_model": "XGBoost",
+      "evidence_score": 0.5,
+      "ner_confidence": 0.7,
+      "section_relevance": 0.8,
+      "supporting_pmids": [
+        "42487970"
+      ],
+      "candidate_ranking": [
+        {
+          "name": "XGBoost",
+          "score": 0.5
+        },
+        {
+          "name": "Random Forest",
+          "score": 0.5
+        },
+        {
+          "name": "Logistic Regression",
+          "score": 0.5
+        },
+        {
+          "name": "Tabular MLP",
+          "score": 0.25
+        }
+      ],
+      "selection_reason": "Extracted from Methods sections with SciBERT confidence 0.700, supported by 1 paper(s) (PMIDs: 42487970), achieving winning evidence score 0.5000."
+    },
+    {
+      "target_slot": "image_model",
+      "modality": "image",
+      "selected_model": "ResNet-18",
+      "evidence_score": 0.5,
+      "ner_confidence": 0.7,
+      "section_relevance": 0.8,
+      "supporting_pmids": [
+        "42487970"
+      ],
+      "candidate_ranking": [
+        {
+          "name": "ResNet-18",
+          "score": 0.5
+        },
+        {
+          "name": "EfficientNet-B0",
+          "score": 0.5
+        },
+        {
+          "name": "ResNet-50",
+          "score": 0.25
+        },
+        {
+          "name": "Vision Transformer (ViT-Small)",
+          "score": 0.2
+        }
+      ],
+      "selection_reason": "Extracted from Methods sections with SciBERT confidence 0.700, supported by 1 paper(s) (PMIDs: 42487970), achieving winning evidence score 0.5000."
+    },
+    {
+      "target_slot": "text_model",
+      "modality": "text",
+      "selected_model": "PubMedBERT",
+      "evidence_score": 0.5,
+      "ner_confidence": 0.7,
+      "section_relevance": 0.8,
+      "supporting_pmids": [
+        "42487970"
+      ],
+      "candidate_ranking": [
+        {
+          "name": "PubMedBERT",
+          "score": 0.5
+        },
+        {
+          "name": "ClinicalBERT",
+          "score": 0.5
+        },
+        {
+          "name": "TF-IDF + Linear Classifier",
+          "score": 0.5
+        }
+      ],
+      "selection_reason": "Extracted from Methods sections with SciBERT confidence 0.700, supported by 1 paper(s) (PMIDs: 42487970), achieving winning evidence score 0.5000."
+    },
+    {
+      "target_slot": "tabular_model",
+      "modality": "tabular",
+      "selected_model": "XGBoost",
+      "evidence_score": 0.5,
+      "ner_confidence": 0.7,
+      "section_relevance": 0.8,
+      "supporting_pmids": [
+        "42487970"
+      ],
+      "candidate_ranking": [
+        {
+          "name": "XGBoost",
+          "score": 0.5
+        },
+        {
+          "name": "Random Forest",
+          "score": 0.5
+        },
+        {
+          "name": "Logistic Regression",
+          "score": 0.5
+        },
+        {
+          "name": "Tabular MLP",
+          "score": 0.25
+        }
+      ],
+      "selection_reason": "Extracted from Methods sections with SciBERT confidence 0.700, supported by 1 paper(s) (PMIDs: 42487970), achieving winning evidence score 0.5000."
+    },
+    {
+      "target_slot": "image_model",
+      "modality": "image",
+      "selected_model": "ResNet-18",
+      "evidence_score": 0.5,
+      "ner_confidence": 0.7,
+      "section_relevance": 0.8,
+      "supporting_pmids": [
+        "42487970"
+      ],
+      "candidate_ranking": [
+        {
+          "name": "ResNet-18",
+          "score": 0.5
+        },
+        {
+          "name": "EfficientNet-B0",
+          "score": 0.5
+        },
+        {
+          "name": "ResNet-50",
+          "score": 0.25
+        },
+        {
+          "name": "Vision Transformer (ViT-Small)",
+          "score": 0.2
+        }
+      ],
+      "selection_reason": "Extracted from Methods sections with SciBERT confidence 0.700, supported by 1 paper(s) (PMIDs: 42487970), achieving winning evidence score 0.5000."
+    },
+    {
+      "target_slot": "text_model",
+      "modality": "text",
+      "selected_model": "PubMedBERT",
+      "evidence_score": 0.5,
+      "ner_confidence": 0.7,
+      "section_relevance": 0.8,
+      "supporting_pmids": [
+        "42487970"
+      ],
+      "candidate_ranking": [
+        {
+          "name": "PubMedBERT",
+          "score": 0.5
+        },
+        {
+          "name": "ClinicalBERT",
+          "score": 0.5
+        },
+        {
+          "name": "TF-IDF + Linear Classifier",
+          "score": 0.5
+        }
+      ],
+      "selection_reason": "Extracted from Methods sections with SciBERT confidence 0.700, supported by 1 paper(s) (PMIDs: 42487970), achieving winning evidence score 0.5000."
+    }
+  ]
+}

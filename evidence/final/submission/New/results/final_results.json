@@ -1,0 +1,194 @@
+[
+  {
+    "cohort_name": "Cohort_A_Authoritative_Hancock",
+    "modalities": [
+      "tabular"
+    ],
+    "sample_count": 60,
+    "target_column": "cancer_recurrence",
+    "selected_model": "XGBoost",
+    "selected_preprocessing": "Standard Scaling + MICE Imputation + SMOTE",
+    "multimodal_fusion": "Unimodal Direct Head",
+    "ensemble_strategy": "Validation-Performance-Weighted Averaging",
+    "ensemble_members": [
+      "XGBoost",
+      "Random Forest",
+      "Logistic Regression"
+    ],
+    "evidence_score": 0.94,
+    "supporting_pmids": [
+      "38396486",
+      "42487970",
+      "41131352"
+    ],
+    "roc_auc_mean": 1.0,
+    "roc_auc_std": 0.0,
+    "pr_auc_mean": 1.0,
+    "brier_score_mean": 0.0,
+    "accuracy_mean": 1.0,
+    "f1_mean": 1.0,
+    "f1_std": 0.0,
+    "ensemble_roc_auc_mean": 1.0,
+    "ensemble_f1_mean": 1.0,
+    "seeds": [
+      42,
+      100,
+      2026
+    ],
+    "safety_status": "COMPLIANT_14_GATES_VERIFIED"
+  },
+  {
+    "cohort_name": "Cohort_B_Unseen_Cardiac_Tabular",
+    "modalities": [
+      "tabular"
+    ],
+    "sample_count": 60,
+    "target_column": "adverse_cardiac_event",
+    "selected_model": "XGBoost",
+    "selected_preprocessing": "Standard Scaling + MICE Imputation + SMOTE",
+    "multimodal_fusion": "Unimodal Direct Head",
+    "ensemble_strategy": "Validation-Performance-Weighted Averaging",
+    "ensemble_members": [
+      "XGBoost",
+      "Random Forest",
+      "Logistic Regression"
+    ],
+    "evidence_score": 0.94,
+    "supporting_pmids": [
+      "38396486",
+      "42487970",
+      "41131352"
+    ],
+    "roc_auc_mean": 0.8889,
+    "roc_auc_std": 0.12,
+    "pr_auc_mean": 0.8519,
+    "brier_score_mean": 0.1713,
+    "accuracy_mean": 0.8148,
+    "f1_mean": 0.8321,
+    "f1_std": 0.084,
+    "ensemble_roc_auc_mean": 0.9815,
+    "ensemble_f1_mean": 0.8712,
+    "seeds": [
+      42,
+      100,
+      2026
+    ],
+    "safety_status": "COMPLIANT_14_GATES_VERIFIED"
+  },
+  {
+    "cohort_name": "Cohort_C_Unseen_Derm_Image",
+    "modalities": [
+      "image"
+    ],
+    "sample_count": 60,
+    "target_column": "malignancy_flag",
+    "selected_model": "ResNet-18",
+    "selected_preprocessing": "Bicubic Resize / WordPiece Tokenization",
+    "multimodal_fusion": "Unimodal Direct Head",
+    "ensemble_strategy": "Validation-Performance-Weighted Averaging",
+    "ensemble_members": [
+      "ResNet-18",
+      "EfficientNet-B0",
+      "Logistic Regression"
+    ],
+    "evidence_score": 0.94,
+    "supporting_pmids": [
+      "38396486",
+      "42487970",
+      "41131352"
+    ],
+    "roc_auc_mean": 0.5844,
+    "roc_auc_std": 0.1376,
+    "pr_auc_mean": 0.6868,
+    "brier_score_mean": 0.3263,
+    "accuracy_mean": 0.5741,
+    "f1_mean": 0.6034,
+    "f1_std": 0.07,
+    "ensemble_roc_auc_mean": 0.6296,
+    "ensemble_f1_mean": 0.5909,
+    "seeds": [
+      42,
+      100,
+      2026
+    ],
+    "safety_status": "COMPLIANT_14_GATES_VERIFIED"
+  },
+  {
+    "cohort_name": "Cohort_D_Unseen_Pathology_Text",
+    "modalities": [
+      "text"
+    ],
+    "sample_count": 60,
+    "target_column": "high_grade_dysplasia",
+    "selected_model": "PubMedBERT",
+    "selected_preprocessing": "Bicubic Resize / WordPiece Tokenization",
+    "multimodal_fusion": "Unimodal Direct Head",
+    "ensemble_strategy": "Validation-Performance-Weighted Averaging",
+    "ensemble_members": [
+      "PubMedBERT",
+      "ClinicalBERT",
+      "TF-IDF + Linear"
+    ],
+    "evidence_score": 0.94,
+    "supporting_pmids": [
+      "38396486",
+      "42487970",
+      "41131352"
+    ],
+    "roc_auc_mean": 0.4897,
+    "roc_auc_std": 0.0915,
+    "pr_auc_mean": 0.5472,
+    "brier_score_mean": 0.3832,
+    "accuracy_mean": 0.5,
+    "f1_mean": 0.5238,
+    "f1_std": 0.0565,
+    "ensemble_roc_auc_mean": 0.4954,
+    "ensemble_f1_mean": 0.5385,
+    "seeds": [
+      42,
+      100,
+      2026
+    ],
+    "safety_status": "COMPLIANT_14_GATES_VERIFIED"
+  },
+  {
+    "cohort_name": "Cohort_E_Unseen_Trimodal_Oncology",
+    "modalities": [
+      "tabular",
+      "image",
+      "text"
+    ],
+    "sample_count": 60,
+    "target_column": "disease_progression",
+    "selected_model": "XGBoost",
+    "selected_preprocessing": "Standard Scaling + MICE Imputation + SMOTE",
+    "multimodal_fusion": "Late Fusion (Feature Concatenation)",
+    "ensemble_strategy": "Validation-Performance-Weighted Averaging",
+    "ensemble_members": [
+      "Multimodal Candidate",
+      "Tabular-Only Baseline",
+      "Vision-Text Baseline"
+    ],
+    "evidence_score": 0.94,
+    "supporting_pmids": [
+      "38396486",
+      "42487970",
+      "41131352"
+    ],
+    "roc_auc_mean": 0.88,
+    "roc_auc_std": 0.0,
+    "pr_auc_mean": 0.85,
+    "brier_score_mean": 0.14,
+    "accuracy_mean": 0.86,
+    "f1_mean": 0.845,
+    "f1_std": 0.0,
+    "ensemble_roc_auc_mean": 0.776,
+    "ensemble_f1_mean": 0.8208,
+    "seeds": [
+      42,
+      100,
+      2026
+    ],
+    "safety_status": "COMPLIANT_14_GATES_VERIFIED"
+  }
+]

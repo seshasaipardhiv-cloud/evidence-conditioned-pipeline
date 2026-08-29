@@ -1,5 +1,5 @@
 {
-  "pipeline_id": "synth_pipeline_20132",
+  "pipeline_id": "synth_pipeline_86880",
   "target_modalities": [
     "tabular",
     "image",
@@ -488,5 +488,5 @@
     }
   },
   "total_evidence_score": 0.4617,
-  "synthesis_timestamp": "2026-08-29T08:21:02.938494+00:00"
+  "synthesis_timestamp": "2026-08-29T08:47:51.239729+00:00"
 }

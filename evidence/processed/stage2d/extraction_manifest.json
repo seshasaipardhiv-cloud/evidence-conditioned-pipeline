@@ -10,7 +10,7 @@
   "confidence_tier_distribution": {
     "LOW": 87
   },
-  "synthesized_pipeline_id": "synth_pipeline_20132",
+  "synthesized_pipeline_id": "synth_pipeline_86880",
   "selected_components": {
     "tabular_model": "Random Forest",
     "image_model": "ResNet-18",
@@ -25,5 +25,5 @@
   "overall_pipeline_evidence_score": 0.4617,
   "ground_truth_status": "NOT_AVAILABLE_WITHOUT_GOLD_LABELS",
   "checkpoint_sha256": "405fc1be40760a25a2426bc6213072dd03deb1a46f72478c4f7f63683398eacf",
-  "timestamp": "2026-08-29T08:21:05.030718+00:00"
+  "timestamp": "2026-08-29T08:47:52.338633+00:00"
 }
