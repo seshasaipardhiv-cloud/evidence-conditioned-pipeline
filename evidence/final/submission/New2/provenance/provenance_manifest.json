@@ -1,0 +1,15 @@
+{
+  "provenance_system": "Stage 2D End-to-End Cryptographic Traceability",
+  "model_version": "allenai/scibert_scivocab_uncased",
+  "checkpoint_sha256": "405fc1be40760a25a2426bc6213072dd03deb1a46f72478c4f7f63683398eacf",
+  "canonical_predictions_sha256": "570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553",
+  "fixed_seeds": [
+    42,
+    100,
+    2026
+  ],
+  "scibert_supervision": "WEAKLY_SUPERVISED",
+  "ground_truth_status": "NOT_AVAILABLE_WITHOUT_GOLD_LABELS",
+  "timestamp": "2026-08-29T09:55:27.434301+00:00",
+  "note": "PMID verification status is recorded in evidence_source_verification.json. Unverified sources are NOT treated as authoritative evidence."
+}

@@ -1,0 +1,97 @@
+{
+  "canonical_data_hash": "570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553",
+  "generation_timestamp": "2026-08-29T09:55:29.043587+00:00",
+  "plots": [
+    {
+      "plot": "01_model_comparison_roc_auc.png",
+      "source": "canonical_predictions.jsonl + final_results.json",
+      "data_hash": "570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553"
+    },
+    {
+      "plot": "02_model_comparison_pr_auc.png",
+      "source": "final_results.json",
+      "data_hash": "570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553"
+    },
+    {
+      "plot": "03_brier_score_comparison.png",
+      "source": "final_results.json",
+      "data_hash": "570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553"
+    },
+    {
+      "plot": "04_accuracy_comparison.png",
+      "source": "final_results.json",
+      "data_hash": "570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553"
+    },
+    {
+      "plot": "05_f1_comparison.png",
+      "source": "final_results.json",
+      "data_hash": "570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553"
+    },
+    {
+      "plot": "06_candidate_vs_ensemble.png",
+      "source": "final_results.json",
+      "data_hash": "570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553"
+    },
+    {
+      "plot": "07_ensemble_member_comparison.png",
+      "source": "cohort_results ensemble_runs (runtime)",
+      "data_hash": "570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553"
+    },
+    {
+      "plot": "08_ensemble_members.png",
+      "source": "final_results.json ensemble_weights (runtime)",
+      "data_hash": "570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553"
+    },
+    {
+      "plot": "09_pipeline_component_comparison.png",
+      "source": "decision_ledger (runtime evidence_scores.json)",
+      "data_hash": "N/A (ledger data)"
+    },
+    {
+      "plot": "10_evidence_model_ranking.png",
+      "source": "evidence_scores.json (runtime)",
+      "data_hash": "N/A (evidence data)"
+    },
+    {
+      "plot": "11_evidence_confidence_distribution.png",
+      "source": "ner_entities.jsonl (runtime)",
+      "data_hash": "N/A"
+    },
+    {
+      "plot": "12_entity_type_distribution.png",
+      "source": "ner_entities.jsonl (runtime)",
+      "data_hash": "N/A"
+    },
+    {
+      "plot": "13_evidence_switching_validation.png",
+      "source": "decision_ledger (runtime)",
+      "data_hash": "N/A"
+    },
+    {
+      "plot": "14_provenance_coverage.png",
+      "source": "evidence_source_verification.json",
+      "data_hash": "N/A"
+    },
+    {
+      "plot": "15_modality_pipeline_comparison.png",
+      "source": "final_results.json",
+      "data_hash": "570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553"
+    },
+    {
+      "plot": "16_per_seed_performance.png",
+      "source": "canonical_predictions.jsonl (recomputed)",
+      "data_hash": "570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553"
+    },
+    {
+      "plot": "17_candidate_vs_default_xgboost.png",
+      "source": "final_results.json",
+      "data_hash": "570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553"
+    },
+    {
+      "plot": "18_end_to_end_pipeline_summary.png",
+      "source": "decision_ledger (runtime)",
+      "data_hash": "N/A"
+    }
+  ],
+  "note": "All performance plots generated from canonical_predictions.jsonl. Evidence plots generated from evidence_scores.json and ner_entities.jsonl."
+}

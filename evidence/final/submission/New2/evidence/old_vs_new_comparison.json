@@ -1,0 +1,23 @@
+{
+  "comparison_title": "Legacy Regex vs Stage 2D SciBERT NER & Evidence Scoring",
+  "regex_legacy_extractor": {
+    "method": "Regex / Keyword Dictionary Lookup",
+    "limitations": [
+      "No contextual understanding",
+      "Binary confidence (1.0 or 0.0)",
+      "No section awareness",
+      "No relation extraction"
+    ]
+  },
+  "scibert_stage2d_extractor": {
+    "method": "SciBERT Transformer + Noise-Robust Linear Head",
+    "training_supervision": "WEAKLY_SUPERVISED_WITH_NOISE_ROBUST_TRAINING",
+    "ground_truth_status": "NOT_AVAILABLE_WITHOUT_GOLD_LABELS",
+    "mean_ner_confidence": 0.154,
+    "confidence_tier": "ALL_LOW",
+    "entity_count": 87,
+    "section_awareness": true,
+    "checkpoint_sha256": "405fc1be40760a25a2426bc6213072dd03deb1a46f72478c4f7f63683398eacf",
+    "important_note": "NER precision/recall/F1 cannot be reported as gold-standard metrics without human-annotated ground truth. Mean confidence = 0.154 (LOW tier)."
+  }
+}
