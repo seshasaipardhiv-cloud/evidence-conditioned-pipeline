@@ -1,0 +1,83 @@
+{
+  "audit_timestamp": "2026-09-02T13:12:18.543277+00:00",
+  "dataset_name": "MCR-SL (Multimodal Context-Rich Skin Lesion)",
+  "sample_count": 234,
+  "positive_malignant_count": 42,
+  "negative_non_malignant_count": 192,
+  "unique_subjects_count": 59,
+  "unique_lesions_count": 234,
+  "image_audit": {
+    "missing_image_count": 0,
+    "exact_duplicate_hashes_count": 0,
+    "duplicate_image_ids_count": 0,
+    "distinct_resolutions_count": 2
+  },
+  "text_target_leakage_audit": {
+    "leakage_detected": false,
+    "leakage_violations_count": 0,
+    "forbidden_terms_scanned": [
+      "malignan",
+      "melanom",
+      "carcinom",
+      "bcc",
+      "scc",
+      "basal",
+      "squamous",
+      "nevus",
+      "nevi",
+      "benign",
+      "histopathol",
+      "biopsy",
+      "excision",
+      "thickness",
+      "tumor",
+      "clark",
+      "breslow",
+      "metastat",
+      "dysplasia",
+      "keratosis",
+      "dermatofibroma"
+    ],
+    "findings": []
+  },
+  "split_isolation_audit": {
+    "seed_42": {
+      "train_samples": 139,
+      "train_subjects": 36,
+      "train_malignant": 24,
+      "test_samples": 95,
+      "test_subjects": 23,
+      "test_malignant": 18,
+      "subject_overlap_count": 0,
+      "lesion_overlap_count": 0,
+      "subject_isolation_passed": true,
+      "lesion_isolation_passed": true
+    },
+    "seed_100": {
+      "train_samples": 141,
+      "train_subjects": 35,
+      "train_malignant": 26,
+      "test_samples": 93,
+      "test_subjects": 24,
+      "test_malignant": 16,
+      "subject_overlap_count": 0,
+      "lesion_overlap_count": 0,
+      "subject_isolation_passed": true,
+      "lesion_isolation_passed": true
+    },
+    "seed_2026": {
+      "train_samples": 141,
+      "train_subjects": 35,
+      "train_malignant": 26,
+      "test_samples": 93,
+      "test_subjects": 24,
+      "test_malignant": 16,
+      "subject_overlap_count": 0,
+      "lesion_overlap_count": 0,
+      "subject_isolation_passed": true,
+      "lesion_isolation_passed": true
+    }
+  },
+  "overall_forensic_status": "PASS",
+  "scientific_conclusion": "MCR-SL dataset passes all forensic integrity gates. 100% of image paths exist on disk. Zero diagnostic terms exist in serialized clinical context. Subject-level stratified group splitting strictly enforces 0 subject overlap and 0 lesion overlap."
+}

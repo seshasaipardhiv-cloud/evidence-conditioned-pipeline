@@ -64,6 +64,11 @@ data/experiments/
 experiments/checkpoints/
 *.checkpoint
 
+# MCR-SL Dataset Raw Image Files (too large for git; use the zip archive)
+data/real/MCR-SL_dataset/
+data/real/mcr_sl/dermoscopic/
+data/real/mcr_sl/clinical/
+
 # OS-specific
 .DS_Store
 .DS_Store?

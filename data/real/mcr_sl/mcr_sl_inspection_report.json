@@ -1,0 +1,179 @@
+{
+  "dataset_name": "MCR-SL (Multimodal, Context-Rich Skin Lesion)",
+  "dataset_path": "A:\\Deep Learning\\evidence-conditioned-pipeline\\data\\real\\mcr_sl",
+  "inspection_timestamp": "2026-09-02T13:08:00Z",
+  "metadata_files": {
+    "subject.xlsx": {
+      "row_count": 60,
+      "columns": [
+        "subject_id",
+        "derived_from",
+        "year_of_birth",
+        "age",
+        "sex",
+        "height",
+        "weight",
+        "natural_hair_color",
+        "skin_reaction_to_sun",
+        "moles_body_18",
+        "moles_bigger_5mm",
+        "moles_bigger_20cm",
+        "moles_body",
+        "sunburn_number",
+        "sunburn_age",
+        "sunburn_number_group",
+        "sunbed",
+        "h_cancer",
+        "h_skin_cancer",
+        "h_skin_cancer_relatives",
+        "organ_transplant",
+        "immunosuppresion"
+      ],
+      "missing_values": {
+        "sunburn_age": 38
+      },
+      "unique_subjects": 60
+    },
+    "lesion.xlsx": {
+      "row_count": 240,
+      "columns": [
+        "subject_id",
+        "lesion_id",
+        "referral_diagnosis",
+        "lesion_status_when_captured",
+        "location",
+        "location_group",
+        "diameter",
+        "malignancy",
+        "lesion_diagnosis",
+        "diagnosis_image_id"
+      ],
+      "missing_values": {
+        "diameter": 2,
+        "diagnosis_image_id": 1
+      },
+      "unique_lesions": 240,
+      "unique_subjects": 59
+    },
+    "image.xlsx": {
+      "row_count": 2394,
+      "columns": [
+        "image_id",
+        "lesion_id",
+        "modality"
+      ],
+      "missing_values": {},
+      "unique_images": 2394,
+      "modalities_in_table": {
+        "dermoscopy": 1517,
+        "clinical": 877
+      }
+    },
+    "unified_diagnosis.xlsx": {
+      "row_count": 240,
+      "columns": [
+        "diagnosis_id",
+        "lesion_id",
+        "histopathology_diagnosis",
+        "diagnosis_id_histopathology",
+        "dermatology_diagnosis",
+        "unified_diagnosis"
+      ],
+      "missing_values": {
+        "histopathology_diagnosis": 211,
+        "diagnosis_id_histopathology": 211
+      }
+    },
+    "dermatology_diagnosis.xlsx": {
+      "row_count": 964,
+      "columns": [
+        "diagnosis_id",
+        "lesion_id",
+        "image_id",
+        "expert_id",
+        "diagnosis",
+        "2nd_option",
+        "certainty",
+        "image_rating",
+        "time"
+      ],
+      "missing_values": {
+        "2nd_option": 864,
+        "image_rating": 241
+      }
+    },
+    "histopathology_diagnosis.xlsx": {
+      "row_count": 28,
+      "columns": [
+        "diagnosis_id",
+        "lesion_id",
+        "procedure",
+        "tumor_thickness",
+        "diagnosis"
+      ],
+      "missing_values": {
+        "tumor_thickness": 8
+      }
+    }
+  },
+  "image_files_on_disk": {
+    "dermoscopic_png_count": 1352,
+    "clinical_png_count": 779,
+    "total_image_files": 2131
+  },
+  "target_analysis": {
+    "target_field": "malignancy (in lesion.xlsx)",
+    "target_distribution_raw": {
+      "Non-malignant": 192,
+      "Malignant": 42,
+      "unknown": 6
+    },
+    "binary_target_definition": {
+      "0": "Non-malignant (192 lesions: NEV=85, SK=83, AK=10, ATY=8, DF=2, ANG=4)",
+      "1": "Malignant (42 lesions: BCC=30, MEL=8, SCC=4)",
+      "excluded": "unknown (6 lesions with lesion_diagnosis=UNK)"
+    },
+    "valid_labeled_sample_count": 234
+  },
+  "relational_hierarchy": "subject (60) -> lesion (240) -> image (2,394 entries / 2,131 files)",
+  "subject_lesion_distribution": {
+    "mean_lesions_per_subject": 4.067796610169491,
+    "min_lesions_per_subject": 1,
+    "max_lesions_per_subject": 11
+  },
+  "clinical_context_allowlist_proposal": [
+    "age",
+    "sex",
+    "height",
+    "weight",
+    "natural_hair_color",
+    "skin_reaction_to_sun",
+    "moles_body_18",
+    "moles_bigger_5mm",
+    "moles_bigger_20cm",
+    "moles_body",
+    "sunburn_number_group",
+    "sunbed",
+    "h_cancer",
+    "h_skin_cancer",
+    "h_skin_cancer_relatives",
+    "organ_transplant",
+    "immunosuppresion",
+    "location_group",
+    "location",
+    "diameter"
+  ],
+  "clinical_context_excluded_leaking_fields": [
+    "malignancy",
+    "lesion_diagnosis",
+    "unified_diagnosis",
+    "histopathology_diagnosis",
+    "dermatology_diagnosis",
+    "referral_diagnosis",
+    "tumor_thickness",
+    "procedure",
+    "lesion_status_when_captured",
+    "diagnosis_image_id"
+  ],
+  "official_splits_found": false
+}
