@@ -1,6 +1,6 @@
 {
   "experiment_stage": "stage11",
-  "timestamp": "2026-08-29T09:42:21.362603+00:00",
+  "timestamp": "2026-09-02T13:43:13.136688+00:00",
   "seeds": [
     42,
     100,
@@ -24,7 +24,7 @@
       "mean_precision": 0.9801,
       "mean_recall": 0.9429,
       "mean_f1_score": 0.9611,
-      "mean_runtime_sec": 0.077,
+      "mean_runtime_sec": 0.5918,
       "per_seed_roc_auc": {
         "42": 0.9888,
         "100": 0.9609,
@@ -47,7 +47,7 @@
       "mean_precision": 0.9801,
       "mean_recall": 0.9429,
       "mean_f1_score": 0.9611,
-      "mean_runtime_sec": 0.027,
+      "mean_runtime_sec": 0.0507,
       "per_seed_roc_auc": {
         "42": 0.9783,
         "100": 0.9643,
@@ -70,7 +70,7 @@
       "mean_precision": 0.9801,
       "mean_recall": 0.9429,
       "mean_f1_score": 0.9611,
-      "mean_runtime_sec": 0.0938,
+      "mean_runtime_sec": 0.1805,
       "per_seed_roc_auc": {
         "42": 0.9757,
         "100": 0.9607,
@@ -168,17 +168,17 @@
       {
         "rank": 1,
         "model": "Default XGBoost",
-        "runtime_sec": 0.027
+        "runtime_sec": 0.0507
       },
       {
         "rank": 2,
-        "model": "Evidence-Conditioned Candidate",
-        "runtime_sec": 0.077
+        "model": "Random Forest",
+        "runtime_sec": 0.1805
       },
       {
         "rank": 3,
-        "model": "Random Forest",
-        "runtime_sec": 0.0938
+        "model": "Evidence-Conditioned Candidate",
+        "runtime_sec": 0.5918
       }
     ]
   },

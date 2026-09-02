@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-29T09:44:06.080000+00:00",
+  "timestamp": "2026-09-02T13:46:34.173077+00:00",
   "target_task": "recurrence_classification",
   "candidate_pipeline": {
     "name": "Candidate Pipeline (Evidence-Conditioned XGBoost)",

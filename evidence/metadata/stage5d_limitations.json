@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-29T09:44:06.044271+00:00",
+  "timestamp": "2026-09-02T13:46:34.115902+00:00",
   "documented_limitations": [
     "Single retrospective cohort: Evaluated solely on the HANCOCK clinical tabular dataset.",
     "Small random seed sample size: Evaluated across n=3 seeds [42, 100, 2026], which precludes formal statistical hypothesis testing.",
