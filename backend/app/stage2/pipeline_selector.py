@@ -387,10 +387,10 @@ class AutomaticPipelineSelector:
                     "name": cand_name,
                     "decision_mode": cand_mode,
                     "base_evidence_score": base_ev_score,
-                    "reported_performance_score": s_perf,
-                    "evidence_quality_score": s_quality,
-                    "applicability_score": round(s_app, 3),
-                    "dataset_multiplier": round(s_app, 3),
+                    "reported_performance_score": round(s_perf, 4) if s_perf is not None else None,
+                    "evidence_quality_score": round(s_quality, 4),
+                    "applicability_score": round(s_app, 4),
+                    "dataset_multiplier": round(s_app, 4),
                     "final_score": final_score,
                     "supporting_pmids": pmids,
                     "supporting_dois": dois,
@@ -408,7 +408,7 @@ class AutomaticPipelineSelector:
                     "name": cand_name,
                     "decision_mode": "HEURISTIC_LITERATURE_FALLBACK",
                     "base_evidence_score": base_ev_score,
-                    "dataset_multiplier": round(multiplier, 3),
+                    "dataset_multiplier": round(multiplier, 4),
                     "final_score": final_score,
                     "supporting_pmids": pmids,
                     "supporting_dois": dois,
@@ -421,11 +421,11 @@ class AutomaticPipelineSelector:
         winner_mode = winner.get("decision_mode", "HEURISTIC_LITERATURE_FALLBACK")
 
         if winner_mode == "RESULT_AWARE_EXPERIMENTAL":
-            perf_str = f"{winner['reported_performance_score']:.3f}" if winner.get('reported_performance_score') is not None else "N/A"
+            perf_str = f"{winner['reported_performance_score']:.4f}" if winner.get('reported_performance_score') is not None else "N/A"
             rationale = (
                 f"Selected '{winner['name']}' in RESULT_AWARE_EXPERIMENTAL mode with reported experimental performance "
-                f"S_perf={perf_str}, evidence quality S_quality={winner.get('evidence_quality_score', 0.5):.3f}, and "
-                f"applicability S_app={winner.get('applicability_score', 1.0):.2f} (final score: {winner['final_score']:.4f}). "
+                f"S_perf={perf_str}, evidence quality S_quality={winner.get('evidence_quality_score', 0.5):.4f}, and "
+                f"applicability S_app={winner.get('applicability_score', 1.0):.4f} (final score: {winner['final_score']:.4f}). "
                 f"Uncertainty: {winner.get('uncertainty_level', 'MODERATE')}. {winner.get('evaluation_summary', '')} "
                 f"Outranked {len(ranked)-1} alternative candidate(s)."
             )

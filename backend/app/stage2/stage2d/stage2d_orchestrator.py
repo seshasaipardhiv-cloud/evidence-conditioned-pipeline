@@ -167,6 +167,7 @@ class Stage2DOrchestrator:
         possible_exp_paths = [
             experimental_results_path,
             self.out_dir / "published_experimental_results.jsonl",
+            Path("evidence/processed/published_experimental_results.jsonl"),
             Path("evidence/processed/stage2d/published_experimental_results.jsonl"),
             Path("evidence/processed/experiments.jsonl"),
         ]

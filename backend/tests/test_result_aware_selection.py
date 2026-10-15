@@ -657,3 +657,77 @@ class TestLivePaperExtraction:
             assert r.is_ambiguous is True
             assert r.reported_value == 0.85
 
+
+# ---------------------------------------------------------------------------
+# Test J: Score Calculation Harmonization and Arithmetic Integrity
+# ---------------------------------------------------------------------------
+
+class TestScoreCalculationHarmonization:
+    """Verify that S_final strictly matches 0.45 * S_perf + 0.35 * S_quality + 0.20 * S_app."""
+
+    def test_authoritative_score_formula_exact_equality(self):
+        """Verify that final_score mathematically equals the 3-component weighted sum."""
+        selector = AutomaticPipelineSelector()
+        results = [
+            _make_result("r1", "p1", "XGBoost", "xgboost", "AUC", 0.694),
+            _make_result("r2", "p1", "XGBoost", "xgboost", "ACC", 0.619),
+        ]
+        score_record = _make_score_record("xgboost", 0.45, 2)
+        spec = selector.select_pipeline(
+            scored_evidence={"xgboost": score_record},
+            modalities=["tabular"],
+            sample_count=80,
+            compute_budget="LIGHT",
+            experimental_results=results,
+            target_dataset="TCGA",
+        )
+        cand = spec.selected_components["tabular_model"]
+        ranking = next(r for r in cand.candidate_rankings if r["canonical_id"] == "xgboost")
+        
+        s_perf = ranking["reported_performance_score"]
+        s_quality = ranking["evidence_quality_score"]
+        s_app = ranking["applicability_score"]
+        s_final = ranking["final_score"]
+
+        # Exact unrounded mean: (0.694 + 0.619) / 2 = 0.6565
+        assert s_perf == 0.6565
+        assert s_quality == 0.45
+        assert s_app == 1.0
+
+        # Weighted calculation: 0.45 * 0.6565 + 0.35 * 0.45 + 0.20 * 1.0 = 0.652925 -> 0.6529
+        expected_s_final = round(0.45 * s_perf + 0.35 * s_quality + 0.20 * s_app, 4)
+        assert s_final == expected_s_final == 0.6529
+
+    def test_rationale_numbers_reproduce_final_score_without_truncation(self):
+        """Verify that numbers displayed in decision_rationale reproduce final_score exactly."""
+        import re
+        selector = AutomaticPipelineSelector()
+        results = [
+            _make_result("r1", "p1", "XGBoost", "xgboost", "AUC", 0.694),
+            _make_result("r2", "p1", "XGBoost", "xgboost", "ACC", 0.619),
+        ]
+        score_record = _make_score_record("xgboost", 0.45, 2)
+        spec = selector.select_pipeline(
+            scored_evidence={"xgboost": score_record},
+            modalities=["tabular"],
+            sample_count=80,
+            compute_budget="LIGHT",
+            experimental_results=results,
+        )
+        cand = spec.selected_components["tabular_model"]
+        rationale = cand.decision_rationale
+
+        # Extract S_perf, S_quality, S_app, and final score from rationale string
+        m = re.search(r"S_perf=([0-9\.]+), evidence quality S_quality=([0-9\.]+), and applicability S_app=([0-9\.]+) \(final score: ([0-9\.]+)\)", rationale)
+        assert m is not None, f"Rationale does not match expected format: {rationale}"
+        
+        disp_perf = float(m.group(1))
+        disp_quality = float(m.group(2))
+        disp_app = float(m.group(3))
+        disp_final = float(m.group(4))
+
+        # Recomputed score directly from displayed strings MUST match displayed final score
+        recomputed = round(0.45 * disp_perf + 0.35 * disp_quality + 0.20 * disp_app, 4)
+        assert recomputed == disp_final, f"Discrepancy: displayed numbers {disp_perf}, {disp_quality}, {disp_app} give {recomputed} != {disp_final}"
+
+
