@@ -106,6 +106,7 @@ class EvidenceScoringEngine:
         papers: List[PaperRecord],
         target_modality: Optional[str] = None,
         target_task: Optional[str] = None,
+        contradiction_mechanism_ids: Optional[Set[str]] = None,
     ) -> Dict[str, EvidenceScoreRecord]:
         """
         Calculates deterministic evidence scores for every distinct canonical mechanism.
@@ -177,8 +178,18 @@ class EvidenceScoringEngine:
                         matched_mentions += 1
                 s_match = 0.60 + 0.40 * (matched_mentions / max(1, len(group)))
 
-            # G. Consistency
-            s_consistency = 0.90
+            # G. Consistency — computed from cross-paper agreement
+            if contradiction_mechanism_ids and canon_name.lower() in contradiction_mechanism_ids:
+                # This mechanism appears in detected contradiction candidates → penalize
+                s_consistency = 0.50
+            elif n_papers == 1:
+                # Single-paper support: consistency is unverified
+                s_consistency = 0.70
+            elif n_papers >= 2:
+                # Multiple papers reporting same mechanism → consistent
+                s_consistency = 0.85
+            else:
+                s_consistency = 0.70
 
             # Composite Score
             composite = (

@@ -57,25 +57,22 @@ def test_2_candidate_metrics_match_stage5b():
     packager = _setup_test_packager()
     exp = packager.build_experiment_results()
     cand = exp["candidate_pipeline"]
-    assert cand["mean_roc_auc"] == 0.9751
-    assert cand["std_roc_auc"] == 0.0114
-    agg = cand["aggregated_test_metrics"]
-    assert agg["f1"]["mean"] == 0.9611
-    assert agg["accuracy"]["mean"] == 0.9825
-    assert agg["precision"]["mean"] == 0.9801
-    assert agg["recall"]["mean"] == 0.9429
-    assert agg["brier_score"]["mean"] == 0.0175
-    assert agg["pr_auc"]["mean"] == 0.9679
+    cand_5b = packager._load_json(packager.stage5b_candidate_path)
+    agg_5b = cand_5b["aggregated_test_metrics"]
+    assert cand["aggregated_test_metrics"] == agg_5b
+    for metric in ["roc_auc", "f1", "accuracy", "precision", "recall", "brier_score"]:
+        assert metric in agg_5b
 
 
 def test_3_baseline_values_match_stage5b():
     packager = _setup_test_packager()
     exp = packager.build_experiment_results()
     baselines = exp["baseline_comparisons"]
-    assert baselines["baseline_xgboost_default"]["baseline_mean_roc_auc"] == 0.9704
-    assert baselines["baseline_random_forest"]["baseline_mean_roc_auc"] == 0.9698
-    assert baselines["baseline_logistic_regression"]["baseline_mean_roc_auc"] == 0.9645
-    assert baselines["baseline_simple_mlp"]["baseline_mean_roc_auc"] == 0.9405
+    comp_5c = packager._load_json(packager.stage5c_baseline_path)
+    expected_baselines = comp_5c["baseline_comparisons"]
+    for b_key in ["baseline_xgboost_default", "baseline_random_forest", "baseline_logistic_regression", "baseline_simple_mlp"]:
+        assert baselines[b_key]["baseline_mean_roc_auc"] == expected_baselines[b_key]["baseline_mean_roc_auc"]
+
 
 
 def test_4_ablations_match_stage5c():

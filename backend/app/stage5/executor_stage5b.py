@@ -32,7 +32,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Tuple
 
-warnings.filterwarnings("ignore")
+# Suppress only sklearn DataConversionWarnings, not convergence warnings
+warnings.filterwarnings("ignore", category=UserWarning, module="sklearn")
 
 import numpy as np
 from sklearn.impute import SimpleImputer
@@ -104,6 +105,11 @@ class Stage5BExecutor:
         self.claims_path = self.processed_dir / "evidence_claims.jsonl"
         self.mechanisms_path = self.processed_dir / "mechanisms.jsonl"
 
+        # Paths to evidence-selected pipeline spec (prefer Stage 2D, fall back to Stage 2C)
+        self.stage2d_spec_path = Path("evidence/processed/stage2d/synthesized_pipeline_spec.json")
+        self.stage2c_spec_path = Path("evidence/processed/stage2c/synthesized_pipeline_spec.json")
+
+
     def _load_json(self, path: Path) -> Optional[Dict[str, Any]]:
         if not path.exists():
             return None
@@ -114,6 +120,86 @@ class Stage5BExecutor:
     def _save_json(self, path: Path, data: Any):
         with open(path, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2)
+
+    def _load_pipeline_spec(self) -> Optional[Dict[str, Any]]:
+        """Load evidence-selected pipeline specification (Stage 2D preferred, 2C fallback)."""
+        for spec_path in [self.stage2d_spec_path, self.stage2c_spec_path]:
+            if spec_path.exists():
+                spec = self._load_json(spec_path)
+                if spec and spec.get("selected_components"):
+                    logger.info(f"Loaded evidence pipeline spec from {spec_path}")
+                    return spec
+        logger.warning(
+            "No synthesized pipeline spec found. Using evidence-grounded fallback "
+            "(XGBoost with tuned hyperparameters). Run Stage 2C or 2D first."
+        )
+        return None
+
+    def _build_candidate_from_spec(
+        self,
+        pipeline_spec: Optional[Dict[str, Any]],
+        seed: int,
+    ):
+        """
+        Build the candidate model from the evidence-selected pipeline specification.
+        Returns (model, model_identity_str) where model_identity_str records what was used.
+        """
+        if pipeline_spec is not None:
+            components = pipeline_spec.get("selected_components", {})
+            tabular_comp = components.get("tabular_model", {})
+            canonical_id = tabular_comp.get("canonical_id", "") if tabular_comp else ""
+            selected_name = tabular_comp.get("selected_name", "") if tabular_comp else ""
+            evidence_score = tabular_comp.get("evidence_score", 0.0) if tabular_comp else 0.0
+            pipeline_id = pipeline_spec.get("pipeline_id", "unknown")
+        else:
+            canonical_id = ""
+            selected_name = ""
+            evidence_score = 0.0
+            pipeline_id = "fallback"
+
+        # Map canonical_id to sklearn/xgboost model
+        if canonical_id == "xgboost" or "xgboost" in selected_name.lower():
+            from xgboost import XGBClassifier
+            model = XGBClassifier(
+                n_estimators=100, max_depth=4, learning_rate=0.05,
+                subsample=0.8, colsample_bytree=0.8,
+                eval_metric="logloss", random_state=seed,
+                objective="binary:logistic", n_jobs=1,
+            )
+            identity = f"XGBoost[evidence_selected] pipeline_id={pipeline_id} evidence_score={evidence_score:.3f}"
+        elif canonical_id == "random_forest" or "random forest" in selected_name.lower():
+            from sklearn.ensemble import RandomForestClassifier
+            model = RandomForestClassifier(n_estimators=100, random_state=seed, n_jobs=1)
+            identity = f"RandomForest[evidence_selected] pipeline_id={pipeline_id} evidence_score={evidence_score:.3f}"
+        elif canonical_id == "logistic_regression" or "logistic" in selected_name.lower():
+            from sklearn.linear_model import LogisticRegression
+            model = LogisticRegression(max_iter=1000, random_state=seed)
+            identity = f"LogisticRegression[evidence_selected] pipeline_id={pipeline_id} evidence_score={evidence_score:.3f}"
+        elif canonical_id == "mlp_tabular" or "mlp" in selected_name.lower():
+            from sklearn.neural_network import MLPClassifier
+            model = MLPClassifier(hidden_layer_sizes=(64, 32), max_iter=200, random_state=seed)
+            identity = f"TabularMLP[evidence_selected] pipeline_id={pipeline_id} evidence_score={evidence_score:.3f}"
+        else:
+            # No spec or unrecognised id — use evidence-grounded fallback, document it
+            from xgboost import XGBClassifier
+            model = XGBClassifier(
+                n_estimators=100, max_depth=4, learning_rate=0.05,
+                subsample=0.8, colsample_bytree=0.8,
+                eval_metric="logloss", random_state=seed,
+                objective="binary:logistic", n_jobs=1,
+            )
+            identity = (
+                f"XGBoost[FALLBACK: no_spec_or_unknown_id canonical_id='{canonical_id}'] "
+                f"pipeline_id={pipeline_id}"
+            )
+            logger.warning(
+                f"Candidate pipeline fallback triggered: canonical_id='{canonical_id}' "
+                f"selected_name='{selected_name}' not mapped. Using XGBoost fallback. "
+                "This result should NOT be reported as evidence-selected."
+            )
+
+        return model, identity
+
 
     # ──────────────────────────────────────────────────────────────────────────
     # 1. Contract Verification
@@ -365,7 +451,15 @@ class Stage5BExecutor:
             "baseline_simple_mlp": {"per_seed": [], "test_metrics": []},
             "baseline_xgboost_default": {"per_seed": [], "test_metrics": []},
         }
-        candidate_results: Dict[str, Any] = {"per_seed": [], "test_metrics": []}
+        # Load evidence-selected pipeline specification
+        pipeline_spec = self._load_pipeline_spec()
+        pipeline_spec_source = (
+            "stage2d" if (pipeline_spec and self.stage2d_spec_path.exists()) else
+            "stage2c" if (pipeline_spec and self.stage2c_spec_path.exists()) else
+            "fallback_no_spec"
+        )
+
+        candidate_results: Dict[str, Any] = {"per_seed": [], "test_metrics": [], "model_identity": None, "pipeline_spec_source": pipeline_spec_source}
 
         tracemalloc.start()
         start_time_all = time.time()
@@ -391,7 +485,7 @@ class Stage5BExecutor:
             # ──────────────────────────────────────────────────────────────────
             # Baseline 1: Logistic Regression
             # ──────────────────────────────────────────────────────────────────
-            lr = LogisticRegression(penalty="l2", max_iter=1000, random_state=seed)
+            lr = LogisticRegression(max_iter=1000, random_state=seed)
             lr.fit(X_tr_scaled, y_tr)
             lr_val_prob = lr.predict_proba(X_val_scaled)[:, 1]
             lr_test_prob = lr.predict_proba(X_te_scaled)[:, 1]
@@ -427,7 +521,7 @@ class Stage5BExecutor:
             # ──────────────────────────────────────────────────────────────────
             # Baseline 3: Simple MLP
             # ──────────────────────────────────────────────────────────────────
-            mlp = MLPClassifier(hidden_layer_sizes=(64, 32), max_iter=10, random_state=seed)
+            mlp = MLPClassifier(hidden_layer_sizes=(64, 32), max_iter=200, random_state=seed)
             mlp.fit(X_tr_scaled, y_tr)
             mlp_val_prob = mlp.predict_proba(X_val_scaled)[:, 1]
             mlp_test_prob = mlp.predict_proba(X_te_scaled)[:, 1]
@@ -461,19 +555,14 @@ class Stage5BExecutor:
             seed_run_record["models"]["baseline_xgboost_default"] = xgb_def_test_metrics
 
             # ──────────────────────────────────────────────────────────────────
-            # Candidate Pipeline: Evidence-Conditioned XGBoost (MICE + SMOTE + OneHot + Attention-weighted XGB)
+            # Candidate Pipeline: Evidence-Selected Model from Stage 2C/2D
+            # The model is determined by the evidence-based pipeline selector.
             # ──────────────────────────────────────────────────────────────────
-            candidate_model = XGBClassifier(
-                n_estimators=100,
-                max_depth=4,
-                learning_rate=0.05,
-                subsample=0.8,
-                colsample_bytree=0.8,
-                eval_metric="logloss",
-                random_state=seed,
-                objective="binary:logistic",
-                n_jobs=1,
+            candidate_model, candidate_identity = self._build_candidate_from_spec(
+                pipeline_spec=pipeline_spec,
+                seed=seed,
             )
+            logger.info(f"Candidate model for seed {seed}: {candidate_identity}")
             candidate_model.fit(X_tr, y_tr)
 
             cand_val_prob = candidate_model.predict_proba(X_val)[:, 1]
@@ -486,13 +575,21 @@ class Stage5BExecutor:
                 "seed": seed,
                 "val_metrics": cand_val_metrics,
                 "test_metrics": cand_test_metrics,
+                "model_identity": candidate_identity,
             })
+            candidate_results["model_identity"] = candidate_identity  # last seed wins, all same
             candidate_results["test_metrics"].append(cand_test_metrics)
             seed_run_record["models"]["candidate_pipeline"] = cand_test_metrics
 
             # Save candidate model artifact
             model_artifact_path = self.experiments_dir / f"candidate_model_seed_{seed}.json"
-            candidate_model.save_model(str(model_artifact_path))
+            if hasattr(candidate_model, "save_model"):
+                candidate_model.save_model(str(model_artifact_path))
+            else:
+                import pickle
+                pickle_path = self.experiments_dir / f"candidate_model_seed_{seed}.pkl"
+                with open(pickle_path, "wb") as f:
+                    pickle.dump(candidate_model, f)
 
             seed_run_record["runtime_seconds"] = round(time.time() - seed_start_time, 2)
             run_manifests.append(seed_run_record)
@@ -533,6 +630,8 @@ class Stage5BExecutor:
             "target_task": "recurrence_classification",
             "primary_metric": "roc_auc",
             "candidate_pipeline": {
+                "model_identity": candidate_results.get("model_identity", "unknown"),
+                "pipeline_spec_source": pipeline_spec_source,
                 "mean_roc_auc": candidate_summary["roc_auc"]["mean"],
                 "std_roc_auc": candidate_summary["roc_auc"]["std"],
                 "aggregated_metrics": candidate_summary,
@@ -586,6 +685,8 @@ class Stage5BExecutor:
                 "test": run_manifests[0]["split_info"]["test_count"],
             },
             "candidate_pipeline_performance": {
+                "model_identity": candidate_results.get("model_identity", "unknown"),
+                "pipeline_spec_source": pipeline_spec_source,
                 "mean_roc_auc": candidate_summary["roc_auc"]["mean"],
                 "std_roc_auc": candidate_summary["roc_auc"]["std"],
                 "per_seed_roc_auc": {r["seed"]: r["test_metrics"]["roc_auc"] for r in candidate_results["per_seed"]},

@@ -269,6 +269,38 @@ class ResultRecord(BaseModel):
     source_location: Optional[str] = None  # e.g. "Results/Table 2"
     source_scope: SourceScope = SourceScope.abstract
 
+
+class PublishedExperimentResult(BaseModel):
+    """
+    Structured empirical experiment result extracted from a research paper.
+    Maintains explicit association between model, dataset, task, metric, and reported value.
+    """
+    result_id: str
+    paper_id: str
+    pmid: Optional[str] = None
+    doi: Optional[str] = None
+    citation: Optional[str] = None
+    model_name: str
+    canonical_id: str
+    dataset_name: Optional[str] = None
+    task_type: Optional[str] = None          # e.g. "binary_classification", "survival_prediction", "diagnosis"
+    metric_name: str                         # e.g. "roc_auc", "f1", "accuracy", "rmse", "c_index"
+    reported_value: Optional[float] = None   # reported metric number
+    higher_is_better: bool = True            # False for RMSE, MAE, loss, etc.
+    validation_protocol: Optional[str] = None # e.g. "5_fold_cv", "holdout_test", "external_validation"
+    sample_size: Optional[int] = None
+    dataset_characteristics: Optional[Dict[str, Any]] = None
+    preprocessing_notes: Optional[str] = None
+    hyperparameters: Optional[Dict[str, Any]] = None
+    result_role: str = "proposed_method"     # "proposed_method", "baseline", "ablation", "replication"
+    extraction_confidence: float = 1.0       # Extraction confidence
+    is_ambiguous: bool = False               # Marked True if model-result association is uncertain
+    missing_fields: List[str] = Field(default_factory=list)
+    source_sentence: Optional[str] = None
+    section_location: Optional[str] = None
+    study_quality_score: float = 1.0         # Study quality / rigor factor
+
+
 class ExperimentRecord(BaseModel):
     experiment_id: str
     paper_id: str

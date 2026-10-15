@@ -29,7 +29,7 @@ from backend.app.stage2.graph_builder import GraphBuilder
 from backend.app.stage2.models import (
     AblationRecord, ContradictionCandidate, EvidenceClaim,
     EvidenceStatus, ExperimentRecord, PaperRecord,
-    SearchMetadata, SourceScope,
+    PublishedExperimentResult, SearchMetadata, SourceScope,
 )
 from backend.app.stage2.section_parser import SectionParser
 
@@ -225,6 +225,7 @@ class Stage2Orchestrator:
         all_experiments: List[ExperimentRecord] = []
         all_ablations: List[AblationRecord] = []
         all_new_claims: List[EvidenceClaim] = []
+        all_published_results: List[PublishedExperimentResult] = []
 
         for paper in enriched_papers:
             ft = full_texts.get(paper.paper_id)
@@ -249,6 +250,21 @@ class Stage2Orchestrator:
             )
             all_experiments.extend(exps)
             all_ablations.extend(abls)
+
+            pub_results = self.exp_extractor.extract_published_results(
+                paper_id=paper.paper_id,
+                text=ft if ft else paper.abstract,
+                pmid=paper.pmid,
+                doi=paper.doi,
+                citation=f"{paper.authors[0] if paper.authors else 'Unknown'} et al., {paper.publication_year or 2024} ({paper.paper_id})",
+                dataset=exps[0].dataset if exps else None,
+                task=exps[0].task if exps else None,
+                validation_protocol=exps[0].validation_strategy if exps else None,
+                sample_size=exps[0].sample_count if exps else None,
+                source_scope=source_scope,
+                sections=sections,
+            )
+            all_published_results.extend(pub_results)
 
         # ── 5. Upgrade Stage 2A claims where full text is now available ───────
         # If a paper now has full text, update source_scope of its claims
@@ -303,6 +319,10 @@ class Stage2Orchestrator:
             for cc in contradictions:
                 f.write(cc.model_dump_json() + "\n")
 
+        with open(out_dir / "published_experimental_results.jsonl", "w", encoding="utf-8") as f:
+            for pr in all_published_results:
+                f.write(pr.model_dump_json() + "\n")
+
         with open(out_dir / "evidence_graph.json", "w", encoding="utf-8") as f:
             f.write(graph.model_dump_json(indent=2))
 
@@ -337,6 +357,7 @@ class Stage2Orchestrator:
             "papers_with_no_evidence": papers_no_evidence,
             "experiments_extracted": len(all_experiments),
             "ablations_extracted": len(all_ablations),
+            "published_results_extracted": len(all_published_results),
             "evidence_claims_total": len(validated_claims),
             "direct_empirical_claims": direct_empirical,
             "qualitative_claims": qualitative,
@@ -417,8 +438,36 @@ class Stage2Orchestrator:
             paper_claims = claims_by_paper[p.paper_id]
             paper_exps = exps_by_paper[p.paper_id]
             paper_abls = abls_by_paper[p.paper_id]
+            scope = (
+                paper_claims[0].source_scope.value if paper_claims else
+                SourceScope.abstract.value if p.abstract_available else
+                SourceScope.metadata_only.value if p.title else
+                SourceScope.none.value
+            )
+            evidence_coverage = (
+                "full" if p.full_text_available else
+                "abstract_only" if p.abstract_available else
+                "metadata_only" if p.title else
+                "none"
+            )
+            coverage.append({
+                "paper_id": p.paper_id,
+                "title": p.title,
+                "doi": p.doi,
+                "pmid": p.pmid,
+                "abstract_available": p.abstract_available,
+                "full_text_available": p.full_text_available,
+                "claims_extracted": len(paper_claims),
+                "experiments_extracted": len(paper_exps),
+                "ablations_extracted": len(paper_abls),
+                "claim_ids": [c.evidence_id for c in paper_claims],
+                "source_scope": scope,
+                "evidence_coverage": evidence_coverage,
+                "evidence_statuses": list({c.evidence_status.value for c in paper_claims}),
+            })
+        return coverage
 
-                # ─────────────────────────────────────────────────────────────────────────
+    # ─────────────────────────────────────────────────────────────────────────
     # Stage 2C — Transformer NER Extraction & Automatic Evidence Synthesis
     # ─────────────────────────────────────────────────────────────────────────
 

@@ -1,4 +1,4 @@
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
 from backend.app.stage3.models import (
     Mechanism, Component, ContextualBelief, 
     MechanismScore, MechanismRanking, PipelineSpecification, Stage3Context, MECHANISM_TO_COMPONENT
@@ -13,7 +13,7 @@ class RankerComposer:
         self, 
         context: Stage3Context, 
         beliefs: Dict[Mechanism, ContextualBelief]
-    ) -> PipelineSpecification:
+    ) -> Tuple[PipelineSpecification, Dict[Component, MechanismRanking]]:
         
         # 1. Score all mechanisms
         mechanism_scores = []

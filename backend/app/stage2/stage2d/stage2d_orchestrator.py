@@ -23,7 +23,7 @@ import time
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Union
 
 import torch
 import torch.nn.functional as F
@@ -61,7 +61,16 @@ class Stage2DOrchestrator:
         self.evidence_scorer = SectionAwareEvidenceScorer()
         self.pipeline_selector = AutomaticPipelineSelector()
 
-    def run_stage2d(self, seed: int = 42) -> Dict[str, Any]:
+    def run_stage2d(
+        self,
+        seed: int = 42,
+        modalities: Optional[List[str]] = None,
+        sample_count: int = 50,
+        compute_budget: str = "LIGHT",
+        target_dataset: Optional[str] = None,
+        target_task: str = "binary_classification",
+        experimental_results_path: Optional[Union[str, Path]] = None,
+    ) -> Dict[str, Any]:
         """
         Executes the complete Stage 2D pipeline.
         """
@@ -138,7 +147,11 @@ class Stage2DOrchestrator:
                 provenance_score=v.provenance_score,
                 paper_support_score=v.paper_support_score,
                 task_modality_match_score=v.task_modality_match_score,
-                consistency_score=0.90,
+                consistency_score=(
+                    0.85 if v.supporting_paper_count >= 2 else
+                    0.70 if v.supporting_paper_count == 1 else
+                    0.70
+                ),
                 supporting_paper_count=v.supporting_paper_count,
                 supporting_paper_ids=v.supporting_paper_ids,
                 supporting_pmids=v.supporting_pmids,
@@ -148,11 +161,31 @@ class Stage2DOrchestrator:
                 selection_rationale=v.selection_rationale,
             )
 
+        # Load published experimental results if available
+        from backend.app.stage2.result_evidence import load_published_experiments, save_published_experiments
+        exp_results = []
+        possible_exp_paths = [
+            experimental_results_path,
+            self.out_dir / "published_experimental_results.jsonl",
+            Path("evidence/processed/stage2d/published_experimental_results.jsonl"),
+            Path("evidence/processed/experiments.jsonl"),
+        ]
+        for p in possible_exp_paths:
+            if p and Path(p).exists():
+                exp_results = load_published_experiments(p)
+                if exp_results:
+                    logger.info(f"Loaded {len(exp_results)} published experimental results from {p}")
+                    break
+
+        _modalities = modalities if modalities is not None else ["tabular", "image", "text"]
         synthesized_spec = self.pipeline_selector.select_pipeline(
             scored_evidence=adapted_scores,
-            modalities=["tabular", "image", "text"],
-            sample_count=50,
-            compute_budget="LIGHT",
+            modalities=_modalities,
+            sample_count=sample_count,
+            task_type=target_task,
+            compute_budget=compute_budget,
+            experimental_results=exp_results if exp_results else None,
+            target_dataset=target_dataset,
         )
 
         # ── 7. Persist Stage 2D artifacts ─────────────────────────────────────
@@ -166,6 +199,9 @@ class Stage2DOrchestrator:
 
         with open(self.out_dir / "evidence_scores.json", "w", encoding="utf-8") as f:
             json.dump({k: v.model_dump() for k, v in evidence_scores.items()}, f, indent=2)
+
+        if exp_results:
+            save_published_experiments(exp_results, self.out_dir / "published_experimental_results.jsonl")
 
         with open(self.out_dir / "synthesized_pipeline_spec.json", "w", encoding="utf-8") as f:
             json.dump(synthesized_spec.model_dump(), f, indent=2)

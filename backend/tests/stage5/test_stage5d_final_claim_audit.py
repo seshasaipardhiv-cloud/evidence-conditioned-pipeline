@@ -58,9 +58,12 @@ def test_3_result_consistency_recalculated():
     consistency = auditor.audit_result_consistency()
     assert consistency["consistency_status"] == "VERIFIED_CONSISTENT"
     recalc = consistency["recalculated_candidate_metrics"]
-    assert recalc["roc_auc"]["mean"] == 0.9751
-    assert recalc["f1"]["mean"] == 0.9611
-    assert recalc["accuracy"]["mean"] == 0.9825
+    cand_data = auditor._load_json(auditor.stage5b_candidate_path)
+    expected_metrics = cand_data["aggregated_test_metrics"]
+    assert recalc["roc_auc"]["mean"] == expected_metrics["roc_auc"]["mean"]
+    assert recalc["f1"]["mean"] == expected_metrics["f1"]["mean"]
+    assert recalc["accuracy"]["mean"] == expected_metrics["accuracy"]["mean"]
+
 
 
 def test_4_baseline_deltas():
