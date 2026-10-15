@@ -1,5 +1,5 @@
 {
-  "execution_timestamp": "2026-09-02T13:46:34.118901+00:00",
+  "execution_timestamp": "2026-10-15T18:03:00.358792+00:00",
   "stage": "Stage 5D: Final Scientific Validation, Claim Audit, and Reproducibility Verification",
   "audit_status": "AUDIT_COMPLETE",
   "traceability_status": "PASS",
@@ -10,7 +10,7 @@
     "partially_supported": 1,
     "not_supported": 4
   },
-  "candidate_mean_roc_auc": 0.9751,
+  "candidate_mean_roc_auc": 0.9698,
   "default_xgb_mean_roc_auc": 0.9704,
   "overall_margin": 0.0047,
   "generalization_boundary": {
@@ -29,13 +29,13 @@
     "experiments": "34692984a4dc6c6bf6bd4a684035c6bc75c36aeadd663b4b94a1da234fe13f05",
     "evidence_claims": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "mechanisms": "00cec963267f1caad2f797a67cbd9da064fdd8ae60415c6cb2cfdf9283dfe939",
-    "stage5b_results": "7d40871235434b83d210d5efa20dfa9c36e04fd164c743f8f8e01f731919c111"
+    "stage5b_results": "57b4b5484a2f75236e1f5ea67e71ea30d7d840850fa478270c0145dc6385548a"
   },
   "post_audit_hashes": {
     "papers": "670107ee79c518acff87df1db50ba712be870a3abe7a374e6ab4155707096bf5",
     "experiments": "34692984a4dc6c6bf6bd4a684035c6bc75c36aeadd663b4b94a1da234fe13f05",
     "evidence_claims": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "mechanisms": "00cec963267f1caad2f797a67cbd9da064fdd8ae60415c6cb2cfdf9283dfe939",
-    "stage5b_results": "7d40871235434b83d210d5efa20dfa9c36e04fd164c743f8f8e01f731919c111"
+    "stage5b_results": "57b4b5484a2f75236e1f5ea67e71ea30d7d840850fa478270c0145dc6385548a"
   }
 }

@@ -54,7 +54,7 @@ class EvidenceScoreRecord(BaseModel):
     provenance_score: float
     paper_support_score: float
     task_modality_match_score: float
-    consistency_score: float
+    consistency_score: float = Field(default=0.85, description="Cross-paper consistency score [0.0, 1.0]")
     supporting_paper_count: int
     supporting_paper_ids: List[str] = Field(default_factory=list)
     supporting_pmids: List[str] = Field(default_factory=list)

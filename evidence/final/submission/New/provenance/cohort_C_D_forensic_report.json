@@ -1,5 +1,5 @@
 {
-  "forensic_audit_timestamp": "2026-08-29T09:55:27.337773+00:00",
+  "forensic_audit_timestamp": "2026-10-15T16:21:56.176972+00:00",
   "audit_objective": "Determine exact technical root causes for high ROC-AUC in Cohorts C and D",
   "cohort_c_image_forensics": {
     "cohort_name": "Cohort_C_Unseen_Derm_Image",

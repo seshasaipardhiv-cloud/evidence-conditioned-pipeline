@@ -1,7 +1,7 @@
 # Final Verified Multi-Cohort Results
 
 > **Source**: All values computed programmatically from `canonical_predictions.jsonl`.
-> **Data SHA-256**: `570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553`
+> **Data SHA-256**: `0dcd216c18718cdcb95876ab040373557fa7f60174d22c86ba5b3fc0f9621f67`
 
 | Cohort | Dataset Status | Modalities | Model | Ens. Members | ROC-AUC (mean±std) | PR-AUC | Brier | F1 | Ens. ROC-AUC |
 |---|---|---|---|---|:---:|:---:|:---:|:---:|:---:|

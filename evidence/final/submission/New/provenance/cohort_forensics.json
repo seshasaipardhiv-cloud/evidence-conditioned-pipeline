@@ -1,5 +1,5 @@
 {
-  "audit_timestamp": "2026-08-29T09:55:26.817662+00:00",
+  "audit_timestamp": "2026-10-15T16:21:55.640243+00:00",
   "purpose": "Forensic audit for train/test leakage, target encoding, and data integrity",
   "summary": {
     "cohorts_audited": 5,

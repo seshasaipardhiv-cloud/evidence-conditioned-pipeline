@@ -1,7 +1,7 @@
 # Final Project Completion Report: Stage 2D Scientific Integrity Repair
 
-**Generated**: 2026-08-29T09:55:27.435299+00:00
-**Canonical Data SHA-256**: `570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553`
+**Generated**: 2026-10-15T16:21:56.275410+00:00
+**Canonical Data SHA-256**: `0dcd216c18718cdcb95876ab040373557fa7f60174d22c86ba5b3fc0f9621f67`
 **Source**: All metrics computed from `results/canonical_predictions.jsonl`
 
 ---
@@ -46,7 +46,7 @@ Research Papers (30 synthetic)
     → Safety Gates
     → Real Training (sklearn proxies, seeds=[42,100,2026])
     → Actual Predictions
-    → canonical_predictions.jsonl (SHA-256=570af01d18e8d297...)
+    → canonical_predictions.jsonl (SHA-256=0dcd216c18718cdc...)
     → Computed Metrics
     → 18 Plots (from canonical data)
     → This Report

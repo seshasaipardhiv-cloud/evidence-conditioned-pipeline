@@ -37,7 +37,7 @@
       2026
     ],
     "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
-    "canonical_data_hash": "570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553"
+    "canonical_data_hash": "0dcd216c18718cdcb95876ab040373557fa7f60174d22c86ba5b3fc0f9621f67"
   },
   {
     "cohort_name": "Cohort_B_Unseen_Cardiac_Tabular",
@@ -77,7 +77,7 @@
       2026
     ],
     "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
-    "canonical_data_hash": "570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553"
+    "canonical_data_hash": "0dcd216c18718cdcb95876ab040373557fa7f60174d22c86ba5b3fc0f9621f67"
   },
   {
     "cohort_name": "Cohort_C_Unseen_Derm_Image",
@@ -117,7 +117,7 @@
       2026
     ],
     "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
-    "canonical_data_hash": "570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553"
+    "canonical_data_hash": "0dcd216c18718cdcb95876ab040373557fa7f60174d22c86ba5b3fc0f9621f67"
   },
   {
     "cohort_name": "Cohort_D_Unseen_Pathology_Text",
@@ -150,14 +150,14 @@
     "f1_mean": 1.0,
     "f1_std": 0.0,
     "ensemble_roc_auc_mean": 1.0,
-    "ensemble_f1_mean": 1.0,
+    "ensemble_f1_mean": 0.963,
     "seeds": [
       42,
       100,
       2026
     ],
     "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
-    "canonical_data_hash": "570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553"
+    "canonical_data_hash": "0dcd216c18718cdcb95876ab040373557fa7f60174d22c86ba5b3fc0f9621f67"
   },
   {
     "cohort_name": "Cohort_E_Unseen_Trimodal_Oncology",
@@ -199,6 +199,6 @@
       2026
     ],
     "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
-    "canonical_data_hash": "570af01d18e8d2970c18bbf704edd010d71bef83cdde9d22d786139a2c1b0553"
+    "canonical_data_hash": "0dcd216c18718cdcb95876ab040373557fa7f60174d22c86ba5b3fc0f9621f67"
   }
 ]

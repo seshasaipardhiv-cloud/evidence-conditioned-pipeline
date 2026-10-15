@@ -3,102 +3,107 @@
     {
       "seed": 42,
       "val_metrics": {
-        "roc_auc": 0.9693,
-        "f1": 0.9412,
-        "accuracy": 0.9739,
+        "roc_auc": 0.9674,
+        "f1": 0.9615,
+        "accuracy": 0.9826,
         "precision": 1.0,
-        "recall": 0.8889,
-        "brier_score": 0.0201,
-        "pr_auc": 0.9586
+        "recall": 0.9259,
+        "brier_score": 0.0168,
+        "pr_auc": 0.9717
       },
       "test_metrics": {
-        "roc_auc": 0.9888,
+        "roc_auc": 0.9757,
         "f1": 0.9855,
         "accuracy": 0.9934,
         "precision": 1.0,
         "recall": 0.9714,
-        "brier_score": 0.0074,
-        "pr_auc": 0.9838
-      }
+        "brier_score": 0.0127,
+        "pr_auc": 0.978
+      },
+      "model_identity": "RandomForest[evidence_selected] pipeline_id=synth_pipeline_67212 evidence_score=0.555"
     },
     {
       "seed": 100,
       "val_metrics": {
-        "roc_auc": 0.9886,
+        "roc_auc": 1.0,
         "f1": 0.9811,
         "accuracy": 0.9913,
         "precision": 1.0,
         "recall": 0.963,
-        "brier_score": 0.0093,
-        "pr_auc": 0.9815
+        "brier_score": 0.0073,
+        "pr_auc": 1.0
       },
       "test_metrics": {
-        "roc_auc": 0.9609,
+        "roc_auc": 0.9607,
         "f1": 0.9412,
         "accuracy": 0.9737,
         "precision": 0.9697,
         "recall": 0.9143,
-        "brier_score": 0.0256,
-        "pr_auc": 0.9538
-      }
+        "brier_score": 0.0274,
+        "pr_auc": 0.9445
+      },
+      "model_identity": "RandomForest[evidence_selected] pipeline_id=synth_pipeline_67212 evidence_score=0.555"
     },
     {
       "seed": 2026,
       "val_metrics": {
-        "roc_auc": 0.9263,
+        "roc_auc": 0.9798,
         "f1": 0.9057,
         "accuracy": 0.9565,
         "precision": 0.9231,
         "recall": 0.8889,
-        "brier_score": 0.0426,
-        "pr_auc": 0.884
+        "brier_score": 0.0347,
+        "pr_auc": 0.9436
       },
       "test_metrics": {
-        "roc_auc": 0.9756,
+        "roc_auc": 0.9729,
         "f1": 0.9565,
         "accuracy": 0.9803,
         "precision": 0.9706,
         "recall": 0.9429,
-        "brier_score": 0.0194,
-        "pr_auc": 0.9662
-      }
+        "brier_score": 0.0221,
+        "pr_auc": 0.9257
+      },
+      "model_identity": "RandomForest[evidence_selected] pipeline_id=synth_pipeline_67212 evidence_score=0.555"
     }
   ],
   "test_metrics": [
     {
-      "roc_auc": 0.9888,
+      "roc_auc": 0.9757,
       "f1": 0.9855,
       "accuracy": 0.9934,
       "precision": 1.0,
       "recall": 0.9714,
-      "brier_score": 0.0074,
-      "pr_auc": 0.9838
+      "brier_score": 0.0127,
+      "pr_auc": 0.978
     },
     {
-      "roc_auc": 0.9609,
+      "roc_auc": 0.9607,
       "f1": 0.9412,
       "accuracy": 0.9737,
       "precision": 0.9697,
       "recall": 0.9143,
-      "brier_score": 0.0256,
-      "pr_auc": 0.9538
+      "brier_score": 0.0274,
+      "pr_auc": 0.9445
     },
     {
-      "roc_auc": 0.9756,
+      "roc_auc": 0.9729,
       "f1": 0.9565,
       "accuracy": 0.9803,
       "precision": 0.9706,
       "recall": 0.9429,
-      "brier_score": 0.0194,
-      "pr_auc": 0.9662
+      "brier_score": 0.0221,
+      "pr_auc": 0.9257
     }
   ],
+  "model_identity": "RandomForest[evidence_selected] pipeline_id=synth_pipeline_67212 evidence_score=0.555",
+  "pipeline_spec_source": "stage2d",
   "aggregated_test_metrics": {
     "roc_auc": {
-      "mean": 0.9751,
-      "std": 0.0114,
-      "min": 0.9609,
-      "max": 0.9888
+      "mean": 0.9698,
+      "std": 0.0065,
+      "min": 0.9607,
+      "max": 0.9757
     },
     "f1": {
       "mean": 0.9611,
@@ -125,16 +130,16 @@
       "max": 0.9714
     },
     "brier_score": {
-      "mean": 0.0175,
-      "std": 0.0076,
-      "min": 0.0074,
-      "max": 0.0256
+      "mean": 0.0207,
+      "std": 0.0061,
+      "min": 0.0127,
+      "max": 0.0274
     },
     "pr_auc": {
-      "mean": 0.9679,
-      "std": 0.0123,
-      "min": 0.9538,
-      "max": 0.9838
+      "mean": 0.9494,
+      "std": 0.0216,
+      "min": 0.9257,
+      "max": 0.978
     }
   }
 }

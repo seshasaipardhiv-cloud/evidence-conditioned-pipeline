@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-02T13:47:13.470477+00:00",
+  "timestamp": "2026-10-15T16:10:14.772906+00:00",
   "source_master_results": "evidence\\final\\stage6a_master_results.json",
   "figures": [
     {
@@ -11,7 +11,7 @@
       "limitations": "Does not imply explicit configurations are literature-backed.",
       "generated_png": "fig1_pipeline_architecture.png",
       "generated_svg": "fig1_pipeline_architecture.svg",
-      "sha256_png": "c489426ff40118204c3c32100ff3a5a2b729b1a330572364a012c804ddfefad5"
+      "sha256_png": "a3fa3e58c44f23fb3163c833c2d4b4355a0ca99057ac3ee3a4a9380bb7eb9c6b"
     },
     {
       "figure_id": "FIGURE_2",
@@ -28,7 +28,7 @@
       "limitations": "Modest margin; underpowered n=3 seeds.",
       "generated_png": "fig2_baseline_performance.png",
       "generated_svg": "fig2_baseline_performance.svg",
-      "sha256_png": "e71b9c60f00509d4249374101c15f866a9d55dd87eb9b63814a43bb36e165b89"
+      "sha256_png": "47010458c4980a908e16eaf920e90555b60594df50bc8d2d3da272fd20492de1"
     },
     {
       "figure_id": "FIGURE_3",
@@ -52,7 +52,7 @@
       "limitations": "Universal fold dominance not achieved.",
       "generated_png": "fig3_per_seed_robustness.png",
       "generated_svg": "fig3_per_seed_robustness.svg",
-      "sha256_png": "cb9d934ff0cee9be2d8908c9dfd3baad05ee604670fd388cbd0159ef5894e31c"
+      "sha256_png": "e2bc41473da0f5fec0f558547297beb3efe3c2c3ef7ff93c22d8d46e29a8d46c"
     },
     {
       "figure_id": "FIGURE_4",
@@ -69,7 +69,7 @@
       "limitations": "Controlled retrospective comparison; evidence validity does not equal empirical optimality.",
       "generated_png": "fig4_component_ablation.png",
       "generated_svg": "fig4_component_ablation.svg",
-      "sha256_png": "b21dd914952a599eac202e481f7d46812351eb6e54401c5cc6747335ce5046f2"
+      "sha256_png": "83f4f5ec23937a95772dc2d372a3a20af81819fc916f6a16249457454beecfe1"
     },
     {
       "figure_id": "FIGURE_5",
@@ -86,7 +86,7 @@
       "limitations": "Single retrospective cohort.",
       "generated_png": "fig5_calibration_comparison.png",
       "generated_svg": "fig5_calibration_comparison.svg",
-      "sha256_png": "a784bcc71ca2eb6e55a2a6c4c5a4dc69c250b35ed11c444f293de6d75f573119"
+      "sha256_png": "90e63eb8d56091ebeaba3615a58329832b92cc06dae9e2885d1a7076b10ef8a4"
     },
     {
       "figure_id": "FIGURE_6",
@@ -105,7 +105,7 @@
       "limitations": "Retrospective single cohort.",
       "generated_png": "fig6_multi_metric_profile.png",
       "generated_svg": "fig6_multi_metric_profile.svg",
-      "sha256_png": "ef51f30106f53d761a1d5fc75b348697511d3c75e8add1626abf5da75998476b"
+      "sha256_png": "d5091944bd5798812ffce5889b8d854bc91b004fa35a2decf015e96ef5b8e732"
     },
     {
       "figure_id": "FIGURE_7",
@@ -116,7 +116,7 @@
       "limitations": "Explicit configs are project inputs, not literature claims.",
       "generated_png": "fig7_provenance_boundary.png",
       "generated_svg": "fig7_provenance_boundary.svg",
-      "sha256_png": "fc88c1309b7d4e77d009dc1a6eda5186f9f0a4e097e579e77c69d1fde292291e"
+      "sha256_png": "abd93b7653bee895b68b02f4dd169f8b7263b1d044dc693146786b3abf943446"
     },
     {
       "figure_id": "FIGURE_8",
@@ -127,7 +127,7 @@
       "limitations": "External and prospective validation remain unestablished.",
       "generated_png": "fig8_claim_boundary_matrix.png",
       "generated_svg": "fig8_claim_boundary_matrix.svg",
-      "sha256_png": "110415c8ed003dbf91281eb1f286cae699ccc4f18afd07306984c249709d79d0"
+      "sha256_png": "7900015b5b685b96dd1b5cc8bffed544296f517a5eed4324f0de47d44d7f7dd3"
     }
   ]
 }

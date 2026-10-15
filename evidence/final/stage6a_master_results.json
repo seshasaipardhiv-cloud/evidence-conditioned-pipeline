@@ -1,6 +1,6 @@
 {
   "package_title": "Phase 6A: Final Master Research Results Package",
-  "timestamp": "2026-09-02T13:46:34.178111+00:00",
+  "timestamp": "2026-10-15T16:09:45.300356+00:00",
   "1_research_objective": "Develop an evidence-conditioned machine learning pipeline synthesis framework that bridges biomedical literature evidence to executable clinical prediction pipelines, rigorously preventing arbitrary library defaults and target leakage while establishing traceable provenance and conservative scientific validation.",
   "2_final_pipeline": {
     "pipeline_hash": "6b6bcb1b217793230dba3467ea09fd94339c7497ccc85b0f8ed86c59f16686da",
@@ -197,21 +197,21 @@
   },
   "6_per_seed_results": {
     "42": {
-      "candidate_auc": 0.9888,
+      "candidate_auc": 0.9757,
       "default_xgb_auc": 0.9783,
-      "margin": 0.0105,
-      "candidate_won": true
+      "margin": -0.0026,
+      "candidate_won": false
     },
     "100": {
-      "candidate_auc": 0.9609,
+      "candidate_auc": 0.9607,
       "default_xgb_auc": 0.9643,
-      "margin": -0.0034,
+      "margin": -0.0036,
       "candidate_won": false
     },
     "2026": {
-      "candidate_auc": 0.9756,
+      "candidate_auc": 0.9729,
       "default_xgb_auc": 0.9685,
-      "margin": 0.0071,
+      "margin": 0.0044,
       "candidate_won": true
     }
   },
@@ -448,11 +448,11 @@
     }
   },
   "8_calibration": {
-    "candidate_pipeline": 0.0175,
+    "candidate_pipeline": 0.0207,
     "default_xgboost": 0.018,
     "random_forest": 0.0207,
     "logistic_regression": 0.0201,
-    "simple_mlp": 0.0683
+    "simple_mlp": 0.0371
   },
   "9_reproducibility": {
     "seeds_equal_42_100_2026": "PASS",
@@ -542,12 +542,12 @@
     "stage3_6_pipeline": "1380e2b029ce6aaa6b746a6afc103e4630a063f153414db50ec41193cfbd9dee",
     "stage4_remat": "4e4a5f4ee0d8274fb07f7ed568fa63efd34a4c77b95565fbda90bdea0194b50e",
     "stage5a_contract": "6eb6b035c8f87bcf52d7d6107a5a4eafa6c6330ca9bf6c1ca837cdbd63910024",
-    "stage5b_candidate": "cdc3471a7b69a10002435ca0de656d2828a608c8bf8c2165682b4f65faec1c72",
-    "stage5b_baseline": "f2d0340a1d84f4638c78830cc57dd01c0a3b652d36cce22a5f58483ce6e6b96d",
-    "stage5b_run_results": "7d40871235434b83d210d5efa20dfa9c36e04fd164c743f8f8e01f731919c111",
-    "stage5c_ablation": "d8f58f23d1e1a661237cfc52f9426577f83a63ac2c45f385ff8c71ddde91fb43",
-    "stage5c_baseline_comp": "35cdd5a012b1802f7cfc8b54e700e33ad720726bc85aa5454292d68863cc8722",
-    "stage5d_claims": "d4b319e69483a442457d82be8fae4c6ab84db90457f873b4d1d22f6edbce7e62",
-    "stage5d_verdict": "a143751fde8a574ff63980dea5f512718b40df7ffc50669f5e0739b584191bd6"
+    "stage5b_candidate": "37bb597666c8a04c4ae6b2c9bb3d58931661b4bf8d0ec0e73f8a124a9f836423",
+    "stage5b_baseline": "e770de0be5c39683b0fd4d1aa679d93f07259a38f9381644283a2d88c0b6a1d3",
+    "stage5b_run_results": "57b4b5484a2f75236e1f5ea67e71ea30d7d840850fa478270c0145dc6385548a",
+    "stage5c_ablation": "7cb41010ef6f642e3edefff15546889eafb47ce4f16d2e7307309a96dcbf571e",
+    "stage5c_baseline_comp": "5cd6ecf8c4194e37e2123122237394209bfd43d6844b4845ece9b5bcc5eeed3f",
+    "stage5d_claims": "dcd704a0043fdc2739d1e903b09aedbc3e3cf06e9be983244504a194c767f301",
+    "stage5d_verdict": "1731ae821359c5ed5477de232ed90b886de07bdec0c8cbbbb1504977f6c2ea2b"
   }
 }

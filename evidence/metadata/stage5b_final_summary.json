@@ -1,5 +1,5 @@
 {
-  "execution_timestamp": "2026-08-14T17:48:56.840209+00:00",
+  "execution_timestamp": "2026-10-15T16:00:57.175265+00:00",
   "stage": "Stage 5B: Controlled Experimental Execution",
   "experiment_status": "EXPERIMENT_SUCCESSFUL",
   "successful_runs_count": 3,
@@ -15,19 +15,21 @@
     "test": 152
   },
   "candidate_pipeline_performance": {
-    "mean_roc_auc": 0.9751,
-    "std_roc_auc": 0.0114,
+    "model_identity": "RandomForest[evidence_selected] pipeline_id=synth_pipeline_67212 evidence_score=0.555",
+    "pipeline_spec_source": "stage2d",
+    "mean_roc_auc": 0.9698,
+    "std_roc_auc": 0.0065,
     "per_seed_roc_auc": {
-      "42": 0.9888,
-      "100": 0.9609,
-      "2026": 0.9756
+      "42": 0.9757,
+      "100": 0.9607,
+      "2026": 0.9729
     },
     "all_metrics": {
       "roc_auc": {
-        "mean": 0.9751,
-        "std": 0.0114,
-        "min": 0.9609,
-        "max": 0.9888
+        "mean": 0.9698,
+        "std": 0.0065,
+        "min": 0.9607,
+        "max": 0.9757
       },
       "f1": {
         "mean": 0.9611,
@@ -54,21 +56,21 @@
         "max": 0.9714
       },
       "brier_score": {
-        "mean": 0.0175,
-        "std": 0.0076,
-        "min": 0.0074,
-        "max": 0.0256
+        "mean": 0.0207,
+        "std": 0.0061,
+        "min": 0.0127,
+        "max": 0.0274
       },
       "pr_auc": {
-        "mean": 0.9679,
-        "std": 0.0123,
-        "min": 0.9538,
-        "max": 0.9838
+        "mean": 0.9494,
+        "std": 0.0216,
+        "min": 0.9257,
+        "max": 0.978
       }
     }
   },
-  "runtime_seconds": 6.87,
-  "peak_memory_mb": 6.83,
+  "runtime_seconds": 16.0,
+  "peak_memory_mb": 7.46,
   "contract_hash": "6eb6b035c8f87bcf52d7d6107a5a4eafa6c6330ca9bf6c1ca837cdbd63910024",
   "pipeline_hash": "6b6bcb1b217793230dba3467ea09fd94339c7497ccc85b0f8ed86c59f16686da",
   "training_allowed": true

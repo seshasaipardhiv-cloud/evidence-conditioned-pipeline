@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-09-02T13:46:34.114902+00:00",
+  "timestamp": "2026-10-15T18:03:00.355439+00:00",
   "raw_records_verified": true,
   "recalculated_candidate_metrics": {
     "roc_auc": {
-      "mean": 0.9751,
-      "std": 0.0114,
-      "min": 0.9609,
-      "max": 0.9888
+      "mean": 0.9698,
+      "std": 0.0065,
+      "min": 0.9607,
+      "max": 0.9757
     },
     "f1": {
       "mean": 0.9611,
@@ -33,16 +33,16 @@
       "max": 0.9714
     },
     "brier_score": {
-      "mean": 0.0175,
-      "std": 0.0076,
-      "min": 0.0074,
-      "max": 0.0256
+      "mean": 0.0207,
+      "std": 0.0061,
+      "min": 0.0127,
+      "max": 0.0274
     },
     "pr_auc": {
-      "mean": 0.9679,
-      "std": 0.0123,
-      "min": 0.9538,
-      "max": 0.9838
+      "mean": 0.9494,
+      "std": 0.0216,
+      "min": 0.9257,
+      "max": 0.978
     }
   },
   "consistency_with_stage5b_verified": true,

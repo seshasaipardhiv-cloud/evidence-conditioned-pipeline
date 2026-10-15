@@ -1,6 +1,6 @@
 # Stage 11: Formal Ensemble Model-Composition Manifest
 
-**Generated:** 2026-09-02 13:43:13 UTC  
+**Generated:** 2026-10-15 16:16:54 UTC  
 **Evaluation Seeds:** `[42, 100, 2026]`  
 **Cohort:** Retrospective Hancock Clinical Cohort  
 

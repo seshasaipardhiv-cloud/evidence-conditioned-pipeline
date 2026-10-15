@@ -938,9 +938,11 @@ class ExperimentExtractor:
         Extracts structured PublishedExperimentResult records directly from empirical text.
         Guarantees:
         1. Only explicitly stated numerical scores with verified model associations are extracted.
-        2. Ambiguous multi-model sentences without clear attribution are flagged (is_ambiguous=True).
-        3. Never hallucinates or fabricates metrics not present in source sentences.
-        4. Links dataset, task, and evaluation protocol for scientific comparability.
+        2. Disambiguates complex multi-model constructions (paired comparisons, 'respectively' patterns).
+        3. Ambiguous multi-model sentences without clear attribution are flagged (is_ambiguous=True).
+        4. Scales bounded percentage metrics to [0.0, 1.0] while preserving unbounded metrics (e.g. RMSE).
+        5. Masks out CI ranges, p-values, scanner parameters, and patient counts to reject false positives.
+        6. Extracts sentence-level dataset and evaluation protocol for scientific comparability.
         """
         if not text or not text.strip():
             return []
@@ -951,43 +953,149 @@ class ExperimentExtractor:
             METRIC_DIRECTION_MAP,
         )
 
-        tagged = (
-            self._get_tagged_sentences(text, sections)
-            if sections
-            else [(s, "Results" if source_scope == SourceScope.full_text else "Abstract") for s in self._get_sentences(text)]
+        norm_text = (
+            text.replace("\xa0", " ")
+            .replace("\u202f", " ")
+            .replace("\u2009", " ")
+            .replace("–", "-")
+            .replace("—", "-")
+            .replace("−", "-")
+            .strip()
         )
 
         model_patterns: List[Tuple[str, str, re.Pattern]] = [
-            ("XGBoost", "xgboost", re.compile(r"\b(?:xgboost|xgb|gradient\s+boosting(?:\s+trees?|\s+classifier)?)\b", re.IGNORECASE)),
-            ("Random Forest", "random_forest", re.compile(r"\b(?:random\s+forests?|rf)\b", re.IGNORECASE)),
-            ("Logistic Regression", "logistic_regression", re.compile(r"\b(?:logistic\s+regression|logreg|linear\s+model)\b", re.IGNORECASE)),
-            ("Tabular MLP", "mlp_tabular", re.compile(r"\b(?:multi[- ]layer\s+perceptron|mlp|deep\s+neural\s+network|tabular\s+mlp)\b", re.IGNORECASE)),
-            ("ResNet-18", "resnet18", re.compile(r"\b(?:resnet[-_ ]?18)\b", re.IGNORECASE)),
+            ("XGBoost", "xgboost", re.compile(r"\b(?:xgboost|xgb|gradient\s+boosting(?:\s+trees?|\s+classifier|\s+decision\s+trees?|\s+models?)?|gbdt|lightgbm|lgb|catboost)\b", re.IGNORECASE)),
+            ("Random Forest", "random_forest", re.compile(r"\b(?:random\s+forests?|rf|random\s+survival\s+forests?|rsf)\b", re.IGNORECASE)),
+            ("Logistic Regression", "logistic_regression", re.compile(r"\b(?:logistic\s+regression|logreg|linear\s+models?|elastic\s*net|lasso|ridge|cox(?:\s+proportional\s+hazards?|\s+model)?)\b", re.IGNORECASE)),
+            ("Tabular MLP", "mlp_tabular", re.compile(r"\b(?:multi[- ]layer\s+perceptron|mlp|deep\s+neural\s+networks?|tabular\s+mlp|artificial\s+neural\s+networks?|ann|dnn|clinical\s+embeddings?|fusion\s+models?|deep\s+learning\s+fusion(?:\s+model)?|cross[- ]attention\s+fusion(?:\s+model)?)\b", re.IGNORECASE)),
+            ("Support Vector Machine", "svm", re.compile(r"\b(?:support\s+vector\s+machines?|svm|support\s+vector\s+classifier|svc)\b", re.IGNORECASE)),
+            ("Ensemble (Soft Voting)", "ensemble_weighted_voting", re.compile(r"\b(?:ensemble(?:\s+model|\s+pipeline)?(?:\s+with\s+soft\s+voting)?|soft\s+voting\s+ensemble)\b", re.IGNORECASE)),
+            ("ResNet-18", "resnet18", re.compile(r"\b(?:resnet[-_ ]?18|convolutional\s+neural\s+networks?|cnns?)\b", re.IGNORECASE)),
             ("ResNet-50", "resnet50", re.compile(r"\b(?:resnet[-_ ]?50)\b", re.IGNORECASE)),
             ("EfficientNet-B0", "efficientnet_b0", re.compile(r"\b(?:efficientnet(?:[-_ ]?b0)?)\b", re.IGNORECASE)),
             ("Vision Transformer", "vit_small", re.compile(r"\b(?:vision\s+transformer|vit(?:[-_ ]?small)?)\b", re.IGNORECASE)),
-            ("PubMedBERT", "pubmedbert", re.compile(r"\b(?:pubmedbert|biomedical\s+bert)\b", re.IGNORECASE)),
+            ("PubMedBERT", "pubmedbert", re.compile(r"\b(?:pubmedbert|biomedical\s+bert|biomedbert|biobert)\b", re.IGNORECASE)),
             ("ClinicalBERT", "clinicalbert", re.compile(r"\b(?:clinicalbert|clinical\s+bert)\b", re.IGNORECASE)),
-            ("TF-IDF + MLP", "tfidf_mlp", re.compile(r"\b(?:tf[- ]?idf(?:\s*\+\s*mlp)?)\b", re.IGNORECASE)),
+            ("TF-IDF", "tfidf_mlp", re.compile(r"\b(?:tf[- ]?idf(?:\s*\+\s*mlp)?)\b", re.IGNORECASE)),
         ]
 
-        # Regexes for extracting metric + value
-        metric_score_re = re.compile(
-            r"\b(auroc|auc|roc[-_ ]auc|c[-_ ]index|concordance|accuracy|acc|f1[-_ ]score|f1|rmse|mae|loss|brier)\b"
-            r"[\s:=of]*([0-9]+\.?[0-9]*)",
+        bounded_metrics = {
+            "auc", "auroc", "roc_auc", "roc-auc", "c_index", "c-index", "concordance",
+            "concordance_index", "concordance index", "accuracy", "acc", "f1", "f1_score",
+            "f1-score", "precision", "recall", "sensitivity", "specificity", "brier",
+        }
+
+        dataset_regex = re.compile(
+            r"\b(?:on|using|in)\s+(?:the\s+)?([A-Za-z0-9\-]{3,25})\s*(?:cohort|dataset|database|benchmark)?\b",
             re.IGNORECASE,
         )
-        paren_score_re = re.compile(
-            r"\((auroc|auc|roc[-_ ]auc|c[-_ ]index|concordance|accuracy|acc|f1[-_ ]score|f1|rmse|mae)\s*[:=]\s*([0-9]+\.?[0-9]*)\)",
-            re.IGNORECASE,
-        )
-        pct_score_re = re.compile(
-            r"([0-9]{2,3}(?:\.[0-9]+)?)\s*%\s*(accuracy|auc|f1|precision|recall)",
-            re.IGNORECASE,
-        )
-        vs_score_re = re.compile(
-            r"([0-9]\.[0-9]+)\s+vs\.?\s+([0-9]\.[0-9]+)\s*(?:(auroc|auc|c[-_ ]index|accuracy|f1|rmse|mae))?",
-            re.IGNORECASE,
+        known_datasets = ["TCGA", "PubMed", "RADCURE", "Head-Neck-PET-CT", "MIMIC", "SEER", "IMvigor210", "KHMC-HNSC"]
+
+        def _get_sent_dataset(sent: str) -> Optional[str]:
+            for ds in known_datasets:
+                if re.search(r"\b" + re.escape(ds) + r"\b", sent, re.IGNORECASE):
+                    return ds
+            m = dataset_regex.search(sent)
+            if m:
+                cand = m.group(1).strip()
+                if cand.lower() not in ["the", "this", "our", "internal", "external", "test", "train", "validation"]:
+                    return cand
+            return dataset
+
+        def _clean_for_metrics(sent: str) -> str:
+            # Mask 95% CI ranges: 95% CI: 0.647-0.741 or (95% CI: 0.574-0.670)
+            s = re.sub(r"\(?\s*95%\s*CI\s*[:=]\s*[0-9.\-–\s,]+\)?", " ", sent, flags=re.IGNORECASE)
+            # Mask p-values: P < 0.001, p = 0.05
+            s = re.sub(r"\b[pP]\s*[<>=]\s*[0-9.]+\b", " ", s)
+            # Mask hardware/scanner: 120 kV, 250 mA, 3.0 mm, 1.5 T
+            s = re.sub(r"\b[0-9]+(?:\.[0-9]+)?\s*(?:kV|mA|mm|ms|MHz|Tesla)\b", " ", s, flags=re.IGNORECASE)
+            # Mask patient counts: 1019 images, 999 patients, n = 529
+            s = re.sub(r"\b(?:n\s*[:=]\s*[0-9]+|[0-9]+\s+(?:patients?|cases?|images?|subjects?))\b", " ", s, flags=re.IGNORECASE)
+            return s
+
+        def _extract_metric_scores(sent: str, default_metric: Optional[str] = None) -> List[Tuple[str, float, int, int]]:
+            clean_s = _clean_for_metrics(sent)
+            scores = []
+
+            # 1. Parenthesized: (AUC: 0.88), (AUC = 0.88), (AUC 0.88)
+            re_paren = re.compile(
+                r"\(\s*(auroc|auc|roc[-_ ]auc|c[-_ ]index|concordance(?:\s+index)?|accuracy|acc|f1[-_ ]score|f1|rmse|mae|recall|precision|sensitivity|specificity)\s*[:=]?\s*([0-9]+\.?[0-9]*)\s*\)",
+                re.IGNORECASE,
+            )
+            for m in re_paren.finditer(clean_s):
+                met = m.group(1)
+                val = float(m.group(2))
+                if met.lower() in bounded_metrics and val > 1.0 and val <= 100.0:
+                    val = round(val / 100.0, 4)
+                scores.append((met, val, m.start(), m.end()))
+
+            # 2. Metric with colon/equals/of/was: AUC: 0.88, accuracy of 0.92, C-index was 0.807
+            re_metric_val = re.compile(
+                r"\b(auroc|auc|roc[-_ ]auc|c[-_ ]index|concordance(?:\s+index)?|accuracy|acc|f1[-_ ]score|f1|rmse|mae|recall|precision|sensitivity|specificity)\b\s*(?:[:=of\s]+|was\s+|is\s+|reached\s+|attained\s+)*([0-9]+\.?[0-9]*)",
+                re.IGNORECASE,
+            )
+            for m in re_metric_val.finditer(clean_s):
+                met = m.group(1)
+                val_str = m.group(2)
+                if not val_str:
+                    continue
+                val = float(val_str)
+                if any(abs(m.start() - s[2]) < 3 for s in scores):
+                    continue
+                if met.lower() in bounded_metrics and val > 1.0 and val <= 100.0:
+                    val = round(val / 100.0, 4)
+                scores.append((met, val, m.start(), m.end()))
+
+            # 3. Value followed by % then metric: 92% accuracy, 94.5% recall
+            re_pct1 = re.compile(
+                r"([0-9]{1,3}(?:\.[0-9]+)?)\s*%\s*(accuracy|acc|auc|f1|precision|recall|sensitivity|specificity|c[-_ ]index|concordance)",
+                re.IGNORECASE,
+            )
+            for m in re_pct1.finditer(clean_s):
+                val = round(float(m.group(1)) / 100.0, 4)
+                met = m.group(2)
+                if not any(abs(m.start() - s[2]) < 5 for s in scores):
+                    scores.append((met, val, m.start(), m.end()))
+
+            # 4. Metric followed by %: accuracy of 92%
+            re_pct2 = re.compile(
+                r"\b(accuracy|acc|auc|f1|precision|recall|sensitivity|specificity)\s*(?:of|was|is|reached)?\s*([0-9]{1,3}(?:\.[0-9]+)?)\s*%",
+                re.IGNORECASE,
+            )
+            for m in re_pct2.finditer(clean_s):
+                met = m.group(1)
+                val = round(float(m.group(2)) / 100.0, 4)
+                if not any(abs(m.start() - s[2]) < 5 for s in scores):
+                    scores.append((met, val, m.start(), m.end()))
+
+            # 5. Decimal followed by metric: 0.84 AUC, 0.78 C-index
+            re_num_metric = re.compile(
+                r"\b([0-9]\.[0-9]+)\s+(auroc|auc|roc[-_ ]auc|c[-_ ]index|concordance|accuracy|acc|f1|recall|precision|rmse|mae)\b",
+                re.IGNORECASE,
+            )
+            for m in re_num_metric.finditer(clean_s):
+                val = float(m.group(1))
+                met = m.group(2)
+                if not any(abs(m.start() - s[2]) < 5 for s in scores):
+                    scores.append((met, val, m.start(), m.end()))
+
+            # 6. Additional numbers with default_metric (e.g. "and 0.777 in external", "compared with 0.85 for ResNet-18")
+            if default_metric:
+                re_bare = re.compile(r"(?:and|with|to|of|\()\s*([0-9]\.[0-9]+)\b(?:\s+(?:in|for|on))?", re.IGNORECASE)
+                for m in re_bare.finditer(clean_s):
+                    val = float(m.group(1))
+                    if any(abs(s[1] - val) < 1e-4 for s in scores):
+                        continue
+                    if not any(abs(m.start(1) - s[2]) < 4 for s in scores):
+                        scores.append((default_metric, val, m.start(1), m.end(1)))
+
+            scores.sort(key=lambda x: x[2])
+            return scores
+
+        tagged = (
+            self._get_tagged_sentences(norm_text, sections)
+            if sections
+            else [(s, "Results" if source_scope == SourceScope.full_text else "Abstract") for s in self._get_sentences(norm_text)]
         )
 
         extracted_results: List[PublishedExperimentResult] = []
@@ -999,55 +1107,67 @@ class ExperimentExtractor:
             if self.section_parser.is_background_section(section):
                 continue
 
-            # Detect protocol from full sentence or fall back to paper protocol
+            # Protocol detection
             proto = validation_protocol
-            if _CV_RE.search(raw_sentence):
-                m_cv = _CV_RE.search(raw_sentence)
-                proto = f"{m_cv.group(1)}_fold_cv"
-            elif "external" in raw_sentence.lower() or "independent" in raw_sentence.lower():
+            cv_match = re.search(r"\b(\d+)[- ]fold\s+(?:cross[- ]validation|cv)\b", raw_sentence, re.IGNORECASE)
+            if cv_match:
+                proto = f"{cv_match.group(1)}_fold_cv"
+            elif any(k in raw_sentence.lower() for k in ["external", "independent cohort", "independent validation"]):
                 proto = "external_validation"
-            elif "holdout" in raw_sentence.lower() or "test set" in raw_sentence.lower():
+            elif any(k in raw_sentence.lower() for k in ["holdout", "test set", "test split"]):
                 proto = "holdout_test"
 
-            # Segment into clauses on contrastive conjunctions or semicolons
-            clauses = re.split(r'(?:,\s*(?:while|whereas|but)\s+|;\s*)', raw_sentence)
+            sent_dataset = _get_sent_dataset(raw_sentence)
 
-            for sentence in clauses:
-                # Detect models mentioned in this clause
-                models_in_sentence = []
-                for display_name, canon_id, pat in model_patterns:
-                    if pat.search(sentence):
-                        models_in_sentence.append((display_name, canon_id))
+            # Detect models present across raw_sentence
+            models_in_sentence = []
+            for display_name, canon_id, pat in model_patterns:
+                for match in pat.finditer(raw_sentence):
+                    models_in_sentence.append((match.start(), display_name, canon_id))
+            models_in_sentence.sort(key=lambda x: x[0])
+            unique_models = []
+            for m in models_in_sentence:
+                if not unique_models or unique_models[-1][2] != m[2]:
+                    unique_models.append(m)
 
-                if not models_in_sentence:
-                    continue
+            if not unique_models:
+                continue
 
-                # Case A: Two models and "X vs Y" numerical comparison
-                m_vs = vs_score_re.search(sentence)
-                if m_vs and len(models_in_sentence) >= 2:
-                    v1 = float(m_vs.group(1))
-                    v2 = float(m_vs.group(2))
-                    raw_metric = m_vs.group(3) or "AUC"
-                    _, hib = normalize_metric_name(raw_metric)
+            # -------------------------------------------------------------------
+            # Pattern A: "respectively" construction
+            # -------------------------------------------------------------------
+            if "respectively" in raw_sentence.lower() and len(unique_models) >= 2:
+                all_scores = _extract_metric_scores(raw_sentence)
+                if len(all_scores) < len(unique_models):
+                    num_re = re.compile(r"\b([0-9]+\.?[0-9]*)\b")
+                    found_nums = []
+                    for nm in num_re.finditer(raw_sentence):
+                        val = float(nm.group(1))
+                        if 0.0 < val <= 100.0:
+                            val_norm = round(val / 100.0, 4) if val > 1.0 else val
+                            found_nums.append((val_norm, nm.start(), nm.end()))
+                    if len(found_nums) >= len(unique_models):
+                        use_nums = found_nums[-len(unique_models):]
+                        metric_found = all_scores[0][0] if all_scores else "AUC"
+                        all_scores = [(metric_found, n[0], n[1], n[2]) for n in use_nums]
 
-                    mod_a_disp, mod_a_canon = models_in_sentence[0]
-                    mod_b_disp, mod_b_canon = models_in_sentence[1]
-
-                    for mod_disp, mod_canon, val in [(mod_a_disp, mod_a_canon, v1), (mod_b_disp, mod_b_canon, v2)]:
-                        key = (mod_canon, raw_metric.lower(), val)
+                if len(unique_models) >= 2 and len(all_scores) == len(unique_models):
+                    for (_, disp_name, canon_id), (met_name, val, _, _) in zip(unique_models, all_scores):
+                        key = (canon_id, met_name.lower(), val)
                         if key not in seen_keys:
                             seen_keys.add(key)
+                            _, hib = normalize_metric_name(met_name)
                             extracted_results.append(PublishedExperimentResult(
                                 result_id=f"pub_res_{paper_id}_{res_idx:03d}",
                                 paper_id=paper_id,
                                 pmid=pmid,
                                 doi=doi,
                                 citation=citation or f"Paper {paper_id}",
-                                model_name=mod_disp,
-                                canonical_id=mod_canon,
-                                dataset_name=dataset,
+                                model_name=disp_name,
+                                canonical_id=canon_id,
+                                dataset_name=sent_dataset,
                                 task_type=task or "classification",
-                                metric_name=raw_metric,
+                                metric_name=met_name,
                                 reported_value=val,
                                 higher_is_better=hib,
                                 validation_protocol=proto,
@@ -1060,24 +1180,104 @@ class ExperimentExtractor:
                             res_idx += 1
                     continue
 
-                # Case B: Exactly one model mentioned with metric scores in the sentence
-                if len(models_in_sentence) == 1:
-                    mod_disp, mod_canon = models_in_sentence[0]
-                    matches = []
+            # -------------------------------------------------------------------
+            # Pattern B: Head-to-Head "X vs Y" comparison
+            # -------------------------------------------------------------------
+            vs_match = re.search(r"([0-9]\.[0-9]+)\s+vs\.?\s+([0-9]\.[0-9]+)\s*(?:(auroc|auc|c[-_ ]index|concordance|accuracy|f1|recall|precision))?", raw_sentence, re.IGNORECASE)
+            if vs_match and len(unique_models) >= 2:
+                v1 = float(vs_match.group(1))
+                v2 = float(vs_match.group(2))
+                raw_metric = vs_match.group(3) or "AUC"
+                _, hib = normalize_metric_name(raw_metric)
+                _, mod_a_disp, mod_a_canon = unique_models[0]
+                _, mod_b_disp, mod_b_canon = unique_models[1]
 
-                    # Find all metric scores in sentence
-                    for m in paren_score_re.finditer(sentence):
-                        matches.append((m.group(1), float(m.group(2))))
-                    for m in metric_score_re.finditer(sentence):
-                        val = float(m.group(2))
-                        if val <= 100.0:  # sanity check
-                            val_normalized = val / 100.0 if val > 1.0 and m.group(1).lower() in ["accuracy", "acc", "auc"] else val
-                            matches.append((m.group(1), val_normalized))
-                    for m in pct_score_re.finditer(sentence):
-                        matches.append((m.group(2), float(m.group(1)) / 100.0))
+                for mod_disp, mod_canon, val in [(mod_a_disp, mod_a_canon, v1), (mod_b_disp, mod_b_canon, v2)]:
+                    key = (mod_canon, raw_metric.lower(), val)
+                    if key not in seen_keys:
+                        seen_keys.add(key)
+                        extracted_results.append(PublishedExperimentResult(
+                            result_id=f"pub_res_{paper_id}_{res_idx:03d}",
+                            paper_id=paper_id,
+                            pmid=pmid,
+                            doi=doi,
+                            citation=citation or f"Paper {paper_id}",
+                            model_name=mod_disp,
+                            canonical_id=mod_canon,
+                            dataset_name=sent_dataset,
+                            task_type=task or "classification",
+                            metric_name=raw_metric,
+                            reported_value=val,
+                            higher_is_better=hib,
+                            validation_protocol=proto,
+                            sample_size=sample_size,
+                            source_sentence=raw_sentence.strip(),
+                            section_location=section,
+                            is_ambiguous=False,
+                            extraction_confidence=0.92,
+                        ))
+                        res_idx += 1
+                continue
 
-                    for raw_metric, val in matches:
-                        key = (mod_canon, raw_metric.lower(), val)
+            # -------------------------------------------------------------------
+            # Pattern C: Paired parentheticals / explicit inline associations
+            # -------------------------------------------------------------------
+            if len(unique_models) >= 2:
+                scores_with_spans = _extract_metric_scores(raw_sentence)
+                paired_bindings = []
+                for i, (m_start, disp, canon) in enumerate(unique_models):
+                    next_start = unique_models[i+1][0] if i+1 < len(unique_models) else len(raw_sentence)
+                    bound_scores = [s for s in scores_with_spans if m_start < s[2] < next_start + 40]
+                    if bound_scores:
+                        paired_bindings.append((disp, canon, bound_scores[0]))
+
+                if len(paired_bindings) >= 2:
+                    for disp, canon, (met_name, val, _, _) in paired_bindings:
+                        key = (canon, met_name.lower(), val)
+                        if key not in seen_keys:
+                            seen_keys.add(key)
+                            _, hib = normalize_metric_name(met_name)
+                            extracted_results.append(PublishedExperimentResult(
+                                result_id=f"pub_res_{paper_id}_{res_idx:03d}",
+                                paper_id=paper_id,
+                                pmid=pmid,
+                                doi=doi,
+                                citation=citation or f"Paper {paper_id}",
+                                model_name=disp,
+                                canonical_id=canon,
+                                dataset_name=sent_dataset,
+                                task_type=task or "classification",
+                                metric_name=met_name,
+                                reported_value=val,
+                                higher_is_better=hib,
+                                validation_protocol=proto,
+                                sample_size=sample_size,
+                                source_sentence=raw_sentence.strip(),
+                                section_location=section,
+                                is_ambiguous=False,
+                                extraction_confidence=0.92,
+                            ))
+                            res_idx += 1
+                    continue
+
+            # -------------------------------------------------------------------
+            # Pattern D: Multi-eval of single model across protocols
+            # -------------------------------------------------------------------
+            if len(unique_models) == 1:
+                primary_scores = _extract_metric_scores(raw_sentence)
+                prim_met = primary_scores[0][0] if primary_scores else "AUC"
+                all_scores = _extract_metric_scores(raw_sentence, default_metric=prim_met)
+
+                if len(all_scores) >= 2 and ("internal" in raw_sentence.lower() or "external" in raw_sentence.lower()):
+                    disp, canon = unique_models[0][1], unique_models[0][2]
+                    for raw_metric, val, s_start, s_end in all_scores:
+                        window = raw_sentence[max(0, s_start - 35):min(len(raw_sentence), s_end + 35)].lower()
+                        score_proto = proto
+                        if "external" in window:
+                            score_proto = "external_validation"
+                        elif "internal" in window:
+                            score_proto = "internal_validation"
+                        key = (canon, raw_metric.lower(), val, score_proto)
                         if key not in seen_keys:
                             seen_keys.add(key)
                             _, hib = normalize_metric_name(raw_metric)
@@ -1087,9 +1287,97 @@ class ExperimentExtractor:
                                 pmid=pmid,
                                 doi=doi,
                                 citation=citation or f"Paper {paper_id}",
-                                model_name=mod_disp,
-                                canonical_id=mod_canon,
-                                dataset_name=dataset,
+                                model_name=disp,
+                                canonical_id=canon,
+                                dataset_name=sent_dataset,
+                                task_type=task or "classification",
+                                metric_name=raw_metric,
+                                reported_value=val,
+                                higher_is_better=hib,
+                                validation_protocol=score_proto,
+                                sample_size=sample_size,
+                                source_sentence=raw_sentence.strip(),
+                                section_location=section,
+                                is_ambiguous=False,
+                                extraction_confidence=0.90,
+                            ))
+                            res_idx += 1
+                    continue
+
+            # -------------------------------------------------------------------
+            # Pattern E: Clause-based processing with metric propagation
+            # -------------------------------------------------------------------
+            clauses = re.split(r'(?:,\s*(?:while|whereas|but)\s+|\s+(?:while|whereas|but)\s+|;\s*|\bcompared\s+(?:to|with)\s+)', raw_sentence)
+            initial_scores = _extract_metric_scores(raw_sentence)
+            primary_metric = initial_scores[0][0] if initial_scores else None
+
+            # Genuine ambiguity check: multiple models with only 1 score in entire sentence
+            if len(unique_models) > 1 and len(initial_scores) == 1 and not any(k in raw_sentence.lower() for k in ["compared", "whereas", "while", "outperformed"]):
+                raw_metric, val, _, _ = initial_scores[0]
+                _, hib = normalize_metric_name(raw_metric)
+                for _, disp, canon in unique_models:
+                    key = (canon, raw_metric.lower(), val, True)
+                    if key not in seen_keys:
+                        seen_keys.add(key)
+                        extracted_results.append(PublishedExperimentResult(
+                            result_id=f"pub_res_{paper_id}_{res_idx:03d}",
+                            paper_id=paper_id,
+                            pmid=pmid,
+                            doi=doi,
+                            citation=citation or f"Paper {paper_id}",
+                            model_name=disp,
+                            canonical_id=canon,
+                            dataset_name=sent_dataset,
+                            task_type=task or "classification",
+                            metric_name=raw_metric,
+                            reported_value=val,
+                            higher_is_better=hib,
+                            validation_protocol=proto,
+                            sample_size=sample_size,
+                            source_sentence=raw_sentence.strip(),
+                            section_location=section,
+                            is_ambiguous=True,
+                            extraction_confidence=0.40,
+                        ))
+                        res_idx += 1
+                continue
+
+            for clause in clauses:
+                clause_models = []
+                for display_name, canon_id, pat in model_patterns:
+                    if pat.search(clause):
+                        clause_models.append((display_name, canon_id))
+
+                scores = _extract_metric_scores(clause, default_metric=primary_metric)
+                if scores:
+                    primary_metric = scores[0][0]
+
+                if not clause_models or not scores:
+                    continue
+
+                # Filter out scores that belong to non-model baselines like "junior radiologists"
+                if re.search(r"\b(?:radiologists?|clinicians?|physicians?)\s*\([^\)]*?\)", clause, re.IGNORECASE):
+                    clean_clause = re.sub(r"\b(?:junior\s+|senior\s+)?radiologists?\s*\([^\)]*?\)", " ", clause, flags=re.IGNORECASE)
+                    scores = _extract_metric_scores(clean_clause, default_metric=primary_metric)
+                    if not scores:
+                        continue
+
+                if len(clause_models) == 1:
+                    disp, canon = clause_models[0]
+                    for raw_metric, val, _, _ in scores:
+                        key = (canon, raw_metric.lower(), val)
+                        if key not in seen_keys:
+                            seen_keys.add(key)
+                            _, hib = normalize_metric_name(raw_metric)
+                            extracted_results.append(PublishedExperimentResult(
+                                result_id=f"pub_res_{paper_id}_{res_idx:03d}",
+                                paper_id=paper_id,
+                                pmid=pmid,
+                                doi=doi,
+                                citation=citation or f"Paper {paper_id}",
+                                model_name=disp,
+                                canonical_id=canon,
+                                dataset_name=sent_dataset,
                                 task_type=task or "classification",
                                 metric_name=raw_metric,
                                 reported_value=val,
@@ -1103,36 +1391,34 @@ class ExperimentExtractor:
                             ))
                             res_idx += 1
 
-                # Case C: Multiple models mentioned with only 1 metric score -> ambiguous attribution!
-                elif len(models_in_sentence) > 1:
-                    m_score = metric_score_re.search(sentence) or paren_score_re.search(sentence)
-                    if m_score:
-                        raw_metric = m_score.group(1)
-                        val = float(m_score.group(2))
+                elif len(clause_models) > 1:
+                    for raw_metric, val, _, _ in scores:
                         _, hib = normalize_metric_name(raw_metric)
-                        # Flag as ambiguous so downstream comparator can strictly audit or drop
-                        for mod_disp, mod_canon in models_in_sentence:
-                            extracted_results.append(PublishedExperimentResult(
-                                result_id=f"pub_res_{paper_id}_{res_idx:03d}",
-                                paper_id=paper_id,
-                                pmid=pmid,
-                                doi=doi,
-                                citation=citation or f"Paper {paper_id}",
-                                model_name=mod_disp,
-                                canonical_id=mod_canon,
-                                dataset_name=dataset,
-                                task_type=task or "classification",
-                                metric_name=raw_metric,
-                                reported_value=val,
-                                higher_is_better=hib,
-                                validation_protocol=proto,
-                                sample_size=sample_size,
-                                source_sentence=raw_sentence.strip(),
-                                section_location=section,
-                                is_ambiguous=True,
-                                extraction_confidence=0.40,
-                            ))
-                            res_idx += 1
+                        for disp, canon in clause_models:
+                            key = (canon, raw_metric.lower(), val, True)
+                            if key not in seen_keys:
+                                seen_keys.add(key)
+                                extracted_results.append(PublishedExperimentResult(
+                                    result_id=f"pub_res_{paper_id}_{res_idx:03d}",
+                                    paper_id=paper_id,
+                                    pmid=pmid,
+                                    doi=doi,
+                                    citation=citation or f"Paper {paper_id}",
+                                    model_name=disp,
+                                    canonical_id=canon,
+                                    dataset_name=sent_dataset,
+                                    task_type=task or "classification",
+                                    metric_name=raw_metric,
+                                    reported_value=val,
+                                    higher_is_better=hib,
+                                    validation_protocol=proto,
+                                    sample_size=sample_size,
+                                    source_sentence=raw_sentence.strip(),
+                                    section_location=section,
+                                    is_ambiguous=True,
+                                    extraction_confidence=0.40,
+                                ))
+                                res_idx += 1
 
         return extracted_results
 

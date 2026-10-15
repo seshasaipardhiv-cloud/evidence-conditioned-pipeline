@@ -1,0 +1,585 @@
+[
+  {
+    "statement_id": "stmt_01",
+    "paper_id": "paper_41968976",
+    "source_text": "XGBoost outperformed all other models on the TCGA dataset, achieving an AUC of 0.694 (95% CI: 0.647\u20130.741) and ACC of 0.619 (95% CI: 0.561\u20130.678).",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "xgboost",
+        "model_name": "XGBoost",
+        "metric_name": "AUC",
+        "reported_value": 0.694,
+        "dataset_name": "TCGA",
+        "is_ambiguous": false
+      },
+      {
+        "canonical_id": "xgboost",
+        "model_name": "XGBoost",
+        "metric_name": "ACC",
+        "reported_value": 0.619,
+        "dataset_name": "TCGA",
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_02",
+    "paper_id": "paper_41968976",
+    "source_text": "In predicting TP53 mutation, XGBoost outperformed Random Forest (0.745 vs 0.680 AUC) on the validation cohort.",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "xgboost",
+        "model_name": "XGBoost",
+        "metric_name": "AUC",
+        "reported_value": 0.745,
+        "is_ambiguous": false
+      },
+      {
+        "canonical_id": "random_forest",
+        "model_name": "Random Forest",
+        "metric_name": "AUC",
+        "reported_value": 0.68,
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_03",
+    "paper_id": "paper_42389632",
+    "source_text": "Random Forest and Logistic Regression achieved AUCs of 0.88 and 0.82, respectively, on the clinical test split.",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "random_forest",
+        "model_name": "Random Forest",
+        "metric_name": "AUC",
+        "reported_value": 0.88,
+        "is_ambiguous": false
+      },
+      {
+        "canonical_id": "logistic_regression",
+        "model_name": "Logistic Regression",
+        "metric_name": "AUC",
+        "reported_value": 0.82,
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_04",
+    "paper_id": "paper_41353186",
+    "source_text": "XGBoost (AUC: 0.88) outperformed Random Forest (AUC: 0.82) across all 5-fold cross-validation folds.",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "xgboost",
+        "model_name": "XGBoost",
+        "metric_name": "AUC",
+        "reported_value": 0.88,
+        "validation_protocol": "5_fold_cv",
+        "is_ambiguous": false
+      },
+      {
+        "canonical_id": "random_forest",
+        "model_name": "Random Forest",
+        "metric_name": "AUC",
+        "reported_value": 0.82,
+        "validation_protocol": "5_fold_cv",
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_05",
+    "paper_id": "paper_41968976",
+    "source_text": "XGBoost reached an AUC of 0.86 compared to the baseline Logistic Regression of 0.72.",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "xgboost",
+        "model_name": "XGBoost",
+        "metric_name": "AUC",
+        "reported_value": 0.86,
+        "is_ambiguous": false
+      },
+      {
+        "canonical_id": "logistic_regression",
+        "model_name": "Logistic Regression",
+        "metric_name": "AUC",
+        "reported_value": 0.72,
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_06",
+    "paper_id": "paper_40325104",
+    "source_text": "XGBoost achieved an AUC of 0.85 whereas Random Forest reached an AUC of 0.79.",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "xgboost",
+        "model_name": "XGBoost",
+        "metric_name": "AUC",
+        "reported_value": 0.85,
+        "is_ambiguous": false
+      },
+      {
+        "canonical_id": "random_forest",
+        "model_name": "Random Forest",
+        "metric_name": "AUC",
+        "reported_value": 0.79,
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_07",
+    "paper_id": "paper_40449048",
+    "source_text": "The CNN model, trained on 1019 preprocessed CT images, classified lung tissue into four histological categories with a weighted accuracy of 92\u00a0%.",
+    "section": "Abstract",
+    "expected_extractions": [
+      {
+        "canonical_id": "resnet18",
+        "model_name": "CNN",
+        "metric_name": "accuracy",
+        "reported_value": 0.92,
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_08",
+    "paper_id": "paper_40449048",
+    "source_text": "In parallel, an ANN trained on clinical data from 999 patients achieves 99% accuracy in predicting cancer severity.",
+    "section": "Abstract",
+    "expected_extractions": [
+      {
+        "canonical_id": "mlp_tabular",
+        "model_name": "ANN",
+        "metric_name": "accuracy",
+        "reported_value": 0.99,
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_09",
+    "paper_id": "paper_40770286",
+    "source_text": "A multi-modal prognostic model developed by RSF achieved a C-index of 0.807 in predicting pancreatic cancer survival.",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "random_forest",
+        "model_name": "RSF",
+        "metric_name": "C-index",
+        "reported_value": 0.807,
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_10",
+    "paper_id": "paper_42558280",
+    "source_text": "The RSF model demonstrated superior predictive performance, yielding a C-index of 0.91 on the independent external validation cohort.",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "random_forest",
+        "model_name": "RSF",
+        "metric_name": "C-index",
+        "reported_value": 0.91,
+        "validation_protocol": "external_validation",
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_11",
+    "paper_id": "paper_42389632",
+    "source_text": "Among the baseline models, GBDT obtained an AUC of 0.924, outperforming Support Vector Machine (AUC: 0.881).",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "xgboost",
+        "model_name": "GBDT",
+        "metric_name": "AUC",
+        "reported_value": 0.924,
+        "is_ambiguous": false
+      },
+      {
+        "canonical_id": "svm",
+        "model_name": "Support Vector Machine",
+        "metric_name": "AUC",
+        "reported_value": 0.881,
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_12",
+    "paper_id": "paper_42487970",
+    "source_text": "ResNet-18 outperformed ViT in classification accuracy on CT scans (0.84 vs 0.78).",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "resnet18",
+        "model_name": "ResNet-18",
+        "metric_name": "accuracy",
+        "reported_value": 0.84,
+        "is_ambiguous": false
+      },
+      {
+        "canonical_id": "vit_small",
+        "model_name": "ViT",
+        "metric_name": "accuracy",
+        "reported_value": 0.78,
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_13",
+    "paper_id": "paper_42487970",
+    "source_text": "The Tabular MLP classifier achieved an accuracy of 0.98, recall of 0.95, and F1-score of 0.98.",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "mlp_tabular",
+        "model_name": "Tabular MLP",
+        "metric_name": "accuracy",
+        "reported_value": 0.98,
+        "is_ambiguous": false
+      },
+      {
+        "canonical_id": "mlp_tabular",
+        "model_name": "Tabular MLP",
+        "metric_name": "recall",
+        "reported_value": 0.95,
+        "is_ambiguous": false
+      },
+      {
+        "canonical_id": "mlp_tabular",
+        "model_name": "Tabular MLP",
+        "metric_name": "f1-score",
+        "reported_value": 0.98,
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_14",
+    "paper_id": "paper_42487970",
+    "source_text": "Random Forest achieved 94.5% recall and 91.2% precision on the PubMed validation cohort.",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "random_forest",
+        "model_name": "Random Forest",
+        "metric_name": "recall",
+        "reported_value": 0.945,
+        "dataset_name": "PubMed",
+        "is_ambiguous": false
+      },
+      {
+        "canonical_id": "random_forest",
+        "model_name": "Random Forest",
+        "metric_name": "precision",
+        "reported_value": 0.912,
+        "dataset_name": "PubMed",
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_15",
+    "paper_id": "paper_38396486",
+    "source_text": "Logistic Regression yielded an AUC of 0.78 (95% CI: 0.72\u20130.84) on the Head-Neck-PET-CT cohort.",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "logistic_regression",
+        "model_name": "Logistic Regression",
+        "metric_name": "AUC",
+        "reported_value": 0.78,
+        "dataset_name": "Head-Neck-PET-CT",
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_16",
+    "paper_id": "paper_41353186",
+    "source_text": "Tabular MLP achieved an RMSE of 1.45 and MAE of 1.12 in predicting time-to-recurrence.",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "mlp_tabular",
+        "model_name": "Tabular MLP",
+        "metric_name": "RMSE",
+        "reported_value": 1.45,
+        "is_ambiguous": false
+      },
+      {
+        "canonical_id": "mlp_tabular",
+        "model_name": "Tabular MLP",
+        "metric_name": "MAE",
+        "reported_value": 1.12,
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_17",
+    "paper_id": "paper_41968976",
+    "source_text": "Both XGBoost and Random Forest demonstrated competitive diagnostic utility (AUC: 0.85) for lymph node metastasis.",
+    "section": "Discussion",
+    "expected_extractions": [
+      {
+        "canonical_id": "xgboost",
+        "model_name": "XGBoost",
+        "metric_name": "AUC",
+        "reported_value": 0.85,
+        "is_ambiguous": true
+      },
+      {
+        "canonical_id": "random_forest",
+        "model_name": "Random Forest",
+        "metric_name": "AUC",
+        "reported_value": 0.85,
+        "is_ambiguous": true
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_18",
+    "paper_id": "paper_38396486",
+    "source_text": "Our cross-attention fusion model achieved a concordance index of 0.796 in internal testing and 0.777 in external validation on the Head-Neck-PET-CT dataset.",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "mlp_tabular",
+        "model_name": "cross-attention fusion",
+        "metric_name": "concordance index",
+        "reported_value": 0.796,
+        "dataset_name": "Head-Neck-PET-CT",
+        "is_ambiguous": false
+      },
+      {
+        "canonical_id": "mlp_tabular",
+        "model_name": "cross-attention fusion",
+        "metric_name": "concordance index",
+        "reported_value": 0.777,
+        "dataset_name": "Head-Neck-PET-CT",
+        "validation_protocol": "external_validation",
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_19",
+    "paper_id": "paper_41353186",
+    "source_text": "PubMedBERT fine-tuned on oncology clinical notes achieved an F1-score of 0.892 on the text benchmark.",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "pubmedbert",
+        "model_name": "PubMedBERT",
+        "metric_name": "F1-score",
+        "reported_value": 0.892,
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_20",
+    "paper_id": "paper_41353186",
+    "source_text": "ClinicalBERT achieved an accuracy of 0.841 compared to TF-IDF of 0.765 in pathology report classification.",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "clinicalbert",
+        "model_name": "ClinicalBERT",
+        "metric_name": "accuracy",
+        "reported_value": 0.841,
+        "is_ambiguous": false
+      },
+      {
+        "canonical_id": "tfidf_mlp",
+        "model_name": "TF-IDF",
+        "metric_name": "accuracy",
+        "reported_value": 0.765,
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_21",
+    "paper_id": "paper_40657529",
+    "source_text": "CT scans were obtained with a tube voltage of 120 kV, tube current of 250 mA, and slice thickness of 3.0 mm across 240 patients.",
+    "section": "Methods",
+    "expected_extractions": []
+  },
+  {
+    "statement_id": "stmt_22",
+    "paper_id": "paper_39074400",
+    "source_text": "The differences in patient age and PSA levels between institutions were statistically significant (P < 0.001 and P = 0.024, respectively).",
+    "section": "Results",
+    "expected_extractions": []
+  },
+  {
+    "statement_id": "stmt_23",
+    "paper_id": "paper_41645153",
+    "source_text": "EfficientNet-B0 achieved an AUC of 0.852 for bone lesion classification in 10-fold cross-validation.",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "efficientnet_b0",
+        "model_name": "EfficientNet-B0",
+        "metric_name": "AUC",
+        "reported_value": 0.852,
+        "validation_protocol": "10_fold_cv",
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_24",
+    "paper_id": "paper_42125301",
+    "source_text": "A linear model with L1 penalty achieved a C-index of 0.710 on the RADCURE dataset.",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "logistic_regression",
+        "model_name": "linear model",
+        "metric_name": "C-index",
+        "reported_value": 0.71,
+        "dataset_name": "RADCURE",
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_25",
+    "paper_id": "paper_42389632",
+    "source_text": "XGBoost, Random Forest, and Logistic Regression achieved AUCs of 0.89, 0.84, and 0.76, respectively.",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "xgboost",
+        "model_name": "XGBoost",
+        "metric_name": "AUC",
+        "reported_value": 0.89,
+        "is_ambiguous": false
+      },
+      {
+        "canonical_id": "random_forest",
+        "model_name": "Random Forest",
+        "metric_name": "AUC",
+        "reported_value": 0.84,
+        "is_ambiguous": false
+      },
+      {
+        "canonical_id": "logistic_regression",
+        "model_name": "Logistic Regression",
+        "metric_name": "AUC",
+        "reported_value": 0.76,
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_26",
+    "paper_id": "paper_10.3390_bioengineering11010013",
+    "source_text": "The multi-modal ensemble model with soft voting outperformed single-modality PET (AUC: 0.76 vs 0.68).",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "ensemble_weighted_voting",
+        "model_name": "ensemble model",
+        "metric_name": "AUC",
+        "reported_value": 0.76,
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_27",
+    "paper_id": "paper_41131352",
+    "source_text": "Evaluated on 11,400+ patients across 33 cancer types from The Cancer Genome Atlas (TCGA), clinical embeddings attained an accuracy of 0.9021.",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "mlp_tabular",
+        "model_name": "clinical embeddings",
+        "metric_name": "accuracy",
+        "reported_value": 0.9021,
+        "dataset_name": "TCGA",
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_28",
+    "paper_id": "paper_41815162",
+    "source_text": "The deep learning fusion model achieved an AUC of 0.814, outperforming junior radiologists (AUC: 0.782) in bone tumor differentiation.",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "mlp_tabular",
+        "model_name": "deep learning fusion model",
+        "metric_name": "AUC",
+        "reported_value": 0.814,
+        "is_ambiguous": false
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_29",
+    "paper_id": "paper_40325104",
+    "source_text": "Tree-based ensembles including Random Forest and Gradient Boosting yielded an overall concordance of 0.73.",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "random_forest",
+        "model_name": "Random Forest",
+        "metric_name": "concordance",
+        "reported_value": 0.73,
+        "is_ambiguous": true
+      },
+      {
+        "canonical_id": "xgboost",
+        "model_name": "Gradient Boosting",
+        "metric_name": "concordance",
+        "reported_value": 0.73,
+        "is_ambiguous": true
+      }
+    ]
+  },
+  {
+    "statement_id": "stmt_30",
+    "paper_id": "paper_41645153",
+    "source_text": "ResNet-50 attained an AUC of 0.92 on the test set, compared with 0.85 for ResNet-18.",
+    "section": "Results",
+    "expected_extractions": [
+      {
+        "canonical_id": "resnet50",
+        "model_name": "ResNet-50",
+        "metric_name": "AUC",
+        "reported_value": 0.92,
+        "validation_protocol": "holdout_test",
+        "is_ambiguous": false
+      },
+      {
+        "canonical_id": "resnet18",
+        "model_name": "ResNet-18",
+        "metric_name": "AUC",
+        "reported_value": 0.85,
+        "validation_protocol": "holdout_test",
+        "is_ambiguous": false
+      }
+    ]
+  }
+]
