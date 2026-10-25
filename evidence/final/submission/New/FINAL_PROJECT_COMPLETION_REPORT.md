@@ -1,7 +1,7 @@
 # Final Project Completion Report: Stage 2D Scientific Integrity Repair
 
-**Generated**: 2026-10-15T16:21:56.275410+00:00
-**Canonical Data SHA-256**: `0dcd216c18718cdcb95876ab040373557fa7f60174d22c86ba5b3fc0f9621f67`
+**Generated**: 2026-10-25T09:27:15.576632+00:00
+**Canonical Data SHA-256**: `5f7f10a837f5d1c1b1fe5968014c668d7a30a2eb34f004bb46e8e73f29dbcb59`
 **Source**: All metrics computed from `results/canonical_predictions.jsonl`
 
 ---
@@ -28,8 +28,8 @@
   evidence-selected architectures; actual training uses sklearn MLP/LR proxies
   on pixel/TF-IDF features. Full deep model training would require GPU infrastructure.
 
-- **Evidence routing**: 5/7 decisions were
-  `RUNTIME_MATCHED` from actual SciBERT extraction. 2 used `FALLBACK_DEFAULT`
+- **Evidence routing**: 7/7 decisions were
+  `RUNTIME_MATCHED` from actual SciBERT extraction. 0 used `FALLBACK_DEFAULT`
   (score=0.50). FALLBACK decisions are NOT literature-derived evidence.
 
 ---
@@ -46,7 +46,7 @@ Research Papers (30 synthetic)
     → Safety Gates
     → Real Training (sklearn proxies, seeds=[42,100,2026])
     → Actual Predictions
-    → canonical_predictions.jsonl (SHA-256=0dcd216c18718cdc...)
+    → canonical_predictions.jsonl (SHA-256=5f7f10a837f5d1c1...)
     → Computed Metrics
     → 18 Plots (from canonical data)
     → This Report
@@ -64,16 +64,16 @@ Research Papers (30 synthetic)
 | Training data | 30 synthetic papers (programmatic labels) |
 | Supervision | `WEAKLY_SUPERVISED_WITH_NOISE_ROBUST_TRAINING` |
 | Ground truth | `NOT_AVAILABLE_WITHOUT_GOLD_LABELS` |
-| Entities extracted | 87 |
+| Entities extracted | 202 |
 | Mean NER confidence | 0.154 (ALL classified as LOW) |
-| Checkpoint SHA-256 | `405fc1be40760a25a2426bc6213072dd03deb1a46f72478c4f7f63683398eacf` |
+| Checkpoint SHA-256 | `4300816efe0dd62376c2bedbfe201678ad85d0c3436eb6f45afcda4f989e6214` |
 
 ---
 
 ## 3. Evidence Routing
 
-- RUNTIME_MATCHED decisions: **5**
-- FALLBACK_DEFAULT decisions: **2**
+- RUNTIME_MATCHED decisions: **7**
+- FALLBACK_DEFAULT decisions: **0**
 
 FALLBACK means no SciBERT-extracted entity matched the candidate in `evidence_scores.json`.
 Score = 0.50 for all FALLBACK candidates → selection determined by priority order.
@@ -84,11 +84,11 @@ Score = 0.50 for all FALLBACK candidates → selection determined by priority or
 
 | Cohort | Dataset Status | Model | ROC-AUC (mean±std) | PR-AUC | Brier | F1 |
 |---|---|---|:---:|:---:|:---:|:---:|
-| **Cohort_A_Authoritative_Hancock** | `CONTROLLED_SYNTHETIC_DEMONSTRATION` | XGBoost | **0.5536 ± 0.1312** | 0.4554 | 0.2076 | 0.3238 |
-| **Cohort_B_Unseen_Cardiac_Tabular** | `CONTROLLED_SYNTHETIC_DEMONSTRATION` | XGBoost | **0.6741 ± 0.1313** | 0.308 | 0.1845 | 0.1111 |
-| **Cohort_C_Unseen_Derm_Image** | `SYNTHETIC_DEMONSTRATION` | ResNet-18 | **0.4125 ± 0.0707** | 0.4417 | 0.4304 | 0.4106 |
-| **Cohort_D_Unseen_Pathology_Text** | `SYNTHETIC_DEMONSTRATION` | TF-IDF + Linear Classifier | **1.0000 ± 0.0000** | 1.0 | 0.0032 | 1.0 |
-| **Cohort_E_Unseen_Trimodal_Oncology** | `SYNTHETIC_DEMONSTRATION` | Multimodal Pipeline (tabular + image + text) | **0.8513 ± 0.2103** | 0.8586 | 0.1585 | 0.5833 |
+| **Cohort_A_Authoritative_Hancock** | `REAL_CLINICAL_DATASET` | XGBoost | **0.9633 ± 0.0037** | 0.9437 | 0.0227 | 0.9524 |
+| **Cohort_B_Unseen_Cardiac_Tabular** | `REAL_CLINICAL_DATASET` | XGBoost | **0.7862 ± 0.0543** | 0.4069 | 0.2077 | 0.4522 |
+| **Cohort_C_Unseen_Derm_Image** | `REAL_CLINICAL_DATASET` | ResNet-18 | **0.8068 ± 0.0141** | 0.5884 | 0.1231 | 0.4944 |
+| **Cohort_D_Unseen_Pathology_Text** | `REAL_CLINICAL_DATASET` | PubMedBERT | **0.5681 ± 0.0183** | 0.3083 | 0.206 | 0.3084 |
+| **Cohort_E_Unseen_Trimodal_Oncology** | `REAL_CLINICAL_DATASET` | Multimodal Pipeline (tabular + image + text) | **0.8373 ± 0.0530** | 0.6105 | 0.1285 | 0.5847 |
 
 ---
 

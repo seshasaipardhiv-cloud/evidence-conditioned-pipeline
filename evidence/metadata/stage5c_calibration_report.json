@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-15T18:22:37.068141+00:00",
+  "timestamp": "2026-10-25T07:39:25.366969+00:00",
   "brier_score_comparison": {
     "candidate_pipeline": 0.0207,
     "default_xgboost": 0.018,

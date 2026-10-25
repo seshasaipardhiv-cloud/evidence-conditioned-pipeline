@@ -1,6 +1,6 @@
 # Forensic Audit Report: Cohort C (Image) & Cohort D (Text)
 
-**Audit Timestamp**: `2026-10-15T16:21:56.176972+00:00`  
+**Audit Timestamp**: `2026-10-25T09:27:15.293384+00:00`  
 **Objective**: Forensic investigation into the technical mechanisms responsible for high performance (ROC-AUC `0.9957` in Cohort C, `1.0000` in Cohort D).
 
 ---
@@ -17,27 +17,27 @@
 ## 2. Cohort C (Dermatology Image) Forensic Findings
 
 ### A. Data Integrity & Leakage Verification
-- **Total Samples**: 60 (28 positive, 32 negative)
+- **Total Samples**: 234 (42 positive, 192 negative)
 - **Exact Duplicate Images**: `0`
 - **Near-Duplicate Pairs (MSE < 5.0)**: `0`
 - **Train/Test Identifier Overlap**: `0` (Strict isolation across all splits)
 - **Filename / Metadata Leakage**: None (Files named `DERM_PT_xxxx_derm.png` with random IDs)
 
 ### B. Pixel Distribution Analysis
-- **Class 0 Center Patch Mean**: `130.13`
-- **Class 1 Center Patch Mean**: `128.31` (Difference: `-1.82` intensity units)
-- **Center Patch Correlation with Label**: `r = -0.0728`
-- **Full Image Mean Correlation with Label**: `r = -0.0279`
+- **Class 0 Center Patch Mean**: `144.26`
+- **Class 1 Center Patch Mean**: `145.55` (Difference: `1.29` intensity units)
+- **Center Patch Correlation with Label**: `r = 0.0157`
+- **Full Image Mean Correlation with Label**: `r = -0.087`
 
 ### C. Baseline Model Hierarchy
 
 | Model / Baseline | Mechanism | Test ROC-AUC (mean±std) | Test F1 (mean±std) |
 |---|---|:---:|:---:|
 | **Majority Class Baseline** | Simple / Linear Baseline | `0.5000 ± 0.0000` | `0.0000 ± 0.0000` |
-| **Center-Pixel Mean Threshold Baseline** | Simple / Linear Baseline | `0.4125 ± 0.0797` | `0.3311 ± 0.0495` |
-| **Logistic Regression (Center Mean Only)** | Simple / Linear Baseline | `0.5875 ± 0.0797` | `0.3300 ± 0.2369` |
-| **Logistic Regression (64 Pixel Features)** | Simple / Linear Baseline | `0.3458 ± 0.0257` | `0.3333 ± 0.0544` |
-| **ResNet-18 Proxy (MLP on 64 Pixels)** | Simple / Linear Baseline | `0.4125 ± 0.0707` | `0.4106 ± 0.0957` |
+| **Center-Pixel Mean Threshold Baseline** | Simple / Linear Baseline | `0.6233 ± 0.0395` | `0.4115 ± 0.0259` |
+| **Logistic Regression (Center Mean Only)** | Simple / Linear Baseline | `0.5088 ± 0.1295` | `0.0000 ± 0.0000` |
+| **Logistic Regression (64 Pixel Features)** | Simple / Linear Baseline | `0.6750 ± 0.0338` | `0.1005 ± 0.0781` |
+| **ResNet-18 Proxy (MLP on 64 Pixels)** | Simple / Linear Baseline | `0.6308 ± 0.0323` | `0.2431 ± 0.0667` |
 
 ### D. Scientific Interpretation for Cohort C
 > [!NOTE]
@@ -50,26 +50,26 @@
 ## 3. Cohort D (Pathology Text) Forensic Findings
 
 ### A. Data Integrity & Leakage Verification
-- **Total Samples**: 60 (27 positive, 33 negative)
+- **Total Samples**: 742 (173 positive, 569 negative)
 - **Exact Duplicate Texts**: `0`
 - **Train/Test Identifier Overlap**: `0` (Strict isolation across all splits)
 - **Metadata / Target Leakage**: None
 
 ### B. Lexical & Vocabulary Analysis
-- **Total Unique Vocabulary Tokens**: `60`
-- **Shared Tokens across Classes**: `22` (e.g. `report`, `patient`, `indication`, `examination`)
-- **Class 1 Exclusive Tokens**: `high, grade, dysplastic, glandular, epithelium`
-- **Class 0 Exclusive Tokens**: `benign, fibrocystic, without, significant, atypia`
-- **Vocabulary Jaccard Similarity**: `0.3667`
+- **Total Unique Vocabulary Tokens**: `5941`
+- **Shared Tokens across Classes**: `3206` (e.g. `report`, `patient`, `indication`, `examination`)
+- **Class 1 Exclusive Tokens**: `nuchal, neurological, information, retroclavicular, specifically`
+- **Class 0 Exclusive Tokens**: `leukoplakia, looping, arms, vega, mirror`
+- **Vocabulary Jaccard Similarity**: `0.5396`
 
 ### C. Baseline Model Hierarchy
 
 | Model / Baseline | Mechanism | Test ROC-AUC (mean±std) | Test F1 (mean±std) |
 |---|---|:---:|:---:|
 | **Majority Class Baseline** | Simple / Keyword Baseline | `0.5000 ± 0.0000` | `0.0000 ± 0.0000` |
-| **Simple Keyword Rule Baseline** | Simple / Keyword Baseline | `1.0000 ± 0.0000` | `1.0000 ± 0.0000` |
-| **TF-IDF + Logistic Regression** | Simple / Keyword Baseline | `0.8521 ± 0.1083` | `0.6176 ± 0.1020` |
-| **PubMedBERT Proxy (TF-IDF + Linear)** | Simple / Keyword Baseline | `0.8521 ± 0.1083` | `0.6176 ± 0.1020` |
+| **Simple Keyword Rule Baseline** | Simple / Keyword Baseline | `0.5360 ± 0.0201` | `0.2135 ± 0.0555` |
+| **TF-IDF + Logistic Regression** | Simple / Keyword Baseline | `0.5311 ± 0.0082` | `0.0000 ± 0.0000` |
+| **PubMedBERT Proxy (TF-IDF + Linear)** | Simple / Keyword Baseline | `0.5311 ± 0.0082` | `0.0000 ± 0.0000` |
 
 ### D. Scientific Interpretation for Cohort D
 > [!NOTE]

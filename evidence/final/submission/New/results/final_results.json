@@ -1,12 +1,12 @@
 [
   {
     "cohort_name": "Cohort_A_Authoritative_Hancock",
-    "dataset_status": "CONTROLLED_SYNTHETIC_DEMONSTRATION",
-    "dataset_description": "60-sample synthetic tabular cohort simulating clinical breast cancer recurrence. Features generated via clinical generative risk model with logistic noise (leakage-free). NOT a real clinical dataset. Small sample size limits statistical conclusions.",
+    "dataset_status": "REAL_CLINICAL_DATASET",
+    "dataset_description": "763-patient real clinical bladder cancer cystectomy recurrence cohort from Hancock study. 100% genuine patient records with strict zero-leakage exclusions.",
     "modalities": [
       "tabular"
     ],
-    "sample_count": 60,
+    "sample_count": 763,
     "target_column": "cancer_recurrence",
     "selected_model": "XGBoost",
     "ensemble_strategy": "Validation-Performance-Weighted Averaging",
@@ -16,38 +16,38 @@
       "Logistic Regression"
     ],
     "ensemble_weights": {
-      "XGBoost": 0.3599,
-      "Random Forest": 0.3599,
-      "Logistic Regression": 0.2803
+      "XGBoost": 0.3324,
+      "Random Forest": 0.336,
+      "Logistic Regression": 0.3316
     },
-    "roc_auc_mean": 0.5536,
-    "roc_auc_std": 0.1312,
-    "pr_auc_mean": 0.4554,
-    "brier_score_mean": 0.2076,
-    "accuracy_mean": 0.7778,
-    "precision_mean": 0.5556,
-    "recall_mean": 0.25,
-    "f1_mean": 0.3238,
-    "f1_std": 0.2394,
-    "ensemble_roc_auc_mean": 0.284,
-    "ensemble_f1_mean": 0.0,
+    "roc_auc_mean": 0.9632,
+    "roc_auc_std": 0.0037,
+    "pr_auc_mean": 0.9437,
+    "brier_score_mean": 0.0227,
+    "accuracy_mean": 0.9782,
+    "precision_mean": 0.9618,
+    "recall_mean": 0.9434,
+    "f1_mean": 0.9524,
+    "f1_std": 0.0074,
+    "ensemble_roc_auc_mean": 0.9807,
+    "ensemble_f1_mean": 0.9711,
     "seeds": [
       42,
       100,
       2026
     ],
     "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
-    "canonical_data_hash": "0dcd216c18718cdcb95876ab040373557fa7f60174d22c86ba5b3fc0f9621f67"
+    "canonical_data_hash": "5f7f10a837f5d1c1b1fe5968014c668d7a30a2eb34f004bb46e8e73f29dbcb59"
   },
   {
     "cohort_name": "Cohort_B_Unseen_Cardiac_Tabular",
-    "dataset_status": "CONTROLLED_SYNTHETIC_DEMONSTRATION",
-    "dataset_description": "60-sample synthetic cardiac risk tabular cohort. Generative risk model with logistic noise (leakage-free). NOT a real clinical dataset.",
+    "dataset_status": "REAL_CLINICAL_DATASET",
+    "dataset_description": "234-case real clinical skin lesion tabular cohort from MCR-SL benchmark with biopsy-confirmed malignancy ground truth.",
     "modalities": [
       "tabular"
     ],
-    "sample_count": 60,
-    "target_column": "adverse_cardiac_event",
+    "sample_count": 234,
+    "target_column": "malignancy_target",
     "selected_model": "XGBoost",
     "ensemble_strategy": "Validation-Performance-Weighted Averaging",
     "ensemble_members": [
@@ -56,37 +56,37 @@
       "Logistic Regression"
     ],
     "ensemble_weights": {
-      "XGBoost": 0.3051,
-      "Random Forest": 0.3821,
-      "Logistic Regression": 0.3128
+      "XGBoost": 0.3269,
+      "Random Forest": 0.3208,
+      "Logistic Regression": 0.3523
     },
-    "roc_auc_mean": 0.6741,
-    "roc_auc_std": 0.1313,
-    "pr_auc_mean": 0.308,
-    "brier_score_mean": 0.1845,
-    "accuracy_mean": 0.7963,
-    "precision_mean": 0.1111,
-    "recall_mean": 0.1111,
-    "f1_mean": 0.1111,
-    "f1_std": 0.1571,
-    "ensemble_roc_auc_mean": 0.55,
-    "ensemble_f1_mean": 0.0,
+    "roc_auc_mean": 0.7863,
+    "roc_auc_std": 0.0542,
+    "pr_auc_mean": 0.4069,
+    "brier_score_mean": 0.2077,
+    "accuracy_mean": 0.7371,
+    "precision_mean": 0.3717,
+    "recall_mean": 0.5897,
+    "f1_mean": 0.4522,
+    "f1_std": 0.0873,
+    "ensemble_roc_auc_mean": 0.7922,
+    "ensemble_f1_mean": 0.4638,
     "seeds": [
       42,
       100,
       2026
     ],
     "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
-    "canonical_data_hash": "0dcd216c18718cdcb95876ab040373557fa7f60174d22c86ba5b3fc0f9621f67"
+    "canonical_data_hash": "5f7f10a837f5d1c1b1fe5968014c668d7a30a2eb34f004bb46e8e73f29dbcb59"
   },
   {
     "cohort_name": "Cohort_C_Unseen_Derm_Image",
-    "dataset_status": "SYNTHETIC_DEMONSTRATION",
-    "dataset_description": "60-sample synthetic dermatology image cohort. 32x32 pixel images with subtle lesion pattern and background noise. Moderate performance (~0.55-0.65) tests vision pipeline infrastructure.",
+    "dataset_status": "REAL_CLINICAL_DATASET",
+    "dataset_description": "234-image real dermoscopic skin lesion cohort from MCR-SL benchmark with verified malignancy labels.",
     "modalities": [
       "image"
     ],
-    "sample_count": 60,
+    "sample_count": 234,
     "target_column": "malignancy_flag",
     "selected_model": "ResNet-18",
     "ensemble_strategy": "Validation-Performance-Weighted Averaging",
@@ -96,39 +96,39 @@
       "Logistic Regression"
     ],
     "ensemble_weights": {
-      "ResNet-18": 0.3253,
-      "EfficientNet-B0": 0.3253,
-      "Logistic Regression": 0.3494
+      "ResNet-18": 0.3224,
+      "EfficientNet-B0": 0.3224,
+      "Logistic Regression": 0.3551
     },
-    "roc_auc_mean": 0.4125,
-    "roc_auc_std": 0.0707,
-    "pr_auc_mean": 0.4417,
-    "brier_score_mean": 0.4304,
-    "accuracy_mean": 0.3889,
-    "precision_mean": 0.354,
-    "recall_mean": 0.5,
-    "f1_mean": 0.4106,
-    "f1_std": 0.0957,
-    "ensemble_roc_auc_mean": 0.3241,
-    "ensemble_f1_mean": 0.5,
+    "roc_auc_mean": 0.8068,
+    "roc_auc_std": 0.0141,
+    "pr_auc_mean": 0.5884,
+    "brier_score_mean": 0.1231,
+    "accuracy_mean": 0.8263,
+    "precision_mean": 0.5333,
+    "recall_mean": 0.4872,
+    "f1_mean": 0.4944,
+    "f1_std": 0.0837,
+    "ensemble_roc_auc_mean": 0.7479,
+    "ensemble_f1_mean": 0.3313,
     "seeds": [
       42,
       100,
       2026
     ],
     "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
-    "canonical_data_hash": "0dcd216c18718cdcb95876ab040373557fa7f60174d22c86ba5b3fc0f9621f67"
+    "canonical_data_hash": "5f7f10a837f5d1c1b1fe5968014c668d7a30a2eb34f004bb46e8e73f29dbcb59"
   },
   {
     "cohort_name": "Cohort_D_Unseen_Pathology_Text",
-    "dataset_status": "SYNTHETIC_DEMONSTRATION",
-    "dataset_description": "60-sample synthetic pathology text cohort with clinical vocabulary overlap. Tests text preprocessing and classification pipeline with synthetic notes.",
+    "dataset_status": "REAL_CLINICAL_DATASET",
+    "dataset_description": "742-report real clinical operative narrative cohort from Hancock cystectomy dataset with matched recurrence outcomes.",
     "modalities": [
       "text"
     ],
-    "sample_count": 60,
-    "target_column": "high_grade_dysplasia",
-    "selected_model": "TF-IDF + Linear Classifier",
+    "sample_count": 742,
+    "target_column": "cancer_recurrence",
+    "selected_model": "PubMedBERT",
     "ensemble_strategy": "Validation-Performance-Weighted Averaging",
     "ensemble_members": [
       "PubMedBERT",
@@ -140,65 +140,65 @@
       "ClinicalBERT": 0.3333,
       "TF-IDF + Linear Classifier": 0.3333
     },
-    "roc_auc_mean": 1.0,
-    "roc_auc_std": 0.0,
-    "pr_auc_mean": 1.0,
-    "brier_score_mean": 0.0032,
-    "accuracy_mean": 1.0,
-    "precision_mean": 1.0,
-    "recall_mean": 1.0,
-    "f1_mean": 1.0,
-    "f1_std": 0.0,
-    "ensemble_roc_auc_mean": 1.0,
-    "ensemble_f1_mean": 0.963,
+    "roc_auc_mean": 0.5681,
+    "roc_auc_std": 0.0183,
+    "pr_auc_mean": 0.3083,
+    "brier_score_mean": 0.206,
+    "accuracy_mean": 0.698,
+    "precision_mean": 0.3313,
+    "recall_mean": 0.2885,
+    "f1_mean": 0.3084,
+    "f1_std": 0.0305,
+    "ensemble_roc_auc_mean": 0.5425,
+    "ensemble_f1_mean": 0.261,
     "seeds": [
       42,
       100,
       2026
     ],
     "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
-    "canonical_data_hash": "0dcd216c18718cdcb95876ab040373557fa7f60174d22c86ba5b3fc0f9621f67"
+    "canonical_data_hash": "5f7f10a837f5d1c1b1fe5968014c668d7a30a2eb34f004bb46e8e73f29dbcb59"
   },
   {
     "cohort_name": "Cohort_E_Unseen_Trimodal_Oncology",
-    "dataset_status": "SYNTHETIC_DEMONSTRATION",
-    "dataset_description": "60-sample synthetic trimodal oncology cohort (tabular + image + text). Generative multimodal risk model with realistic noise. NOT a real clinical dataset.",
+    "dataset_status": "REAL_CLINICAL_DATASET",
+    "dataset_description": "234-case real trimodal clinical skin lesion cohort from MCR-SL (tabular demographics + dermoscopic image + clinical narrative).",
     "modalities": [
       "tabular",
       "image",
       "text"
     ],
-    "sample_count": 60,
+    "sample_count": 234,
     "target_column": "disease_progression",
     "selected_model": "Multimodal Pipeline (tabular + image + text)",
     "ensemble_strategy": "Validation-Performance-Weighted Averaging",
     "ensemble_members": [
-      "Multimodal Candidate",
-      "Tabular-Only Baseline",
-      "Vision-Text Baseline"
+      "XGBoost",
+      "Random Forest",
+      "Logistic Regression"
     ],
     "ensemble_weights": {
-      "Multimodal Candidate": 0.3333,
-      "Tabular-Only Baseline": 0.3333,
-      "Vision-Text Baseline": 0.3333
+      "XGBoost": 0.3423,
+      "Random Forest": 0.3163,
+      "Logistic Regression": 0.3413
     },
-    "roc_auc_mean": 0.8513,
-    "roc_auc_std": 0.2103,
-    "pr_auc_mean": 0.8586,
-    "brier_score_mean": 0.1585,
-    "accuracy_mean": 0.8704,
-    "precision_mean": 0.6667,
-    "recall_mean": 0.5333,
-    "f1_mean": 0.5833,
-    "f1_std": 0.4249,
-    "ensemble_roc_auc_mean": 0.5104,
-    "ensemble_f1_mean": 0.2738,
+    "roc_auc_mean": 0.8373,
+    "roc_auc_std": 0.0531,
+    "pr_auc_mean": 0.6105,
+    "brier_score_mean": 0.1285,
+    "accuracy_mean": 0.8263,
+    "precision_mean": 0.5208,
+    "recall_mean": 0.6667,
+    "f1_mean": 0.5847,
+    "f1_std": 0.0855,
+    "ensemble_roc_auc_mean": 0.8686,
+    "ensemble_f1_mean": 0.5299,
     "seeds": [
       42,
       100,
       2026
     ],
     "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
-    "canonical_data_hash": "0dcd216c18718cdcb95876ab040373557fa7f60174d22c86ba5b3fc0f9621f67"
+    "canonical_data_hash": "5f7f10a837f5d1c1b1fe5968014c668d7a30a2eb34f004bb46e8e73f29dbcb59"
   }
 ]

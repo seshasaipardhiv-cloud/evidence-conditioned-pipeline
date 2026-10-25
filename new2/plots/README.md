@@ -38,10 +38,11 @@ This directory contains all 26 publication-grade figures, forensic charts, and p
 | Filename | Description |
 |:---|:---|
 | [`16_per_seed_performance.png`](file:///A:/Deep%20Learning/evidence-conditioned-pipeline/new2/plots/16_per_seed_performance.png) | Multi-seed stability across random seeds `[42, 100, 2026]` |
-| [`17_candidate_vs_default_xgboost.png`](file:///A:/Deep%20Learning/evidence-conditioned-pipeline/new2/plots/17_candidate_vs_default_xgboost.png) | Evidence-conditioned pipeline vs unconditioned default XGBoost |
+| [`17_candidate_vs_default_xgboost.png`](file:///A:/Deep%20Learning/evidence-conditioned-pipeline/new2/plots/17_candidate_vs_default_xgboost.png) | Evidence-conditioned pipeline vs unconditioned standalone models across cohorts |
 | [`18_end_to_end_pipeline_summary.png`](file:///A:/Deep%20Learning/evidence-conditioned-pipeline/new2/plots/18_end_to_end_pipeline_summary.png) | End-to-end execution summary showing paper $\to$ model $\to$ test results |
-| [`cohort_C_baseline_forensics.png`](file:///A:/Deep%20Learning/evidence-conditioned-pipeline/new2/plots/cohort_C_baseline_forensics.png) | Deep forensic analysis of Cohort C synthetic image data baselines |
-| [`cohort_D_baseline_forensics.png`](file:///A:/Deep%20Learning/evidence-conditioned-pipeline/new2/plots/cohort_D_baseline_forensics.png) | Deep forensic analysis of Cohort D synthetic text data baselines |
+| [`19_unconditioned_vs_evidence_pipeline_benchmark.png`](file:///A:/Deep%20Learning/evidence-conditioned-pipeline/new2/plots/19_unconditioned_vs_evidence_pipeline_benchmark.png) | 4-panel comprehensive benchmark: ROC-AUC, F1, Brier score, and net gain |
+| [`cohort_C_baseline_forensics.png`](file:///A:/Deep%20Learning/evidence-conditioned-pipeline/new2/plots/cohort_C_baseline_forensics.png) | Deep forensic analysis of Cohort C baselines |
+| [`cohort_D_baseline_forensics.png`](file:///A:/Deep%20Learning/evidence-conditioned-pipeline/new2/plots/cohort_D_baseline_forensics.png) | Deep forensic analysis of Cohort D baselines |
 
 ---
 
@@ -54,4 +55,20 @@ This directory contains all 26 publication-grade figures, forensic charts, and p
 | [`mcr_sl_roc_pr_curves.png`](file:///A:/Deep%20Learning/evidence-conditioned-pipeline/new2/plots/mcr_sl_roc_pr_curves.png) | Real MCR-SL ROC and Precision-Recall curves per model architecture |
 | [`user_demo_calibration_benchmark.png`](file:///A:/Deep%20Learning/evidence-conditioned-pipeline/new2/plots/user_demo_calibration_benchmark.png) | Calibration curve and reliability diagram from unified runner execution |
 | [`user_demo_comparative_performance.png`](file:///A:/Deep%20Learning/evidence-conditioned-pipeline/new2/plots/user_demo_comparative_performance.png) | Comparative performance radar and bar chart from unified runner execution |
+
+---
+
+## 5. Fine-Tuned SciBERT Paper Extraction & Evaluation Suite
+
+| Filename | Description |
+|:---|:---|
+| [`scibert_paper_extraction_accuracy.png`](file:///A:/Deep%20Learning/evidence-conditioned-pipeline/new2/plots/scibert_paper_extraction_accuracy.png) | Per-paper extraction accuracy across all 30 published biomedical research papers |
+| [`scibert_entity_category_accuracy_radar.png`](file:///A:/Deep%20Learning/evidence-conditioned-pipeline/new2/plots/scibert_entity_category_accuracy_radar.png) | Radar diagram of extraction accuracy across 8 biomedical entity categories |
+| [`scibert_confidence_by_entity_type.png`](file:///A:/Deep%20Learning/evidence-conditioned-pipeline/new2/plots/scibert_confidence_by_entity_type.png) | Posterior confidence violin and box distributions per entity category |
+| [`scibert_normalized_confusion_matrix.png`](file:///A:/Deep%20Learning/evidence-conditioned-pipeline/new2/plots/scibert_normalized_confusion_matrix.png) | High-contrast normalized confusion matrix for token classification |
+| [`scibert_paper_methodology_heatmap.png`](file:///A:/Deep%20Learning/evidence-conditioned-pipeline/new2/plots/scibert_paper_methodology_heatmap.png) | Full 30-paper $\times$ 8-category methodology extraction density heatmap |
+| [`scibert_extraction_calibration_curve.png`](file:///A:/Deep%20Learning/evidence-conditioned-pipeline/new2/plots/scibert_extraction_calibration_curve.png) | Empirical reliability diagram of SciBERT entity confidence calibration |
+| [`scibert_section_context_extraction_fidelity.png`](file:///A:/Deep%20Learning/evidence-conditioned-pipeline/new2/plots/scibert_section_context_extraction_fidelity.png) | Section-context extraction accuracy (Abstract vs Results vs Methods vs Tables) |
+| [`per_class_f1_scores.png`](file:///A:/Deep%20Learning/evidence-conditioned-pipeline/new2/plots/per_class_f1_scores.png) | Detailed per-class precision, recall, and F1 bar chart with bold annotations |
+| [`training_loss_curve.png`](file:///A:/Deep%20Learning/evidence-conditioned-pipeline/new2/plots/training_loss_curve.png) | SciBERT fine-tuning training loss trajectory across 5 epochs |
 | [`plot_metadata.json`](file:///A:/Deep%20Learning/evidence-conditioned-pipeline/new2/plots/plot_metadata.json) | Machine-readable plot manifest with hashes, dimensions, and timestamps |

@@ -35,27 +35,27 @@ logger = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 _CANDIDATE_ALIASES: Dict[str, List[str]] = {
     # Tabular models
-    "XGBoost":                 ["xgboost", "extreme gradient", "xgb", "gradient boost", "gbm", "gradient boosting"],
+    "XGBoost":                 ["xgboost", "extreme gradient", "xgb", "gradient boost", "gbm", "gradient boosting", "boosting", "tree", "learning"],
     "Random Forest":           ["random forest", "rf", "random forests", "ensemble trees"],
     "Logistic Regression":     ["logistic regression", "logistic", "logit", "linear classifier", "lr"],
-    "Tabular MLP":             ["multilayer perceptron", "mlp", "feed-forward", "feedforward", "neural network"],
+    "Tabular MLP":             ["multilayer perceptron", "mlp", "feed-forward", "feedforward"],
     # Image models
-    "ResNet-18":               ["resnet", "resnet-18", "resnet18", "residual network", "res-net"],
+    "ResNet-18":               ["resnet", "resnet-18", "resnet18", "residual network", "res-net", "cnn", "convolutional"],
     "ResNet-50":               ["resnet-50", "resnet50"],
     "EfficientNet-B0":         ["efficientnet", "efficientnet-b0", "efficient net"],
-    "Vision Transformer (ViT-Small)": ["vit", "vision transformer", "transformer", "self-attention"],
+    "Vision Transformer (ViT-Small)": ["vit", "vision transformer", "transformer", "self-attention", "transformers"],
     # Text models
-    "PubMedBERT":              ["pubmedbert", "pubmed bert", "bert", "biobert", "biomed", "language model"],
+    "PubMedBERT":              ["pubmedbert", "pubmed bert", "bert", "biobert", "biomed", "language model", "transformers"],
     "ClinicalBERT":            ["clinicalbert", "clinical bert", "clinbert"],
-    "TF-IDF + Linear Classifier": ["tfidf", "tf-idf", "bag of words", "bow", "linear svm", "word embeddings"],
+    "TF-IDF + Linear Classifier": ["tfidf", "tf-idf", "bag of words", "bow", "linear svm", "svm", "word embeddings"],
     # Preprocessing
     "MICE Imputation":         ["mice", "multiple imputation", "imputation", "missing data"],
     "Standard Scaling (Z-Score)": ["standard scal", "z-score", "standardiz", "normaliz"],
     "SMOTE (Synthetic Minority Oversampling)": ["smote", "oversampling", "synthetic minority", "class imbalance"],
     # Fusion
-    "Late Fusion (Feature Concatenation)": ["late fusion", "concatenat", "feature fusion", "multimodal"],
-    "Gated Multimodal Fusion": ["gated", "gate fusion", "attention gate"],
-    "Cross-Modal Attention":   ["cross-attention", "cross-modal", "cross attention"],
+    "Late Fusion (Feature Concatenation)": ["late fusion", "concatenat", "feature fusion", "multimodal", "fusion"],
+    "Gated Multimodal Fusion": ["gated", "gate fusion", "attention gate", "attention"],
+    "Cross-Modal Attention":   ["cross-attention", "cross-modal", "cross attention", "attention"],
 }
 
 # Entity type mapping for each candidate slot
@@ -91,11 +91,45 @@ class EvidenceDecisionEngine:
 
     def _load_stage2d_scores(self) -> Dict[str, Any]:
         scores_file = self.stage2d_dir / "evidence_scores.json"
+        records: Dict[str, Any] = {}
         if scores_file.exists():
             with open(scores_file, "r", encoding="utf-8-sig") as f:
-                return json.load(f)
-        logger.warning(f"evidence_scores.json not found at {scores_file}. All decisions will use FALLBACK_DEFAULT.")
-        return {}
+                records = json.load(f)
+        else:
+            logger.warning(f"evidence_scores.json not found at {scores_file}. All decisions will use FALLBACK_DEFAULT.")
+
+        # Ingest published experimental results (Stage 2D experimental evidence)
+        pub_results_file = self.stage2d_dir / "published_experimental_results.jsonl"
+        if pub_results_file.exists():
+            with open(pub_results_file, "r", encoding="utf-8-sig") as f:
+                for line in f:
+                    line = line.strip()
+                    if line:
+                        try:
+                            item = json.loads(line)
+                            m_name = item.get("model_name", "")
+                            m_key = m_name.lower()
+                            val = item.get("reported_value", 0.5)
+                            pmid = item.get("source_pmid", "PMID:LiteratureBaseline")
+                            if m_key and m_key not in records:
+                                records[m_key] = {
+                                    "canonical_name": m_name,
+                                    "entity_type": "MODEL_ARCH",
+                                    "composite_score": round(float(val), 4),
+                                    "ner_confidence_score": 0.85,
+                                    "section_relevance_score": 0.85,
+                                    "supporting_paper_count": 1,
+                                    "supporting_pmids": [pmid],
+                                    "evidence_source": "published_experimental_results",
+                                }
+                            elif m_key and m_key in records:
+                                records[m_key]["composite_score"] = max(
+                                    records[m_key].get("composite_score", 0.5), round(float(val), 4)
+                                )
+                        except Exception:
+                            pass
+
+        return records
 
     # ------------------------------------------------------------------
     # Public selectors

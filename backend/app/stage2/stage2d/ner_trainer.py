@@ -248,49 +248,28 @@ class SciBERTNERTrainer:
 
             for s_start, s_end, s_type, s_conf in spans:
                 if t_start >= s_start and t_end <= s_end:
-                    if s_conf < 0.60:
-                        # Noise masking: uncertain tokens are ignored in gradient computation
-                        target_ids[0, token_idx] = -100
+                    if t_start == s_start:
+                        target_ids[0, token_idx] = LABEL2ID.get(f"B-{s_type}", LABEL2ID["O"])
                     else:
-                        if t_start == s_start:
-                            target_ids[0, token_idx] = LABEL2ID.get(f"B-{s_type}", LABEL2ID["O"])
-                        else:
-                            target_ids[0, token_idx] = LABEL2ID.get(f"I-{s_type}", LABEL2ID["O"])
+                        target_ids[0, token_idx] = LABEL2ID.get(f"I-{s_type}", LABEL2ID["O"])
                     break
 
         return target_ids
 
     def _generate_weak_supervision_dataset(self) -> List[Tuple[str, List[Tuple[int, int, str, float]]]]:
-        """Synthesizes structured training examples with context-aware methodology grounding."""
-        labeler = AdvancedWeakLabeler()
-        seed_texts = [
-            "We applied XGBoost to classify oncological progression using binary cross-entropy loss.",
-            "Missing clinical variables were imputed using MICE imputation before standard scaling.",
-            "To address class imbalance in the training cohort, SMOTE oversampling was implemented.",
-            "For image feature extraction, ResNet-18 was trained with AdamW optimizer and weight decay.",
-            "Late fusion was adopted to concatenate multimodal representations and optimized by Adam.",
-            "Model discrimination was evaluated by ROC-AUC and macro F1-score on the TCGA cohort.",
-            "Dropout with rate 0.3 and early stopping were employed for neural regularization.",
-            "The Vision Transformer was trained with Focal Loss on the MIMIC-III benchmark.",
-            "ADASYN sampling and Random Forest classification achieved superior Brier Score.",
-            "One-hot encoding was used for categorical features and evaluated on the Hancock cohort.",
-            "Previous studies used Logistic Regression, but we developed a deep Swin Transformer.",
-            "Standard scaling was applied to tabular blood measurements with binary cross-entropy.",
-            "Cross-attention fusion combined clinical text reports and dermoscopy image embeddings.",
-            "Principal Component Analysis reduced dimensionality prior to Support Vector Machine training.",
-            "We optimized the Multilayer Perceptron with SGD with Momentum and cosine annealing.",
-        ]
+        """Loads genuine literature training examples derived from 30 published PubMed research papers."""
+        real_data_path = Path("SciBERT/data/train_ner_dataset.json")
+        if not real_data_path.exists():
+            from SciBERT.code.prepare_dataset import build_real_scibert_dataset
+            build_real_scibert_dataset()
+
+        with open(real_data_path, "r", encoding="utf-8") as f:
+            raw_examples = json.load(f)
 
         dataset = []
-        for text in seed_texts:
-            ents = labeler.extract_weak_labels(text, paper_id="seed_corpus")
-            spans = [(e.start_char, e.end_char, e.entity_type, e.confidence) for e in ents]
+        for ex in raw_examples:
+            text = ex["sentence_text"]
+            spans = [(s["start_char"], s["end_char"], s["entity_type"], s.get("confidence", 0.90)) for s in ex["spans"]]
             dataset.append((text, spans))
 
-        # Duplicate with synthetic permutations to ensure sufficient training diversity
-        expanded = []
-        for _ in range(5):
-            for t, s in dataset:
-                expanded.append((t, s))
-
-        return expanded
+        return dataset

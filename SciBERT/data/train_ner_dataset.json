@@ -1,0 +1,3832 @@
+[
+  {
+    "example_id": "paper_10.3390_bioengineering11010013_s00",
+    "source_paper_id": "paper_10.3390_bioengineering11010013",
+    "source_pmid": null,
+    "source_doi": "10.3390/bioengineering11010013",
+    "source_title": "Multi-Modal Ensemble Deep Learning in Head and Neck Cancer HPV Sub-Typing",
+    "sentence_text": "Oropharyngeal Squamous Cell Carcinoma (OPSCC) is one of the common forms of heterogeneity in head and neck cancer.",
+    "char_length": 114,
+    "word_count": 18,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_10.3390_bioengineering11010013_s01",
+    "source_paper_id": "paper_10.3390_bioengineering11010013",
+    "source_pmid": null,
+    "source_doi": "10.3390/bioengineering11010013",
+    "source_title": "Multi-Modal Ensemble Deep Learning in Head and Neck Cancer HPV Sub-Typing",
+    "sentence_text": "Infection with human papillomavirus (HPV) has been identified as a major risk factor for OPSCC.",
+    "char_length": 95,
+    "word_count": 15,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_10.3390_bioengineering11010013_s02",
+    "source_paper_id": "paper_10.3390_bioengineering11010013",
+    "source_pmid": null,
+    "source_doi": "10.3390/bioengineering11010013",
+    "source_title": "Multi-Modal Ensemble Deep Learning in Head and Neck Cancer HPV Sub-Typing",
+    "sentence_text": "Therefore, differentiating the HPV-positive and negative cases in OPSCC patients is an essential diagnostic factor influencing future treatment decisions.",
+    "char_length": 154,
+    "word_count": 19,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_10.3390_bioengineering11010013_s03",
+    "source_paper_id": "paper_10.3390_bioengineering11010013",
+    "source_pmid": null,
+    "source_doi": "10.3390/bioengineering11010013",
+    "source_title": "Multi-Modal Ensemble Deep Learning in Head and Neck Cancer HPV Sub-Typing",
+    "sentence_text": "In this study, we investigated the accuracy of a deep learning-based method for image interpretation and automatically detected the HPV status of OPSCC in routinely acquired Computed Tomography (CT) and Positron Emission Tomography (PET) images.",
+    "char_length": 245,
+    "word_count": 35,
+    "entities_count": 2,
+    "spans": [
+      {
+        "start_char": 49,
+        "end_char": 62,
+        "text": "deep learning",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.54
+      },
+      {
+        "start_char": 35,
+        "end_char": 43,
+        "text": "accuracy",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_10.3390_bioengineering11010013_s04",
+    "source_paper_id": "paper_10.3390_bioengineering11010013",
+    "source_pmid": null,
+    "source_doi": "10.3390/bioengineering11010013",
+    "source_title": "Multi-Modal Ensemble Deep Learning in Head and Neck Cancer HPV Sub-Typing",
+    "sentence_text": "We introduce a 3D CNN-based multi-modal feature fusion architecture for HPV status prediction in primary tumor lesions.",
+    "char_length": 119,
+    "word_count": 17,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 18,
+        "end_char": 21,
+        "text": "CNN",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_10.3390_bioengineering11010013_s05",
+    "source_paper_id": "paper_10.3390_bioengineering11010013",
+    "source_pmid": null,
+    "source_doi": "10.3390/bioengineering11010013",
+    "source_title": "Multi-Modal Ensemble Deep Learning in Head and Neck Cancer HPV Sub-Typing",
+    "sentence_text": "The architecture is composed of an ensemble of CNN networks and merges image features in a softmax classification layer.",
+    "char_length": 120,
+    "word_count": 19,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 47,
+        "end_char": 50,
+        "text": "CNN",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_10.3390_bioengineering11010013_s06",
+    "source_paper_id": "paper_10.3390_bioengineering11010013",
+    "source_pmid": null,
+    "source_doi": "10.3390/bioengineering11010013",
+    "source_title": "Multi-Modal Ensemble Deep Learning in Head and Neck Cancer HPV Sub-Typing",
+    "sentence_text": "The pipeline separately learns the intensity, contrast variation, shape, texture heterogeneity, and metabolic assessment from CT and PET tumor volume regions and fuses those multi-modal features for final HPV status classification.",
+    "char_length": 231,
+    "word_count": 31,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_10.3390_bioengineering11010013_s07",
+    "source_paper_id": "paper_10.3390_bioengineering11010013",
+    "source_pmid": null,
+    "source_doi": "10.3390/bioengineering11010013",
+    "source_title": "Multi-Modal Ensemble Deep Learning in Head and Neck Cancer HPV Sub-Typing",
+    "sentence_text": "The precision, recall, and AUC scores of the proposed method are computed, and the results are compared with other existing models.",
+    "char_length": 131,
+    "word_count": 21,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 27,
+        "end_char": 30,
+        "text": "AUC",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.76
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_10.3390_bioengineering11010013_s08",
+    "source_paper_id": "paper_10.3390_bioengineering11010013",
+    "source_pmid": null,
+    "source_doi": "10.3390/bioengineering11010013",
+    "source_title": "Multi-Modal Ensemble Deep Learning in Head and Neck Cancer HPV Sub-Typing",
+    "sentence_text": "The experimental results demonstrate that the multi-modal ensemble model with soft voting outperformed single-modality PET/CT, with an AUC of 0.76 and F1 score of 0.746 on publicly available TCGA and MAASTRO datasets.",
+    "char_length": 217,
+    "word_count": 32,
+    "entities_count": 3,
+    "spans": [
+      {
+        "start_char": 151,
+        "end_char": 159,
+        "text": "F1 score",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 135,
+        "end_char": 138,
+        "text": "AUC",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 191,
+        "end_char": 195,
+        "text": "TCGA",
+        "entity_type": "DATASET",
+        "bio_tag": "B-DATASET",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_10.3390_bioengineering11010013_s09",
+    "source_paper_id": "paper_10.3390_bioengineering11010013",
+    "source_pmid": null,
+    "source_doi": "10.3390/bioengineering11010013",
+    "source_title": "Multi-Modal Ensemble Deep Learning in Head and Neck Cancer HPV Sub-Typing",
+    "sentence_text": "In the MAASTRO dataset, our model achieved an AUC score of 0.74 over primary tumor volumes of interest (VOIs).",
+    "char_length": 110,
+    "word_count": 19,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 46,
+        "end_char": 49,
+        "text": "AUC",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.76
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_10.3390_bioengineering11010013_s10",
+    "source_paper_id": "paper_10.3390_bioengineering11010013",
+    "source_pmid": null,
+    "source_doi": "10.3390/bioengineering11010013",
+    "source_title": "Multi-Modal Ensemble Deep Learning in Head and Neck Cancer HPV Sub-Typing",
+    "sentence_text": "In the future, more extensive cohort validation may suffice for better diagnostic accuracy and provide preliminary assessment before the biopsy.",
+    "char_length": 144,
+    "word_count": 20,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 82,
+        "end_char": 90,
+        "text": "accuracy",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_38396486_s00",
+    "source_paper_id": "paper_38396486",
+    "source_pmid": "38396486",
+    "source_doi": "10.3390/diagnostics14040448",
+    "source_title": "An Innovative and Efficient Diagnostic Prediction Flow for Head and Neck Cancer: A Deep Learning Approach for Multi-Modal Survival Analysis Prediction Based on Text and Multi-Center PET/CT Images.",
+    "sentence_text": "Objective: To comprehensively capture intra-tumor heterogeneity in head and neck cancer (HNC) and maximize the use of valid information collected in the clinical field, we propose a novel multi-modal image-text fusion strategy aimed at improving prognosis.",
+    "char_length": 256,
+    "word_count": 36,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_38396486_s01",
+    "source_paper_id": "paper_38396486",
+    "source_pmid": "38396486",
+    "source_doi": "10.3390/diagnostics14040448",
+    "source_title": "An Innovative and Efficient Diagnostic Prediction Flow for Head and Neck Cancer: A Deep Learning Approach for Multi-Modal Survival Analysis Prediction Based on Text and Multi-Center PET/CT Images.",
+    "sentence_text": "Method: We have developed a tailored diagnostic algorithm for HNC, leveraging a deep learning-based model that integrates both image and clinical text information.",
+    "char_length": 163,
+    "word_count": 23,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 80,
+        "end_char": 93,
+        "text": "deep learning",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.54
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_38396486_s02",
+    "source_paper_id": "paper_38396486",
+    "source_pmid": "38396486",
+    "source_doi": "10.3390/diagnostics14040448",
+    "source_title": "An Innovative and Efficient Diagnostic Prediction Flow for Head and Neck Cancer: A Deep Learning Approach for Multi-Modal Survival Analysis Prediction Based on Text and Multi-Center PET/CT Images.",
+    "sentence_text": "For the image fusion part, we used the cross-attention mechanism to fuse the image information between PET and CT, and for the fusion of text and image, we used the Q-former architecture to fuse the text and image information.",
+    "char_length": 226,
+    "word_count": 39,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 39,
+        "end_char": 54,
+        "text": "cross-attention",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.76
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_38396486_s03",
+    "source_paper_id": "paper_38396486",
+    "source_pmid": "38396486",
+    "source_doi": "10.3390/diagnostics14040448",
+    "source_title": "An Innovative and Efficient Diagnostic Prediction Flow for Head and Neck Cancer: A Deep Learning Approach for Multi-Modal Survival Analysis Prediction Based on Text and Multi-Center PET/CT Images.",
+    "sentence_text": "We also improved the traditional prognostic model by introducing time as a variable in the construction of the model, and finally obtained the corresponding prognostic results.",
+    "char_length": 176,
+    "word_count": 26,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_38396486_s04",
+    "source_paper_id": "paper_38396486",
+    "source_pmid": "38396486",
+    "source_doi": "10.3390/diagnostics14040448",
+    "source_title": "An Innovative and Efficient Diagnostic Prediction Flow for Head and Neck Cancer: A Deep Learning Approach for Multi-Modal Survival Analysis Prediction Based on Text and Multi-Center PET/CT Images.",
+    "sentence_text": "Result: We assessed the efficacy of our methodology through the compilation of a multicenter dataset, achieving commendable outcomes in multicenter validations.",
+    "char_length": 160,
+    "word_count": 21,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_38396486_s05",
+    "source_paper_id": "paper_38396486",
+    "source_pmid": "38396486",
+    "source_doi": "10.3390/diagnostics14040448",
+    "source_title": "An Innovative and Efficient Diagnostic Prediction Flow for Head and Neck Cancer: A Deep Learning Approach for Multi-Modal Survival Analysis Prediction Based on Text and Multi-Center PET/CT Images.",
+    "sentence_text": "Notably, our results for metastasis-free survival (MFS), recurrence-free survival (RFS), overall survival (OS), and progression-free survival (PFS) were as follows: 0.796, 0.626, 0.641, and 0.691.",
+    "char_length": 196,
+    "word_count": 25,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_38396486_s06",
+    "source_paper_id": "paper_38396486",
+    "source_pmid": "38396486",
+    "source_doi": "10.3390/diagnostics14040448",
+    "source_title": "An Innovative and Efficient Diagnostic Prediction Flow for Head and Neck Cancer: A Deep Learning Approach for Multi-Modal Survival Analysis Prediction Based on Text and Multi-Center PET/CT Images.",
+    "sentence_text": "Our results demonstrate a notable superiority over the utilization of CT and PET independently, and exceed the result derived without the clinical textual information.",
+    "char_length": 167,
+    "word_count": 24,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_38396486_s07",
+    "source_paper_id": "paper_38396486",
+    "source_pmid": "38396486",
+    "source_doi": "10.3390/diagnostics14040448",
+    "source_title": "An Innovative and Efficient Diagnostic Prediction Flow for Head and Neck Cancer: A Deep Learning Approach for Multi-Modal Survival Analysis Prediction Based on Text and Multi-Center PET/CT Images.",
+    "sentence_text": "Conclusions: Our model not only validates the effectiveness of multi-modal fusion in aiding diagnosis, but also provides insights for optimizing survival analysis.",
+    "char_length": 163,
+    "word_count": 22,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_38396486_s08",
+    "source_paper_id": "paper_38396486",
+    "source_pmid": "38396486",
+    "source_doi": "10.3390/diagnostics14040448",
+    "source_title": "An Innovative and Efficient Diagnostic Prediction Flow for Head and Neck Cancer: A Deep Learning Approach for Multi-Modal Survival Analysis Prediction Based on Text and Multi-Center PET/CT Images.",
+    "sentence_text": "The study underscores the potential of our approach in enhancing prognosis and contributing to the advancement of personalized medicine in HNC.",
+    "char_length": 143,
+    "word_count": 21,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_40449048_s00",
+    "source_paper_id": "paper_40449048",
+    "source_pmid": "40449048",
+    "source_doi": "10.1016/j.compbiomed.2025.110488",
+    "source_title": "Multimodal AI framework for lung cancer diagnosis: Integrating CNN and ANN models for imaging and clinical data analysis.",
+    "sentence_text": "Lung cancer remains a leading cause of cancer-related mortality worldwide, emphasizing the critical need for accurate and early diagnostic solutions.",
+    "char_length": 149,
+    "word_count": 20,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_40449048_s01",
+    "source_paper_id": "paper_40449048",
+    "source_pmid": "40449048",
+    "source_doi": "10.1016/j.compbiomed.2025.110488",
+    "source_title": "Multimodal AI framework for lung cancer diagnosis: Integrating CNN and ANN models for imaging and clinical data analysis.",
+    "sentence_text": "This study introduces a novel multimodal artificial intelligence (AI) framework that integrates Convolutional Neural Networks (CNNs) and Artificial Neural Networks (ANNs) to improve lung cancer classification and severity assessment.",
+    "char_length": 233,
+    "word_count": 29,
+    "entities_count": 2,
+    "spans": [
+      {
+        "start_char": 96,
+        "end_char": 125,
+        "text": "Convolutional Neural Networks",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 127,
+        "end_char": 131,
+        "text": "CNNs",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_40449048_s02",
+    "source_paper_id": "paper_40449048",
+    "source_pmid": "40449048",
+    "source_doi": "10.1016/j.compbiomed.2025.110488",
+    "source_title": "Multimodal AI framework for lung cancer diagnosis: Integrating CNN and ANN models for imaging and clinical data analysis.",
+    "sentence_text": "The CNN model, trained on 1019 preprocessed CT images, classified lung tissue into four histological categories, adenocarcinoma, large cell carcinoma, squamous cell carcinoma, and normal, with a weighted accuracy of 92\u00a0%.",
+    "char_length": 221,
+    "word_count": 32,
+    "entities_count": 2,
+    "spans": [
+      {
+        "start_char": 4,
+        "end_char": 7,
+        "text": "CNN",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 204,
+        "end_char": 212,
+        "text": "accuracy",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_40449048_s03",
+    "source_paper_id": "paper_40449048",
+    "source_pmid": "40449048",
+    "source_doi": "10.1016/j.compbiomed.2025.110488",
+    "source_title": "Multimodal AI framework for lung cancer diagnosis: Integrating CNN and ANN models for imaging and clinical data analysis.",
+    "sentence_text": "Interpretability is enhanced using Gradient-weighted Class Activation Mapping (Grad-CAM), which highlights the salient image regions influencing the model's predictions.",
+    "char_length": 169,
+    "word_count": 19,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_40449048_s04",
+    "source_paper_id": "paper_40449048",
+    "source_pmid": "40449048",
+    "source_doi": "10.1016/j.compbiomed.2025.110488",
+    "source_title": "Multimodal AI framework for lung cancer diagnosis: Integrating CNN and ANN models for imaging and clinical data analysis.",
+    "sentence_text": "In parallel, an ANN trained on clinical data from 999 patients-spanning 24 key features such as demographic, symptomatic, and genetic factors-achieves 99\u00a0% accuracy in predicting cancer severity (low, medium, high).",
+    "char_length": 215,
+    "word_count": 31,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 156,
+        "end_char": 164,
+        "text": "accuracy",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_40449048_s05",
+    "source_paper_id": "paper_40449048",
+    "source_pmid": "40449048",
+    "source_doi": "10.1016/j.compbiomed.2025.110488",
+    "source_title": "Multimodal AI framework for lung cancer diagnosis: Integrating CNN and ANN models for imaging and clinical data analysis.",
+    "sentence_text": "SHapley Additive exPlanations (SHAP) are employed to provide both global and local interpretability of the ANN model, enabling transparent decision-making.",
+    "char_length": 155,
+    "word_count": 20,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_40449048_s06",
+    "source_paper_id": "paper_40449048",
+    "source_pmid": "40449048",
+    "source_doi": "10.1016/j.compbiomed.2025.110488",
+    "source_title": "Multimodal AI framework for lung cancer diagnosis: Integrating CNN and ANN models for imaging and clinical data analysis.",
+    "sentence_text": "Both models were rigorously validated using k-fold cross-validation to ensure robustness and reduce overfitting.",
+    "char_length": 112,
+    "word_count": 14,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 51,
+        "end_char": 67,
+        "text": "cross-validation",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_40449048_s07",
+    "source_paper_id": "paper_40449048",
+    "source_pmid": "40449048",
+    "source_doi": "10.1016/j.compbiomed.2025.110488",
+    "source_title": "Multimodal AI framework for lung cancer diagnosis: Integrating CNN and ANN models for imaging and clinical data analysis.",
+    "sentence_text": "This hybrid approach effectively combines spatial imaging data and structured clinical information, demonstrating strong predictive performance and offering an interpretable and comprehensive AI-based solution for lung cancer diagnosis and management.",
+    "char_length": 251,
+    "word_count": 30,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41131352_s00",
+    "source_paper_id": "paper_41131352",
+    "source_pmid": "41131352",
+    "source_doi": "10.1038/s41746-025-02003-4",
+    "source_title": "HONeYBEE: enabling scalable multimodal AI in oncology through foundation model-driven embeddings.",
+    "sentence_text": "Harmonized ONcologY Biomedical Embedding Encoder (HONeYBEE) is an open-source framework that integrates multimodal biomedical data for oncology applications.",
+    "char_length": 157,
+    "word_count": 18,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41131352_s01",
+    "source_paper_id": "paper_41131352",
+    "source_pmid": "41131352",
+    "source_doi": "10.1038/s41746-025-02003-4",
+    "source_title": "HONeYBEE: enabling scalable multimodal AI in oncology through foundation model-driven embeddings.",
+    "sentence_text": "It processes clinical data (structured and unstructured), whole-slide images, radiology scans, and molecular profiles to generate unified patient-level embeddings using domain-specific foundation models and fusion strategies.",
+    "char_length": 225,
+    "word_count": 26,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41131352_s02",
+    "source_paper_id": "paper_41131352",
+    "source_pmid": "41131352",
+    "source_doi": "10.1038/s41746-025-02003-4",
+    "source_title": "HONeYBEE: enabling scalable multimodal AI in oncology through foundation model-driven embeddings.",
+    "sentence_text": "These embeddings enable survival prediction, cancer-type classification, patient similarity retrieval, and cohort clustering.",
+    "char_length": 125,
+    "word_count": 13,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41131352_s03",
+    "source_paper_id": "paper_41131352",
+    "source_pmid": "41131352",
+    "source_doi": "10.1038/s41746-025-02003-4",
+    "source_title": "HONeYBEE: enabling scalable multimodal AI in oncology through foundation model-driven embeddings.",
+    "sentence_text": "Evaluated on 11,400+ patients across 33 cancer types from The Cancer Genome Atlas (TCGA), clinical embeddings showed the strongest single-modality performance with 98.5% classification accuracy and 96.4% precision@10 in patient retrieval.",
+    "char_length": 238,
+    "word_count": 31,
+    "entities_count": 3,
+    "spans": [
+      {
+        "start_char": 185,
+        "end_char": 193,
+        "text": "accuracy",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 83,
+        "end_char": 87,
+        "text": "TCGA",
+        "entity_type": "DATASET",
+        "bio_tag": "B-DATASET",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 58,
+        "end_char": 81,
+        "text": "The Cancer Genome Atlas",
+        "entity_type": "DATASET",
+        "bio_tag": "B-DATASET",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41131352_s04",
+    "source_paper_id": "paper_41131352",
+    "source_pmid": "41131352",
+    "source_doi": "10.1038/s41746-025-02003-4",
+    "source_title": "HONeYBEE: enabling scalable multimodal AI in oncology through foundation model-driven embeddings.",
+    "sentence_text": "They also achieved the highest survival prediction concordance indices across most cancer types.",
+    "char_length": 96,
+    "word_count": 13,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41131352_s05",
+    "source_paper_id": "paper_41131352",
+    "source_pmid": "41131352",
+    "source_doi": "10.1038/s41746-025-02003-4",
+    "source_title": "HONeYBEE: enabling scalable multimodal AI in oncology through foundation model-driven embeddings.",
+    "sentence_text": "Multimodal fusion provided complementary benefits for specific cancers, improving overall survival prediction beyond clinical features alone.",
+    "char_length": 141,
+    "word_count": 16,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 0,
+        "end_char": 17,
+        "text": "Multimodal fusion",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41131352_s06",
+    "source_paper_id": "paper_41131352",
+    "source_pmid": "41131352",
+    "source_doi": "10.1038/s41746-025-02003-4",
+    "source_title": "HONeYBEE: enabling scalable multimodal AI in oncology through foundation model-driven embeddings.",
+    "sentence_text": "Comparative evaluation of four large language models revealed that general-purpose models like Qwen3 outperformed specialized medical models for clinical text representation, though task-specific fine-tuning improved performance on heterogeneous data such as pathology reports.",
+    "char_length": 277,
+    "word_count": 33,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41942785_s00",
+    "source_paper_id": "paper_41942785",
+    "source_pmid": "41942785",
+    "source_doi": "10.1007/s00109-026-02669-7",
+    "source_title": "Integrative multimodal transcriptomics identifies a cancer-associated fibroblast membrane signature for predicting prognosis and therapeutic response in pancreatic ductal adenocarcinoma.",
+    "sentence_text": "Cancer-associated fibroblasts (CAFs) are central to the pancreatic ductal adenocarcinoma (PDAC) microenvironment, promoting tumor progression and therapeutic resistance.",
+    "char_length": 169,
+    "word_count": 18,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41942785_s01",
+    "source_paper_id": "paper_41942785",
+    "source_pmid": "41942785",
+    "source_doi": "10.1007/s00109-026-02669-7",
+    "source_title": "Integrative multimodal transcriptomics identifies a cancer-associated fibroblast membrane signature for predicting prognosis and therapeutic response in pancreatic ductal adenocarcinoma.",
+    "sentence_text": "However, the expression landscape of CAF membrane proteins in PDAC remains poorly defined.",
+    "char_length": 90,
+    "word_count": 13,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41942785_s02",
+    "source_paper_id": "paper_41942785",
+    "source_pmid": "41942785",
+    "source_doi": "10.1007/s00109-026-02669-7",
+    "source_title": "Integrative multimodal transcriptomics identifies a cancer-associated fibroblast membrane signature for predicting prognosis and therapeutic response in pancreatic ductal adenocarcinoma.",
+    "sentence_text": "We integrated scRNA-seq (n\u2009=\u200933; 87,949 cells), spatial transcriptomics (n\u2009=\u20092; 7,011 spots), and bulk RNA-seq (n\u2009=\u20097; 642 samples) to systematically identify PDAC-specific CAF membrane genes.",
+    "char_length": 192,
+    "word_count": 30,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41942785_s03",
+    "source_paper_id": "paper_41942785",
+    "source_pmid": "41942785",
+    "source_doi": "10.1007/s00109-026-02669-7",
+    "source_title": "Integrative multimodal transcriptomics identifies a cancer-associated fibroblast membrane signature for predicting prognosis and therapeutic response in pancreatic ductal adenocarcinoma.",
+    "sentence_text": "A LASSO-based Cox model was developed to construct a prognostic signature, PaFMS, and evaluated through multi-cohort validation.",
+    "char_length": 128,
+    "word_count": 17,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 14,
+        "end_char": 23,
+        "text": "Cox model",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41942785_s04",
+    "source_paper_id": "paper_41942785",
+    "source_pmid": "41942785",
+    "source_doi": "10.1007/s00109-026-02669-7",
+    "source_title": "Integrative multimodal transcriptomics identifies a cancer-associated fibroblast membrane signature for predicting prognosis and therapeutic response in pancreatic ductal adenocarcinoma.",
+    "sentence_text": "Functional enrichment, immune infiltration, drug sensitivity, and immunotherapy response analyses were further conducted.",
+    "char_length": 121,
+    "word_count": 13,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41942785_s05",
+    "source_paper_id": "paper_41942785",
+    "source_pmid": "41942785",
+    "source_doi": "10.1007/s00109-026-02669-7",
+    "source_title": "Integrative multimodal transcriptomics identifies a cancer-associated fibroblast membrane signature for predicting prognosis and therapeutic response in pancreatic ductal adenocarcinoma.",
+    "sentence_text": "Validation was performed using multiple database-driven analyses.",
+    "char_length": 65,
+    "word_count": 7,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41942785_s06",
+    "source_paper_id": "paper_41942785",
+    "source_pmid": "41942785",
+    "source_doi": "10.1007/s00109-026-02669-7",
+    "source_title": "Integrative multimodal transcriptomics identifies a cancer-associated fibroblast membrane signature for predicting prognosis and therapeutic response in pancreatic ductal adenocarcinoma.",
+    "sentence_text": "We identified a PDAC-enriched myoCAF-c1 cluster closely associated with epithelial-mesenchymal transition (EMT) and angiogenesis.",
+    "char_length": 129,
+    "word_count": 14,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41942785_s07",
+    "source_paper_id": "paper_41942785",
+    "source_pmid": "41942785",
+    "source_doi": "10.1007/s00109-026-02669-7",
+    "source_title": "Integrative multimodal transcriptomics identifies a cancer-associated fibroblast membrane signature for predicting prognosis and therapeutic response in pancreatic ductal adenocarcinoma.",
+    "sentence_text": "From this cluster, 33 candidate CAF membrane genes were defined, whose protein-protein interactions were predominantly linked to extracellular matrix organization and collagen remodeling, and spatially colocalized with myoCAF-c1 and EMT regions.",
+    "char_length": 245,
+    "word_count": 31,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41942785_s08",
+    "source_paper_id": "paper_41942785",
+    "source_pmid": "41942785",
+    "source_doi": "10.1007/s00109-026-02669-7",
+    "source_title": "Integrative multimodal transcriptomics identifies a cancer-associated fibroblast membrane signature for predicting prognosis and therapeutic response in pancreatic ductal adenocarcinoma.",
+    "sentence_text": "An 11-gene prognostic signature, PaFMS that robustly stratified patients across six independent cohorts, achieving high predictive accuracy for overall survival.",
+    "char_length": 161,
+    "word_count": 20,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 131,
+        "end_char": 139,
+        "text": "accuracy",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41942785_s09",
+    "source_paper_id": "paper_41942785",
+    "source_pmid": "41942785",
+    "source_doi": "10.1007/s00109-026-02669-7",
+    "source_title": "Integrative multimodal transcriptomics identifies a cancer-associated fibroblast membrane signature for predicting prognosis and therapeutic response in pancreatic ductal adenocarcinoma.",
+    "sentence_text": "High-risk patients exhibited proliferative signaling activation, immune suppression, and reduced T/B-cell infiltration.",
+    "char_length": 119,
+    "word_count": 12,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41942785_s10",
+    "source_paper_id": "paper_41942785",
+    "source_pmid": "41942785",
+    "source_doi": "10.1007/s00109-026-02669-7",
+    "source_title": "Integrative multimodal transcriptomics identifies a cancer-associated fibroblast membrane signature for predicting prognosis and therapeutic response in pancreatic ductal adenocarcinoma.",
+    "sentence_text": "PaFMS was associated with responses to 33 anticancer agents and predicted enhanced benefit from anti-PD-L1 immunotherapy in the low-risk group.",
+    "char_length": 143,
+    "word_count": 20,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41942785_s11",
+    "source_paper_id": "paper_41942785",
+    "source_pmid": "41942785",
+    "source_doi": "10.1007/s00109-026-02669-7",
+    "source_title": "Integrative multimodal transcriptomics identifies a cancer-associated fibroblast membrane signature for predicting prognosis and therapeutic response in pancreatic ductal adenocarcinoma.",
+    "sentence_text": "Multi-cohort validation confirmed the expression specificity of PaFMS genes, including PLAU, TMEM158, and TRIM59.",
+    "char_length": 113,
+    "word_count": 14,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41942785_s12",
+    "source_paper_id": "paper_41942785",
+    "source_pmid": "41942785",
+    "source_doi": "10.1007/s00109-026-02669-7",
+    "source_title": "Integrative multimodal transcriptomics identifies a cancer-associated fibroblast membrane signature for predicting prognosis and therapeutic response in pancreatic ductal adenocarcinoma.",
+    "sentence_text": "Together, these findings reveal that myoCAF-c1 promotes angiogenesis and tumor progression, and establish PaFMS as a robust CAF membrane-based prognostic model in PDAC with potential utility for precision prognosis and therapeutic decision-making.",
+    "char_length": 247,
+    "word_count": 32,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41942785_s13",
+    "source_paper_id": "paper_41942785",
+    "source_pmid": "41942785",
+    "source_doi": "10.1007/s00109-026-02669-7",
+    "source_title": "Integrative multimodal transcriptomics identifies a cancer-associated fibroblast membrane signature for predicting prognosis and therapeutic response in pancreatic ductal adenocarcinoma.",
+    "sentence_text": "KEY MESSAGES: Integrated single-cell, spatial, and bulk RNA-seq analyses identified PDAC-specific CAF membrane genes.",
+    "char_length": 117,
+    "word_count": 14,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41942785_s14",
+    "source_paper_id": "paper_41942785",
+    "source_pmid": "41942785",
+    "source_doi": "10.1007/s00109-026-02669-7",
+    "source_title": "Integrative multimodal transcriptomics identifies a cancer-associated fibroblast membrane signature for predicting prognosis and therapeutic response in pancreatic ductal adenocarcinoma.",
+    "sentence_text": "Discovered a PDAC-enriched myoCAF-c1 subtype linked to EMT and angiogenesis.",
+    "char_length": 76,
+    "word_count": 10,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41942785_s15",
+    "source_paper_id": "paper_41942785",
+    "source_pmid": "41942785",
+    "source_doi": "10.1007/s00109-026-02669-7",
+    "source_title": "Integrative multimodal transcriptomics identifies a cancer-associated fibroblast membrane signature for predicting prognosis and therapeutic response in pancreatic ductal adenocarcinoma.",
+    "sentence_text": "Developed an 11-gene CAF membrane-based prognostic model (PaFMS) validated across six cohorts.",
+    "char_length": 94,
+    "word_count": 12,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41942785_s16",
+    "source_paper_id": "paper_41942785",
+    "source_pmid": "41942785",
+    "source_doi": "10.1007/s00109-026-02669-7",
+    "source_title": "Integrative multimodal transcriptomics identifies a cancer-associated fibroblast membrane signature for predicting prognosis and therapeutic response in pancreatic ductal adenocarcinoma.",
+    "sentence_text": "PaFMS predicts patient survival, drug sensitivity, and immunotherapy response in PDAC.",
+    "char_length": 86,
+    "word_count": 11,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42487970_s00",
+    "source_paper_id": "paper_42487970",
+    "source_pmid": "42487970",
+    "source_doi": "10.3389/fmed.2026.1842344",
+    "source_title": "A prediction model for platinum-resistant recurrence of ovarian cancer was established using multimodal artificial intelligence machine learning methods.",
+    "sentence_text": "To develop and validate a multimodal artificial intelligence (AI)-based prediction model for platinum-resistant recurrence in ovarian cancer by integrating clinical data, medical imaging, and medical knowledge resources, with the goal of improving early risk stratification and supporting individualized treatment decisions.",
+    "char_length": 324,
+    "word_count": 40,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42487970_s01",
+    "source_paper_id": "paper_42487970",
+    "source_pmid": "42487970",
+    "source_doi": "10.3389/fmed.2026.1842344",
+    "source_title": "A prediction model for platinum-resistant recurrence of ovarian cancer was established using multimodal artificial intelligence machine learning methods.",
+    "sentence_text": "This exploratory proof-of-concept study aims to assess the feasibility of multimodal fusion for this task; no external validation has been performed.",
+    "char_length": 149,
+    "word_count": 21,
+    "entities_count": 2,
+    "spans": [
+      {
+        "start_char": 74,
+        "end_char": 91,
+        "text": "multimodal fusion",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 110,
+        "end_char": 129,
+        "text": "external validation",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42487970_s02",
+    "source_paper_id": "paper_42487970",
+    "source_pmid": "42487970",
+    "source_doi": "10.3389/fmed.2026.1842344",
+    "source_title": "A prediction model for platinum-resistant recurrence of ovarian cancer was established using multimodal artificial intelligence machine learning methods.",
+    "sentence_text": "This study collected multimodal data from ovarian cancer patients, including clinical records from 214 patients treated at Renji Hospital affiliated to Shanghai Jiao Tong University School of Medicine between June 2020 and January 2025, imaging data from 218 patients comprising 5,053 CT and MRI images, and 1,000 high-quality medical literature sources published between 2023 and 2025.",
+    "char_length": 386,
+    "word_count": 56,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42487970_s03",
+    "source_paper_id": "paper_42487970",
+    "source_pmid": "42487970",
+    "source_doi": "10.3389/fmed.2026.1842344",
+    "source_title": "A prediction model for platinum-resistant recurrence of ovarian cancer was established using multimodal artificial intelligence machine learning methods.",
+    "sentence_text": "Patients were classified into a platinum-resistant recurrence group (PROC,  The proposed multimodal model demonstrated excellent predictive performance for platinum-resistant recurrence, achieving an accuracy of 0.98 (95% CI: 0.96-1.00), a recall of 0.95 (95% CI: 0.92-0.98), an F1 score of 0.98 (95% CI: 0.97-0.99), and an AUC of 0.96 (95% CI: 0.95-0.97).",
+    "char_length": 356,
+    "word_count": 51,
+    "entities_count": 3,
+    "spans": [
+      {
+        "start_char": 200,
+        "end_char": 208,
+        "text": "accuracy",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 279,
+        "end_char": 287,
+        "text": "F1 score",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 324,
+        "end_char": 327,
+        "text": "AUC",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42487970_s04",
+    "source_paper_id": "paper_42487970",
+    "source_pmid": "42487970",
+    "source_doi": "10.3389/fmed.2026.1842344",
+    "source_title": "A prediction model for platinum-resistant recurrence of ovarian cancer was established using multimodal artificial intelligence machine learning methods.",
+    "sentence_text": "The model showed good calibration with a Brier score of 0.042 (95% CI: 0.031-0.058) and a Hosmer-Lemeshow test  This exploratory study demonstrates that multimodal AI integrating clinical, imaging, and knowledge graph data can achieve strong internal predictive performance for platinum-resistant recurrence of ovarian cancer in a single-center retrospective cohort.",
+    "char_length": 366,
+    "word_count": 49,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 41,
+        "end_char": 52,
+        "text": "Brier score",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42487970_s05",
+    "source_paper_id": "paper_42487970",
+    "source_pmid": "42487970",
+    "source_doi": "10.3389/fmed.2026.1842344",
+    "source_title": "A prediction model for platinum-resistant recurrence of ovarian cancer was established using multimodal artificial intelligence machine learning methods.",
+    "sentence_text": "However, the model is preliminary, has not been externally validated, and is not ready for clinical use.",
+    "char_length": 104,
+    "word_count": 17,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42487970_s06",
+    "source_paper_id": "paper_42487970",
+    "source_pmid": "42487970",
+    "source_doi": "10.3389/fmed.2026.1842344",
+    "source_title": "A prediction model for platinum-resistant recurrence of ovarian cancer was established using multimodal artificial intelligence machine learning methods.",
+    "sentence_text": "Independent multicenter validation is required before any clinical translation can be considered.",
+    "char_length": 97,
+    "word_count": 12,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42487970_s07",
+    "source_paper_id": "paper_42487970",
+    "source_pmid": "42487970",
+    "source_doi": "10.3389/fmed.2026.1842344",
+    "source_title": "A prediction model for platinum-resistant recurrence of ovarian cancer was established using multimodal artificial intelligence machine learning methods.",
+    "sentence_text": "This article should be viewed as a hypothesis-generating tool and a methodological proof-of-concept only.",
+    "char_length": 105,
+    "word_count": 14,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42510039_s00",
+    "source_paper_id": "paper_42510039",
+    "source_pmid": "42510039",
+    "source_doi": "10.3390/diagnostics16142175",
+    "source_title": "Recent Advances in Multimodal Assessment Scoring Systems for Prostate Cancer: An Integrated Pathological and Imaging Perspective.",
+    "sentence_text": "In the clinical management of prostate cancer, continuously refined scoring systems form the cornerstone of precise risk stratification.",
+    "char_length": 136,
+    "word_count": 18,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42510039_s01",
+    "source_paper_id": "paper_42510039",
+    "source_pmid": "42510039",
+    "source_doi": "10.3390/diagnostics16142175",
+    "source_title": "Recent Advances in Multimodal Assessment Scoring Systems for Prostate Cancer: An Integrated Pathological and Imaging Perspective.",
+    "sentence_text": "Pathological assessment systems, represented by the Gleason score and the International Society of Urological Pathology (ISUP) grade groups, have long been the cornerstone of prostate cancer risk stratification; however, they are subject to inherent limitations such as sampling bias and spatial heterogeneity.",
+    "char_length": 310,
+    "word_count": 42,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42510039_s02",
+    "source_paper_id": "paper_42510039",
+    "source_pmid": "42510039",
+    "source_doi": "10.3390/diagnostics16142175",
+    "source_title": "Recent Advances in Multimodal Assessment Scoring Systems for Prostate Cancer: An Integrated Pathological and Imaging Perspective.",
+    "sentence_text": "With advances in imaging technology, the PI-RADS scoring system based on multiparametric magnetic resonance imaging (mpMRI) has been widely adopted for the detection and localization of prostate cancer; however, inter-observer variability remains a significant issue in clinical practice.",
+    "char_length": 288,
+    "word_count": 38,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42510039_s03",
+    "source_paper_id": "paper_42510039",
+    "source_pmid": "42510039",
+    "source_doi": "10.3390/diagnostics16142175",
+    "source_title": "Recent Advances in Multimodal Assessment Scoring Systems for Prostate Cancer: An Integrated Pathological and Imaging Perspective.",
+    "sentence_text": "Concurrently, emerging functional imaging scoring systems based on PSMA-PET, such as PSMA-RADS and miTNM staging, have provided new tools for the precise staging of prostate cancer and restaging following biochemical recurrence.",
+    "char_length": 228,
+    "word_count": 31,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42510039_s04",
+    "source_paper_id": "paper_42510039",
+    "source_pmid": "42510039",
+    "source_doi": "10.3390/diagnostics16142175",
+    "source_title": "Recent Advances in Multimodal Assessment Scoring Systems for Prostate Cancer: An Integrated Pathological and Imaging Perspective.",
+    "sentence_text": "Currently, an increasing number of studies are attempting to integrate pathological and multimodal imaging information to construct comprehensive predictive models, thereby addressing the shortcomings of single-modality assessment methods, achieving more personalized and precise risk stratification, and ultimately optimizing treatment decisions and improving patient prognosis.",
+    "char_length": 379,
+    "word_count": 44,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42467849_s00",
+    "source_paper_id": "paper_42467849",
+    "source_pmid": "42467849",
+    "source_doi": "10.1158/2767-9764.CRC-26-0362",
+    "source_title": "Development and Validation of a Multimodal-Multitask Deep Learning Approach for Estimating Late Distant Recurrence Risk in HR-Positive Early Breast Cancer.",
+    "sentence_text": "Late distant recurrence (DR) remains a persistent risk in hormone receptor-positive (HR+) early breast cancer after completion of 5 years of endocrine therapy (ET).",
+    "char_length": 164,
+    "word_count": 24,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42467849_s01",
+    "source_paper_id": "paper_42467849",
+    "source_pmid": "42467849",
+    "source_doi": "10.1158/2767-9764.CRC-26-0362",
+    "source_title": "Development and Validation of a Multimodal-Multitask Deep Learning Approach for Estimating Late Distant Recurrence Risk in HR-Positive Early Breast Cancer.",
+    "sentence_text": "We developed and validated a multimodal artificial intelligence (AI) model to improve long-term risk stratification and to explore heterogeneity in benefit from extended letrozole therapy (ELT).",
+    "char_length": 194,
+    "word_count": 26,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42467849_s02",
+    "source_paper_id": "paper_42467849",
+    "source_pmid": "42467849",
+    "source_doi": "10.1158/2767-9764.CRC-26-0362",
+    "source_title": "Development and Validation of a Multimodal-Multitask Deep Learning Approach for Estimating Late Distant Recurrence Risk in HR-Positive Early Breast Cancer.",
+    "sentence_text": "The deep learning model integrating digitized hematoxylin and eosin whole-slide images with clinicopathologic variables was developed using 2,271 patients from the National Surgical Adjuvant Breast and Bowel Project (NSABP) B-42 trial with five-fold cross-validation and externally validated in 4,300 patients from the TAILORx trial who were disease-free at 5 years from the initial diagnosis.",
+    "char_length": 393,
+    "word_count": 54,
+    "entities_count": 2,
+    "spans": [
+      {
+        "start_char": 250,
+        "end_char": 266,
+        "text": "cross-validation",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 4,
+        "end_char": 17,
+        "text": "deep learning",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.54
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42467849_s03",
+    "source_paper_id": "paper_42467849",
+    "source_pmid": "42467849",
+    "source_doi": "10.1158/2767-9764.CRC-26-0362",
+    "source_title": "Development and Validation of a Multimodal-Multitask Deep Learning Approach for Estimating Late Distant Recurrence Risk in HR-Positive Early Breast Cancer.",
+    "sentence_text": "Prognostic performance was evaluated using hazard ratios (HR) and absolute risk differences.",
+    "char_length": 92,
+    "word_count": 12,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42467849_s04",
+    "source_paper_id": "paper_42467849",
+    "source_pmid": "42467849",
+    "source_doi": "10.1158/2767-9764.CRC-26-0362",
+    "source_title": "Development and Validation of a Multimodal-Multitask Deep Learning Approach for Estimating Late Distant Recurrence Risk in HR-Positive Early Breast Cancer.",
+    "sentence_text": "Exploratory analyses assessed ELT benefit across model-defined risk groups.",
+    "char_length": 75,
+    "word_count": 9,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42467849_s05",
+    "source_paper_id": "paper_42467849",
+    "source_pmid": "42467849",
+    "source_doi": "10.1158/2767-9764.CRC-26-0362",
+    "source_title": "Development and Validation of a Multimodal-Multitask Deep Learning Approach for Estimating Late Distant Recurrence Risk in HR-Positive Early Breast Cancer.",
+    "sentence_text": "In NSABP B-42, the model stratified patients into groups with markedly different outcomes, with a 10-year absolute DR risk difference of 7.95% between high- and low-risk groups [HR, 5.71; 95% confidence interval (CI), 3.5-9.317; P < 0.001].",
+    "char_length": 240,
+    "word_count": 37,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42467849_s06",
+    "source_paper_id": "paper_42467849",
+    "source_pmid": "42467849",
+    "source_doi": "10.1158/2767-9764.CRC-26-0362",
+    "source_title": "Development and Validation of a Multimodal-Multitask Deep Learning Approach for Estimating Late Distant Recurrence Risk in HR-Positive Early Breast Cancer.",
+    "sentence_text": "High-risk patients derived greater absolute benefit from ELT (4.09%) than low-risk patients (0.49%).",
+    "char_length": 100,
+    "word_count": 13,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42467849_s07",
+    "source_paper_id": "paper_42467849",
+    "source_pmid": "42467849",
+    "source_doi": "10.1158/2767-9764.CRC-26-0362",
+    "source_title": "Development and Validation of a Multimodal-Multitask Deep Learning Approach for Estimating Late Distant Recurrence Risk in HR-Positive Early Breast Cancer.",
+    "sentence_text": "External validation in the independent TAILORx cohort confirmed prognostic performance, with MI Clarity multimodal-multitask identifying patients with significantly different late DR outcomes (HR, 1.893; 95% CI, 1.413-2.534; P < 0.001).",
+    "char_length": 236,
+    "word_count": 30,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 0,
+        "end_char": 19,
+        "text": "External validation",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42467849_s08",
+    "source_paper_id": "paper_42467849",
+    "source_pmid": "42467849",
+    "source_doi": "10.1158/2767-9764.CRC-26-0362",
+    "source_title": "Development and Validation of a Multimodal-Multitask Deep Learning Approach for Estimating Late Distant Recurrence Risk in HR-Positive Early Breast Cancer.",
+    "sentence_text": "This multimodal AI approach using routine pathology and clinical data enables robust and generalizable stratification of late DR risk in HR+ breast cancer.",
+    "char_length": 155,
+    "word_count": 23,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42467849_s09",
+    "source_paper_id": "paper_42467849",
+    "source_pmid": "42467849",
+    "source_doi": "10.1158/2767-9764.CRC-26-0362",
+    "source_title": "Development and Validation of a Multimodal-Multitask Deep Learning Approach for Estimating Late Distant Recurrence Risk in HR-Positive Early Breast Cancer.",
+    "sentence_text": "This scalable strategy may complement existing genomic assays and support more individualized decisions about extended ET.",
+    "char_length": 122,
+    "word_count": 16,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42467849_s10",
+    "source_paper_id": "paper_42467849",
+    "source_pmid": "42467849",
+    "source_doi": "10.1158/2767-9764.CRC-26-0362",
+    "source_title": "Development and Validation of a Multimodal-Multitask Deep Learning Approach for Estimating Late Distant Recurrence Risk in HR-Positive Early Breast Cancer.",
+    "sentence_text": "Late DR is a major cause of death in HR+ breast cancer, and deciding who needs longer hormone therapy is challenging.",
+    "char_length": 117,
+    "word_count": 21,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42467849_s11",
+    "source_paper_id": "paper_42467849",
+    "source_pmid": "42467849",
+    "source_doi": "10.1158/2767-9764.CRC-26-0362",
+    "source_title": "Development and Validation of a Multimodal-Multitask Deep Learning Approach for Estimating Late Distant Recurrence Risk in HR-Positive Early Breast Cancer.",
+    "sentence_text": "Current genomic tests are useful but have limitations.",
+    "char_length": 54,
+    "word_count": 8,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42467849_s12",
+    "source_paper_id": "paper_42467849",
+    "source_pmid": "42467849",
+    "source_doi": "10.1158/2767-9764.CRC-26-0362",
+    "source_title": "Development and Validation of a Multimodal-Multitask Deep Learning Approach for Estimating Late Distant Recurrence Risk in HR-Positive Early Breast Cancer.",
+    "sentence_text": "This study shows that an AI model using pathology and clinical data identifies patients at high or low risk of late recurrence.",
+    "char_length": 127,
+    "word_count": 22,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42467849_s13",
+    "source_paper_id": "paper_42467849",
+    "source_pmid": "42467849",
+    "source_doi": "10.1158/2767-9764.CRC-26-0362",
+    "source_title": "Development and Validation of a Multimodal-Multitask Deep Learning Approach for Estimating Late Distant Recurrence Risk in HR-Positive Early Breast Cancer.",
+    "sentence_text": "High-risk patients may benefit more from extended hormone therapy, offering an accessible way to guide treatment decisions.",
+    "char_length": 123,
+    "word_count": 17,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42523677_s00",
+    "source_paper_id": "paper_42523677",
+    "source_pmid": "42523677",
+    "source_doi": "10.3389/fendo.2026.1800918",
+    "source_title": "The role of artificial intelligence in thyroid cytology of indeterminate nodules: from digital cytology to multimodal precision triage.",
+    "sentence_text": "Indeterminate thyroid cytology is among the most challenging bottlenecks in thyroid nodule management and continues to be a significant source of risk stratification ambiguity and potentially preventable diagnostic surgeries.",
+    "char_length": 225,
+    "word_count": 29,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42523677_s01",
+    "source_paper_id": "paper_42523677",
+    "source_pmid": "42523677",
+    "source_doi": "10.3389/fendo.2026.1800918",
+    "source_title": "The role of artificial intelligence in thyroid cytology of indeterminate nodules: from digital cytology to multimodal precision triage.",
+    "sentence_text": "While molecular analysis has helped refine preoperative risk stratification, especially among Bethesda III (AUS) and Bethesda IV (FN/SFN) thyroid nodules, issues remain regarding positive predictive value, availability, and subsequent malignancy risk, even among those having the \"negative\" molecular risk assessment.",
+    "char_length": 317,
+    "word_count": 40,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42523677_s02",
+    "source_paper_id": "paper_42523677",
+    "source_pmid": "42523677",
+    "source_doi": "10.3389/fendo.2026.1800918",
+    "source_title": "The role of artificial intelligence in thyroid cytology of indeterminate nodules: from digital cytology to multimodal precision triage.",
+    "sentence_text": "The field of artificial intelligence (AI) is presently experiencing an accelerated trajectory of expansion into thyroid diagnostic fields, extending initially from thyroid ultrasound into the realms of whole-slide cytology analysis and computational pathology.",
+    "char_length": 260,
+    "word_count": 33,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42523677_s03",
+    "source_paper_id": "paper_42523677",
+    "source_pmid": "42523677",
+    "source_doi": "10.3389/fendo.2026.1800918",
+    "source_title": "The role of artificial intelligence in thyroid cytology of indeterminate nodules: from digital cytology to multimodal precision triage.",
+    "sentence_text": "The purpose of this narrative review is to highlight the changing landscape of AI applications in the context of the workup of indeterminate thyroid nodules, focusing on thyroid cytology and decision support for indeterminate thyroid nodules.",
+    "char_length": 242,
+    "word_count": 36,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42523677_s04",
+    "source_paper_id": "paper_42523677",
+    "source_pmid": "42523677",
+    "source_doi": "10.3389/fendo.2026.1800918",
+    "source_title": "The role of artificial intelligence in thyroid cytology of indeterminate nodules: from digital cytology to multimodal precision triage.",
+    "sentence_text": "It is becoming clear from the evidence that AI has the potential to decrease subjectivity and variability in cytology/Whole-Slide Imaging (WSI) analysis, optimize the selection of candidates for biopsy in the upstream process, and optimize post-FNA evaluation by fusion of molecular analysis in the downstream process.",
+    "char_length": 318,
+    "word_count": 46,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42523677_s05",
+    "source_paper_id": "paper_42523677",
+    "source_pmid": "42523677",
+    "source_doi": "10.3389/fendo.2026.1800918",
+    "source_title": "The role of artificial intelligence in thyroid cytology of indeterminate nodules: from digital cytology to multimodal precision triage.",
+    "sentence_text": "Future application will depend upon validation, standardization, and prospectively conducted studies in patients.",
+    "char_length": 113,
+    "word_count": 13,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 48,
+        "end_char": 63,
+        "text": "standardization",
+        "entity_type": "PREPROCESSING",
+        "bio_tag": "B-PREPROCESSING",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42141332_s00",
+    "source_paper_id": "paper_42141332",
+    "source_pmid": "42141332",
+    "source_doi": "10.1186/s13244-026-02311-7",
+    "source_title": "MRI- and report-based multimodal model with SHAP-based explanation for preoperative prediction of deep stromal invasion in early-stage cervical cancer.",
+    "sentence_text": "Depth of stromal invasion (DSI) is a key prognostic factor significantly influencing treatment decisions in early-stage cervical cancer (ESCC).",
+    "char_length": 143,
+    "word_count": 19,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42141332_s01",
+    "source_paper_id": "paper_42141332",
+    "source_pmid": "42141332",
+    "source_doi": "10.1186/s13244-026-02311-7",
+    "source_title": "MRI- and report-based multimodal model with SHAP-based explanation for preoperative prediction of deep stromal invasion in early-stage cervical cancer.",
+    "sentence_text": "This study aims to develop an explainable multimodal data fusion model integrating MRI, radiology reports, and clinical variables for the preoperative assessment of DSI risk.",
+    "char_length": 174,
+    "word_count": 25,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 42,
+        "end_char": 64,
+        "text": "multimodal data fusion",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42141332_s02",
+    "source_paper_id": "paper_42141332",
+    "source_pmid": "42141332",
+    "source_doi": "10.1186/s13244-026-02311-7",
+    "source_title": "MRI- and report-based multimodal model with SHAP-based explanation for preoperative prediction of deep stromal invasion in early-stage cervical cancer.",
+    "sentence_text": "Radiomic features were extracted from preoperative sagittal T2-weighted imaging (T2WI).",
+    "char_length": 87,
+    "word_count": 10,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 0,
+        "end_char": 17,
+        "text": "Radiomic features",
+        "entity_type": "FEATURE_REPR",
+        "bio_tag": "B-FEATURE_REPR",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42141332_s03",
+    "source_paper_id": "paper_42141332",
+    "source_pmid": "42141332",
+    "source_doi": "10.1186/s13244-026-02311-7",
+    "source_title": "MRI- and report-based multimodal model with SHAP-based explanation for preoperative prediction of deep stromal invasion in early-stage cervical cancer.",
+    "sentence_text": "Bidirectional Encoder Representations from Transformers (BERT) features were derived from the corresponding radiology reports using natural language processing (NLP).",
+    "char_length": 166,
+    "word_count": 19,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 43,
+        "end_char": 55,
+        "text": "Transformers",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.54
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42141332_s04",
+    "source_paper_id": "paper_42141332",
+    "source_pmid": "42141332",
+    "source_doi": "10.1186/s13244-026-02311-7",
+    "source_title": "MRI- and report-based multimodal model with SHAP-based explanation for preoperative prediction of deep stromal invasion in early-stage cervical cancer.",
+    "sentence_text": "Key BERT and radiomic features were selected using the least absolute shrinkage and selection operator (LASSO).",
+    "char_length": 111,
+    "word_count": 16,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 13,
+        "end_char": 30,
+        "text": "radiomic features",
+        "entity_type": "FEATURE_REPR",
+        "bio_tag": "B-FEATURE_REPR",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42141332_s05",
+    "source_paper_id": "paper_42141332",
+    "source_pmid": "42141332",
+    "source_doi": "10.1186/s13244-026-02311-7",
+    "source_title": "MRI- and report-based multimodal model with SHAP-based explanation for preoperative prediction of deep stromal invasion in early-stage cervical cancer.",
+    "sentence_text": "Independent clinical risk factors were identified through univariate analysis, followed by multivariate logistic regression.",
+    "char_length": 124,
+    "word_count": 14,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 104,
+        "end_char": 123,
+        "text": "logistic regression",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42141332_s06",
+    "source_paper_id": "paper_42141332",
+    "source_pmid": "42141332",
+    "source_doi": "10.1186/s13244-026-02311-7",
+    "source_title": "MRI- and report-based multimodal model with SHAP-based explanation for preoperative prediction of deep stromal invasion in early-stage cervical cancer.",
+    "sentence_text": "Five machine learning algorithms were employed to construct the clinical (C), text (T), radiomic (R), and multimodal fusion models (T\u2009+\u2009R, T\u2009+\u2009R\u2009+\u2009C).",
+    "char_length": 150,
+    "word_count": 27,
+    "entities_count": 2,
+    "spans": [
+      {
+        "start_char": 106,
+        "end_char": 123,
+        "text": "multimodal fusion",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 88,
+        "end_char": 96,
+        "text": "radiomic",
+        "entity_type": "FEATURE_REPR",
+        "bio_tag": "B-FEATURE_REPR",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42141332_s07",
+    "source_paper_id": "paper_42141332",
+    "source_pmid": "42141332",
+    "source_doi": "10.1186/s13244-026-02311-7",
+    "source_title": "MRI- and report-based multimodal model with SHAP-based explanation for preoperative prediction of deep stromal invasion in early-stage cervical cancer.",
+    "sentence_text": "The Shapley Additive exPlanation (SHAP) method interpreted the optimal fusion model.",
+    "char_length": 84,
+    "word_count": 11,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 71,
+        "end_char": 83,
+        "text": "fusion model",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42141332_s08",
+    "source_paper_id": "paper_42141332",
+    "source_pmid": "42141332",
+    "source_doi": "10.1186/s13244-026-02311-7",
+    "source_title": "MRI- and report-based multimodal model with SHAP-based explanation for preoperative prediction of deep stromal invasion in early-stage cervical cancer.",
+    "sentence_text": "Overall, 498 radiomic features (from T2WI) and 384 BERT-derived features (from reports) were extracted per patient.",
+    "char_length": 115,
+    "word_count": 16,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 13,
+        "end_char": 30,
+        "text": "radiomic features",
+        "entity_type": "FEATURE_REPR",
+        "bio_tag": "B-FEATURE_REPR",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42141332_s09",
+    "source_paper_id": "paper_42141332",
+    "source_pmid": "42141332",
+    "source_doi": "10.1186/s13244-026-02311-7",
+    "source_title": "MRI- and report-based multimodal model with SHAP-based explanation for preoperative prediction of deep stromal invasion in early-stage cervical cancer.",
+    "sentence_text": "LASSO selected eleven BERT features and nine radiomic features; multivariate analysis identified two independent clinical risk factors.",
+    "char_length": 135,
+    "word_count": 17,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 45,
+        "end_char": 62,
+        "text": "radiomic features",
+        "entity_type": "FEATURE_REPR",
+        "bio_tag": "B-FEATURE_REPR",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42141332_s10",
+    "source_paper_id": "paper_42141332",
+    "source_pmid": "42141332",
+    "source_doi": "10.1186/s13244-026-02311-7",
+    "source_title": "MRI- and report-based multimodal model with SHAP-based explanation for preoperative prediction of deep stromal invasion in early-stage cervical cancer.",
+    "sentence_text": "The text-radiomic-clinical fusion model (T\u2009+\u2009R\u2009+\u2009C) outperformed all other models, achieving AUCs of 0.912, 0.874, and 0.890 in the training, internal validation, and external validation cohorts, respectively.",
+    "char_length": 209,
+    "word_count": 30,
+    "entities_count": 4,
+    "spans": [
+      {
+        "start_char": 27,
+        "end_char": 39,
+        "text": "fusion model",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 142,
+        "end_char": 161,
+        "text": "internal validation",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 167,
+        "end_char": 186,
+        "text": "external validation",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 9,
+        "end_char": 17,
+        "text": "radiomic",
+        "entity_type": "FEATURE_REPR",
+        "bio_tag": "B-FEATURE_REPR",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42141332_s11",
+    "source_paper_id": "paper_42141332",
+    "source_pmid": "42141332",
+    "source_doi": "10.1186/s13244-026-02311-7",
+    "source_title": "MRI- and report-based multimodal model with SHAP-based explanation for preoperative prediction of deep stromal invasion in early-stage cervical cancer.",
+    "sentence_text": "SHAP analysis revealed that eight BERT features, five radiomic features, and two clinical features ranked among the top 15 most influential predictors.",
+    "char_length": 151,
+    "word_count": 22,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 54,
+        "end_char": 71,
+        "text": "radiomic features",
+        "entity_type": "FEATURE_REPR",
+        "bio_tag": "B-FEATURE_REPR",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42141332_s12",
+    "source_paper_id": "paper_42141332",
+    "source_pmid": "42141332",
+    "source_doi": "10.1186/s13244-026-02311-7",
+    "source_title": "MRI- and report-based multimodal model with SHAP-based explanation for preoperative prediction of deep stromal invasion in early-stage cervical cancer.",
+    "sentence_text": "The explainable multimodal model improves preoperative DSI risk evaluation in ESCC.",
+    "char_length": 83,
+    "word_count": 11,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42141332_s13",
+    "source_paper_id": "paper_42141332",
+    "source_pmid": "42141332",
+    "source_doi": "10.1186/s13244-026-02311-7",
+    "source_title": "MRI- and report-based multimodal model with SHAP-based explanation for preoperative prediction of deep stromal invasion in early-stage cervical cancer.",
+    "sentence_text": "However, given the small external cohort (n\u2009=\u200920), these results are preliminary and require further independent multi-center validation before clinical application.",
+    "char_length": 165,
+    "word_count": 22,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42141332_s14",
+    "source_paper_id": "paper_42141332",
+    "source_pmid": "42141332",
+    "source_doi": "10.1186/s13244-026-02311-7",
+    "source_title": "MRI- and report-based multimodal model with SHAP-based explanation for preoperative prediction of deep stromal invasion in early-stage cervical cancer.",
+    "sentence_text": "The developed model significantly improves preoperative DSI prediction in ESCC through noninvasive imaging analysis, thereby refining risk assessment and guiding precision oncology interventions.",
+    "char_length": 195,
+    "word_count": 23,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42141332_s15",
+    "source_paper_id": "paper_42141332",
+    "source_pmid": "42141332",
+    "source_doi": "10.1186/s13244-026-02311-7",
+    "source_title": "MRI- and report-based multimodal model with SHAP-based explanation for preoperative prediction of deep stromal invasion in early-stage cervical cancer.",
+    "sentence_text": "DSI is a key prognostic factor significantly influencing treatment decisions in ESCC.",
+    "char_length": 85,
+    "word_count": 12,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42141332_s16",
+    "source_paper_id": "paper_42141332",
+    "source_pmid": "42141332",
+    "source_doi": "10.1186/s13244-026-02311-7",
+    "source_title": "MRI- and report-based multimodal model with SHAP-based explanation for preoperative prediction of deep stromal invasion in early-stage cervical cancer.",
+    "sentence_text": "The explainable multimodal fusion model was established.",
+    "char_length": 56,
+    "word_count": 7,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 16,
+        "end_char": 33,
+        "text": "multimodal fusion",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42141332_s17",
+    "source_paper_id": "paper_42141332",
+    "source_pmid": "42141332",
+    "source_doi": "10.1186/s13244-026-02311-7",
+    "source_title": "MRI- and report-based multimodal model with SHAP-based explanation for preoperative prediction of deep stromal invasion in early-stage cervical cancer.",
+    "sentence_text": "The accuracy of preoperative DSI risk evaluation was beneficial for clinical decision-making.",
+    "char_length": 93,
+    "word_count": 12,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 4,
+        "end_char": 12,
+        "text": "accuracy",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41647696_s00",
+    "source_paper_id": "paper_41647696",
+    "source_pmid": "41647696",
+    "source_doi": "10.1016/j.esmorw.2025.100151",
+    "source_title": "Multimodal identification of a rare head and neck cancer patient cohort in the clinical data warehouse of Greater Paris Teaching Hospital.",
+    "sentence_text": "Ten percent of head and neck cancers (HNCs) differ from the common upper aerodigestive tract squamous-cell carcinoma.",
+    "char_length": 117,
+    "word_count": 17,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41647696_s01",
+    "source_paper_id": "paper_41647696",
+    "source_pmid": "41647696",
+    "source_doi": "10.1016/j.esmorw.2025.100151",
+    "source_title": "Multimodal identification of a rare head and neck cancer patient cohort in the clinical data warehouse of Greater Paris Teaching Hospital.",
+    "sentence_text": "These rare HNCs can be rare because of their histology or anatomical location.",
+    "char_length": 78,
+    "word_count": 13,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41647696_s02",
+    "source_paper_id": "paper_41647696",
+    "source_pmid": "41647696",
+    "source_doi": "10.1016/j.esmorw.2025.100151",
+    "source_title": "Multimodal identification of a rare head and neck cancer patient cohort in the clinical data warehouse of Greater Paris Teaching Hospital.",
+    "sentence_text": "The federation of clinical data warehouses (CDWs) holds potential for advancing our understanding of these pathologies.",
+    "char_length": 119,
+    "word_count": 16,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41647696_s03",
+    "source_paper_id": "paper_41647696",
+    "source_pmid": "41647696",
+    "source_doi": "10.1016/j.esmorw.2025.100151",
+    "source_title": "Multimodal identification of a rare head and neck cancer patient cohort in the clinical data warehouse of Greater Paris Teaching Hospital.",
+    "sentence_text": "This study aimed to develop a multimodal algorithm to identify rare HNC patients in a CDW.",
+    "char_length": 90,
+    "word_count": 16,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41647696_s04",
+    "source_paper_id": "paper_41647696",
+    "source_pmid": "41647696",
+    "source_doi": "10.1016/j.esmorw.2025.100151",
+    "source_title": "Multimodal identification of a rare head and neck cancer patient cohort in the clinical data warehouse of Greater Paris Teaching Hospital.",
+    "sentence_text": "We carried out a cross-sectional study on the CDW of a conglomerate of 38 university hospitals.",
+    "char_length": 95,
+    "word_count": 16,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41647696_s05",
+    "source_paper_id": "paper_41647696",
+    "source_pmid": "41647696",
+    "source_doi": "10.1016/j.esmorw.2025.100151",
+    "source_title": "Multimodal identification of a rare head and neck cancer patient cohort in the clinical data warehouse of Greater Paris Teaching Hospital.",
+    "sentence_text": "We developed a multimodal classification algorithm to identify rare HNC patients by integrating International Classification of Diseases, 10th revision (ICD-10) codes, Association for the Development of Computer Science in Cytology and Pathological Anatomy (ADICAP) codes and free-text data from pathology reports using natural language processing (NLP).",
+    "char_length": 354,
+    "word_count": 46,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41647696_s06",
+    "source_paper_id": "paper_41647696",
+    "source_pmid": "41647696",
+    "source_doi": "10.1016/j.esmorw.2025.100151",
+    "source_title": "Multimodal identification of a rare head and neck cancer patient cohort in the clinical data warehouse of Greater Paris Teaching Hospital.",
+    "sentence_text": "Algorithm performance was evaluated by an HNC medical expert using a validation set of 100 manually annotated cases.",
+    "char_length": 116,
+    "word_count": 18,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41647696_s07",
+    "source_paper_id": "paper_41647696",
+    "source_pmid": "41647696",
+    "source_doi": "10.1016/j.esmorw.2025.100151",
+    "source_title": "Multimodal identification of a rare head and neck cancer patient cohort in the clinical data warehouse of Greater Paris Teaching Hospital.",
+    "sentence_text": "Of 333 852 cancer patients, 9141 were identified as HNC patients based on ICD-10 and ADICAP codes.",
+    "char_length": 98,
+    "word_count": 17,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41647696_s08",
+    "source_paper_id": "paper_41647696",
+    "source_pmid": "41647696",
+    "source_doi": "10.1016/j.esmorw.2025.100151",
+    "source_title": "Multimodal identification of a rare head and neck cancer patient cohort in the clinical data warehouse of Greater Paris Teaching Hospital.",
+    "sentence_text": "The multimodal algorithm using ICD-10 or ADICAP codes or NLP-processed free text classified 4515 patients as rare HNC patients, with 2168 identified by a minimum of two data sources.",
+    "char_length": 182,
+    "word_count": 29,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41647696_s09",
+    "source_paper_id": "paper_41647696",
+    "source_pmid": "41647696",
+    "source_doi": "10.1016/j.esmorw.2025.100151",
+    "source_title": "Multimodal identification of a rare head and neck cancer patient cohort in the clinical data warehouse of Greater Paris Teaching Hospital.",
+    "sentence_text": "It showed a 91% sensitivity and a 95% specificity when relying on multiple data sources, with a 76% positive predictive value observed for rare histology identification compared with 43% for rare topography.",
+    "char_length": 207,
+    "word_count": 32,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41647696_s10",
+    "source_paper_id": "paper_41647696",
+    "source_pmid": "41647696",
+    "source_doi": "10.1016/j.esmorw.2025.100151",
+    "source_title": "Multimodal identification of a rare head and neck cancer patient cohort in the clinical data warehouse of Greater Paris Teaching Hospital.",
+    "sentence_text": "This study demonstrates the feasibility and utility of a multimodal electronic health record-based approach to identify rare HNC patients in a CDW.",
+    "char_length": 147,
+    "word_count": 22,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41647696_s11",
+    "source_paper_id": "paper_41647696",
+    "source_pmid": "41647696",
+    "source_doi": "10.1016/j.esmorw.2025.100151",
+    "source_title": "Multimodal identification of a rare head and neck cancer patient cohort in the clinical data warehouse of Greater Paris Teaching Hospital.",
+    "sentence_text": "Incorporating free-text and structured data improves the reliability of such cohort identification.",
+    "char_length": 99,
+    "word_count": 12,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42400003_s00",
+    "source_paper_id": "paper_42400003",
+    "source_pmid": "42400003",
+    "source_doi": "10.1186/s13073-026-01706-x",
+    "source_title": "Multi-modal data integration reveals functionally credible predictive biomarkers in ovarian cancer.",
+    "sentence_text": "Precision oncology aims to tailor treatment according to tumor-specific molecular alterations, but the success of aberration-guided therapies has been limited in clinical trials.",
+    "char_length": 178,
+    "word_count": 23,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42400003_s01",
+    "source_paper_id": "paper_42400003",
+    "source_pmid": "42400003",
+    "source_doi": "10.1186/s13073-026-01706-x",
+    "source_title": "Multi-modal data integration reveals functionally credible predictive biomarkers in ovarian cancer.",
+    "sentence_text": "Here, we develop an integrated whole-genome and transcriptome workflow to systematically distinguish functionally credible, predictive driver aberrations from non-functional alterations across all classes of genomic events.",
+    "char_length": 223,
+    "word_count": 26,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42400003_s02",
+    "source_paper_id": "paper_42400003",
+    "source_pmid": "42400003",
+    "source_doi": "10.1186/s13073-026-01706-x",
+    "source_title": "Multi-modal data integration reveals functionally credible predictive biomarkers in ovarian cancer.",
+    "sentence_text": "We applied the integrated omics workflow to 335 patients with ovarian high-grade serous carcinoma (HGSC) enrolled in the observational DECIDER study.",
+    "char_length": 149,
+    "word_count": 21,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42400003_s03",
+    "source_paper_id": "paper_42400003",
+    "source_pmid": "42400003",
+    "source_doi": "10.1186/s13073-026-01706-x",
+    "source_title": "Multi-modal data integration reveals functionally credible predictive biomarkers in ovarian cancer.",
+    "sentence_text": "Tumor samples were collected from multiple cancer sites as part of the standard cancer care.",
+    "char_length": 92,
+    "word_count": 15,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42400003_s04",
+    "source_paper_id": "paper_42400003",
+    "source_pmid": "42400003",
+    "source_doi": "10.1186/s13073-026-01706-x",
+    "source_title": "Multi-modal data integration reveals functionally credible predictive biomarkers in ovarian cancer.",
+    "sentence_text": "DNA and RNA were extracted together from snap-frozen tumor samples and sent to whole-genome and transcriptome sequencing.",
+    "char_length": 121,
+    "word_count": 17,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42400003_s05",
+    "source_paper_id": "paper_42400003",
+    "source_pmid": "42400003",
+    "source_doi": "10.1186/s13073-026-01706-x",
+    "source_title": "Multi-modal data integration reveals functionally credible predictive biomarkers in ovarian cancer.",
+    "sentence_text": "Sequencing data were processed with the Anduril 2 pipeline for detection and validation of short somatic changes and with the HMW toolkit and the nf-core/rnafusion pipeline for assessment of structural changes.",
+    "char_length": 210,
+    "word_count": 31,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42400003_s06",
+    "source_paper_id": "paper_42400003",
+    "source_pmid": "42400003",
+    "source_doi": "10.1186/s13073-026-01706-x",
+    "source_title": "Multi-modal data integration reveals functionally credible predictive biomarkers in ovarian cancer.",
+    "sentence_text": "Aberration-specific drug sensitivity was tested in patient-derived organoids with a drug screen combining targeted agents and chemotherapy.",
+    "char_length": 139,
+    "word_count": 17,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42400003_s07",
+    "source_paper_id": "paper_42400003",
+    "source_pmid": "42400003",
+    "source_doi": "10.1186/s13073-026-01706-x",
+    "source_title": "Multi-modal data integration reveals functionally credible predictive biomarkers in ovarian cancer.",
+    "sentence_text": "Using an agnostic integrated omics analysis, we identified clinically relevant ESCAT Tier II-III alterations in more than 40% of the patients, even though 58% of all nominally pathogenic variants proved to be false positives.",
+    "char_length": 225,
+    "word_count": 34,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42400003_s08",
+    "source_paper_id": "paper_42400003",
+    "source_pmid": "42400003",
+    "source_doi": "10.1186/s13073-026-01706-x",
+    "source_title": "Multi-modal data integration reveals functionally credible predictive biomarkers in ovarian cancer.",
+    "sentence_text": "Credible aberrations were predominantly clonal, detected across anatomical sites, and preserved from diagnosis to relapse, indicating early establishment during tumor evolution.",
+    "char_length": 177,
+    "word_count": 21,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42400003_s09",
+    "source_paper_id": "paper_42400003",
+    "source_pmid": "42400003",
+    "source_doi": "10.1186/s13073-026-01706-x",
+    "source_title": "Multi-modal data integration reveals functionally credible predictive biomarkers in ovarian cancer.",
+    "sentence_text": "The most recurrent actionable event was NF1 deficiency, which was associated with a robust transcriptional footprint and marked sensitivity to KRAS- and MEK-inhibition in patient-derived organoids.",
+    "char_length": 197,
+    "word_count": 26,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42400003_s10",
+    "source_paper_id": "paper_42400003",
+    "source_pmid": "42400003",
+    "source_doi": "10.1186/s13073-026-01706-x",
+    "source_title": "Multi-modal data integration reveals functionally credible predictive biomarkers in ovarian cancer.",
+    "sentence_text": "Notably, integrated DNA-RNA analysis enabled discrimination of treatment-guiding aberrations from false-positive findings that would otherwise misinform treatment selection and confound clinical trial outcomes.",
+    "char_length": 210,
+    "word_count": 23,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42400003_s11",
+    "source_paper_id": "paper_42400003",
+    "source_pmid": "42400003",
+    "source_doi": "10.1186/s13073-026-01706-x",
+    "source_title": "Multi-modal data integration reveals functionally credible predictive biomarkers in ovarian cancer.",
+    "sentence_text": "Our findings provide a strategy for more reliable biomarker detection in precision oncology, inform biomarker-guided clinical trial design, and reveal unexploited therapeutic vulnerabilities in HGSC.",
+    "char_length": 199,
+    "word_count": 25,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42564290_s00",
+    "source_paper_id": "paper_42564290",
+    "source_pmid": "42564290",
+    "source_doi": "10.3389/fimmu.2026.1866011",
+    "source_title": "Artificial intelligence driven exposome and multi omics integration for biomarker discovery in liver cancer: a literature review.",
+    "sentence_text": "Primary liver cancer is a major global cause of cancer death, and hepatocellular carcinoma (HCC) is the predominant histological subtype.",
+    "char_length": 137,
+    "word_count": 20,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42564290_s01",
+    "source_paper_id": "paper_42564290",
+    "source_pmid": "42564290",
+    "source_doi": "10.3389/fimmu.2026.1866011",
+    "source_title": "Artificial intelligence driven exposome and multi omics integration for biomarker discovery in liver cancer: a literature review.",
+    "sentence_text": "This literature review synthesizes current evidence on the exposome, multi-omics landscape, and artificial intelligence (AI)-based integration strategies relevant to biomarker discovery in liver cancer, with a focus on biological rationale, emerging clinical applications, and translational limitations.",
+    "char_length": 303,
+    "word_count": 36,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42564290_s02",
+    "source_paper_id": "paper_42564290",
+    "source_pmid": "42564290",
+    "source_doi": "10.3389/fimmu.2026.1866011",
+    "source_title": "Artificial intelligence driven exposome and multi omics integration for biomarker discovery in liver cancer: a literature review.",
+    "sentence_text": "Key etiologic drivers include viral hepatitis, alcohol-related liver disease, and metabolic dysfunction-associated steatotic liver disease, all of which interact with environmental exposures across the life course.",
+    "char_length": 214,
+    "word_count": 26,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42564290_s03",
+    "source_paper_id": "paper_42564290",
+    "source_pmid": "42564290",
+    "source_doi": "10.3389/fimmu.2026.1866011",
+    "source_title": "Artificial intelligence driven exposome and multi omics integration for biomarker discovery in liver cancer: a literature review.",
+    "sentence_text": "Biomarker discovery increasingly relies on integrated assessment of exposure-related signals together with genomic, epigenomic, transcriptomic, proteomic, metabolomic, and spatially resolved data.",
+    "char_length": 196,
+    "word_count": 21,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42564290_s04",
+    "source_paper_id": "paper_42564290",
+    "source_pmid": "42564290",
+    "source_doi": "10.3389/fimmu.2026.1866011",
+    "source_title": "Artificial intelligence driven exposome and multi omics integration for biomarker discovery in liver cancer: a literature review.",
+    "sentence_text": "Hepatocarcinogenesis involves a complex interplay of chronic liver injury, environmentally patterned molecular perturbation, and dynamic tumor-host interactions.",
+    "char_length": 161,
+    "word_count": 17,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42564290_s05",
+    "source_paper_id": "paper_42564290",
+    "source_pmid": "42564290",
+    "source_doi": "10.3389/fimmu.2026.1866011",
+    "source_title": "Artificial intelligence driven exposome and multi omics integration for biomarker discovery in liver cancer: a literature review.",
+    "sentence_text": "We emphasize an exposome-informed, multimodal strategy in which interpretable AI models identify clinically relevant signatures for early detection, prognostic stratification, and treatment guidance.",
+    "char_length": 199,
+    "word_count": 23,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42564290_s06",
+    "source_paper_id": "paper_42564290",
+    "source_pmid": "42564290",
+    "source_doi": "10.3389/fimmu.2026.1866011",
+    "source_title": "Artificial intelligence driven exposome and multi omics integration for biomarker discovery in liver cancer: a literature review.",
+    "sentence_text": "Critical limitations of current evidence include incomplete exposure assessment, heterogeneous data platforms, retrospective study design, limited external validation, and insufficient model transparency.",
+    "char_length": 204,
+    "word_count": 22,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 147,
+        "end_char": 166,
+        "text": "external validation",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42564290_s07",
+    "source_paper_id": "paper_42564290",
+    "source_pmid": "42564290",
+    "source_doi": "10.3389/fimmu.2026.1866011",
+    "source_title": "Artificial intelligence driven exposome and multi omics integration for biomarker discovery in liver cancer: a literature review.",
+    "sentence_text": "Emerging approaches, including proteogenomic, lipidomic, single-cell, and digital pathology-based modeling, show promise but require further validation in etiologically diverse cohorts.",
+    "char_length": 185,
+    "word_count": 20,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42564290_s08",
+    "source_paper_id": "paper_42564290",
+    "source_pmid": "42564290",
+    "source_doi": "10.3389/fimmu.2026.1866011",
+    "source_title": "Artificial intelligence driven exposome and multi omics integration for biomarker discovery in liver cancer: a literature review.",
+    "sentence_text": "The purpose of this review is to critically examine how AI can integrate exposome-related information with multi-omics data for biomarker discovery in liver cancer.",
+    "char_length": 164,
+    "word_count": 24,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42564290_s09",
+    "source_paper_id": "paper_42564290",
+    "source_pmid": "42564290",
+    "source_doi": "10.3389/fimmu.2026.1866011",
+    "source_title": "Artificial intelligence driven exposome and multi omics integration for biomarker discovery in liver cancer: a literature review.",
+    "sentence_text": "Here, particular attention is given to the exposure-to-biomarker sequence, immune-metabolic remodeling, liquid-biopsy translation, and the reduction of high-dimensional signatures into clinically deployable assays.",
+    "char_length": 214,
+    "word_count": 23,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42125301_s00",
+    "source_paper_id": "paper_42125301",
+    "source_pmid": "42125301",
+    "source_doi": "10.1108/atsip-06-2025-0051",
+    "source_title": "Individualized Treatment Effect Inference of Head and Neck Cancer with Multimodal Data.",
+    "sentence_text": "Estimating individualized treatment effects (ITE) is critical for personalized medicine, yet it remains a challenge due to retrospective observational data, which suffer from selection bias in clinical practice, and the complexity of multimodal data used for patient status depiction.",
+    "char_length": 284,
+    "word_count": 39,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42125301_s01",
+    "source_paper_id": "paper_42125301",
+    "source_pmid": "42125301",
+    "source_doi": "10.1108/atsip-06-2025-0051",
+    "source_title": "Individualized Treatment Effect Inference of Head and Neck Cancer with Multimodal Data.",
+    "sentence_text": "In this work, we develop an end-to-end deep learning (DL) framework that incorporates multimodal patient data and multiple treatments for accurate ITE inference in a retrospective head and neck cancer (HNC) study.",
+    "char_length": 213,
+    "word_count": 32,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 39,
+        "end_char": 52,
+        "text": "deep learning",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.54
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42125301_s02",
+    "source_paper_id": "paper_42125301",
+    "source_pmid": "42125301",
+    "source_doi": "10.1108/atsip-06-2025-0051",
+    "source_title": "Individualized Treatment Effect Inference of Head and Neck Cancer with Multimodal Data.",
+    "sentence_text": "A possible solution is concatenating the factors and adapt adversarial training, which has shown great promise on tabular data, to disentangle patient characteristics from patient status features to mitigate treatment selection bias.",
+    "char_length": 233,
+    "word_count": 32,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42125301_s03",
+    "source_paper_id": "paper_42125301",
+    "source_pmid": "42125301",
+    "source_doi": "10.1108/atsip-06-2025-0051",
+    "source_title": "Individualized Treatment Effect Inference of Head and Neck Cancer with Multimodal Data.",
+    "sentence_text": "However, this approach suffers from instability when applied to complex multimodal patient data and multiple treatment options.",
+    "char_length": 127,
+    "word_count": 17,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42125301_s04",
+    "source_paper_id": "paper_42125301",
+    "source_pmid": "42125301",
+    "source_doi": "10.1108/atsip-06-2025-0051",
+    "source_title": "Individualized Treatment Effect Inference of Head and Neck Cancer with Multimodal Data.",
+    "sentence_text": "For flexible and efficient, treatment-conditioned information fusion, we propose a bi-stage adaptive instance normalization (Bi-AdaIN) to inject relevant factors into corresponding layers, an approach that is also robust to missing values.",
+    "char_length": 239,
+    "word_count": 31,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 110,
+        "end_char": 123,
+        "text": "normalization",
+        "entity_type": "PREPROCESSING",
+        "bio_tag": "B-PREPROCESSING",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42125301_s05",
+    "source_paper_id": "paper_42125301",
+    "source_pmid": "42125301",
+    "source_doi": "10.1108/atsip-06-2025-0051",
+    "source_title": "Individualized Treatment Effect Inference of Head and Neck Cancer with Multimodal Data.",
+    "sentence_text": "Furthermore, we propose to disentangle status features from the multi-treatment variable using mutual information (MI) regularization, enabling more accurate predictions of patient-specific outcomes for both factual and counterfactual data.",
+    "char_length": 240,
+    "word_count": 29,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42125301_s06",
+    "source_paper_id": "paper_42125301",
+    "source_pmid": "42125301",
+    "source_doi": "10.1108/atsip-06-2025-0051",
+    "source_title": "Individualized Treatment Effect Inference of Head and Neck Cancer with Multimodal Data.",
+    "sentence_text": "We evaluated our model on the RADCURE dataset, comprising 3,346 HNC cases with CT scans and multiple clinical variables who received radiotherapy or additional chemotherapy and EGFRI.",
+    "char_length": 183,
+    "word_count": 27,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 30,
+        "end_char": 37,
+        "text": "RADCURE",
+        "entity_type": "DATASET",
+        "bio_tag": "B-DATASET",
+        "confidence": 0.76
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42125301_s07",
+    "source_paper_id": "paper_42125301",
+    "source_pmid": "42125301",
+    "source_doi": "10.1108/atsip-06-2025-0051",
+    "source_title": "Individualized Treatment Effect Inference of Head and Neck Cancer with Multimodal Data.",
+    "sentence_text": "The Bias-Adjusted Treatment Effect (BATE) is substantially reduced compared to the conventional direct ITE method (which does not consider treatment bias) and to adversarial training, indicating a more robust estimation of causal effects.",
+    "char_length": 238,
+    "word_count": 33,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42125301_s08",
+    "source_paper_id": "paper_42125301",
+    "source_pmid": "42125301",
+    "source_doi": "10.1108/atsip-06-2025-0051",
+    "source_title": "Individualized Treatment Effect Inference of Head and Neck Cancer with Multimodal Data.",
+    "sentence_text": "This work is one of the first DL-based studies to address ITE estimation using multimodal medical imaging, offering a promising approach to counterfactual reasoning in clinical oncology for decision support.",
+    "char_length": 207,
+    "word_count": 30,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_40770286_s00",
+    "source_paper_id": "paper_40770286",
+    "source_pmid": "40770286",
+    "source_doi": "10.1186/s12876-025-04119-z",
+    "source_title": "The development of a multimodal prediction model based on CT and MRI for the prognosis of pancreatic cancer.",
+    "sentence_text": "To develop and validate a hybrid radiomics model to predict the overall survival in pancreatic cancer patients and identify risk factors that affect patient prognosis.",
+    "char_length": 167,
+    "word_count": 25,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 33,
+        "end_char": 42,
+        "text": "radiomics",
+        "entity_type": "FEATURE_REPR",
+        "bio_tag": "B-FEATURE_REPR",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_40770286_s01",
+    "source_paper_id": "paper_40770286",
+    "source_pmid": "40770286",
+    "source_doi": "10.1186/s12876-025-04119-z",
+    "source_title": "The development of a multimodal prediction model based on CT and MRI for the prognosis of pancreatic cancer.",
+    "sentence_text": "We conducted a retrospective analysis of 272 pancreatic cancer patients diagnosed at the First Affiliated Hospital of Soochow University from January 2013 to December 2023, and divided them into a training set and a test set at a ratio of 7:3.",
+    "char_length": 243,
+    "word_count": 41,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_40770286_s02",
+    "source_paper_id": "paper_40770286",
+    "source_pmid": "40770286",
+    "source_doi": "10.1186/s12876-025-04119-z",
+    "source_title": "The development of a multimodal prediction model based on CT and MRI for the prognosis of pancreatic cancer.",
+    "sentence_text": "Pre-treatment contrast-enhanced computed tomography (CT), magnetic resonance imaging (MRI) images, and clinical features were collected.",
+    "char_length": 136,
+    "word_count": 15,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_40770286_s03",
+    "source_paper_id": "paper_40770286",
+    "source_pmid": "40770286",
+    "source_doi": "10.1186/s12876-025-04119-z",
+    "source_title": "The development of a multimodal prediction model based on CT and MRI for the prognosis of pancreatic cancer.",
+    "sentence_text": "Dimensionality reduction was performed on the radiomics features using principal component analysis (PCA), and important features with non-zero coefficients were selected using the least absolute shrinkage and selection operator (LASSO) with 10-fold cross-validation.",
+    "char_length": 267,
+    "word_count": 33,
+    "entities_count": 4,
+    "spans": [
+      {
+        "start_char": 71,
+        "end_char": 99,
+        "text": "principal component analysis",
+        "entity_type": "FEATURE_REPR",
+        "bio_tag": "B-FEATURE_REPR",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 101,
+        "end_char": 104,
+        "text": "PCA",
+        "entity_type": "FEATURE_REPR",
+        "bio_tag": "B-FEATURE_REPR",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 250,
+        "end_char": 266,
+        "text": "cross-validation",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 46,
+        "end_char": 55,
+        "text": "radiomics",
+        "entity_type": "FEATURE_REPR",
+        "bio_tag": "B-FEATURE_REPR",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_40770286_s04",
+    "source_paper_id": "paper_40770286",
+    "source_pmid": "40770286",
+    "source_doi": "10.1186/s12876-025-04119-z",
+    "source_title": "The development of a multimodal prediction model based on CT and MRI for the prognosis of pancreatic cancer.",
+    "sentence_text": "In the training set, we built clinical prediction models using both random survival forests (RSF) and traditional Cox regression analysis.",
+    "char_length": 138,
+    "word_count": 20,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 114,
+        "end_char": 128,
+        "text": "Cox regression",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_40770286_s05",
+    "source_paper_id": "paper_40770286",
+    "source_pmid": "40770286",
+    "source_doi": "10.1186/s12876-025-04119-z",
+    "source_title": "The development of a multimodal prediction model based on CT and MRI for the prognosis of pancreatic cancer.",
+    "sentence_text": "These models included a radiomics model based on contrast-enhanced CT, a radiomics model based on MRI, a clinical model, 3 bimodal models combining two types of features, and a multimodal model combining radiomics features with clinical features.",
+    "char_length": 246,
+    "word_count": 37,
+    "entities_count": 3,
+    "spans": [
+      {
+        "start_char": 24,
+        "end_char": 33,
+        "text": "radiomics",
+        "entity_type": "FEATURE_REPR",
+        "bio_tag": "B-FEATURE_REPR",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 73,
+        "end_char": 82,
+        "text": "radiomics",
+        "entity_type": "FEATURE_REPR",
+        "bio_tag": "B-FEATURE_REPR",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 204,
+        "end_char": 213,
+        "text": "radiomics",
+        "entity_type": "FEATURE_REPR",
+        "bio_tag": "B-FEATURE_REPR",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_40770286_s06",
+    "source_paper_id": "paper_40770286",
+    "source_pmid": "40770286",
+    "source_doi": "10.1186/s12876-025-04119-z",
+    "source_title": "The development of a multimodal prediction model based on CT and MRI for the prognosis of pancreatic cancer.",
+    "sentence_text": "Model performance evaluation in the test set was based on two dimensions: discrimination and calibration.",
+    "char_length": 105,
+    "word_count": 15,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_40770286_s07",
+    "source_paper_id": "paper_40770286",
+    "source_pmid": "40770286",
+    "source_doi": "10.1186/s12876-025-04119-z",
+    "source_title": "The development of a multimodal prediction model based on CT and MRI for the prognosis of pancreatic cancer.",
+    "sentence_text": "In addition, risk stratification was performed in the test set based on predicted risk scores to evaluate the model's prognostic utility.",
+    "char_length": 137,
+    "word_count": 21,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_40770286_s08",
+    "source_paper_id": "paper_40770286",
+    "source_pmid": "40770286",
+    "source_doi": "10.1186/s12876-025-04119-z",
+    "source_title": "The development of a multimodal prediction model based on CT and MRI for the prognosis of pancreatic cancer.",
+    "sentence_text": "The RSF-based hybrid model performed best with a C-index of 0.807 and a Brier score of 0.101, outperforming the COX hybrid model (C-index of 0.726 and a Brier score of 0.145) and other unimodal and bimodal models.",
+    "char_length": 213,
+    "word_count": 37,
+    "entities_count": 4,
+    "spans": [
+      {
+        "start_char": 72,
+        "end_char": 83,
+        "text": "Brier score",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 153,
+        "end_char": 164,
+        "text": "Brier score",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 49,
+        "end_char": 56,
+        "text": "C-index",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 130,
+        "end_char": 137,
+        "text": "C-index",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_40770286_s09",
+    "source_paper_id": "paper_40770286",
+    "source_pmid": "40770286",
+    "source_doi": "10.1186/s12876-025-04119-z",
+    "source_title": "The development of a multimodal prediction model based on CT and MRI for the prognosis of pancreatic cancer.",
+    "sentence_text": "The SurvSHAP(t) plot highlighted CA125 as the most important variable.",
+    "char_length": 70,
+    "word_count": 10,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_40770286_s10",
+    "source_paper_id": "paper_40770286",
+    "source_pmid": "40770286",
+    "source_doi": "10.1186/s12876-025-04119-z",
+    "source_title": "The development of a multimodal prediction model based on CT and MRI for the prognosis of pancreatic cancer.",
+    "sentence_text": "In the test set, patients were stratified into high- and low-risk groups based on the predicted risk scores, and Kaplan-Meier analysis demonstrated a significant survival difference between the two groups (p\u2009<\u20090.0001).",
+    "char_length": 218,
+    "word_count": 33,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_40770286_s11",
+    "source_paper_id": "paper_40770286",
+    "source_pmid": "40770286",
+    "source_doi": "10.1186/s12876-025-04119-z",
+    "source_title": "The development of a multimodal prediction model based on CT and MRI for the prognosis of pancreatic cancer.",
+    "sentence_text": "A multi-modal model using radiomics based on clinical tabular data and contrast-enhanced CT and MRI was developed by RSF, presenting strengths in predicting prognosis in pancreatic cancer patients.",
+    "char_length": 197,
+    "word_count": 28,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 26,
+        "end_char": 35,
+        "text": "radiomics",
+        "entity_type": "FEATURE_REPR",
+        "bio_tag": "B-FEATURE_REPR",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42389632_s00",
+    "source_paper_id": "paper_42389632",
+    "source_pmid": "42389632",
+    "source_doi": "10.3389/fcvm.2026.1834641",
+    "source_title": "Multimodal fusion of EHR and ECG based on deep learning for predicting new-onset coronary heart disease in cancer patients.",
+    "sentence_text": "Cancer patients carry elevated risk of new-onset coronary heart disease (CHD), but accurate risk stratification remains limited.",
+    "char_length": 128,
+    "word_count": 17,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42389632_s01",
+    "source_paper_id": "paper_42389632",
+    "source_pmid": "42389632",
+    "source_doi": "10.3389/fcvm.2026.1834641",
+    "source_title": "Multimodal fusion of EHR and ECG based on deep learning for predicting new-onset coronary heart disease in cancer patients.",
+    "sentence_text": "We aimed to develop a multimodal deep learning model for predicting new-onset CHD in cancer patients.",
+    "char_length": 101,
+    "word_count": 16,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 33,
+        "end_char": 46,
+        "text": "deep learning",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.54
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42389632_s02",
+    "source_paper_id": "paper_42389632",
+    "source_pmid": "42389632",
+    "source_doi": "10.3389/fcvm.2026.1834641",
+    "source_title": "Multimodal fusion of EHR and ECG based on deep learning for predicting new-onset coronary heart disease in cancer patients.",
+    "sentence_text": "Consecutive cancer patients from January 2010 to December 2020 were enrolled.",
+    "char_length": 77,
+    "word_count": 11,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42389632_s03",
+    "source_paper_id": "paper_42389632",
+    "source_pmid": "42389632",
+    "source_doi": "10.3389/fcvm.2026.1834641",
+    "source_title": "Multimodal fusion of EHR and ECG based on deep learning for predicting new-onset coronary heart disease in cancer patients.",
+    "sentence_text": "The primary endpoint was new-onset CHD during hospitalization or follow-up.",
+    "char_length": 75,
+    "word_count": 10,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42389632_s04",
+    "source_paper_id": "paper_42389632",
+    "source_pmid": "42389632",
+    "source_doi": "10.3389/fcvm.2026.1834641",
+    "source_title": "Multimodal fusion of EHR and ECG based on deep learning for predicting new-onset coronary heart disease in cancer patients.",
+    "sentence_text": "We constructed a hybrid CNN-LSTM model by fusing electronic health records (EHRs) and 12-lead electrocardiogram (ECG).",
+    "char_length": 118,
+    "word_count": 16,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 24,
+        "end_char": 27,
+        "text": "CNN",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42389632_s05",
+    "source_paper_id": "paper_42389632",
+    "source_pmid": "42389632",
+    "source_doi": "10.3389/fcvm.2026.1834641",
+    "source_title": "Multimodal fusion of EHR and ECG based on deep learning for predicting new-onset coronary heart disease in cancer patients.",
+    "sentence_text": "Model performance was compared with seven machine learning methods (LR, DT, KNN, SVM, RF, AdaBoost, GBDT).",
+    "char_length": 106,
+    "word_count": 16,
+    "entities_count": 3,
+    "spans": [
+      {
+        "start_char": 81,
+        "end_char": 84,
+        "text": "SVM",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 86,
+        "end_char": 88,
+        "text": "RF",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 68,
+        "end_char": 70,
+        "text": "LR",
+        "entity_type": "HYPERPARAMETER",
+        "bio_tag": "B-HYPERPARAMETER",
+        "confidence": 0.54
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42389632_s06",
+    "source_paper_id": "paper_42389632",
+    "source_pmid": "42389632",
+    "source_doi": "10.3389/fcvm.2026.1834641",
+    "source_title": "Multimodal fusion of EHR and ECG based on deep learning for predicting new-onset coronary heart disease in cancer patients.",
+    "sentence_text": "Clinical utility and calibration were assessed by ROC, decision curve analysis (DCA) and calibration curves.",
+    "char_length": 108,
+    "word_count": 15,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42389632_s07",
+    "source_paper_id": "paper_42389632",
+    "source_pmid": "42389632",
+    "source_doi": "10.3389/fcvm.2026.1834641",
+    "source_title": "Multimodal fusion of EHR and ECG based on deep learning for predicting new-onset coronary heart disease in cancer patients.",
+    "sentence_text": "Subgroup analyses were conducted in early-stage (Stage II) and late-stage (Stage III\u2009+\u2009IV) cohorts.",
+    "char_length": 99,
+    "word_count": 15,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42389632_s08",
+    "source_paper_id": "paper_42389632",
+    "source_pmid": "42389632",
+    "source_doi": "10.3389/fcvm.2026.1834641",
+    "source_title": "Multimodal fusion of EHR and ECG based on deep learning for predicting new-onset coronary heart disease in cancer patients.",
+    "sentence_text": "A total of 1262 patients were included in the final analysis, of whom 722 (57.2%) developed new-onset CHD, with 696 (55.2%) classified as early-stage (Stage II).",
+    "char_length": 161,
+    "word_count": 26,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42389632_s09",
+    "source_paper_id": "paper_42389632",
+    "source_pmid": "42389632",
+    "source_doi": "10.3389/fcvm.2026.1834641",
+    "source_title": "Multimodal fusion of EHR and ECG based on deep learning for predicting new-onset coronary heart disease in cancer patients.",
+    "sentence_text": "The CNN-LSTM model achieved an AUC of 0.975 (95%CI: 0.962-0.988), outperforming seven conventional machine learning models.",
+    "char_length": 123,
+    "word_count": 16,
+    "entities_count": 2,
+    "spans": [
+      {
+        "start_char": 4,
+        "end_char": 7,
+        "text": "CNN",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 31,
+        "end_char": 34,
+        "text": "AUC",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42389632_s10",
+    "source_paper_id": "paper_42389632",
+    "source_pmid": "42389632",
+    "source_doi": "10.3389/fcvm.2026.1834641",
+    "source_title": "Multimodal fusion of EHR and ECG based on deep learning for predicting new-onset coronary heart disease in cancer patients.",
+    "sentence_text": "In subgroup analysis, the model yielded an AUC of 0.924 in early-stage patients and 0.888 in late-stage patients.",
+    "char_length": 113,
+    "word_count": 18,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 43,
+        "end_char": 46,
+        "text": "AUC",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42389632_s11",
+    "source_paper_id": "paper_42389632",
+    "source_pmid": "42389632",
+    "source_doi": "10.3389/fcvm.2026.1834641",
+    "source_title": "Multimodal fusion of EHR and ECG based on deep learning for predicting new-onset coronary heart disease in cancer patients.",
+    "sentence_text": "SHAP analysis identified that PAB, CRP, age, cTnI, PT, and ECG markers including HR, QT and QTc intervals were the strongest predictive features.",
+    "char_length": 145,
+    "word_count": 23,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42389632_s12",
+    "source_paper_id": "paper_42389632",
+    "source_pmid": "42389632",
+    "source_doi": "10.3389/fcvm.2026.1834641",
+    "source_title": "Multimodal fusion of EHR and ECG based on deep learning for predicting new-onset coronary heart disease in cancer patients.",
+    "sentence_text": "The multimodal CNN-LSTM model enables robust and interpretable prediction of new-onset CHD in cancer patients.",
+    "char_length": 110,
+    "word_count": 15,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 15,
+        "end_char": 18,
+        "text": "CNN",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42389632_s13",
+    "source_paper_id": "paper_42389632",
+    "source_pmid": "42389632",
+    "source_doi": "10.3389/fcvm.2026.1834641",
+    "source_title": "Multimodal fusion of EHR and ECG based on deep learning for predicting new-onset coronary heart disease in cancer patients.",
+    "sentence_text": "Coagulation, myocardial injury, inflammatory, metabolic, and electrophysiological markers provide mechanistic insights and may facilitate early cardioprotective strategies.",
+    "char_length": 172,
+    "word_count": 17,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42332139_s00",
+    "source_paper_id": "paper_42332139",
+    "source_pmid": "42332139",
+    "source_doi": "10.1038/s41746-026-02783-3",
+    "source_title": "Handling missing modalities in multimodal survival prediction for non-small cell lung cancer.",
+    "sentence_text": "Accurate survival prediction in non-small cell lung cancer (NSCLC) requires integrating clinical, radiological, and histopathological data.",
+    "char_length": 139,
+    "word_count": 16,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42332139_s01",
+    "source_paper_id": "paper_42332139",
+    "source_pmid": "42332139",
+    "source_doi": "10.1038/s41746-026-02783-3",
+    "source_title": "Handling missing modalities in multimodal survival prediction for non-small cell lung cancer.",
+    "sentence_text": "Multimodal deep learning (MDL) can improve precision prognosis, but small cohorts and missing modalities limit its clinical applicability, as conventional approaches enforce complete-case filtering or imputation.",
+    "char_length": 212,
+    "word_count": 26,
+    "entities_count": 2,
+    "spans": [
+      {
+        "start_char": 201,
+        "end_char": 211,
+        "text": "imputation",
+        "entity_type": "PREPROCESSING",
+        "bio_tag": "B-PREPROCESSING",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 11,
+        "end_char": 24,
+        "text": "deep learning",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.54
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42332139_s02",
+    "source_paper_id": "paper_42332139",
+    "source_pmid": "42332139",
+    "source_doi": "10.1038/s41746-026-02783-3",
+    "source_title": "Handling missing modalities in multimodal survival prediction for non-small cell lung cancer.",
+    "sentence_text": "We present a missing-aware multimodal survival framework that combines computed tomography (CT), whole-slide histopathology images (WSI), and structured clinical variables for overall survival modeling in unresectable stage II-III NSCLC.",
+    "char_length": 237,
+    "word_count": 29,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42332139_s03",
+    "source_paper_id": "paper_42332139",
+    "source_pmid": "42332139",
+    "source_doi": "10.1038/s41746-026-02783-3",
+    "source_title": "Handling missing modalities in multimodal survival prediction for non-small cell lung cancer.",
+    "sentence_text": "The framework uses foundation models (FMs) for modality-specific feature extraction and a missing-aware encoding strategy that enables intermediate multimodal fusion under naturally incomplete modality profiles.",
+    "char_length": 211,
+    "word_count": 25,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 148,
+        "end_char": 165,
+        "text": "multimodal fusion",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42332139_s04",
+    "source_paper_id": "paper_42332139",
+    "source_pmid": "42332139",
+    "source_doi": "10.1038/s41746-026-02783-3",
+    "source_title": "Handling missing modalities in multimodal survival prediction for non-small cell lung cancer.",
+    "sentence_text": "By design, the architecture processes all available data without dropping patients during training or inference.",
+    "char_length": 112,
+    "word_count": 15,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42332139_s05",
+    "source_paper_id": "paper_42332139",
+    "source_pmid": "42332139",
+    "source_doi": "10.1038/s41746-026-02783-3",
+    "source_title": "Handling missing modalities in multimodal survival prediction for non-small cell lung cancer.",
+    "sentence_text": "Intermediate fusion outperforms unimodal baselines and both early and late fusion strategies, with the trimodal configuration reaching a C-index of 74.42.",
+    "char_length": 154,
+    "word_count": 21,
+    "entities_count": 2,
+    "spans": [
+      {
+        "start_char": 70,
+        "end_char": 81,
+        "text": "late fusion",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 137,
+        "end_char": 144,
+        "text": "C-index",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42332139_s06",
+    "source_paper_id": "paper_42332139",
+    "source_pmid": "42332139",
+    "source_doi": "10.1038/s41746-026-02783-3",
+    "source_title": "Handling missing modalities in multimodal survival prediction for non-small cell lung cancer.",
+    "sentence_text": "Modality-importance analyses show that the fusion model adapts its reliance on each data stream according to representation informativeness, shaped by the alignment between FM pretraining objectives and the survival task.",
+    "char_length": 221,
+    "word_count": 30,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 43,
+        "end_char": 55,
+        "text": "fusion model",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42332139_s07",
+    "source_paper_id": "paper_42332139",
+    "source_pmid": "42332139",
+    "source_doi": "10.1038/s41746-026-02783-3",
+    "source_title": "Handling missing modalities in multimodal survival prediction for non-small cell lung cancer.",
+    "sentence_text": "The learned risk scores produce clinically meaningful stratification of disease progression and metastatic risk, with statistically significant log-rank tests across all modality combinations, supporting the translational relevance of the proposed framework.",
+    "char_length": 258,
+    "word_count": 31,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41645153_s00",
+    "source_paper_id": "paper_41645153",
+    "source_pmid": "41645153",
+    "source_doi": "10.1186/s12880-026-02179-5",
+    "source_title": "Fusion of deep learning and radiomics with dynamic spatiotemporal modeling for non-small cell lung cancer recurrence risk assessment after microwave ablation.",
+    "sentence_text": "BACKGROUND AND AIMS: Non-small cell lung cancer (NSCLC) recurrence after microwave ablation (MWA) remains a critical clinical challenge, with existing risk stratification tools limited by static feature analysis and poor generalizability.",
+    "char_length": 238,
+    "word_count": 31,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41645153_s01",
+    "source_paper_id": "paper_41645153",
+    "source_pmid": "41645153",
+    "source_doi": "10.1186/s12880-026-02179-5",
+    "source_title": "Fusion of deep learning and radiomics with dynamic spatiotemporal modeling for non-small cell lung cancer recurrence risk assessment after microwave ablation.",
+    "sentence_text": "This study aimed to develop a deep learning-radiomics (DLR) fusion model incorporating dynamic spatiotemporal patterns from longitudinal imaging to enable robust recurrence prediction.",
+    "char_length": 184,
+    "word_count": 23,
+    "entities_count": 3,
+    "spans": [
+      {
+        "start_char": 60,
+        "end_char": 72,
+        "text": "fusion model",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 30,
+        "end_char": 43,
+        "text": "deep learning",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.54
+      },
+      {
+        "start_char": 44,
+        "end_char": 53,
+        "text": "radiomics",
+        "entity_type": "FEATURE_REPR",
+        "bio_tag": "B-FEATURE_REPR",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41645153_s02",
+    "source_paper_id": "paper_41645153",
+    "source_pmid": "41645153",
+    "source_doi": "10.1186/s12880-026-02179-5",
+    "source_title": "Fusion of deep learning and radiomics with dynamic spatiotemporal modeling for non-small cell lung cancer recurrence risk assessment after microwave ablation.",
+    "sentence_text": "METHODS: A single-center cohort comprising 184 patients with pre- and post-MWA CT sequences (baseline to 12 months) was analyzed.",
+    "char_length": 129,
+    "word_count": 19,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41645153_s03",
+    "source_paper_id": "paper_41645153",
+    "source_pmid": "41645153",
+    "source_doi": "10.1186/s12880-026-02179-5",
+    "source_title": "Fusion of deep learning and radiomics with dynamic spatiotemporal modeling for non-small cell lung cancer recurrence risk assessment after microwave ablation.",
+    "sentence_text": "We implemented a spatiotemporal modeling framework where 3D-ResNet convolutional networks and a PyRadiomics-based pipeline were applied in parallel to the same longitudinal CT series to simultaneously extract deep learning embeddings and radiomic signatures from the ablation zones.",
+    "char_length": 282,
+    "word_count": 37,
+    "entities_count": 3,
+    "spans": [
+      {
+        "start_char": 209,
+        "end_char": 222,
+        "text": "deep learning",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.72
+      },
+      {
+        "start_char": 60,
+        "end_char": 66,
+        "text": "ResNet",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.76
+      },
+      {
+        "start_char": 238,
+        "end_char": 246,
+        "text": "radiomic",
+        "entity_type": "FEATURE_REPR",
+        "bio_tag": "B-FEATURE_REPR",
+        "confidence": 0.76
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41645153_s04",
+    "source_paper_id": "paper_41645153",
+    "source_pmid": "41645153",
+    "source_doi": "10.1186/s12880-026-02179-5",
+    "source_title": "Fusion of deep learning and radiomics with dynamic spatiotemporal modeling for non-small cell lung cancer recurrence risk assessment after microwave ablation.",
+    "sentence_text": "These spatiotemporal features were subsequently processed through a Transformer architecture with temporal self-attention mechanisms to capture dynamic lesion evolution patterns.",
+    "char_length": 178,
+    "word_count": 20,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 68,
+        "end_char": 79,
+        "text": "Transformer",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.54
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41645153_s05",
+    "source_paper_id": "paper_41645153",
+    "source_pmid": "41645153",
+    "source_doi": "10.1186/s12880-026-02179-5",
+    "source_title": "Fusion of deep learning and radiomics with dynamic spatiotemporal modeling for non-small cell lung cancer recurrence risk assessment after microwave ablation.",
+    "sentence_text": "The model integrated imaging-derived characteristics with radiomics features and deep learning features through adaptive multimodal fusion modules, utilizing gated cross-attention mechanisms to establish feature inter-dependencies.",
+    "char_length": 231,
+    "word_count": 25,
+    "entities_count": 4,
+    "spans": [
+      {
+        "start_char": 121,
+        "end_char": 138,
+        "text": "multimodal fusion",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 164,
+        "end_char": 179,
+        "text": "cross-attention",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 81,
+        "end_char": 94,
+        "text": "deep learning",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.54
+      },
+      {
+        "start_char": 58,
+        "end_char": 67,
+        "text": "radiomics",
+        "entity_type": "FEATURE_REPR",
+        "bio_tag": "B-FEATURE_REPR",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41645153_s06",
+    "source_paper_id": "paper_41645153",
+    "source_pmid": "41645153",
+    "source_doi": "10.1186/s12880-026-02179-5",
+    "source_title": "Fusion of deep learning and radiomics with dynamic spatiotemporal modeling for non-small cell lung cancer recurrence risk assessment after microwave ablation.",
+    "sentence_text": "RESULTS: The DLR model achieved superior performance (AUC\u2009=\u20090.92, 95% CI: 0.89\u20130.95) compared to standalone deep learning (AUC\u2009=\u20090.85) or radiomics models (AUC\u2009=\u20090.78), outperforming radiologists\u2019 visual assessments (AUC\u2009=\u20090.76, Kappa\u2009=\u20090.68).",
+    "char_length": 243,
+    "word_count": 37,
+    "entities_count": 6,
+    "spans": [
+      {
+        "start_char": 108,
+        "end_char": 121,
+        "text": "deep learning",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.54
+      },
+      {
+        "start_char": 138,
+        "end_char": 147,
+        "text": "radiomics",
+        "entity_type": "FEATURE_REPR",
+        "bio_tag": "B-FEATURE_REPR",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 54,
+        "end_char": 57,
+        "text": "AUC",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 123,
+        "end_char": 126,
+        "text": "AUC",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 156,
+        "end_char": 159,
+        "text": "AUC",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 217,
+        "end_char": 220,
+        "text": "AUC",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41645153_s07",
+    "source_paper_id": "paper_41645153",
+    "source_pmid": "41645153",
+    "source_doi": "10.1186/s12880-026-02179-5",
+    "source_title": "Fusion of deep learning and radiomics with dynamic spatiotemporal modeling for non-small cell lung cancer recurrence risk assessment after microwave ablation.",
+    "sentence_text": "CONCLUSION: This study establishes the DLR framework for dynamic NSCLC recurrence risk profiling, demonstrating that spatiotemporal feature fusion significantly enhances predictive accuracy.",
+    "char_length": 190,
+    "word_count": 22,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 181,
+        "end_char": 189,
+        "text": "accuracy",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41102633_s00",
+    "source_paper_id": "paper_41102633",
+    "source_pmid": "41102633",
+    "source_doi": "10.1186/s12859-025-06227-9",
+    "source_title": "Generalized probabilistic canonical correlation analysis for multi-modal data integration with full or partial observations.",
+    "sentence_text": "The integration and analysis of multi-modal data are increasingly essential across various domains including bioinformatics.",
+    "char_length": 124,
+    "word_count": 15,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41102633_s01",
+    "source_paper_id": "paper_41102633",
+    "source_pmid": "41102633",
+    "source_doi": "10.1186/s12859-025-06227-9",
+    "source_title": "Generalized probabilistic canonical correlation analysis for multi-modal data integration with full or partial observations.",
+    "sentence_text": "As the volume and complexity of such data grow, there is a pressing need for computational models that not only integrate diverse modalities but also leverage their complementary information to improve clustering accuracy and insights, especially when dealing with partial observations with missing data.",
+    "char_length": 304,
+    "word_count": 44,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 213,
+        "end_char": 221,
+        "text": "accuracy",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41102633_s02",
+    "source_paper_id": "paper_41102633",
+    "source_pmid": "41102633",
+    "source_doi": "10.1186/s12859-025-06227-9",
+    "source_title": "Generalized probabilistic canonical correlation analysis for multi-modal data integration with full or partial observations.",
+    "sentence_text": "We propose Generalized Probabilistic Canonical Correlation Analysis (GPCCA), an unsupervised method for the integration and joint dimensionality reduction of multi-modal data.",
+    "char_length": 175,
+    "word_count": 21,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41102633_s03",
+    "source_paper_id": "paper_41102633",
+    "source_pmid": "41102633",
+    "source_doi": "10.1186/s12859-025-06227-9",
+    "source_title": "Generalized probabilistic canonical correlation analysis for multi-modal data integration with full or partial observations.",
+    "sentence_text": "GPCCA addresses key challenges in multi-modal data analysis by handling missing values within the model, enabling the integration of more than two modalities, and identifying informative features while accounting for correlations within individual modalities.",
+    "char_length": 259,
+    "word_count": 34,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41102633_s04",
+    "source_paper_id": "paper_41102633",
+    "source_pmid": "41102633",
+    "source_doi": "10.1186/s12859-025-06227-9",
+    "source_title": "Generalized probabilistic canonical correlation analysis for multi-modal data integration with full or partial observations.",
+    "sentence_text": "GPCCA demonstrates robustness to various missing data patterns and provides low-dimensional embeddings that facilitate downstream clustering and analysis.",
+    "char_length": 154,
+    "word_count": 18,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41102633_s05",
+    "source_paper_id": "paper_41102633",
+    "source_pmid": "41102633",
+    "source_doi": "10.1186/s12859-025-06227-9",
+    "source_title": "Generalized probabilistic canonical correlation analysis for multi-modal data integration with full or partial observations.",
+    "sentence_text": "In a range of simulation settings, GPCCA outperforms existing methods in capturing essential patterns across modalities.",
+    "char_length": 120,
+    "word_count": 16,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41102633_s06",
+    "source_paper_id": "paper_41102633",
+    "source_pmid": "41102633",
+    "source_doi": "10.1186/s12859-025-06227-9",
+    "source_title": "Generalized probabilistic canonical correlation analysis for multi-modal data integration with full or partial observations.",
+    "sentence_text": "Additionally, we demonstrate its applicability to multi-omics data from TCGA cancer datasets and a multi-view image dataset.",
+    "char_length": 124,
+    "word_count": 17,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 72,
+        "end_char": 76,
+        "text": "TCGA",
+        "entity_type": "DATASET",
+        "bio_tag": "B-DATASET",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41102633_s07",
+    "source_paper_id": "paper_41102633",
+    "source_pmid": "41102633",
+    "source_doi": "10.1186/s12859-025-06227-9",
+    "source_title": "Generalized probabilistic canonical correlation analysis for multi-modal data integration with full or partial observations.",
+    "sentence_text": "GPCCA offers a useful framework for multi-modal data integration, effectively handling missing data and providing informative low-dimensional embeddings.",
+    "char_length": 153,
+    "word_count": 18,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41102633_s08",
+    "source_paper_id": "paper_41102633",
+    "source_pmid": "41102633",
+    "source_doi": "10.1186/s12859-025-06227-9",
+    "source_title": "Generalized probabilistic canonical correlation analysis for multi-modal data integration with full or partial observations.",
+    "sentence_text": "Its performance across cancer genomics and multi-view image data highlights its robustness and potential for broad application.",
+    "char_length": 127,
+    "word_count": 17,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41102633_s09",
+    "source_paper_id": "paper_41102633",
+    "source_pmid": "41102633",
+    "source_doi": "10.1186/s12859-025-06227-9",
+    "source_title": "Generalized probabilistic canonical correlation analysis for multi-modal data integration with full or partial observations.",
+    "sentence_text": "To make the method accessible to the wider research community, we have released an R package, GPCCA, which is available at https://github.com/Kaversoniano/GPCCA .",
+    "char_length": 162,
+    "word_count": 23,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_40657529_s00",
+    "source_paper_id": "paper_40657529",
+    "source_pmid": "40657529",
+    "source_doi": "10.1109/JTEHM.2025.3562724",
+    "source_title": "Survival Prediction of Esophageal Cancer Using 3D CT Imaging: A Context-Aware Approach With Non-Local Feature Aggregation and Graph-Based Spatial Interaction.",
+    "sentence_text": "Accurate prediction of survival rates in esophageal cancer (EC) is crucial for guiding personalized treatment decisions.",
+    "char_length": 120,
+    "word_count": 16,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_40657529_s01",
+    "source_paper_id": "paper_40657529",
+    "source_pmid": "40657529",
+    "source_doi": "10.1109/JTEHM.2025.3562724",
+    "source_title": "Survival Prediction of Esophageal Cancer Using 3D CT Imaging: A Context-Aware Approach With Non-Local Feature Aggregation and Graph-Based Spatial Interaction.",
+    "sentence_text": "Deep learning-based survival models have gained increasing attention due to their powerful ability to capture complex embeddings in medical data.",
+    "char_length": 145,
+    "word_count": 20,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 0,
+        "end_char": 13,
+        "text": "Deep learning",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.54
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_40657529_s02",
+    "source_paper_id": "paper_40657529",
+    "source_pmid": "40657529",
+    "source_doi": "10.1109/JTEHM.2025.3562724",
+    "source_title": "Survival Prediction of Esophageal Cancer Using 3D CT Imaging: A Context-Aware Approach With Non-Local Feature Aggregation and Graph-Based Spatial Interaction.",
+    "sentence_text": "However, the primary limitation of current frameworks for predicting survival lies in their lack of attention to the contextual interactions between tumor and lymph node regions, which are vital for survival predictions.",
+    "char_length": 220,
+    "word_count": 32,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_40657529_s03",
+    "source_paper_id": "paper_40657529",
+    "source_pmid": "40657529",
+    "source_doi": "10.1109/JTEHM.2025.3562724",
+    "source_title": "Survival Prediction of Esophageal Cancer Using 3D CT Imaging: A Context-Aware Approach With Non-Local Feature Aggregation and Graph-Based Spatial Interaction.",
+    "sentence_text": "In the current study, we aimed to develop an effective EC survival risk prediction using only 3D computed tomography (CT) images.The proposed model consists of two essential components: 1) non-local feature aggregation module(NFAM) that integrates visual features from tumor and lymph nodes at both local and global scales, 2) graph-based spatial interaction module(GSIM) that explores the latent contextual interactions between tumors and lymph nodes.The experimental results demonstrate that our model achieves superior performance compared to state-of-the-art survival prediction methods, emphasizing its robust predictive capability.",
+    "char_length": 637,
+    "word_count": 84,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_40657529_s04",
+    "source_paper_id": "paper_40657529",
+    "source_pmid": "40657529",
+    "source_doi": "10.1109/JTEHM.2025.3562724",
+    "source_title": "Survival Prediction of Esophageal Cancer Using 3D CT Imaging: A Context-Aware Approach With Non-Local Feature Aggregation and Graph-Based Spatial Interaction.",
+    "sentence_text": "Moreover, we found that retaining lymph nodes with major axis [Formula: see text]mm yields the best predictive results (C-index: 0.725), offering valuable guidance on choosing prognostic factors for esophageal cancer.For EC survival prediction using solely 3D CT images, integrating lymph node information with tumor information helps to improve the predictive performance of deep learning models.Clinical impact: The American Joint Committee on Cancer (TNM) classification serves as the primary framework for risk stratification, prognostic evaluation, and therapeutic decision-making in oncology.",
+    "char_length": 598,
+    "word_count": 79,
+    "entities_count": 2,
+    "spans": [
+      {
+        "start_char": 376,
+        "end_char": 389,
+        "text": "deep learning",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.54
+      },
+      {
+        "start_char": 120,
+        "end_char": 127,
+        "text": "C-index",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_40657529_s05",
+    "source_paper_id": "paper_40657529",
+    "source_pmid": "40657529",
+    "source_doi": "10.1109/JTEHM.2025.3562724",
+    "source_title": "Survival Prediction of Esophageal Cancer Using 3D CT Imaging: A Context-Aware Approach With Non-Local Feature Aggregation and Graph-Based Spatial Interaction.",
+    "sentence_text": "Nevertheless, this prognostic tool has demonstrated limited predictive accuracy in assessing long-term survival for esophageal carcinoma patients undergoing multimodal therapeutic regimens.",
+    "char_length": 189,
+    "word_count": 21,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 71,
+        "end_char": 79,
+        "text": "accuracy",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_40657529_s06",
+    "source_paper_id": "paper_40657529",
+    "source_pmid": "40657529",
+    "source_doi": "10.1109/JTEHM.2025.3562724",
+    "source_title": "Survival Prediction of Esophageal Cancer Using 3D CT Imaging: A Context-Aware Approach With Non-Local Feature Aggregation and Graph-Based Spatial Interaction.",
+    "sentence_text": "Notably, even among those categorized within identical staging parameters, significant outcome heterogeneity persists, with survival trajectories diverging substantially across clinically matched populations.",
+    "char_length": 208,
+    "word_count": 22,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_40657529_s07",
+    "source_paper_id": "paper_40657529",
+    "source_pmid": "40657529",
+    "source_doi": "10.1109/JTEHM.2025.3562724",
+    "source_title": "Survival Prediction of Esophageal Cancer Using 3D CT Imaging: A Context-Aware Approach With Non-Local Feature Aggregation and Graph-Based Spatial Interaction.",
+    "sentence_text": "Our model serves as a complementary tool to the TNM staging system.",
+    "char_length": 67,
+    "word_count": 12,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_40657529_s08",
+    "source_paper_id": "paper_40657529",
+    "source_pmid": "40657529",
+    "source_doi": "10.1109/JTEHM.2025.3562724",
+    "source_title": "Survival Prediction of Esophageal Cancer Using 3D CT Imaging: A Context-Aware Approach With Non-Local Feature Aggregation and Graph-Based Spatial Interaction.",
+    "sentence_text": "By stratifying patients into distinct risk categories, this approach enables accurate prognosis assessment and provides critical guidance for postoperative adjuvant therapy decisions (such as whether to administer adjuvant radiotherapy or chemotherapy), thereby facilitating personalized treatment recommendations.",
+    "char_length": 314,
+    "word_count": 36,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42571026_s00",
+    "source_paper_id": "paper_42571026",
+    "source_pmid": "42571026",
+    "source_doi": "10.1186/s13018-026-07100-y",
+    "source_title": "Severe medial tibial plateau fractures: feasibility and functional and radiographic results of an extended approach with medial femoral epicondyle osteotomy.",
+    "sentence_text": "This study aimed to evaluate the clinical and radiological outcomes of tibial plateau fractures involving the medial plateau by comparing an extended medial approach with medial femoral epicondyle osteotomy (med ECO) to a conventional approach without epicondyle osteotomy (non-ECO).",
+    "char_length": 283,
+    "word_count": 39,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42571026_s01",
+    "source_paper_id": "paper_42571026",
+    "source_pmid": "42571026",
+    "source_doi": "10.1186/s13018-026-07100-y",
+    "source_title": "Severe medial tibial plateau fractures: feasibility and functional and radiographic results of an extended approach with medial femoral epicondyle osteotomy.",
+    "sentence_text": "A retrospective cohort study was conducted at two level one trauma-centers.",
+    "char_length": 75,
+    "word_count": 11,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42571026_s02",
+    "source_paper_id": "paper_42571026",
+    "source_pmid": "42571026",
+    "source_doi": "10.1186/s13018-026-07100-y",
+    "source_title": "Severe medial tibial plateau fractures: feasibility and functional and radiographic results of an extended approach with medial femoral epicondyle osteotomy.",
+    "sentence_text": "All fractures of the medial tibial plateau (OA/OTA Type B or C) treated with med ECO were classified according to the AO/OTA and 10-segment classification using pre-operative CT scans.",
+    "char_length": 184,
+    "word_count": 29,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42571026_s03",
+    "source_paper_id": "paper_42571026",
+    "source_pmid": "42571026",
+    "source_doi": "10.1186/s13018-026-07100-y",
+    "source_title": "Severe medial tibial plateau fractures: feasibility and functional and radiographic results of an extended approach with medial femoral epicondyle osteotomy.",
+    "sentence_text": "A comparative cohort study was performed against non-ECO patients based on age, sex, body mass index (BMI), injury mechanism, and fracture patterns.",
+    "char_length": 148,
+    "word_count": 22,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42571026_s04",
+    "source_paper_id": "paper_42571026",
+    "source_pmid": "42571026",
+    "source_doi": "10.1186/s13018-026-07100-y",
+    "source_title": "Severe medial tibial plateau fractures: feasibility and functional and radiographic results of an extended approach with medial femoral epicondyle osteotomy.",
+    "sentence_text": "The quality of fracture reduction was determined by post-operative CT scans.",
+    "char_length": 76,
+    "word_count": 11,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42571026_s05",
+    "source_paper_id": "paper_42571026",
+    "source_pmid": "42571026",
+    "source_doi": "10.1186/s13018-026-07100-y",
+    "source_title": "Severe medial tibial plateau fractures: feasibility and functional and radiographic results of an extended approach with medial femoral epicondyle osteotomy.",
+    "sentence_text": "Functional outcomes and postoperative complications were assessed over a minimum follow-up of 2 years.",
+    "char_length": 102,
+    "word_count": 14,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42571026_s06",
+    "source_paper_id": "paper_42571026",
+    "source_pmid": "42571026",
+    "source_doi": "10.1186/s13018-026-07100-y",
+    "source_title": "Severe medial tibial plateau fractures: feasibility and functional and radiographic results of an extended approach with medial femoral epicondyle osteotomy.",
+    "sentence_text": "Twenty-nine patients (mean age: 50.2\u2009\u00b1\u200910.2 years, mean follow-up 71.65\u2009\u00b1\u200918.9 months) were analyzed.",
+    "char_length": 101,
+    "word_count": 16,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42571026_s07",
+    "source_paper_id": "paper_42571026",
+    "source_pmid": "42571026",
+    "source_doi": "10.1186/s13018-026-07100-y",
+    "source_title": "Severe medial tibial plateau fractures: feasibility and functional and radiographic results of an extended approach with medial femoral epicondyle osteotomy.",
+    "sentence_text": "Both groups consisted of patients with severe tibial plateau fractures, knee dislocations, high-velocity trauma and polytrauma and concomitant injuries requiring an average hospital stay of 24.9\u2009\u00b1\u200912.4 days.",
+    "char_length": 207,
+    "word_count": 29,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42571026_s08",
+    "source_paper_id": "paper_42571026",
+    "source_pmid": "42571026",
+    "source_doi": "10.1186/s13018-026-07100-y",
+    "source_title": "Severe medial tibial plateau fractures: feasibility and functional and radiographic results of an extended approach with medial femoral epicondyle osteotomy.",
+    "sentence_text": "Radiological outcomes showed a medial fracture step\u2009>\u20092\u00a0mm in 10 cases (med ECO n\u2009=\u20095, non-ECO n\u2009=\u20095) and a gap\u2009>\u20095\u00a0mm in 8 cases (med ECO n\u2009=\u20093, non-ECO n\u2009=\u20095).",
+    "char_length": 161,
+    "word_count": 40,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42571026_s09",
+    "source_paper_id": "paper_42571026",
+    "source_pmid": "42571026",
+    "source_doi": "10.1186/s13018-026-07100-y",
+    "source_title": "Severe medial tibial plateau fractures: feasibility and functional and radiographic results of an extended approach with medial femoral epicondyle osteotomy.",
+    "sentence_text": "The mean radiological Rasmussen score was 13.8\u2009\u00b1\u20092.8 (med ECO 14.1\u2009\u00b1\u20092.8 vs. non-ECO 13.4\u2009\u00b1\u20093.0, p\u2009>\u20090.05).",
+    "char_length": 107,
+    "word_count": 22,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42571026_s10",
+    "source_paper_id": "paper_42571026",
+    "source_pmid": "42571026",
+    "source_doi": "10.1186/s13018-026-07100-y",
+    "source_title": "Severe medial tibial plateau fractures: feasibility and functional and radiographic results of an extended approach with medial femoral epicondyle osteotomy.",
+    "sentence_text": "The mean Knee Injury and Osteoarthritis Outcome Score (KOOS) was 60.4\u2009\u00b1\u200916.9 (med ECO 61.3\u2009\u00b1\u200912.7 vs. non-ECO 59.5\u2009+\u200916.2, p\u2009>\u20090.05) and the International Knee Documentation Committee score (IKDC score) was 56.6\u2009\u00b1\u200916.9 (med ECO 58.8\u2009\u00b1\u200919.0 vs. non-ECO 52.6\u2009\u00b1\u200914.4, p\u2009>\u20090.05).",
+    "char_length": 275,
+    "word_count": 52,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42571026_s11",
+    "source_paper_id": "paper_42571026",
+    "source_pmid": "42571026",
+    "source_doi": "10.1186/s13018-026-07100-y",
+    "source_title": "Severe medial tibial plateau fractures: feasibility and functional and radiographic results of an extended approach with medial femoral epicondyle osteotomy.",
+    "sentence_text": "Both med ECO and non-ECO demonstrated good radiological results.",
+    "char_length": 64,
+    "word_count": 9,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42571026_s12",
+    "source_paper_id": "paper_42571026",
+    "source_pmid": "42571026",
+    "source_doi": "10.1186/s13018-026-07100-y",
+    "source_title": "Severe medial tibial plateau fractures: feasibility and functional and radiographic results of an extended approach with medial femoral epicondyle osteotomy.",
+    "sentence_text": "No significant differences were observed in clinical and radiological outcomes during follow-up.",
+    "char_length": 96,
+    "word_count": 12,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42571026_s13",
+    "source_paper_id": "paper_42571026",
+    "source_pmid": "42571026",
+    "source_doi": "10.1186/s13018-026-07100-y",
+    "source_title": "Severe medial tibial plateau fractures: feasibility and functional and radiographic results of an extended approach with medial femoral epicondyle osteotomy.",
+    "sentence_text": "However, severe medial tibial plateau fractures are devastating knee injuries, being a challenge to the functional outcome of patients due to multiple concomitant injuries.",
+    "char_length": 172,
+    "word_count": 24,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42571026_s14",
+    "source_paper_id": "paper_42571026",
+    "source_pmid": "42571026",
+    "source_doi": "10.1186/s13018-026-07100-y",
+    "source_title": "Severe medial tibial plateau fractures: feasibility and functional and radiographic results of an extended approach with medial femoral epicondyle osteotomy.",
+    "sentence_text": "Thus, medial epicondyle osteotomy should be reserved for specific fractures, considering the added morbidity and invasiveness associated with the procedure.",
+    "char_length": 156,
+    "word_count": 20,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42571026_s15",
+    "source_paper_id": "paper_42571026",
+    "source_pmid": "42571026",
+    "source_doi": "10.1186/s13018-026-07100-y",
+    "source_title": "Severe medial tibial plateau fractures: feasibility and functional and radiographic results of an extended approach with medial femoral epicondyle osteotomy.",
+    "sentence_text": "Retrospective Cohort Study, Level of Evidence\u2009=\u2009III.",
+    "char_length": 52,
+    "word_count": 8,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  }
+]

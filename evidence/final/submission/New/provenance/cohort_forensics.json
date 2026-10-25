@@ -1,5 +1,5 @@
 {
-  "audit_timestamp": "2026-10-15T16:21:55.640243+00:00",
+  "audit_timestamp": "2026-10-25T09:26:05.758553+00:00",
   "purpose": "Forensic audit for train/test leakage, target encoding, and data integrity",
   "summary": {
     "cohorts_audited": 5,
@@ -8,7 +8,7 @@
   "cohort_audits": {
     "Cohort_A_Authoritative_Hancock": {
       "cohort_key": "Cohort_A_Authoritative_Hancock",
-      "dataset_status": "CONTROLLED_SYNTHETIC_DEMONSTRATION",
+      "dataset_status": "REAL_CLINICAL_DATASET",
       "leakage_detected": false,
       "status": "PASS",
       "forensic_conclusion": "No critical leakage detected. Results may be reported with synthetic/demo caveats.",
@@ -22,7 +22,7 @@
     },
     "Cohort_B_Unseen_Cardiac_Tabular": {
       "cohort_key": "Cohort_B_Unseen_Cardiac_Tabular",
-      "dataset_status": "CONTROLLED_SYNTHETIC_DEMONSTRATION",
+      "dataset_status": "REAL_CLINICAL_DATASET",
       "leakage_detected": false,
       "status": "PASS",
       "forensic_conclusion": "No critical leakage detected. Results may be reported with synthetic/demo caveats.",
@@ -36,7 +36,7 @@
     },
     "Cohort_C_Unseen_Derm_Image": {
       "cohort_key": "Cohort_C_Unseen_Derm_Image",
-      "dataset_status": "SYNTHETIC_DEMONSTRATION",
+      "dataset_status": "REAL_CLINICAL_DATASET",
       "leakage_detected": false,
       "status": "PASS",
       "forensic_conclusion": "No critical leakage detected. Results may be reported with synthetic/demo caveats.",
@@ -50,17 +50,11 @@
     },
     "Cohort_D_Unseen_Pathology_Text": {
       "cohort_key": "Cohort_D_Unseen_Pathology_Text",
-      "dataset_status": "SYNTHETIC_DEMONSTRATION",
+      "dataset_status": "REAL_CLINICAL_DATASET",
       "leakage_detected": false,
       "status": "PASS",
       "forensic_conclusion": "No critical leakage detected. Results may be reported with synthetic/demo caveats.",
-      "findings": [
-        {
-          "type": "NEAR_PERFECT_ROC_AUC",
-          "severity": "WARNING",
-          "detail": "ROC-AUC values: [1.0, 1.0, 1.0]. Near-perfect performance on small synthetic data \u2014 inspect for data construction artefacts."
-        }
-      ],
+      "findings": [],
       "seeds_audited": [
         42,
         100,
@@ -70,17 +64,11 @@
     },
     "Cohort_E_Unseen_Trimodal_Oncology": {
       "cohort_key": "Cohort_E_Unseen_Trimodal_Oncology",
-      "dataset_status": "SYNTHETIC_DEMONSTRATION",
+      "dataset_status": "REAL_CLINICAL_DATASET",
       "leakage_detected": false,
       "status": "PASS",
       "forensic_conclusion": "No critical leakage detected. Results may be reported with synthetic/demo caveats.",
-      "findings": [
-        {
-          "type": "NEAR_PERFECT_ROC_AUC",
-          "severity": "WARNING",
-          "detail": "ROC-AUC values: [0.5538, 1.0, 1.0]. Near-perfect performance on small synthetic data \u2014 inspect for data construction artefacts."
-        }
-      ],
+      "findings": [],
       "seeds_audited": [
         42,
         100,

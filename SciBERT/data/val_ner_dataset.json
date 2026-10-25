@@ -1,0 +1,784 @@
+[
+  {
+    "example_id": "paper_40325104_s00",
+    "source_paper_id": "paper_40325104",
+    "source_pmid": "40325104",
+    "source_doi": "10.1038/s41698-025-00917-6",
+    "source_title": "A machine learning approach for multimodal data fusion for survival prediction in cancer patients.",
+    "sentence_text": "Technological advancements of the past decade have transformed cancer research, improving patient survival predictions through genotyping and multimodal data analysis.",
+    "char_length": 167,
+    "word_count": 20,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_40325104_s01",
+    "source_paper_id": "paper_40325104",
+    "source_pmid": "40325104",
+    "source_doi": "10.1038/s41698-025-00917-6",
+    "source_title": "A machine learning approach for multimodal data fusion for survival prediction in cancer patients.",
+    "sentence_text": "However, there is no comprehensive machine-learning pipeline for comparing methods to enhance these predictions.",
+    "char_length": 112,
+    "word_count": 14,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_40325104_s02",
+    "source_paper_id": "paper_40325104",
+    "source_pmid": "40325104",
+    "source_doi": "10.1038/s41698-025-00917-6",
+    "source_title": "A machine learning approach for multimodal data fusion for survival prediction in cancer patients.",
+    "sentence_text": "To address this, a versatile pipeline using The Cancer Genome Atlas (TCGA) data was developed, incorporating various data modalities such as transcripts, proteins, metabolites, and clinical factors.",
+    "char_length": 198,
+    "word_count": 27,
+    "entities_count": 2,
+    "spans": [
+      {
+        "start_char": 69,
+        "end_char": 73,
+        "text": "TCGA",
+        "entity_type": "DATASET",
+        "bio_tag": "B-DATASET",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 44,
+        "end_char": 67,
+        "text": "The Cancer Genome Atlas",
+        "entity_type": "DATASET",
+        "bio_tag": "B-DATASET",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_40325104_s03",
+    "source_paper_id": "paper_40325104",
+    "source_pmid": "40325104",
+    "source_doi": "10.1038/s41698-025-00917-6",
+    "source_title": "A machine learning approach for multimodal data fusion for survival prediction in cancer patients.",
+    "sentence_text": "This approach manages challenges like high dimensionality, small sample sizes, and data heterogeneity.",
+    "char_length": 102,
+    "word_count": 13,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_40325104_s04",
+    "source_paper_id": "paper_40325104",
+    "source_pmid": "40325104",
+    "source_doi": "10.1038/s41698-025-00917-6",
+    "source_title": "A machine learning approach for multimodal data fusion for survival prediction in cancer patients.",
+    "sentence_text": "By applying different feature extraction and fusion strategies, notably late fusion models, the effectiveness of integrating diverse data types was demonstrated.",
+    "char_length": 161,
+    "word_count": 21,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 72,
+        "end_char": 83,
+        "text": "late fusion",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_40325104_s05",
+    "source_paper_id": "paper_40325104",
+    "source_pmid": "40325104",
+    "source_doi": "10.1038/s41698-025-00917-6",
+    "source_title": "A machine learning approach for multimodal data fusion for survival prediction in cancer patients.",
+    "sentence_text": "Late fusion models consistently outperformed single-modality approaches in TCGA lung, breast, and pan-cancer datasets, offering higher accuracy and robustness.",
+    "char_length": 159,
+    "word_count": 19,
+    "entities_count": 3,
+    "spans": [
+      {
+        "start_char": 0,
+        "end_char": 11,
+        "text": "Late fusion",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 135,
+        "end_char": 143,
+        "text": "accuracy",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 75,
+        "end_char": 79,
+        "text": "TCGA",
+        "entity_type": "DATASET",
+        "bio_tag": "B-DATASET",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_40325104_s06",
+    "source_paper_id": "paper_40325104",
+    "source_pmid": "40325104",
+    "source_doi": "10.1038/s41698-025-00917-6",
+    "source_title": "A machine learning approach for multimodal data fusion for survival prediction in cancer patients.",
+    "sentence_text": "This research highlights the potential of comprehensive multimodal data integration in precision oncology to improve survival predictions for cancer patients.",
+    "char_length": 158,
+    "word_count": 20,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_40325104_s07",
+    "source_paper_id": "paper_40325104",
+    "source_pmid": "40325104",
+    "source_doi": "10.1038/s41698-025-00917-6",
+    "source_title": "A machine learning approach for multimodal data fusion for survival prediction in cancer patients.",
+    "sentence_text": "The study provides a reusable pipeline for the research community, suggesting future work on larger cohorts.",
+    "char_length": 108,
+    "word_count": 16,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41353186_s00",
+    "source_paper_id": "paper_41353186",
+    "source_pmid": "41353186",
+    "source_doi": "10.1186/s13040-025-00495-0",
+    "source_title": "Clinically aligned multi-modal image-text model for pan-cancer prognosis prediction.",
+    "sentence_text": "Cancer prognosis prediction increasingly leverages multi-modal learning, yet existing approaches often rely on omics data that are costly and difficult to collect in routine practice.",
+    "char_length": 183,
+    "word_count": 25,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41353186_s01",
+    "source_paper_id": "paper_41353186",
+    "source_pmid": "41353186",
+    "source_doi": "10.1186/s13040-025-00495-0",
+    "source_title": "Clinically aligned multi-modal image-text model for pan-cancer prognosis prediction.",
+    "sentence_text": "Pathology reports, by contrast, are routinely generated and widely available, providing a practical textual modality complementary to histology.",
+    "char_length": 144,
+    "word_count": 18,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41353186_s02",
+    "source_paper_id": "paper_41353186",
+    "source_pmid": "41353186",
+    "source_doi": "10.1186/s13040-025-00495-0",
+    "source_title": "Clinically aligned multi-modal image-text model for pan-cancer prognosis prediction.",
+    "sentence_text": "We present CALM (Clinical Anchor text guided Learning for Multi-modal prognosis prediction), a general framework that integrates pathology images and reports through risk-specific anchor texts.",
+    "char_length": 193,
+    "word_count": 25,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41353186_s03",
+    "source_paper_id": "paper_41353186",
+    "source_pmid": "41353186",
+    "source_doi": "10.1186/s13040-025-00495-0",
+    "source_title": "Clinically aligned multi-modal image-text model for pan-cancer prognosis prediction.",
+    "sentence_text": "CALM systematically incorporates prior clinical knowledge by guiding image and text alignment with large language model\u2013derived anchors, further refined via few-shot tuning.",
+    "char_length": 173,
+    "word_count": 22,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41353186_s04",
+    "source_paper_id": "paper_41353186",
+    "source_pmid": "41353186",
+    "source_doi": "10.1186/s13040-025-00495-0",
+    "source_title": "Clinically aligned multi-modal image-text model for pan-cancer prognosis prediction.",
+    "sentence_text": "Across 14 TCGA cancer types, CALM improved prognostic accuracy compared to image and text baselines (up to +11.5% mean C-index), with enhanced training stability.",
+    "char_length": 162,
+    "word_count": 24,
+    "entities_count": 3,
+    "spans": [
+      {
+        "start_char": 54,
+        "end_char": 62,
+        "text": "accuracy",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 119,
+        "end_char": 126,
+        "text": "C-index",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 10,
+        "end_char": 14,
+        "text": "TCGA",
+        "entity_type": "DATASET",
+        "bio_tag": "B-DATASET",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41353186_s05",
+    "source_paper_id": "paper_41353186",
+    "source_pmid": "41353186",
+    "source_doi": "10.1186/s13040-025-00495-0",
+    "source_title": "Clinically aligned multi-modal image-text model for pan-cancer prognosis prediction.",
+    "sentence_text": "CALM achieved performance comparable to image\u2013omics integration in PORPOISE (0.652 vs. 0.644), highlighting the prognostic value of text.",
+    "char_length": 137,
+    "word_count": 18,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41353186_s06",
+    "source_paper_id": "paper_41353186",
+    "source_pmid": "41353186",
+    "source_doi": "10.1186/s13040-025-00495-0",
+    "source_title": "Clinically aligned multi-modal image-text model for pan-cancer prognosis prediction.",
+    "sentence_text": "External validation in an independent head and neck cancer cohort demonstrated that CALM improved generalization in zero-shot settings.",
+    "char_length": 135,
+    "word_count": 18,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 0,
+        "end_char": 19,
+        "text": "External validation",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41353186_s07",
+    "source_paper_id": "paper_41353186",
+    "source_pmid": "41353186",
+    "source_doi": "10.1186/s13040-025-00495-0",
+    "source_title": "Clinically aligned multi-modal image-text model for pan-cancer prognosis prediction.",
+    "sentence_text": "Attention-based interpretation further confirmed that CALM aligns diagnostic text with tumor regions.",
+    "char_length": 101,
+    "word_count": 12,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41353186_s08",
+    "source_paper_id": "paper_41353186",
+    "source_pmid": "41353186",
+    "source_doi": "10.1186/s13040-025-00495-0",
+    "source_title": "Clinically aligned multi-modal image-text model for pan-cancer prognosis prediction.",
+    "sentence_text": "Together, CALM offers a simple, interpretable, and clinically viable strategy for prognosis prediction, expanding the role of routine pathology reports as scalable priors in multi-modal oncology AI.",
+    "char_length": 198,
+    "word_count": 27,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42374268_s00",
+    "source_paper_id": "paper_42374268",
+    "source_pmid": "42374268",
+    "source_doi": "10.1186/s12880-026-02526-6",
+    "source_title": "Multimodal deep learning for papillary thyroid carcinoma diagnosis using ultrasound and cytology.",
+    "sentence_text": "Papillary thyroid carcinoma (PTC) is the most common thyroid malignancy, and pre-operative diagnosis depends on integrating ultrasound (US) imaging with fine-needle aspiration cytology (FNAC).",
+    "char_length": 192,
+    "word_count": 24,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42374268_s01",
+    "source_paper_id": "paper_42374268",
+    "source_pmid": "42374268",
+    "source_doi": "10.1186/s12880-026-02526-6",
+    "source_title": "Multimodal deep learning for papillary thyroid carcinoma diagnosis using ultrasound and cytology.",
+    "sentence_text": "Pang et al. (2025) recently released a paired US/cytology dataset and demonstrated that classical radiomics combined with classifiers such as support vector machines, random forests, and XGBoost can reach AUROC\u2009\u2248\u20090.99 on a single random split.",
+    "char_length": 243,
+    "word_count": 37,
+    "entities_count": 4,
+    "spans": [
+      {
+        "start_char": 167,
+        "end_char": 181,
+        "text": "random forests",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 98,
+        "end_char": 107,
+        "text": "radiomics",
+        "entity_type": "FEATURE_REPR",
+        "bio_tag": "B-FEATURE_REPR",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 187,
+        "end_char": 194,
+        "text": "XGBoost",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 205,
+        "end_char": 210,
+        "text": "AUROC",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42374268_s02",
+    "source_paper_id": "paper_42374268",
+    "source_pmid": "42374268",
+    "source_doi": "10.1186/s12880-026-02526-6",
+    "source_title": "Multimodal deep learning for papillary thyroid carcinoma diagnosis using ultrasound and cytology.",
+    "sentence_text": "We re-examine this result under a stricter evaluation protocol and contribute a calibrated multimodal deep learning model for PTC diagnosis.",
+    "char_length": 140,
+    "word_count": 20,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 102,
+        "end_char": 115,
+        "text": "deep learning",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.54
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42374268_s03",
+    "source_paper_id": "paper_42374268",
+    "source_pmid": "42374268",
+    "source_doi": "10.1186/s12880-026-02526-6",
+    "source_title": "Multimodal deep learning for papillary thyroid carcinoma diagnosis using ultrasound and cytology.",
+    "sentence_text": "Using 384 patients from the Pang cohort (220 PTC, 164 benign) we created a stratified, untouched 20% holdout (n\u2009=\u200977).",
+    "char_length": 118,
+    "word_count": 21,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42374268_s04",
+    "source_paper_id": "paper_42374268",
+    "source_pmid": "42374268",
+    "source_doi": "10.1186/s12880-026-02526-6",
+    "source_title": "Multimodal deep learning for papillary thyroid carcinoma diagnosis using ultrasound and cytology.",
+    "sentence_text": "On the development set (n\u2009=\u2009307) we performed 5-fold cross-validation and trained a multimodal model (v2) combining a ConvNeXt-Tiny ultrasound encoder, a domain-pretrained CTransPath cytology encoder, gated-attention multiple-instance learning (MIL) over cytology patches, and bidirectional cross-attention fusion.",
+    "char_length": 314,
+    "word_count": 38,
+    "entities_count": 2,
+    "spans": [
+      {
+        "start_char": 53,
+        "end_char": 69,
+        "text": "cross-validation",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 291,
+        "end_char": 306,
+        "text": "cross-attention",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42374268_s05",
+    "source_paper_id": "paper_42374268",
+    "source_pmid": "42374268",
+    "source_doi": "10.1186/s12880-026-02526-6",
+    "source_title": "Multimodal deep learning for papillary thyroid carcinoma diagnosis using ultrasound and cytology.",
+    "sentence_text": "We compared this against a self-attention multimodal baseline (v1), unimodal ablations, and a modified Pang-style classical comparator that, because lesion masks were not released with the public dataset, used whole-image radiomics-style features rather than ROI-based features.",
+    "char_length": 278,
+    "word_count": 36,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 222,
+        "end_char": 231,
+        "text": "radiomics",
+        "entity_type": "FEATURE_REPR",
+        "bio_tag": "B-FEATURE_REPR",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42374268_s06",
+    "source_paper_id": "paper_42374268",
+    "source_pmid": "42374268",
+    "source_doi": "10.1186/s12880-026-02526-6",
+    "source_title": "Multimodal deep learning for papillary thyroid carcinoma diagnosis using ultrasound and cytology.",
+    "sentence_text": "Evaluation included bootstrap and Wilson confidence intervals, paired DeLong tests, McNemar tests, and a four-method calibration analysis (none, temperature, Platt, isotonic) using ensemble out-of-fold predictions and equal-mass binning.",
+    "char_length": 237,
+    "word_count": 28,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42374268_s07",
+    "source_paper_id": "paper_42374268",
+    "source_pmid": "42374268",
+    "source_doi": "10.1186/s12880-026-02526-6",
+    "source_title": "Multimodal deep learning for papillary thyroid carcinoma diagnosis using ultrasound and cytology.",
+    "sentence_text": "Multimodal v2 achieved holdout AUROC 0.977 (95% CI 0.949-0.996), Brier 0.042 (95% CI 0.014-0.079), sensitivity 0.977 (Wilson 0.882-0.996), and specificity 0.939 (Wilson 0.804-0.983) at the cross-validation Youden threshold.",
+    "char_length": 223,
+    "word_count": 28,
+    "entities_count": 2,
+    "spans": [
+      {
+        "start_char": 189,
+        "end_char": 205,
+        "text": "cross-validation",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 31,
+        "end_char": 36,
+        "text": "AUROC",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42374268_s08",
+    "source_paper_id": "paper_42374268",
+    "source_pmid": "42374268",
+    "source_doi": "10.1186/s12880-026-02526-6",
+    "source_title": "Multimodal deep learning for papillary thyroid carcinoma diagnosis using ultrasound and cytology.",
+    "sentence_text": "Across three random seeds (42, 7, 123), AUROC was 0.977\u2009\u00b1\u20090.0004 (mean\u2009\u00b1\u2009SD).",
+    "char_length": 77,
+    "word_count": 15,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 40,
+        "end_char": 45,
+        "text": "AUROC",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42374268_s09",
+    "source_paper_id": "paper_42374268",
+    "source_pmid": "42374268",
+    "source_doi": "10.1186/s12880-026-02526-6",
+    "source_title": "Multimodal deep learning for papillary thyroid carcinoma diagnosis using ultrasound and cytology.",
+    "sentence_text": "Paired DeLong showed our model statistically outperformed Pang's reimplemented Random Forest (p\u2009=\u20090.017) and XGBoost (p\u2009=\u20090.022) on identical holdout patients.",
+    "char_length": 159,
+    "word_count": 23,
+    "entities_count": 2,
+    "spans": [
+      {
+        "start_char": 79,
+        "end_char": 92,
+        "text": "Random Forest",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.76
+      },
+      {
+        "start_char": 109,
+        "end_char": 116,
+        "text": "XGBoost",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.76
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42374268_s10",
+    "source_paper_id": "paper_42374268",
+    "source_pmid": "42374268",
+    "source_doi": "10.1186/s12880-026-02526-6",
+    "source_title": "Multimodal deep learning for papillary thyroid carcinoma diagnosis using ultrasound and cytology.",
+    "sentence_text": "Paired DeLong vs. the v1 baseline showed identical patient ranking (p\u2009=\u20091.0), but v2 showed numerically better operating-point and probability quality despite the identical ranking: Brier was roughly halved (0.042 vs. 0.083), MCC at threshold 0.5 increased by 0.105 (0.894 vs. 0.789), and uncalibrated expected calibration error fell from 0.114 to 0.042.",
+    "char_length": 354,
+    "word_count": 53,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 302,
+        "end_char": 328,
+        "text": "expected calibration error",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.54
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42374268_s11",
+    "source_paper_id": "paper_42374268",
+    "source_pmid": "42374268",
+    "source_doi": "10.1186/s12880-026-02526-6",
+    "source_title": "Multimodal deep learning for papillary thyroid carcinoma diagnosis using ultrasound and cytology.",
+    "sentence_text": "The difference in paired binary decisions between v1 and v2 was, however, not statistically significant (McNemar p\u2009=\u20090.221).",
+    "char_length": 124,
+    "word_count": 19,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42374268_s12",
+    "source_paper_id": "paper_42374268",
+    "source_pmid": "42374268",
+    "source_doi": "10.1186/s12880-026-02526-6",
+    "source_title": "Multimodal deep learning for papillary thyroid carcinoma diagnosis using ultrasound and cytology.",
+    "sentence_text": "Calibration analysis revealed that temperature scaling, the de facto standard, was inappropriate for cross-validated ensembles, while isotonic regression on out-of-fold predictions reduced ECE by 53% on the v1 baseline.",
+    "char_length": 219,
+    "word_count": 29,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 189,
+        "end_char": 192,
+        "text": "ECE",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.54
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42374268_s13",
+    "source_paper_id": "paper_42374268",
+    "source_pmid": "42374268",
+    "source_doi": "10.1186/s12880-026-02526-6",
+    "source_title": "Multimodal deep learning for papillary thyroid carcinoma diagnosis using ultrasound and cytology.",
+    "sentence_text": "A multimodal model with domain-pretrained encoders and proper MIL aggregation achieves discriminative performance comparable to a modified Pang-style classical comparator and shows improved probability quality (lower Brier and calibration error), although these gains over the simpler v1 baseline did not reach statistical significance on the present holdout.",
+    "char_length": 359,
+    "word_count": 47,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42374268_s14",
+    "source_paper_id": "paper_42374268",
+    "source_pmid": "42374268",
+    "source_doi": "10.1186/s12880-026-02526-6",
+    "source_title": "Multimodal deep learning for papillary thyroid carcinoma diagnosis using ultrasound and cytology.",
+    "sentence_text": "We argue that AUROC alone is insufficient for evaluating clinical AI: discrimination and calibration are distinct properties, and operating-point performance is more directly relevant to deployment.",
+    "char_length": 198,
+    "word_count": 26,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 14,
+        "end_char": 19,
+        "text": "AUROC",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42374268_s15",
+    "source_paper_id": "paper_42374268",
+    "source_pmid": "42374268",
+    "source_doi": "10.1186/s12880-026-02526-6",
+    "source_title": "Multimodal deep learning for papillary thyroid carcinoma diagnosis using ultrasound and cytology.",
+    "sentence_text": "We acknowledge that the present ultrasound branch operates on whole-image crops without explicit lesion localization and therefore should not yet be regarded as a lesion-specific clinical decision tool.",
+    "char_length": 202,
+    "word_count": 28,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42374268_s16",
+    "source_paper_id": "paper_42374268",
+    "source_pmid": "42374268",
+    "source_doi": "10.1186/s12880-026-02526-6",
+    "source_title": "Multimodal deep learning for papillary thyroid carcinoma diagnosis using ultrasound and cytology.",
+    "sentence_text": "Code and analysis scripts are released on GitHub.",
+    "char_length": 49,
+    "word_count": 8,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42569686_s00",
+    "source_paper_id": "paper_42569686",
+    "source_pmid": "42569686",
+    "source_doi": "10.1016/j.bas.2026.106168",
+    "source_title": "Does the surgical route matter in cerebellar mutism syndrome? Comparing transvermian and telovelar approaches for pediatric posterior fossa tumors.",
+    "sentence_text": "Children and adolescents undergoing surgery for posterior fossa brain tumors are at risk of developing cerebellar mutism syndrome (CMS).",
+    "char_length": 136,
+    "word_count": 19,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42569686_s01",
+    "source_paper_id": "paper_42569686",
+    "source_pmid": "42569686",
+    "source_doi": "10.1016/j.bas.2026.106168",
+    "source_title": "Does the surgical route matter in cerebellar mutism syndrome? Comparing transvermian and telovelar approaches for pediatric posterior fossa tumors.",
+    "sentence_text": "Mutism or reduced speech is a cardinal symptom; however, CMS is also characterized by motor, cognitive, and emotional difficulties that may persist as long-term sequelae.",
+    "char_length": 170,
+    "word_count": 25,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42569686_s02",
+    "source_paper_id": "paper_42569686",
+    "source_pmid": "42569686",
+    "source_doi": "10.1016/j.bas.2026.106168",
+    "source_title": "Does the surgical route matter in cerebellar mutism syndrome? Comparing transvermian and telovelar approaches for pediatric posterior fossa tumors.",
+    "sentence_text": "The potential association between vermian incision during tumor resection and an increased incidence of CMS remains a subject of debate in the literature.",
+    "char_length": 154,
+    "word_count": 23,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42569686_s03",
+    "source_paper_id": "paper_42569686",
+    "source_pmid": "42569686",
+    "source_doi": "10.1016/j.bas.2026.106168",
+    "source_title": "Does the surgical route matter in cerebellar mutism syndrome? Comparing transvermian and telovelar approaches for pediatric posterior fossa tumors.",
+    "sentence_text": "This review aimed to evaluate whether the telovelar approach is associated with a lower risk of CMS compared with the transvermian approach.",
+    "char_length": 140,
+    "word_count": 22,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42569686_s04",
+    "source_paper_id": "paper_42569686",
+    "source_pmid": "42569686",
+    "source_doi": "10.1016/j.bas.2026.106168",
+    "source_title": "Does the surgical route matter in cerebellar mutism syndrome? Comparing transvermian and telovelar approaches for pediatric posterior fossa tumors.",
+    "sentence_text": "Original studies were identified through a structured literature search of the PubMed and EMBASE databases.",
+    "char_length": 107,
+    "word_count": 15,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42569686_s05",
+    "source_paper_id": "paper_42569686",
+    "source_pmid": "42569686",
+    "source_doi": "10.1016/j.bas.2026.106168",
+    "source_title": "Does the surgical route matter in cerebellar mutism syndrome? Comparing transvermian and telovelar approaches for pediatric posterior fossa tumors.",
+    "sentence_text": "Postoperative speech outcomes and surgical approaches were extracted, and a pooled odds ratio (OR) was estimated using a random-effects model.",
+    "char_length": 142,
+    "word_count": 20,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42569686_s06",
+    "source_paper_id": "paper_42569686",
+    "source_pmid": "42569686",
+    "source_doi": "10.1016/j.bas.2026.106168",
+    "source_title": "Does the surgical route matter in cerebellar mutism syndrome? Comparing transvermian and telovelar approaches for pediatric posterior fossa tumors.",
+    "sentence_text": "16 studies (PS\u202f=\u202f6, RS\u202f=\u202f9, mixed PS/RS\u202f=\u202f1) met the inclusion criteria, comprising a total of 1369 patients.",
+    "char_length": 109,
+    "word_count": 22,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42569686_s07",
+    "source_paper_id": "paper_42569686",
+    "source_pmid": "42569686",
+    "source_doi": "10.1016/j.bas.2026.106168",
+    "source_title": "Does the surgical route matter in cerebellar mutism syndrome? Comparing transvermian and telovelar approaches for pediatric posterior fossa tumors.",
+    "sentence_text": "A pooled estimate yielded an OR of 1.85 (95% CI: 0.95-3.59,  This review adds to the existing evidence on surgery-related risk factors for CMS.",
+    "char_length": 143,
+    "word_count": 24,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42569686_s08",
+    "source_paper_id": "paper_42569686",
+    "source_pmid": "42569686",
+    "source_doi": "10.1016/j.bas.2026.106168",
+    "source_title": "Does the surgical route matter in cerebellar mutism syndrome? Comparing transvermian and telovelar approaches for pediatric posterior fossa tumors.",
+    "sentence_text": "We found no significant difference in CMS risk between transvermian and telovelar approaches, indicating no clear advantage of either approach in preventing CMS.",
+    "char_length": 161,
+    "word_count": 23,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  }
+]

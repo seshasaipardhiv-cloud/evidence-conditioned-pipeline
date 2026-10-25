@@ -1,34 +1,34 @@
 {
-  "neck": {
-    "canonical_name": "neck",
-    "entity_type": "DATASET",
-    "mechanism_category": "UNMAPPED",
-    "composite_score": 0.5524,
-    "ner_confidence_score": 0.0842,
+  "deep learning": {
+    "canonical_name": "Deep learning",
+    "entity_type": "MODEL_ARCH",
+    "mechanism_category": "Representation",
+    "composite_score": 0.6472,
+    "ner_confidence_score": 0.2424,
     "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0789,
+    "relation_confidence_score": 0.5,
     "full_text_score": 1.0,
     "provenance_score": 1.0,
     "paper_support_score": 0.3869,
     "task_modality_match_score": 0.85,
     "supporting_paper_count": 1,
     "supporting_paper_ids": [
-      "paper_38396486"
+      "paper_40657529"
     ],
     "supporting_pmids": [
-      "38396486"
+      "40657529"
     ],
     "supporting_dois": [
-      "10.3390/diagnostics14040448"
+      "10.1109/JTEHM.2025.3562724"
     ],
     "total_mention_count": 1,
     "methods_section_mentions": 0,
-    "participating_relation_count": 1,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.084, section relevance 0.75, and composite score 0.5524.",
+    "participating_relation_count": 0,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.242, section relevance 0.75, and composite score 0.6472.",
     "factor_breakdown": {
-      "ner_confidence_component": 0.0168,
+      "ner_confidence_component": 0.0485,
       "section_relevance_component": 0.15,
-      "relation_component": 0.0118,
+      "relation_component": 0.075,
       "full_text_component": 0.15,
       "provenance_component": 0.1,
       "support_component": 0.0387,
@@ -36,39 +36,443 @@
     },
     "scoring_version": "Stage2D_SectionAware_v2.0"
   },
-  "modal": {
-    "canonical_name": "modal",
-    "entity_type": "DATASET",
-    "mechanism_category": "UNMAPPED",
-    "composite_score": 0.5834,
-    "ner_confidence_score": 0.1142,
+  "fusion": {
+    "canonical_name": "fusion",
+    "entity_type": "FUSION",
+    "mechanism_category": "Fusion",
+    "composite_score": 0.6445,
+    "ner_confidence_score": 0.1962,
     "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.095,
+    "relation_confidence_score": 0.2807,
+    "full_text_score": 0.8545,
+    "provenance_score": 1.0,
+    "paper_support_score": 1.0,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 8,
+    "supporting_paper_ids": [
+      "paper_41645153",
+      "paper_41815162",
+      "paper_41968976",
+      "paper_40325104",
+      "paper_39074400",
+      "paper_42558280",
+      "paper_10.1038_s42256-023-00633-5",
+      "paper_42332139"
+    ],
+    "supporting_pmids": [
+      "41815162",
+      "41645153",
+      "39074400",
+      "40325104",
+      "41968976",
+      "42558280",
+      "42332139",
+      "37693852"
+    ],
+    "supporting_dois": [
+      "10.21037/tcr-2025-1832",
+      "10.1038/s41698-025-00917-6",
+      "10.1038/s42256-023-00633-5",
+      "10.20892/j.issn.2095-3941.2025.0771",
+      "10.1038/s41746-026-02783-3",
+      "10.1186/s12880-026-02179-5",
+      "10.3389/fonc.2026.1906810",
+      "10.1097/RLI.0000000000001102"
+    ],
+    "total_mention_count": 11,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 9,
+    "selection_rationale": "Supported by 8 paper(s) (0 in Methods sections), mean NER confidence 0.196, section relevance 0.75, and composite score 0.6445.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0392,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0421,
+      "full_text_component": 0.1282,
+      "provenance_component": 0.1,
+      "support_component": 0.1,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "accuracy": {
+    "canonical_name": "accuracy",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6746,
+    "ner_confidence_score": 0.2462,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.3291,
+    "full_text_score": 0.94,
+    "provenance_score": 1.0,
+    "paper_support_score": 1.0,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 14,
+    "supporting_paper_ids": [
+      "paper_41645153",
+      "paper_41815162",
+      "paper_39074400",
+      "paper_41353186",
+      "paper_40657529",
+      "paper_42141332",
+      "paper_40449048",
+      "paper_41131352",
+      "paper_10.3390_bioengineering11010013",
+      "paper_41942785",
+      "paper_42558280",
+      "paper_41102633",
+      "paper_40325104",
+      "paper_42487970"
+    ],
+    "supporting_pmids": [
+      "41942785",
+      "42141332",
+      "41815162",
+      "41645153",
+      "39074400",
+      "41102633",
+      "40657529",
+      "40325104",
+      "41131352",
+      "40449048",
+      "41353186",
+      "42558280",
+      "42487970"
+    ],
+    "supporting_dois": [
+      "10.21037/tcr-2025-1832",
+      "10.1038/s41698-025-00917-6",
+      "10.1016/j.compbiomed.2025.110488",
+      "10.1186/s13244-026-02311-7",
+      "10.1109/JTEHM.2025.3562724",
+      "10.3389/fmed.2026.1842344",
+      "10.1038/s41746-025-02003-4",
+      "10.3390/bioengineering11010013",
+      "10.1186/s13040-025-00495-0",
+      "10.1186/s12880-026-02179-5",
+      "10.3389/fonc.2026.1906810",
+      "10.1007/s00109-026-02669-7",
+      "10.1097/RLI.0000000000001102",
+      "10.1186/s12859-025-06227-9"
+    ],
+    "total_mention_count": 20,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 47,
+    "selection_rationale": "Supported by 14 paper(s) (0 in Methods sections), mean NER confidence 0.246, section relevance 0.75, and composite score 0.6746.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0492,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0494,
+      "full_text_component": 0.141,
+      "provenance_component": 0.1,
+      "support_component": 0.1,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "cnn": {
+    "canonical_name": "CNN",
+    "entity_type": "MODEL_ARCH",
+    "mechanism_category": "Representation",
+    "composite_score": 0.6715,
+    "ner_confidence_score": 0.2525,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.4575,
+    "full_text_score": 0.9333,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.7737,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 3,
+    "supporting_paper_ids": [
+      "paper_10.3390_bioengineering11010013",
+      "paper_42389632",
+      "paper_40449048"
+    ],
+    "supporting_pmids": [
+      "40449048",
+      "42389632"
+    ],
+    "supporting_dois": [
+      "10.3390/bioengineering11010013",
+      "10.3389/fcvm.2026.1834641",
+      "10.1016/j.compbiomed.2025.110488"
+    ],
+    "total_mention_count": 6,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 2,
+    "selection_rationale": "Supported by 3 paper(s) (0 in Methods sections), mean NER confidence 0.252, section relevance 0.75, and composite score 0.6715.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0505,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0686,
+      "full_text_component": 0.14,
+      "provenance_component": 0.1,
+      "support_component": 0.0774,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "recall": {
+    "canonical_name": "recall",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6498,
+    "ner_confidence_score": 0.272,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.3275,
     "full_text_score": 1.0,
     "provenance_score": 1.0,
     "paper_support_score": 0.6131,
     "task_modality_match_score": 0.85,
     "supporting_paper_count": 2,
     "supporting_paper_ids": [
-      "paper_38396486",
-      "paper_41353186"
+      "paper_10.3390_bioengineering11010013",
+      "paper_41815162"
     ],
     "supporting_pmids": [
-      "41353186",
-      "38396486"
+      "41815162"
     ],
     "supporting_dois": [
-      "10.3390/diagnostics14040448",
-      "10.1186/s13040-025-00495-0"
+      "10.21037/tcr-2025-1832",
+      "10.3390/bioengineering11010013"
+    ],
+    "total_mention_count": 2,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 12,
+    "selection_rationale": "Supported by 2 paper(s) (0 in Methods sections), mean NER confidence 0.272, section relevance 0.75, and composite score 0.6498.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0544,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0491,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0613,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "auc": {
+    "canonical_name": "AUC",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.77,
+    "ner_confidence_score": 0.7488,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.3304,
+    "full_text_score": 0.9048,
+    "provenance_score": 1.0,
+    "paper_support_score": 1.0,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 8,
+    "supporting_paper_ids": [
+      "paper_41645153",
+      "paper_41815162",
+      "paper_41968976",
+      "paper_39074400",
+      "paper_42141332",
+      "paper_10.3390_bioengineering11010013",
+      "paper_42389632",
+      "paper_42487970"
+    ],
+    "supporting_pmids": [
+      "42141332",
+      "41815162",
+      "41645153",
+      "39074400",
+      "42389632",
+      "41968976",
+      "42487970"
+    ],
+    "supporting_dois": [
+      "10.21037/tcr-2025-1832",
+      "10.1186/s13244-026-02311-7",
+      "10.3389/fmed.2026.1842344",
+      "10.3390/bioengineering11010013",
+      "10.20892/j.issn.2095-3941.2025.0771",
+      "10.1186/s12880-026-02179-5",
+      "10.3389/fcvm.2026.1834641",
+      "10.1097/RLI.0000000000001102"
+    ],
+    "total_mention_count": 21,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 82,
+    "selection_rationale": "Supported by 8 paper(s) (0 in Methods sections), mean NER confidence 0.749, section relevance 0.75, and composite score 0.7700.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.1498,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0496,
+      "full_text_component": 0.1357,
+      "provenance_component": 0.1,
+      "support_component": 0.1,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "f1 score": {
+    "canonical_name": "F1 score",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6641,
+    "ner_confidence_score": 0.2608,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.3308,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.7737,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 3,
+    "supporting_paper_ids": [
+      "paper_10.3390_bioengineering11010013",
+      "paper_41815162",
+      "paper_42487970"
+    ],
+    "supporting_pmids": [
+      "41815162",
+      "42487970"
+    ],
+    "supporting_dois": [
+      "10.21037/tcr-2025-1832",
+      "10.3390/bioengineering11010013",
+      "10.3389/fmed.2026.1842344"
     ],
     "total_mention_count": 5,
     "methods_section_mentions": 0,
-    "participating_relation_count": 2,
-    "selection_rationale": "Supported by 2 paper(s) (0 in Methods sections), mean NER confidence 0.114, section relevance 0.75, and composite score 0.5834.",
+    "participating_relation_count": 20,
+    "selection_rationale": "Supported by 3 paper(s) (0 in Methods sections), mean NER confidence 0.261, section relevance 0.75, and composite score 0.6641.",
     "factor_breakdown": {
-      "ner_confidence_component": 0.0228,
+      "ner_confidence_component": 0.0522,
       "section_relevance_component": 0.15,
-      "relation_component": 0.0143,
+      "relation_component": 0.0496,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0774,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "tcga": {
+    "canonical_name": "TCGA",
+    "entity_type": "DATASET",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6513,
+    "ner_confidence_score": 0.2179,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.3021,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.7737,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 3,
+    "supporting_paper_ids": [
+      "paper_41131352",
+      "paper_10.3390_bioengineering11010013",
+      "paper_40325104"
+    ],
+    "supporting_pmids": [
+      "40325104",
+      "41131352"
+    ],
+    "supporting_dois": [
+      "10.1038/s41746-025-02003-4",
+      "10.3390/bioengineering11010013",
+      "10.1038/s41698-025-00917-6"
+    ],
+    "total_mention_count": 3,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 5,
+    "selection_rationale": "Supported by 3 paper(s) (0 in Methods sections), mean NER confidence 0.218, section relevance 0.75, and composite score 0.6513.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0436,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0453,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0774,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "cross": {
+    "canonical_name": "cross",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6449,
+    "ner_confidence_score": 0.2483,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.3183,
+    "full_text_score": 0.75,
+    "provenance_score": 1.0,
+    "paper_support_score": 1.0,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 5,
+    "supporting_paper_ids": [
+      "paper_41645153",
+      "paper_42374268",
+      "paper_38396486",
+      "paper_40449048",
+      "paper_42467849"
+    ],
+    "supporting_pmids": [
+      "41645153",
+      "38396486",
+      "42467849",
+      "40449048",
+      "42374268"
+    ],
+    "supporting_dois": [
+      "10.1016/j.compbiomed.2025.110488",
+      "10.3390/diagnostics14040448",
+      "10.1186/s12880-026-02179-5",
+      "10.1186/s12880-026-02526-6",
+      "10.1158/2767-9764.CRC-26-0362"
+    ],
+    "total_mention_count": 8,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 15,
+    "selection_rationale": "Supported by 5 paper(s) (0 in Methods sections), mean NER confidence 0.248, section relevance 0.75, and composite score 0.6449.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0497,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0477,
+      "full_text_component": 0.1125,
+      "provenance_component": 0.1,
+      "support_component": 0.1,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "attention": {
+    "canonical_name": "attention",
+    "entity_type": "FUSION",
+    "mechanism_category": "Fusion",
+    "composite_score": 0.7155,
+    "ner_confidence_score": 0.6152,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.3079,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.6131,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 2,
+    "supporting_paper_ids": [
+      "paper_41645153",
+      "paper_38396486"
+    ],
+    "supporting_pmids": [
+      "38396486",
+      "41645153"
+    ],
+    "supporting_dois": [
+      "10.1186/s12880-026-02179-5",
+      "10.3390/diagnostics14040448"
+    ],
+    "total_mention_count": 2,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 6,
+    "selection_rationale": "Supported by 2 paper(s) (0 in Methods sections), mean NER confidence 0.615, section relevance 0.75, and composite score 0.7155.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.123,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0462,
       "full_text_component": 0.15,
       "provenance_component": 0.1,
       "support_component": 0.0613,
@@ -80,862 +484,8 @@
     "canonical_name": "learning",
     "entity_type": "MODEL_ARCH",
     "mechanism_category": "Representation",
-    "composite_score": 0.615,
-    "ner_confidence_score": 0.0816,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.5,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_38396486"
-    ],
-    "supporting_pmids": [
-      "38396486"
-    ],
-    "supporting_dois": [
-      "10.3390/diagnostics14040448"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 0,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.082, section relevance 0.75, and composite score 0.6150.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0163,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.075,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "cross-attention": {
-    "canonical_name": "cross-attention",
-    "entity_type": "LOSS",
-    "mechanism_category": "Loss",
-    "composite_score": 0.5795,
-    "ner_confidence_score": 0.1525,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.1689,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_38396486"
-    ],
-    "supporting_pmids": [
-      "38396486"
-    ],
-    "supporting_dois": [
-      "10.3390/diagnostics14040448"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 2,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.153, section relevance 0.75, and composite score 0.5795.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0305,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0253,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "ct": {
-    "canonical_name": "CT",
-    "entity_type": "DATASET",
-    "mechanism_category": "UNMAPPED",
-    "composite_score": 0.5601,
-    "ner_confidence_score": 0.0887,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.1242,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_38396486"
-    ],
-    "supporting_pmids": [
-      "38396486"
-    ],
-    "supporting_dois": [
-      "10.3390/diagnostics14040448"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 2,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.089, section relevance 0.75, and composite score 0.5601.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0177,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0186,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "former": {
-    "canonical_name": "former",
-    "entity_type": "DATASET",
-    "mechanism_category": "UNMAPPED",
-    "composite_score": 0.5899,
-    "ner_confidence_score": 0.2042,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.1689,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_38396486"
-    ],
-    "supporting_pmids": [
-      "38396486"
-    ],
-    "supporting_dois": [
-      "10.3390/diagnostics14040448"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 2,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.204, section relevance 0.75, and composite score 0.5899.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0408,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0253,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "comme": {
-    "canonical_name": "comme",
-    "entity_type": "DATASET",
-    "mechanism_category": "UNMAPPED",
-    "composite_score": 0.6154,
-    "ner_confidence_score": 0.0834,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.5,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_38396486"
-    ],
-    "supporting_pmids": [
-      "38396486"
-    ],
-    "supporting_dois": [
-      "10.3390/diagnostics14040448"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 0,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.083, section relevance 0.75, and composite score 0.6154.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0167,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.075,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "metastasis": {
-    "canonical_name": "metastasis",
-    "entity_type": "LOSS",
-    "mechanism_category": "Loss",
-    "composite_score": 0.5493,
-    "ner_confidence_score": 0.065,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0839,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_38396486"
-    ],
-    "supporting_pmids": [
-      "38396486"
-    ],
-    "supporting_dois": [
-      "10.3390/diagnostics14040448"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 8,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.065, section relevance 0.75, and composite score 0.5493.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.013,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0126,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "free": {
-    "canonical_name": "free",
-    "entity_type": "DATASET",
-    "mechanism_category": "UNMAPPED",
-    "composite_score": 0.548,
-    "ner_confidence_score": 0.0635,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0775,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_38396486"
-    ],
-    "supporting_pmids": [
-      "38396486"
-    ],
-    "supporting_dois": [
-      "10.3390/diagnostics14040448"
-    ],
-    "total_mention_count": 3,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 24,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.063, section relevance 0.75, and composite score 0.5480.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0127,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0116,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "rf": {
-    "canonical_name": "RF",
-    "entity_type": "MODEL_ARCH",
-    "mechanism_category": "Representation",
-    "composite_score": 0.5552,
-    "ner_confidence_score": 0.0925,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0866,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_38396486"
-    ],
-    "supporting_pmids": [
-      "38396486"
-    ],
-    "supporting_dois": [
-      "10.3390/diagnostics14040448"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 8,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.092, section relevance 0.75, and composite score 0.5552.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0185,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.013,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "follows": {
-    "canonical_name": "follows",
-    "entity_type": "DATASET",
-    "mechanism_category": "UNMAPPED",
-    "composite_score": 0.5461,
-    "ner_confidence_score": 0.0554,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0756,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_38396486"
-    ],
-    "supporting_pmids": [
-      "38396486"
-    ],
-    "supporting_dois": [
-      "10.3390/diagnostics14040448"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 8,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.055, section relevance 0.75, and composite score 0.5461.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0111,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0113,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "79": {
-    "canonical_name": "79",
-    "entity_type": "HYPERPARAMETER",
-    "mechanism_category": "UNMAPPED",
-    "composite_score": 0.5466,
-    "ner_confidence_score": 0.057,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.077,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_38396486"
-    ],
-    "supporting_pmids": [
-      "38396486"
-    ],
-    "supporting_dois": [
-      "10.3390/diagnostics14040448"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 8,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.057, section relevance 0.75, and composite score 0.5466.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0114,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0116,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "64": {
-    "canonical_name": "64",
-    "entity_type": "DATASET",
-    "mechanism_category": "UNMAPPED",
-    "composite_score": 0.5467,
-    "ner_confidence_score": 0.0572,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0771,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_38396486"
-    ],
-    "supporting_pmids": [
-      "38396486"
-    ],
-    "supporting_dois": [
-      "10.3390/diagnostics14040448"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 8,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.057, section relevance 0.75, and composite score 0.5467.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0114,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0116,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "69": {
-    "canonical_name": "69",
-    "entity_type": "DATASET",
-    "mechanism_category": "UNMAPPED",
-    "composite_score": 0.5428,
-    "ner_confidence_score": 0.0467,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0654,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_38396486"
-    ],
-    "supporting_pmids": [
-      "38396486"
-    ],
-    "supporting_dois": [
-      "10.3390/diagnostics14040448"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 8,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.047, section relevance 0.75, and composite score 0.5428.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0094,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0098,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "significant": {
-    "canonical_name": "significant",
-    "entity_type": "OPTIMIZATION",
-    "mechanism_category": "Regularization",
-    "composite_score": 0.506,
-    "ner_confidence_score": 0.1308,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.1074,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_39074400"
-    ],
-    "supporting_pmids": [
-      "39074400"
-    ],
-    "supporting_dois": [
-      "10.1097/RLI.0000000000001102"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 3,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.131, section relevance 0.75, and composite score 0.5060.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0262,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0161,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "magnetic": {
-    "canonical_name": "magnetic",
-    "entity_type": "REGULARIZATION",
-    "mechanism_category": "Regularization",
-    "composite_score": 0.4855,
-    "ner_confidence_score": 0.0532,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0745,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_39074400"
-    ],
-    "supporting_pmids": [
-      "39074400"
-    ],
-    "supporting_dois": [
-      "10.1097/RLI.0000000000001102"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 3,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.053, section relevance 0.75, and composite score 0.4855.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0106,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0112,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "resonance": {
-    "canonical_name": "resonance",
-    "entity_type": "PREPROCESSING",
-    "mechanism_category": "Preprocessing",
-    "composite_score": 0.4914,
-    "ner_confidence_score": 0.0663,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0964,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_39074400"
-    ],
-    "supporting_pmids": [
-      "39074400"
-    ],
-    "supporting_dois": [
-      "10.1097/RLI.0000000000001102"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 3,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.066, section relevance 0.75, and composite score 0.4914.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0133,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0145,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "specific antigen": {
-    "canonical_name": "specific antigen",
-    "entity_type": "MODEL_ARCH",
-    "mechanism_category": "Representation",
-    "composite_score": 0.5029,
-    "ner_confidence_score": 0.1083,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.1171,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_39074400"
-    ],
-    "supporting_pmids": [
-      "39074400"
-    ],
-    "supporting_dois": [
-      "10.1097/RLI.0000000000001102"
-    ],
-    "total_mention_count": 2,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 3,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.108, section relevance 0.75, and composite score 0.5029.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0217,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0176,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "93": {
-    "canonical_name": "93",
-    "entity_type": "DATASET",
-    "mechanism_category": "UNMAPPED",
-    "composite_score": 0.4854,
-    "ner_confidence_score": 0.0524,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.075,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_39074400"
-    ],
-    "supporting_pmids": [
-      "39074400"
-    ],
-    "supporting_dois": [
-      "10.1097/RLI.0000000000001102"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 2,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.052, section relevance 0.75, and composite score 0.4854.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0105,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0112,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "aram": {
-    "canonical_name": "aram",
-    "entity_type": "LOSS",
-    "mechanism_category": "Loss",
-    "composite_score": 0.4794,
-    "ner_confidence_score": 0.0382,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0535,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_39074400"
-    ],
-    "supporting_pmids": [
-      "39074400"
-    ],
-    "supporting_dois": [
-      "10.1097/RLI.0000000000001102"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 2,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.038, section relevance 0.75, and composite score 0.4794.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0076,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.008,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "etric": {
-    "canonical_name": "etric",
-    "entity_type": "PREPROCESSING",
-    "mechanism_category": "Preprocessing",
-    "composite_score": 0.4868,
-    "ner_confidence_score": 0.0592,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.075,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_39074400"
-    ],
-    "supporting_pmids": [
-      "39074400"
-    ],
-    "supporting_dois": [
-      "10.1097/RLI.0000000000001102"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 2,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.059, section relevance 0.75, and composite score 0.4868.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0118,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0112,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "model": {
-    "canonical_name": "model",
-    "entity_type": "MODEL_ARCH",
-    "mechanism_category": "Representation",
-    "composite_score": 0.4876,
-    "ner_confidence_score": 0.0715,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0642,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_39074400"
-    ],
-    "supporting_pmids": [
-      "39074400"
-    ],
-    "supporting_dois": [
-      "10.1097/RLI.0000000000001102"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 1,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.071, section relevance 0.75, and composite score 0.4876.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0143,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0096,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "csp": {
-    "canonical_name": "csP",
-    "entity_type": "FUSION",
-    "mechanism_category": "Fusion",
-    "composite_score": 0.4825,
-    "ner_confidence_score": 0.0401,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0719,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_39074400"
-    ],
-    "supporting_pmids": [
-      "39074400"
-    ],
-    "supporting_dois": [
-      "10.1097/RLI.0000000000001102"
-    ],
-    "total_mention_count": 2,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 3,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.040, section relevance 0.75, and composite score 0.4825.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.008,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0108,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "artificial": {
-    "canonical_name": "artificial",
-    "entity_type": "SAMPLING",
-    "mechanism_category": "Sampling",
-    "composite_score": 0.5081,
-    "ner_confidence_score": 0.0562,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0705,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.6131,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 2,
-    "supporting_paper_ids": [
-      "paper_39074400",
-      "paper_40449048"
-    ],
-    "supporting_pmids": [
-      "39074400",
-      "40449048"
-    ],
-    "supporting_dois": [
-      "10.1097/RLI.0000000000001102",
-      "10.1016/j.compbiomed.2025.110488"
-    ],
-    "total_mention_count": 2,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 3,
-    "selection_rationale": "Supported by 2 paper(s) (0 in Methods sections), mean NER confidence 0.056, section relevance 0.75, and composite score 0.5081.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0112,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0106,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0613,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "intelligence": {
-    "canonical_name": "intelligence",
-    "entity_type": "MODEL_ARCH",
-    "mechanism_category": "Representation",
-    "composite_score": 0.4907,
-    "ner_confidence_score": 0.063,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0958,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_39074400"
-    ],
-    "supporting_pmids": [
-      "39074400"
-    ],
-    "supporting_dois": [
-      "10.1097/RLI.0000000000001102"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 1,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.063, section relevance 0.75, and composite score 0.4907.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0126,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0144,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "unim": {
-    "canonical_name": "unim",
-    "entity_type": "OPTIMIZATION",
-    "mechanism_category": "Regularization",
-    "composite_score": 0.5518,
-    "ner_confidence_score": 0.0654,
+    "composite_score": 0.5779,
+    "ner_confidence_score": 0.1962,
     "section_relevance_score": 0.75,
     "relation_confidence_score": 0.5,
     "full_text_score": 0.6,
@@ -955,9 +505,9 @@
     "total_mention_count": 1,
     "methods_section_mentions": 0,
     "participating_relation_count": 0,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.065, section relevance 0.75, and composite score 0.5518.",
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.196, section relevance 0.75, and composite score 0.5779.",
     "factor_breakdown": {
-      "ner_confidence_component": 0.0131,
+      "ner_confidence_component": 0.0392,
       "section_relevance_component": 0.15,
       "relation_component": 0.075,
       "full_text_component": 0.09,
@@ -967,224 +517,39 @@
     },
     "scoring_version": "Stage2D_SectionAware_v2.0"
   },
-  "rad": {
-    "canonical_name": "RAD",
-    "entity_type": "DATASET",
+  "area": {
+    "canonical_name": "area",
+    "entity_type": "EVALUATION",
     "mechanism_category": "UNMAPPED",
-    "composite_score": 0.5603,
-    "ner_confidence_score": 0.1079,
+    "composite_score": 0.6186,
+    "ner_confidence_score": 0.2611,
     "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.5,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_39074400"
-    ],
-    "supporting_pmids": [
-      "39074400"
-    ],
-    "supporting_dois": [
-      "10.1097/RLI.0000000000001102"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 0,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.108, section relevance 0.75, and composite score 0.5603.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0216,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.075,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "ai": {
-    "canonical_name": "AI",
-    "entity_type": "MODEL_ARCH",
-    "mechanism_category": "Representation",
-    "composite_score": 0.505,
-    "ner_confidence_score": 0.0876,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.1586,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_39074400"
-    ],
-    "supporting_pmids": [
-      "39074400"
-    ],
-    "supporting_dois": [
-      "10.1097/RLI.0000000000001102"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 1,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.088, section relevance 0.75, and composite score 0.5050.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0175,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0238,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "suspicion": {
-    "canonical_name": "suspicion",
-    "entity_type": "LOSS",
-    "mechanism_category": "Loss",
-    "composite_score": 0.4957,
-    "ner_confidence_score": 0.0765,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.1114,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_39074400"
-    ],
-    "supporting_pmids": [
-      "39074400"
-    ],
-    "supporting_dois": [
-      "10.1097/RLI.0000000000001102"
-    ],
-    "total_mention_count": 3,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 7,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.076, section relevance 0.75, and composite score 0.4957.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0153,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0167,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "vs": {
-    "canonical_name": "vs",
-    "entity_type": "OPTIMIZATION",
-    "mechanism_category": "Regularization",
-    "composite_score": 0.4904,
-    "ner_confidence_score": 0.0653,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0908,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_39074400"
-    ],
-    "supporting_pmids": [
-      "39074400"
-    ],
-    "supporting_dois": [
-      "10.1097/RLI.0000000000001102"
-    ],
-    "total_mention_count": 4,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 14,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.065, section relevance 0.75, and composite score 0.4904.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0131,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0136,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "00": {
-    "canonical_name": "00",
-    "entity_type": "REGULARIZATION",
-    "mechanism_category": "Regularization",
-    "composite_score": 0.4864,
-    "ner_confidence_score": 0.0565,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.076,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_39074400"
-    ],
-    "supporting_pmids": [
-      "39074400"
-    ],
-    "supporting_dois": [
-      "10.1097/RLI.0000000000001102"
-    ],
-    "total_mention_count": 3,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 9,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.056, section relevance 0.75, and composite score 0.4864.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0113,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0114,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "late": {
-    "canonical_name": "late",
-    "entity_type": "PREPROCESSING",
-    "mechanism_category": "Preprocessing",
-    "composite_score": 0.5432,
-    "ner_confidence_score": 0.0775,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0758,
+    "relation_confidence_score": 0.3339,
     "full_text_score": 0.8,
     "provenance_score": 1.0,
     "paper_support_score": 0.6131,
     "task_modality_match_score": 0.85,
     "supporting_paper_count": 2,
     "supporting_paper_ids": [
-      "paper_39074400",
-      "paper_40325104"
+      "paper_41815162",
+      "paper_39074400"
     ],
     "supporting_pmids": [
-      "40325104",
+      "41815162",
       "39074400"
     ],
     "supporting_dois": [
-      "10.1038/s41698-025-00917-6",
+      "10.21037/tcr-2025-1832",
       "10.1097/RLI.0000000000001102"
     ],
     "total_mention_count": 2,
     "methods_section_mentions": 0,
-    "participating_relation_count": 1,
-    "selection_rationale": "Supported by 2 paper(s) (0 in Methods sections), mean NER confidence 0.078, section relevance 0.75, and composite score 0.5432.",
+    "participating_relation_count": 13,
+    "selection_rationale": "Supported by 2 paper(s) (0 in Methods sections), mean NER confidence 0.261, section relevance 0.75, and composite score 0.6186.",
     "factor_breakdown": {
-      "ner_confidence_component": 0.0155,
+      "ner_confidence_component": 0.0522,
       "section_relevance_component": 0.15,
-      "relation_component": 0.0114,
+      "relation_component": 0.0501,
       "full_text_component": 0.12,
       "provenance_component": 0.1,
       "support_component": 0.0613,
@@ -1192,125 +557,91 @@
     },
     "scoring_version": "Stage2D_SectionAware_v2.0"
   },
+  "ai": {
+    "canonical_name": "AI",
+    "entity_type": "FUSION",
+    "mechanism_category": "Fusion",
+    "composite_score": 0.5296,
+    "ner_confidence_score": 0.1608,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.2252,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_39074400"
+    ],
+    "supporting_pmids": [
+      "39074400"
+    ],
+    "supporting_dois": [
+      "10.1097/RLI.0000000000001102"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 3,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.161, section relevance 0.75, and composite score 0.5296.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0322,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0338,
+      "full_text_component": 0.09,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
   "external": {
-    "canonical_name": "external",
-    "entity_type": "REGULARIZATION",
-    "mechanism_category": "Regularization",
-    "composite_score": 0.4875,
-    "ner_confidence_score": 0.059,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.08,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_39074400"
-    ],
-    "supporting_pmids": [
-      "39074400"
-    ],
-    "supporting_dois": [
-      "10.1097/RLI.0000000000001102"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 3,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.059, section relevance 0.75, and composite score 0.4875.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0118,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.012,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "both": {
-    "canonical_name": "both",
-    "entity_type": "MODEL_ARCH",
-    "mechanism_category": "Representation",
-    "composite_score": 0.5105,
-    "ner_confidence_score": 0.1526,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.1087,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_39074400"
-    ],
-    "supporting_pmids": [
-      "39074400"
-    ],
-    "supporting_dois": [
-      "10.1097/RLI.0000000000001102"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 3,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.153, section relevance 0.75, and composite score 0.5105.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0305,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0163,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "only": {
-    "canonical_name": "only",
-    "entity_type": "LOSS",
-    "mechanism_category": "Loss",
-    "composite_score": 0.4939,
-    "ner_confidence_score": 0.0819,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0922,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_39074400"
-    ],
-    "supporting_pmids": [
-      "39074400"
-    ],
-    "supporting_dois": [
-      "10.1097/RLI.0000000000001102"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 2,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.082, section relevance 0.75, and composite score 0.4939.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0164,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0138,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "single-modality": {
-    "canonical_name": "single-modality",
-    "entity_type": "DATASET",
+    "canonical_name": "External",
+    "entity_type": "EVALUATION",
     "mechanism_category": "UNMAPPED",
-    "composite_score": 0.6132,
-    "ner_confidence_score": 0.0726,
+    "composite_score": 0.6718,
+    "ner_confidence_score": 0.2525,
     "section_relevance_score": 0.75,
     "relation_confidence_score": 0.5,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.6131,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 2,
+    "supporting_paper_ids": [
+      "paper_42467849",
+      "paper_41353186"
+    ],
+    "supporting_pmids": [
+      "41353186",
+      "42467849"
+    ],
+    "supporting_dois": [
+      "10.1186/s13040-025-00495-0",
+      "10.1158/2767-9764.CRC-26-0362"
+    ],
+    "total_mention_count": 2,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 0,
+    "selection_rationale": "Supported by 2 paper(s) (0 in Methods sections), mean NER confidence 0.253, section relevance 0.75, and composite score 0.6718.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0505,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.075,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0613,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "cancer genome atlas": {
+    "canonical_name": "Cancer Genome Atlas",
+    "entity_type": "DATASET",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.5969,
+    "ner_confidence_score": 0.1786,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.25,
     "full_text_score": 1.0,
     "provenance_score": 1.0,
     "paper_support_score": 0.3869,
@@ -1327,13 +658,1819 @@
     ],
     "total_mention_count": 1,
     "methods_section_mentions": 0,
-    "participating_relation_count": 0,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.073, section relevance 0.75, and composite score 0.6132.",
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.179, section relevance 0.75, and composite score 0.5969.",
     "factor_breakdown": {
-      "ner_confidence_component": 0.0145,
+      "ner_confidence_component": 0.0357,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0375,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "fusion models": {
+    "canonical_name": "fusion models",
+    "entity_type": "FUSION",
+    "mechanism_category": "Fusion",
+    "composite_score": 0.5905,
+    "ner_confidence_score": 0.191,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.1911,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40325104"
+    ],
+    "supporting_pmids": [
+      "40325104"
+    ],
+    "supporting_dois": [
+      "10.1038/s41698-025-00917-6"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.191, section relevance 0.75, and composite score 0.5905.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0382,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0287,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "tc": {
+    "canonical_name": "TC",
+    "entity_type": "DATASET",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.5808,
+    "ner_confidence_score": 0.1393,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.195,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40325104"
+    ],
+    "supporting_pmids": [
+      "40325104"
+    ],
+    "supporting_dois": [
+      "10.1038/s41698-025-00917-6"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 2,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.139, section relevance 0.75, and composite score 0.5808.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0279,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0292,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "convolutional neural networks": {
+    "canonical_name": "Convolutional Neural Networks",
+    "entity_type": "MODEL_ARCH",
+    "mechanism_category": "Representation",
+    "composite_score": 0.5495,
+    "ner_confidence_score": 0.2277,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.2682,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40449048"
+    ],
+    "supporting_pmids": [
+      "40449048"
+    ],
+    "supporting_dois": [
+      "10.1016/j.compbiomed.2025.110488"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.228, section relevance 0.75, and composite score 0.5495.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0455,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0402,
+      "full_text_component": 0.09,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "cnns": {
+    "canonical_name": "CNNs",
+    "entity_type": "MODEL_ARCH",
+    "mechanism_category": "Representation",
+    "composite_score": 0.5422,
+    "ner_confidence_score": 0.1916,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.2682,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40449048"
+    ],
+    "supporting_pmids": [
+      "40449048"
+    ],
+    "supporting_dois": [
+      "10.1016/j.compbiomed.2025.110488"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.192, section relevance 0.75, and composite score 0.5422.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0383,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0402,
+      "full_text_component": 0.09,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "the cancer genome atlas": {
+    "canonical_name": "The Cancer Genome Atlas",
+    "entity_type": "DATASET",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.618,
+    "ner_confidence_score": 0.2299,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.3219,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41131352"
+    ],
+    "supporting_pmids": [
+      "41131352"
+    ],
+    "supporting_dois": [
+      "10.1038/s41746-025-02003-4"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 2,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.230, section relevance 0.75, and composite score 0.6180.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.046,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0483,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "multimodal fusion": {
+    "canonical_name": "multimodal fusion",
+    "entity_type": "FUSION",
+    "mechanism_category": "Fusion",
+    "composite_score": 0.6448,
+    "ner_confidence_score": 0.2355,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.3357,
+    "full_text_score": 0.9,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.7737,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 3,
+    "supporting_paper_ids": [
+      "paper_42332139",
+      "paper_42141332",
+      "paper_42487970"
+    ],
+    "supporting_pmids": [
+      "42141332",
+      "42487970",
+      "42332139"
+    ],
+    "supporting_dois": [
+      "10.1038/s41746-026-02783-3",
+      "10.3389/fmed.2026.1842344",
+      "10.1186/s13244-026-02311-7"
+    ],
+    "total_mention_count": 4,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 2,
+    "selection_rationale": "Supported by 3 paper(s) (0 in Methods sections), mean NER confidence 0.235, section relevance 0.75, and composite score 0.6448.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0471,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0504,
+      "full_text_component": 0.135,
+      "provenance_component": 0.1,
+      "support_component": 0.0774,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "c-index": {
+    "canonical_name": "C-index",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6516,
+    "ner_confidence_score": 0.2316,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.2831,
+    "full_text_score": 0.92,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.8982,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 4,
+    "supporting_paper_ids": [
+      "paper_40770286",
+      "paper_40657529",
+      "paper_42332139",
+      "paper_41353186"
+    ],
+    "supporting_pmids": [
+      "40657529",
+      "41353186",
+      "40770286",
+      "42332139"
+    ],
+    "supporting_dois": [
+      "10.1186/s12876-025-04119-z",
+      "10.1186/s13040-025-00495-0",
+      "10.1109/JTEHM.2025.3562724",
+      "10.1038/s41746-026-02783-3"
+    ],
+    "total_mention_count": 5,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 10,
+    "selection_rationale": "Supported by 4 paper(s) (0 in Methods sections), mean NER confidence 0.232, section relevance 0.75, and composite score 0.6516.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0463,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0425,
+      "full_text_component": 0.138,
+      "provenance_component": 0.1,
+      "support_component": 0.0898,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "cox model": {
+    "canonical_name": "Cox model",
+    "entity_type": "MODEL_ARCH",
+    "mechanism_category": "Representation",
+    "composite_score": 0.6488,
+    "ner_confidence_score": 0.2506,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.5,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41942785"
+    ],
+    "supporting_pmids": [
+      "41942785"
+    ],
+    "supporting_dois": [
+      "10.1007/s00109-026-02669-7"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 0,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.251, section relevance 0.75, and composite score 0.6488.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0501,
       "section_relevance_component": 0.15,
       "relation_component": 0.075,
       "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "brier score": {
+    "canonical_name": "Brier score",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6374,
+    "ner_confidence_score": 0.237,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.2911,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.6131,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 2,
+    "supporting_paper_ids": [
+      "paper_40770286",
+      "paper_42487970"
+    ],
+    "supporting_pmids": [
+      "40770286",
+      "42487970"
+    ],
+    "supporting_dois": [
+      "10.1186/s12876-025-04119-z",
+      "10.3389/fmed.2026.1842344"
+    ],
+    "total_mention_count": 3,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 7,
+    "selection_rationale": "Supported by 2 paper(s) (0 in Methods sections), mean NER confidence 0.237, section relevance 0.75, and composite score 0.6374.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0474,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0437,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0613,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "mer": {
+    "canonical_name": "mer",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.5832,
+    "ner_confidence_score": 0.1452,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.2033,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42487970"
+    ],
+    "supporting_pmids": [
+      "42487970"
+    ],
+    "supporting_dois": [
+      "10.3389/fmed.2026.1842344"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.145, section relevance 0.75, and composite score 0.5832.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.029,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0305,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "standardization": {
+    "canonical_name": "standardization",
+    "entity_type": "PREPROCESSING",
+    "mechanism_category": "Preprocessing",
+    "composite_score": 0.6511,
+    "ner_confidence_score": 0.2622,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.5,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42523677"
+    ],
+    "supporting_pmids": [
+      "42523677"
+    ],
+    "supporting_dois": [
+      "10.3389/fendo.2026.1800918"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 0,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.262, section relevance 0.75, and composite score 0.6511.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0524,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.075,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "data fusion": {
+    "canonical_name": "data fusion",
+    "entity_type": "FUSION",
+    "mechanism_category": "Fusion",
+    "composite_score": 0.648,
+    "ner_confidence_score": 0.2465,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.5,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42141332"
+    ],
+    "supporting_pmids": [
+      "42141332"
+    ],
+    "supporting_dois": [
+      "10.1186/s13244-026-02311-7"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 0,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.246, section relevance 0.75, and composite score 0.6480.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0493,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.075,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "radiomic features": {
+    "canonical_name": "radiomic features",
+    "entity_type": "FEATURE_REPR",
+    "mechanism_category": "Representation",
+    "composite_score": 0.6501,
+    "ner_confidence_score": 0.2571,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.5,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42141332"
+    ],
+    "supporting_pmids": [
+      "42141332"
+    ],
+    "supporting_dois": [
+      "10.1186/s13244-026-02311-7"
+    ],
+    "total_mention_count": 4,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 0,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.257, section relevance 0.75, and composite score 0.6501.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0514,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.075,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "transformers": {
+    "canonical_name": "Transformers",
+    "entity_type": "MODEL_ARCH",
+    "mechanism_category": "Representation",
+    "composite_score": 0.6487,
+    "ner_confidence_score": 0.25,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.5,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42141332"
+    ],
+    "supporting_pmids": [
+      "42141332"
+    ],
+    "supporting_dois": [
+      "10.1186/s13244-026-02311-7"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 0,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.250, section relevance 0.75, and composite score 0.6487.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.05,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.075,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "logistic regression": {
+    "canonical_name": "logistic regression",
+    "entity_type": "MODEL_ARCH",
+    "mechanism_category": "Representation",
+    "composite_score": 0.6507,
+    "ner_confidence_score": 0.26,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.5,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42141332"
+    ],
+    "supporting_pmids": [
+      "42141332"
+    ],
+    "supporting_dois": [
+      "10.1186/s13244-026-02311-7"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 0,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.260, section relevance 0.75, and composite score 0.6507.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.052,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.075,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "radiomic": {
+    "canonical_name": "radiomic",
+    "entity_type": "FEATURE_REPR",
+    "mechanism_category": "Representation",
+    "composite_score": 0.6188,
+    "ner_confidence_score": 0.2585,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.2895,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42141332"
+    ],
+    "supporting_pmids": [
+      "42141332"
+    ],
+    "supporting_dois": [
+      "10.1186/s13244-026-02311-7"
+    ],
+    "total_mention_count": 2,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 5,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.258, section relevance 0.75, and composite score 0.6188.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0517,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0434,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "fusion model": {
+    "canonical_name": "fusion model",
+    "entity_type": "FUSION",
+    "mechanism_category": "Fusion",
+    "composite_score": 0.5901,
+    "ner_confidence_score": 0.1815,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.2008,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42141332"
+    ],
+    "supporting_pmids": [
+      "42141332"
+    ],
+    "supporting_dois": [
+      "10.1186/s13244-026-02311-7"
+    ],
+    "total_mention_count": 2,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 4,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.182, section relevance 0.75, and composite score 0.5901.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0363,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0301,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "internal": {
+    "canonical_name": "internal",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6169,
+    "ner_confidence_score": 0.1823,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.2277,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.6131,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 2,
+    "supporting_paper_ids": [
+      "paper_41815162",
+      "paper_42141332"
+    ],
+    "supporting_pmids": [
+      "42141332",
+      "41815162"
+    ],
+    "supporting_dois": [
+      "10.21037/tcr-2025-1832",
+      "10.1186/s13244-026-02311-7"
+    ],
+    "total_mention_count": 3,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 16,
+    "selection_rationale": "Supported by 2 paper(s) (0 in Methods sections), mean NER confidence 0.182, section relevance 0.75, and composite score 0.6169.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0365,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0342,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0613,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "specificity": {
+    "canonical_name": "specificity",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6308,
+    "ner_confidence_score": 0.1606,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.5,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41647696"
+    ],
+    "supporting_pmids": [
+      "41647696"
+    ],
+    "supporting_dois": [
+      "10.1016/j.esmorw.2025.100151"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 0,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.161, section relevance 0.75, and composite score 0.6308.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0321,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.075,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "normalization": {
+    "canonical_name": "normalization",
+    "entity_type": "PREPROCESSING",
+    "mechanism_category": "Preprocessing",
+    "composite_score": 0.6414,
+    "ner_confidence_score": 0.2134,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.5,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42125301"
+    ],
+    "supporting_pmids": [
+      "42125301"
+    ],
+    "supporting_dois": [
+      "10.1108/atsip-06-2025-0051"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 0,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.213, section relevance 0.75, and composite score 0.6414.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0427,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.075,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "radcure": {
+    "canonical_name": "RADCURE",
+    "entity_type": "DATASET",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.7403,
+    "ner_confidence_score": 0.7081,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.5,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42125301"
+    ],
+    "supporting_pmids": [
+      "42125301"
+    ],
+    "supporting_dois": [
+      "10.1108/atsip-06-2025-0051"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 0,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.708, section relevance 0.75, and composite score 0.7403.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.1416,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.075,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "radiomics": {
+    "canonical_name": "radiomics",
+    "entity_type": "FEATURE_REPR",
+    "mechanism_category": "Representation",
+    "composite_score": 0.6525,
+    "ner_confidence_score": 0.2563,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.332,
+    "full_text_score": 0.9273,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.7737,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 3,
+    "supporting_paper_ids": [
+      "paper_41645153",
+      "paper_42374268",
+      "paper_40770286"
+    ],
+    "supporting_pmids": [
+      "42374268",
+      "41645153",
+      "40770286"
+    ],
+    "supporting_dois": [
+      "10.1186/s12876-025-04119-z",
+      "10.1186/s12880-026-02526-6",
+      "10.1186/s12880-026-02179-5"
+    ],
+    "total_mention_count": 11,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 23,
+    "selection_rationale": "Supported by 3 paper(s) (0 in Methods sections), mean NER confidence 0.256, section relevance 0.75, and composite score 0.6525.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0513,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0498,
+      "full_text_component": 0.1391,
+      "provenance_component": 0.1,
+      "support_component": 0.0774,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "principal component analysis": {
+    "canonical_name": "principal component analysis",
+    "entity_type": "FEATURE_REPR",
+    "mechanism_category": "Representation",
+    "composite_score": 0.6261,
+    "ner_confidence_score": 0.2597,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.3361,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40770286"
+    ],
+    "supporting_pmids": [
+      "40770286"
+    ],
+    "supporting_dois": [
+      "10.1186/s12876-025-04119-z"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 3,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.260, section relevance 0.75, and composite score 0.6261.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0519,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0504,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "pca": {
+    "canonical_name": "PCA",
+    "entity_type": "FEATURE_REPR",
+    "mechanism_category": "Representation",
+    "composite_score": 0.6243,
+    "ner_confidence_score": 0.2529,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.3334,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40770286"
+    ],
+    "supporting_pmids": [
+      "40770286"
+    ],
+    "supporting_dois": [
+      "10.1186/s12876-025-04119-z"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 3,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.253, section relevance 0.75, and composite score 0.6243.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0506,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.05,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "cross-validation": {
+    "canonical_name": "cross-validation",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6092,
+    "ner_confidence_score": 0.2085,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.2919,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40770286"
+    ],
+    "supporting_pmids": [
+      "40770286"
+    ],
+    "supporting_dois": [
+      "10.1186/s12876-025-04119-z"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 3,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.208, section relevance 0.75, and composite score 0.6092.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0417,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0438,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "cox regression": {
+    "canonical_name": "Cox regression",
+    "entity_type": "MODEL_ARCH",
+    "mechanism_category": "Representation",
+    "composite_score": 0.6503,
+    "ner_confidence_score": 0.2583,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.5,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_40770286"
+    ],
+    "supporting_pmids": [
+      "40770286"
+    ],
+    "supporting_dois": [
+      "10.1186/s12876-025-04119-z"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 0,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.258, section relevance 0.75, and composite score 0.6503.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0517,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.075,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "lr": {
+    "canonical_name": "LR",
+    "entity_type": "HYPERPARAMETER",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.615,
+    "ner_confidence_score": 0.2494,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.2762,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42389632"
+    ],
+    "supporting_pmids": [
+      "42389632"
+    ],
+    "supporting_dois": [
+      "10.3389/fcvm.2026.1834641"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 2,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.249, section relevance 0.75, and composite score 0.6150.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0499,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0414,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "svm": {
+    "canonical_name": "SVM",
+    "entity_type": "MODEL_ARCH",
+    "mechanism_category": "Representation",
+    "composite_score": 0.6131,
+    "ner_confidence_score": 0.2401,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.2762,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42389632"
+    ],
+    "supporting_pmids": [
+      "42389632"
+    ],
+    "supporting_dois": [
+      "10.3389/fcvm.2026.1834641"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 2,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.240, section relevance 0.75, and composite score 0.6131.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.048,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0414,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "rf": {
+    "canonical_name": "RF",
+    "entity_type": "MODEL_ARCH",
+    "mechanism_category": "Representation",
+    "composite_score": 0.587,
+    "ner_confidence_score": 0.1545,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.2162,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42389632"
+    ],
+    "supporting_pmids": [
+      "42389632"
+    ],
+    "supporting_dois": [
+      "10.3389/fcvm.2026.1834641"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 2,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.154, section relevance 0.75, and composite score 0.5870.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0309,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0324,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "imputation": {
+    "canonical_name": "imputation",
+    "entity_type": "PREPROCESSING",
+    "mechanism_category": "Preprocessing",
+    "composite_score": 0.5662,
+    "ner_confidence_score": 0.2154,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.3962,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42332139"
+    ],
+    "supporting_pmids": [
+      "42332139"
+    ],
+    "supporting_dois": [
+      "10.1038/s41746-026-02783-3"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.215, section relevance 0.75, and composite score 0.5662.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0431,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0594,
+      "full_text_component": 0.09,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "late fusion": {
+    "canonical_name": "late fusion",
+    "entity_type": "FUSION",
+    "mechanism_category": "Fusion",
+    "composite_score": 0.5468,
+    "ner_confidence_score": 0.2028,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.2838,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42332139"
+    ],
+    "supporting_pmids": [
+      "42332139"
+    ],
+    "supporting_dois": [
+      "10.1038/s41746-026-02783-3"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.203, section relevance 0.75, and composite score 0.5468.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0406,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0426,
+      "full_text_component": 0.09,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "log": {
+    "canonical_name": "log",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.5532,
+    "ner_confidence_score": 0.2632,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.2458,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42332139"
+    ],
+    "supporting_pmids": [
+      "42332139"
+    ],
+    "supporting_dois": [
+      "10.1038/s41746-026-02783-3"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.263, section relevance 0.75, and composite score 0.5532.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0526,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0369,
+      "full_text_component": 0.09,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "tests": {
+    "canonical_name": "tests",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.5357,
+    "ner_confidence_score": 0.1756,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.2458,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42332139"
+    ],
+    "supporting_pmids": [
+      "42332139"
+    ],
+    "supporting_dois": [
+      "10.1038/s41746-026-02783-3"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.176, section relevance 0.75, and composite score 0.5357.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0351,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0369,
+      "full_text_component": 0.09,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "95": {
+    "canonical_name": "95",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6265,
+    "ner_confidence_score": 0.1393,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.5,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41815162"
+    ],
+    "supporting_pmids": [
+      "41815162"
+    ],
+    "supporting_dois": [
+      "10.21037/tcr-2025-1832"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 0,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.139, section relevance 0.75, and composite score 0.6265.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0279,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.075,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "under": {
+    "canonical_name": "under",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6031,
+    "ner_confidence_score": 0.1983,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.2651,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41815162"
+    ],
+    "supporting_pmids": [
+      "41815162"
+    ],
+    "supporting_dois": [
+      "10.21037/tcr-2025-1832"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 11,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.198, section relevance 0.75, and composite score 0.6031.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0397,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0398,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "precision": {
+    "canonical_name": "precision",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.5843,
+    "ner_confidence_score": 0.1479,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.2071,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41815162"
+    ],
+    "supporting_pmids": [
+      "41815162"
+    ],
+    "supporting_dois": [
+      "10.21037/tcr-2025-1832"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 11,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.148, section relevance 0.75, and composite score 0.5843.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0296,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0311,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "model": {
+    "canonical_name": "model",
+    "entity_type": "FUSION",
+    "mechanism_category": "Fusion",
+    "composite_score": 0.5876,
+    "ner_confidence_score": 0.156,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.2183,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41815162"
+    ],
+    "supporting_pmids": [
+      "41815162"
+    ],
+    "supporting_dois": [
+      "10.21037/tcr-2025-1832"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 4,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.156, section relevance 0.75, and composite score 0.5876.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0312,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0327,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "mc": {
+    "canonical_name": "Mc",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.5791,
+    "ner_confidence_score": 0.2464,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.1565,
+    "full_text_score": 0.7333,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.6131,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 2,
+    "supporting_paper_ids": [
+      "paper_42374268",
+      "paper_41815162"
+    ],
+    "supporting_pmids": [
+      "42374268",
+      "41815162"
+    ],
+    "supporting_dois": [
+      "10.21037/tcr-2025-1832",
+      "10.1186/s12880-026-02526-6"
+    ],
+    "total_mention_count": 3,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 2,
+    "selection_rationale": "Supported by 2 paper(s) (0 in Methods sections), mean NER confidence 0.246, section relevance 0.75, and composite score 0.5791.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0493,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0235,
+      "full_text_component": 0.11,
+      "provenance_component": 0.1,
+      "support_component": 0.0613,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "ar": {
+    "canonical_name": "ar",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.5633,
+    "ner_confidence_score": 0.0966,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.1353,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41815162"
+    ],
+    "supporting_pmids": [
+      "41815162"
+    ],
+    "supporting_dois": [
+      "10.21037/tcr-2025-1832"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.097, section relevance 0.75, and composite score 0.5633.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0193,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0203,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "fn": {
+    "canonical_name": "FN",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.5732,
+    "ner_confidence_score": 0.1726,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.5,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42374268"
+    ],
+    "supporting_pmids": [
+      "42374268"
+    ],
+    "supporting_dois": [
+      "10.1186/s12880-026-02526-6"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 0,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.173, section relevance 0.75, and composite score 0.5732.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0345,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.075,
+      "full_text_component": 0.09,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "aur": {
+    "canonical_name": "AUR",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.5573,
+    "ner_confidence_score": 0.247,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.2944,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42374268"
+    ],
+    "supporting_pmids": [
+      "42374268"
+    ],
+    "supporting_dois": [
+      "10.1186/s12880-026-02526-6"
+    ],
+    "total_mention_count": 4,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 8,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.247, section relevance 0.75, and composite score 0.5573.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0494,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0442,
+      "full_text_component": 0.09,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "oc": {
+    "canonical_name": "OC",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.5425,
+    "ner_confidence_score": 0.1958,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.2644,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42374268"
+    ],
+    "supporting_pmids": [
+      "42374268"
+    ],
+    "supporting_dois": [
+      "10.1186/s12880-026-02526-6"
+    ],
+    "total_mention_count": 4,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 8,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.196, section relevance 0.75, and composite score 0.5425.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0392,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0397,
+      "full_text_component": 0.09,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "hold": {
+    "canonical_name": "hold",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.5339,
+    "ner_confidence_score": 0.1803,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.2279,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42374268"
+    ],
+    "supporting_pmids": [
+      "42374268"
+    ],
+    "supporting_dois": [
+      "10.1186/s12880-026-02526-6"
+    ],
+    "total_mention_count": 3,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 5,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.180, section relevance 0.75, and composite score 0.5339.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0361,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0342,
+      "full_text_component": 0.09,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "attention fusion": {
+    "canonical_name": "attention fusion",
+    "entity_type": "FUSION",
+    "mechanism_category": "Fusion",
+    "composite_score": 0.5188,
+    "ner_confidence_score": 0.1343,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.1881,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42374268"
+    ],
+    "supporting_pmids": [
+      "42374268"
+    ],
+    "supporting_dois": [
+      "10.1186/s12880-026-02526-6"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 2,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.134, section relevance 0.75, and composite score 0.5188.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0269,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0282,
+      "full_text_component": 0.09,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "confidence": {
+    "canonical_name": "confidence",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.5157,
+    "ner_confidence_score": 0.1268,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.1776,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42374268"
+    ],
+    "supporting_pmids": [
+      "42374268"
+    ],
+    "supporting_dois": [
+      "10.1186/s12880-026-02526-6"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.127, section relevance 0.75, and composite score 0.5157.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0254,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0266,
+      "full_text_component": 0.09,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "bri": {
+    "canonical_name": "Bri",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.557,
+    "ner_confidence_score": 0.2458,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.2946,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42374268"
+    ],
+    "supporting_pmids": [
+      "42374268"
+    ],
+    "supporting_dois": [
+      "10.1186/s12880-026-02526-6"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 4,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.246, section relevance 0.75, and composite score 0.5570.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0492,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0442,
+      "full_text_component": 0.09,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "brier": {
+    "canonical_name": "Brier",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.5464,
+    "ner_confidence_score": 0.193,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.2941,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42374268"
+    ],
+    "supporting_pmids": [
+      "42374268"
+    ],
+    "supporting_dois": [
+      "10.1186/s12880-026-02526-6"
+    ],
+    "total_mention_count": 2,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 1,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.193, section relevance 0.75, and composite score 0.5464.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0386,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.0441,
+      "full_text_component": 0.09,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "ali": {
+    "canonical_name": "ali",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.5649,
+    "ner_confidence_score": 0.1313,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.5,
+    "full_text_score": 0.6,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_42374268"
+    ],
+    "supporting_pmids": [
+      "42374268"
+    ],
+    "supporting_dois": [
+      "10.1186/s12880-026-02526-6"
+    ],
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 0,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.131, section relevance 0.75, and composite score 0.5649.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0263,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.075,
+      "full_text_component": 0.09,
       "provenance_component": 0.1,
       "support_component": 0.0387,
       "match_component": 0.085
@@ -1341,516 +2478,146 @@
     "scoring_version": "Stage2D_SectionAware_v2.0"
   },
   "convolutional": {
-    "canonical_name": "Convolutional",
-    "entity_type": "PREPROCESSING",
-    "mechanism_category": "Preprocessing",
-    "composite_score": 0.4768,
-    "ner_confidence_score": 0.0321,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0449,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_40449048"
-    ],
-    "supporting_pmids": [
-      "40449048"
-    ],
-    "supporting_dois": [
-      "10.1016/j.compbiomed.2025.110488"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 2,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.032, section relevance 0.75, and composite score 0.4768.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0064,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0067,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "artificial neural": {
-    "canonical_name": "Artificial Neural",
-    "entity_type": "SAMPLING",
-    "mechanism_category": "Sampling",
-    "composite_score": 0.4825,
-    "ner_confidence_score": 0.0506,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0578,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_40449048"
-    ],
-    "supporting_pmids": [
-      "40449048"
-    ],
-    "supporting_dois": [
-      "10.1016/j.compbiomed.2025.110488"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 2,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.051, section relevance 0.75, and composite score 0.4825.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0101,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0087,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "adenocarcinoma": {
-    "canonical_name": "adenocarcinoma",
+    "canonical_name": "convolutional",
     "entity_type": "MODEL_ARCH",
     "mechanism_category": "Representation",
-    "composite_score": 0.4859,
-    "ner_confidence_score": 0.0501,
+    "composite_score": 0.6069,
+    "ner_confidence_score": 0.203,
     "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0811,
-    "full_text_score": 0.6,
+    "relation_confidence_score": 0.2842,
+    "full_text_score": 1.0,
     "provenance_score": 1.0,
     "paper_support_score": 0.3869,
     "task_modality_match_score": 0.85,
     "supporting_paper_count": 1,
     "supporting_paper_ids": [
-      "paper_40449048"
+      "paper_41645153"
     ],
     "supporting_pmids": [
-      "40449048"
+      "41645153"
     ],
     "supporting_dois": [
-      "10.1016/j.compbiomed.2025.110488"
+      "10.1186/s12880-026-02179-5"
     ],
     "total_mention_count": 1,
     "methods_section_mentions": 0,
     "participating_relation_count": 2,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.050, section relevance 0.75, and composite score 0.4859.",
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.203, section relevance 0.75, and composite score 0.6069.",
     "factor_breakdown": {
-      "ner_confidence_component": 0.01,
+      "ner_confidence_component": 0.0406,
       "section_relevance_component": 0.15,
-      "relation_component": 0.0122,
-      "full_text_component": 0.09,
+      "relation_component": 0.0426,
+      "full_text_component": 0.15,
       "provenance_component": 0.1,
       "support_component": 0.0387,
       "match_component": 0.085
     },
     "scoring_version": "Stage2D_SectionAware_v2.0"
   },
-  "large": {
-    "canonical_name": "large",
-    "entity_type": "DATASET",
-    "mechanism_category": "UNMAPPED",
-    "composite_score": 0.4879,
-    "ner_confidence_score": 0.059,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0827,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_40449048"
-    ],
-    "supporting_pmids": [
-      "40449048"
-    ],
-    "supporting_dois": [
-      "10.1016/j.compbiomed.2025.110488"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 2,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.059, section relevance 0.75, and composite score 0.4879.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0118,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0124,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "squamous": {
-    "canonical_name": "squamous",
-    "entity_type": "PREPROCESSING",
-    "mechanism_category": "Preprocessing",
-    "composite_score": 0.4881,
-    "ner_confidence_score": 0.0519,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0938,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_40449048"
-    ],
-    "supporting_pmids": [
-      "40449048"
-    ],
-    "supporting_dois": [
-      "10.1016/j.compbiomed.2025.110488"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 2,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.052, section relevance 0.75, and composite score 0.4881.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0104,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0141,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "weighted": {
-    "canonical_name": "weighted",
-    "entity_type": "OPTIMIZATION",
-    "mechanism_category": "Regularization",
-    "composite_score": 0.4866,
-    "ner_confidence_score": 0.0592,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0736,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_40449048"
-    ],
-    "supporting_pmids": [
-      "40449048"
-    ],
-    "supporting_dois": [
-      "10.1016/j.compbiomed.2025.110488"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 2,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.059, section relevance 0.75, and composite score 0.4866.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0118,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.011,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "grad": {
-    "canonical_name": "Grad",
-    "entity_type": "REGULARIZATION",
-    "mechanism_category": "Regularization",
-    "composite_score": 0.4825,
-    "ner_confidence_score": 0.046,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0644,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_40449048"
-    ],
-    "supporting_pmids": [
-      "40449048"
-    ],
-    "supporting_dois": [
-      "10.1016/j.compbiomed.2025.110488"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 2,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.046, section relevance 0.75, and composite score 0.4825.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0092,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0097,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "cam": {
-    "canonical_name": "CAM",
-    "entity_type": "DATASET",
-    "mechanism_category": "UNMAPPED",
-    "composite_score": 0.4975,
-    "ner_confidence_score": 0.114,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0736,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_40449048"
-    ],
-    "supporting_pmids": [
-      "40449048"
-    ],
-    "supporting_dois": [
-      "10.1016/j.compbiomed.2025.110488"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 2,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.114, section relevance 0.75, and composite score 0.4975.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0228,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.011,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "ann": {
-    "canonical_name": "ANN",
-    "entity_type": "MODEL_ARCH",
+  "radiomic signatures": {
+    "canonical_name": "radiomic signatures",
+    "entity_type": "FEATURE_REPR",
     "mechanism_category": "Representation",
-    "composite_score": 0.5068,
-    "ner_confidence_score": 0.1552,
+    "composite_score": 0.6996,
+    "ner_confidence_score": 0.6304,
     "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0805,
-    "full_text_score": 0.6,
+    "relation_confidence_score": 0.3322,
+    "full_text_score": 1.0,
     "provenance_score": 1.0,
     "paper_support_score": 0.3869,
     "task_modality_match_score": 0.85,
     "supporting_paper_count": 1,
     "supporting_paper_ids": [
-      "paper_40449048"
+      "paper_41645153"
     ],
     "supporting_pmids": [
-      "40449048"
+      "41645153"
     ],
     "supporting_dois": [
-      "10.1016/j.compbiomed.2025.110488"
+      "10.1186/s12880-026-02179-5"
     ],
     "total_mention_count": 1,
     "methods_section_mentions": 0,
-    "participating_relation_count": 3,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.155, section relevance 0.75, and composite score 0.5068.",
+    "participating_relation_count": 2,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.630, section relevance 0.75, and composite score 0.6996.",
     "factor_breakdown": {
-      "ner_confidence_component": 0.031,
+      "ner_confidence_component": 0.1261,
       "section_relevance_component": 0.15,
-      "relation_component": 0.0121,
-      "full_text_component": 0.09,
+      "relation_component": 0.0498,
+      "full_text_component": 0.15,
       "provenance_component": 0.1,
       "support_component": 0.0387,
       "match_component": 0.085
     },
     "scoring_version": "Stage2D_SectionAware_v2.0"
   },
-  "99": {
-    "canonical_name": "99",
-    "entity_type": "REGULARIZATION",
-    "mechanism_category": "Regularization",
-    "composite_score": 0.4871,
-    "ner_confidence_score": 0.0623,
+  "inter": {
+    "canonical_name": "inter",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6113,
+    "ner_confidence_score": 0.2086,
     "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0731,
-    "full_text_score": 0.6,
+    "relation_confidence_score": 0.3064,
+    "full_text_score": 1.0,
     "provenance_score": 1.0,
     "paper_support_score": 0.3869,
     "task_modality_match_score": 0.85,
     "supporting_paper_count": 1,
     "supporting_paper_ids": [
-      "paper_40449048"
+      "paper_41645153"
     ],
     "supporting_pmids": [
-      "40449048"
+      "41645153"
     ],
     "supporting_dois": [
-      "10.1016/j.compbiomed.2025.110488"
+      "10.1186/s12880-026-02179-5"
     ],
-    "total_mention_count": 2,
+    "total_mention_count": 1,
+    "methods_section_mentions": 0,
+    "participating_relation_count": 5,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.209, section relevance 0.75, and composite score 0.6113.",
+    "factor_breakdown": {
+      "ner_confidence_component": 0.0417,
+      "section_relevance_component": 0.15,
+      "relation_component": 0.046,
+      "full_text_component": 0.15,
+      "provenance_component": 0.1,
+      "support_component": 0.0387,
+      "match_component": 0.085
+    },
+    "scoring_version": "Stage2D_SectionAware_v2.0"
+  },
+  "kappa": {
+    "canonical_name": "Kappa",
+    "entity_type": "EVALUATION",
+    "mechanism_category": "UNMAPPED",
+    "composite_score": 0.6222,
+    "ner_confidence_score": 0.2417,
+    "section_relevance_score": 0.75,
+    "relation_confidence_score": 0.3347,
+    "full_text_score": 1.0,
+    "provenance_score": 1.0,
+    "paper_support_score": 0.3869,
+    "task_modality_match_score": 0.85,
+    "supporting_paper_count": 1,
+    "supporting_paper_ids": [
+      "paper_41645153"
+    ],
+    "supporting_pmids": [
+      "41645153"
+    ],
+    "supporting_dois": [
+      "10.1186/s12880-026-02179-5"
+    ],
+    "total_mention_count": 1,
     "methods_section_mentions": 0,
     "participating_relation_count": 6,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.062, section relevance 0.75, and composite score 0.4871.",
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.242, section relevance 0.75, and composite score 0.6222.",
     "factor_breakdown": {
-      "ner_confidence_component": 0.0125,
+      "ner_confidence_component": 0.0483,
       "section_relevance_component": 0.15,
-      "relation_component": 0.011,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "medium": {
-    "canonical_name": "medium",
-    "entity_type": "HYPERPARAMETER",
-    "mechanism_category": "UNMAPPED",
-    "composite_score": 0.4832,
-    "ner_confidence_score": 0.0478,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0666,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_40449048"
-    ],
-    "supporting_pmids": [
-      "40449048"
-    ],
-    "supporting_dois": [
-      "10.1016/j.compbiomed.2025.110488"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 3,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.048, section relevance 0.75, and composite score 0.4832.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0096,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.01,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "shap": {
-    "canonical_name": "SHAP",
-    "entity_type": "DATASET",
-    "mechanism_category": "UNMAPPED",
-    "composite_score": 0.5086,
-    "ner_confidence_score": 0.1202,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.1394,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_40449048"
-    ],
-    "supporting_pmids": [
-      "40449048"
-    ],
-    "supporting_dois": [
-      "10.1016/j.compbiomed.2025.110488"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 2,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.120, section relevance 0.75, and composite score 0.5086.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.024,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0209,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "ley additive explanations": {
-    "canonical_name": "ley Additive exPlanations",
-    "entity_type": "LOSS",
-    "mechanism_category": "Loss",
-    "composite_score": 0.5128,
-    "ner_confidence_score": 0.1412,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.1394,
-    "full_text_score": 0.6,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_40449048"
-    ],
-    "supporting_pmids": [
-      "40449048"
-    ],
-    "supporting_dois": [
-      "10.1016/j.compbiomed.2025.110488"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 2,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.141, section relevance 0.75, and composite score 0.5128.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0282,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0209,
-      "full_text_component": 0.09,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "oncology": {
-    "canonical_name": "ONcologY",
-    "entity_type": "PREPROCESSING",
-    "mechanism_category": "Preprocessing",
-    "composite_score": 0.5513,
-    "ner_confidence_score": 0.0734,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0865,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_41131352"
-    ],
-    "supporting_pmids": [
-      "41131352"
-    ],
-    "supporting_dois": [
-      "10.1038/s41746-025-02003-4"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 2,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.073, section relevance 0.75, and composite score 0.5513.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0147,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.013,
+      "relation_component": 0.0502,
       "full_text_component": 0.15,
       "provenance_component": 0.1,
       "support_component": 0.0387,
@@ -1858,86 +2625,12 @@
     },
     "scoring_version": "Stage2D_SectionAware_v2.0"
   },
-  "embedding": {
-    "canonical_name": "Embedding",
-    "entity_type": "DATASET",
-    "mechanism_category": "UNMAPPED",
-    "composite_score": 0.5409,
-    "ner_confidence_score": 0.0389,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0631,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_41131352"
-    ],
-    "supporting_pmids": [
-      "41131352"
-    ],
-    "supporting_dois": [
-      "10.1038/s41746-025-02003-4"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 2,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.039, section relevance 0.75, and composite score 0.5409.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0078,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0095,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "honey": {
-    "canonical_name": "HONeY",
-    "entity_type": "MODEL_ARCH",
+  "analysis": {
+    "canonical_name": "Analysis",
+    "entity_type": "FEATURE_REPR",
     "mechanism_category": "Representation",
-    "composite_score": 0.5464,
-    "ner_confidence_score": 0.0551,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0779,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_41131352"
-    ],
-    "supporting_pmids": [
-      "41131352"
-    ],
-    "supporting_dois": [
-      "10.1038/s41746-025-02003-4"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 2,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.055, section relevance 0.75, and composite score 0.5464.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.011,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0117,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "specific": {
-    "canonical_name": "specific",
-    "entity_type": "LOSS",
-    "mechanism_category": "Loss",
-    "composite_score": 0.6093,
-    "ner_confidence_score": 0.0532,
+    "composite_score": 0.6417,
+    "ner_confidence_score": 0.215,
     "section_relevance_score": 0.75,
     "relation_confidence_score": 0.5,
     "full_text_score": 1.0,
@@ -1946,20 +2639,20 @@
     "task_modality_match_score": 0.85,
     "supporting_paper_count": 1,
     "supporting_paper_ids": [
-      "paper_41131352"
+      "paper_41102633"
     ],
     "supporting_pmids": [
-      "41131352"
+      "41102633"
     ],
     "supporting_dois": [
-      "10.1038/s41746-025-02003-4"
+      "10.1186/s12859-025-06227-9"
     ],
     "total_mention_count": 1,
     "methods_section_mentions": 0,
     "participating_relation_count": 0,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.053, section relevance 0.75, and composite score 0.6093.",
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.215, section relevance 0.75, and composite score 0.6417.",
     "factor_breakdown": {
-      "ner_confidence_component": 0.0106,
+      "ner_confidence_component": 0.043,
       "section_relevance_component": 0.15,
       "relation_component": 0.075,
       "full_text_component": 0.15,
@@ -1969,517 +2662,36 @@
     },
     "scoring_version": "Stage2D_SectionAware_v2.0"
   },
-  "strongest": {
-    "canonical_name": "strongest",
-    "entity_type": "MODEL_ARCH",
+  "axis": {
+    "canonical_name": "axis",
+    "entity_type": "FEATURE_REPR",
     "mechanism_category": "Representation",
-    "composite_score": 0.5471,
-    "ner_confidence_score": 0.0571,
+    "composite_score": 0.5776,
+    "ner_confidence_score": 0.1315,
     "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0799,
+    "relation_confidence_score": 0.1841,
     "full_text_score": 1.0,
     "provenance_score": 1.0,
     "paper_support_score": 0.3869,
     "task_modality_match_score": 0.85,
     "supporting_paper_count": 1,
     "supporting_paper_ids": [
-      "paper_41131352"
+      "paper_40657529"
     ],
     "supporting_pmids": [
-      "41131352"
+      "40657529"
     ],
     "supporting_dois": [
-      "10.1038/s41746-025-02003-4"
+      "10.1109/JTEHM.2025.3562724"
     ],
     "total_mention_count": 1,
     "methods_section_mentions": 0,
-    "participating_relation_count": 1,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.057, section relevance 0.75, and composite score 0.5471.",
+    "participating_relation_count": 2,
+    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.132, section relevance 0.75, and composite score 0.5776.",
     "factor_breakdown": {
-      "ner_confidence_component": 0.0114,
+      "ner_confidence_component": 0.0263,
       "section_relevance_component": 0.15,
-      "relation_component": 0.012,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "modality": {
-    "canonical_name": "modality",
-    "entity_type": "DATASET",
-    "mechanism_category": "UNMAPPED",
-    "composite_score": 0.5534,
-    "ner_confidence_score": 0.0886,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0799,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_41131352"
-    ],
-    "supporting_pmids": [
-      "41131352"
-    ],
-    "supporting_dois": [
-      "10.1038/s41746-025-02003-4"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 1,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.089, section relevance 0.75, and composite score 0.5534.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0177,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.012,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "purpose": {
-    "canonical_name": "purpose",
-    "entity_type": "DATASET",
-    "mechanism_category": "UNMAPPED",
-    "composite_score": 0.5477,
-    "ner_confidence_score": 0.0662,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0715,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_41131352"
-    ],
-    "supporting_pmids": [
-      "41131352"
-    ],
-    "supporting_dois": [
-      "10.1038/s41746-025-02003-4"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 3,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.066, section relevance 0.75, and composite score 0.5477.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0132,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0107,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "wen3": {
-    "canonical_name": "wen3",
-    "entity_type": "MODEL_ARCH",
-    "mechanism_category": "Representation",
-    "composite_score": 0.5542,
-    "ner_confidence_score": 0.093,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0791,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_41131352"
-    ],
-    "supporting_pmids": [
-      "41131352"
-    ],
-    "supporting_dois": [
-      "10.1038/s41746-025-02003-4"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 3,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.093, section relevance 0.75, and composite score 0.5542.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0186,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0119,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "specialized": {
-    "canonical_name": "specialized",
-    "entity_type": "LOSS",
-    "mechanism_category": "Loss",
-    "composite_score": 0.5433,
-    "ner_confidence_score": 0.0457,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0696,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_41131352"
-    ],
-    "supporting_pmids": [
-      "41131352"
-    ],
-    "supporting_dois": [
-      "10.1038/s41746-025-02003-4"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 3,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.046, section relevance 0.75, and composite score 0.5433.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0091,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0104,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "medical": {
-    "canonical_name": "medical",
-    "entity_type": "DATASET",
-    "mechanism_category": "UNMAPPED",
-    "composite_score": 0.5406,
-    "ner_confidence_score": 0.0413,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.0579,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_41131352"
-    ],
-    "supporting_pmids": [
-      "41131352"
-    ],
-    "supporting_dois": [
-      "10.1038/s41746-025-02003-4"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 3,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.041, section relevance 0.75, and composite score 0.5406.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0083,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0087,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "by": {
-    "canonical_name": "by",
-    "entity_type": "LOSS",
-    "mechanism_category": "Loss",
-    "composite_score": 0.616,
-    "ner_confidence_score": 0.0864,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.5,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_41353186"
-    ],
-    "supporting_pmids": [
-      "41353186"
-    ],
-    "supporting_dois": [
-      "10.1186/s13040-025-00495-0"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 0,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.086, section relevance 0.75, and composite score 0.6160.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0173,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.075,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "shot": {
-    "canonical_name": "shot",
-    "entity_type": "DATASET",
-    "mechanism_category": "UNMAPPED",
-    "composite_score": 0.5586,
-    "ner_confidence_score": 0.0834,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.1212,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_41353186"
-    ],
-    "supporting_pmids": [
-      "41353186"
-    ],
-    "supporting_dois": [
-      "10.1186/s13040-025-00495-0"
-    ],
-    "total_mention_count": 2,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 1,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.083, section relevance 0.75, and composite score 0.5586.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0167,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0182,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "index": {
-    "canonical_name": "index",
-    "entity_type": "MODEL_ARCH",
-    "mechanism_category": "Representation",
-    "composite_score": 0.6131,
-    "ner_confidence_score": 0.0722,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.5,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_41353186"
-    ],
-    "supporting_pmids": [
-      "41353186"
-    ],
-    "supporting_dois": [
-      "10.1186/s13040-025-00495-0"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 0,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.072, section relevance 0.75, and composite score 0.6131.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0144,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.075,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "om": {
-    "canonical_name": "om",
-    "entity_type": "DATASET",
-    "mechanism_category": "UNMAPPED",
-    "composite_score": 0.5579,
-    "ner_confidence_score": 0.0834,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.1168,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_41353186"
-    ],
-    "supporting_pmids": [
-      "41353186"
-    ],
-    "supporting_dois": [
-      "10.1186/s13040-025-00495-0"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 1,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.083, section relevance 0.75, and composite score 0.5579.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0167,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0175,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "65": {
-    "canonical_name": "65",
-    "entity_type": "DATASET",
-    "mechanism_category": "UNMAPPED",
-    "composite_score": 0.5632,
-    "ner_confidence_score": 0.1101,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.1168,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_41353186"
-    ],
-    "supporting_pmids": [
-      "41353186"
-    ],
-    "supporting_dois": [
-      "10.1186/s13040-025-00495-0"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 1,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.110, section relevance 0.75, and composite score 0.5632.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.022,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0175,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "zero": {
-    "canonical_name": "zero",
-    "entity_type": "DATASET",
-    "mechanism_category": "UNMAPPED",
-    "composite_score": 0.5592,
-    "ner_confidence_score": 0.0866,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.1212,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_41353186"
-    ],
-    "supporting_pmids": [
-      "41353186"
-    ],
-    "supporting_dois": [
-      "10.1186/s13040-025-00495-0"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 1,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.087, section relevance 0.75, and composite score 0.5592.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0173,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0182,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "attention": {
-    "canonical_name": "Attention",
-    "entity_type": "LOSS",
-    "mechanism_category": "Loss",
-    "composite_score": 0.6128,
-    "ner_confidence_score": 0.0707,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.5,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_41353186"
-    ],
-    "supporting_pmids": [
-      "41353186"
-    ],
-    "supporting_dois": [
-      "10.1186/s13040-025-00495-0"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 0,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.071, section relevance 0.75, and composite score 0.6128.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0141,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.075,
-      "full_text_component": 0.15,
-      "provenance_component": 0.1,
-      "support_component": 0.0387,
-      "match_component": 0.085
-    },
-    "scoring_version": "Stage2D_SectionAware_v2.0"
-  },
-  "simple": {
-    "canonical_name": "simple",
-    "entity_type": "DATASET",
-    "mechanism_category": "UNMAPPED",
-    "composite_score": 0.5562,
-    "ner_confidence_score": 0.0794,
-    "section_relevance_score": 0.75,
-    "relation_confidence_score": 0.1112,
-    "full_text_score": 1.0,
-    "provenance_score": 1.0,
-    "paper_support_score": 0.3869,
-    "task_modality_match_score": 0.85,
-    "supporting_paper_count": 1,
-    "supporting_paper_ids": [
-      "paper_41353186"
-    ],
-    "supporting_pmids": [
-      "41353186"
-    ],
-    "supporting_dois": [
-      "10.1186/s13040-025-00495-0"
-    ],
-    "total_mention_count": 1,
-    "methods_section_mentions": 0,
-    "participating_relation_count": 1,
-    "selection_rationale": "Supported by 1 paper(s) (0 in Methods sections), mean NER confidence 0.079, section relevance 0.75, and composite score 0.5562.",
-    "factor_breakdown": {
-      "ner_confidence_component": 0.0159,
-      "section_relevance_component": 0.15,
-      "relation_component": 0.0167,
+      "relation_component": 0.0276,
       "full_text_component": 0.15,
       "provenance_component": 0.1,
       "support_component": 0.0387,

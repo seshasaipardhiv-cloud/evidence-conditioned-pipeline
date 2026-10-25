@@ -1,0 +1,36 @@
+{
+  "dataset_name": "SciBERT Real Scientific Methodology NER Benchmark",
+  "provenance": "100% genuine published scientific literature from PubMed/CrossRef (zero synthetic data)",
+  "total_source_papers": 30,
+  "papers_with_abstracts": 30,
+  "total_sentences": 321,
+  "sentences_with_entities": 108,
+  "total_entity_spans": 183,
+  "entity_distribution_across_classes": {
+    "MODEL_ARCH": 42,
+    "FUSION": 28,
+    "EVALUATION": 74,
+    "DATASET": 11,
+    "PREPROCESSING": 3,
+    "FEATURE_REPR": 24,
+    "HYPERPARAMETER": 1
+  },
+  "split_summary": {
+    "train": {
+      "paper_count": 21,
+      "sentence_count": 223,
+      "entity_count": 108
+    },
+    "validation": {
+      "paper_count": 4,
+      "sentence_count": 43,
+      "entity_count": 26
+    },
+    "test": {
+      "paper_count": 5,
+      "sentence_count": 55,
+      "entity_count": 49
+    }
+  },
+  "leakage_isolation": "Paper-level disjoint split (no sentences from test papers exist in train or val)"
+}

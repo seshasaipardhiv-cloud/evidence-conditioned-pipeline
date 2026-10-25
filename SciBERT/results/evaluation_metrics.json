@@ -1,0 +1,149 @@
+{
+  "evaluation_name": "SciBERT NER Test Set Evaluation on Real Published Literature",
+  "provenance": "100% genuine held-out research abstracts (disjoint papers, zero synthetic sentences)",
+  "test_sentences_count": 55,
+  "total_tokens_evaluated": 1668,
+  "token_accuracy": 0.973,
+  "entity_level_micro_f1": 0.6341,
+  "entity_level_macro_f1": 0.6118,
+  "class_wise_metrics": {
+    "O": {
+      "precision": 0.9736,
+      "recall": 0.9987,
+      "f1_score": 0.986,
+      "support": 1586
+    },
+    "B-MODEL_ARCH": {
+      "precision": 0.8571,
+      "recall": 0.6667,
+      "f1_score": 0.75,
+      "support": 9
+    },
+    "I-MODEL_ARCH": {
+      "precision": 0.8571,
+      "recall": 0.6,
+      "f1_score": 0.7059,
+      "support": 10
+    },
+    "B-PREPROCESSING": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 0
+    },
+    "I-PREPROCESSING": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 0
+    },
+    "B-SAMPLING": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 0
+    },
+    "I-SAMPLING": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 0
+    },
+    "B-FEATURE_REPR": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 3
+    },
+    "I-FEATURE_REPR": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 0
+    },
+    "B-FUSION": {
+      "precision": 1.0,
+      "recall": 0.0909,
+      "f1_score": 0.1667,
+      "support": 11
+    },
+    "I-FUSION": {
+      "precision": 1.0,
+      "recall": 0.1818,
+      "f1_score": 0.3077,
+      "support": 11
+    },
+    "B-LOSS": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 0
+    },
+    "I-LOSS": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 0
+    },
+    "B-OPTIMIZATION": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 0
+    },
+    "I-OPTIMIZATION": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 0
+    },
+    "B-REGULARIZATION": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 0
+    },
+    "I-REGULARIZATION": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 0
+    },
+    "B-EVALUATION": {
+      "precision": 1.0,
+      "recall": 0.4583,
+      "f1_score": 0.6286,
+      "support": 24
+    },
+    "I-EVALUATION": {
+      "precision": 1.0,
+      "recall": 0.9,
+      "f1_score": 0.9474,
+      "support": 10
+    },
+    "B-DATASET": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 2
+    },
+    "I-DATASET": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 2
+    },
+    "B-HYPERPARAMETER": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 0
+    },
+    "I-HYPERPARAMETER": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 0
+    }
+  }
+}

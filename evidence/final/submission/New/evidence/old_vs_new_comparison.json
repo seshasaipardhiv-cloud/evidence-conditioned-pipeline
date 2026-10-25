@@ -15,9 +15,9 @@
     "ground_truth_status": "NOT_AVAILABLE_WITHOUT_GOLD_LABELS",
     "mean_ner_confidence": 0.154,
     "confidence_tier": "ALL_LOW",
-    "entity_count": 87,
+    "entity_count": 202,
     "section_awareness": true,
-    "checkpoint_sha256": "405fc1be40760a25a2426bc6213072dd03deb1a46f72478c4f7f63683398eacf",
+    "checkpoint_sha256": "4300816efe0dd62376c2bedbfe201678ad85d0c3436eb6f45afcda4f989e6214",
     "important_note": "NER precision/recall/F1 cannot be reported as gold-standard metrics without human-annotated ground truth. Mean confidence = 0.154 (LOW tier)."
   }
 }

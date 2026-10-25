@@ -64,9 +64,21 @@ class ExplicitEnsembleSynthesizer:
         test_probs_list = []
         val_scores = []
 
+        # Apply SMOTE to training split if class imbalance is present
+        pos_r = float(np.mean(y_train))
+        if 0.0 < pos_r < 0.40 or pos_r > 0.60:
+            try:
+                from imblearn.over_sampling import SMOTE
+                sm = SMOTE(random_state=seed)
+                X_train_fit, y_train_fit = sm.fit_resample(X_train_sc, y_train)
+            except Exception:
+                X_train_fit, y_train_fit = X_train_sc, y_train
+        else:
+            X_train_fit, y_train_fit = X_train_sc, y_train
+
         for name in member_names:
             clf = self._instantiate_model(name, seed)
-            clf.fit(X_train_sc, y_train)
+            clf.fit(X_train_fit, y_train_fit)
 
             v_prob = clf.predict_proba(X_val_sc)[:, 1]
             t_prob = clf.predict_proba(X_test_sc)[:, 1]
@@ -120,11 +132,11 @@ class ExplicitEnsembleSynthesizer:
     def _instantiate_model(self, name: str, seed: int):
         m_key = name.lower()
         if "xgboost" in m_key or "gradient" in m_key:
-            return GradientBoostingClassifier(n_estimators=40, max_depth=3, random_state=seed)
+            return GradientBoostingClassifier(n_estimators=50, max_depth=3, random_state=seed)
         elif "random forest" in m_key:
-            return RandomForestClassifier(n_estimators=40, max_depth=4, random_state=seed)
+            return RandomForestClassifier(n_estimators=50, max_depth=5, class_weight="balanced", random_state=seed)
         elif "logistic" in m_key:
-            return LogisticRegression(C=1.0, max_iter=200, random_state=seed)
+            return LogisticRegression(C=1.0, class_weight="balanced", max_iter=300, random_state=seed)
         return GradientBoostingClassifier(n_estimators=30, random_state=seed)
 
     def _calc_metrics(self, y_true: np.ndarray, y_prob: np.ndarray, y_pred: np.ndarray) -> Dict[str, float]:

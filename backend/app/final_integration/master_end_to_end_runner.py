@@ -124,6 +124,32 @@ class MasterEndToEndRunner:
         logger.info("[STEP 8/8] Rendering 18 Publication Plots (strictly from canonical predictions)...")
         self.plot_generator.generate_all_18_plots(cohort_results, decision_ledger)
 
+        # Sync plots to new2/plots
+        import shutil
+        new2_plots = Path("new2/plots")
+        new2_plots.mkdir(parents=True, exist_ok=True)
+        for p_file in (self.new_out_dir / "plots").glob("*.png"):
+            shutil.copy2(p_file, new2_plots / p_file.name)
+        logger.info(f"Synchronized publication plots to {new2_plots}")
+
+        # 10. Generate & Sync SciBERT Extraction Accuracy & Analytical Plots
+        logger.info("[STEP 9/10] Generating SciBERT Extraction Accuracy & Analytical Plots...")
+        try:
+            from SciBERT.code.generate_scibert_plots import run_all_plots
+            run_all_plots()
+            logger.info("Successfully generated and synchronized SciBERT extraction analytical plots.")
+        except Exception as e:
+            logger.warning(f"SciBERT plot generation encountered: {e}")
+
+        # 11. Generate & Sync Unconditioned Baseline Comparison Plots
+        logger.info("[STEP 10/10] Generating Unconditioned Baseline vs Evidence Pipeline Benchmark Plots...")
+        try:
+            from scripts.generate_unconditioned_comparison_plots import generate_plots as run_unconditioned_plots
+            run_unconditioned_plots()
+            logger.info("Successfully generated and synchronized unconditioned comparison plots.")
+        except Exception as e:
+            logger.warning(f"Unconditioned plot generation encountered: {e}")
+
         elapsed = round(time.time() - start_time, 2)
         logger.info("================================================================================")
         logger.info(f"MASTER END-TO-END EXECUTION COMPLETED SUCCESSFULLY IN {elapsed}s")

@@ -218,19 +218,22 @@ class ResultsPackager:
             seed_accs, seed_precs, seed_recs, seed_f1s = [], [], [], []
 
             for seed, seed_rows in seed_groups.items():
-                y_t    = [r["true_label"]            for r in seed_rows]
-                y_p    = [r["predicted_probability"] for r in seed_rows]
-                y_pred = [r["predicted_class"]       for r in seed_rows]
-                if not y_t:
+                y_t    = np.array([r["true_label"]            for r in seed_rows], dtype=int)
+                y_p    = np.array([r["predicted_probability"] for r in seed_rows], dtype=float)
+                y_pred = np.array([r["predicted_class"]       for r in seed_rows], dtype=int)
+                if len(y_t) == 0:
                     continue
-                m = _compute_metrics_from_predictions(y_t, y_p, y_pred)
-                seed_rocs.append(m["roc_auc"])
-                seed_prs.append(m["pr_auc"])
-                seed_briers.append(m["brier_score"])
-                seed_accs.append(m["accuracy"])
-                seed_precs.append(m["precision"])
-                seed_recs.append(m["recall"])
-                seed_f1s.append(m["f1"])
+                if len(np.unique(y_t)) > 1:
+                    seed_rocs.append(float(roc_auc_score(y_t, y_p)))
+                    seed_prs.append(float(average_precision_score(y_t, y_p)))
+                else:
+                    seed_rocs.append(0.5)
+                    seed_prs.append(0.5)
+                seed_briers.append(float(brier_score_loss(y_t, y_p)))
+                seed_accs.append(float(accuracy_score(y_t, y_pred)))
+                seed_precs.append(float(precision_score(y_t, y_pred, zero_division=0)))
+                seed_recs.append(float(recall_score(y_t, y_pred, zero_division=0)))
+                seed_f1s.append(float(f1_score(y_t, y_pred, zero_division=0)))
 
             if not seed_rocs:
                 logger.warning(f"No seed predictions for cohort {cohort} — skipping metric computation.")

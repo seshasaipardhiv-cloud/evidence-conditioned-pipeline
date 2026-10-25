@@ -1,0 +1,222 @@
+{
+  "Cohort_A_Authoritative_Hancock": {
+    "unconditioned_lr": {
+      "roc_auc_mean": 0.9757,
+      "roc_auc_std": 0.0104,
+      "pr_auc_mean": 0.9572,
+      "f1_mean": 0.9557,
+      "accuracy_mean": 0.9796,
+      "brier_mean": 0.0201
+    },
+    "unconditioned_xgb": {
+      "roc_auc_mean": 0.9709,
+      "roc_auc_std": 0.0079,
+      "pr_auc_mean": 0.9562,
+      "f1_mean": 0.9397,
+      "accuracy_mean": 0.9723,
+      "brier_mean": 0.0245
+    },
+    "unconditioned_rf": {
+      "roc_auc_mean": 0.9721,
+      "roc_auc_std": 0.0216,
+      "pr_auc_mean": 0.9444,
+      "f1_mean": 0.9557,
+      "accuracy_mean": 0.9796,
+      "brier_mean": 0.0238
+    },
+    "evidence_pipeline": {
+      "model_name": "XGBoost",
+      "roc_auc_mean": 0.9632,
+      "roc_auc_std": 0.0037,
+      "pr_auc_mean": 0.9437,
+      "f1_mean": 0.9524,
+      "accuracy_mean": 0.9782,
+      "brier_mean": 0.0227
+    },
+    "ensemble": {
+      "members": [
+        "XGBoost",
+        "Random Forest",
+        "Logistic Regression"
+      ],
+      "roc_auc_mean": 0.9807,
+      "f1_mean": 0.9711
+    }
+  },
+  "Cohort_B_Unseen_Cardiac_Tabular": {
+    "unconditioned_lr": {
+      "roc_auc_mean": 0.7876,
+      "roc_auc_std": 0.0347,
+      "pr_auc_mean": 0.4612,
+      "f1_mean": 0.2426,
+      "accuracy_mean": 0.8263,
+      "brier_mean": 0.1319
+    },
+    "unconditioned_xgb": {
+      "roc_auc_mean": 0.7792,
+      "roc_auc_std": 0.0354,
+      "pr_auc_mean": 0.4336,
+      "f1_mean": 0.3222,
+      "accuracy_mean": 0.7746,
+      "brier_mean": 0.172
+    },
+    "unconditioned_rf": {
+      "roc_auc_mean": 0.7871,
+      "roc_auc_std": 0.0329,
+      "pr_auc_mean": 0.4452,
+      "f1_mean": 0.4259,
+      "accuracy_mean": 0.7934,
+      "brier_mean": 0.1529
+    },
+    "evidence_pipeline": {
+      "model_name": "XGBoost",
+      "roc_auc_mean": 0.7863,
+      "roc_auc_std": 0.0542,
+      "pr_auc_mean": 0.4069,
+      "f1_mean": 0.4522,
+      "accuracy_mean": 0.7371,
+      "brier_mean": 0.2077
+    },
+    "ensemble": {
+      "members": [
+        "XGBoost",
+        "Random Forest",
+        "Logistic Regression"
+      ],
+      "roc_auc_mean": 0.7922,
+      "f1_mean": 0.4638
+    }
+  },
+  "Cohort_C_Unseen_Derm_Image": {
+    "unconditioned_lr": {
+      "roc_auc_mean": 0.6905,
+      "roc_auc_std": 0.0384,
+      "pr_auc_mean": 0.4055,
+      "f1_mean": 0.3324,
+      "accuracy_mean": 0.7934,
+      "brier_mean": 0.1539
+    },
+    "unconditioned_xgb": {
+      "roc_auc_mean": 0.7365,
+      "roc_auc_std": 0.0803,
+      "pr_auc_mean": 0.3546,
+      "f1_mean": 0.1768,
+      "accuracy_mean": 0.7887,
+      "brier_mean": 0.164
+    },
+    "unconditioned_rf": {
+      "roc_auc_mean": 0.7286,
+      "roc_auc_std": 0.0316,
+      "pr_auc_mean": 0.3521,
+      "f1_mean": 0.1835,
+      "accuracy_mean": 0.7934,
+      "brier_mean": 0.1413
+    },
+    "evidence_pipeline": {
+      "model_name": "ResNet-18",
+      "roc_auc_mean": 0.8068,
+      "roc_auc_std": 0.0141,
+      "pr_auc_mean": 0.5884,
+      "f1_mean": 0.4944,
+      "accuracy_mean": 0.8263,
+      "brier_mean": 0.1231
+    },
+    "ensemble": {
+      "members": [
+        "ResNet-18",
+        "EfficientNet-B0",
+        "Logistic Regression"
+      ],
+      "roc_auc_mean": 0.7479,
+      "f1_mean": 0.3313
+    }
+  },
+  "Cohort_D_Unseen_Pathology_Text": {
+    "unconditioned_lr": {
+      "roc_auc_mean": 0.512,
+      "roc_auc_std": 0.0176,
+      "pr_auc_mean": 0.2428,
+      "f1_mean": 0.1609,
+      "accuracy_mean": 0.6592,
+      "brier_mean": 0.2411
+    },
+    "unconditioned_xgb": {
+      "roc_auc_mean": 0.5637,
+      "roc_auc_std": 0.0159,
+      "pr_auc_mean": 0.2974,
+      "f1_mean": 0.1974,
+      "accuracy_mean": 0.7474,
+      "brier_mean": 0.1921
+    },
+    "unconditioned_rf": {
+      "roc_auc_mean": 0.5374,
+      "roc_auc_std": 0.024,
+      "pr_auc_mean": 0.2946,
+      "f1_mean": 0.0715,
+      "accuracy_mean": 0.7713,
+      "brier_mean": 0.1816
+    },
+    "evidence_pipeline": {
+      "model_name": "PubMedBERT",
+      "roc_auc_mean": 0.5681,
+      "roc_auc_std": 0.0183,
+      "pr_auc_mean": 0.3083,
+      "f1_mean": 0.3084,
+      "accuracy_mean": 0.698,
+      "brier_mean": 0.206
+    },
+    "ensemble": {
+      "members": [
+        "PubMedBERT",
+        "ClinicalBERT",
+        "TF-IDF + Linear Classifier"
+      ],
+      "roc_auc_mean": 0.5425,
+      "f1_mean": 0.261
+    }
+  },
+  "Cohort_E_Unseen_Trimodal_Oncology": {
+    "unconditioned_lr": {
+      "roc_auc_mean": 0.8059,
+      "roc_auc_std": 0.0222,
+      "pr_auc_mean": 0.5899,
+      "f1_mean": 0.5238,
+      "accuracy_mean": 0.8545,
+      "brier_mean": 0.1165
+    },
+    "unconditioned_xgb": {
+      "roc_auc_mean": 0.8815,
+      "roc_auc_std": 0.0174,
+      "pr_auc_mean": 0.6645,
+      "f1_mean": 0.5585,
+      "accuracy_mean": 0.8638,
+      "brier_mean": 0.1133
+    },
+    "unconditioned_rf": {
+      "roc_auc_mean": 0.8073,
+      "roc_auc_std": 0.0017,
+      "pr_auc_mean": 0.5156,
+      "f1_mean": 0.3043,
+      "accuracy_mean": 0.8216,
+      "brier_mean": 0.1235
+    },
+    "evidence_pipeline": {
+      "model_name": "Multimodal Pipeline (tabular + image + text)",
+      "roc_auc_mean": 0.8373,
+      "roc_auc_std": 0.0531,
+      "pr_auc_mean": 0.6105,
+      "f1_mean": 0.5847,
+      "accuracy_mean": 0.8263,
+      "brier_mean": 0.1285
+    },
+    "ensemble": {
+      "members": [
+        "XGBoost",
+        "Random Forest",
+        "Logistic Regression"
+      ],
+      "roc_auc_mean": 0.8686,
+      "f1_mean": 0.5299
+    }
+  }
+}

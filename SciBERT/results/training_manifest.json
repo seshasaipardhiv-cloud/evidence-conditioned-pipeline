@@ -1,0 +1,53 @@
+{
+  "training_name": "SciBERT Real Scientific Literature NER Head Fine-Tuning",
+  "provenance": "100% genuine published literature from PubMed/CrossRef (30 research papers)",
+  "synthetic_data_used": false,
+  "base_model": "allenai/scibert_scivocab_uncased",
+  "seed": 42,
+  "device": "cpu",
+  "total_epochs": 7,
+  "final_train_loss": 0.4004,
+  "final_val_loss": 0.4668,
+  "best_val_loss": 0.4411,
+  "checkpoint_path": "SciBERT\\results\\scibert_ner_head.pt",
+  "checkpoint_sha256": "06824be12116c9f5151778223e1c9eea8cdcd22bfca2cebdfcfea87ce34358fc",
+  "training_samples_count": 223,
+  "validation_samples_count": 43,
+  "loss_history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5057,
+      "val_loss": 0.4658
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.4046,
+      "val_loss": 0.4411
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.3942,
+      "val_loss": 0.4478
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.3966,
+      "val_loss": 0.4727
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.4271,
+      "val_loss": 0.4824
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.4,
+      "val_loss": 0.4654
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.4004,
+      "val_loss": 0.4668
+    }
+  ]
+}

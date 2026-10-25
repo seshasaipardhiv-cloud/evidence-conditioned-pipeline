@@ -1,0 +1,1135 @@
+[
+  {
+    "example_id": "paper_10.1038_s42256-023-00633-5_s00",
+    "source_paper_id": "paper_10.1038_s42256-023-00633-5",
+    "source_pmid": "37693852",
+    "source_doi": "10.1038/s42256-023-00633-5",
+    "source_title": "Multimodal data fusion for cancer biomarker discovery with deep learning.",
+    "sentence_text": "Technological advances now make it possible to study a patient from multiple angles with high-dimensional, high-throughput multi-scale biomedical data.",
+    "char_length": 151,
+    "word_count": 19,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_10.1038_s42256-023-00633-5_s01",
+    "source_paper_id": "paper_10.1038_s42256-023-00633-5",
+    "source_pmid": "37693852",
+    "source_doi": "10.1038/s42256-023-00633-5",
+    "source_title": "Multimodal data fusion for cancer biomarker discovery with deep learning.",
+    "sentence_text": "In oncology, massive amounts of data are being generated ranging from molecular, histopathology, radiology to clinical records.",
+    "char_length": 127,
+    "word_count": 17,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_10.1038_s42256-023-00633-5_s02",
+    "source_paper_id": "paper_10.1038_s42256-023-00633-5",
+    "source_pmid": "37693852",
+    "source_doi": "10.1038/s42256-023-00633-5",
+    "source_title": "Multimodal data fusion for cancer biomarker discovery with deep learning.",
+    "sentence_text": "The introduction of deep learning has significantly advanced the analysis of biomedical data.",
+    "char_length": 93,
+    "word_count": 13,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 20,
+        "end_char": 33,
+        "text": "deep learning",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.54
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_10.1038_s42256-023-00633-5_s03",
+    "source_paper_id": "paper_10.1038_s42256-023-00633-5",
+    "source_pmid": "37693852",
+    "source_doi": "10.1038/s42256-023-00633-5",
+    "source_title": "Multimodal data fusion for cancer biomarker discovery with deep learning.",
+    "sentence_text": "However, most approaches focus on single data modalities leading to slow progress in methods to integrate complementary data types.",
+    "char_length": 131,
+    "word_count": 19,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_10.1038_s42256-023-00633-5_s04",
+    "source_paper_id": "paper_10.1038_s42256-023-00633-5",
+    "source_pmid": "37693852",
+    "source_doi": "10.1038/s42256-023-00633-5",
+    "source_title": "Multimodal data fusion for cancer biomarker discovery with deep learning.",
+    "sentence_text": "Development of effective multimodal fusion approaches is becoming increasingly important as a single modality might not be consistent and sufficient to capture the heterogeneity of complex diseases to tailor medical care and improve personalised medicine.",
+    "char_length": 255,
+    "word_count": 35,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 25,
+        "end_char": 42,
+        "text": "multimodal fusion",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_10.1038_s42256-023-00633-5_s05",
+    "source_paper_id": "paper_10.1038_s42256-023-00633-5",
+    "source_pmid": "37693852",
+    "source_doi": "10.1038/s42256-023-00633-5",
+    "source_title": "Multimodal data fusion for cancer biomarker discovery with deep learning.",
+    "sentence_text": "Many initiatives now focus on integrating these disparate modalities to unravel the biological processes involved in multifactorial diseases such as cancer.",
+    "char_length": 156,
+    "word_count": 21,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_10.1038_s42256-023-00633-5_s06",
+    "source_paper_id": "paper_10.1038_s42256-023-00633-5",
+    "source_pmid": "37693852",
+    "source_doi": "10.1038/s42256-023-00633-5",
+    "source_title": "Multimodal data fusion for cancer biomarker discovery with deep learning.",
+    "sentence_text": "However, many obstacles remain, including lack of usable data as well as methods for clinical validation and interpretation.",
+    "char_length": 124,
+    "word_count": 18,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_10.1038_s42256-023-00633-5_s07",
+    "source_paper_id": "paper_10.1038_s42256-023-00633-5",
+    "source_pmid": "37693852",
+    "source_doi": "10.1038/s42256-023-00633-5",
+    "source_title": "Multimodal data fusion for cancer biomarker discovery with deep learning.",
+    "sentence_text": "Here, we cover these current challenges and reflect on opportunities through deep learning to tackle data sparsity and scarcity, multimodal interpretability, and standardisation of datasets.",
+    "char_length": 190,
+    "word_count": 25,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 77,
+        "end_char": 90,
+        "text": "deep learning",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.54
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_39074400_s00",
+    "source_paper_id": "paper_39074400",
+    "source_pmid": "39074400",
+    "source_doi": "10.1097/RLI.0000000000001102",
+    "source_title": "Multimodal AI Combining Clinical and Imaging Inputs Improves Prostate Cancer Detection.",
+    "sentence_text": "OBJECTIVES: Deep learning (DL) studies for the detection of clinically significant prostate cancer (csPCa) on magnetic resonance imaging (MRI) often overlook potentially relevant clinical parameters such as prostate-specific antigen, prostate volume, and age.",
+    "char_length": 259,
+    "word_count": 33,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 12,
+        "end_char": 25,
+        "text": "Deep learning",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.54
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_39074400_s01",
+    "source_paper_id": "paper_39074400",
+    "source_pmid": "39074400",
+    "source_doi": "10.1097/RLI.0000000000001102",
+    "source_title": "Multimodal AI Combining Clinical and Imaging Inputs Improves Prostate Cancer Detection.",
+    "sentence_text": "This study explored the integration of clinical parameters and MRI-based DL to enhance diagnostic accuracy for csPCa on MRI.",
+    "char_length": 124,
+    "word_count": 19,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 98,
+        "end_char": 106,
+        "text": "accuracy",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_39074400_s02",
+    "source_paper_id": "paper_39074400",
+    "source_pmid": "39074400",
+    "source_doi": "10.1097/RLI.0000000000001102",
+    "source_title": "Multimodal AI Combining Clinical and Imaging Inputs Improves Prostate Cancer Detection.",
+    "sentence_text": "MATERIALS AND METHODS: We retrospectively analyzed 932 biparametric prostate MRI examinations performed for suspected csPCa (ISUP \u22652) at 2 institutions.",
+    "char_length": 152,
+    "word_count": 20,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_39074400_s03",
+    "source_paper_id": "paper_39074400",
+    "source_pmid": "39074400",
+    "source_doi": "10.1097/RLI.0000000000001102",
+    "source_title": "Multimodal AI Combining Clinical and Imaging Inputs Improves Prostate Cancer Detection.",
+    "sentence_text": "Each MRI scan was automatically analyzed by a previously developed DL model to detect and segment csPCa lesions.",
+    "char_length": 112,
+    "word_count": 18,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_39074400_s04",
+    "source_paper_id": "paper_39074400",
+    "source_pmid": "39074400",
+    "source_doi": "10.1097/RLI.0000000000001102",
+    "source_title": "Multimodal AI Combining Clinical and Imaging Inputs Improves Prostate Cancer Detection.",
+    "sentence_text": "Three sets of features were extracted: DL lesion suspicion levels, clinical parameters (prostate-specific antigen, prostate volume, age), and MRI-based lesion volumes for all DL-detected lesions.",
+    "char_length": 195,
+    "word_count": 25,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_39074400_s05",
+    "source_paper_id": "paper_39074400",
+    "source_pmid": "39074400",
+    "source_doi": "10.1097/RLI.0000000000001102",
+    "source_title": "Multimodal AI Combining Clinical and Imaging Inputs Improves Prostate Cancer Detection.",
+    "sentence_text": "Six multimodal artificial intelligence (AI) classifiers were trained for each combination of feature sets, employing both early (feature-level) and late (decision-level) information fusion methods.",
+    "char_length": 197,
+    "word_count": 24,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_39074400_s06",
+    "source_paper_id": "paper_39074400",
+    "source_pmid": "39074400",
+    "source_doi": "10.1097/RLI.0000000000001102",
+    "source_title": "Multimodal AI Combining Clinical and Imaging Inputs Improves Prostate Cancer Detection.",
+    "sentence_text": "The diagnostic performance of each model was tested internally on 20% of center 1 data and externally on center 2 data (n = 529).",
+    "char_length": 129,
+    "word_count": 24,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_39074400_s07",
+    "source_paper_id": "paper_39074400",
+    "source_pmid": "39074400",
+    "source_doi": "10.1097/RLI.0000000000001102",
+    "source_title": "Multimodal AI Combining Clinical and Imaging Inputs Improves Prostate Cancer Detection.",
+    "sentence_text": "Receiver operating characteristic comparisons determined the optimal feature combination and information fusion method and assessed the benefit of multimodal vs. unimodal analysis.",
+    "char_length": 180,
+    "word_count": 22,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_39074400_s08",
+    "source_paper_id": "paper_39074400",
+    "source_pmid": "39074400",
+    "source_doi": "10.1097/RLI.0000000000001102",
+    "source_title": "Multimodal AI Combining Clinical and Imaging Inputs Improves Prostate Cancer Detection.",
+    "sentence_text": "The optimal model performance was compared with a radiologist using PI-RADS.",
+    "char_length": 76,
+    "word_count": 11,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_39074400_s09",
+    "source_paper_id": "paper_39074400",
+    "source_pmid": "39074400",
+    "source_doi": "10.1097/RLI.0000000000001102",
+    "source_title": "Multimodal AI Combining Clinical and Imaging Inputs Improves Prostate Cancer Detection.",
+    "sentence_text": "RESULTS: Internally, the multimodal AI integrating DL suspicion levels with clinical features via early fusion achieved the highest performance.",
+    "char_length": 144,
+    "word_count": 19,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 98,
+        "end_char": 110,
+        "text": "early fusion",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.54
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_39074400_s10",
+    "source_paper_id": "paper_39074400",
+    "source_pmid": "39074400",
+    "source_doi": "10.1097/RLI.0000000000001102",
+    "source_title": "Multimodal AI Combining Clinical and Imaging Inputs Improves Prostate Cancer Detection.",
+    "sentence_text": "Externally, it surpassed baselines using clinical parameters (0.77 vs 0.67 area under the curve [AUC], P < 0.001) and DL suspicion levels alone (AUC: 0.77 vs 0.70, P = 0.006).",
+    "char_length": 175,
+    "word_count": 30,
+    "entities_count": 2,
+    "spans": [
+      {
+        "start_char": 97,
+        "end_char": 100,
+        "text": "AUC",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 145,
+        "end_char": 148,
+        "text": "AUC",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_39074400_s11",
+    "source_paper_id": "paper_39074400",
+    "source_pmid": "39074400",
+    "source_doi": "10.1097/RLI.0000000000001102",
+    "source_title": "Multimodal AI Combining Clinical and Imaging Inputs Improves Prostate Cancer Detection.",
+    "sentence_text": "Early fusion outperformed late fusion in external data (0.77 vs 0.73 AUC, P = 0.005).",
+    "char_length": 85,
+    "word_count": 15,
+    "entities_count": 3,
+    "spans": [
+      {
+        "start_char": 0,
+        "end_char": 12,
+        "text": "Early fusion",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.54
+      },
+      {
+        "start_char": 26,
+        "end_char": 37,
+        "text": "late fusion",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 69,
+        "end_char": 72,
+        "text": "AUC",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_39074400_s12",
+    "source_paper_id": "paper_39074400",
+    "source_pmid": "39074400",
+    "source_doi": "10.1097/RLI.0000000000001102",
+    "source_title": "Multimodal AI Combining Clinical and Imaging Inputs Improves Prostate Cancer Detection.",
+    "sentence_text": "No significant performance gaps were observed between multimodal AI and radiologist assessments (internal: 0.87 vs 0.88 AUC; external: 0.77 vs 0.75 AUC, both P > 0.05).",
+    "char_length": 168,
+    "word_count": 26,
+    "entities_count": 2,
+    "spans": [
+      {
+        "start_char": 120,
+        "end_char": 123,
+        "text": "AUC",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 148,
+        "end_char": 151,
+        "text": "AUC",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_39074400_s13",
+    "source_paper_id": "paper_39074400",
+    "source_pmid": "39074400",
+    "source_doi": "10.1097/RLI.0000000000001102",
+    "source_title": "Multimodal AI Combining Clinical and Imaging Inputs Improves Prostate Cancer Detection.",
+    "sentence_text": "CONCLUSIONS: Multimodal AI (combining DL suspicion levels and clinical parameters) outperforms clinical and MRI-only AI for csPCa detection.",
+    "char_length": 140,
+    "word_count": 18,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_39074400_s14",
+    "source_paper_id": "paper_39074400",
+    "source_pmid": "39074400",
+    "source_doi": "10.1097/RLI.0000000000001102",
+    "source_title": "Multimodal AI Combining Clinical and Imaging Inputs Improves Prostate Cancer Detection.",
+    "sentence_text": "Early information fusion enhanced AI robustness in our multicenter setting.",
+    "char_length": 75,
+    "word_count": 10,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_39074400_s15",
+    "source_paper_id": "paper_39074400",
+    "source_pmid": "39074400",
+    "source_doi": "10.1097/RLI.0000000000001102",
+    "source_title": "Multimodal AI Combining Clinical and Imaging Inputs Improves Prostate Cancer Detection.",
+    "sentence_text": "Incorporating lesion volumes did not enhance diagnostic efficacy.",
+    "char_length": 65,
+    "word_count": 8,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41968976_s00",
+    "source_paper_id": "paper_41968976",
+    "source_pmid": "41968976",
+    "source_doi": "10.20892/j.issn.2095-3941.2025.0771",
+    "source_title": "Multimodal artificial intelligence predicts PIK3CA mutation in breast cancer from digital pathology and clinical data: a multicenter study.",
+    "sentence_text": "Accurate detection of  A total of 1,047 patients from TCGA and 166 patients from 3 external centers were included.",
+    "char_length": 114,
+    "word_count": 19,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 54,
+        "end_char": 58,
+        "text": "TCGA",
+        "entity_type": "DATASET",
+        "bio_tag": "B-DATASET",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41968976_s01",
+    "source_paper_id": "paper_41968976",
+    "source_pmid": "41968976",
+    "source_doi": "10.20892/j.issn.2095-3941.2025.0771",
+    "source_title": "Multimodal artificial intelligence predicts PIK3CA mutation in breast cancer from digital pathology and clinical data: a multicenter study.",
+    "sentence_text": "The histopathology model used a transformer-based pretrained encoder (H-optimus-0) and a clustering-constrained attention multiple instance learning (CLAM-SB MIL) classifier to generate WSI-level representations.",
+    "char_length": 212,
+    "word_count": 23,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 32,
+        "end_char": 43,
+        "text": "transformer",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.54
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41968976_s02",
+    "source_paper_id": "paper_41968976",
+    "source_pmid": "41968976",
+    "source_doi": "10.20892/j.issn.2095-3941.2025.0771",
+    "source_title": "Multimodal artificial intelligence predicts PIK3CA mutation in breast cancer from digital pathology and clinical data: a multicenter study.",
+    "sentence_text": "The clinical model incorporated engineered clinical variables and an extreme gradient boosting (XGBoost) model.",
+    "char_length": 111,
+    "word_count": 14,
+    "entities_count": 2,
+    "spans": [
+      {
+        "start_char": 96,
+        "end_char": 103,
+        "text": "XGBoost",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 69,
+        "end_char": 94,
+        "text": "extreme gradient boosting",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41968976_s03",
+    "source_paper_id": "paper_41968976",
+    "source_pmid": "41968976",
+    "source_doi": "10.20892/j.issn.2095-3941.2025.0771",
+    "source_title": "Multimodal artificial intelligence predicts PIK3CA mutation in breast cancer from digital pathology and clinical data: a multicenter study.",
+    "sentence_text": "A decision-level late fusion strategy (Multimodal  MPM outperformed single-modality models.",
+    "char_length": 91,
+    "word_count": 10,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 17,
+        "end_char": 28,
+        "text": "late fusion",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41968976_s04",
+    "source_paper_id": "paper_41968976",
+    "source_pmid": "41968976",
+    "source_doi": "10.20892/j.issn.2095-3941.2025.0771",
+    "source_title": "Multimodal artificial intelligence predicts PIK3CA mutation in breast cancer from digital pathology and clinical data: a multicenter study.",
+    "sentence_text": "It achieved an AUC of 0.745 on TCGA and maintained stable performance across external cohorts (0.695, 0.690, and 0.680).",
+    "char_length": 120,
+    "word_count": 19,
+    "entities_count": 2,
+    "spans": [
+      {
+        "start_char": 15,
+        "end_char": 18,
+        "text": "AUC",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 31,
+        "end_char": 35,
+        "text": "TCGA",
+        "entity_type": "DATASET",
+        "bio_tag": "B-DATASET",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41968976_s05",
+    "source_paper_id": "paper_41968976",
+    "source_pmid": "41968976",
+    "source_doi": "10.20892/j.issn.2095-3941.2025.0771",
+    "source_title": "Multimodal artificial intelligence predicts PIK3CA mutation in breast cancer from digital pathology and clinical data: a multicenter study.",
+    "sentence_text": "SHAP analysis identified molecular subtype as the most influential clinical feature, whereas attention maps highlighted mutation-associated morphological regions.",
+    "char_length": 162,
+    "word_count": 18,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41968976_s06",
+    "source_paper_id": "paper_41968976",
+    "source_pmid": "41968976",
+    "source_doi": "10.20892/j.issn.2095-3941.2025.0771",
+    "source_title": "Multimodal artificial intelligence predicts PIK3CA mutation in breast cancer from digital pathology and clinical data: a multicenter study.",
+    "sentence_text": "The developed multimodal framework effectively integrates complementary morphological and clinical information, and provides a robust and generalizable method for predicting",
+    "char_length": 173,
+    "word_count": 20,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42558280_s00",
+    "source_paper_id": "paper_42558280",
+    "source_pmid": "42558280",
+    "source_doi": "10.3389/fonc.2026.1906810",
+    "source_title": "Artificial intelligence in the early diagnosis of prostate cancer: from multimodal imaging to liquid biopsy.",
+    "sentence_text": "Prostate cancer (PCa) is the most prevalent malignant tumor in the urogenital system among men worldwide.",
+    "char_length": 105,
+    "word_count": 16,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 17,
+        "end_char": 20,
+        "text": "PCa",
+        "entity_type": "FEATURE_REPR",
+        "bio_tag": "B-FEATURE_REPR",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42558280_s01",
+    "source_paper_id": "paper_42558280",
+    "source_pmid": "42558280",
+    "source_doi": "10.3389/fonc.2026.1906810",
+    "source_title": "Artificial intelligence in the early diagnosis of prostate cancer: from multimodal imaging to liquid biopsy.",
+    "sentence_text": "Due to its subtle early symptoms and strong tumor heterogeneity, traditional diagnostic methods relying on a single prostate-specific antigen (PSA) initial screening and subjective imaging evaluations often lead to high false positives, overt biopsies, and missed small lesions.",
+    "char_length": 278,
+    "word_count": 38,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42558280_s02",
+    "source_paper_id": "paper_42558280",
+    "source_pmid": "42558280",
+    "source_doi": "10.3389/fonc.2026.1906810",
+    "source_title": "Artificial intelligence in the early diagnosis of prostate cancer: from multimodal imaging to liquid biopsy.",
+    "sentence_text": "The rapid development of artificial intelligence (AI) provides innovative solutions to overcome these clinical bottlenecks.",
+    "char_length": 123,
+    "word_count": 15,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42558280_s03",
+    "source_paper_id": "paper_42558280",
+    "source_pmid": "42558280",
+    "source_doi": "10.3389/fonc.2026.1906810",
+    "source_title": "Artificial intelligence in the early diagnosis of prostate cancer: from multimodal imaging to liquid biopsy.",
+    "sentence_text": "This article comprehensively reviews the application of AI in the early intelligent diagnosis of PCa.",
+    "char_length": 101,
+    "word_count": 15,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 97,
+        "end_char": 100,
+        "text": "PCa",
+        "entity_type": "FEATURE_REPR",
+        "bio_tag": "B-FEATURE_REPR",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42558280_s04",
+    "source_paper_id": "paper_42558280",
+    "source_pmid": "42558280",
+    "source_doi": "10.3389/fonc.2026.1906810",
+    "source_title": "Artificial intelligence in the early diagnosis of prostate cancer: from multimodal imaging to liquid biopsy.",
+    "sentence_text": "In the fields of ultrasound, magnetic resonance imaging (MRI), and positron emission tomography/computed tomography (PET/CT) imaging, AI significantly enhances the accuracy of target lesion identification.",
+    "char_length": 205,
+    "word_count": 25,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 164,
+        "end_char": 172,
+        "text": "accuracy",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_42558280_s05",
+    "source_paper_id": "paper_42558280",
+    "source_pmid": "42558280",
+    "source_doi": "10.3389/fonc.2026.1906810",
+    "source_title": "Artificial intelligence in the early diagnosis of prostate cancer: from multimodal imaging to liquid biopsy.",
+    "sentence_text": "It achieves this by deep decoding high-dimensional quantitative features and effectively reducing subjective bias.",
+    "char_length": 114,
+    "word_count": 14,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42558280_s06",
+    "source_paper_id": "paper_42558280",
+    "source_pmid": "42558280",
+    "source_doi": "10.3389/fonc.2026.1906810",
+    "source_title": "Artificial intelligence in the early diagnosis of prostate cancer: from multimodal imaging to liquid biopsy.",
+    "sentence_text": "In non-invasive liquid biopsy, AI-driven multi-omics networks have successfully addressed challenging screening blind spots, such as the PSA gray zone.",
+    "char_length": 151,
+    "word_count": 20,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_42558280_s07",
+    "source_paper_id": "paper_42558280",
+    "source_pmid": "42558280",
+    "source_doi": "10.3389/fonc.2026.1906810",
+    "source_title": "Artificial intelligence in the early diagnosis of prostate cancer: from multimodal imaging to liquid biopsy.",
+    "sentence_text": "In light of current challenges such as limited model generalization capability and the \"black box effect\" of algorithms, this article looks forward to the development prospects of constructing multimodal fusion models based on federated learning and explainable AI (XAI), aiming to promote the transition of PCa diagnosis and treatment from algorithm development to real clinical decision support.",
+    "char_length": 397,
+    "word_count": 57,
+    "entities_count": 2,
+    "spans": [
+      {
+        "start_char": 308,
+        "end_char": 311,
+        "text": "PCa",
+        "entity_type": "FEATURE_REPR",
+        "bio_tag": "B-FEATURE_REPR",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 193,
+        "end_char": 210,
+        "text": "multimodal fusion",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41815162_s00",
+    "source_paper_id": "paper_41815162",
+    "source_pmid": "41815162",
+    "source_doi": "10.21037/tcr-2025-1832",
+    "source_title": "A multimodal fusion model for bone tumor benign and malignant diagnosis: development and validation with clinical text and radiographs.",
+    "sentence_text": "Bone tumors have diverse clinical and imaging features, rendering preoperative differentiation of benign, intermediate/malignant types challenging.",
+    "char_length": 147,
+    "word_count": 16,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41815162_s01",
+    "source_paper_id": "paper_41815162",
+    "source_pmid": "41815162",
+    "source_doi": "10.21037/tcr-2025-1832",
+    "source_title": "A multimodal fusion model for bone tumor benign and malignant diagnosis: development and validation with clinical text and radiographs.",
+    "sentence_text": "Unimodal methods (medical records or X-rays) are prone to misdiagnosis/missed diagnosis due to incomplete information.",
+    "char_length": 118,
+    "word_count": 15,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41815162_s02",
+    "source_paper_id": "paper_41815162",
+    "source_pmid": "41815162",
+    "source_doi": "10.21037/tcr-2025-1832",
+    "source_title": "A multimodal fusion model for bone tumor benign and malignant diagnosis: development and validation with clinical text and radiographs.",
+    "sentence_text": "While postoperative histopathology is the gold standard, there is an urgent clinical demand for a precise preoperative diagnostic tool.",
+    "char_length": 135,
+    "word_count": 19,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41815162_s03",
+    "source_paper_id": "paper_41815162",
+    "source_pmid": "41815162",
+    "source_doi": "10.21037/tcr-2025-1832",
+    "source_title": "A multimodal fusion model for bone tumor benign and malignant diagnosis: development and validation with clinical text and radiographs.",
+    "sentence_text": "This study aims to develop and validate a multimodal model integrating deep learning with Dempster-Shafer (DS) evidence theory for the differential diagnosis of benign, intermediate/malignant bone tumors.",
+    "char_length": 204,
+    "word_count": 27,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 71,
+        "end_char": 84,
+        "text": "deep learning",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.54
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41815162_s04",
+    "source_paper_id": "paper_41815162",
+    "source_pmid": "41815162",
+    "source_doi": "10.21037/tcr-2025-1832",
+    "source_title": "A multimodal fusion model for bone tumor benign and malignant diagnosis: development and validation with clinical text and radiographs.",
+    "sentence_text": "Using postoperative histopathology as the reference standard, the model achieves diagnosis by integrating preoperative clinical text and radiographs.",
+    "char_length": 149,
+    "word_count": 18,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41815162_s05",
+    "source_paper_id": "paper_41815162",
+    "source_pmid": "41815162",
+    "source_doi": "10.21037/tcr-2025-1832",
+    "source_title": "A multimodal fusion model for bone tumor benign and malignant diagnosis: development and validation with clinical text and radiographs.",
+    "sentence_text": "This single-center retrospective study included 319 pathologically confirmed bone tumor patients admitted between 2020 and 2025 following selection criteria.",
+    "char_length": 157,
+    "word_count": 19,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41815162_s06",
+    "source_paper_id": "paper_41815162",
+    "source_pmid": "41815162",
+    "source_doi": "10.21037/tcr-2025-1832",
+    "source_title": "A multimodal fusion model for bone tumor benign and malignant diagnosis: development and validation with clinical text and radiographs.",
+    "sentence_text": "Utilizing the patients' X-ray images and medical record text data, we constructed a fusion model based on deep learning and DS evidence theory to classify tumors into benign and intermediate/malignant categories.",
+    "char_length": 212,
+    "word_count": 31,
+    "entities_count": 2,
+    "spans": [
+      {
+        "start_char": 84,
+        "end_char": 96,
+        "text": "fusion model",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 106,
+        "end_char": 119,
+        "text": "deep learning",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.54
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41815162_s07",
+    "source_paper_id": "paper_41815162",
+    "source_pmid": "41815162",
+    "source_doi": "10.21037/tcr-2025-1832",
+    "source_title": "A multimodal fusion model for bone tumor benign and malignant diagnosis: development and validation with clinical text and radiographs.",
+    "sentence_text": "The performance of the model was evaluated using the receiver operating characteristic (ROC) curve along with its 95% confidence interval (CI).",
+    "char_length": 143,
+    "word_count": 21,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41815162_s08",
+    "source_paper_id": "paper_41815162",
+    "source_pmid": "41815162",
+    "source_doi": "10.21037/tcr-2025-1832",
+    "source_title": "A multimodal fusion model for bone tumor benign and malignant diagnosis: development and validation with clinical text and radiographs.",
+    "sentence_text": "The dataset comprised text data and radiographs from a total of 319 patients and it was stratified by time into a training set, an internal validation set, and an external validation set.",
+    "char_length": 187,
+    "word_count": 32,
+    "entities_count": 2,
+    "spans": [
+      {
+        "start_char": 131,
+        "end_char": 150,
+        "text": "internal validation",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 163,
+        "end_char": 182,
+        "text": "external validation",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41815162_s09",
+    "source_paper_id": "paper_41815162",
+    "source_pmid": "41815162",
+    "source_doi": "10.21037/tcr-2025-1832",
+    "source_title": "A multimodal fusion model for bone tumor benign and malignant diagnosis: development and validation with clinical text and radiographs.",
+    "sentence_text": "On the internal validation set, the fusion model achieved an area under the curve (AUC) of 0.821 (95% CI: 0.713-0.916), with an accuracy of 81.6%, precision of 81.3%, recall of 76.5% and an F1 score of 78.8%, outperforming both the unimodal text model with an AUC of 0.814 and accuracy of 77.6% and the image model with an AUC of 0.782 and accuracy of 72.4%.",
+    "char_length": 358,
+    "word_count": 65,
+    "entities_count": 9,
+    "spans": [
+      {
+        "start_char": 36,
+        "end_char": 48,
+        "text": "fusion model",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 7,
+        "end_char": 26,
+        "text": "internal validation",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 128,
+        "end_char": 136,
+        "text": "accuracy",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 277,
+        "end_char": 285,
+        "text": "accuracy",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 340,
+        "end_char": 348,
+        "text": "accuracy",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 190,
+        "end_char": 198,
+        "text": "F1 score",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 83,
+        "end_char": 86,
+        "text": "AUC",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 260,
+        "end_char": 263,
+        "text": "AUC",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 323,
+        "end_char": 326,
+        "text": "AUC",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41815162_s10",
+    "source_paper_id": "paper_41815162",
+    "source_pmid": "41815162",
+    "source_doi": "10.21037/tcr-2025-1832",
+    "source_title": "A multimodal fusion model for bone tumor benign and malignant diagnosis: development and validation with clinical text and radiographs.",
+    "sentence_text": "On the external validation set, the fusion model maintained robust performance: AUC reached 0.808 (95% CI: 0.667-0.928), accuracy 77.3%, and F1 score 70.6%.",
+    "char_length": 156,
+    "word_count": 23,
+    "entities_count": 5,
+    "spans": [
+      {
+        "start_char": 36,
+        "end_char": 48,
+        "text": "fusion model",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 7,
+        "end_char": 26,
+        "text": "external validation",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 121,
+        "end_char": 129,
+        "text": "accuracy",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 141,
+        "end_char": 149,
+        "text": "F1 score",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 80,
+        "end_char": 83,
+        "text": "AUC",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41815162_s11",
+    "source_paper_id": "paper_41815162",
+    "source_pmid": "41815162",
+    "source_doi": "10.21037/tcr-2025-1832",
+    "source_title": "A multimodal fusion model for bone tumor benign and malignant diagnosis: development and validation with clinical text and radiographs.",
+    "sentence_text": "Compared to the proposed fusion approach, most baseline models underperformed across all metrics, with their accuracy ranging from 59.1% to 77.3% and F1 score ranging from 47.1% to 70.6%.",
+    "char_length": 187,
+    "word_count": 29,
+    "entities_count": 2,
+    "spans": [
+      {
+        "start_char": 109,
+        "end_char": 117,
+        "text": "accuracy",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 150,
+        "end_char": 158,
+        "text": "F1 score",
+        "entity_type": "EVALUATION",
+        "bio_tag": "B-EVALUATION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41815162_s12",
+    "source_paper_id": "paper_41815162",
+    "source_pmid": "41815162",
+    "source_doi": "10.21037/tcr-2025-1832",
+    "source_title": "A multimodal fusion model for bone tumor benign and malignant diagnosis: development and validation with clinical text and radiographs.",
+    "sentence_text": "Furthermore, the model's diagnostic performance rivals that of senior radiologists and significantly outperforms junior radiologists.",
+    "char_length": 133,
+    "word_count": 15,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41815162_s13",
+    "source_paper_id": "paper_41815162",
+    "source_pmid": "41815162",
+    "source_doi": "10.21037/tcr-2025-1832",
+    "source_title": "A multimodal fusion model for bone tumor benign and malignant diagnosis: development and validation with clinical text and radiographs.",
+    "sentence_text": "McNemar's test results confirmed no significant difference in diagnostic performance between the model and senior radiologists, while a statistically significant performance gap existed between junior and senior radiologists.",
+    "char_length": 225,
+    "word_count": 28,
+    "entities_count": 0,
+    "spans": [],
+    "has_methodology_mention": false
+  },
+  {
+    "example_id": "paper_41815162_s14",
+    "source_paper_id": "paper_41815162",
+    "source_pmid": "41815162",
+    "source_doi": "10.21037/tcr-2025-1832",
+    "source_title": "A multimodal fusion model for bone tumor benign and malignant diagnosis: development and validation with clinical text and radiographs.",
+    "sentence_text": "We have developed and validated a fusion model that integrated deep learning and DS evidence theory.",
+    "char_length": 100,
+    "word_count": 16,
+    "entities_count": 2,
+    "spans": [
+      {
+        "start_char": 34,
+        "end_char": 46,
+        "text": "fusion model",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      },
+      {
+        "start_char": 63,
+        "end_char": 76,
+        "text": "deep learning",
+        "entity_type": "MODEL_ARCH",
+        "bio_tag": "B-MODEL_ARCH",
+        "confidence": 0.54
+      }
+    ],
+    "has_methodology_mention": true
+  },
+  {
+    "example_id": "paper_41815162_s15",
+    "source_paper_id": "paper_41815162",
+    "source_pmid": "41815162",
+    "source_doi": "10.21037/tcr-2025-1832",
+    "source_title": "A multimodal fusion model for bone tumor benign and malignant diagnosis: development and validation with clinical text and radiographs.",
+    "sentence_text": "In the task of distinguishing between benign and intermediate/malignant bone tumors, this fusion model demonstrated encouraging performance compared to models that utilize unimodal data and other baseline fusion models.",
+    "char_length": 219,
+    "word_count": 29,
+    "entities_count": 1,
+    "spans": [
+      {
+        "start_char": 90,
+        "end_char": 102,
+        "text": "fusion model",
+        "entity_type": "FUSION",
+        "bio_tag": "B-FUSION",
+        "confidence": 0.57
+      }
+    ],
+    "has_methodology_mention": true
+  }
+]

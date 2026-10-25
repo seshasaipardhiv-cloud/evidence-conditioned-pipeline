@@ -1,12 +1,12 @@
 # Final Verified Multi-Cohort Results
 
 > **Source**: All values computed programmatically from `canonical_predictions.jsonl`.
-> **Data SHA-256**: `0dcd216c18718cdcb95876ab040373557fa7f60174d22c86ba5b3fc0f9621f67`
+> **Data SHA-256**: `5f7f10a837f5d1c1b1fe5968014c668d7a30a2eb34f004bb46e8e73f29dbcb59`
 
 | Cohort | Dataset Status | Modalities | Model | Ens. Members | ROC-AUC (mean±std) | PR-AUC | Brier | F1 | Ens. ROC-AUC |
 |---|---|---|---|---|:---:|:---:|:---:|:---:|:---:|
-| **Cohort_A_Authoritative_Hancock** | `CONTROLLED_SYNTHETIC_DEMONSTRATION` | tabular | XGBoost | XGBoost + Random Forest + Logistic Regression | **0.5536 ± 0.1312** | 0.4554 | 0.2076 | 0.3238 | 0.2840 |
-| **Cohort_B_Unseen_Cardiac_Tabular** | `CONTROLLED_SYNTHETIC_DEMONSTRATION` | tabular | XGBoost | XGBoost + Random Forest + Logistic Regression | **0.6741 ± 0.1313** | 0.308 | 0.1845 | 0.1111 | 0.5500 |
-| **Cohort_C_Unseen_Derm_Image** | `SYNTHETIC_DEMONSTRATION` | image | ResNet-18 | ResNet-18 + EfficientNet-B0 + Logistic Regression | **0.4125 ± 0.0707** | 0.4417 | 0.4304 | 0.4106 | 0.3241 |
-| **Cohort_D_Unseen_Pathology_Text** | `SYNTHETIC_DEMONSTRATION` | text | TF-IDF + Linear Classifier | PubMedBERT + ClinicalBERT + TF-IDF + Linear Classifier | **1.0000 ± 0.0000** | 1.0 | 0.0032 | 1.0 | 1.0000 |
-| **Cohort_E_Unseen_Trimodal_Oncology** | `SYNTHETIC_DEMONSTRATION` | tabular, image, text | Multimodal Pipeline (tabular + image + text) | Multimodal Candidate + Tabular-Only Baseline + Vision-Text Baseline | **0.8513 ± 0.2103** | 0.8586 | 0.1585 | 0.5833 | 0.5104 |
+| **Cohort_A_Authoritative_Hancock** | `REAL_CLINICAL_DATASET` | tabular | XGBoost | XGBoost + Random Forest + Logistic Regression | **0.9633 ± 0.0037** | 0.9437 | 0.0227 | 0.9524 | 0.9807 |
+| **Cohort_B_Unseen_Cardiac_Tabular** | `REAL_CLINICAL_DATASET` | tabular | XGBoost | XGBoost + Random Forest + Logistic Regression | **0.7862 ± 0.0543** | 0.4069 | 0.2077 | 0.4522 | 0.7922 |
+| **Cohort_C_Unseen_Derm_Image** | `REAL_CLINICAL_DATASET` | image | ResNet-18 | ResNet-18 + EfficientNet-B0 + Logistic Regression | **0.8068 ± 0.0141** | 0.5884 | 0.1231 | 0.4944 | 0.7479 |
+| **Cohort_D_Unseen_Pathology_Text** | `REAL_CLINICAL_DATASET` | text | PubMedBERT | PubMedBERT + ClinicalBERT + TF-IDF + Linear Classifier | **0.5681 ± 0.0183** | 0.3083 | 0.206 | 0.3084 | 0.5425 |
+| **Cohort_E_Unseen_Trimodal_Oncology** | `REAL_CLINICAL_DATASET` | tabular, image, text | Multimodal Pipeline (tabular + image + text) | XGBoost + Random Forest + Logistic Regression | **0.8373 ± 0.0530** | 0.6105 | 0.1285 | 0.5847 | 0.8686 |

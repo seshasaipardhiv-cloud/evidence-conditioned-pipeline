@@ -176,20 +176,20 @@ class CohortForensicsEngine:
 
         for r in records:
             p = Path(r["image_file"])
-            img = Image.open(p)
-            arr = np.array(img, dtype=float)
-            raw_arrays.append(arr)
+            img = Image.open(p).convert("RGB")
+            thumb = np.array(img.resize((32, 32)), dtype=float)
+            raw_arrays.append(thumb)
 
             # Hash image bytes for exact duplicate check
-            h = hashlib.sha256(arr.tobytes()).hexdigest()
+            h = hashlib.sha256(thumb.tobytes()).hexdigest()
             img_hashes.append(h)
 
             # Center patch [12:20, 12:20] vs full image
-            center_patch = arr[12:20, 12:20, :]
+            center_patch = thumb[12:20, 12:20, :]
             center_means.append(float(np.mean(center_patch)))
             center_stds.append(float(np.std(center_patch)))
-            full_means.append(float(np.mean(arr)))
-            full_stds.append(float(np.std(arr)))
+            full_means.append(float(np.mean(thumb)))
+            full_stds.append(float(np.std(thumb)))
 
         # Exact and near duplicate counts
         unique_hashes = len(set(img_hashes))
@@ -338,7 +338,7 @@ class CohortForensicsEngine:
     def _audit_cohort_d(self, raw_cohort: Dict[str, Any]) -> Dict[str, Any]:
         records = raw_cohort["records"]
         N = len(records)
-        targets = np.array([r["high_grade_dysplasia"] for r in records], dtype=int)
+        targets = np.array([r.get("high_grade_dysplasia", r.get("cancer_recurrence", 0)) for r in records], dtype=int)
         pos_count = int(np.sum(targets == 1))
         neg_count = int(np.sum(targets == 0))
         texts = [r["biopsy_report"] for r in records]
