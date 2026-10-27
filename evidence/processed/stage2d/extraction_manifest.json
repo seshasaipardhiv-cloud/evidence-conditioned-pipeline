@@ -3,15 +3,16 @@
   "model": "allenai/scibert_scivocab_uncased",
   "training_type": "WEAKLY_SUPERVISED_WITH_NOISE_ROBUST_TRAINING",
   "seed": 42,
-  "papers_processed": 30,
-  "total_entities_extracted": 202,
-  "total_relations_extracted": 208,
-  "total_scored_mechanisms": 69,
+  "papers_processed": 105,
+  "total_entities_extracted": 923,
+  "total_relations_extracted": 1240,
+  "total_scored_mechanisms": 205,
   "confidence_tier_distribution": {
-    "LOW": 197,
-    "MEDIUM": 5
+    "LOW": 877,
+    "MEDIUM": 43,
+    "HIGH": 3
   },
-  "synthesized_pipeline_id": "synth_pipeline_130caaa043e7",
+  "synthesized_pipeline_id": "synth_pipeline_b93783ff6b84",
   "selected_components": {
     "tabular_model": "Tabular MLP",
     "image_model": "ResNet-18",
@@ -21,10 +22,10 @@
     "fusion": "Late Fusion (Concatenation)",
     "loss": "Binary Cross-Entropy",
     "optimizer": "AdamW",
-    "ensemble": "Validation-Gated Blend"
+    "ensemble": "Soft Voting Ensemble"
   },
-  "overall_pipeline_evidence_score": 0.4831,
+  "overall_pipeline_evidence_score": 0.5208,
   "ground_truth_status": "NOT_AVAILABLE_WITHOUT_GOLD_LABELS",
-  "checkpoint_sha256": "4300816efe0dd62376c2bedbfe201678ad85d0c3436eb6f45afcda4f989e6214",
-  "timestamp": "2026-10-25T09:20:17.091756+00:00"
+  "checkpoint_sha256": "956daab174d9b839b895d47b305cc1b61953e7a3a9769cd24ae418c363c35285",
+  "timestamp": "2026-10-27T13:41:24.131269+00:00"
 }

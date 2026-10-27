@@ -97,7 +97,13 @@ def apply_theme():
 
 def load_data(base_dir: str = "."):
     base = Path(base_dir)
-    papers_path = base / "evidence/processed/papers.jsonl"
+    if (base / "evidence/processed/dynamic_extraction_papers.jsonl").exists():
+        papers_path = base / "evidence/processed/dynamic_extraction_papers.jsonl"
+    elif (base / "SciBERT/data/scibert_training_papers.jsonl").exists():
+        papers_path = base / "SciBERT/data/scibert_training_papers.jsonl"
+    else:
+        papers_path = base / "evidence/processed/papers.jsonl"
+
     entities_path = base / "evidence/processed/stage2d/ner_entities.jsonl"
     eval_metrics_path = base / "SciBERT/results/evaluation_metrics.json"
 

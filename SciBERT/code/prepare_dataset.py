@@ -13,7 +13,7 @@ import logging
 import random
 import re
 from pathlib import Path
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 from backend.app.stage2.stage2d.advanced_weak_labeler import AdvancedWeakLabeler
 from backend.app.stage2.ner_entity_types import LABEL2ID, NUM_LABELS
@@ -45,10 +45,16 @@ def segment_sentences(text: str) -> List[str]:
 
 
 def build_real_scibert_dataset(
-    papers_path: str = "evidence/processed/papers.jsonl",
+    papers_path: Optional[str] = None,
     out_dir: str = "SciBERT/data",
     seed: int = 42,
 ) -> Dict[str, Any]:
+    if papers_path is None:
+        if Path("SciBERT/data/scibert_training_papers.jsonl").exists():
+            papers_path = "SciBERT/data/scibert_training_papers.jsonl"
+        else:
+            papers_path = "evidence/processed/papers.jsonl"
+
     out_path = Path(out_dir)
     out_path.mkdir(parents=True, exist_ok=True)
 
@@ -102,6 +108,8 @@ def build_real_scibert_dataset(
                 })
                 entity_counts[etype] = entity_counts.get(etype, 0) + 1
 
+            constraints = labeler.extract_experimental_constraints(sent_text)
+
             example = {
                 "example_id": f"{pid}_s{sent_idx:02d}",
                 "source_paper_id": pid,
@@ -113,6 +121,7 @@ def build_real_scibert_dataset(
                 "word_count": len(sent_text.split()),
                 "entities_count": len(spans),
                 "spans": spans,
+                "constraints": constraints,
                 "has_methodology_mention": len(spans) > 0,
             }
             all_examples.append(example)

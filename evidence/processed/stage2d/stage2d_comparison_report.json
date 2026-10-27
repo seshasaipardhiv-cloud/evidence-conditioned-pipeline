@@ -9,28 +9,29 @@
     "supervision_status": "WEAKLY_SUPERVISED"
   },
   "stage2d_enhanced": {
-    "total_entities": 202,
-    "total_relations": 208,
+    "total_entities": 923,
+    "total_relations": 1240,
     "confidence_tier_distribution": {
-      "HIGH": 0,
-      "MEDIUM": 5,
-      "LOW": 197
+      "HIGH": 3,
+      "MEDIUM": 43,
+      "LOW": 877
     },
-    "mean_confidence": 0.4623,
-    "ontology_classes_covered": 7,
+    "mean_confidence": 0.4726,
+    "ontology_classes_covered": 8,
     "entity_type_distribution": {
-      "MODEL_ARCH": 34,
-      "FUSION": 26,
-      "EVALUATION": 108,
+      "FEATURE_REPR": 10,
+      "MODEL_ARCH": 480,
+      "EVALUATION": 407,
+      "HYPERPARAMETER": 10,
       "DATASET": 7,
-      "PREPROCESSING": 3,
-      "FEATURE_REPR": 23,
-      "HYPERPARAMETER": 1
+      "SAMPLING": 4,
+      "FUSION": 2,
+      "PREPROCESSING": 3
     },
     "section_distribution": {
-      "abstract": 202
+      "abstract": 923
     },
-    "scored_mechanisms_count": 69,
+    "scored_mechanisms_count": 205,
     "supervision_status": "WEAKLY_SUPERVISED_WITH_NOISE_ROBUST_TRAINING"
   },
   "controlled_5_scenario_validation": {

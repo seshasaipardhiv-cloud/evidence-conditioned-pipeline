@@ -105,6 +105,14 @@ class SciBERTNERTrainer:
 
         logger.info(f"Initializing Stage 2D SciBERT NER training (Seed: {self.seed}, Weakly Supervised)...")
 
+        checkpoint_file = self.checkpoint_dir / f"scibert_ner_head_seed{self.seed}.pt"
+        manifest_file = self.checkpoint_dir / f"training_manifest_seed{self.seed}.json"
+        if checkpoint_file.exists() and manifest_file.exists():
+            with open(manifest_file, "r", encoding="utf-8") as f:
+                manifest = json.load(f)
+            logger.info(f"Loaded existing trained SciBERT checkpoint ({manifest.get('total_epochs')} epochs, best_val_loss: {manifest.get('best_val_loss')}) from {checkpoint_file}")
+            return manifest
+
         tokenizer = AutoTokenizer.from_pretrained(_SCIBERT_MODEL_NAME)
         encoder = AutoModel.from_pretrained(_SCIBERT_MODEL_NAME)
         encoder.eval()

@@ -1,5 +1,5 @@
 {
-  "pipeline_id": "synth_pipeline_130caaa043e7",
+  "pipeline_id": "synth_pipeline_b93783ff6b84",
   "target_modalities": [
     "tabular",
     "image",
@@ -13,39 +13,63 @@
       "component_type": "tabular_model",
       "selected_name": "Tabular MLP",
       "canonical_id": "mlp_tabular",
-      "winning_score": 0.6585,
-      "evidence_score": 0.45,
+      "winning_score": 0.7515,
+      "evidence_score": 0.7157,
       "decision_mode": "RESULT_AWARE_EXPERIMENTAL",
       "supporting_pmids": [
-        "PMID:LiteratureBaseline"
+        "42807361",
+        "40502295",
+        "42351482",
+        "42260021",
+        "41322476",
+        "42776352"
       ],
-      "supporting_dois": [],
+      "supporting_dois": [
+        "10.1007/s00277-026-07086-x",
+        "10.5847/wjem.j.1920-8642.2026.065",
+        "10.1016/j.xops.2025.100785",
+        "10.3390/diagnostics16121824",
+        "10.1007/s12265-026-10842-z",
+        "10.3389/frai.2025.1682919"
+      ],
       "candidate_rankings": [
         {
           "canonical_id": "mlp_tabular",
           "name": "Tabular MLP",
           "decision_mode": "RESULT_AWARE_EXPERIMENTAL",
-          "base_evidence_score": 0.45,
+          "base_evidence_score": 0.7157,
           "reported_performance_score": 0.9,
-          "evidence_quality_score": 0.45,
+          "evidence_quality_score": 0.7157,
           "applicability_score": 0.48,
           "dataset_multiplier": 0.48,
-          "final_score": 0.6585,
+          "final_score": 0.7515,
           "supporting_pmids": [
-            "PMID:LiteratureBaseline"
+            "42807361",
+            "40502295",
+            "42351482",
+            "42260021",
+            "41322476",
+            "42776352"
           ],
-          "supporting_dois": [],
+          "supporting_dois": [
+            "10.1007/s00277-026-07086-x",
+            "10.5847/wjem.j.1920-8642.2026.065",
+            "10.1016/j.xops.2025.100785",
+            "10.3390/diagnostics16121824",
+            "10.1007/s12265-026-10842-z",
+            "10.3389/frai.2025.1682919"
+          ],
           "evidence_status": "EXPERIMENTAL_RESULT_GROUNDED",
           "head_to_head_record": "Wins: 0, Losses: 0, Ties: 0",
           "uncertainty_level": "MODERATE",
           "evaluation_summary": "Reported in 4 experimental evaluation(s) without direct head-to-head comparator.",
           "incomparable_metrics_notes": [
-            "Candidate 'Tabular MLP' metric 'AUC' is incompatible with rival candidate metric 'accuracy' and cannot be compared numerically.",
-            "Candidate 'Tabular MLP' metric 'AUC' is incompatible with rival candidate metric 'ACC' and cannot be compared numerically.",
             "Candidate 'Tabular MLP' metric 'accuracy' is incompatible with rival candidate metric 'AUC' and cannot be compared numerically.",
-            "Candidate 'Tabular MLP' metric 'precision' is incompatible with rival candidate metric 'AUC' and cannot be compared numerically.",
+            "Candidate 'Tabular MLP' metric 'precision' is incompatible with rival candidate metric 'ACC' and cannot be compared numerically.",
             "Candidate 'Tabular MLP' metric 'precision' is incompatible with rival candidate metric 'accuracy' and cannot be compared numerically.",
-            "Candidate 'Tabular MLP' metric 'precision' is incompatible with rival candidate metric 'ACC' and cannot be compared numerically."
+            "Candidate 'Tabular MLP' metric 'precision' is incompatible with rival candidate metric 'AUC' and cannot be compared numerically.",
+            "Candidate 'Tabular MLP' metric 'AUC' is incompatible with rival candidate metric 'ACC' and cannot be compared numerically.",
+            "Candidate 'Tabular MLP' metric 'AUC' is incompatible with rival candidate metric 'accuracy' and cannot be compared numerically."
           ],
           "shared_benchmarks_used": [
             "tcga"
@@ -55,45 +79,73 @@
           "canonical_id": "xgboost",
           "name": "XGBoost",
           "decision_mode": "RESULT_AWARE_EXPERIMENTAL",
-          "base_evidence_score": 0.45,
+          "base_evidence_score": 0.5643,
           "reported_performance_score": 0.6565,
-          "evidence_quality_score": 0.45,
+          "evidence_quality_score": 0.5643,
           "applicability_score": 0.8,
           "dataset_multiplier": 0.8,
-          "final_score": 0.6129,
+          "final_score": 0.6529,
           "supporting_pmids": [
-            "PMID:LiteratureBaseline"
+            "40672516"
           ],
-          "supporting_dois": [],
+          "supporting_dois": [
+            "10.1101/2025.07.09.25329712"
+          ],
           "evidence_status": "EXPERIMENTAL_RESULT_GROUNDED",
           "head_to_head_record": "Wins: 0, Losses: 0, Ties: 0",
           "uncertainty_level": "MODERATE",
           "evaluation_summary": "Reported in 2 experimental evaluation(s) without direct head-to-head comparator.",
           "incomparable_metrics_notes": [
-            "Candidate 'XGBoost' metric 'AUC' is incompatible with rival candidate metric 'accuracy' and cannot be compared numerically.",
-            "Candidate 'XGBoost' metric 'AUC' is incompatible with rival candidate metric 'precision' and cannot be compared numerically.",
+            "Candidate 'XGBoost' metric 'ACC' is incompatible with rival candidate metric 'precision' and cannot be compared numerically.",
             "Candidate 'XGBoost' metric 'ACC' is incompatible with rival candidate metric 'AUC' and cannot be compared numerically.",
-            "Candidate 'XGBoost' metric 'ACC' is incompatible with rival candidate metric 'precision' and cannot be compared numerically."
+            "Candidate 'XGBoost' metric 'AUC' is incompatible with rival candidate metric 'accuracy' and cannot be compared numerically.",
+            "Candidate 'XGBoost' metric 'AUC' is incompatible with rival candidate metric 'precision' and cannot be compared numerically."
           ],
           "shared_benchmarks_used": [
             "tcga"
           ]
         },
         {
-          "canonical_id": "logistic_regression",
-          "name": "Logistic Regression",
+          "canonical_id": "random_forest",
+          "name": "Random Forest",
           "decision_mode": "HEURISTIC_LITERATURE_FALLBACK",
-          "base_evidence_score": 0.6507,
+          "base_evidence_score": 0.7318,
           "reported_performance_score": null,
-          "evidence_quality_score": 0.6507,
+          "evidence_quality_score": 0.7318,
           "applicability_score": 1.0,
           "dataset_multiplier": 1.0,
-          "final_score": 0.6077,
+          "final_score": 0.6361,
           "supporting_pmids": [
-            "42141332"
+            "41350571",
+            "41894311",
+            "40890689",
+            "42488127",
+            "40502295",
+            "41922385",
+            "41596036",
+            "41826845",
+            "42870229",
+            "42260021",
+            "39576664",
+            "40632807",
+            "41322476",
+            "42100518"
           ],
           "supporting_dois": [
-            "10.1186/s13244-026-02311-7"
+            "10.3389/fonc.2026.1857275",
+            "10.1093/jamia/ocae286",
+            "10.1186/s12871-026-04160-9",
+            "10.1186/s12874-026-02805-4",
+            "10.1007/s00277-026-07086-x",
+            "10.1038/s41598-025-30529-w",
+            "10.1038/s41598-026-35451-3",
+            "10.1371/journal.pone.0327564",
+            "10.3389/fpubh.2026.1754585",
+            "10.1016/j.xops.2025.100785",
+            "10.3389/frai.2025.1682919",
+            "10.1186/s12911-025-03174-6",
+            "10.1097/MD.0000000000048172",
+            "10.3390/bioengineering13010105"
           ],
           "evidence_status": "LITERATURE_GROUNDED",
           "head_to_head_record": "Wins: 0, Losses: 0, Ties: 0",
@@ -105,20 +157,24 @@
           ]
         },
         {
-          "canonical_id": "random_forest",
-          "name": "Random Forest",
+          "canonical_id": "logistic_regression",
+          "name": "Logistic Regression",
           "decision_mode": "HEURISTIC_LITERATURE_FALLBACK",
-          "base_evidence_score": 0.587,
+          "base_evidence_score": 0.7158,
           "reported_performance_score": null,
-          "evidence_quality_score": 0.587,
+          "evidence_quality_score": 0.7158,
           "applicability_score": 1.0,
           "dataset_multiplier": 1.0,
-          "final_score": 0.5855,
+          "final_score": 0.6305,
           "supporting_pmids": [
-            "42389632"
+            "42100518",
+            "42260021",
+            "42488127"
           ],
           "supporting_dois": [
-            "10.3389/fcvm.2026.1834641"
+            "10.1007/s00277-026-07086-x",
+            "10.3389/fonc.2026.1857275",
+            "10.3389/fpubh.2026.1754585"
           ],
           "evidence_status": "LITERATURE_GROUNDED",
           "head_to_head_record": "Wins: 0, Losses: 0, Ties: 0",
@@ -130,10 +186,10 @@
           ]
         }
       ],
-      "decision_rationale": "Selected 'Tabular MLP' in RESULT_AWARE_EXPERIMENTAL mode with reported experimental performance S_perf=0.9000, evidence quality S_quality=0.4500, and applicability S_app=0.4800 (final score: 0.6585). Uncertainty: MODERATE. Reported in 4 experimental evaluation(s) without direct head-to-head comparator. Outranked 3 alternative candidate(s).",
-      "provenance_trace": "Mode: RESULT_AWARE | Evidence: PMID:LiteratureBaseline | Perf: 0.9000 | Score: 0.6585 | Uncertainty: MODERATE",
+      "decision_rationale": "Selected 'Tabular MLP' in RESULT_AWARE_EXPERIMENTAL mode with reported experimental performance S_perf=0.9000, evidence quality S_quality=0.7157, and applicability S_app=0.4800 (final score: 0.7515). Uncertainty: MODERATE. Reported in 4 experimental evaluation(s) without direct head-to-head comparator. Outranked 3 alternative candidate(s).",
+      "provenance_trace": "Mode: RESULT_AWARE | Evidence: 42807361, 40502295, 42351482, 42260021, 41322476, 42776352 | Perf: 0.9000 | Score: 0.7515 | Uncertainty: MODERATE",
       "reported_performance_score": 0.9,
-      "evidence_quality_score": 0.45,
+      "evidence_quality_score": 0.7157,
       "applicability_score": 0.48,
       "uncertainty_level": "MODERATE",
       "head_to_head_record": "Wins: 0, Losses: 0, Ties: 0"
@@ -142,35 +198,39 @@
       "component_type": "image_model",
       "selected_name": "ResNet-18",
       "canonical_id": "resnet18",
-      "winning_score": 0.7225,
-      "evidence_score": 0.45,
+      "winning_score": 0.7577,
+      "evidence_score": 0.5506,
       "decision_mode": "RESULT_AWARE_EXPERIMENTAL",
       "supporting_pmids": [
-        "PMID:LiteratureBaseline"
+        "40502295"
       ],
-      "supporting_dois": [],
+      "supporting_dois": [
+        "10.1016/j.xops.2025.100785"
+      ],
       "candidate_rankings": [
         {
           "canonical_id": "resnet18",
           "name": "ResNet-18",
           "decision_mode": "RESULT_AWARE_EXPERIMENTAL",
-          "base_evidence_score": 0.45,
+          "base_evidence_score": 0.5506,
           "reported_performance_score": 0.9,
-          "evidence_quality_score": 0.45,
+          "evidence_quality_score": 0.5506,
           "applicability_score": 0.8,
           "dataset_multiplier": 0.8,
-          "final_score": 0.7225,
+          "final_score": 0.7577,
           "supporting_pmids": [
-            "PMID:LiteratureBaseline"
+            "40502295"
           ],
-          "supporting_dois": [],
+          "supporting_dois": [
+            "10.1016/j.xops.2025.100785"
+          ],
           "evidence_status": "EXPERIMENTAL_RESULT_GROUNDED",
           "head_to_head_record": "Wins: 0, Losses: 0, Ties: 0",
           "uncertainty_level": "MODERATE",
           "evaluation_summary": "Reported in 1 experimental evaluation(s) without direct head-to-head comparator.",
           "incomparable_metrics_notes": [
-            "Candidate 'ResNet-18' metric 'accuracy' is incompatible with rival candidate metric 'AUC' and cannot be compared numerically.",
-            "Candidate 'ResNet-18' metric 'accuracy' is incompatible with rival candidate metric 'precision' and cannot be compared numerically."
+            "Candidate 'ResNet-18' metric 'accuracy' is incompatible with rival candidate metric 'precision' and cannot be compared numerically.",
+            "Candidate 'ResNet-18' metric 'accuracy' is incompatible with rival candidate metric 'AUC' and cannot be compared numerically."
           ],
           "shared_benchmarks_used": [
             "tcga"
@@ -203,17 +263,23 @@
           "canonical_id": "resnet50",
           "name": "ResNet-50",
           "decision_mode": "HEURISTIC_LITERATURE_FALLBACK",
-          "base_evidence_score": 0.45,
+          "base_evidence_score": 0.5949,
           "reported_performance_score": null,
-          "evidence_quality_score": 0.45,
+          "evidence_quality_score": 0.5949,
           "applicability_score": 0.39,
           "dataset_multiplier": 0.39,
-          "final_score": 0.4155,
+          "final_score": 0.4662,
           "supporting_pmids": [
-            "PMID:LiteratureBaseline"
+            "41366279",
+            "42351482",
+            "41469782"
           ],
-          "supporting_dois": [],
-          "evidence_status": "BASELINE_GROUNDED",
+          "supporting_dois": [
+            "10.1038/s41598-025-31231-7",
+            "10.3390/diagnostics16121824",
+            "10.1038/s41598-025-30534-z"
+          ],
+          "evidence_status": "LITERATURE_GROUNDED",
           "head_to_head_record": "Wins: 0, Losses: 0, Ties: 0",
           "uncertainty_level": "UNVERIFIED",
           "evaluation_summary": "No direct experimental result records found; using baseline literature score.",
@@ -226,17 +292,21 @@
           "canonical_id": "vit_small",
           "name": "Vision Transformer (ViT)",
           "decision_mode": "HEURISTIC_LITERATURE_FALLBACK",
-          "base_evidence_score": 0.45,
+          "base_evidence_score": 0.5552,
           "reported_performance_score": null,
-          "evidence_quality_score": 0.45,
+          "evidence_quality_score": 0.5552,
           "applicability_score": 0.39,
           "dataset_multiplier": 0.39,
-          "final_score": 0.4155,
+          "final_score": 0.4523,
           "supporting_pmids": [
-            "PMID:LiteratureBaseline"
+            "42230914",
+            "42227503"
           ],
-          "supporting_dois": [],
-          "evidence_status": "BASELINE_GROUNDED",
+          "supporting_dois": [
+            "10.1038/s41598-026-55476-y",
+            "10.2174/0115734056437477260427145329"
+          ],
+          "evidence_status": "LITERATURE_GROUNDED",
           "head_to_head_record": "Wins: 0, Losses: 0, Ties: 0",
           "uncertainty_level": "UNVERIFIED",
           "evaluation_summary": "No direct experimental result records found; using baseline literature score.",
@@ -246,10 +316,10 @@
           ]
         }
       ],
-      "decision_rationale": "Selected 'ResNet-18' in RESULT_AWARE_EXPERIMENTAL mode with reported experimental performance S_perf=0.9000, evidence quality S_quality=0.4500, and applicability S_app=0.8000 (final score: 0.7225). Uncertainty: MODERATE. Reported in 1 experimental evaluation(s) without direct head-to-head comparator. Outranked 3 alternative candidate(s).",
-      "provenance_trace": "Mode: RESULT_AWARE | Evidence: PMID:LiteratureBaseline | Perf: 0.9000 | Score: 0.7225 | Uncertainty: MODERATE",
+      "decision_rationale": "Selected 'ResNet-18' in RESULT_AWARE_EXPERIMENTAL mode with reported experimental performance S_perf=0.9000, evidence quality S_quality=0.5506, and applicability S_app=0.8000 (final score: 0.7577). Uncertainty: MODERATE. Reported in 1 experimental evaluation(s) without direct head-to-head comparator. Outranked 3 alternative candidate(s).",
+      "provenance_trace": "Mode: RESULT_AWARE | Evidence: 40502295 | Perf: 0.9000 | Score: 0.7577 | Uncertainty: MODERATE",
       "reported_performance_score": 0.9,
-      "evidence_quality_score": 0.45,
+      "evidence_quality_score": 0.5506,
       "applicability_score": 0.8,
       "uncertainty_level": "MODERATE",
       "head_to_head_record": "Wins: 0, Losses: 0, Ties: 0"
@@ -318,28 +388,36 @@
       "component_type": "preprocessing",
       "selected_name": "Standard Scaling",
       "canonical_id": "standard_scaler",
-      "winning_score": 0.6511,
-      "evidence_score": 0.6511,
+      "winning_score": 0.5942,
+      "evidence_score": 0.5942,
       "decision_mode": "HEURISTIC_LITERATURE_FALLBACK",
       "supporting_pmids": [
-        "42523677"
+        "42870229",
+        "41600528",
+        "42227503"
       ],
       "supporting_dois": [
-        "10.3389/fendo.2026.1800918"
+        "10.1186/s12871-026-04160-9",
+        "10.2174/0115734056437477260427145329",
+        "10.3390/s26020735"
       ],
       "candidate_rankings": [
         {
           "canonical_id": "standard_scaler",
           "name": "Standard Scaling",
           "decision_mode": "HEURISTIC_LITERATURE_FALLBACK",
-          "base_evidence_score": 0.6511,
+          "base_evidence_score": 0.5942,
           "dataset_multiplier": 1.0,
-          "final_score": 0.6511,
+          "final_score": 0.5942,
           "supporting_pmids": [
-            "42523677"
+            "42870229",
+            "41600528",
+            "42227503"
           ],
           "supporting_dois": [
-            "10.3389/fendo.2026.1800918"
+            "10.1186/s12871-026-04160-9",
+            "10.2174/0115734056437477260427145329",
+            "10.3390/s26020735"
           ],
           "evidence_status": "LITERATURE_GROUNDED"
         },
@@ -347,16 +425,14 @@
           "canonical_id": "mice_imputation",
           "name": "MICE Imputation",
           "decision_mode": "HEURISTIC_LITERATURE_FALLBACK",
-          "base_evidence_score": 0.5662,
+          "base_evidence_score": 0.45,
           "dataset_multiplier": 1.0,
-          "final_score": 0.5662,
+          "final_score": 0.45,
           "supporting_pmids": [
-            "42332139"
+            "PMID:LiteratureBaseline"
           ],
-          "supporting_dois": [
-            "10.1038/s41746-026-02783-3"
-          ],
-          "evidence_status": "LITERATURE_GROUNDED"
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
         },
         {
           "canonical_id": "one_hot_encoding",
@@ -372,8 +448,8 @@
           "evidence_status": "BASELINE_GROUNDED"
         }
       ],
-      "decision_rationale": "Selected 'Standard Scaling' in HEURISTIC_LITERATURE_FALLBACK mode with evidence score 0.651 and dataset conditioning factor 1.00 (final score: 0.6511). Outranked 2 alternative candidate(s).",
-      "provenance_trace": "Mode: LITERATURE_FALLBACK | Evidence: 42523677 | Score: 0.6511",
+      "decision_rationale": "Selected 'Standard Scaling' in HEURISTIC_LITERATURE_FALLBACK mode with evidence score 0.594 and dataset conditioning factor 1.00 (final score: 0.5942). Outranked 2 alternative candidate(s).",
+      "provenance_trace": "Mode: LITERATURE_FALLBACK | Evidence: 42870229, 41600528, 42227503 | Score: 0.5942",
       "reported_performance_score": null,
       "evidence_quality_score": null,
       "applicability_score": null,
@@ -444,47 +520,26 @@
       "component_type": "fusion",
       "selected_name": "Late Fusion (Concatenation)",
       "canonical_id": "late_fusion",
-      "winning_score": 0.5468,
-      "evidence_score": 0.5468,
+      "winning_score": 0.45,
+      "evidence_score": 0.45,
       "decision_mode": "HEURISTIC_LITERATURE_FALLBACK",
       "supporting_pmids": [
-        "42332139"
+        "PMID:LiteratureBaseline"
       ],
-      "supporting_dois": [
-        "10.1038/s41746-026-02783-3"
-      ],
+      "supporting_dois": [],
       "candidate_rankings": [
         {
           "canonical_id": "late_fusion",
           "name": "Late Fusion (Concatenation)",
           "decision_mode": "HEURISTIC_LITERATURE_FALLBACK",
-          "base_evidence_score": 0.5468,
+          "base_evidence_score": 0.45,
           "dataset_multiplier": 1.0,
-          "final_score": 0.5468,
+          "final_score": 0.45,
           "supporting_pmids": [
-            "42332139"
+            "PMID:LiteratureBaseline"
           ],
-          "supporting_dois": [
-            "10.1038/s41746-026-02783-3"
-          ],
-          "evidence_status": "LITERATURE_GROUNDED"
-        },
-        {
-          "canonical_id": "cross_attention",
-          "name": "Cross-Modal Attention",
-          "decision_mode": "HEURISTIC_LITERATURE_FALLBACK",
-          "base_evidence_score": 0.7155,
-          "dataset_multiplier": 0.65,
-          "final_score": 0.4651,
-          "supporting_pmids": [
-            "38396486",
-            "41645153"
-          ],
-          "supporting_dois": [
-            "10.1186/s12880-026-02179-5",
-            "10.3390/diagnostics14040448"
-          ],
-          "evidence_status": "LITERATURE_GROUNDED"
+          "supporting_dois": [],
+          "evidence_status": "BASELINE_GROUNDED"
         },
         {
           "canonical_id": "gated_fusion",
@@ -498,10 +553,25 @@
           ],
           "supporting_dois": [],
           "evidence_status": "BASELINE_GROUNDED"
+        },
+        {
+          "canonical_id": "cross_attention",
+          "name": "Cross-Modal Attention",
+          "decision_mode": "HEURISTIC_LITERATURE_FALLBACK",
+          "base_evidence_score": 0.5198,
+          "dataset_multiplier": 0.65,
+          "final_score": 0.3379,
+          "supporting_pmids": [
+            "41682572"
+          ],
+          "supporting_dois": [
+            "10.3390/s26031057"
+          ],
+          "evidence_status": "LITERATURE_GROUNDED"
         }
       ],
-      "decision_rationale": "Selected 'Late Fusion (Concatenation)' in HEURISTIC_LITERATURE_FALLBACK mode with evidence score 0.547 and dataset conditioning factor 1.00 (final score: 0.5468). Outranked 2 alternative candidate(s).",
-      "provenance_trace": "Mode: LITERATURE_FALLBACK | Evidence: 42332139 | Score: 0.5468",
+      "decision_rationale": "Selected 'Late Fusion (Concatenation)' in HEURISTIC_LITERATURE_FALLBACK mode with evidence score 0.450 and dataset conditioning factor 1.00 (final score: 0.4500). Outranked 2 alternative candidate(s).",
+      "provenance_trace": "Mode: LITERATURE_FALLBACK | Evidence: PMID:LiteratureBaseline | Score: 0.45",
       "reported_performance_score": null,
       "evidence_quality_score": null,
       "applicability_score": null,
@@ -617,16 +687,33 @@
     },
     "ensemble": {
       "component_type": "ensemble",
-      "selected_name": "Validation-Gated Blend",
-      "canonical_id": "gated_blend",
-      "winning_score": 0.45,
-      "evidence_score": 0.45,
+      "selected_name": "Soft Voting Ensemble",
+      "canonical_id": "soft_voting",
+      "winning_score": 0.5764,
+      "evidence_score": 0.5764,
       "decision_mode": "HEURISTIC_LITERATURE_FALLBACK",
       "supporting_pmids": [
-        "PMID:LiteratureBaseline"
+        "41366279"
       ],
-      "supporting_dois": [],
+      "supporting_dois": [
+        "10.1038/s41598-025-31231-7"
+      ],
       "candidate_rankings": [
+        {
+          "canonical_id": "soft_voting",
+          "name": "Soft Voting Ensemble",
+          "decision_mode": "HEURISTIC_LITERATURE_FALLBACK",
+          "base_evidence_score": 0.5764,
+          "dataset_multiplier": 1.0,
+          "final_score": 0.5764,
+          "supporting_pmids": [
+            "41366279"
+          ],
+          "supporting_dois": [
+            "10.1038/s41598-025-31231-7"
+          ],
+          "evidence_status": "LITERATURE_GROUNDED"
+        },
         {
           "canonical_id": "gated_blend",
           "name": "Validation-Gated Blend",
@@ -652,23 +739,10 @@
           ],
           "supporting_dois": [],
           "evidence_status": "BASELINE_GROUNDED"
-        },
-        {
-          "canonical_id": "soft_voting",
-          "name": "Soft Voting Ensemble",
-          "decision_mode": "HEURISTIC_LITERATURE_FALLBACK",
-          "base_evidence_score": 0.45,
-          "dataset_multiplier": 1.0,
-          "final_score": 0.45,
-          "supporting_pmids": [
-            "PMID:LiteratureBaseline"
-          ],
-          "supporting_dois": [],
-          "evidence_status": "BASELINE_GROUNDED"
         }
       ],
-      "decision_rationale": "Selected 'Validation-Gated Blend' in HEURISTIC_LITERATURE_FALLBACK mode with evidence score 0.450 and dataset conditioning factor 1.00 (final score: 0.4500). Outranked 2 alternative candidate(s).",
-      "provenance_trace": "Mode: LITERATURE_FALLBACK | Evidence: PMID:LiteratureBaseline | Score: 0.45",
+      "decision_rationale": "Selected 'Soft Voting Ensemble' in HEURISTIC_LITERATURE_FALLBACK mode with evidence score 0.576 and dataset conditioning factor 1.00 (final score: 0.5764). Outranked 2 alternative candidate(s).",
+      "provenance_trace": "Mode: LITERATURE_FALLBACK | Evidence: 41366279 | Score: 0.5764",
       "reported_performance_score": null,
       "evidence_quality_score": null,
       "applicability_score": null,
@@ -676,7 +750,7 @@
       "head_to_head_record": null
     }
   },
-  "total_evidence_score": 0.4831,
+  "total_evidence_score": 0.5208,
   "overall_decision_mode": "RESULT_AWARE_EXPERIMENTAL",
-  "synthesis_timestamp": "2026-10-25T09:20:12.634709+00:00"
+  "synthesis_timestamp": "2026-10-27T13:41:21.420602+00:00"
 }

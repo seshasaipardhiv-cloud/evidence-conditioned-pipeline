@@ -2,14 +2,15 @@
 
 **Model:** `allenai/scibert_scivocab_uncased`  
 **Supervision:** Weakly Supervised Context-Aware Token Classification  
-**Training Corpus:** 100% Genuine Published Scientific Literature from PubMed (30 Research Papers)  
+**Training Corpus:** 100% Genuine Published Scientific Literature from PubMed (215 Research Papers, 2,481 Sentences)  
+**Extraction Corpus:** 100% Genuine Disjoint Scientific Literature from PubMed (105 Extra Research Papers)  
 **Synthetic Data:** **0.0% (Zero Synthetic Sentences)**  
 
 ---
 
 ## 1. Overview & Purpose
 
-In this project, SciBERT serves as a domain-specialized Named Entity Recognition (NER) token classifier. It scans published scientific paper abstracts to identify and score scientific methodology entities across 11 key machine learning and clinical categories:
+In this project, SciBERT serves as a domain-specialized Named Entity Recognition (NER) token classifier. It scans published scientific paper abstracts to identify, extract, and score scientific methodology entities and quantitative training constraints across 11 key machine learning and clinical categories:
 
 1. `MODEL_ARCH`: Model architectures (e.g., *XGBoost, Random Forest, Deep Learning, ResNet, CNN, Swin Transformer*)
 2. `PREPROCESSING`: Data cleaning and scaling (e.g., *MICE imputation, standard scaling, normalization*)
@@ -21,29 +22,32 @@ In this project, SciBERT serves as a domain-specialized Named Entity Recognition
 8. `REGULARIZATION`: Regularizers (e.g., *dropout, weight decay, early stopping*)
 9. `EVALUATION`: Metrics and validation protocols (e.g., *ROC-AUC, F1-score, accuracy, C-index, 5-fold CV*)
 10. `DATASET`: Clinical cohort benchmarks (e.g., *TCGA, Hancock, MIMIC-III, SEER*)
-11. `HYPERPARAMETER`: Architectural parameters (e.g., *learning rate, batch size, embedding dimension*)
+11. `HYPERPARAMETER`: Architectural parameters & explicit experimental constraints (e.g., *epochs, batch size, learning rate, patience, tree depth*)
 
 The extracted entity spans and their model confidence scores directly inform the **Evidence Quality Score ($S_{quality}$)** in the project's authoritative multi-factor selection engine:
 $$S_{final} = 0.45 S_{perf} + 0.35 S_{quality} + 0.20 S_{app}$$
 
 ---
 
-## 2. Dataset Provenance & Statistics
+## 2. Dataset Provenance & Corpus Disjointness
 
-The dataset was constructed exclusively from 30 published biomedical and clinical machine learning papers fetched from PubMed / CrossRef.
+Two completely separate and strictly disjoint literature corpora were retrieved dynamically from NCBI PubMed:
 
-- **Total Source Papers:** 30
-- **Total Published Abstract Sentences:** 321
-- **Total Methodology Entity Mentions:** 183
+1. **SciBERT Training Corpus (`SciBERT/data/scibert_training_papers.jsonl`)**: **215 distinct research papers** used for training and evaluating the SciBERT token classification head.
+2. **Pipeline Extraction Corpus (`evidence/processed/dynamic_extraction_papers.jsonl`)**: **105 extra distinct research papers** used exclusively for downstream evidence extraction and pipeline synthesis.
+
+- **Corpus Overlap:** **0 papers (0.0% overlap; strictly disjoint PMIDs)**
+- **Total Published Abstract Sentences (Training Set):** 2,481
+- **Total Methodology Entity Mentions (Training Set):** 996
 - **Synthetic Data Usage:** **None** (100% genuine peer-reviewed literature)
 - **Split Strategy:** Paper-level disjoint split (sentences from test papers never appear in train or validation).
 
 | Split | Papers | Sentences | Entity Spans | File Location |
 |:---|:---:|:---:|:---:|:---|
-| **Train** (70%) | 21 | 223 | 108 | `SciBERT/data/train_ner_dataset.json` |
-| **Validation** (15%) | 4 | 43 | 26 | `SciBERT/data/val_ner_dataset.json` |
-| **Test** (15%) | 5 | 55 | 49 | `SciBERT/data/test_ner_dataset.json` |
-| **Full Corpus** | 30 | 321 | 183 | `SciBERT/data/full_ner_dataset.json` |
+| **Train** (70%) | 150 | 1,757 | 687 | `SciBERT/data/train_ner_dataset.json` |
+| **Validation** (15%) | 32 | 357 | 163 | `SciBERT/data/val_ner_dataset.json` |
+| **Test** (15%) | 33 | 367 | 146 | `SciBERT/data/test_ner_dataset.json` |
+| **Full Corpus** | 215 | 2,481 | 996 | `SciBERT/data/full_ner_dataset.json` |
 
 ---
 
@@ -53,31 +57,33 @@ The dataset was constructed exclusively from 30 published biomedical and clinica
 - **Head Architecture:** `torch.nn.Linear(768, 23)` (23 BIO labels)
 - **Loss Function:** `NoiseRobustLoss` (Label-smoothed cross-entropy with $\epsilon = 0.05$ and `ignore_index = -100` for `[CLS]`, `[SEP]`, and padding tokens)
 - **Optimizer:** `AdamW(lr=0.005, weight_decay=1e-3)`
-- **Convergence:** Early stopping triggered at Epoch 7 (Best validation checkpoint restored from Epoch 2, validation loss: 0.4411)
-- **Checkpoint Location:** `SciBERT/results/scibert_ner_head.pt` (SHA-256: `06824be12116...`)
+- **Total Epochs Trained:** **50 Epochs** (Full 50-epoch trajectory completed)
+- **Best Validation Loss:** **0.4147**
+- **Checkpoint Location:** `SciBERT/results/scibert_ner_head.pt` (SHA-256: `956daab174d9...`)
 - **Stage 2D Integrated Checkpoint:** `evidence/processed/stage2d/checkpoints/scibert_ner_head_seed42.pt`
 
 ---
 
 ## 4. Evaluation Results on Held-Out Real Literature
 
-Evaluated on the held-out test split of 55 sentences (49 genuine methodology mentions) from 5 unseen research papers:
+Evaluated on the held-out test split of **367 sentences (11,932 tokens)** from **33 unseen research papers**:
 
-- **Token Classification Accuracy:** **97.30%**
-- **Methodology Entity Micro F1:** **0.6341**
-- **Methodology Entity Macro F1:** **0.6118**
+- **Token Classification Accuracy:** **99.05%**
+- **Methodology Entity Micro F1:** **0.8114**
+- **Methodology Entity Macro F1:** **0.6409**
 
-### Per-Class Test Set Performance
+### Per-Class Test Set Performance Highlights
 
 | Entity Class | Precision | Recall | F1 Score | Support (Tokens) |
 |:---|:---:|:---:|:---:|:---:|
-| **B-MODEL_ARCH** | **0.8571** | **0.6667** | **0.7500** | 9 |
-| **I-MODEL_ARCH** | **0.8571** | **0.6000** | **0.7059** | 10 |
-| **B-EVALUATION** | **1.0000** | **0.4583** | **0.6286** | 24 |
-| **I-EVALUATION** | **1.0000** | **0.9000** | **0.9474** | 20 |
-| **B-FUSION** | **1.0000** | 0.0909 | 0.1667 | 11 |
-| **I-FUSION** | **1.0000** | 0.1818 | 0.3077 | 11 |
-| **O (Non-entity)** | 0.9736 | 0.9987 | 0.9860 | 1,586 |
+| **B-MODEL_ARCH** | **0.8103** | **0.9400** | **0.8704** | 50 |
+| **I-MODEL_ARCH** | **0.8776** | **0.8776** | **0.8776** | 49 |
+| **B-FEATURE_REPR** | **1.0000** | **0.8182** | **0.9000** | 22 |
+| **I-FEATURE_REPR** | **0.9429** | **0.9429** | **0.9429** | 35 |
+| **B-EVALUATION** | **0.6277** | **0.9516** | **0.7564** | 62 |
+| **I-EVALUATION** | **0.6792** | **0.8780** | **0.7660** | 41 |
+| **B-DATASET** | **0.7500** | **1.0000** | **0.8571** | 3 |
+| **O (Non-entity)** | **0.9966** | **0.9937** | **0.9952** | 11,649 |
 
 ---
 

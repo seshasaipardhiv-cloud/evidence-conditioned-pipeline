@@ -122,10 +122,16 @@ EXTENDED_METHODOLOGY_LEXICON: Dict[NEREntityType, List[Dict[str, Any]]] = {
         {"term": "SEER", "aliases": ["seer", "seer database"], "weight": 0.95},
     ],
     NEREntityType.HYPERPARAMETER: [
-        {"term": "Learning Rate", "aliases": ["learning rate", "initial learning rate", "lr"], "weight": 0.90},
-        {"term": "Batch Size", "aliases": ["batch size", "mini-batch size"], "weight": 0.90},
-        {"term": "Number of Epochs", "aliases": ["epochs", "training epochs", "number of epochs"], "weight": 0.90},
-        {"term": "Embedding Dimension", "aliases": ["embedding dimension", "hidden size", "feature dimension"], "weight": 0.90},
+        {"term": "Epoch Count Constraint", "aliases": ["epochs", "training epochs", "number of epochs", "epoch count", "trained for 50 epochs", "trained for 100 epochs", "50 epochs", "100 epochs", "20 epochs", "10 epochs", "30 epochs", "200 epochs"], "weight": 0.95},
+        {"term": "Batch Size Constraint", "aliases": ["batch size", "mini-batch size", "batch size of 32", "batch size of 64", "batch size of 16", "batch size 32", "batch size 64", "batch size 16"], "weight": 0.95},
+        {"term": "Learning Rate Constraint", "aliases": ["learning rate", "initial learning rate", "lr", "learning rate of 0.001", "learning rate of 1e-4", "learning rate 0.01", "lr of 1e-3"], "weight": 0.95},
+        {"term": "Weight Decay Constraint", "aliases": ["weight decay", "l2 penalty", "weight decay of 1e-4", "weight decay 1e-3"], "weight": 0.95},
+        {"term": "Early Stopping Patience", "aliases": ["patience", "early stopping patience", "patience of 5 epochs", "patience of 10 epochs"], "weight": 0.95},
+        {"term": "Dropout Rate Constraint", "aliases": ["dropout rate", "dropout of 0.2", "dropout of 0.5", "dropout 0.3"], "weight": 0.95},
+        {"term": "Cross-Validation Folds", "aliases": ["5-fold cross-validation", "10-fold cross-validation", "5-fold cv", "10-fold cv", "5-fold", "10-fold"], "weight": 0.95},
+        {"term": "Train-Test Split Constraint", "aliases": ["80/20 split", "70/30 split", "70/15/15 split", "train/test split"], "weight": 0.95},
+        {"term": "Tree and Depth Constraints", "aliases": ["max depth", "maximum depth", "n_estimators", "number of trees", "100 trees", "500 trees"], "weight": 0.95},
+        {"term": "Embedding Dimension", "aliases": ["embedding dimension", "hidden size", "feature dimension", "768 dimensions", "512 dimensions"], "weight": 0.90},
     ],
 }
 
@@ -270,3 +276,54 @@ class AdvancedWeakLabeler:
         if _FUTURE_WORK_VERBS.search(sentence):
             return 0.45, "FUTURE_WORK"
         return 0.75, "NEUTRAL_MENTION"
+
+    def extract_experimental_constraints(self, text: str) -> Dict[str, Any]:
+        """Extracts concrete numerical constraints, epochs, and parameters reported in literature."""
+        constraints: Dict[str, Any] = {}
+        # Epochs
+        m = re.search(r"\b(?:trained\s+(?:for\s+)?|max(?:imum)?\s+)?(\d{1,4})\s+(?:epochs?|training iterations?)\b", text, re.IGNORECASE)
+        if m:
+            constraints["epochs"] = int(m.group(1))
+        # Batch size
+        m = re.search(r"\bbatch\s*size\s*(?:of|=|:)?\s*(\d{1,4})\b", text, re.IGNORECASE)
+        if m:
+            constraints["batch_size"] = int(m.group(1))
+        # Learning rate
+        m = re.search(r"\b(?:learning\s*rate|lr)\s*(?:of|=|:)?\s*([0-9]*\.?[0-9]+(?:e[-+]?[0-9]+)?)\b", text, re.IGNORECASE)
+        if m:
+            try:
+                constraints["learning_rate"] = float(m.group(1))
+            except ValueError:
+                pass
+        # Weight decay
+        m = re.search(r"\bweight\s*decay\s*(?:of|=|:)?\s*([0-9]*\.?[0-9]+(?:e[-+]?[0-9]+)?)\b", text, re.IGNORECASE)
+        if m:
+            try:
+                constraints["weight_decay"] = float(m.group(1))
+            except ValueError:
+                pass
+        # Early stopping patience
+        m = re.search(r"\bpatience\s*(?:of|=|:)?\s*(\d{1,3})\s*(?:epochs?)?\b", text, re.IGNORECASE)
+        if m:
+            constraints["early_stopping_patience"] = int(m.group(1))
+        # Dropout rate
+        m = re.search(r"\bdropout\s*(?:rate)?\s*(?:of|=|:)?\s*([0-9]*\.?[0-9]+)\b", text, re.IGNORECASE)
+        if m:
+            try:
+                constraints["dropout_rate"] = float(m.group(1))
+            except ValueError:
+                pass
+        # Cross-validation folds
+        m = re.search(r"\b(\d{1,2})[- ]fold\s+(?:cross[- ]validation|cv)\b", text, re.IGNORECASE)
+        if m:
+            constraints["cv_folds"] = int(m.group(1))
+        # Tree depth
+        m = re.search(r"\bmax(?:imum)?\s*depth\s*(?:of|=|:)?\s*(\d{1,3})\b", text, re.IGNORECASE)
+        if m:
+            constraints["max_depth"] = int(m.group(1))
+        # Number of estimators / trees
+        m = re.search(r"\b(\d{1,4})\s+(?:trees|estimators)\b|\bn_estimators\s*=\s*(\d{1,4})\b", text, re.IGNORECASE)
+        if m:
+            val = m.group(1) or m.group(2)
+            constraints["n_estimators"] = int(val)
+        return constraints

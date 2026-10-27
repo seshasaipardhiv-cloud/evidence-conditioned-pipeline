@@ -1,35 +1,36 @@
 {
   "dataset_name": "SciBERT Real Scientific Methodology NER Benchmark",
   "provenance": "100% genuine published scientific literature from PubMed/CrossRef (zero synthetic data)",
-  "total_source_papers": 30,
-  "papers_with_abstracts": 30,
-  "total_sentences": 321,
-  "sentences_with_entities": 108,
-  "total_entity_spans": 183,
+  "total_source_papers": 215,
+  "papers_with_abstracts": 215,
+  "total_sentences": 2481,
+  "sentences_with_entities": 641,
+  "total_entity_spans": 996,
   "entity_distribution_across_classes": {
-    "MODEL_ARCH": 42,
+    "EVALUATION": 451,
+    "HYPERPARAMETER": 19,
+    "MODEL_ARCH": 329,
+    "DATASET": 33,
+    "PREPROCESSING": 15,
+    "FEATURE_REPR": 116,
     "FUSION": 28,
-    "EVALUATION": 74,
-    "DATASET": 11,
-    "PREPROCESSING": 3,
-    "FEATURE_REPR": 24,
-    "HYPERPARAMETER": 1
+    "SAMPLING": 5
   },
   "split_summary": {
     "train": {
-      "paper_count": 21,
-      "sentence_count": 223,
-      "entity_count": 108
+      "paper_count": 150,
+      "sentence_count": 1757,
+      "entity_count": 687
     },
     "validation": {
-      "paper_count": 4,
-      "sentence_count": 43,
-      "entity_count": 26
+      "paper_count": 32,
+      "sentence_count": 357,
+      "entity_count": 163
     },
     "test": {
-      "paper_count": 5,
-      "sentence_count": 55,
-      "entity_count": 49
+      "paper_count": 33,
+      "sentence_count": 367,
+      "entity_count": 146
     }
   },
   "leakage_isolation": "Paper-level disjoint split (no sentences from test papers exist in train or val)"

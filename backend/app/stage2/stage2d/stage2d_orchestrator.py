@@ -70,6 +70,7 @@ class Stage2DOrchestrator:
         target_dataset: Optional[str] = None,
         target_task: str = "binary_classification",
         experimental_results_path: Optional[Union[str, Path]] = None,
+        papers_path: Optional[Union[str, Path]] = None,
     ) -> Dict[str, Any]:
         """
         Executes the complete Stage 2D pipeline.
@@ -91,14 +92,21 @@ class Stage2DOrchestrator:
         head.eval()
 
         # ── 2. Load paper corpus ──────────────────────────────────────────────
-        papers_path = Path("evidence/processed/papers.jsonl")
+        if papers_path is None:
+            if Path("evidence/processed/dynamic_extraction_papers.jsonl").exists():
+                corpus_path = Path("evidence/processed/dynamic_extraction_papers.jsonl")
+            else:
+                corpus_path = Path("evidence/processed/papers.jsonl")
+        else:
+            corpus_path = Path(papers_path)
+
         papers: List[PaperRecord] = []
-        if papers_path.exists():
-            with open(papers_path, "r", encoding="utf-8") as f:
+        if corpus_path.exists():
+            with open(corpus_path, "r", encoding="utf-8") as f:
                 for line in f:
                     if line.strip():
                         papers.append(PaperRecord.model_validate_json(line))
-        logger.info(f"Loaded {len(papers)} papers for Stage 2D extraction.")
+        logger.info(f"Loaded {len(papers)} papers from {corpus_path} for Stage 2D extraction.")
 
         # ── 3. High-precision extraction with section filtering ───────────────
         all_entities: List[NEREntity] = []
@@ -337,6 +345,32 @@ class Stage2DOrchestrator:
                     model_version=f"{_SCIBERT_MODEL_NAME}_stage2d_trained",
                     bio_tag=span["bio_tag"],
                     confidence_status="unresolved" if review else "explicit",
+                    is_bootstrap=False,
+                ))
+
+            # Also extract explicit quantitative constraints (epochs, batch size, learning rates, CV folds)
+            from backend.app.stage2.stage2d.advanced_weak_labeler import AdvancedWeakLabeler
+            constraints = AdvancedWeakLabeler().extract_experimental_constraints(sentence)
+            for c_name, c_val in constraints.items():
+                entities.append(NEREntity(
+                    entity_id=str(uuid.uuid4()),
+                    text=f"{c_name}: {c_val}",
+                    entity_type="HYPERPARAMETER",
+                    mechanism_category=MechanismCategory.unmapped.value,
+                    start_char=sent_offset,
+                    end_char=sent_offset + sent_len,
+                    source_text=sentence,
+                    source_section=section_name,
+                    source_paper_id=paper.paper_id,
+                    source_pmid=paper.pmid,
+                    source_doi=paper.doi,
+                    confidence=0.95,
+                    confidence_level="HIGH",
+                    review_flag=False,
+                    extraction_method=ExtractionMethod.transformer_ner,
+                    model_version=f"{_SCIBERT_MODEL_NAME}_stage2d_trained",
+                    bio_tag="B-HYPERPARAMETER",
+                    confidence_status="explicit",
                     is_bootstrap=False,
                 ))
 

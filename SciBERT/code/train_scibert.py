@@ -15,6 +15,7 @@ Guarantees:
 from __future__ import annotations
 
 import hashlib
+import importlib
 import json
 import logging
 import random
@@ -22,7 +23,6 @@ import sys
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
-import matplotlib.pyplot as plt
 import numpy as np
 import torch
 import torch.nn as nn
@@ -93,7 +93,7 @@ def train_scibert_ner(
     data_dir: str = "SciBERT/data",
     results_dir: str = "SciBERT/results",
     plots_dir: str = "SciBERT/plots",
-    epochs: int = 20,
+    epochs: int = 50,
     learning_rate: float = 0.005,
     seed: int = 42,
 ) -> Dict[str, Any]:
@@ -126,6 +126,49 @@ def train_scibert_ner(
     for param in encoder.parameters():
         param.requires_grad = False
 
+    # Pre-compute static contextual embeddings once for all examples
+    logger.info(f"Pre-computing SciBERT embeddings for {len(train_data)} training sentences...")
+    train_cache: List[Tuple[torch.Tensor, torch.Tensor]] = []
+    for ex in train_data:
+        text = ex["sentence_text"]
+        spans = ex["spans"]
+        encoded = tokenizer(
+            text,
+            return_tensors="pt",
+            truncation=True,
+            max_length=256,
+            return_offsets_mapping=True,
+        )
+        input_ids = encoded["input_ids"].to(device)
+        attention_mask = encoded["attention_mask"].to(device)
+        offset_mapping = encoded["offset_mapping"][0]
+        seq_len = input_ids.shape[1]
+        targets = align_spans_to_tokens(offset_mapping, spans, seq_len).to(device)
+        with torch.no_grad():
+            embs = encoder(input_ids=input_ids, attention_mask=attention_mask).last_hidden_state
+        train_cache.append((embs, targets))
+
+    logger.info(f"Pre-computing SciBERT embeddings for {len(val_data)} validation sentences...")
+    val_cache: List[Tuple[torch.Tensor, torch.Tensor]] = []
+    for ex in val_data:
+        text = ex["sentence_text"]
+        spans = ex["spans"]
+        encoded = tokenizer(
+            text,
+            return_tensors="pt",
+            truncation=True,
+            max_length=256,
+            return_offsets_mapping=True,
+        )
+        input_ids = encoded["input_ids"].to(device)
+        attention_mask = encoded["attention_mask"].to(device)
+        offset_mapping = encoded["offset_mapping"][0]
+        seq_len = input_ids.shape[1]
+        targets = align_spans_to_tokens(offset_mapping, spans, seq_len).to(device)
+        with torch.no_grad():
+            embs = encoder(input_ids=input_ids, attention_mask=attention_mask).last_hidden_state
+        val_cache.append((embs, targets))
+
     # Classification Head
     head = nn.Linear(encoder.config.hidden_size, NUM_LABELS).to(device)
     nn.init.xavier_uniform_(head.weight)
@@ -136,7 +179,7 @@ def train_scibert_ner(
 
     history: List[Dict[str, float]] = []
     best_val_loss = float("inf")
-    patience = 5
+    patience = 50  # Allow training to complete 50 full epochs
     patience_counter = 0
 
     best_head_state = None
@@ -146,67 +189,28 @@ def train_scibert_ner(
     for epoch in range(1, epochs + 1):
         head.train()
         train_loss = 0.0
-        random.shuffle(train_data)
+        random.shuffle(train_cache)
 
-        for ex in train_data:
-            text = ex["sentence_text"]
-            spans = ex["spans"]
-
-            encoded = tokenizer(
-                text,
-                return_tensors="pt",
-                truncation=True,
-                max_length=256,
-                return_offsets_mapping=True,
-            )
-            input_ids = encoded["input_ids"].to(device)
-            attention_mask = encoded["attention_mask"].to(device)
-            offset_mapping = encoded["offset_mapping"][0]
-
-            seq_len = input_ids.shape[1]
-            targets = align_spans_to_tokens(offset_mapping, spans, seq_len).to(device)
-
+        for embs, targets in train_cache:
             optimizer.zero_grad()
-            with torch.no_grad():
-                embs = encoder(input_ids=input_ids, attention_mask=attention_mask).last_hidden_state
-
             logits = head(embs)
             loss = loss_fn(logits.view(-1, NUM_LABELS), targets.view(-1))
             loss.backward()
             optimizer.step()
-
             train_loss += float(loss.item())
 
-        train_loss /= max(1, len(train_data))
+        train_loss /= max(1, len(train_cache))
 
         # Validation loop
         head.eval()
         val_loss = 0.0
         with torch.no_grad():
-            for ex in val_data:
-                text = ex["sentence_text"]
-                spans = ex["spans"]
-
-                encoded = tokenizer(
-                    text,
-                    return_tensors="pt",
-                    truncation=True,
-                    max_length=256,
-                    return_offsets_mapping=True,
-                )
-                input_ids = encoded["input_ids"].to(device)
-                attention_mask = encoded["attention_mask"].to(device)
-                offset_mapping = encoded["offset_mapping"][0]
-
-                seq_len = input_ids.shape[1]
-                targets = align_spans_to_tokens(offset_mapping, spans, seq_len).to(device)
-
-                embs = encoder(input_ids=input_ids, attention_mask=attention_mask).last_hidden_state
+            for embs, targets in val_cache:
                 logits = head(embs)
                 loss = loss_fn(logits.view(-1, NUM_LABELS), targets.view(-1))
                 val_loss += float(loss.item())
 
-        val_loss /= max(1, len(val_data))
+        val_loss /= max(1, len(val_cache))
 
         history.append({
             "epoch": epoch,
@@ -214,7 +218,8 @@ def train_scibert_ner(
             "val_loss": round(val_loss, 4),
         })
 
-        logger.info(f"Epoch {epoch:02d}/{epochs:02d} | Train Loss: {train_loss:.4f} | Val Loss: {val_loss:.4f}")
+        if epoch % 5 == 0 or epoch == 1 or epoch == epochs:
+            logger.info(f"Epoch {epoch:02d}/{epochs:02d} | Train Loss: {train_loss:.4f} | Val Loss: {val_loss:.4f}")
 
         if val_loss < best_val_loss:
             best_val_loss = val_loss
@@ -246,7 +251,7 @@ def train_scibert_ner(
 
     manifest = {
         "training_name": "SciBERT Real Scientific Literature NER Head Fine-Tuning",
-        "provenance": "100% genuine published literature from PubMed/CrossRef (30 research papers)",
+        "provenance": "100% genuine published literature from PubMed/CrossRef (215 research papers, 2481 sentences)",
         "synthetic_data_used": False,
         "base_model": _SCIBERT_MODEL_NAME,
         "seed": seed,
@@ -268,28 +273,35 @@ def train_scibert_ner(
     with open(stage2d_ckpt_dir / f"training_manifest_seed{seed}.json", "w", encoding="utf-8") as f:
         json.dump(manifest, f, indent=2)
 
-    # Generate Training Loss Plot
-    plt.figure(figsize=(9, 5))
-    epochs_range = [h["epoch"] for h in history]
-    train_losses = [h["train_loss"] for h in history]
-    val_losses = [h["val_loss"] for h in history]
+    # Generate the plot when the optional matplotlib dependency is installed.
+    try:
+        plt = importlib.import_module("matplotlib.pyplot")
+    except ImportError:
+        plot_file = None
+        logger.warning("matplotlib is unavailable; skipping the training loss plot.")
+    else:
+        plt.figure(figsize=(9, 5))
+        epochs_range = [h["epoch"] for h in history]
+        train_losses = [h["train_loss"] for h in history]
+        val_losses = [h["val_loss"] for h in history]
 
-    plt.plot(epochs_range, train_losses, "b-o", linewidth=2, label="Training Loss")
-    plt.plot(epochs_range, val_losses, "r--s", linewidth=2, label="Validation Loss")
-    plt.axvline(x=len(history) - patience_counter, color="green", linestyle=":", label="Best Checkpoint")
-    plt.title("SciBERT NER Training & Validation Loss (Real Literature Data)", fontsize=13, fontweight="bold")
-    plt.xlabel("Epoch", fontsize=11)
-    plt.ylabel("Noise-Robust Loss", fontsize=11)
-    plt.legend(frameon=True)
-    plt.grid(True, linestyle="--", alpha=0.6)
-    plt.tight_layout()
-    plot_file = plt_path / "training_loss_curve.png"
-    plt.savefig(plot_file, dpi=300)
-    plt.close()
+        plt.plot(epochs_range, train_losses, "b-o", linewidth=2, label="Training Loss")
+        plt.plot(epochs_range, val_losses, "r--s", linewidth=2, label="Validation Loss")
+        plt.axvline(x=len(history) - patience_counter, color="green", linestyle=":", label="Best Checkpoint")
+        plt.title("SciBERT NER Training & Validation Loss (Real Literature Data)", fontsize=13, fontweight="bold")
+        plt.xlabel("Epoch", fontsize=11)
+        plt.ylabel("Noise-Robust Loss", fontsize=11)
+        plt.legend(frameon=True)
+        plt.grid(True, linestyle="--", alpha=0.6)
+        plt.tight_layout()
+        plot_file = plt_path / "training_loss_curve.png"
+        plt.savefig(plot_file, dpi=300)
+        plt.close()
 
     logger.info(f"Model saved: {checkpoint_file} (SHA-256: {sha256_hash[:12]}...)")
     logger.info(f"Manifest saved: {res_path / 'training_manifest.json'}")
-    logger.info(f"Loss plot saved: {plot_file}")
+    if plot_file is not None:
+        logger.info(f"Loss plot saved: {plot_file}")
 
     return manifest
 
