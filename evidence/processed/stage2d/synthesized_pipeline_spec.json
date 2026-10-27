@@ -17,20 +17,20 @@
       "evidence_score": 0.7157,
       "decision_mode": "RESULT_AWARE_EXPERIMENTAL",
       "supporting_pmids": [
-        "42807361",
         "40502295",
-        "42351482",
-        "42260021",
+        "42807361",
         "41322476",
-        "42776352"
+        "42776352",
+        "42351482",
+        "42260021"
       ],
       "supporting_dois": [
-        "10.1007/s00277-026-07086-x",
-        "10.5847/wjem.j.1920-8642.2026.065",
-        "10.1016/j.xops.2025.100785",
-        "10.3390/diagnostics16121824",
+        "10.3389/frai.2025.1682919",
         "10.1007/s12265-026-10842-z",
-        "10.3389/frai.2025.1682919"
+        "10.5847/wjem.j.1920-8642.2026.065",
+        "10.3390/diagnostics16121824",
+        "10.1007/s00277-026-07086-x",
+        "10.1016/j.xops.2025.100785"
       ],
       "candidate_rankings": [
         {
@@ -44,32 +44,32 @@
           "dataset_multiplier": 0.48,
           "final_score": 0.7515,
           "supporting_pmids": [
-            "42807361",
             "40502295",
-            "42351482",
-            "42260021",
+            "42807361",
             "41322476",
-            "42776352"
+            "42776352",
+            "42351482",
+            "42260021"
           ],
           "supporting_dois": [
-            "10.1007/s00277-026-07086-x",
-            "10.5847/wjem.j.1920-8642.2026.065",
-            "10.1016/j.xops.2025.100785",
-            "10.3390/diagnostics16121824",
+            "10.3389/frai.2025.1682919",
             "10.1007/s12265-026-10842-z",
-            "10.3389/frai.2025.1682919"
+            "10.5847/wjem.j.1920-8642.2026.065",
+            "10.3390/diagnostics16121824",
+            "10.1007/s00277-026-07086-x",
+            "10.1016/j.xops.2025.100785"
           ],
           "evidence_status": "EXPERIMENTAL_RESULT_GROUNDED",
           "head_to_head_record": "Wins: 0, Losses: 0, Ties: 0",
           "uncertainty_level": "MODERATE",
           "evaluation_summary": "Reported in 4 experimental evaluation(s) without direct head-to-head comparator.",
           "incomparable_metrics_notes": [
-            "Candidate 'Tabular MLP' metric 'accuracy' is incompatible with rival candidate metric 'AUC' and cannot be compared numerically.",
-            "Candidate 'Tabular MLP' metric 'precision' is incompatible with rival candidate metric 'ACC' and cannot be compared numerically.",
             "Candidate 'Tabular MLP' metric 'precision' is incompatible with rival candidate metric 'accuracy' and cannot be compared numerically.",
+            "Candidate 'Tabular MLP' metric 'precision' is incompatible with rival candidate metric 'ACC' and cannot be compared numerically.",
             "Candidate 'Tabular MLP' metric 'precision' is incompatible with rival candidate metric 'AUC' and cannot be compared numerically.",
-            "Candidate 'Tabular MLP' metric 'AUC' is incompatible with rival candidate metric 'ACC' and cannot be compared numerically.",
-            "Candidate 'Tabular MLP' metric 'AUC' is incompatible with rival candidate metric 'accuracy' and cannot be compared numerically."
+            "Candidate 'Tabular MLP' metric 'accuracy' is incompatible with rival candidate metric 'AUC' and cannot be compared numerically.",
+            "Candidate 'Tabular MLP' metric 'AUC' is incompatible with rival candidate metric 'accuracy' and cannot be compared numerically.",
+            "Candidate 'Tabular MLP' metric 'AUC' is incompatible with rival candidate metric 'ACC' and cannot be compared numerically."
           ],
           "shared_benchmarks_used": [
             "tcga"
@@ -98,8 +98,8 @@
           "incomparable_metrics_notes": [
             "Candidate 'XGBoost' metric 'ACC' is incompatible with rival candidate metric 'precision' and cannot be compared numerically.",
             "Candidate 'XGBoost' metric 'ACC' is incompatible with rival candidate metric 'AUC' and cannot be compared numerically.",
-            "Candidate 'XGBoost' metric 'AUC' is incompatible with rival candidate metric 'accuracy' and cannot be compared numerically.",
-            "Candidate 'XGBoost' metric 'AUC' is incompatible with rival candidate metric 'precision' and cannot be compared numerically."
+            "Candidate 'XGBoost' metric 'AUC' is incompatible with rival candidate metric 'precision' and cannot be compared numerically.",
+            "Candidate 'XGBoost' metric 'AUC' is incompatible with rival candidate metric 'accuracy' and cannot be compared numerically."
           ],
           "shared_benchmarks_used": [
             "tcga"
@@ -116,36 +116,36 @@
           "dataset_multiplier": 1.0,
           "final_score": 0.6361,
           "supporting_pmids": [
-            "41350571",
-            "41894311",
+            "40502295",
+            "41826845",
             "40890689",
             "42488127",
-            "40502295",
-            "41922385",
-            "41596036",
-            "41826845",
-            "42870229",
-            "42260021",
-            "39576664",
             "40632807",
+            "39576664",
+            "41894311",
+            "42870229",
             "41322476",
-            "42100518"
+            "41350571",
+            "41596036",
+            "41922385",
+            "42100518",
+            "42260021"
           ],
           "supporting_dois": [
-            "10.3389/fonc.2026.1857275",
-            "10.1093/jamia/ocae286",
-            "10.1186/s12871-026-04160-9",
-            "10.1186/s12874-026-02805-4",
-            "10.1007/s00277-026-07086-x",
             "10.1038/s41598-025-30529-w",
-            "10.1038/s41598-026-35451-3",
-            "10.1371/journal.pone.0327564",
-            "10.3389/fpubh.2026.1754585",
-            "10.1016/j.xops.2025.100785",
-            "10.3389/frai.2025.1682919",
             "10.1186/s12911-025-03174-6",
+            "10.3389/frai.2025.1682919",
+            "10.1186/s12874-026-02805-4",
+            "10.1038/s41598-026-35451-3",
+            "10.1093/jamia/ocae286",
+            "10.1371/journal.pone.0327564",
+            "10.3389/fonc.2026.1857275",
+            "10.1186/s12871-026-04160-9",
+            "10.3389/fpubh.2026.1754585",
+            "10.1007/s00277-026-07086-x",
+            "10.3390/bioengineering13010105",
             "10.1097/MD.0000000000048172",
-            "10.3390/bioengineering13010105"
+            "10.1016/j.xops.2025.100785"
           ],
           "evidence_status": "LITERATURE_GROUNDED",
           "head_to_head_record": "Wins: 0, Losses: 0, Ties: 0",
@@ -172,9 +172,9 @@
             "42488127"
           ],
           "supporting_dois": [
+            "10.3389/fpubh.2026.1754585",
             "10.1007/s00277-026-07086-x",
-            "10.3389/fonc.2026.1857275",
-            "10.3389/fpubh.2026.1754585"
+            "10.3389/fonc.2026.1857275"
           ],
           "evidence_status": "LITERATURE_GROUNDED",
           "head_to_head_record": "Wins: 0, Losses: 0, Ties: 0",
@@ -187,7 +187,7 @@
         }
       ],
       "decision_rationale": "Selected 'Tabular MLP' in RESULT_AWARE_EXPERIMENTAL mode with reported experimental performance S_perf=0.9000, evidence quality S_quality=0.7157, and applicability S_app=0.4800 (final score: 0.7515). Uncertainty: MODERATE. Reported in 4 experimental evaluation(s) without direct head-to-head comparator. Outranked 3 alternative candidate(s).",
-      "provenance_trace": "Mode: RESULT_AWARE | Evidence: 42807361, 40502295, 42351482, 42260021, 41322476, 42776352 | Perf: 0.9000 | Score: 0.7515 | Uncertainty: MODERATE",
+      "provenance_trace": "Mode: RESULT_AWARE | Evidence: 40502295, 42807361, 41322476, 42776352, 42351482, 42260021 | Perf: 0.9000 | Score: 0.7515 | Uncertainty: MODERATE",
       "reported_performance_score": 0.9,
       "evidence_quality_score": 0.7157,
       "applicability_score": 0.48,
@@ -271,13 +271,13 @@
           "final_score": 0.4662,
           "supporting_pmids": [
             "41366279",
-            "42351482",
-            "41469782"
+            "41469782",
+            "42351482"
           ],
           "supporting_dois": [
-            "10.1038/s41598-025-31231-7",
+            "10.1038/s41598-025-30534-z",
             "10.3390/diagnostics16121824",
-            "10.1038/s41598-025-30534-z"
+            "10.1038/s41598-025-31231-7"
           ],
           "evidence_status": "LITERATURE_GROUNDED",
           "head_to_head_record": "Wins: 0, Losses: 0, Ties: 0",
@@ -299,8 +299,8 @@
           "dataset_multiplier": 0.39,
           "final_score": 0.4523,
           "supporting_pmids": [
-            "42230914",
-            "42227503"
+            "42227503",
+            "42230914"
           ],
           "supporting_dois": [
             "10.1038/s41598-026-55476-y",
@@ -392,14 +392,14 @@
       "evidence_score": 0.5942,
       "decision_mode": "HEURISTIC_LITERATURE_FALLBACK",
       "supporting_pmids": [
+        "42227503",
         "42870229",
-        "41600528",
-        "42227503"
+        "41600528"
       ],
       "supporting_dois": [
         "10.1186/s12871-026-04160-9",
-        "10.2174/0115734056437477260427145329",
-        "10.3390/s26020735"
+        "10.3390/s26020735",
+        "10.2174/0115734056437477260427145329"
       ],
       "candidate_rankings": [
         {
@@ -410,14 +410,14 @@
           "dataset_multiplier": 1.0,
           "final_score": 0.5942,
           "supporting_pmids": [
+            "42227503",
             "42870229",
-            "41600528",
-            "42227503"
+            "41600528"
           ],
           "supporting_dois": [
             "10.1186/s12871-026-04160-9",
-            "10.2174/0115734056437477260427145329",
-            "10.3390/s26020735"
+            "10.3390/s26020735",
+            "10.2174/0115734056437477260427145329"
           ],
           "evidence_status": "LITERATURE_GROUNDED"
         },
@@ -449,7 +449,7 @@
         }
       ],
       "decision_rationale": "Selected 'Standard Scaling' in HEURISTIC_LITERATURE_FALLBACK mode with evidence score 0.594 and dataset conditioning factor 1.00 (final score: 0.5942). Outranked 2 alternative candidate(s).",
-      "provenance_trace": "Mode: LITERATURE_FALLBACK | Evidence: 42870229, 41600528, 42227503 | Score: 0.5942",
+      "provenance_trace": "Mode: LITERATURE_FALLBACK | Evidence: 42227503, 42870229, 41600528 | Score: 0.5942",
       "reported_performance_score": null,
       "evidence_quality_score": null,
       "applicability_score": null,
@@ -752,5 +752,5 @@
   },
   "total_evidence_score": 0.5208,
   "overall_decision_mode": "RESULT_AWARE_EXPERIMENTAL",
-  "synthesis_timestamp": "2026-10-27T13:41:21.420602+00:00"
+  "synthesis_timestamp": "2026-10-27T14:22:55.193079+00:00"
 }

@@ -1,7 +1,7 @@
 # Final Project Completion Report: Stage 2D Scientific Integrity Repair
 
-**Generated**: 2026-10-25T09:27:15.576632+00:00
-**Canonical Data SHA-256**: `5f7f10a837f5d1c1b1fe5968014c668d7a30a2eb34f004bb46e8e73f29dbcb59`
+**Generated**: 2026-10-27T14:26:08.084900+00:00
+**Canonical Data SHA-256**: `46bca6557151ed0dba660673eba0f4711bafd78a578a8e4736b7ccefb738b9a8`
 **Source**: All metrics computed from `results/canonical_predictions.jsonl`
 
 ---
@@ -46,7 +46,7 @@ Research Papers (30 synthetic)
     → Safety Gates
     → Real Training (sklearn proxies, seeds=[42,100,2026])
     → Actual Predictions
-    → canonical_predictions.jsonl (SHA-256=5f7f10a837f5d1c1...)
+    → canonical_predictions.jsonl (SHA-256=46bca6557151ed0d...)
     → Computed Metrics
     → 18 Plots (from canonical data)
     → This Report
@@ -64,9 +64,9 @@ Research Papers (30 synthetic)
 | Training data | 30 synthetic papers (programmatic labels) |
 | Supervision | `WEAKLY_SUPERVISED_WITH_NOISE_ROBUST_TRAINING` |
 | Ground truth | `NOT_AVAILABLE_WITHOUT_GOLD_LABELS` |
-| Entities extracted | 202 |
+| Entities extracted | 923 |
 | Mean NER confidence | 0.154 (ALL classified as LOW) |
-| Checkpoint SHA-256 | `4300816efe0dd62376c2bedbfe201678ad85d0c3436eb6f45afcda4f989e6214` |
+| Checkpoint SHA-256 | `956daab174d9b839b895d47b305cc1b61953e7a3a9769cd24ae418c363c35285` |
 
 ---
 
@@ -84,11 +84,11 @@ Score = 0.50 for all FALLBACK candidates → selection determined by priority or
 
 | Cohort | Dataset Status | Model | ROC-AUC (mean±std) | PR-AUC | Brier | F1 |
 |---|---|---|:---:|:---:|:---:|:---:|
-| **Cohort_A_Authoritative_Hancock** | `REAL_CLINICAL_DATASET` | XGBoost | **0.9633 ± 0.0037** | 0.9437 | 0.0227 | 0.9524 |
-| **Cohort_B_Unseen_Cardiac_Tabular** | `REAL_CLINICAL_DATASET` | XGBoost | **0.7862 ± 0.0543** | 0.4069 | 0.2077 | 0.4522 |
-| **Cohort_C_Unseen_Derm_Image** | `REAL_CLINICAL_DATASET` | ResNet-18 | **0.8068 ± 0.0141** | 0.5884 | 0.1231 | 0.4944 |
-| **Cohort_D_Unseen_Pathology_Text** | `REAL_CLINICAL_DATASET` | PubMedBERT | **0.5681 ± 0.0183** | 0.3083 | 0.206 | 0.3084 |
-| **Cohort_E_Unseen_Trimodal_Oncology** | `REAL_CLINICAL_DATASET` | Multimodal Pipeline (tabular + image + text) | **0.8373 ± 0.0530** | 0.6105 | 0.1285 | 0.5847 |
+| **Cohort_A_Authoritative_Hancock** | `REAL_CLINICAL_DATASET` | Evidence Tabular Blend | **0.9642 ± 0.0163** | 0.9527 | 0.023 | 0.9555 |
+| **Cohort_B_Unseen_Cardiac_Tabular** | `REAL_CLINICAL_DATASET` | Random Forest | **0.7750 ± 0.0460** | 0.3772 | 0.196 | 0.4608 |
+| **Cohort_C_Unseen_Derm_Image** | `REAL_CLINICAL_DATASET` | EfficientNet-B0 | **0.8068 ± 0.0141** | 0.5884 | 0.1231 | 0.4944 |
+| **Cohort_D_Unseen_Pathology_Text** | `REAL_CLINICAL_DATASET` | TF-IDF + Linear Classifier | **0.5251 ± 0.0322** | 0.2514 | 0.2992 | 0.3093 |
+| **Cohort_E_Unseen_Trimodal_Oncology** | `REAL_CLINICAL_DATASET` | Multimodal Pipeline (tabular + image + text) | **0.8877 ± 0.0217** | 0.6756 | 0.1158 | 0.5667 |
 
 ---
 

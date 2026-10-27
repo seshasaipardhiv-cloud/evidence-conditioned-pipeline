@@ -1,5 +1,5 @@
 {
-  "verification_timestamp": "2026-10-25T09:26:05.730837+00:00",
+  "verification_timestamp": "2026-10-27T14:25:37.709595+00:00",
   "tool": "PubMed E-utilities eSummary API",
   "api_url_template": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id={pmid}&retmode=json",
   "summary": {

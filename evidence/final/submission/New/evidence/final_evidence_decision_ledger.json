@@ -3,28 +3,55 @@
     "extraction_engine": "SciBERT NER (allenai/scibert_scivocab_uncased)",
     "training_supervision": "WEAKLY_SUPERVISED_WITH_NOISE_ROBUST_TRAINING",
     "ground_truth_status": "NOT_AVAILABLE_WITHOUT_GOLD_LABELS",
-    "checkpoint_sha256": "4300816efe0dd62376c2bedbfe201678ad85d0c3436eb6f45afcda4f989e6214",
+    "checkpoint_sha256": "956daab174d9b839b895d47b305cc1b61953e7a3a9769cd24ae418c363c35285",
     "note": "All evidence scores in this ledger originate from runtime SciBERT NER extraction. Decisions marked FALLBACK_DEFAULT received score=0.50 because no matching entity was found in the runtime evidence_scores.json.",
-    "timestamp": "2026-10-25T09:27:15.566570+00:00"
+    "timestamp": "2026-10-27T14:26:08.083905+00:00"
   },
   "decisions": [
     {
       "target_slot": "tabular_model",
       "modality": "tabular",
-      "selected_name": "XGBoost",
-      "entity_key": "xgboost",
+      "selected_name": "Random Forest",
+      "entity_key": "random forest",
       "entity_type": "MODEL_ARCH",
-      "runtime_evidence_score": 0.694,
-      "adjusted_evidence_score": 0.694,
-      "evidence_score": 0.694,
+      "runtime_evidence_score": 0.7318,
+      "adjusted_evidence_score": 0.7318,
+      "evidence_score": 0.7318,
       "evidence_routing_status": "RUNTIME_MATCHED",
-      "ner_confidence": 0.85,
-      "section_relevance": 0.85,
+      "ner_confidence": 0.7491,
+      "section_relevance": 0.75,
       "supporting_pmids": [
-        "PMID:LiteratureBaseline"
+        "41826845",
+        "42100518",
+        "41894311",
+        "40502295",
+        "42260021",
+        "41322476",
+        "42488127",
+        "39576664",
+        "40632807",
+        "40890689",
+        "41596036",
+        "41922385",
+        "41350571",
+        "42870229"
       ],
       "constraint_note": null,
       "candidate_ranking": [
+        {
+          "name": "Random Forest",
+          "entity_key": "random forest",
+          "adjusted_score": 0.7318,
+          "routing_status": "RUNTIME_MATCHED",
+          "constraint": null
+        },
+        {
+          "name": "Logistic Regression",
+          "entity_key": "logistic regression",
+          "adjusted_score": 0.7158,
+          "routing_status": "RUNTIME_MATCHED",
+          "constraint": null
+        },
         {
           "name": "XGBoost",
           "entity_key": "xgboost",
@@ -33,46 +60,59 @@
           "constraint": null
         },
         {
-          "name": "Logistic Regression",
-          "entity_key": "logistic regression",
-          "adjusted_score": 0.6507,
-          "routing_status": "RUNTIME_MATCHED",
-          "constraint": null
-        },
-        {
-          "name": "Random Forest",
-          "entity_key": "rf",
-          "adjusted_score": 0.587,
-          "routing_status": "RUNTIME_MATCHED",
-          "constraint": null
-        },
-        {
           "name": "Tabular MLP",
-          "entity_key": "tabular mlp",
-          "adjusted_score": 0.495,
+          "entity_key": "multilayer perceptron",
+          "adjusted_score": 0.3392,
           "routing_status": "RUNTIME_MATCHED",
           "constraint": "BUDGET_CONSTRAINT: LIGHT budget excludes Tabular MLP"
         }
       ],
-      "selection_reason": "RUNTIME_MATCHED entity 'xgboost' (NER confidence=0.850, section_relevance=0.850, composite_score=0.6940) from 1 paper(s) (PMIDs: PMID:LiteratureBaseline)."
+      "selection_reason": "RUNTIME_MATCHED entity 'random forest' (NER confidence=0.749, section_relevance=0.750, composite_score=0.7318) from 14 paper(s) (PMIDs: 41826845, 42100518)."
     },
     {
       "target_slot": "tabular_model",
       "modality": "tabular",
-      "selected_name": "XGBoost",
-      "entity_key": "xgboost",
+      "selected_name": "Random Forest",
+      "entity_key": "random forest",
       "entity_type": "MODEL_ARCH",
-      "runtime_evidence_score": 0.694,
-      "adjusted_evidence_score": 0.694,
-      "evidence_score": 0.694,
+      "runtime_evidence_score": 0.7318,
+      "adjusted_evidence_score": 0.7318,
+      "evidence_score": 0.7318,
       "evidence_routing_status": "RUNTIME_MATCHED",
-      "ner_confidence": 0.85,
-      "section_relevance": 0.85,
+      "ner_confidence": 0.7491,
+      "section_relevance": 0.75,
       "supporting_pmids": [
-        "PMID:LiteratureBaseline"
+        "41826845",
+        "42100518",
+        "41894311",
+        "40502295",
+        "42260021",
+        "41322476",
+        "42488127",
+        "39576664",
+        "40632807",
+        "40890689",
+        "41596036",
+        "41922385",
+        "41350571",
+        "42870229"
       ],
       "constraint_note": null,
       "candidate_ranking": [
+        {
+          "name": "Random Forest",
+          "entity_key": "random forest",
+          "adjusted_score": 0.7318,
+          "routing_status": "RUNTIME_MATCHED",
+          "constraint": null
+        },
+        {
+          "name": "Logistic Regression",
+          "entity_key": "logistic regression",
+          "adjusted_score": 0.7158,
+          "routing_status": "RUNTIME_MATCHED",
+          "constraint": null
+        },
         {
           "name": "XGBoost",
           "entity_key": "xgboost",
@@ -81,135 +121,155 @@
           "constraint": null
         },
         {
-          "name": "Logistic Regression",
-          "entity_key": "logistic regression",
-          "adjusted_score": 0.6507,
-          "routing_status": "RUNTIME_MATCHED",
-          "constraint": null
-        },
-        {
-          "name": "Random Forest",
-          "entity_key": "rf",
-          "adjusted_score": 0.587,
-          "routing_status": "RUNTIME_MATCHED",
-          "constraint": null
-        },
-        {
           "name": "Tabular MLP",
-          "entity_key": "tabular mlp",
-          "adjusted_score": 0.495,
+          "entity_key": "multilayer perceptron",
+          "adjusted_score": 0.3392,
           "routing_status": "RUNTIME_MATCHED",
           "constraint": "BUDGET_CONSTRAINT: LIGHT budget excludes Tabular MLP"
         }
       ],
-      "selection_reason": "RUNTIME_MATCHED entity 'xgboost' (NER confidence=0.850, section_relevance=0.850, composite_score=0.6940) from 1 paper(s) (PMIDs: PMID:LiteratureBaseline)."
+      "selection_reason": "RUNTIME_MATCHED entity 'random forest' (NER confidence=0.749, section_relevance=0.750, composite_score=0.7318) from 14 paper(s) (PMIDs: 41826845, 42100518)."
     },
     {
       "target_slot": "image_model",
       "modality": "image",
-      "selected_name": "ResNet-18",
-      "entity_key": "resnet-18",
+      "selected_name": "EfficientNet-B0",
+      "entity_key": "net",
       "entity_type": "MODEL_ARCH",
-      "runtime_evidence_score": 0.92,
-      "adjusted_evidence_score": 0.92,
-      "evidence_score": 0.92,
+      "runtime_evidence_score": 0.5909,
+      "adjusted_evidence_score": 0.5909,
+      "evidence_score": 0.5909,
       "evidence_routing_status": "RUNTIME_MATCHED",
-      "ner_confidence": 0.85,
-      "section_relevance": 0.85,
+      "ner_confidence": 0.2338,
+      "section_relevance": 0.75,
       "supporting_pmids": [
-        "PMID:LiteratureBaseline"
+        "39576664",
+        "41469782",
+        "42351482"
       ],
       "constraint_note": null,
       "candidate_ranking": [
         {
-          "name": "ResNet-18",
-          "entity_key": "resnet-18",
-          "adjusted_score": 0.92,
-          "routing_status": "RUNTIME_MATCHED",
-          "constraint": null
-        },
-        {
           "name": "EfficientNet-B0",
-          "entity_key": "NONE",
-          "adjusted_score": 0.5,
-          "routing_status": "FALLBACK_DEFAULT",
+          "entity_key": "net",
+          "adjusted_score": 0.5909,
+          "routing_status": "RUNTIME_MATCHED",
           "constraint": null
         },
         {
-          "name": "Vision Transformer (ViT-Small)",
-          "entity_key": "transformers",
-          "adjusted_score": 0.3244,
+          "name": "ResNet-18",
+          "entity_key": "resnet",
+          "adjusted_score": 0.5506,
           "routing_status": "RUNTIME_MATCHED",
-          "constraint": "BUDGET_CONSTRAINT: LIGHT budget excludes Vision Transformer (ViT-Small)"
+          "constraint": null
         },
         {
           "name": "ResNet-50",
-          "entity_key": "NONE",
-          "adjusted_score": 0.25,
-          "routing_status": "FALLBACK_DEFAULT",
+          "entity_key": "resnet50",
+          "adjusted_score": 0.2974,
+          "routing_status": "RUNTIME_MATCHED",
           "constraint": "BUDGET_CONSTRAINT: LIGHT budget excludes ResNet-50"
+        },
+        {
+          "name": "Vision Transformer (ViT-Small)",
+          "entity_key": "vit",
+          "adjusted_score": 0.2776,
+          "routing_status": "RUNTIME_MATCHED",
+          "constraint": "BUDGET_CONSTRAINT: LIGHT budget excludes Vision Transformer (ViT-Small)"
         }
       ],
-      "selection_reason": "RUNTIME_MATCHED entity 'resnet-18' (NER confidence=0.850, section_relevance=0.850, composite_score=0.9200) from 1 paper(s) (PMIDs: PMID:LiteratureBaseline)."
+      "selection_reason": "RUNTIME_MATCHED entity 'net' (NER confidence=0.234, section_relevance=0.750, composite_score=0.5909) from 3 paper(s) (PMIDs: 39576664, 41469782)."
     },
     {
       "target_slot": "text_model",
       "modality": "text",
-      "selected_name": "PubMedBERT",
-      "entity_key": "transformers",
+      "selected_name": "TF-IDF + Linear Classifier",
+      "entity_key": "svm",
       "entity_type": "MODEL_ARCH",
-      "runtime_evidence_score": 0.6487,
-      "adjusted_evidence_score": 0.6487,
-      "evidence_score": 0.6487,
+      "runtime_evidence_score": 0.6993,
+      "adjusted_evidence_score": 0.6993,
+      "evidence_score": 0.6993,
       "evidence_routing_status": "RUNTIME_MATCHED",
-      "ner_confidence": 0.25,
+      "ner_confidence": 0.6424,
       "section_relevance": 0.75,
       "supporting_pmids": [
-        "42141332"
+        "40993724",
+        "42063967",
+        "42142271",
+        "42260021",
+        "40672516",
+        "41366279"
       ],
       "constraint_note": null,
       "candidate_ranking": [
         {
-          "name": "PubMedBERT",
-          "entity_key": "transformers",
-          "adjusted_score": 0.6487,
+          "name": "TF-IDF + Linear Classifier",
+          "entity_key": "svm",
+          "adjusted_score": 0.6993,
           "routing_status": "RUNTIME_MATCHED",
           "constraint": null
         },
         {
-          "name": "TF-IDF + Linear Classifier",
-          "entity_key": "svm",
-          "adjusted_score": 0.6131,
+          "name": "PubMedBERT",
+          "entity_key": "transformers",
+          "adjusted_score": 0.5822,
           "routing_status": "RUNTIME_MATCHED",
           "constraint": null
         },
         {
           "name": "ClinicalBERT",
-          "entity_key": "NONE",
-          "adjusted_score": 0.5,
-          "routing_status": "FALLBACK_DEFAULT",
+          "entity_key": "clinical",
+          "adjusted_score": 0.5814,
+          "routing_status": "RUNTIME_MATCHED",
           "constraint": null
         }
       ],
-      "selection_reason": "RUNTIME_MATCHED entity 'transformers' (NER confidence=0.250, section_relevance=0.750, composite_score=0.6487) from 1 paper(s) (PMIDs: 42141332)."
+      "selection_reason": "RUNTIME_MATCHED entity 'svm' (NER confidence=0.642, section_relevance=0.750, composite_score=0.6993) from 6 paper(s) (PMIDs: 40993724, 42063967)."
     },
     {
       "target_slot": "tabular_model",
       "modality": "tabular",
-      "selected_name": "XGBoost",
-      "entity_key": "xgboost",
+      "selected_name": "Random Forest",
+      "entity_key": "random forest",
       "entity_type": "MODEL_ARCH",
-      "runtime_evidence_score": 0.694,
-      "adjusted_evidence_score": 0.694,
-      "evidence_score": 0.694,
+      "runtime_evidence_score": 0.7318,
+      "adjusted_evidence_score": 0.7318,
+      "evidence_score": 0.7318,
       "evidence_routing_status": "RUNTIME_MATCHED",
-      "ner_confidence": 0.85,
-      "section_relevance": 0.85,
+      "ner_confidence": 0.7491,
+      "section_relevance": 0.75,
       "supporting_pmids": [
-        "PMID:LiteratureBaseline"
+        "41826845",
+        "42100518",
+        "41894311",
+        "40502295",
+        "42260021",
+        "41322476",
+        "42488127",
+        "39576664",
+        "40632807",
+        "40890689",
+        "41596036",
+        "41922385",
+        "41350571",
+        "42870229"
       ],
       "constraint_note": null,
       "candidate_ranking": [
+        {
+          "name": "Random Forest",
+          "entity_key": "random forest",
+          "adjusted_score": 0.7318,
+          "routing_status": "RUNTIME_MATCHED",
+          "constraint": null
+        },
+        {
+          "name": "Logistic Regression",
+          "entity_key": "logistic regression",
+          "adjusted_score": 0.7158,
+          "routing_status": "RUNTIME_MATCHED",
+          "constraint": null
+        },
         {
           "name": "XGBoost",
           "entity_key": "xgboost",
@@ -218,117 +278,110 @@
           "constraint": null
         },
         {
-          "name": "Logistic Regression",
-          "entity_key": "logistic regression",
-          "adjusted_score": 0.6507,
-          "routing_status": "RUNTIME_MATCHED",
-          "constraint": null
-        },
-        {
-          "name": "Random Forest",
-          "entity_key": "rf",
-          "adjusted_score": 0.587,
-          "routing_status": "RUNTIME_MATCHED",
-          "constraint": null
-        },
-        {
           "name": "Tabular MLP",
-          "entity_key": "tabular mlp",
-          "adjusted_score": 0.495,
+          "entity_key": "multilayer perceptron",
+          "adjusted_score": 0.3392,
           "routing_status": "RUNTIME_MATCHED",
           "constraint": "BUDGET_CONSTRAINT: LIGHT budget excludes Tabular MLP"
         }
       ],
-      "selection_reason": "RUNTIME_MATCHED entity 'xgboost' (NER confidence=0.850, section_relevance=0.850, composite_score=0.6940) from 1 paper(s) (PMIDs: PMID:LiteratureBaseline)."
+      "selection_reason": "RUNTIME_MATCHED entity 'random forest' (NER confidence=0.749, section_relevance=0.750, composite_score=0.7318) from 14 paper(s) (PMIDs: 41826845, 42100518)."
     },
     {
       "target_slot": "image_model",
       "modality": "image",
-      "selected_name": "ResNet-18",
-      "entity_key": "resnet-18",
+      "selected_name": "EfficientNet-B0",
+      "entity_key": "net",
       "entity_type": "MODEL_ARCH",
-      "runtime_evidence_score": 0.92,
-      "adjusted_evidence_score": 0.92,
-      "evidence_score": 0.92,
+      "runtime_evidence_score": 0.5909,
+      "adjusted_evidence_score": 0.5909,
+      "evidence_score": 0.5909,
       "evidence_routing_status": "RUNTIME_MATCHED",
-      "ner_confidence": 0.85,
-      "section_relevance": 0.85,
+      "ner_confidence": 0.2338,
+      "section_relevance": 0.75,
       "supporting_pmids": [
-        "PMID:LiteratureBaseline"
+        "39576664",
+        "41469782",
+        "42351482"
       ],
       "constraint_note": null,
       "candidate_ranking": [
         {
-          "name": "ResNet-18",
-          "entity_key": "resnet-18",
-          "adjusted_score": 0.92,
-          "routing_status": "RUNTIME_MATCHED",
-          "constraint": null
-        },
-        {
           "name": "EfficientNet-B0",
-          "entity_key": "NONE",
-          "adjusted_score": 0.5,
-          "routing_status": "FALLBACK_DEFAULT",
+          "entity_key": "net",
+          "adjusted_score": 0.5909,
+          "routing_status": "RUNTIME_MATCHED",
           "constraint": null
         },
         {
-          "name": "Vision Transformer (ViT-Small)",
-          "entity_key": "transformers",
-          "adjusted_score": 0.3244,
+          "name": "ResNet-18",
+          "entity_key": "resnet",
+          "adjusted_score": 0.5506,
           "routing_status": "RUNTIME_MATCHED",
-          "constraint": "BUDGET_CONSTRAINT: LIGHT budget excludes Vision Transformer (ViT-Small)"
+          "constraint": null
         },
         {
           "name": "ResNet-50",
-          "entity_key": "NONE",
-          "adjusted_score": 0.25,
-          "routing_status": "FALLBACK_DEFAULT",
+          "entity_key": "resnet50",
+          "adjusted_score": 0.2974,
+          "routing_status": "RUNTIME_MATCHED",
           "constraint": "BUDGET_CONSTRAINT: LIGHT budget excludes ResNet-50"
+        },
+        {
+          "name": "Vision Transformer (ViT-Small)",
+          "entity_key": "vit",
+          "adjusted_score": 0.2776,
+          "routing_status": "RUNTIME_MATCHED",
+          "constraint": "BUDGET_CONSTRAINT: LIGHT budget excludes Vision Transformer (ViT-Small)"
         }
       ],
-      "selection_reason": "RUNTIME_MATCHED entity 'resnet-18' (NER confidence=0.850, section_relevance=0.850, composite_score=0.9200) from 1 paper(s) (PMIDs: PMID:LiteratureBaseline)."
+      "selection_reason": "RUNTIME_MATCHED entity 'net' (NER confidence=0.234, section_relevance=0.750, composite_score=0.5909) from 3 paper(s) (PMIDs: 39576664, 41469782)."
     },
     {
       "target_slot": "text_model",
       "modality": "text",
-      "selected_name": "PubMedBERT",
-      "entity_key": "transformers",
+      "selected_name": "TF-IDF + Linear Classifier",
+      "entity_key": "svm",
       "entity_type": "MODEL_ARCH",
-      "runtime_evidence_score": 0.6487,
-      "adjusted_evidence_score": 0.6487,
-      "evidence_score": 0.6487,
+      "runtime_evidence_score": 0.6993,
+      "adjusted_evidence_score": 0.6993,
+      "evidence_score": 0.6993,
       "evidence_routing_status": "RUNTIME_MATCHED",
-      "ner_confidence": 0.25,
+      "ner_confidence": 0.6424,
       "section_relevance": 0.75,
       "supporting_pmids": [
-        "42141332"
+        "40993724",
+        "42063967",
+        "42142271",
+        "42260021",
+        "40672516",
+        "41366279"
       ],
       "constraint_note": null,
       "candidate_ranking": [
         {
-          "name": "PubMedBERT",
-          "entity_key": "transformers",
-          "adjusted_score": 0.6487,
+          "name": "TF-IDF + Linear Classifier",
+          "entity_key": "svm",
+          "adjusted_score": 0.6993,
           "routing_status": "RUNTIME_MATCHED",
           "constraint": null
         },
         {
-          "name": "TF-IDF + Linear Classifier",
-          "entity_key": "svm",
-          "adjusted_score": 0.6131,
+          "name": "PubMedBERT",
+          "entity_key": "transformers",
+          "adjusted_score": 0.5822,
           "routing_status": "RUNTIME_MATCHED",
           "constraint": null
         },
         {
           "name": "ClinicalBERT",
-          "entity_key": "NONE",
-          "adjusted_score": 0.5,
-          "routing_status": "FALLBACK_DEFAULT",
+          "entity_key": "clinical",
+          "adjusted_score": 0.5814,
+          "routing_status": "RUNTIME_MATCHED",
           "constraint": null
         }
       ],
-      "selection_reason": "RUNTIME_MATCHED entity 'transformers' (NER confidence=0.250, section_relevance=0.750, composite_score=0.6487) from 1 paper(s) (PMIDs: 42141332)."
+      "selection_reason": "RUNTIME_MATCHED entity 'svm' (NER confidence=0.642, section_relevance=0.750, composite_score=0.6993) from 6 paper(s) (PMIDs: 40993724, 42063967)."
     }
   ]
 }

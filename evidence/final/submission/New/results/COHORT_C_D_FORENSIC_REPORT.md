@@ -1,6 +1,6 @@
 # Forensic Audit Report: Cohort C (Image) & Cohort D (Text)
 
-**Audit Timestamp**: `2026-10-25T09:27:15.293384+00:00`  
+**Audit Timestamp**: `2026-10-27T14:26:07.971298+00:00`  
 **Objective**: Forensic investigation into the technical mechanisms responsible for high performance (ROC-AUC `0.9957` in Cohort C, `1.0000` in Cohort D).
 
 ---

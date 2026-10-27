@@ -126,14 +126,22 @@ class MasterEndToEndRunner:
 
         # Sync plots to new2/plots
         import shutil
-        new2_plots = Path("new2/plots")
+        new2_plots = Path("new2/plots").resolve()
         new2_plots.mkdir(parents=True, exist_ok=True)
         for p_file in (self.new_out_dir / "plots").glob("*.png"):
-            shutil.copy2(p_file, new2_plots / p_file.name)
+            dst = new2_plots / p_file.name
+            try:
+                shutil.copy2(p_file.resolve(), dst)
+            except Exception:
+                try:
+                    time.sleep(0.1)
+                    dst.write_bytes(p_file.read_bytes())
+                except Exception as e:
+                    logger.warning(f"Could not copy {p_file.name} to {new2_plots}: {e}")
         logger.info(f"Synchronized publication plots to {new2_plots}")
 
         # 10. Generate & Sync SciBERT Extraction Accuracy & Analytical Plots
-        logger.info("[STEP 9/10] Generating SciBERT Extraction Accuracy & Analytical Plots...")
+        logger.info("[STEP 9/11] Generating SciBERT Extraction Accuracy & Analytical Plots...")
         try:
             from SciBERT.code.generate_scibert_plots import run_all_plots
             run_all_plots()
@@ -141,8 +149,17 @@ class MasterEndToEndRunner:
         except Exception as e:
             logger.warning(f"SciBERT plot generation encountered: {e}")
 
-        # 11. Generate & Sync Unconditioned Baseline Comparison Plots
-        logger.info("[STEP 10/10] Generating Unconditioned Baseline vs Evidence Pipeline Benchmark Plots...")
+        # 11. Run Unconditioned Baselines Benchmark
+        logger.info("[STEP 10/11] Executing Unconditioned Baselines Benchmark...")
+        try:
+            from scripts.benchmark_unconditioned_models import run_benchmark
+            run_benchmark()
+            logger.info("Successfully completed unconditioned baselines benchmark.")
+        except Exception as e:
+            logger.warning(f"Unconditioned baselines benchmark encountered: {e}")
+
+        # 12. Generate & Sync Unconditioned Baseline Comparison Plots
+        logger.info("[STEP 11/11] Generating Unconditioned Baseline vs Evidence Pipeline Benchmark Plots...")
         try:
             from scripts.generate_unconditioned_comparison_plots import generate_plots as run_unconditioned_plots
             run_unconditioned_plots()

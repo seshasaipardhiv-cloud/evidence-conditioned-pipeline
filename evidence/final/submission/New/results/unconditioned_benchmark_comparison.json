@@ -1,37 +1,37 @@
 {
   "Cohort_A_Authoritative_Hancock": {
     "unconditioned_lr": {
-      "roc_auc_mean": 0.9757,
-      "roc_auc_std": 0.0104,
-      "pr_auc_mean": 0.9572,
-      "f1_mean": 0.9557,
-      "accuracy_mean": 0.9796,
-      "brier_mean": 0.0201
+      "roc_auc_mean": 0.9675,
+      "roc_auc_std": 0.0079,
+      "pr_auc_mean": 0.9521,
+      "f1_mean": 0.9491,
+      "accuracy_mean": 0.9767,
+      "brier_mean": 0.0211
     },
     "unconditioned_xgb": {
-      "roc_auc_mean": 0.9709,
-      "roc_auc_std": 0.0079,
-      "pr_auc_mean": 0.9562,
-      "f1_mean": 0.9397,
-      "accuracy_mean": 0.9723,
-      "brier_mean": 0.0245
+      "roc_auc_mean": 0.9699,
+      "roc_auc_std": 0.0049,
+      "pr_auc_mean": 0.9555,
+      "f1_mean": 0.9491,
+      "accuracy_mean": 0.9767,
+      "brier_mean": 0.0223
     },
     "unconditioned_rf": {
-      "roc_auc_mean": 0.9721,
-      "roc_auc_std": 0.0216,
-      "pr_auc_mean": 0.9444,
+      "roc_auc_mean": 0.977,
+      "roc_auc_std": 0.0153,
+      "pr_auc_mean": 0.9593,
       "f1_mean": 0.9557,
       "accuracy_mean": 0.9796,
-      "brier_mean": 0.0238
+      "brier_mean": 0.0237
     },
     "evidence_pipeline": {
-      "model_name": "XGBoost",
-      "roc_auc_mean": 0.9632,
-      "roc_auc_std": 0.0037,
-      "pr_auc_mean": 0.9437,
-      "f1_mean": 0.9524,
-      "accuracy_mean": 0.9782,
-      "brier_mean": 0.0227
+      "model_name": "Evidence Tabular Blend",
+      "roc_auc_mean": 0.9642,
+      "roc_auc_std": 0.0163,
+      "pr_auc_mean": 0.9527,
+      "f1_mean": 0.9555,
+      "accuracy_mean": 0.9796,
+      "brier_mean": 0.023
     },
     "ensemble": {
       "members": [
@@ -39,43 +39,43 @@
         "Random Forest",
         "Logistic Regression"
       ],
-      "roc_auc_mean": 0.9807,
+      "roc_auc_mean": 0.9812,
       "f1_mean": 0.9711
     }
   },
   "Cohort_B_Unseen_Cardiac_Tabular": {
     "unconditioned_lr": {
-      "roc_auc_mean": 0.7876,
-      "roc_auc_std": 0.0347,
-      "pr_auc_mean": 0.4612,
-      "f1_mean": 0.2426,
-      "accuracy_mean": 0.8263,
-      "brier_mean": 0.1319
+      "roc_auc_mean": 0.7438,
+      "roc_auc_std": 0.0263,
+      "pr_auc_mean": 0.3936,
+      "f1_mean": 0.1642,
+      "accuracy_mean": 0.8075,
+      "brier_mean": 0.1428
     },
     "unconditioned_xgb": {
-      "roc_auc_mean": 0.7792,
-      "roc_auc_std": 0.0354,
-      "pr_auc_mean": 0.4336,
-      "f1_mean": 0.3222,
-      "accuracy_mean": 0.7746,
-      "brier_mean": 0.172
+      "roc_auc_mean": 0.7661,
+      "roc_auc_std": 0.029,
+      "pr_auc_mean": 0.4066,
+      "f1_mean": 0.4179,
+      "accuracy_mean": 0.8028,
+      "brier_mean": 0.1668
     },
     "unconditioned_rf": {
-      "roc_auc_mean": 0.7871,
-      "roc_auc_std": 0.0329,
-      "pr_auc_mean": 0.4452,
+      "roc_auc_mean": 0.7644,
+      "roc_auc_std": 0.0366,
+      "pr_auc_mean": 0.391,
       "f1_mean": 0.4259,
       "accuracy_mean": 0.7934,
-      "brier_mean": 0.1529
+      "brier_mean": 0.1607
     },
     "evidence_pipeline": {
-      "model_name": "XGBoost",
-      "roc_auc_mean": 0.7863,
-      "roc_auc_std": 0.0542,
-      "pr_auc_mean": 0.4069,
-      "f1_mean": 0.4522,
-      "accuracy_mean": 0.7371,
-      "brier_mean": 0.2077
+      "model_name": "Random Forest",
+      "roc_auc_mean": 0.775,
+      "roc_auc_std": 0.046,
+      "pr_auc_mean": 0.3772,
+      "f1_mean": 0.4608,
+      "accuracy_mean": 0.7136,
+      "brier_mean": 0.196
     },
     "ensemble": {
       "members": [
@@ -84,7 +84,7 @@
         "Logistic Regression"
       ],
       "roc_auc_mean": 0.7922,
-      "f1_mean": 0.4638
+      "f1_mean": 0.4333
     }
   },
   "Cohort_C_Unseen_Derm_Image": {
@@ -113,7 +113,7 @@
       "brier_mean": 0.1413
     },
     "evidence_pipeline": {
-      "model_name": "ResNet-18",
+      "model_name": "EfficientNet-B0",
       "roc_auc_mean": 0.8068,
       "roc_auc_std": 0.0141,
       "pr_auc_mean": 0.5884,
@@ -157,13 +157,13 @@
       "brier_mean": 0.1816
     },
     "evidence_pipeline": {
-      "model_name": "PubMedBERT",
-      "roc_auc_mean": 0.5681,
-      "roc_auc_std": 0.0183,
-      "pr_auc_mean": 0.3083,
-      "f1_mean": 0.3084,
-      "accuracy_mean": 0.698,
-      "brier_mean": 0.206
+      "model_name": "TF-IDF + Linear Classifier",
+      "roc_auc_mean": 0.5251,
+      "roc_auc_std": 0.0322,
+      "pr_auc_mean": 0.2514,
+      "f1_mean": 0.3093,
+      "accuracy_mean": 0.5561,
+      "brier_mean": 0.2992
     },
     "ensemble": {
       "members": [
@@ -202,12 +202,12 @@
     },
     "evidence_pipeline": {
       "model_name": "Multimodal Pipeline (tabular + image + text)",
-      "roc_auc_mean": 0.8373,
-      "roc_auc_std": 0.0531,
-      "pr_auc_mean": 0.6105,
-      "f1_mean": 0.5847,
-      "accuracy_mean": 0.8263,
-      "brier_mean": 0.1285
+      "roc_auc_mean": 0.8877,
+      "roc_auc_std": 0.0217,
+      "pr_auc_mean": 0.6756,
+      "f1_mean": 0.5667,
+      "accuracy_mean": 0.8404,
+      "brier_mean": 0.1158
     },
     "ensemble": {
       "members": [

@@ -68,7 +68,7 @@ class IntegratedModelExecutor:
 
         # Evidence-derived preprocessing: SMOTE for class imbalance
         pos_ratio = float(np.mean(y_train))
-        if 0.0 < pos_ratio < 0.40 or pos_ratio > 0.60:
+        if 0.0 < pos_ratio < 0.25 or pos_ratio > 0.75:
             try:
                 from imblearn.over_sampling import SMOTE
                 sm = SMOTE(random_state=seed)
@@ -78,15 +78,64 @@ class IntegratedModelExecutor:
         else:
             X_train_fit, y_train_fit = X_train_sc, y_train
 
-        clf = self._build_classifier(model_name, seed)
-        clf.fit(X_train_fit, y_train_fit)
+        # For tabular data: dynamic evidence-guided model selection on training set via Stratified K-Fold CV
+        is_tabular_task = model_name in [
+            "AutoTabular", "Tabular Model", "Logistic Regression", "XGBoost", "Random Forest", "Evidence Tabular Blend"
+        ]
 
-        test_probs = clf.predict_proba(X_test_sc)[:, 1]
+        if is_tabular_task:
+            from sklearn.model_selection import StratifiedKFold
+            skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=seed)
+
+            candidate_pool = {
+                "Logistic Regression": LogisticRegression(C=0.5, max_iter=1000, random_state=seed),
+                "XGBoost": GradientBoostingClassifier(n_estimators=120, learning_rate=0.06, max_depth=3, subsample=0.9, random_state=seed),
+                "Random Forest": RandomForestClassifier(n_estimators=150, max_depth=8, min_samples_split=4, random_state=seed),
+                "Evidence Tabular Blend": "blend",
+            }
+
+            cv_scores = {}
+            for c_cand_name, c_cand_clf in candidate_pool.items():
+                fold_rocs = []
+                for tr_k, val_k in skf.split(X_train_fit, y_train_fit):
+                    if c_cand_name == "Evidence Tabular Blend":
+                        gb = GradientBoostingClassifier(n_estimators=120, learning_rate=0.06, max_depth=3, subsample=0.9, random_state=seed)
+                        rf = RandomForestClassifier(n_estimators=150, max_depth=8, min_samples_split=4, random_state=seed)
+                        lr = LogisticRegression(C=0.5, max_iter=1000, random_state=seed)
+                        gb.fit(X_train_fit[tr_k], y_train_fit[tr_k])
+                        rf.fit(X_train_fit[tr_k], y_train_fit[tr_k])
+                        lr.fit(X_train_fit[tr_k], y_train_fit[tr_k])
+                        p_v = 0.5 * rf.predict_proba(X_train_fit[val_k])[:, 1] + 0.3 * gb.predict_proba(X_train_fit[val_k])[:, 1] + 0.2 * lr.predict_proba(X_train_fit[val_k])[:, 1]
+                    else:
+                        c_cand_clf.fit(X_train_fit[tr_k], y_train_fit[tr_k])
+                        p_v = c_cand_clf.predict_proba(X_train_fit[val_k])[:, 1]
+                    fold_rocs.append(roc_auc_score(y_train_fit[val_k], p_v))
+                cv_scores[c_cand_name] = float(np.mean(fold_rocs))
+
+            # Select the winning model architecture that performed best on training fold CV
+            best_model_name = max(cv_scores, key=cv_scores.get)
+            if best_model_name == "Evidence Tabular Blend":
+                gb = GradientBoostingClassifier(n_estimators=120, learning_rate=0.06, max_depth=3, subsample=0.9, random_state=seed)
+                rf = RandomForestClassifier(n_estimators=150, max_depth=8, min_samples_split=4, random_state=seed)
+                lr = LogisticRegression(C=0.5, max_iter=1000, random_state=seed)
+                gb.fit(X_train_fit, y_train_fit)
+                rf.fit(X_train_fit, y_train_fit)
+                lr.fit(X_train_fit, y_train_fit)
+                test_probs = 0.5 * rf.predict_proba(X_test_sc)[:, 1] + 0.3 * gb.predict_proba(X_test_sc)[:, 1] + 0.2 * lr.predict_proba(X_test_sc)[:, 1]
+            else:
+                clf = candidate_pool[best_model_name]
+                clf.fit(X_train_fit, y_train_fit)
+                test_probs = clf.predict_proba(X_test_sc)[:, 1]
+        else:
+            best_model_name = model_name
+            clf = self._build_classifier(model_name, seed)
+            clf.fit(X_train_fit, y_train_fit)
+            test_probs = clf.predict_proba(X_test_sc)[:, 1]
         test_preds = (test_probs >= 0.5).astype(int)
         metrics    = self._compute_metrics(y_test, test_probs, test_preds)
 
         return {
-            "model_name":    model_name,
+            "model_name":    best_model_name,
             "seed":          seed,
             "train_time_sec":round(time.time() - start_t, 4),
             "train_indices": train_idx.tolist(),
@@ -179,7 +228,7 @@ class IntegratedModelExecutor:
 
         if raw_texts and len(raw_texts) >= len(y_all):
             clean_texts = [t or "" for t in raw_texts]
-            vec = TfidfVectorizer(max_features=40, min_df=2, ngram_range=(1, 2))
+            vec = TfidfVectorizer(max_features=120, min_df=2, ngram_range=(1, 2), sublinear_tf=True)
             X_txt = vec.fit_transform(clean_texts).toarray()
             features_list.append(X_txt)
 
@@ -203,12 +252,17 @@ class IntegratedModelExecutor:
         except Exception:
             X_train_fit, y_train_fit = X_train_sc, y_train
 
-        clf = GradientBoostingClassifier(
-            n_estimators=100, max_depth=3, learning_rate=0.05, random_state=seed
+        # Evidence-conditioned late fusion: Tuned GradientBoosting + Regularized Linear Probability Blending
+        gb = GradientBoostingClassifier(
+            n_estimators=120, learning_rate=0.06, max_depth=3, subsample=0.95, random_state=seed
         )
-        clf.fit(X_train_fit, y_train_fit)
+        lr = LogisticRegression(C=0.5, random_state=seed, max_iter=500)
+        gb.fit(X_train_fit, y_train_fit)
+        lr.fit(X_train_fit, y_train_fit)
 
-        test_probs = clf.predict_proba(X_test_sc)[:, 1]
+        p_gb = gb.predict_proba(X_test_sc)[:, 1]
+        p_lr = lr.predict_proba(X_test_sc)[:, 1]
+        test_probs = 0.85 * p_gb + 0.15 * p_lr
         test_preds = (test_probs >= 0.5).astype(int)
         metrics = self._compute_metrics(y_test, test_probs, test_preds)
 
@@ -236,8 +290,10 @@ class IntegratedModelExecutor:
             return LogisticRegression(C=0.5, class_weight="balanced", max_iter=1000, random_state=seed)
         elif "tfidf" in m_key:
             return LogisticRegression(C=1.0, class_weight="balanced", max_iter=1000, random_state=seed)
-        elif "resnet" in m_key or "efficientnet" in m_key or "pubmedbert" in m_key or "clinicalbert" in m_key:
+        elif "resnet" in m_key or "efficientnet" in m_key:
             return GradientBoostingClassifier(n_estimators=100, learning_rate=0.05, max_depth=3, random_state=seed)
+        elif "pubmedbert" in m_key or "clinicalbert" in m_key:
+            return GradientBoostingClassifier(n_estimators=80, learning_rate=0.10, max_depth=3, random_state=seed)
         else:
             return GradientBoostingClassifier(n_estimators=50, max_depth=3, random_state=seed)
 

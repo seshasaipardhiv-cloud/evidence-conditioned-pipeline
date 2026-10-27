@@ -8,7 +8,7 @@
     ],
     "sample_count": 763,
     "target_column": "cancer_recurrence",
-    "selected_model": "XGBoost",
+    "selected_model": "Evidence Tabular Blend",
     "ensemble_strategy": "Validation-Performance-Weighted Averaging",
     "ensemble_members": [
       "XGBoost",
@@ -16,20 +16,20 @@
       "Logistic Regression"
     ],
     "ensemble_weights": {
-      "XGBoost": 0.3324,
-      "Random Forest": 0.336,
-      "Logistic Regression": 0.3316
+      "XGBoost": 0.3353,
+      "Random Forest": 0.3347,
+      "Logistic Regression": 0.3301
     },
-    "roc_auc_mean": 0.9632,
-    "roc_auc_std": 0.0037,
-    "pr_auc_mean": 0.9437,
-    "brier_score_mean": 0.0227,
-    "accuracy_mean": 0.9782,
-    "precision_mean": 0.9618,
+    "roc_auc_mean": 0.9642,
+    "roc_auc_std": 0.0163,
+    "pr_auc_mean": 0.9527,
+    "brier_score_mean": 0.023,
+    "accuracy_mean": 0.9796,
+    "precision_mean": 0.9681,
     "recall_mean": 0.9434,
-    "f1_mean": 0.9524,
-    "f1_std": 0.0074,
-    "ensemble_roc_auc_mean": 0.9807,
+    "f1_mean": 0.9555,
+    "f1_std": 0.0086,
+    "ensemble_roc_auc_mean": 0.9812,
     "ensemble_f1_mean": 0.9711,
     "seeds": [
       42,
@@ -37,7 +37,7 @@
       2026
     ],
     "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
-    "canonical_data_hash": "5f7f10a837f5d1c1b1fe5968014c668d7a30a2eb34f004bb46e8e73f29dbcb59"
+    "canonical_data_hash": "46bca6557151ed0dba660673eba0f4711bafd78a578a8e4736b7ccefb738b9a8"
   },
   {
     "cohort_name": "Cohort_B_Unseen_Cardiac_Tabular",
@@ -48,7 +48,7 @@
     ],
     "sample_count": 234,
     "target_column": "malignancy_target",
-    "selected_model": "XGBoost",
+    "selected_model": "Random Forest",
     "ensemble_strategy": "Validation-Performance-Weighted Averaging",
     "ensemble_members": [
       "XGBoost",
@@ -56,28 +56,28 @@
       "Logistic Regression"
     ],
     "ensemble_weights": {
-      "XGBoost": 0.3269,
-      "Random Forest": 0.3208,
-      "Logistic Regression": 0.3523
+      "XGBoost": 0.3239,
+      "Random Forest": 0.3292,
+      "Logistic Regression": 0.3469
     },
-    "roc_auc_mean": 0.7863,
-    "roc_auc_std": 0.0542,
-    "pr_auc_mean": 0.4069,
-    "brier_score_mean": 0.2077,
-    "accuracy_mean": 0.7371,
-    "precision_mean": 0.3717,
-    "recall_mean": 0.5897,
-    "f1_mean": 0.4522,
-    "f1_std": 0.0873,
+    "roc_auc_mean": 0.775,
+    "roc_auc_std": 0.046,
+    "pr_auc_mean": 0.3772,
+    "brier_score_mean": 0.196,
+    "accuracy_mean": 0.7136,
+    "precision_mean": 0.3561,
+    "recall_mean": 0.6667,
+    "f1_mean": 0.4608,
+    "f1_std": 0.047,
     "ensemble_roc_auc_mean": 0.7922,
-    "ensemble_f1_mean": 0.4638,
+    "ensemble_f1_mean": 0.4333,
     "seeds": [
       42,
       100,
       2026
     ],
     "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
-    "canonical_data_hash": "5f7f10a837f5d1c1b1fe5968014c668d7a30a2eb34f004bb46e8e73f29dbcb59"
+    "canonical_data_hash": "46bca6557151ed0dba660673eba0f4711bafd78a578a8e4736b7ccefb738b9a8"
   },
   {
     "cohort_name": "Cohort_C_Unseen_Derm_Image",
@@ -88,7 +88,7 @@
     ],
     "sample_count": 234,
     "target_column": "malignancy_flag",
-    "selected_model": "ResNet-18",
+    "selected_model": "EfficientNet-B0",
     "ensemble_strategy": "Validation-Performance-Weighted Averaging",
     "ensemble_members": [
       "ResNet-18",
@@ -108,7 +108,7 @@
     "precision_mean": 0.5333,
     "recall_mean": 0.4872,
     "f1_mean": 0.4944,
-    "f1_std": 0.0837,
+    "f1_std": 0.0838,
     "ensemble_roc_auc_mean": 0.7479,
     "ensemble_f1_mean": 0.3313,
     "seeds": [
@@ -117,7 +117,7 @@
       2026
     ],
     "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
-    "canonical_data_hash": "5f7f10a837f5d1c1b1fe5968014c668d7a30a2eb34f004bb46e8e73f29dbcb59"
+    "canonical_data_hash": "46bca6557151ed0dba660673eba0f4711bafd78a578a8e4736b7ccefb738b9a8"
   },
   {
     "cohort_name": "Cohort_D_Unseen_Pathology_Text",
@@ -128,7 +128,7 @@
     ],
     "sample_count": 742,
     "target_column": "cancer_recurrence",
-    "selected_model": "PubMedBERT",
+    "selected_model": "TF-IDF + Linear Classifier",
     "ensemble_strategy": "Validation-Performance-Weighted Averaging",
     "ensemble_members": [
       "PubMedBERT",
@@ -140,15 +140,15 @@
       "ClinicalBERT": 0.3333,
       "TF-IDF + Linear Classifier": 0.3333
     },
-    "roc_auc_mean": 0.5681,
-    "roc_auc_std": 0.0183,
-    "pr_auc_mean": 0.3083,
-    "brier_score_mean": 0.206,
-    "accuracy_mean": 0.698,
-    "precision_mean": 0.3313,
-    "recall_mean": 0.2885,
-    "f1_mean": 0.3084,
-    "f1_std": 0.0305,
+    "roc_auc_mean": 0.5251,
+    "roc_auc_std": 0.0322,
+    "pr_auc_mean": 0.2514,
+    "brier_score_mean": 0.2992,
+    "accuracy_mean": 0.5561,
+    "precision_mean": 0.2428,
+    "recall_mean": 0.4295,
+    "f1_mean": 0.3093,
+    "f1_std": 0.0246,
     "ensemble_roc_auc_mean": 0.5425,
     "ensemble_f1_mean": 0.261,
     "seeds": [
@@ -157,7 +157,7 @@
       2026
     ],
     "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
-    "canonical_data_hash": "5f7f10a837f5d1c1b1fe5968014c668d7a30a2eb34f004bb46e8e73f29dbcb59"
+    "canonical_data_hash": "46bca6557151ed0dba660673eba0f4711bafd78a578a8e4736b7ccefb738b9a8"
   },
   {
     "cohort_name": "Cohort_E_Unseen_Trimodal_Oncology",
@@ -182,15 +182,15 @@
       "Random Forest": 0.3163,
       "Logistic Regression": 0.3413
     },
-    "roc_auc_mean": 0.8373,
-    "roc_auc_std": 0.0531,
-    "pr_auc_mean": 0.6105,
-    "brier_score_mean": 0.1285,
-    "accuracy_mean": 0.8263,
-    "precision_mean": 0.5208,
-    "recall_mean": 0.6667,
-    "f1_mean": 0.5847,
-    "f1_std": 0.0855,
+    "roc_auc_mean": 0.8877,
+    "roc_auc_std": 0.0217,
+    "pr_auc_mean": 0.6756,
+    "brier_score_mean": 0.1158,
+    "accuracy_mean": 0.8404,
+    "precision_mean": 0.5705,
+    "recall_mean": 0.5641,
+    "f1_mean": 0.5667,
+    "f1_std": 0.1109,
     "ensemble_roc_auc_mean": 0.8686,
     "ensemble_f1_mean": 0.5299,
     "seeds": [
@@ -199,6 +199,6 @@
       2026
     ],
     "source": "COMPUTED_FROM_CANONICAL_PREDICTIONS",
-    "canonical_data_hash": "5f7f10a837f5d1c1b1fe5968014c668d7a30a2eb34f004bb46e8e73f29dbcb59"
+    "canonical_data_hash": "46bca6557151ed0dba660673eba0f4711bafd78a578a8e4736b7ccefb738b9a8"
   }
 ]

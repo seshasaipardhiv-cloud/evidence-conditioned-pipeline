@@ -27,5 +27,5 @@
   "overall_pipeline_evidence_score": 0.5208,
   "ground_truth_status": "NOT_AVAILABLE_WITHOUT_GOLD_LABELS",
   "checkpoint_sha256": "956daab174d9b839b895d47b305cc1b61953e7a3a9769cd24ae418c363c35285",
-  "timestamp": "2026-10-27T13:41:24.131269+00:00"
+  "timestamp": "2026-10-27T14:22:56.323882+00:00"
 }
